@@ -1,3 +1,5 @@
+/* stylelint-disable property-no-vendor-prefix */
+
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -10,7 +12,7 @@
  * governing permissions and limitations under the License.
  */
 
-:root {
+ :root {
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -20,9 +22,11 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+
+  /* --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  */
+  --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -41,12 +45,6 @@
   --nav-height: 64px;
 }
 
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 100.06%;
-  ascent-override: 95%;
-  src: local('Arial');
-}
 
 @media (width >= 900px) {
   :root {
@@ -59,16 +57,6 @@
   }
 }
 
-body {
-  font-size: var(--body-font-size-m);
-  margin: 0;
-  font-family: var(--body-font-family);
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  display: none;
-}
-
 body.appear {
   display: block;
 }
@@ -79,8 +67,8 @@ header {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-family: var(--fixed-font-family);
+  font-weight: 300;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -100,7 +88,6 @@ p, dl, ol, ul, pre, blockquote {
 }
 
 code, pre {
-  font-family: var(--fixed-font-family);
   font-size: var(--body-font-size-s);
 }
 
@@ -121,8 +108,12 @@ main pre {
 }
 
 /* links */
+a,b,strong {
+  font-weight: 700;
+}
+
 a:any-link {
-  color: var(--link-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -133,12 +124,12 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  font-family: var(--fixed-font-family);
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
+  border: 1px solid transparent;
+  padding: 15px 30px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -149,7 +140,31 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 5px;
+}
+
+button,input{
+  overflow:visible
+}
+
+button,select{
+  text-transform:none
+}
+
+button,[type="button"],[type="reset"],[type="submit"]{
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{
+  border-style:none;
+  padding:0
+}
+
+button,input,optgroup,select,textarea{
+  font-family:inherit;
+  font-size:100%;
+  line-height:1.15;
+  margin:0
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -164,8 +179,12 @@ button:disabled, button:disabled:hover {
 
 a.button.secondary, button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
+  border: 1px solid currentcolor;
   color: var(--text-color)
+}
+
+a.button.secondary:hover {
+  border: 2px solid currentcolor;
 }
 
 main img {
@@ -190,13 +209,15 @@ main .section {
   padding: 64px 16px;
 }
 
+/* mobile */
 @media (width >= 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
 
-@media (width >= 900px) {
+/* desktop */
+@media (width >= 769px) {
   .section > div {
     max-width: 1200px;
     margin: auto;
@@ -207,4 +228,52 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+fieldset{
+  padding:.35em .75em .625em
+}
+
+legend{
+  box-sizing:border-box;
+  color:inherit;
+  display:table;
+  max-width:100%;
+  padding:0;
+  white-space:normal;
+}
+
+progress{
+  vertical-align:baseline
+}
+
+textarea{
+  overflow:auto
+}
+
+[type="checkbox"],[type="radio"]{
+  box-sizing:border-box;
+  padding:0
+}
+
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{
+  height:auto
+}
+
+[type="search"]{
+  -webkit-appearance: textfield;
+  outline-offset:-2px
+}
+
+[type="search"]::-webkit-search-decoration{
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button{
+  -webkit-appearance:button;
+  font:inherit
+}
+
+[hidden]{
+  display:none
 }
