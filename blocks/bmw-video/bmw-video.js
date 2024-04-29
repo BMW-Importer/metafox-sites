@@ -2,7 +2,7 @@ export function generateVideoScript(videoControls) {
   // Build DOM
   let videoViewer = `
   <div id="s7viewer" style="position:relative;width:640px;height:360px;"></div>
-  <script type="text/javascript">
+  <script type="text/javascript" defer>
   console.log("Hello DM Video Player");
   var videoViewer = new s7viewers.SmartCropVideoViewer();
 videoViewer.setContainerId("s7viewer");
@@ -33,8 +33,9 @@ export default function decorate(block) {
   const s7ViewerScriptTag = document.createElement('script');
   s7ViewerScriptTag.src = 'http://bmw.scene7.com/s7viewers/html5/js/SmartCropVideoViewer.js';
   s7ViewerScriptTag.type = 'text/javascript';
+  s7ViewerScriptTag.setAttribute('defer', 'defer');
+  block.append(s7ViewerScriptTag);
   const videoScriptDOM = generateVideoScript(videoControls);
   block.textContent = '';
-  block.append(s7ViewerScriptTag);
   block.append(videoScriptDOM);
 }
