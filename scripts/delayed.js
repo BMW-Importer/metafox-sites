@@ -9,8 +9,8 @@ function analyticsTracking() {
     set_page_tracking();
 }
 function opt_in_info(){
-  // const adobeDtm = window.adobeDataLayer;
-  console.log(window.adobeDataLayer.version);
+  const adobeDtm = window.adobeDataLayer;
+  console.log(adobeDtm.version);
   const d = new Date();
   alloy('setConsent', {
     consent: [{
