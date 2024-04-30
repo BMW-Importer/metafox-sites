@@ -120,6 +120,7 @@ function set_ecid(){
   const iframeBlock = document.getElementById('bmwIframe');
   if(iframeBlock){
     const anchor = iframeBlock.src || '';
+    console.log(anchor);
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
   }
 }
