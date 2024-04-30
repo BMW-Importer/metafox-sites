@@ -152,7 +152,6 @@ function launchVariables() {
   headElement.appendChild(scriptElement1);
   // const anchor = document.getElementById('bmwIframe').src;
   // const url = new URL(anchor);
-  // alloy('appendIdentityToUrl', { url: anchor }).then((result) => { document.getElementById('bmwIframe').src = result.url; });
 }
 
 async function loadPage() {
