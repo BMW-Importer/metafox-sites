@@ -148,7 +148,7 @@ function loadDelayed() {
 function launchVariables() {
   const headElement = document.querySelector('head');
   const scriptElement1 = document.createElement('script');
-  scriptElement1.setAttribute('src', 'https://assets.adobedtm.com/5eef5b667374/31ec2769917a/launch-50aa95111531-development.min.js');
+  scriptElement1.setAttribute('src', 'https://assets.adobedtm.com/413a8cbe910e/2a9212d4511b/launch-6ca074b36c7e-development.min.js');
   headElement.appendChild(scriptElement1);
   // const anchor = document.getElementById('bmwIframe').src;
   // const url = new URL(anchor);

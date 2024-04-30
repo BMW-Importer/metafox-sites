@@ -21,7 +21,7 @@ function opt_in_info(){
           val: 'y'
         },
         metadata: {
-          time: '2024-04-30T07:00:05.574Z'
+          time: '2024-04-30T07:00:05-7:00'
         }
       }
     }]
