@@ -105,13 +105,20 @@ function opt_in_info(){
     }]
   });
 }
+const dateTime = new Date();
 function set_page_tracking(){
   // adding page tracking properties
     page_tracking.page.pageInfo.windowInfo.screenWidth = window.screen.width;
     page_tracking.page.pageInfo.windowInfo.screenHeight = window.screen.height;
     page_tracking.page.pageInfo.windowInfo.screenOrientation = window.screen.orientation.type;
     page_tracking.page.pageInfo.windowInfo.userAgent = navigator.userAgent;
+    page_tracking.page.pageInfo.windowInfo.server = window.location.hostname;
     page_tracking.page.pageInfo.windowInfo.url = window.location.href;
+    page_tracking.page.pageInfo.windowInfo.previousDomain = document.referrer;
+    page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search;
+    // timeinfo
+    page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
+    page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
 
 
     window.adobeDataLayer.push(page_tracking);
@@ -120,7 +127,7 @@ function set_ecid(){
   const iframeBlock = document.getElementById('bmwIframe');
   if(iframeBlock){
     const anchor = iframeBlock.src || '';
-    alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
+    alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.location = result.url;});
   }
 }
 analyticsTracking();
