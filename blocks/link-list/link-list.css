@@ -1,0 +1,241 @@
+/* footer */
+footer .link-list-wrapper ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .link-list-wrapper.vertical{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer .link-list-wrapper.horizontal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer .link-list-wrapper.horizontal .link-list-title {
+    margin: 0 2rem 0.75rem 0;
+    font-family: var(--fixed-font-family);
+    color: var(--light-text-color);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 0.75rem;
+    letter-spacing: 0.125rem;
+}
+
+footer .link-list-wrapper.vertical .link-list-title {
+    display: block;
+    position: relative;
+    font-family: var(--fixed-font-family);
+    padding-right: 1.5rem;
+    margin: 0 0 1.5rem;
+    color: var(--medium-text-color);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    letter-spacing: normal;
+    word-break: break-all;
+    text-transform: none;
+}
+
+footer .link-list-wrapper.vertical .link-list-title::after
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: "arrow_chevron_down";
+    direction: ltr;    
+    font-family: "bmw_next_icons",arial,helvetica,roboto,sans-serif;
+    transform: translate(25%, -50%);
+    transition: transform .5s ease-in-out;
+    font-size: 1.5rem;
+    color: var(--medium-text-color);
+    font-style: normal;
+    font-weight: 400;
+    height: 1.5rem;
+    line-height: 1;
+    outline: 1px solid transparent;
+}
+
+footer .link-list-wrapper.vertical .link-list-title.expand{
+    color: var(--light-text-color);
+}
+
+footer .link-list-wrapper.vertical .link-list-title.expand::after{
+    transform: translate(25%, -50%) rotate(-180deg);
+    color: var(--light-text-color);
+}
+
+footer .link-list-wrapper.horizontal .link-list-detail ul li,
+footer .link-list-wrapper.horizontal .link-list-detail ul li a {
+    font-family: var(--fixed-font-family);
+    font-size: 0.875rem;
+    color: var(--light-text-color);
+    line-height: 1.25rem;
+    font-weight: 700;
+    word-break: break-all;
+    text-decoration: none; 
+}
+
+footer .link-list-wrapper.vertical .link-list-detail {   
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease;
+}
+
+footer .link-list-wrapper .link-list-detail a.button{    
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    padding: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius:0;   
+}
+
+footer .link-list-wrapper.horizontal .link-list-detail {
+    display: inline-block;
+}
+
+footer .link-list-wrapper.horizontal .link-list-detail ul li{
+    display: inline-block;
+    margin-right: 0.625rem;
+}
+
+footer .link-list-wrapper.vertical .link-list-detail ul {
+    margin-bottom: 2.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+footer .link-list-wrapper.vertical .link-list-detail ul li,
+footer .link-list-wrapper.vertical .link-list-detail ul li a {
+    font-family: var(--fixed-font-family);
+    font-size: 0.875rem;
+    color: var(--medium-text-color);
+    line-height: 1.25rem;
+    font-weight: 700;
+    word-break: break-all;
+    text-decoration: none; 
+}
+
+footer .link-list-wrapper.vertical .link-list-detail ul li{
+    margin-bottom: 1.5rem;
+}
+
+footer .link-list-wrapper.horizontal .link-list-detail ul li:last-child{    
+    margin-right: 0;
+}
+
+footer .link-list-wrapper.vertical .link-list-detail ul li:last-child{
+    margin-bottom: 0;
+}
+
+footer .link-list-wrapper.horizontal .link-list-detail ul li a:hover{
+    color: var(--light-link-hover-color);
+}
+
+footer .link-list-wrapper.vertical .link-list-detail ul li a:hover{
+    color: var(--light-text-color);
+}
+
+/* mobile */
+@media (width < 768px){
+    footer .link-list-wrapper.horizontal .link-list-title {
+        display: block;
+    }
+   
+    header nav[aria-expanded="false"] .menu-flyout-wrapper {
+        display: none;
+    }
+    
+    header nav[aria-expanded="true"] .menu-flyout-wrapper .flyout-wrapper {
+        display: none;
+    }
+
+    header nav[aria-expanded="true"] .menu-flyout-wrapper::after {       
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: "liga";
+        content: " arrow_chevron_right";
+        direction: ltr;
+        display: block;
+        font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
+        font-style: normal;
+        height: 1em;
+        line-height: 1;
+        outline: 1px solid transparent;
+        text-align: left;
+        text-rendering: optimizelegibility;
+        text-transform: none;
+        white-space: nowrap;
+        width: auto;
+        font-size: 1.25rem;
+        color: var(--light-border-color);
+        font-weight: 400;
+        position: absolute;
+        right: 50px;
+        top: 12px;
+    }
+    
+
+}
+
+/* tablet */
+@media (width >= 768px){
+    footer .link-list-wrapper.vertical{
+        display: inline-flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    footer .link-list-wrapper.horizontal .link-list-title {
+        display: inline-block;
+    }
+
+    footer .link-list-wrapper.vertical .link-list-title {       
+        padding-right: 0;
+        margin: 0 0 1rem;
+        color: var(--medium-text-color);
+        font-size: 0.625rem;
+        font-weight: 300;
+        line-height: 0.75rem;
+        letter-spacing: 0.125rem;
+        word-break: break-all;
+        text-transform: uppercase;
+    }
+
+    footer .link-list-wrapper.vertical .link-list-title::after{
+        display: none;
+    }
+
+    footer .link-list-wrapper.vertical .link-list-detail {
+        display: block;
+        max-height: fit-content;
+        height: auto;
+    }
+
+    footer .link-list-wrapper.vertical .link-list-detail ul {
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+
+    footer .link-list-wrapper.vertical .link-list-detail ul li{
+        margin-bottom: 0.75rem;
+    }    
+}
+
+/* header link list css */ 

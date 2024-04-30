@@ -5,13 +5,17 @@
       "id": "default",
       "components": [
         {
-          "title": "Text",
-          "id": "text",
+          "title": "Copy Text",
+          "id": "copy_text",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
+                "template": {
+                  "name": "Copy Text",
+                  "model": "copy_text",
+                  "filter": "copy_text"
+                }
               }
             }
           }
@@ -41,13 +45,16 @@
           }
         },
         {
-          "title": "Button",
+          "title": "Button/Link",
           "id": "button",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
-                "template": {}
+                "template": {
+                  "name": "Button/Link",
+                  "model": "button"
+                }
               }
             }
           }
@@ -73,6 +80,27 @@
       ]
     },
     {
+      "title": "Flexible Width Sections",
+      "id": "flexible-width-sections",
+      "components": [
+        {
+          "title": "Flexible Width Section",
+          "id": "flexible-width-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name":"Flexible Width Section",
+                  "model":"flexible-width-section"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "title": "Default Blocks",
       "id": "default_blocks",
       "components": [
@@ -84,8 +112,9 @@
               "page": {
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
-                  "columns": "2",
-                  "rows": "1"
+                  "columns": 2,
+                  "rows": 1,
+                  "classes":"center"
                 }
               }
             }
@@ -139,19 +168,19 @@
       ]
     },
     {
-      "title": "BMW blocks",
+      "title": "BMW Blocks",
       "id": "bmw_blocks",
       "components": [
         {
-          "title": "BMW-Iframe",
-          "id": "BMW-Iframe",
+          "title": "iFrame",
+          "id": "iframe",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "BMW-Iframe",
-                  "model": "BMW-Iframe"
+                  "name": "iFrame",
+                  "model": "iframe"
                 }
               }
             }
@@ -167,84 +196,29 @@
                 "template": {
                   "name": "text-image",
                   "model": "text-image",
-                  "fileReference": "/content/dam/metafox/placeholder_image.png"
+                  "fileReference": "/content/dam/metafox/placeholder_image.png",
+                  "text": "Kindly edit the content here !",
+                  "imagePosition": "left"
                 }
               }
             }
           }
         },
         {
-          "title": "text-image-vertical",
-          "id": "text-image-vertical",
+          "title": "Text-Image-v2",
+          "id": "text-image-v2",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "text-image-vertical",
-                  "model": "text-image-vertical"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Custom Text Area",
-          "id": "custom-text-area",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "custom-text-area",
-                  "model": "custom-text-area"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "BMW-logo",
-          "id": "BMW-logo",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "BMW-logo",
-                  "model": "BMW-logo"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "horizontal-link-text",
-          "id": "horizontal-link-text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "horizontal-link-text",
-                  "model": "horizontal-link-text",
-                  "filter": "horizontal-link-text"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "vertical-link-text",
-          "id": "vertical-link-text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "vertical-link-text",
-                  "model": "vertical-link-text",
-                  "filter": "vertical-link-text"
+                  "name": "text-image-v2",
+                  "model": "text-image-v2",
+                  "bg_fileReference": "/content/dam/metafox/placeholder_image.png",
+                  "bg_fileReferenceAlt": "Alt text",
+                  "classes": "Left",
+                  "fg_summary": "Kindly edit the Summary here !",
+                  "fg_details": "Kindly edit the content here !"
                 }
               }
             }
@@ -258,9 +232,13 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "icon-link-list",
+                  "name": "Icon Link List",
                   "model": "icon-link-list",
-                  "filter": "icon-link-list"
+                  "filter": "icon-link-list",
+                  "icon": {
+                    "name": "icon",
+                    "model": "icon"
+                  }
                 }
               }
             }
@@ -274,7 +252,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "icon",
+                  "name": "Icon",
                   "model": "icon"
                 }
               }
@@ -282,14 +260,14 @@
           }
         },
         {
-          "title": "copyright",
+          "title": "Copyright",
           "id": "copyright",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "copyright",
+                  "name": "Copyright",
                   "model": "copyright"
                 }
               }
@@ -310,28 +288,198 @@
               }
             }
           }
+        },
+        {
+          "title": "Menu Flyout",
+          "id": "menu-flyout",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Menu Flyout",
+                  "model": "menu-flyout",
+                  "filter": "menu-flyout"
+                }                
+              }
+            }
+          }
+        },
+        {
+          "title": "Link List",
+          "id": "link-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Link List",
+                  "model": "link-list",
+                  "filter": "link-list",
+                  "linkListClassname":"link-list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Menu Link",
+          "id": "menu-link",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Menu Link",
+                  "model": "menu-link"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video",
+          "id": "video",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "video",
+                  "model": "video"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Logo",
+          "id": "logo",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Logo",
+                  "model": "logo"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Subnavigation Text",
+          "id": "subnavigation-text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Subnavigation Text",
+                  "model": "subnavigation-text",
+                  "filter": "subnavigation-text"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Menu Teaser",
+          "id": "menu-teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Menu Teaser",
+                  "model": "menu-teaser",
+                  "filter": "menu-teaser",
+                  "menuTeaserClassname":"menu-teaser"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Multicontent Gallery",
+          "id": "multicontent-gallery",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Multicontent Gallery",
+                  "model": "multicontent-gallery",
+                  "filter": "multicontent-gallery",
+                  "video-slide": {
+                    "name": "Video Slide",
+                    "model": "video-slide",
+                    "filter": "video-slide",
+                    "videoSlideClassname":"video-slide",
+                    "videoSlideHeadlineType":"h4",
+                    "videoSlideLoopVideo":true,
+                    "videoSlideAutoplay":true,
+                    "videoSlideButtonStyling":"linkButton"
+                  },
+                  "image-slide": {
+                    "name": "Image Slide",
+                    "model": "image-slide",
+                    "filter": "image-slide",
+                    "imageSlideClassname":"image-slide",
+                    "imageSlideHeadlineType":"h4",
+                    "imageSlideButtonStyling":"linkButton"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video Slide",
+          "id": "video-slide",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Video Slide",
+                  "model": "video-slide",
+                  "filter": "video-slide",
+                  "videoSlideClassname":"video-slide",
+                  "videoSlideHeadlineType":"h4",
+                  "videoSlideLoopVideo":true,
+                  "videoSlideAutoplay":true,
+                  "videoSlideButtonStyling":"linkButton"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Image Slide",
+          "id": "image-slide",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Image Slide",
+                  "model": "image-slide",
+                  "filter": "image-slide",
+                  "imageSlideClassname":"image-slide",
+                  "imageSlideHeadlineType":"h4",
+                  "imageSlideButtonStyling":"linkButton"
+                }
+              }
+            }
+          }
         }
       ]
     },
     {
       "title": "BMW Footer",
       "id": "bmw_footer_blocks",
-      "components": [
-        {
-          "title": "Footer Text",
-          "id": "footer-text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "footer-text",
-                  "model": "footer-text"
-                }
-              }
-            }
-          }
-        },
+      "components": [        
         {
           "title": "Footer Section",
           "id": "footer-section",
@@ -340,8 +488,31 @@
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "footer-section",
-                  "model": "footer-section"
+                  "name": "Footer Section",
+                  "model": "footer-section",
+                  "filter": "footer-section"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "BMW Header",
+      "id": "bmw_header_blocks",
+      "components": [
+        {
+          "title": "Header Section",
+          "id": "header-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Header Section",
+                  "model": "header-section",
+                  "filter": "header-section"
                 }
               }
             }

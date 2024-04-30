@@ -29,31 +29,4 @@ export default async function decorate(block) {
   }
 
   block.append(footer);
-  let viewportWidth = window.innerWidth;
-  window.addEventListener('resize', () => {
-    viewportWidth = window.innerWidth;
-  });
-
-  function toggleClass(element) {
-    if (element.classList.contains('title-expanded-mobile')) {
-      element.classList.remove('title-expanded-mobile');
-    } else {
-      element.classList.add('title-expanded-mobile');
-    }
-  }
-  const accordionHeaders = document.querySelectorAll('.vertical-link-text h3');
-  if (viewportWidth < 768) {
-    accordionHeaders.forEach((header) => {
-      header.addEventListener('click', (event) => {
-        event.preventDefault();
-        const listItem = header.nextElementSibling;
-        toggleClass(header);
-        if (listItem.style.display === 'none' || listItem.style.display === '') {
-          listItem.style.display = 'block';
-        } else {
-          listItem.style.display = 'none';
-        }
-      });
-    });
-  }
 }

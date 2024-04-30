@@ -1,0 +1,44 @@
+main .section.iframe-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  main .iframe-container > div {
+    max-width: unset;
+    
+  }
+  
+  .iframe-container{
+    position: relative;
+  }
+  
+  .loader {
+    border: 10px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  
+  }

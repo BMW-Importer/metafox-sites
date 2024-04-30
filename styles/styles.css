@@ -20,18 +20,17 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --medium-text-color:#4d4d4d;
   --light-border-color: #666;
   --light-text-color: #262626;
   --light-link-hover-color: #1c69d4;
   --light-grey: #f6f6f6;
-  --light-bbb: #bbb;
-
-  /* fonts */
-
-  /* --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
-  */
+  --light-bbb: #bbb;  
   --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
+  --icon-font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
+
+  /* base font size */
+  --base-font-size: 16px;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -57,6 +56,11 @@
 
   /* maximum width */
   --max-component-width:1920px;
+
+  /* section padding */
+  --section-mobile-padding:24px;
+  --section-tablet-padding:48px;
+  --section-desktop-padding:96px;
 }
 
 
@@ -72,7 +76,20 @@
 }
 
 body.appear {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-size: var(--base-font-size);
+}
+
+body {
+  display: none;
+  background-color: var(--background-color);
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -122,7 +139,7 @@ main pre {
 }
 
 /* links */
-a,b,strong {
+a,b, body strong {
   font-weight: 700;
 }
 
@@ -191,14 +208,133 @@ button:disabled, button:disabled:hover {
   cursor: unset;
 }
 
-a.button.secondary, button.secondary {
-  background-color: unset;
-  border: 1px solid currentcolor;
-  color: var(--text-color)
+a.button.ghost-dark {
+  background-color: transparent;
+  border: 1px solid var(--light-text-color);
+  color: var(--light-text-color);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  font-family: var(--fixed-font-family);
+  text-align: center;
+  padding: .25rem;
+  min-height: 3.334rem;
+  align-content: center;
+  text-rendering: optimizespeed;
+  margin-bottom: 0;
 }
 
-a.button.secondary:hover {
-  border: 2px solid currentcolor;
+a.button.ghost-dark.button-fixed-width {
+  width: auto;
+  min-width: auto;
+  white-space: normal;
+}
+
+a.button.ghost-dark-flex.button-flex-width {
+  max-width: 75vw;
+  width: auto;
+}
+
+a.button.ghost-dark:hover,
+a.button.ghost-dark-flex:hover {
+  border: 2px solid var(--text-color);
+  font-weight: bold;
+}
+
+a.button.hyperlink {
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: rgb(38 38 38 / 100%);
+  font-weight: 700;
+  font-family: var(--fixed-font-family);
+  margin-bottom: 0;
+}
+
+.align-icon {
+  display: flex;
+}
+
+a.button.hyperlink:hover,
+.align-icon-hover{
+  color: var(--link-hover-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icon-gt::before {
+  font-size: 1.5rem;
+  font-weight: 500;
+  word-wrap: normal;
+  font-feature-settings: "liga";
+  content: attr(data-icon);
+  direction: ltr;
+  display: block;
+  font-style: normal;
+  font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
+  height: 1em;
+  line-height: 1;
+  outline: 1px solid transparent;
+  text-align: left;
+  text-rendering: optimizelegibility;
+  text-transform: none;
+  white-space: nowrap;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.align-icon > .align-center {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.button-container.button-align-right > .align-icon {
+  justify-content: end;
+}
+
+.button-container.button-align-left > .align-icon {
+  justify-content: left;
+}
+
+.button-container.button-align-center > .align-icon {
+  justify-content: center;
+}
+
+.section.alignment-center > div.default-content-wrapper > p,
+.section.alignment-center > div.default-content-wrapper > h1,
+.section.alignment-center > div.default-content-wrapper > h2,
+.section.alignment-center > div.default-content-wrapper > h3,
+.section.alignment-center > div.default-content-wrapper > h4,
+.section.alignment-center > div.default-content-wrapper > h5,
+.section.alignment-center > div.default-content-wrapper > h6 {
+  text-align: center;
+}
+
+.section.alignment-left > div.default-content > p,
+.section.alignment-left > div.default-content-wrapper > h1,
+.section.alignment-left > div.default-content-wrapper > h2,
+.section.alignment-left > div.default-content-wrapper > h3,
+.section.alignment-left > div.default-content-wrapper > h4,
+.section.alignment-left > div.default-content-wrapper > h5,
+.section.alignment-left > div.default-content-wrapper > h6 {
+  text-align: left;
+}
+
+.section.alignment-right > div.default-content-wrapper > p,
+.section.alignment-right > div.default-content-wrapper > h1,
+.section.alignment-right > div.default-content-wrapper > h2,
+.section.alignment-right > div.default-content-wrapper > h3,
+.section.alignment-right > div.default-content-wrapper > h4,
+.section.alignment-right > div.default-content-wrapper > h5,
+.section.alignment-right > div.default-content-wrapper > h6 {
+  text-align: right;
+}
+
+p.button-container
+{
+  margin-bottom: 0;
 }
 
 main img {
@@ -220,18 +356,115 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  max-width: var(--max-component-width);
+  padding: 20px var(--section-mobile-padding);
+}
+
+/* tablet */
+@media (width >= 768px){
+  main .section {
+    padding: 20px var(--section-tablet-padding);
+  }
+}
+
+@media (width >= 768px) and (width < 1280px) {
+  a.button.ghost-dark
+  {
+    margin-top: 0.5rem;
+    background-color: transparent;
+    border: 1px solid var(--light-text-color);
+    color: var(--light-text-color);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: var(--fixed-font-family);
+    text-align: center;
+    padding: .25rem;
+    min-height: 3.334rem;
+    align-content: center;
+    text-rendering: optimizespeed;
+    margin-bottom: 0;
+  }
+
+  a.button.hyperlink {
+    background: transparent;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: rgb(38 38 38 / 100%);
+    font-weight: 700;
+    font-family: var(--fixed-font-family);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .align-icon > .align-center {
+    align-self: center;
+    margin-top: 0.5rem;
+  }
+}
+
+/* desktop */
+@media (width >= 1280px){
+  main .section {
+    padding: 20px var(--section-desktop-padding);
+  }
+
+  .appear.white-background main .section {
+    padding: 0;
+  }
+  
+  .appear.white-background main .section.columns-container .default-content-wrapper p {
+    margin: 0
+  }
+}
+
+/* large-desktop */
+@media (width >= 1920px){
+  main .section {   
+    max-width: 100vw;
+    padding-left: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+    padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
+  }
 }
 
 /* mobile */
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
+@media (width >= 360px) and (width < 768px) {
+  a.button.ghost-dark
+  {
+    margin-top: 0.5rem;
+    background-color: transparent;
+    border: 1px solid var(--light-text-color);
+    color: var(--light-text-color);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: var(--fixed-font-family);
+    text-align: center;
+    padding: .25rem;
+    min-height: 3.334rem;
+    align-content: center;
+    text-rendering: optimizespeed;
+    margin-bottom: 0;
   }
-  
+
+  a.button.hyperlink {
+    background: transparent;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: rgb(38 38 38 / 100%);
+    font-weight: 700;
+    font-family: var(--fixed-font-family);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .align-icon > .align-center {
+    align-self: center;
+    margin-top: 0.5rem;
+  }
 }
-
-
 
 /* section metadata */
 main .section.light,

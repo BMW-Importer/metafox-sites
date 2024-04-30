@@ -1,0 +1,60 @@
+name: Call WDH API
+ 
+on:
+  schedule:
+    - cron: '0 */8 * * *'
+
+permissions: write-all
+ 
+jobs:
+  make_api_call:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+         fetch-depth: 0
+         token: ${{ secrets.BOT_ACCESS_TOKEN }}
+
+      - name: Setup Git
+        run: |
+           git config --global user.name 'Call WDH Github Action'
+           git config --global user.email 'aaditya.batra@accenture.com'
+           
+      - name: Call API
+        id: api_call
+        run: |
+          status_code=$(curl -s -o response_new.json -w "%{http_code}" "https://productdata-int1.api.bmw//pdh/categoryhub/v1.0/all/bmw+marketB4R1+bmw_rs+sr_RS/latest" \
+          -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" \
+          -H "accept-language: en-US,en;q=0.9" \
+          -H "cache-control: no-cache" \
+          -H "custom-header: ${{ secrets.API_TOKEN }}")
+          echo "Status Code: $status_code"
+          echo "::set-output name=status::$status_code"
+
+      - name: Display Response
+        run: cat response_new.json
+
+      - name: Check if response has changed
+        id: file_check
+        if: steps.api_call.outputs.status == '200'
+        run: |
+         if ! cmp -s response_new.json response.json; then
+           echo "Changes detected, updating file"
+           mv response_new.json response.json
+           echo "::set-output name=modified::true"
+         
+         else
+           echo "No change detected"
+           rm response_new.json
+           echo "::set-output name=modified::false"
+         fi
+         
+      - name: Commit and Push if changes
+        if: steps.file_check.outputs.modified == 'true'
+        run: |
+          git add response.json
+          git commit -m "Updates response.json with new API data"
+          git push

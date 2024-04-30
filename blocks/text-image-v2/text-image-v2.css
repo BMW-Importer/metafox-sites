@@ -1,18 +1,18 @@
-main .text-image-vertical-container > div {
+main .text-image-v2-container > div {
   max-width: unset;
 }
   
-main .text-image-vertical-container {
+main .text-image-v2-container {
   padding: 30px;
 }
 
-.text-image-vertical {
+.text-image-v2 {
   position: relative;
   padding: 32px;
   min-height: 300px;
 }
 
-.text-image-vertical p {
+.text-image-v2 p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +20,7 @@ main .text-image-vertical-container {
 }
 
 /**
-.text-image-vertical picture {
+.text-image-v2 picture {
   max-width: 600px;
   position: absolute;
   z-index: -1;
@@ -29,19 +29,19 @@ main .text-image-vertical-container {
   box-sizing: border-box;
 }
 
-.text-image img {
+.text-image-v2 img {
   object-fit: cover;
   width: 50%;
   height: 100%;
 }
 
 **/
-.text-image-vertical img {
+.text-image-v2 img {
   width: 800px;
   height: 350px;
 }
 
-.text-image-vertical .foreground .text{
+.text-image-v2 .foreground .text{
   font-weight: 900;
   font-size: xxx-large;
 }

@@ -1,3 +1,7 @@
+.columns {
+margin-bottom: 48px;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -19,8 +23,69 @@
   display: block;
 }
 
-.columns .button-container {
+.columns.left .button-container,
+.columns.left
+{
+  text-align: left;
+}
+
+.columns.right .button-container,
+.columns.right
+{
+  text-align: right;
+}
+
+.columns.center .button-container,
+.columns.center
+{
   text-align: center;
+}
+
+.columns.left .button-container> .align-icon {
+  justify-content: left;
+}
+
+.columns.right .button-container > .align-icon {
+  justify-content: right;
+}
+
+.columns.center .button-container > .align-icon {
+  justify-content: center;
+}
+
+.columns-wrapper > .columns.right > div > div > h1, 
+.columns-wrapper > .columns.right > div > div > h2, 
+.columns-wrapper > .columns.right > div > div > h3, 
+.columns-wrapper > .columns.right > div > div > h4, 
+.columns-wrapper > .columns.right > div > div > h5, 
+.columns-wrapper > .columns.right > div > div > h6 {
+  text-align: right;
+}
+
+.columns-wrapper > .columns.left > div > div > h1, 
+.columns-wrapper > .columns.left > div > div > h2, 
+.columns-wrapper > .columns.left > div > div > h3, 
+.columns-wrapper > .columns.left > div > div > h4, 
+.columns-wrapper > .columns.left > div > div > h5, 
+.columns-wrapper > .columns.left > div > div > h6 {
+  text-align: left;
+}
+
+.columns-wrapper > .columns.center > div > div > h1, 
+.columns-wrapper > .columns.center > div > div > h2, 
+.columns-wrapper > .columns.center > div > div > h3, 
+.columns-wrapper > .columns.center > div > div > h4, 
+.columns-wrapper > .columns.center > div > div > h5, 
+.columns-wrapper > .columns.center > div > div > h6 {
+  text-align: center;
+}
+
+.columns .image {
+    margin-bottom: 24px;
+}
+
+.columns .button {
+    margin-top: 32px;
 }
 
 @media (width >= 900px) {
@@ -34,4 +99,13 @@
     flex: 1;
     order: unset;
   }
+
+  .columns .image {
+    margin-bottom: 20px;
+  }
+
+  .columns .button {
+    margin-top: 24px;
+  }
+
 }

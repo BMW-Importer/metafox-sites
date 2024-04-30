@@ -1,8 +1,9 @@
 {
   "mappings": [
     "/content/metafox/:/",
-    "/content/metafox/metadata:/metadata.json",
-    "/content/metafox/placeholders:/placeholders.json"
+    "/content/metafox/index/price-list:/auto-price-list.json",
+    "/content/metafox/index/placeholders:/placeholders.json",
+    "/content/dam/metafox/:/assets/"
 ],
-  "includes": ["/content/metafox/"]
+  "includes": ["/content/metafox/","/content/dam/metafox/"]
 }

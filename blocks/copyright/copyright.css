@@ -1,1 +1,45 @@
-/* styles copyright */
+.copyright-wrapper .copyright {
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    color: var(--light-text-color);
+}
+
+.copyright-wrapper .copyright .copy-right-content div {
+    display: flex;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.copyright-wrapper .copyright .copy-right-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.copyright-wrapper .copyright .copy-right-content::before{
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    transform: translate(25%, -50%);
+    content: "©";
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+/* tablet */
+@media (width >= 768px) {
+    .copyright-wrapper .copyright .copy-right-content {
+        padding: 0 0.75rem;
+    }    
+}
+
+/* desktop */
+@media (width >= 1280px) {
+    .copyright-wrapper .copyright .copy-right-content {
+        padding: 0 0.75rem;
+        padding-left: 0;
+    }    
+}

@@ -1,0 +1,1211 @@
+{
+  "models" : [ {
+    "modelCode" : "7K11",
+    "description" : "116i",
+    "modelRangeCode" : "F40",
+    "shortName" : "116i",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7K31",
+    "description" : "118i",
+    "modelRangeCode" : "F40",
+    "shortName" : "118i",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7K51",
+    "description" : "120i",
+    "modelRangeCode" : "F40",
+    "shortName" : "120i",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7L11",
+    "description" : "M135i xDrive",
+    "modelRangeCode" : "F40",
+    "shortName" : "M135i xDrive",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7L51",
+    "description" : "128ti",
+    "modelRangeCode" : "F40",
+    "shortName" : "128ti",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7M71",
+    "description" : "116d",
+    "modelRangeCode" : "F40",
+    "shortName" : "116d",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7M91",
+    "description" : "118d",
+    "modelRangeCode" : "F40",
+    "shortName" : "118d",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7N31",
+    "description" : "120d",
+    "modelRangeCode" : "F40",
+    "shortName" : "120d",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "7N51",
+    "description" : "120d xDrive",
+    "modelRangeCode" : "F40",
+    "shortName" : "120d xDrive",
+    "shortRangeName" : "F40",
+    "marketingSeries" : "1",
+    "seriesCode" : "1"
+  }, {
+    "modelCode" : "11CM",
+    "description" : "220i",
+    "modelRangeCode" : "G42",
+    "shortName" : "220i",
+    "shortRangeName" : "G42",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "11CN",
+    "description" : "220d",
+    "modelRangeCode" : "G42",
+    "shortName" : "220d",
+    "shortRangeName" : "G42",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "51CM",
+    "description" : "M240i xDrive",
+    "modelRangeCode" : "G42",
+    "shortName" : "M240i xDrive",
+    "shortRangeName" : "G42",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "61CM",
+    "description" : "218i",
+    "modelRangeCode" : "G42",
+    "shortName" : "218i",
+    "shortRangeName" : "G42",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "21CM",
+    "description" : "230i",
+    "modelRangeCode" : "G42",
+    "shortName" : "230i",
+    "shortRangeName" : "G42",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "41CM",
+    "description" : "M240i",
+    "modelRangeCode" : "G42",
+    "shortName" : "M240i",
+    "shortRangeName" : "G42",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "21BX",
+    "description" : "218i",
+    "modelRangeCode" : "U06",
+    "shortName" : "218i",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "21BY",
+    "description" : "218d",
+    "modelRangeCode" : "U06",
+    "shortName" : "218d",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "31BX",
+    "description" : "223i",
+    "modelRangeCode" : "U06",
+    "shortName" : "223i",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "71BX",
+    "description" : "220i",
+    "modelRangeCode" : "U06",
+    "shortName" : "220i",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "11BX",
+    "description" : "216i",
+    "modelRangeCode" : "U06",
+    "shortName" : "216i",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "51BX",
+    "description" : "230e xDrive",
+    "modelRangeCode" : "U06",
+    "shortName" : "230e xDrive",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "41BX",
+    "description" : "223i xDrive",
+    "modelRangeCode" : "U06",
+    "shortName" : "223i xDrive",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "51BY",
+    "description" : "223d xDrive",
+    "modelRangeCode" : "U06",
+    "shortName" : "223d xDrive",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "21EA",
+    "description" : "225e xDrive",
+    "modelRangeCode" : "U06",
+    "shortName" : "225e xDrive",
+    "shortRangeName" : "U06",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "11AK",
+    "description" : "218i",
+    "modelRangeCode" : "F44",
+    "shortName" : "218i",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "11AL",
+    "description" : "M235i xDrive",
+    "modelRangeCode" : "F44",
+    "shortName" : "M235i xDrive",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "11AM",
+    "description" : "216d",
+    "modelRangeCode" : "F44",
+    "shortName" : "216d",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "31AK",
+    "description" : "220i",
+    "modelRangeCode" : "F44",
+    "shortName" : "220i",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "31AM",
+    "description" : "218d",
+    "modelRangeCode" : "F44",
+    "shortName" : "218d",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "51AL",
+    "description" : "220i xDrive",
+    "modelRangeCode" : "F44",
+    "shortName" : "220i xDrive",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "51AM",
+    "description" : "220d",
+    "modelRangeCode" : "F44",
+    "shortName" : "220d",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "71AM",
+    "description" : "220d xDrive",
+    "modelRangeCode" : "F44",
+    "shortName" : "220d xDrive",
+    "shortRangeName" : "F44",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "11DM",
+    "description" : "M2",
+    "modelRangeCode" : "G87",
+    "shortName" : "M2",
+    "shortRangeName" : "G87",
+    "marketingSeries" : "2",
+    "seriesCode" : "2"
+  }, {
+    "modelCode" : "61FF",
+    "description" : "330i",
+    "modelRangeCode" : "G20",
+    "shortName" : "330i",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "51FF",
+    "description" : "320i",
+    "modelRangeCode" : "G20",
+    "shortName" : "320i",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "61FU",
+    "description" : "M340d xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "M340d xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "51CD",
+    "description" : "330d",
+    "modelRangeCode" : "G20",
+    "shortName" : "330d",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "71FF",
+    "description" : "320i xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "320i xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "31FU",
+    "description" : "320d",
+    "modelRangeCode" : "G20",
+    "shortName" : "320d",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "41FU",
+    "description" : "320d xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "320d xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "41FF",
+    "description" : "M340i xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "M340i xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "11FS",
+    "description" : "320e",
+    "modelRangeCode" : "G20",
+    "shortName" : "320e",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "51FU",
+    "description" : "330d xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "330d xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "81FF",
+    "description" : "330i xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "330i xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "21FS",
+    "description" : "330e",
+    "modelRangeCode" : "G20",
+    "shortName" : "330e",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "21FF",
+    "description" : "318i",
+    "modelRangeCode" : "G20",
+    "shortName" : "318i",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "21FU",
+    "description" : "318d",
+    "modelRangeCode" : "G20",
+    "shortName" : "318d",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "31FS",
+    "description" : "330e xDrive",
+    "modelRangeCode" : "G20",
+    "shortName" : "330e xDrive",
+    "shortRangeName" : "G20",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "11GB",
+    "description" : "M3 Competition M xDrive",
+    "modelRangeCode" : "G81",
+    "shortName" : "M3 Competition M xDrive",
+    "shortRangeName" : "G81",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "11FZ",
+    "description" : "318d",
+    "modelRangeCode" : "G21",
+    "shortName" : "318d",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "11FY",
+    "description" : "318i",
+    "modelRangeCode" : "G21",
+    "shortName" : "318i",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "21FZ",
+    "description" : "320d",
+    "modelRangeCode" : "G21",
+    "shortName" : "320d",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "21FY",
+    "description" : "320i",
+    "modelRangeCode" : "G21",
+    "shortName" : "320i",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "31FZ",
+    "description" : "320d xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "320d xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "41FY",
+    "description" : "320e",
+    "modelRangeCode" : "G21",
+    "shortName" : "320e",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "51FZ",
+    "description" : "330d xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "330d xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "41FZ",
+    "description" : "330d",
+    "modelRangeCode" : "G21",
+    "shortName" : "330d",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "71CY",
+    "description" : "330e xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "330e xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "71FY",
+    "description" : "330i xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "330i xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "81CY",
+    "description" : "330e",
+    "modelRangeCode" : "G21",
+    "shortName" : "330e",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "61FZ",
+    "description" : "M340d xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "M340d xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "81FY",
+    "description" : "M340i xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "M340i xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "51FY",
+    "description" : "320e xDrive",
+    "modelRangeCode" : "G21",
+    "shortName" : "320e xDrive",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "61FY",
+    "description" : "330i",
+    "modelRangeCode" : "G21",
+    "shortName" : "330i",
+    "shortRangeName" : "G21",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "31AY",
+    "description" : "M3 Competition",
+    "modelRangeCode" : "G80",
+    "shortName" : "M3 Competition",
+    "shortRangeName" : "G80",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "41AY",
+    "description" : "M3 Competition M xDrive",
+    "modelRangeCode" : "G80",
+    "shortName" : "M3 Competition M xDrive",
+    "shortRangeName" : "G80",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "51AY",
+    "description" : "M3",
+    "modelRangeCode" : "G80",
+    "shortName" : "M3",
+    "shortRangeName" : "G80",
+    "marketingSeries" : "3",
+    "seriesCode" : "3"
+  }, {
+    "modelCode" : "11AV",
+    "description" : "420i",
+    "modelRangeCode" : "G26",
+    "shortName" : "420i",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "31AW",
+    "description" : "i4 M50",
+    "modelRangeCode" : "G26",
+    "shortName" : "i4 M50",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "71AW",
+    "description" : "i4 eDrive40",
+    "modelRangeCode" : "G26",
+    "shortName" : "i4 eDrive40",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "11AW",
+    "description" : "M440i xDrive",
+    "modelRangeCode" : "G26",
+    "shortName" : "M440i xDrive",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "21AX",
+    "description" : "420d",
+    "modelRangeCode" : "G26",
+    "shortName" : "420d",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "31AX",
+    "description" : "420d xDrive",
+    "modelRangeCode" : "G26",
+    "shortName" : "420d xDrive",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "61AV",
+    "description" : "430i",
+    "modelRangeCode" : "G26",
+    "shortName" : "430i",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "71AV",
+    "description" : "430i xDrive",
+    "modelRangeCode" : "G26",
+    "shortName" : "430i xDrive",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "61AW",
+    "description" : "M440i",
+    "modelRangeCode" : "G26",
+    "shortName" : "M440i",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "41AW",
+    "description" : "i4 eDrive35",
+    "modelRangeCode" : "G26",
+    "shortName" : "i4 eDrive35",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "51AX",
+    "description" : "430d xDrive",
+    "modelRangeCode" : "G26",
+    "shortName" : "430d xDrive",
+    "shortRangeName" : "G26",
+    "marketingSeries" : "4",
+    "seriesCode" : "4"
+  }, {
+    "modelCode" : "11FL",
+    "description" : "520d",
+    "modelRangeCode" : "G60",
+    "shortName" : "520d",
+    "shortRangeName" : "G60",
+    "marketingSeries" : "5",
+    "seriesCode" : "5"
+  }, {
+    "modelCode" : "21FL",
+    "description" : "520d xDrive",
+    "modelRangeCode" : "G60",
+    "shortName" : "520d xDrive",
+    "shortRangeName" : "G60",
+    "marketingSeries" : "5",
+    "seriesCode" : "5"
+  }, {
+    "modelCode" : "11FJ",
+    "description" : "520i",
+    "modelRangeCode" : "G60",
+    "shortName" : "520i",
+    "shortRangeName" : "G60",
+    "marketingSeries" : "5",
+    "seriesCode" : "5"
+  }, {
+    "modelCode" : "31FK",
+    "description" : "i5 eDrive40",
+    "modelRangeCode" : "G60",
+    "shortName" : "i5 eDrive40",
+    "shortRangeName" : "G60",
+    "marketingSeries" : "5",
+    "seriesCode" : "5"
+  }, {
+    "modelCode" : "21EJ",
+    "description" : "740d xDrive",
+    "modelRangeCode" : "G70",
+    "shortName" : "740d xDrive",
+    "shortRangeName" : "G70",
+    "marketingSeries" : "7",
+    "seriesCode" : "7"
+  }, {
+    "modelCode" : "51EJ",
+    "description" : "i7 xDrive60",
+    "modelRangeCode" : "G70",
+    "shortName" : "i7 xDrive60",
+    "shortRangeName" : "G70",
+    "marketingSeries" : "7",
+    "seriesCode" : "7"
+  }, {
+    "modelCode" : "81EH",
+    "description" : "i7 M70 xDrive",
+    "modelRangeCode" : "G70",
+    "shortName" : "i7 M70 xDrive",
+    "shortRangeName" : "G70",
+    "marketingSeries" : "7",
+    "seriesCode" : "7"
+  }, {
+    "modelCode" : "51EH",
+    "description" : "M760e xDrive",
+    "modelRangeCode" : "G70",
+    "shortName" : "M760e xDrive",
+    "shortRangeName" : "G70",
+    "marketingSeries" : "7",
+    "seriesCode" : "7"
+  }, {
+    "modelCode" : "41EH",
+    "description" : "750e xDrive",
+    "modelRangeCode" : "G70",
+    "shortName" : "750e xDrive",
+    "shortRangeName" : "G70",
+    "marketingSeries" : "7",
+    "seriesCode" : "7"
+  }, {
+    "modelCode" : "41EJ",
+    "description" : "i7 eDrive50",
+    "modelRangeCode" : "G70",
+    "shortName" : "i7 eDrive50",
+    "shortRangeName" : "G70",
+    "marketingSeries" : "7",
+    "seriesCode" : "7"
+  }, {
+    "modelCode" : "AE21",
+    "description" : "840i",
+    "modelRangeCode" : "G15",
+    "shortName" : "840i",
+    "shortRangeName" : "G15",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "AE41",
+    "description" : "840i xDrive",
+    "modelRangeCode" : "G15",
+    "shortName" : "840i xDrive",
+    "shortRangeName" : "G15",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "BC41",
+    "description" : "M850i xDrive",
+    "modelRangeCode" : "G15",
+    "shortName" : "M850i xDrive",
+    "shortRangeName" : "G15",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "BC61",
+    "description" : "840d xDrive",
+    "modelRangeCode" : "G15",
+    "shortName" : "840d xDrive",
+    "shortRangeName" : "G15",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "DZ21",
+    "description" : "840i",
+    "modelRangeCode" : "G14",
+    "shortName" : "840i",
+    "shortRangeName" : "G14",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "DZ41",
+    "description" : "840i xDrive",
+    "modelRangeCode" : "G14",
+    "shortName" : "840i xDrive",
+    "shortRangeName" : "G14",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "FY41",
+    "description" : "M850i xDrive",
+    "modelRangeCode" : "G14",
+    "shortName" : "M850i xDrive",
+    "shortRangeName" : "G14",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "FY61",
+    "description" : "840d xDrive",
+    "modelRangeCode" : "G14",
+    "shortName" : "840d xDrive",
+    "shortRangeName" : "G14",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "GV21",
+    "description" : "840i",
+    "modelRangeCode" : "G16",
+    "shortName" : "840i",
+    "shortRangeName" : "G16",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "GV41",
+    "description" : "840i xDrive",
+    "modelRangeCode" : "G16",
+    "shortName" : "840i xDrive",
+    "shortRangeName" : "G16",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "GV81",
+    "description" : "M850i xDrive",
+    "modelRangeCode" : "G16",
+    "shortName" : "M850i xDrive",
+    "shortRangeName" : "G16",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "GW01",
+    "description" : "840d xDrive",
+    "modelRangeCode" : "G16",
+    "shortName" : "840d xDrive",
+    "shortRangeName" : "G16",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "GV01",
+    "description" : "M8",
+    "modelRangeCode" : "F93",
+    "shortName" : "M8",
+    "shortRangeName" : "F93",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "AE01",
+    "description" : "M8",
+    "modelRangeCode" : "F92",
+    "shortName" : "M8",
+    "shortRangeName" : "F92",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "DZ01",
+    "description" : "M8",
+    "modelRangeCode" : "F91",
+    "shortName" : "M8",
+    "shortRangeName" : "F91",
+    "marketingSeries" : "8",
+    "seriesCode" : "8"
+  }, {
+    "modelCode" : "11CS",
+    "description" : "XM 50e",
+    "modelRangeCode" : "G09",
+    "shortName" : "XM 50e",
+    "shortRangeName" : "G09",
+    "marketingSeries" : "XM",
+    "seriesCode" : "XM"
+  }, {
+    "modelCode" : "21CS",
+    "description" : "XM",
+    "modelRangeCode" : "G09",
+    "shortName" : "XM",
+    "shortRangeName" : "G09",
+    "marketingSeries" : "XM",
+    "seriesCode" : "XM"
+  }, {
+    "modelCode" : "31CS",
+    "description" : "XM Label",
+    "modelRangeCode" : "G09",
+    "shortName" : "XM Label",
+    "shortRangeName" : "G09",
+    "marketingSeries" : "XM",
+    "seriesCode" : "XM"
+  }, {
+    "modelCode" : "11EG",
+    "description" : "X1 sDrive18d",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 sDrive18d",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "61EE",
+    "description" : "X1 xDrive23i",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 xDrive23i",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "61EF",
+    "description" : "iX1 xDrive30",
+    "modelRangeCode" : "U11",
+    "shortName" : "iX1 xDrive30",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "51EG",
+    "description" : "X1 xDrive23d",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 xDrive23d",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "11EE",
+    "description" : "X1 sDrive18i",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 sDrive18i",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "21EF",
+    "description" : "X1 xDrive25e",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 xDrive25e",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "41EG",
+    "description" : "X1 xDrive20d",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 xDrive20d",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "31EF",
+    "description" : "X1 xDrive30e",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 xDrive30e",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "31EE",
+    "description" : "X1 sDrive20i",
+    "modelRangeCode" : "U11",
+    "shortName" : "X1 sDrive20i",
+    "shortRangeName" : "U11",
+    "marketingSeries" : "X1",
+    "seriesCode" : "X1"
+  }, {
+    "modelCode" : "HF11",
+    "description" : "Z4 sDrive20i",
+    "modelRangeCode" : "G29",
+    "shortName" : "Z4 sDrive20i",
+    "shortRangeName" : "G29",
+    "marketingSeries" : "Z4",
+    "seriesCode" : "Z4"
+  }, {
+    "modelCode" : "HF31",
+    "description" : "Z4 sDrive30i",
+    "modelRangeCode" : "G29",
+    "shortName" : "Z4 sDrive30i",
+    "shortRangeName" : "G29",
+    "marketingSeries" : "Z4",
+    "seriesCode" : "Z4"
+  }, {
+    "modelCode" : "HF51",
+    "description" : "Z4 M40i",
+    "modelRangeCode" : "G29",
+    "shortName" : "Z4 M40i",
+    "shortRangeName" : "G29",
+    "marketingSeries" : "Z4",
+    "seriesCode" : "Z4"
+  }, {
+    "modelCode" : "11EC",
+    "description" : "X3 M",
+    "modelRangeCode" : "F97",
+    "shortName" : "X3 M",
+    "shortRangeName" : "F97",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "11BZ",
+    "description" : "X3 xDrive20d",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 xDrive20d",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "21DN",
+    "description" : "X3 M40d",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 M40d",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "21DP",
+    "description" : "X3 xDrive20i",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 xDrive20i",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "31DN",
+    "description" : "X3 sDrive20i",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 sDrive20i",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "51BZ",
+    "description" : "X3 sDrive18d",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 sDrive18d",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "51DP",
+    "description" : "X3 xDrive30i",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 xDrive30i",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "61DP",
+    "description" : "X3 xDrive30e",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 xDrive30e",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "81BZ",
+    "description" : "X3 xDrive30d",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 xDrive30d",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "81DP",
+    "description" : "X3 M40i",
+    "modelRangeCode" : "G01",
+    "shortName" : "X3 M40i",
+    "shortRangeName" : "G01",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "41DU",
+    "description" : "iX3 M Sport",
+    "modelRangeCode" : "G08",
+    "shortName" : "iX3 M Sport",
+    "shortRangeName" : "G08",
+    "marketingSeries" : "X3",
+    "seriesCode" : "X3"
+  }, {
+    "modelCode" : "21EC",
+    "description" : "X4 M",
+    "modelRangeCode" : "F98",
+    "shortName" : "X4 M",
+    "shortRangeName" : "F98",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "11DT",
+    "description" : "X4 xDrive20i",
+    "modelRangeCode" : "G02",
+    "shortName" : "X4 xDrive20i",
+    "shortRangeName" : "G02",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "31CA",
+    "description" : "X4 xDrive20d",
+    "modelRangeCode" : "G02",
+    "shortName" : "X4 xDrive20d",
+    "shortRangeName" : "G02",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "31DT",
+    "description" : "X4 xDrive30i",
+    "modelRangeCode" : "G02",
+    "shortName" : "X4 xDrive30i",
+    "shortRangeName" : "G02",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "41DT",
+    "description" : "X4 M40i",
+    "modelRangeCode" : "G02",
+    "shortName" : "X4 M40i",
+    "shortRangeName" : "G02",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "61CA",
+    "description" : "X4 xDrive30d",
+    "modelRangeCode" : "G02",
+    "shortName" : "X4 xDrive30d",
+    "shortRangeName" : "G02",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "81CA",
+    "description" : "X4 M40d",
+    "modelRangeCode" : "G02",
+    "shortName" : "X4 M40d",
+    "shortRangeName" : "G02",
+    "marketingSeries" : "X4",
+    "seriesCode" : "X4"
+  }, {
+    "modelCode" : "11ET",
+    "description" : "X5 M Competition",
+    "modelRangeCode" : "F95",
+    "shortName" : "X5 M Competition",
+    "shortRangeName" : "F95",
+    "marketingSeries" : "X5",
+    "seriesCode" : "X5"
+  }, {
+    "modelCode" : "41EU",
+    "description" : "X5 xDrive50e",
+    "modelRangeCode" : "G05",
+    "shortName" : "X5 xDrive50e",
+    "shortRangeName" : "G05",
+    "marketingSeries" : "X5",
+    "seriesCode" : "X5"
+  }, {
+    "modelCode" : "11EV",
+    "description" : "X5 xDrive30d",
+    "modelRangeCode" : "G05",
+    "shortName" : "X5 xDrive30d",
+    "shortRangeName" : "G05",
+    "marketingSeries" : "X5",
+    "seriesCode" : "X5"
+  }, {
+    "modelCode" : "21EU",
+    "description" : "X5 xDrive40i",
+    "modelRangeCode" : "G05",
+    "shortName" : "X5 xDrive40i",
+    "shortRangeName" : "G05",
+    "marketingSeries" : "X5",
+    "seriesCode" : "X5"
+  }, {
+    "modelCode" : "31EU",
+    "description" : "X5 M60i xDrive",
+    "modelRangeCode" : "G05",
+    "shortName" : "X5 M60i xDrive",
+    "shortRangeName" : "G05",
+    "marketingSeries" : "X5",
+    "seriesCode" : "X5"
+  }, {
+    "modelCode" : "21ET",
+    "description" : "X6 M Competition",
+    "modelRangeCode" : "F96",
+    "shortName" : "X6 M Competition",
+    "shortRangeName" : "F96",
+    "marketingSeries" : "X6",
+    "seriesCode" : "X6"
+  }, {
+    "modelCode" : "11EY",
+    "description" : "X6 xDrive30d M Sport",
+    "modelRangeCode" : "G06",
+    "shortName" : "X6 xDrive30d M Sport",
+    "shortRangeName" : "G06",
+    "marketingSeries" : "X6",
+    "seriesCode" : "X6"
+  }, {
+    "modelCode" : "31EX",
+    "description" : "X6 xDrive40i M Sport",
+    "modelRangeCode" : "G06",
+    "shortName" : "X6 xDrive40i M Sport",
+    "shortRangeName" : "G06",
+    "marketingSeries" : "X6",
+    "seriesCode" : "X6"
+  }, {
+    "modelCode" : "41EX",
+    "description" : "X6 M60i xDrive",
+    "modelRangeCode" : "G06",
+    "shortName" : "X6 M60i xDrive",
+    "shortRangeName" : "G06",
+    "marketingSeries" : "X6",
+    "seriesCode" : "X6"
+  }, {
+    "modelCode" : "31EM",
+    "description" : "X7 M60i xDrive",
+    "modelRangeCode" : "G07",
+    "shortName" : "X7 M60i xDrive",
+    "shortRangeName" : "G07",
+    "marketingSeries" : "X7",
+    "seriesCode" : "X7"
+  }, {
+    "modelCode" : "21EM",
+    "description" : "X7 xDrive40i",
+    "modelRangeCode" : "G07",
+    "shortName" : "X7 xDrive40i",
+    "shortRangeName" : "G07",
+    "marketingSeries" : "X7",
+    "seriesCode" : "X7"
+  }, {
+    "modelCode" : "21EN",
+    "description" : "X7 xDrive40d",
+    "modelRangeCode" : "G07",
+    "shortName" : "X7 xDrive40d",
+    "shortRangeName" : "G07",
+    "marketingSeries" : "X7",
+    "seriesCode" : "X7"
+  }, {
+    "modelCode" : "11CF",
+    "description" : "iX xDrive40",
+    "modelRangeCode" : "I20",
+    "shortName" : "iX xDrive40",
+    "shortRangeName" : "I20",
+    "marketingSeries" : "IX",
+    "seriesCode" : "IX"
+  }, {
+    "modelCode" : "21CF",
+    "description" : "iX xDrive50",
+    "modelRangeCode" : "I20",
+    "shortName" : "iX xDrive50",
+    "shortRangeName" : "I20",
+    "marketingSeries" : "IX",
+    "seriesCode" : "IX"
+  }, {
+    "modelCode" : "31CF",
+    "description" : "iX M60",
+    "modelRangeCode" : "I20",
+    "shortName" : "iX M60",
+    "shortRangeName" : "I20",
+    "marketingSeries" : "IX",
+    "seriesCode" : "IX"
+  } ]
+}

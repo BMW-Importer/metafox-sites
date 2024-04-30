@@ -41,7 +41,20 @@ main .text-image-container {
   height: 350px;
 }
 
-.text-image .foreground .text{
+.foreground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.text-image .foreground .text {
   font-weight: 900;
   font-size: xxx-large;
+}
+
+.textarea {
+  line-height:normal;
 }

@@ -1,0 +1,26 @@
+/* footer */
+footer .icon-link-list-container .icon{
+    margin-right: 0.75rem;
+    width: 1.75rem;
+    height: 2rem;
+}
+
+footer .icon-link-list-container {
+    padding-top: 32px;
+}
+
+footer .icon-link-list-container .icon .icon-container {
+    display: inline-flex;    
+}
+
+footer .icon-link-list-container .icon .icon-container img{
+    height: 1.75rem;
+    width: auto;
+}
+
+/* tablet */
+@media (width >= 768px){ 
+    footer .icon-link-list-container {
+        padding-top: 0;
+    }
+}
