@@ -118,7 +118,9 @@ function set_page_tracking(){
 }
 function set_ecid(){
   const iframeBlock = document.getElementById('bmwIframe');
-  const anchor = iframeBlock.src;
-  alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
+  const anchor = iframeBlock.src || '';
+  if(anchor){
+    alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
+  }
 }
 analyticsTracking();
