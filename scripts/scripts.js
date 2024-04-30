@@ -150,6 +150,9 @@ function launchVariables() {
   const scriptElement1 = document.createElement('script');
   scriptElement1.setAttribute('src', 'https://assets.adobedtm.com/5eef5b667374/31ec2769917a/launch-50aa95111531-development.min.js');
   headElement.appendChild(scriptElement1);
+  // const anchor = document.getElementById('bmwIframe').src;
+  // const url = new URL(anchor);
+  // alloy('appendIdentityToUrl', { url: anchor }).then((result) => { document.getElementById('bmwIframe').src = result.url; });
 }
 
 async function loadPage() {
