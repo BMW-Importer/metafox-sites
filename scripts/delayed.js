@@ -117,7 +117,8 @@ function set_page_tracking(){
     window.adobeDataLayer.push(page_tracking);
 }
 function set_ecid(){
-  const anchor = document.getElementById('bmwIframe').src;
-  alloy('appendIdentityToUrl', { url: anchor }).then(result => {document.getElementById('bmwIframe').src = result.url;});
+  const iframeBlock = document.getElementById('bmwIframe');
+  const anchor = iframeBlock.src;
+  alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
 }
 analyticsTracking();
