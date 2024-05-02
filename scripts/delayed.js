@@ -82,29 +82,10 @@ const page_tracking = {"page": {
 
 // add more delayed functionality here
 function analyticsTracking() {
-    await opt_in_info();
     set_page_tracking();
     set_ecid();
 }
-function opt_in_info(){
-  const adobeDtm = window.adobeDataLayer;
-  console.log(adobeDtm.version);
-  const d = new Date();
-  alloy('setConsent', {
-    consent: [{
-      standard: 'Adobe',
-      version: '2.0',
-      value: {
-        collect: {
-          val: 'y'
-        },
-        metadata: {
-          time: '2024-04-30T07:00:05-7:00'
-        }
-      }
-    }]
-  });
-}
+
 const dateTime = new Date();
 function set_page_tracking(){
   // adding page tracking properties
@@ -121,6 +102,7 @@ function set_page_tracking(){
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
     window.adobeDataLayer.push(page_tracking);
 }
+
 function set_ecid(){
   const iframeBlock = document.getElementById('bmwIframe');
   if(iframeBlock){
@@ -133,4 +115,5 @@ function set_ecid(){
     console.log('NO iframe on this page to append Identity');
   }
 }
+
 analyticsTracking();
