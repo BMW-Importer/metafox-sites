@@ -6,13 +6,6 @@ const page_tracking = {"page": {
         "pageInfo": {
             "pageID": "/content/bmw/marketB4R1/bmw_rs/sr_RS/index",
             "version": "acdl: 2024-03-27t12: 24: 35.759+01: 00",
-            "siteSection": "cars",
-            "breadCrumbs": [
-                "home",
-                "cars",
-                "models",
-                "modelX"
-            ],
             "sysEnv": "desktop",
             "destinationURL": "https://www.bmw.rs/sr/index.html",
             "referringURL": "",
@@ -30,32 +23,17 @@ const page_tracking = {"page": {
                 "server": "www.bmw.rs",
                 "url": "https://www.bmw.rs/sr/index.html",
                 "previousDomain": "",
-                "campaign": "",
                 "internalCampaign": "",
                 "urlClean": "https://www.bmw.rs/sr/index.html",
-                "queryParam": ""
             },
             "timeInfo": {
                 "localTime": "20:43:11",
                 "utcTime": "18:43:11"
             }
         },
-        "campaign": {
-            "trackingCode": "",
-            "campaignSource": "",
-            "campaignMedium": "",
-            "campaignName": "",
-            "campaignID": "",
-            "campaignTerm": "",
-            "campaignContent": ""
-        },
         "attributes": {
             "parentDomain": ".bmw.rs",
             "brand": "bmw",
-            "outletID": "1234_1",
-            "outletName": "Nelson's Autohaus (Thailand) Co., L",
-            "dealerID": "1234",
-            "dealerName": "Nelson's Autohaus (Thailand) Co., L"
         }
     },
     "eventInfo": {
@@ -65,7 +43,6 @@ const page_tracking = {"page": {
     },
     "event": "pageview",
     "user": {
-        "loginStatus": "logged_out",
         "consent": {
             "analytics": true,
             "marketing": true,
@@ -105,13 +82,12 @@ function set_page_tracking(){
   // adding page tracking properties
     page_tracking.page.pageInfo.windowInfo.screenWidth = window.screen.width;
     page_tracking.page.pageInfo.windowInfo.screenHeight = window.screen.height;
-    page_tracking.page.pageInfo.windowInfo.screenOrientation = window.screen.orientation.type;
+    page_tracking.page.pageInfo.windowInfo.screenOrientation = window.screen.orientation.type.split('-')[0];
     page_tracking.page.pageInfo.windowInfo.userAgent = navigator.userAgent;
     page_tracking.page.pageInfo.windowInfo.server = window.location.hostname;
     page_tracking.page.pageInfo.windowInfo.url = window.location.href;
     page_tracking.page.pageInfo.windowInfo.previousDomain = document.referrer;
     page_tracking.page.pageInfo.windowInfo.urlClean = window.location.href.split('?')[0]
-    page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search;
     // timeinfo
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
@@ -121,13 +97,16 @@ function set_page_tracking(){
     page_tracking.page.pageInfo.pageTitle = document.title;
     // eventinfo
     const randomNum = 1000000000 + Math.random() * 9000000000;
-    page_tracking.eventInfo.id = Math.floor(randomNum);
+    page_tracking.eventInfo.id = Math.floor(randomNum).toString();
     page_tracking.eventInfo.timeStamp = Date.now();
     // setting attributes
     page_tracking.page.attributes.parentDomain = window.location.hostname.replace('www','');
     // camapaign attributes
     if(window.location.search !== ''){
       var queryParam = new URLSearchParams(window.location.search);
+      page_tracking.page['campaign'] = {};
+      page_tracking.page.pageInfo.windowInfo.campaign = window.location.search.slice(1);
+      page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search;
       page_tracking.page.campaign.trackingCode = window.location.search.slice(1);
       page_tracking.page.campaign.campaignSource = queryParam.get('utm_source');
       page_tracking.page.campaign.campaignMedium = queryParam.get('utm_medium');
