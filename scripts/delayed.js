@@ -115,10 +115,22 @@ function set_page_tracking(){
     page_tracking.page.pageInfo.windowInfo.server = window.location.hostname;
     page_tracking.page.pageInfo.windowInfo.url = window.location.href;
     page_tracking.page.pageInfo.windowInfo.previousDomain = document.referrer;
+    page_tracking.page.pageInfo.windowInfo.urlClean = window.location.href.split('?')[0]
     page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search;
     // timeinfo
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
+    page_tracking.page.pageInfo.pageID = window.location.pathname;
+    page_tracking.page.pageInfo.destinationURL = window.location.href;
+    page_tracking.page.pageInfo.referringURL = document.referrer;
+    page_tracking.page.pageInfo.language = navigator.languages[1];
+    page_tracking.page.pageInfo.pageTitle = document.title;
+    // eventinfo
+    const randomNum = 1000000000 + Math.random() * 9000000000;
+    page_tracking.eventInfo.id = Math.floor(randomNum);
+    page_tracking.eventInfo.timeStamp = Date.now();
+    // setting attributes
+    page_tracking.page.attributes.parentDomain = window.location.hostname.replace('www','');
 
 
     window.adobeDataLayer.push(page_tracking);
