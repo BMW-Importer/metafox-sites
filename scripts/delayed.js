@@ -144,7 +144,6 @@ function set_ecid(){
     const anchor = iframeBlock.src;
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {
         iframeBlock.src = result.url;});
-    console.log(anchor);
   }
 }
 
