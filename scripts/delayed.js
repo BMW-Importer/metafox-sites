@@ -84,7 +84,7 @@ const page_tracking = {"page": {
 function analyticsTracking() {
     opt_in_info();
     set_page_tracking();
-    set_ecid();
+    window.setTimeout(() => { set_ecid() }, 1000)
 }
 
 function opt_in_info(){
@@ -150,5 +150,6 @@ function set_ecid(){
     console.log('NO iframe on this page to append Identity');
   }
 }
+
 
 analyticsTracking();
