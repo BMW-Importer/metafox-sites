@@ -40,21 +40,14 @@ const page_tracking = {"page": {
                 "utcTime": "18:43:11"
             }
         },
-        "category": {
-            "primaryCategory": "central car stock locator",
-            "subCategory1": "",
-            "subCategory2": "",
-            "subCategory3": "",
-            "pageType": "search"
-        },
         "campaign": {
-            "trackingCode": "utm_source=soc&utm_medium=twit&utm_campaign=MU_BMW_Brand_SOCIAL_AWNS&utm_id=HSZ2Q1BH7M9T&utm_term=brnd&utm_content=miy",
-            "campaignSource": "soc",
-            "campaignMedium": "twit",
-            "campaignName": "MU_BMW_Brand_SOCIAL_AWNS",
-            "campaignID": "HSZ2Q1BH7M9T",
-            "campaignTerm": "pro",
-            "campaignContent": "miy"
+            "trackingCode": "",
+            "campaignSource": "",
+            "campaignMedium": "",
+            "campaignName": "",
+            "campaignID": "",
+            "campaignTerm": "",
+            "campaignContent": ""
         },
         "attributes": {
             "parentDomain": ".bmw.rs",
@@ -123,7 +116,6 @@ function set_page_tracking(){
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
     page_tracking.page.pageInfo.pageID = window.location.pathname;
-    page_tracking.page.pageInfo.destinationURL = window.location.href;
     page_tracking.page.pageInfo.referringURL = document.referrer;
     page_tracking.page.pageInfo.language = navigator.languages[1];
     page_tracking.page.pageInfo.pageTitle = document.title;
@@ -133,6 +125,19 @@ function set_page_tracking(){
     page_tracking.eventInfo.timeStamp = Date.now();
     // setting attributes
     page_tracking.page.attributes.parentDomain = window.location.hostname.replace('www','');
+    // camapaign attributes
+    if(window.location.search !== ''){
+      var queryParam = new URLSearchParams(window.location.search);
+      page_tracking.page.campaign.trackingCode = window.location.search.slice(1);
+      page_tracking.page.campaign.campaignSource = queryParam.get('utm_source');
+      page_tracking.page.campaign.campaignMedium = queryParam.get('utm_medium');
+      page_tracking.page.campaign.campaignName = queryParam.get('utm_campaign');
+      page_tracking.page.campaign.campaignID = queryParam.get('utm_id');
+      page_tracking.page.campaign.campaignTerm = queryParam.get('utm_term');
+      page_tracking.page.campaign.campaignContent = queryParam.get('utm_content');
+
+    }
+
 
 
     window.adobeDataLayer.push(page_tracking);
