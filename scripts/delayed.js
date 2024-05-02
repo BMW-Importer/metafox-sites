@@ -119,16 +119,18 @@ function set_page_tracking(){
     // timeinfo
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
-
-
     window.adobeDataLayer.push(page_tracking);
 }
 function set_ecid(){
   const iframeBlock = document.getElementById('bmwIframe');
   if(iframeBlock){
-    const anchor = iframeBlock.src || '';
-    alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
+    const anchor = iframeBlock.src;
+    alloy('appendIdentityToUrl', { url: anchor }).then(result => {
+        console.log(result);    
+        iframeBlock.src = result.url;});
     console.log(anchor);
+  }else{
+    console.log('NO iframe on this page to append Identity');
   }
 }
 analyticsTracking();
