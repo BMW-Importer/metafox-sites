@@ -86,6 +86,7 @@ function analyticsTracking() {
     set_page_tracking();
     set_ecid();
 }
+
 function opt_in_info(){
   const adobeDtm = window.adobeDataLayer;
   console.log(adobeDtm.version);
@@ -105,6 +106,7 @@ function opt_in_info(){
     }]
   });
 }
+
 const dateTime = new Date();
 function set_page_tracking(){
   // adding page tracking properties
@@ -135,12 +137,18 @@ function set_page_tracking(){
 
     window.adobeDataLayer.push(page_tracking);
 }
+
 function set_ecid(){
   const iframeBlock = document.getElementById('bmwIframe');
   if(iframeBlock){
-    const anchor = iframeBlock.src || '';
-    alloy('appendIdentityToUrl', { url: anchor }).then(result => {iframeBlock.src = result.url;});
+    const anchor = iframeBlock.src;
+    alloy('appendIdentityToUrl', { url: anchor }).then(result => {
+        console.log(result);    
+        iframeBlock.src = result.url;});
     console.log(anchor);
+  }else{
+    console.log('NO iframe on this page to append Identity');
   }
 }
+
 analyticsTracking();
