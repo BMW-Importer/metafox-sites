@@ -77,7 +77,7 @@ const page_tracking = {"page": {
 function analyticsTracking() {
     opt_in_info();
     set_page_tracking();
-    set_ecid();
+    window.setTimeout(() => { set_ecid() }, 1000)
 }
 
 function opt_in_info(){
@@ -148,12 +148,9 @@ function set_ecid(){
   if(iframeBlock){
     const anchor = iframeBlock.src;
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {
-        console.log(result);    
         iframeBlock.src = result.url;});
-    console.log(anchor);
-  }else{
-    console.log('NO iframe on this page to append Identity');
   }
 }
+
 
 analyticsTracking();
