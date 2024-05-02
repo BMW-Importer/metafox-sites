@@ -143,11 +143,8 @@ function set_ecid(){
   if(iframeBlock){
     const anchor = iframeBlock.src;
     alloy('appendIdentityToUrl', { url: anchor }).then(result => {
-        console.log(result);    
         iframeBlock.src = result.url;});
     console.log(anchor);
-  }else{
-    console.log('NO iframe on this page to append Identity');
   }
 }
 
