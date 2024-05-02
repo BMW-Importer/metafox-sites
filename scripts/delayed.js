@@ -82,7 +82,7 @@ const page_tracking = {"page": {
 
 // add more delayed functionality here
 function analyticsTracking() {
-    opt_in_info();
+    await opt_in_info();
     set_page_tracking();
     set_ecid();
 }
