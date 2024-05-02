@@ -156,7 +156,7 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   await launchVariables();
-  //await opt_in_info();
+  // await opt_in_info();
   loadDelayed();
 }
 
