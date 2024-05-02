@@ -156,8 +156,28 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   await launchVariables();
+  await opt_in_info();
   loadDelayed();
-  // analyticsTracking();
+}
+
+function opt_in_info(){
+  const adobeDtm = window.adobeDataLayer;
+  console.log(adobeDtm.version);
+  const d = new Date();
+  alloy('setConsent', {
+    consent: [{
+      standard: 'Adobe',
+      version: '2.0',
+      value: {
+        collect: {
+          val: 'y'
+        },
+        metadata: {
+          time: '2024-04-30T07:00:05-7:00'
+        }
+      }
+    }]
+  });
 }
 
 loadPage();
