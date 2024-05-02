@@ -8,7 +8,6 @@ const page_tracking = {"page": {
             "version": "acdl: 2024-03-27t12: 24: 35.759+01: 00",
             "sysEnv": "desktop",
             "destinationURL": "https://www.bmw.rs/sr/index.html",
-            "referringURL": "",
             "variant": "real page",
             "geoRegion": "RS",
             "language": "sr",
@@ -80,19 +79,21 @@ function opt_in_info(){
 const dateTime = new Date();
 function set_page_tracking(){
   // adding page tracking properties
+  if(document.referrer !== ''){
+    page_tracking.page.pageInfo.windowInfo.previousDomain = document.referrer;
+    page_tracking.page.pageInfo.referringURL = document.referrer;
+  }
     page_tracking.page.pageInfo.windowInfo.screenWidth = window.screen.width;
     page_tracking.page.pageInfo.windowInfo.screenHeight = window.screen.height;
     page_tracking.page.pageInfo.windowInfo.screenOrientation = window.screen.orientation.type.split('-')[0];
     page_tracking.page.pageInfo.windowInfo.userAgent = navigator.userAgent;
     page_tracking.page.pageInfo.windowInfo.server = window.location.hostname;
     page_tracking.page.pageInfo.windowInfo.url = window.location.href;
-    page_tracking.page.pageInfo.windowInfo.previousDomain = document.referrer;
     page_tracking.page.pageInfo.windowInfo.urlClean = window.location.href.split('?')[0]
     // timeinfo
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
     page_tracking.page.pageInfo.pageID = window.location.pathname;
-    page_tracking.page.pageInfo.referringURL = document.referrer;
     page_tracking.page.pageInfo.language = navigator.languages[1];
     page_tracking.page.pageInfo.pageTitle = document.title;
     // eventinfo
@@ -107,6 +108,7 @@ function set_page_tracking(){
       page_tracking.page['campaign'] = {};
       page_tracking.page.pageInfo.windowInfo.campaign = window.location.search.slice(1);
       page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search;
+      page_tracking.page.pageInfo.windowInfo.internalCampaign = queryParam.get('intCampID');
       page_tracking.page.campaign.trackingCode = window.location.search.slice(1);
       page_tracking.page.campaign.campaignSource = queryParam.get('utm_source');
       page_tracking.page.campaign.campaignMedium = queryParam.get('utm_medium');
