@@ -82,8 +82,29 @@ const page_tracking = {"page": {
 
 // add more delayed functionality here
 function analyticsTracking() {
+    opt_in_info();
     set_page_tracking();
     set_ecid();
+}
+
+function opt_in_info(){
+  const adobeDtm = window.adobeDataLayer;
+  console.log(adobeDtm.version);
+  const d = new Date();
+  alloy('setConsent', {
+    consent: [{
+      standard: 'Adobe',
+      version: '2.0',
+      value: {
+        collect: {
+          val: 'y'
+        },
+        metadata: {
+          time: '2024-04-30T07:00:05-7:00'
+        }
+      }
+    }]
+  });
 }
 
 const dateTime = new Date();
