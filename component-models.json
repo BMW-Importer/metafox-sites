@@ -719,6 +719,21 @@
       {
         "component": "reference",
         "valueType": "string",
+        "name": "videoSlideDesktopVideoRef",
+        "label": "Desktop Video Path",
+        "multi": false,
+        "required":true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlideMobileVideoRef",
+        "label": "Mobile Video Path",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
         "name": "videoSource",
         "label": "Video",
         "multi": false
