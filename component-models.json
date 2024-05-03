@@ -718,7 +718,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "videoSlideTitle",
+        "name": "videoTitle",
         "value": "",
         "label": "Video Title",
         "required": true
@@ -726,7 +726,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "videoSlideDescription",
+        "name": "videoDescription",
         "value": "",
         "label": "Video Description",
         "required": true
@@ -734,7 +734,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "videoSlideDesktopVideoRef",
+        "name": "desktopVideoPath",
         "label": "Desktop Video Path",
         "multi": false,
         "required": true
@@ -742,14 +742,14 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "videoSlideMobileVideoRef",
+        "name": "mobileVideoPath",
         "label": "Mobile Video Path",
         "multi": false
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "videoSlideDesktopPosterImgRef",
+        "name": "desktopPosterRef",
         "label": "Desktop Poster Image Path",
         "multi": false,
         "required": true
@@ -757,21 +757,35 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "videoSlideMobilePosterImgRef",
+        "name": "mobilePosterRef",
         "label": "Mobile Poster Image Path",
         "multi": false
       },
       {
         "component": "boolean",
         "label": "Loop Video",
-        "name": "videoSlideLoopVideo",
+        "name": "loopVideo",
         "valueType": "boolean",
         "value": true
       },
       {
         "component": "boolean",
         "label": "Autoplay",
-        "name": "videoSlideAutoplay",
+        "name": "videoAutoplay",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "boolean",
+        "label": "Hide Video Controls",
+        "name": "hideVideoControl",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "boolean",
+        "label": "Mute Video Sound",
+        "name": "muteVideo",
         "valueType": "boolean",
         "value": true
       }
