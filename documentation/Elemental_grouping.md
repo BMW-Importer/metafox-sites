@@ -1,4 +1,4 @@
-# Elemenatal Grouping
+# Elemental Grouping
 ***
 
 1. When creating a component, the fields created for each component in the component-models can be named with prefix and/or suffix included.
@@ -30,7 +30,7 @@ Refer below example where group is done using prefix
 }
 ```
 Refer below the screenshot of the HTML generated
-![alt text](image-1.png)
+![](../resources/text-image-v2-html.png)
 3. When grouping is done by adding the suffix, these fields are grouped together in authoring instance for easy authoring.
 Refer below example where group is done using suffix
 ```json
@@ -58,4 +58,4 @@ Refer below example where group is done using suffix
 }
 ```
 Refer below screenshot from Authoring instance
-![alt text](image.png)
+![](../resources/text-image-v2-authoring.png)
