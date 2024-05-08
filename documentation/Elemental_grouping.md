@@ -30,7 +30,7 @@ Refer below example where group is done using prefix
 }
 ```
 Refer below the screenshot of the HTML generated
-![](image.png)
+![alt text](image-1.png)
 3. When grouping is done by adding the suffix, these fields are grouped together in authoring instance for easy authoring.
 Refer below example where group is done using suffix
 ```json
@@ -58,4 +58,4 @@ Refer below example where group is done using suffix
 }
 ```
 Refer below screenshot from Authoring instance
-![](image-1.png)
+![alt text](image.png)
