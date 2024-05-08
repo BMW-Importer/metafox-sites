@@ -35,7 +35,7 @@
    ```
 4. Note that the resource type should be `core/franklin/components/block/v1/block`
 5. Next step is to define the component properties in the component-models.json
-6. The code to include for image text component is as below
+6. The code to include for text image component is as below
 ```json
    {
     "id": "text-image",
@@ -82,7 +82,8 @@
     ]
    } 
    ```
-7. The next step is to add it in a filter (It is a place where we define the group wher the component appears)
+7. The next step is to add it in a filter (It is a place where we define the group where the component appears). Also if needed, it is here where we define if we need to allow another component under this created component.
+Below example to add the newly created component (text-image) under the section
 ```json
   {
     "id": "section",
@@ -98,7 +99,17 @@
     ]
   }
    ```
-
+   Below an example of allowing another component under text-image component
+   ```json
+   {
+    "id": "text-image",
+    "components": [
+      "text",
+      "image",
+      "button"
+    ]
+  },
+   ```
 ### Component styles & scripts
 The Component styles & scripts can be defined in the blocks section (within the blocks folder)
 eg. a new folder named "text-image" has been created to hold the 2 files 
