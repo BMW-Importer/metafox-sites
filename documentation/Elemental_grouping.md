@@ -31,6 +31,7 @@ Refer below example where group is done using prefix
 ```
 Refer below the screenshot of the HTML generated
 ![](../resources/text-image-v2-html.png)
+
 3. When grouping is done by adding the suffix, these fields are grouped together in authoring instance for easy authoring.
 Refer below example where group is done using suffix
 ```json
