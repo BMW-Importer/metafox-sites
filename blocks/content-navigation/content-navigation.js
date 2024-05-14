@@ -1,9 +1,14 @@
+function isMobileOrTablet() {
+  // Regular expression to detect mobile and tablet devices
+  const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return mobileRegex.test(navigator.userAgent);
+}
+
 function handleContentNavScroll() {
   const navigation = document.getElementById('navigation');
-  const contentNavWrapper = document.querySelector('.cmp-contentnavigation__wrapper');
+  const contentNavWrapper = document.querySelector('.cmp-contentnavigation-wrapper');
   const contentNavContainer = document.querySelector('.content-navigation-container');
   const offset = contentNavContainer?.offsetTop;
-
   if (window.pageYOffset >= offset) {
     navigation.classList.add('fixed-nav');
     contentNavContainer.classList.remove('hide');
@@ -17,35 +22,69 @@ function handleContentNavScroll() {
   }
 }
 
+function activeAnchor() {
+  const links = document.querySelectorAll('.cmp-contentnavigation-list-link');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('navdropdownMenuButton').textContent = e.target.textContent;
+      e.target.parentElement.parentElement.classList.remove('visible-mobile');
+    });
+  });
+}
+
+function handleContenNav() {
+  const buttonSelector = document.getElementById('navdropdownMenuButton');
+  buttonSelector.addEventListener('click', (e) => {
+    e.target.classList.toggle('visible-mobile-btn');
+    e.target.nextSibling.nextSibling.nextSibling.classList.toggle('visible-mobile');
+  });
+}
+
 export default function decorate(block) {
   const props = [...block.children].map((row) => row.firstElementChild);
   const [, contentLabel, background, isEnabled] = props;
   console.log(contentLabel);
+  const mobileContentNavSelector = document.createElement('button');
+  mobileContentNavSelector.classList.add('cmp-filter-toggle');
+  mobileContentNavSelector.setAttribute('id', 'navdropdownMenuButton');
+  mobileContentNavSelector.setAttribute('aria-expanded', false);
+  mobileContentNavSelector.textContent = 'technical-data';
+
   const leftBtn = document.createElement('button');
-  leftBtn.classList.add('cmp-contentnavigation__arrow-left');
+  leftBtn.classList.add('cmp-contentnavigation-arrow-left');
   const rightBtn = document.createElement('button');
-  rightBtn.classList.add('cmp-contentnavigation__arrow-right');
+  rightBtn.classList.add('cmp-contentnavigation-arrow-right');
   const sections = document.querySelectorAll('div[data-contentnavigation="true"]');
   const wrapper = document.createElement('div');
-  wrapper.classList.add('cmp-contentnavigation__wrapper');
+  wrapper.classList.add('cmp-contentnavigation-wrapper');
   wrapper.id = 'navigation';
   const ul = document.createElement('ul');
-  ul.classList.add('cmp-contentnavigation__list');
+  ul.classList.add('cmp-contentnavigation-list');
   sections?.forEach((section) => {
     const anchorLabel = section.getAttribute('data-anchorlabel');
     const anchorId = section.getAttribute('data-anchorid');
     const button = document.createElement('button');
     button.textContent = anchorLabel;
-    button.classList.add('cmp-contentnavigation__list-link');
+    button.classList.add('cmp-contentnavigation-list-link');
     button.dataset.anchor = `#${anchorId}`;
     const li = document.createElement('li');
-    li.classList.add('cmp-contentnavigation__list-item');
+    li.classList.add('cmp-contentnavigation-list-item');
     li.appendChild(button);
     ul.appendChild(li);
   });
+  wrapper.appendChild(mobileContentNavSelector);
   wrapper.appendChild(leftBtn);
   wrapper.appendChild(rightBtn);
   wrapper.appendChild(ul);
+  const navAnchorDiv = document.createElement('div');
+  navAnchorDiv.classList.add('cmp-contentnavigation-anchor-container');
+  const navAnchor = document.createElement('a');
+  navAnchor.classList.add('cmp-contentnavigation-anchor');
+  navAnchor.textContent = 'Želim da me obaveštavate';
+  navAnchor.href = '#';
+  navAnchorDiv.append(navAnchor);
+  ul.appendChild(navAnchorDiv);
   block.textContent = '';
   block.appendChild(wrapper);
   if (isEnabled.children.length > 0) {
@@ -65,4 +104,8 @@ export default function decorate(block) {
     wrapper.classList.add(backgroundDom);
   }
   window.addEventListener('scroll', handleContentNavScroll);
+  if (isMobileOrTablet()) {
+    activeAnchor();
+    handleContenNav();
+  }
 }
