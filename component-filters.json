@@ -103,6 +103,22 @@
     }
   },
   {
+    "id": "quote",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [""],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
     "id": "section",
     "components": [
       "copy_text",
@@ -123,7 +139,8 @@
       "copy_text",
       "video",
       "multicontent-gallery",
-      "text-with-media"
+      "text-with-media",
+      "quote"
     ]
   },
   {
@@ -133,7 +150,8 @@
       "button",
       "title",
       "image",
-      "bmw-video"
+      "bmw-video",
+      "quote"
     ]
   },
   {
