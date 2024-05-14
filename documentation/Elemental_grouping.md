@@ -29,7 +29,7 @@ Refer below example where group is done using prefix
     ]
 }
 ```
-Refer below the screenshot of the HTML generated
+Refer below the screenshot of the HTML generated where fields are grouped together.
 ![](../resources/text-image-v2-html.png)
 
 3. When grouping is done by adding the suffix, these fields are grouped together in authoring instance for easy authoring.
@@ -58,5 +58,5 @@ Refer below example where group is done using suffix
     ]
 }
 ```
-Refer below screenshot from Authoring instance
+Refer below screenshot from Authoring instance where fields are grouped together
 ![](../resources/text-image-v2-authoring.png)
