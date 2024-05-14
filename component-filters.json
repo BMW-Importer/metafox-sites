@@ -109,6 +109,22 @@
     }
   },
   {
+    "id": "quote",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [""],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
     "id": "section",
     "components": [
       "copy_text",
@@ -134,7 +150,8 @@
       "content-navigation",
       "accordion",
       "eyebrow",
-      "headline"
+      "headline",
+      "quote"
     ]
   },
   {
@@ -147,7 +164,8 @@
       "video",
       "accordion",
       "eyebrow",
-      "headline"
+      "headline",
+      "quote"
     ]
   },
   {

@@ -1710,5 +1710,27 @@
         "description": "If enabled, the Accordion Item will be collapsed by default"
       }
     ]
+  },
+  {
+    "id": "quote",
+    "fields": [
+       {
+         "component": "richtext",
+         "name": "quote",
+         "value": "",
+         "label": "Quote",
+         "description": "Defines the quote that will appear in the page. Please also author the quotation marks.",
+         "valueType": "string",
+         "required": true
+       },
+       {
+         "component": "text",
+         "valueType": "string",
+         "name": "citationSource",
+         "label": "Citation Source",
+         "value": "",
+         "description": "Defines the citation source that will appear beneath the quote."
+       }
+     ]
   }
 ]
