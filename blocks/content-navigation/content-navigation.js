@@ -1,8 +1,3 @@
-function isMobileOrTablet() {
-  const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-  return mobileRegex.test(navigator.userAgent);
-}
-
 function handleContentNavScroll() {
   const navigation = document.getElementById('navigation');
   const contentNavWrapper = document.querySelector('.cmp-contentnavigation-wrapper');
@@ -114,8 +109,6 @@ export default function decorate(block) {
     wrapper.classList.add(backgroundDom);
   }
   window.addEventListener('scroll', handleContentNavScroll);
-  if (isMobileOrTablet()) {
-    activeAnchor();
-    handleContenNav();
-  }
+  activeAnchor();
+  handleContenNav();
 }
