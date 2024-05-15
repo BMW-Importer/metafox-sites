@@ -38,12 +38,6 @@ function handleContenNav() {
 export default function decorate(block) {
   const props = [...block.children].map((row) => row.firstElementChild);
   const [, , background, isEnabled, , btnLable, btnLink] = props;
-  const mobileContentNavSelector = document.createElement('button');
-  mobileContentNavSelector.classList.add('cmp-filter-toggle');
-  mobileContentNavSelector.setAttribute('id', 'navdropdownMenuButton');
-  mobileContentNavSelector.setAttribute('aria-expanded', false);
-  mobileContentNavSelector.textContent = 'technical-data';
-
   const leftBtn = document.createElement('button');
   leftBtn.classList.add('cmp-contentnavigation-arrow-left');
   const rightBtn = document.createElement('button');
@@ -54,7 +48,17 @@ export default function decorate(block) {
   wrapper.id = 'navigation';
   const ul = document.createElement('ul');
   ul.classList.add('cmp-contentnavigation-list');
-  sections?.forEach((section) => {
+
+  sections?.forEach((section, index) => {
+    if (index === 0) {
+      const firstAnchor = section.getAttribute('data-anchorlabel');
+      const mobileContentNavSelector = document.createElement('button');
+      mobileContentNavSelector.classList.add('cmp-filter-toggle');
+      mobileContentNavSelector.setAttribute('id', 'navdropdownMenuButton');
+      mobileContentNavSelector.setAttribute('aria-expanded', false);
+      mobileContentNavSelector.textContent = `${firstAnchor}`;
+      wrapper.appendChild(mobileContentNavSelector);
+    }
     const anchorLabel = section.getAttribute('data-anchorlabel');
     const anchorId = section.getAttribute('data-anchorid');
     const button = document.createElement('button');
@@ -66,10 +70,11 @@ export default function decorate(block) {
     li.appendChild(button);
     ul.appendChild(li);
   });
-  wrapper.appendChild(mobileContentNavSelector);
+
   wrapper.appendChild(leftBtn);
   wrapper.appendChild(rightBtn);
   wrapper.appendChild(ul);
+
   const navAnchorDivDesktop = document.createElement('div');
   navAnchorDivDesktop.classList.add('cmp-contentnavigation-anchor-container');
   navAnchorDivDesktop.classList.add('desktop-only');
