@@ -35,6 +35,13 @@ function handleContenNav() {
   });
 }
 
+// function handleTabletView(ul, wrapper) {
+//   const isTabletView = window.innerWidth >= 768 && window.innerWidth <= 1024;
+//   console.log(isTabletView);
+//   ul.classList.toggle('tablet-only', isTabletView);
+//   wrapper.classList.toggle('tablet-only', isTabletView);
+// }
+
 export default function decorate(block) {
   const props = [...block.children].map((row) => row.firstElementChild);
   const [, , background, isEnabled, , btnLable, btnLink] = props;
@@ -69,6 +76,13 @@ export default function decorate(block) {
     li.classList.add('cmp-contentnavigation-list-item');
     li.appendChild(button);
     ul.appendChild(li);
+    function handleTabletView() {
+      const isTabletView = window.innerWidth >= 768 && window.innerWidth <= 1024;
+      ul.classList.toggle('tablet-only', isTabletView && index >= 5); // < // >
+      wrapper.classList.toggle('tablet-only', isTabletView && index >= 5);
+    }
+    handleTabletView();
+    window.addEventListener('resize', handleTabletView);
   });
 
   wrapper.appendChild(leftBtn);

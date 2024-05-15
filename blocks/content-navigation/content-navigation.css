@@ -76,72 +76,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
    background-color: transparent;
   }
 
-  .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-arrow-left {    
-    cursor: pointer;
-    font-size: 2rem;
-    position: absolute;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    height: 100%;
-    z-index: 600;
-    background: var(--dark-color);
-    display: none;
-  }
-
-  .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-arrow-right {
-    cursor: pointer;
-    font-size: 2rem;
-    position: absolute;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    height: 100%;
-    z-index: 600;
-    background: var(--dark-color);
-    display: none;
-  }
-
-  .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-arrow-left::before {
-    overflow-wrap: normal;
-    -webkit-font-smoothing: antialiased;
-    font-feature-settings: "liga";
-    content: "arrow_chevron_left";
-    direction: ltr;
-    display: block;
-    font-family: var(--icon-font-family);
-    font-style: normal;
-    height: 1em;
-    line-height: 1;
-    text-align: left;
-    text-rendering: optimizelegibility;
-    text-transform: none;
-    width: auto;
-    outline: transparent solid 1px;
-    white-space: nowrap;
-  }
-
-  .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-arrow-right::before {
-    overflow-wrap: normal;
-    -webkit-font-smoothing: antialiased;
-    font-feature-settings: "liga";
-    content: "arrow_chevron_right";
-    direction: ltr;
-    display: block;
-    font-family: var(--icon-font-family);
-    font-style: normal;
-    height: 1em;
-    line-height: 1;
-    text-align: left;
-    text-rendering: optimizelegibility;
-    text-transform: none;
-    width: auto;
-    outline: transparent solid 1px;
-    white-space: nowrap;
-  }
-
   .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list .cmp-contentnavigation-anchor-container {    
     display: flex;
     justify-content: center;
@@ -313,12 +247,105 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
 
   /* ipad css */
 
-  @media (width > 767px) and (width < 1280px) {
-    main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible {
-      padding:0;
+  @media (width >= 767px) and (width < 1280px) {
+    main .section.content-navigation-container .cmp-contentnavigation-wrapper {
+      padding: 0;
+      background-color: var(--background-color);
+    box-shadow: 0 -1.937rem 1.1875rem var(--background-color);
     }
 
-    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list {
+    .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 6020;
+      border-bottom: 0.0625rem solid var(--light-grey-1);
+      padding: 0;
+    }
+
+    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-arrow-right {
+      cursor: pointer;
+      font-size: 2rem;
+      position: absolute;
+      right: 2rem;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      height: 100%;
+      z-index: 600;
+    }
+
+    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-arrow-left {    
+      cursor: pointer;
+      font-size: 2rem;
+      position: absolute;
+      left: 2rem;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      height: 100%;
+      z-index: 600;
+    }
+  
+    .content-navigation-container .content-navigation-wrapper .fixed-nav .cmp-contentnavigation-arrow-left::before {
+      overflow-wrap: normal;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: "liga";
+      content: "arrow_chevron_left";
+      direction: ltr;
+      display: block;
+      font-family: var(--icon-font-family);
+      font-style: normal;
+      height: 1em;
+      line-height: 1;
+      text-align: left;
+      text-rendering: optimizelegibility;
+      text-transform: none;
+      width: auto;
+      outline: transparent solid 1px;
+      white-space: nowrap;
+      color: red;
+      border: 1px solid black;
+    }
+  
+    .content-navigation-container .content-navigation-wrapper .fixed-nav .cmp-contentnavigation-arrow-right::before {
+      overflow-wrap: normal;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: "liga";
+      content: "arrow_chevron_right";
+      direction: ltr;
+      display: block;
+      font-family: var(--icon-font-family);
+      font-style: normal;
+      height: 1em;
+      line-height: 1;
+      text-align: left;
+      text-rendering: optimizelegibility;
+      text-transform: none;
+      width: auto;
+      outline: transparent solid 1px;
+      white-space: nowrap;
+      color: red;
+      border: 1px solid black;
+    }
+
+    main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible {
+      width: 100%;
+    }
+
+    .section.content-navigation-container .cmp-contentnavigation-wrapper.tablet-only{
+      overflow-x: hidden;
+    }
+
+    .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list.tablet-only{
       padding: 0 3rem;
     }
+
+   
   }
