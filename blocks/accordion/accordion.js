@@ -5,6 +5,20 @@ export default async function decorate(block) {
   // loop through all children blocks
   [...panels]?.forEach((panel) => {
     const [accordionLabel, copyText, accorCollapes] = panel.children;
-    console.log(accordionLabel.textContent, copyText.textContent, accorCollapes.textContent);
+    const summary = document.createElement('summary');
+    summary.className = 'accordion-item-label';
+    summary.append(accordionLabel);
+    const body = copyText;
+    body.className = 'accordion-item-body';
+    const details = document.createElement('details');
+    details.className = 'accordion-item';
+    const collapse = accorCollapes.textContent.trim() === 'true';
+    // collapse by default if toggle is on
+    if (collapse) {
+      details.setAttribute('open', '');
+    }
+    panel.textContent = '';
+    details.append(summary, body);
+    panel.append(details);
   });
 }

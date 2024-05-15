@@ -1,1 +1,53 @@
 /* accordion */
+.accordion details {
+    border-top: .0625rem solid #e6e6e6;
+    border-bottom: .0625rem solid #e6e6e6;
+    margin-top: -1px;
+  }
+  /* stylelint-disable-next-line no-descending-specificity */
+  .accordion details + details {
+    margin-top: -1px;
+  }
+  
+  .accordion details summary {
+    font-size: 1.25rem;
+    position: relative;
+    padding: 0 16px;
+    cursor: pointer;
+    list-style: none;
+    overflow: auto;
+    font-weight: 700;
+    line-height: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem
+  }
+
+  .accordion details summary:hover {
+    color : #1c69d4;
+  }
+
+  .accordion details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .accordion details summary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%) rotate(135deg);
+    width: 9px;
+    height: 9px;
+    border: 2px solid;
+    border-width: 2px 2px 0 0;
+    transition: transform 0.2s;
+  }
+  
+  .accordion details[open] summary::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  .accordion details .accordion-item-body {
+    padding-bottom: 3rem;
+    padding-top: .75rem;
+  }

@@ -77,6 +77,22 @@
     ]
   },
   {
+    "id": "accordion-item",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
     "id": "text-with-image",
     "components": [],
     "rte": {
@@ -151,6 +167,8 @@
       "accordion",
       "eyebrow",
       "headline",
+      "background-media",
+      "disclaimer",
       "quote"
     ]
   },
@@ -234,5 +252,12 @@
   {
     "id": "image-slide",
     "components": []
+  },
+  {
+    "id": "background-media",
+    "components":[
+      "background-image",
+      "background-video"
+    ]
   }
 ]

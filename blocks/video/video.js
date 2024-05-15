@@ -182,7 +182,7 @@ function getVideoElement(
     } else {
       video.pause();
     }
-  });
+  }, { passive: true });
   video.dataset.autoplay = autoplay ? 'true' : 'false';
   if (window.IntersectionObserver) {
     let isPaused = false;
@@ -213,7 +213,7 @@ export function loadVideoEmbed(
   enableHideControls,
   muted,
   posters,
-  onHoverPlay,
+  onHoverPlay = false,
 ) {
   if (block.dataset.embedIsLoaded) {
     return;
@@ -285,8 +285,7 @@ export default async function decorate(block) {
     videoLoop,
     videoAutoPlay,
     videoHideControls,
-    videoMute,
-    playonHover] = props;
+    videoMute] = props;
 
   const placeholder = block.querySelector('picture');
   const desktopVideolink = videoDesktopPath?.textContent;
@@ -306,7 +305,7 @@ export default async function decorate(block) {
   const loop = videoLoop?.textContent.trim() === 'true';
   const enableHideControls = videoHideControls?.textContent.trim() === 'true';
   const muted = videoMute?.textContent.trim() === 'true';
-  const onHoverPlay = playonHover?.textContent.trim() === 'true';
+  const onHoverPlay = false;
 
   if (placeholder) {
     loadVideoEmbed(

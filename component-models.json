@@ -231,12 +231,45 @@
     "id": "section",
     "fields": [
       {
+        "component": "tab",
+        "label": "General",
+        "name": "fixedwidthsectiontab1"
+      },
+      {
         "component": "text-input",
         "description": "Defines the styling applied to the content within this section.If an alignment is needed on a copy text or a button , please specify the alignment of your choice - alignment-right, alignment-left or alignment-center.",
         "name": "style",
         "value": "",
         "label": "Style",
         "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Anchor",
+        "name": "fixedwithsectiontab2"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "description": "",
+        "name": "sectionanchorlabel",
+        "value": "",
+        "label": "Anchor Label"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "description": "",
+        "name": "sectionanchorid",
+        "value": "",
+        "label": "Anchor ID"
+      },
+      {
+        "component": "boolean",
+        "label": "Display in Content Navigation",
+        "description": "",
+        "name": "sectioncontentnavigation",
+        "valueType": "boolean"
       }
     ]
   },
@@ -1247,13 +1280,6 @@
         "name": "muteVideo",
         "valueType": "boolean",
         "value": true
-      },
-      {
-        "component": "boolean",
-        "label": "Play On Hover",
-        "name": "playonHover",
-        "valueType": "boolean",
-        "value": true
       }
     ]
   },
@@ -1695,16 +1721,15 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "CopyText",
+        "name": "accordionItemCopyText",
         "value": "",
         "label": "Copy Text",
         "required": true
-
-      },
+      },   
       {
         "component": "boolean",
         "label": "Collapse Accordion Icon",
-        "name": "collapseAccordionIcon",
+        "name": "accordionItemIcon",
         "valueType": "boolean",
         "value": false,
         "description": "If enabled, the Accordion Item will be collapsed by default"
@@ -1732,5 +1757,477 @@
          "description": "Defines the citation source that will appear beneath the quote."
        }
      ]
+  },
+  {
+    "id": "background-image",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "bgImgGeneral_tab"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bgImgGeneral_eyebrow",
+        "value": "",
+        "label": "Eyebrow",
+        "description": "Defines the smallest text that will be displayed on the component"
+      },
+      {
+        "component": "select",
+        "name": "bgImgGeneral_eyebrowType",
+        "value": "",
+        "label": "Eyebrow Type",
+        "valueType": "string",        
+        "description": "Defines two variants for text that will be displayed on the component",
+        "options": [
+          {
+            "name": "Eyebrow 1 Bold",
+            "value": "h1"
+          },
+          {
+            "name": "Eyebrow 2 Bold",
+            "value": "h2"
+          },
+          {
+            "name": "Stage Iconization",
+            "value": "h3"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bgImgGeneral_headline",
+        "value": "",
+        "label": "Headline",
+        "description": "Defines the headline of the text that will appear in the page."
+      },
+      {
+        "component": "select",
+        "name": "bgImgGeneral_headlineType",
+        "value": "",
+        "label": "Headline Type",
+        "valueType": "string",        
+        "description": "Defines the headline of the text that will appear in the page.",
+        "options": [
+          {
+            "name": "Big (Stage Model)",
+            "value": "h6"
+          },
+          {
+            "name": "Medium (H1)",
+            "value": "h1"
+          },
+          {
+            "name": "Small (H2)",
+            "value": "h2"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "bgImgGeneral_subbrandicon",
+        "value": "",
+        "label": "Subbrand Icon Type",
+        "valueType": "string",        
+        "description": "Defines the subbrand icons that are being displayed.",
+        "options": [
+          {
+            "name": "Subbrand i",
+            "value": "subbrandi"
+          },
+          {
+            "name": "Subbrand M",
+            "value": "subbrandm"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bgImgGeneral_copyText",
+        "value": "",
+        "label": "Copy Text",
+        "description": "Defines the text that is being displayed."
+      },      
+      {
+        "component": "multiselect",
+        "name": "bgImgGeneral_gradient",
+        "label": "Gradient",
+        "valueType": "string",
+        "description": "Defines colours and position of the gradient.",       
+        "options": [
+          {
+            "name": "Colour",
+            "children": [
+              { "name": "Light", "value": "light" },
+              { "name": "Dark",  "value": "dark" }
+            ]
+          },
+          {
+            "name": "Position",
+            "children": [
+              { "name": "Top", "value": "top" },
+              { "name": "Left", "value": "left" },
+              { "name": "Bottom", "value": "bottom" }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Image",
+        "name": "bgImgImage_tab"
+      },
+      {
+        "component": "reference",
+        "label": "Image",
+        "name": "bgImgImage_image",
+        "description":"Defines the image to be displayed.",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "label": "Alt Text",
+        "name": "bgImgImage_imageAlt",
+        "description": "Defines the alternative text that will be read by screen-readers for the image.",
+        "valueType": "string"
+      },     
+      {
+        "component": "tab",
+        "label": "Button/Link",
+        "name": "bgImgCta1_tab"
+      },
+      {
+        "component": "text-input",
+        "name": "bgImgCta1_Link",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "bgImgCta1_LinkText",
+        "description": "Defines the text to be displayed in the button or as the link.",
+        "label": "Link Label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "bgImgCta1_LinkType",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
+        "valueType": "string",
+        "value": "secondary",
+        "options": [
+          {
+            "name": "Money Button",
+            "value": "primary"
+          },
+          {
+            "name": "Money Button Flex",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "bgImgCta2_Link",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "bgImgCta2_LinkText",
+        "description": "Defines the text to be displayed in the button or as the link.",
+        "label": "Link Label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "bgImgCta2_LinkType",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
+        "valueType": "string",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Ghost on Image",
+            "value": "primary"
+          },
+          {
+            "name": "Ghost on Image Flex",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "background-video",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "bgVidGeneral_tab"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bgVidGeneral_eyebrow",
+        "value": "",
+        "label": "Eyebrow",
+        "description": "Defines the smallest text that will be displayed on the component"
+      },
+      {
+        "component": "select",
+        "name": "bgVidGeneral_eyebrowType",
+        "value": "",
+        "label": "Eyebrow Type",
+        "valueType": "string",        
+        "description": "Defines two variants for text that will be displayed on the component",
+        "options": [
+          {
+            "name": "Eyebrow 1 Bold",
+            "value": "h1"
+          },
+          {
+            "name": "Eyebrow 2 Bold",
+            "value": "h2"
+          },
+          {
+            "name": "Stage Iconization",
+            "value": "h3"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "bgVidGeneral_headline",
+        "value": "",
+        "label": "Headline",
+        "description": "Defines the headline of the text that will appear in the page."
+      },
+      {
+        "component": "select",
+        "name": "bgVidGeneral_headlineType",
+        "value": "",
+        "label": "Headline Type",
+        "valueType": "string",        
+        "description": "Defines the headline of the text that will appear in the page.",
+        "options": [
+          {
+            "name": "Big (Stage Model)",
+            "value": "h6"
+          },
+          {
+            "name": "Medium (H1)",
+            "value": "h1"
+          },
+          {
+            "name": "Small (H2)",
+            "value": "h2"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "bgVidGeneral_subbrandicon",
+        "value": "",
+        "label": "Subbrand Icon Type",
+        "valueType": "string",        
+        "description": "Defines the subbrand icons that are being displayed.",
+        "options": [
+          {
+            "name": "Subbrand i",
+            "value": "subbrandi"
+          },
+          {
+            "name": "Subbrand M",
+            "value": "subbrandm"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "bgVidGeneral_copyText",
+        "value": "",
+        "label": "Copy Text",
+        "description": "Defines the text that is being displayed."
+      },      
+      {
+        "component": "multiselect",
+        "name": "bgVidGeneral_gradient",
+        "label": "Gradient",
+        "valueType": "string",
+        "description": "Defines colours and position of the gradient.",
+        "maxSize": 2,
+        "options": [
+          {
+            "name": "Colour",
+            "children": [
+              { "name": "Light", "value": "light" },
+              { "name": "Dark",  "value": "dark" }
+            ]
+          },
+          {
+            "name": "Position",
+            "children": [
+              { "name": "Top", "value": "top" },
+              { "name": "Left", "value": "left" },
+              { "name": "Bottom", "value": "bottom" }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Video",
+        "name": "bgVidVideo_tab"
+      },
+      {
+        "component": "text-input",
+        "name": "bgVidVideo_title",
+        "description": "Defines the title of the video.",
+        "label": "Video Title",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "bgVidVideo_descp",
+        "description": "Defines the description of the video.",
+        "label": "Video Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "label": "Desktop Video Path",
+        "name": "bgVidVideo_video",
+        "description":"Defines the path to a video on the desktop.",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "label": "Mobile Video Path",
+        "name": "bgVidVideo_videoMobile",
+        "description":"Defines the path to a video on the mobile.",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "label": "Desktop Poster Image Path",
+        "name": "bgVidVideo_img",
+        "description": "Defines the path that will be displaying poster image on desktop while loading the page.",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "label": "Mobile Poster Image Path",
+        "name": "bgVidVideo_imgMobile",
+        "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
+        "valueType": "string"
+      },
+      {
+        "component": "boolean",
+        "label": "Loop Video",
+        "name": "bgVidVideo_loopVideo",
+        "description": "Defines if the video will play on loop. If toggled on, the video will loop.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "boolean",
+        "label": "Autoplay",
+        "name": "bgVidVideo_autoPlayVideo",
+        "description": "Defines if the video will autoplay. If toggled on, the video will autoplay.",
+        "valueType": "boolean",
+        "value": true
+      },     
+      {
+        "component": "tab",
+        "label": "Button/Link",
+        "name": "bgVidCta1_tab"
+      },
+      {
+        "component": "text-input",
+        "name": "bgVidCta1_Link",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "bgVidCta1_LinkText",
+        "description": "Defines the text to be displayed in the button or as the link.",
+        "label": "Link Label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "bgVidCta1_LinkType",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
+        "valueType": "string",
+        "value": "secondary",
+        "options": [
+          {
+            "name": "Money Button",
+            "value": "secondary"
+          },
+          {
+            "name": "Money Button Flex",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "bgVidCta2_Link",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "bgVidCta2_LinkText",
+        "description": "Defines the text to be displayed in the button or as the link.",
+        "label": "Link Label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "bgVidCta2_LinkType",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
+        "valueType": "string",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Ghost on Image",
+            "value": "primary"
+          },
+          {
+            "name": "Ghost on Image Flex",
+            "value": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "disclaimer",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "disclaimerCF",
+        "label": "Content Fragment Picker",
+        "valueType": "string"
+      }
+    ]
   }
 ]
