@@ -179,7 +179,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
   }
 
   .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list-item.active{
-    border-bottom: .25rem solid var(--opacity-color);
+    border-bottom: .25rem solid var(--medium-text-color);
   }
 
   .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-anchor-container.mobile-only {
@@ -199,12 +199,12 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     }
 
     main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible{
-      padding: 0;
+      padding: 0 1.5rem;
       width: 100%;
     }
   
    .cmp-contentnavigation-wrapper .cmp-filter-toggle {
-    color: var(--light-text-color);
+    color: var(--medium-text-color);
     padding: 1rem;
     width: 100%;
     position: relative;
@@ -253,11 +253,11 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     padding: 0;
     margin: 0;
     width: 100%;
-    background: wheat;
     z-index: 9999;
     left: 0;
     opacity: 0;
     overflow: hidden;
+    background-color: var(--background-color);
    }
 
    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list.visible-mobile{
@@ -266,7 +266,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
    }
 
    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list-item {
-    padding: 0;
+    padding: .75rem 1.25rem;
     margin: 0;
    }
 

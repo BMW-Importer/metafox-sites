@@ -1,5 +1,4 @@
 function isMobileOrTablet() {
-  // Regular expression to detect mobile and tablet devices
   const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
   return mobileRegex.test(navigator.userAgent);
 }
@@ -86,7 +85,6 @@ export default function decorate(block) {
   navAnchorDivDesktop.append(navAnchorDesktop);
 
   const navAnchorDivMobile = document.createElement('div');
-
   navAnchorDivMobile.classList.add('cmp-contentnavigation-anchor-container');
   navAnchorDivMobile.classList.add('mobile-only');
   const navAnchorMobile = document.createElement('a');
