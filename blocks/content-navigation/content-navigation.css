@@ -184,7 +184,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
   /* mobile css */
 
   @media (width < 768px) {
-
    .cmp-contentnavigation-wrapper {
     display: flex;
     }
@@ -201,12 +200,11 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
    .cmp-contentnavigation-wrapper .cmp-filter-toggle {
     color: var(--medium-text-color);
     padding: 1rem;
-    width: 100%;
+    width: 50%;
     position: relative;
     left: 0;
     display: flex;
     padding-left: 0;
-    width: 50%;
    }
 
    .content-navigation-container .content-navigation-wrapper {
