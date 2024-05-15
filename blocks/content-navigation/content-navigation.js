@@ -43,8 +43,7 @@ function handleContenNav() {
 
 export default function decorate(block) {
   const props = [...block.children].map((row) => row.firstElementChild);
-  const [, contentLabel, background, isEnabled] = props;
-  console.log(contentLabel);
+  const [, , background, isEnabled, , btnLable, btnLink] = props;
   const mobileContentNavSelector = document.createElement('button');
   mobileContentNavSelector.classList.add('cmp-filter-toggle');
   mobileContentNavSelector.setAttribute('id', 'navdropdownMenuButton');
@@ -77,14 +76,27 @@ export default function decorate(block) {
   wrapper.appendChild(leftBtn);
   wrapper.appendChild(rightBtn);
   wrapper.appendChild(ul);
-  const navAnchorDiv = document.createElement('div');
-  navAnchorDiv.classList.add('cmp-contentnavigation-anchor-container');
-  const navAnchor = document.createElement('a');
-  navAnchor.classList.add('cmp-contentnavigation-anchor');
-  navAnchor.textContent = 'Želim da me obaveštavate';
-  navAnchor.href = '#';
-  navAnchorDiv.append(navAnchor);
-  ul.appendChild(navAnchorDiv);
+  const navAnchorDivDesktop = document.createElement('div');
+  navAnchorDivDesktop.classList.add('cmp-contentnavigation-anchor-container');
+  navAnchorDivDesktop.classList.add('desktop-only');
+  const navAnchorDesktop = document.createElement('a');
+  navAnchorDesktop.classList.add('cmp-contentnavigation-anchor');
+  navAnchorDesktop.textContent = btnLable.textContent;
+  navAnchorDesktop.href = btnLink.textContent;
+  navAnchorDivDesktop.append(navAnchorDesktop);
+
+  const navAnchorDivMobile = document.createElement('div');
+
+  navAnchorDivMobile.classList.add('cmp-contentnavigation-anchor-container');
+  navAnchorDivMobile.classList.add('mobile-only');
+  const navAnchorMobile = document.createElement('a');
+  navAnchorMobile.classList.add('cmp-contentnavigation-anchor');
+  navAnchorMobile.textContent = btnLable.textContent;
+  navAnchorMobile.href = btnLink.textContent;
+  navAnchorDivMobile.append(navAnchorMobile);
+
+  ul.appendChild(navAnchorDivDesktop);
+  wrapper.append(navAnchorDivMobile);
   block.textContent = '';
   block.appendChild(wrapper);
   if (isEnabled.children.length > 0) {
