@@ -35,12 +35,39 @@ function handleContenNav() {
   });
 }
 
-// function handleTabletView(ul, wrapper) {
-//   const isTabletView = window.innerWidth >= 768 && window.innerWidth <= 1024;
-//   console.log(isTabletView);
-//   ul.classList.toggle('tablet-only', isTabletView);
-//   wrapper.classList.toggle('tablet-only', isTabletView);
-// }
+let scrollAmount = 0;
+const step = 150;
+
+function updateButtons(leftBtn, rightBtn, list) {
+  leftBtn.style.display = scrollAmount > 0 ? 'block' : 'none';
+  rightBtn.style.display = scrollAmount < list.scrollWidth - list.clientWidth ? 'block' : 'none';
+}
+
+function scrollLeft() {
+  const list = document.querySelector('.cmp-contentnavigation-list');
+  const leftArrowSelector = document.querySelector('.cmp-contentnavigation-arrow-left');
+  const rightArrowSelector = document.querySelector('.cmp-contentnavigation-arrow-right');
+
+  leftArrowSelector.addEventListener('click', () => {
+    scrollAmount = Math.max(scrollAmount - step, 0);
+    list.style.transition = 'transform 0.3s ease';
+    list.style.transform = `translateX(${-scrollAmount}px)`;
+    updateButtons(leftArrowSelector, rightArrowSelector, list);
+  });
+}
+
+function scrollRight() {
+  const rightArrowSelector = document.querySelector('.cmp-contentnavigation-arrow-right');
+  const leftArrowSelector = document.querySelector('.cmp-contentnavigation-arrow-left');
+  const list = document.querySelector('.cmp-contentnavigation-list');
+
+  rightArrowSelector.addEventListener('click', () => {
+    scrollAmount = Math.min(scrollAmount + step, list.scrollWidth - list.clientWidth);
+    list.style.transition = 'transform 0.3s ease';
+    list.style.transform = `translateX(${-scrollAmount}px)`;
+    updateButtons(leftArrowSelector, rightArrowSelector, list);
+  });
+}
 
 export default function decorate(block) {
   const props = [...block.children].map((row) => row.firstElementChild);
@@ -82,7 +109,6 @@ export default function decorate(block) {
       wrapper.classList.toggle('tablet-only', isTabletView && index >= 5);
     }
     handleTabletView();
-    window.addEventListener('resize', handleTabletView);
   });
 
   wrapper.appendChild(leftBtn);
@@ -128,6 +154,9 @@ export default function decorate(block) {
     wrapper.classList.add(backgroundDom);
   }
   window.addEventListener('scroll', handleContentNavScroll);
+  window.addEventListener('resize', this.handleTabletView);
   activeAnchor();
   handleContenNav();
+  scrollLeft();
+  scrollRight();
 }
