@@ -36,7 +36,7 @@ function handleContenNav() {
 }
 
 let scrollAmount = 0;
-const step = 150;
+const step = 250;
 
 function updateButtons(leftBtn, rightBtn, list) {
   leftBtn.style.display = scrollAmount > 0 ? 'block' : 'none';
@@ -105,7 +105,7 @@ export default function decorate(block) {
     ul.appendChild(li);
     function handleTabletView() {
       const isTabletView = window.innerWidth >= 768 && window.innerWidth <= 1024;
-      ul.classList.toggle('tablet-only', isTabletView && index >= 5); // < // >
+      ul.classList.toggle('tablet-only', isTabletView && index >= 5);
       wrapper.classList.toggle('tablet-only', isTabletView && index >= 5);
     }
     handleTabletView();
@@ -114,27 +114,25 @@ export default function decorate(block) {
   wrapper.appendChild(leftBtn);
   wrapper.appendChild(rightBtn);
   wrapper.appendChild(ul);
+  if (btnLable.children.length > 0 && btnLable.children.length > 0) {
+    const createNavAnchor = (label, link, containerClass) => {
+      const anchorDiv = document.createElement('div');
+      anchorDiv.classList.add('cmp-contentnavigation-anchor-container');
+      anchorDiv.classList.add(containerClass);
 
-  const navAnchorDivDesktop = document.createElement('div');
-  navAnchorDivDesktop.classList.add('cmp-contentnavigation-anchor-container');
-  navAnchorDivDesktop.classList.add('desktop-only');
-  const navAnchorDesktop = document.createElement('a');
-  navAnchorDesktop.classList.add('cmp-contentnavigation-anchor');
-  navAnchorDesktop.textContent = btnLable.textContent;
-  navAnchorDesktop.href = btnLink.textContent;
-  navAnchorDivDesktop.append(navAnchorDesktop);
+      const anchor = document.createElement('a');
+      anchor.classList.add('cmp-contentnavigation-anchor');
+      anchor.textContent = label;
+      anchor.href = link;
 
-  const navAnchorDivMobile = document.createElement('div');
-  navAnchorDivMobile.classList.add('cmp-contentnavigation-anchor-container');
-  navAnchorDivMobile.classList.add('mobile-only');
-  const navAnchorMobile = document.createElement('a');
-  navAnchorMobile.classList.add('cmp-contentnavigation-anchor');
-  navAnchorMobile.textContent = btnLable.textContent;
-  navAnchorMobile.href = btnLink.textContent;
-  navAnchorDivMobile.append(navAnchorMobile);
+      anchorDiv.appendChild(anchor);
+      return anchorDiv;
+    };
+    const mobileNavAnchor = createNavAnchor(btnLable.textContent, btnLink?.textContent, 'mobile-only');
+    wrapper.classList.add('variation-btn');
+    wrapper.appendChild(mobileNavAnchor);
+  }
 
-  ul.appendChild(navAnchorDivDesktop);
-  wrapper.append(navAnchorDivMobile);
   block.textContent = '';
   block.appendChild(wrapper);
   if (isEnabled.children.length > 0) {
