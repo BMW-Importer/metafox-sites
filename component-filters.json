@@ -126,6 +126,22 @@
     }
   },
   {
+    "id": "quote",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [""],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
     "id": "section",
     "components": [
       "copy_text",
@@ -153,7 +169,8 @@
       "disclaimer",
       "eyebrow",
       "headline",
-      "background-media"
+      "background-media",
+      "quote"
     ]
   },
   {
@@ -167,7 +184,8 @@
       "accordion",
       "disclaimer",
       "eyebrow",
-      "headline"
+      "headline",
+      "quote"
     ]
   },
   {
