@@ -50,7 +50,7 @@ function scrollLeft() {
 
   leftArrowSelector.addEventListener('click', () => {
     scrollAmount = Math.max(scrollAmount - step, 0);
-    list.style.transition = 'transform 0.3s ease';
+    list.style.transition = 'transform 0.60s ease-in';
     list.style.transform = `translateX(${-scrollAmount}px)`;
     updateButtons(leftArrowSelector, rightArrowSelector, list);
   });
@@ -63,7 +63,7 @@ function scrollRight() {
 
   rightArrowSelector.addEventListener('click', () => {
     scrollAmount = Math.min(scrollAmount + step, list.scrollWidth - list.clientWidth);
-    list.style.transition = 'transform 0.3s ease';
+    list.style.transition = 'transform 0.60s ease-in';
     list.style.transform = `translateX(${-scrollAmount}px)`;
     updateButtons(leftArrowSelector, rightArrowSelector, list);
   });
