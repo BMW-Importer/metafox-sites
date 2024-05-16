@@ -274,12 +274,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
   /* ipad css */
 
   @media (width >= 767px) and (width < 1280px) {
-    main .section.content-navigation-container .cmp-contentnavigation-wrapper {
-      padding: 0;
-      /* background-color: red;
-      box-shadow: 0 -1.937rem 1.1875rem red; */
-    }
-
     .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav {
       padding-left: 3rem;
       padding-right: 3rem;
