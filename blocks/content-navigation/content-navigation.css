@@ -312,7 +312,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
 
    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list-item {
     padding-left: 0.5rem;
-    background-color: red;
    }
 
   }
@@ -344,15 +343,18 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-arrow-right {
-      position: absolute;
-      top: 6.5rem;
+      position: relative;
       display: block;
+      height: auto;
+      left: 94%;
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-arrow-left {
-      position: absolute;
-      top: 6.5rem;
+      position: relative;
+      top: 0;
       display: none;
+      height: auto;
+      left: 0;
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-arrow-left::before {
@@ -373,6 +375,8 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       outline: transparent solid 1px;
       white-space: nowrap;
       color: var(--text-color);
+      background-attachment: var(--background-color);
+      box-shadow: -23px 0.063rem 1.1875rem white;
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-arrow-right::after {
@@ -464,7 +468,8 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       outline: transparent solid 1px;
       white-space: nowrap;
       color: var(--text-color);
-      box-shadow:  9.8rem 0 86px 12.4rem white;
+      
+      /* box-shadow:  9.8rem 0 86px 12.4rem white; */
      
     }
 
@@ -477,14 +482,12 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-wrapper.variation-btn.fixed-nav .cmp-contentnavigation-arrow-right::before {
       box-shadow: 9.8rem 0 86px 12.4rem white;
     }
-
-    .section.content-navigation-container .cmp-contentnavigation-wrapper.tablet-only{
-      overflow-x: hidden;
-    }
-
+    
     .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list.tablet-only{
       padding-left: 3rem;
       margin: 0;
+      overflow-x: scroll;
+      scrollbar-width: none;
     }
     
     .cmp-contentnavigation-wrapper:not(.variation-btn) .cmp-contentnavigation-list {
@@ -542,6 +545,11 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       display: block !important;
      }
    
+     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-list {
+      width: 90%;
+      overflow-x: scroll;
+      scrollbar-width: none;
+     }
   }
 
   @media (width >= 1280px) { 

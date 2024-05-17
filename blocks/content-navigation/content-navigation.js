@@ -36,7 +36,7 @@ function handleContenNav() {
 }
 
 let scrollAmount = 0;
-const step = 250;
+const step = 150;
 
 function updateButtons(leftBtn, rightBtn, list) {
   leftBtn.style.display = scrollAmount > 0 ? 'block' : 'none';
@@ -66,6 +66,14 @@ function scrollRight() {
     list.style.transition = 'transform 0.60s ease-in';
     list.style.transform = `translateX(${-scrollAmount}px)`;
     updateButtons(leftArrowSelector, rightArrowSelector, list);
+  });
+}
+
+function handleScrollOnContentNav() {
+  const contentNavSelector = document.querySelector('.cmp-contentnavigation-list');
+  contentNavSelector.addEventListener('scroll', (event) => {
+    console.log(event);
+    console.log(contentNavSelector.offset);
   });
 }
 
@@ -157,4 +165,5 @@ export default function decorate(block) {
   handleContenNav();
   scrollLeft();
   scrollRight();
+  handleScrollOnContentNav();
 }
