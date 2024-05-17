@@ -166,7 +166,11 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     padding-left: 0;
    }
 
-   .cmp-contentnavigation-wrapper.variation-btn .cmp-filter-toggle {
+   /* .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-list-item {    
+    background-color: pink;
+   } */
+
+   .cmp-contentnavigation-wrapper.fixed-nav.variation-btn .cmp-filter-toggle {
     color: var(--medium-text-color);
     padding: 1rem;
     width: 50%;
@@ -212,21 +216,12 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     right: 3.5rem;
    }
 
-   /* .cmp-contentnavigation-wrapper.fixed-nav .cmp-filter-toggle::after {
+   .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-filter-toggle::after {    
     position: absolute;
     top: 1.5rem;
     right: 1rem;
-   } */
+   }
 
-/* 
-   .cmp-contentnavigation-wrapper.fixed .cmp-filter-toggle::after {
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
-   }  */
-
-
-  
    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list{
     position: absolute;
     flex-direction: column;
@@ -309,6 +304,17 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
    main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.transparent {
     opacity: unset;
    }
+
+   .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list-item.active {
+    border-bottom: none !important;
+    border-left: .25rem solid var(--medium-text-color);
+   }
+
+   .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list-item {
+    padding-left: 0.5rem;
+    background-color: red;
+   }
+
   }
 
   /* ipad css */
