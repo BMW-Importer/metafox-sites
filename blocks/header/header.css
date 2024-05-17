@@ -1348,6 +1348,7 @@ header nav[aria-expanded="true"] .section {
     margin-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
   }
 
+
   header nav[aria-expanded="true"] .section {
     left: calc(100vw - (var(--max-component-width) - (45px + 96px)));
   }
