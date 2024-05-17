@@ -774,7 +774,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "media_videoTitle",
+        "name": "textwithvideotitle",
         "value": "",
         "label": "Video Title",
         "description": "Defines the title of the video.",
@@ -783,7 +783,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "media_videoDescription",
+        "name": "textwithvideodescription",
         "value": "",
         "label": "Video Description",
         "description": "Defines the description of the video.",
@@ -792,7 +792,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "media_desktopFileReference",
+        "name": "textwithvideodesktopFileReference",
         "label": "Desktop Video Path",
         "value": "",
         "description": "Defines video that will play on desktop.",
@@ -802,7 +802,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "media_mobileFileReference",
+        "name": "textwithvideomobileFileReference",
         "label": "Mobile Video Path",
         "value": "",
         "description": "Defines video that will play on mobile.",
@@ -811,7 +811,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "media_desktopPosterFileReference",
+        "name": "textwithvideodesktopPosterFileReference",
         "label": "Desktop Poster Image",
         "value": "",
         "description": "Defines the the poster image of the video that will play on desktop. It will be displayed while loading the page.",
@@ -821,7 +821,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "media_mobilePosterFileReference",
+        "name": "textwithvideomobilePosterFileReference",
         "label": "Mobile Poster Image",
         "value": "",
         "description": "Defines the the poster image of the video that will play on mobile. It will be displayed while loading the page.",
@@ -830,7 +830,7 @@
       {
         "component": "boolean",
         "label": "Loop Video",
-        "name": "media_loopVideo",
+        "name": "textwithvideoloopvideo",
         "valueType": "boolean",
         "value": true,
         "description": "Defines if the video will play on loop. If toggled on, the video will loop."
@@ -838,7 +838,7 @@
       {
         "component": "boolean",
         "label": "Autoplay",
-        "name": "media_autoplay",
+        "name": "textwithvideoautoplay",
         "valueType": "boolean",
         "value": true,
         "description": "Defines if the video will autoplay. If toggled on, the video will autoplay."
@@ -846,7 +846,7 @@
       {
         "component": "boolean",
         "label": "Video Controls",
-        "name": "media_videoControls",
+        "name": "textwithvideocontrols",
         "valueType": "boolean",
         "value": false,
         "description": "Defines if the video controls will be displayed. If toggled on, they will appear."
@@ -854,7 +854,7 @@
       {
         "component": "boolean",
         "label": "Mute Video",
-        "name": "media_muteVideo",
+        "name": "textwithvideomutevideo",
         "valueType": "boolean",
         "value": true,
         "description": "Defines if the video will be play on mute. If toggled on, there will be no sound."

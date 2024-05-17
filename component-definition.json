@@ -299,10 +299,10 @@
                   "videobuttonstyling": "secondary",
                   "classes":"left",
                   "style":"",
-                  "media_loopVideo":true,
-                  "media_autoplay":true,
-                  "media_videoControls":false,
-                  "media_muteVideo":true
+                  "textwithvideoloopvideo":true,
+                  "textwithvideoautoplay":true,
+                  "textwithvideocontrols":false,
+                  "textwithvideomutevideo":true
                 }
               }
             }
