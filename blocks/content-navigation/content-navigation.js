@@ -1,3 +1,5 @@
+const { body } = document;
+
 function handleContentNavScroll() {
   const navigation = document.getElementById('navigation');
   const contentNavWrapper = document.querySelector('.cmp-contentnavigation-wrapper');
@@ -22,16 +24,49 @@ function activeAnchor() {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       document.getElementById('navdropdownMenuButton').textContent = e.target.textContent;
-      e.target.parentElement.parentElement.classList.remove('visible-mobile');
+      e.target.closest('.cmp-contentnavigation-list').classList.remove('visible-mobile');
+      document.getElementById('navdropdownMenuButton').classList.remove('visible-mobile-btn');
+      body.style.overflowY = 'auto';
     });
   });
 }
 
-function handleContenNav() {
+function handleContenNavMobile() {
   const buttonSelector = document.getElementById('navdropdownMenuButton');
   buttonSelector.addEventListener('click', (e) => {
-    e.target.classList.toggle('visible-mobile-btn');
-    e.target.nextSibling.nextSibling.nextSibling.classList.toggle('visible-mobile');
+    const contentNavWrapper = e.target.closest('.cmp-contentnavigation-wrapper');
+    const checkScrollPosition = contentNavWrapper.classList.contains('fixed-nav');
+    if (checkScrollPosition) {
+      e.target.classList.toggle('visible-mobile-btn');
+      e.target.nextSibling.nextSibling.nextSibling.classList.toggle('visible-mobile');
+      if (e.target.classList.contains('visible-mobile-btn')) {
+        body.style.overflowY = 'hidden';
+      } else {
+        body.style.overflowY = 'auto';
+      }
+    } else {
+      setTimeout(() => {
+        contentNavWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 500);
+    }
+  });
+}
+
+function handleContenNavDesktop() {
+  const links = document.querySelectorAll('.cmp-contentnavigation-list-link');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const contentNavWrapper = e.target.closest('.cmp-contentnavigation-wrapper');
+      const checkScrollPosition = contentNavWrapper.classList.contains('fixed-nav');
+      if (!checkScrollPosition) {
+        setTimeout(() => {
+          contentNavWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 500);
+      } else {
+        // scroll to the desired section clicked;
+      }
+    });
   });
 }
 
@@ -162,7 +197,8 @@ export default function decorate(block) {
   window.addEventListener('scroll', handleContentNavScroll);
   window.addEventListener('resize', this.handleTabletView);
   activeAnchor();
-  handleContenNav();
+  handleContenNavMobile();
+  handleContenNavDesktop();
   scrollLeft();
   scrollRight();
   handleScrollOnContentNav();

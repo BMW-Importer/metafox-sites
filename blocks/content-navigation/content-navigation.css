@@ -664,3 +664,4 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
   padding-right: calc((100vw - (var(--max-component-width) - (var(--section-desktop-padding) * 2 )))/2);
   }
 }
+
