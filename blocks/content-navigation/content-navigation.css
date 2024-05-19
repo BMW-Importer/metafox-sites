@@ -366,13 +366,20 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     }
 
     main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 6020;
-      border-bottom: 0.0625rem solid var(--light-grey-1);
-      padding: 0;
+        position: fixed;
+        top: 0;
+        left: 4%;
+        right: 4%;
+        z-index: 6020;
+        border-bottom: 0.0625rem solid var(--light-grey-1);
+        padding: 0 !important;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        width: auto !important;
+    }
+    
+    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list-link {
+      padding: 10px;
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-arrow-right {
@@ -410,6 +417,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       color: var(--text-color);
       background-attachment: var(--background-color);
       box-shadow: -23px 0.063rem 1.1875rem white;
+      visibility: hidden;
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-arrow-right::after {
@@ -430,6 +438,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       outline: transparent solid 1px;
       white-space: nowrap;
       color: var(--text-color);
+      visibility: hidden;
       
     }
 
@@ -520,12 +529,12 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       box-shadow: 9.8rem 0 86px 12.4rem white;
     }
     
-    .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list.tablet-only{
+    /* .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list.tablet-only{
       padding-left: 3rem;
       margin: 0;
       overflow-x: scroll;
       scrollbar-width: none;
-    }
+    } */
 
     .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.hide .cmp-contentnavigation-list.tablet-only {
       padding-top: 0;

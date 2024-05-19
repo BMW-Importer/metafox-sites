@@ -1,10 +1,26 @@
 const { body } = document;
+const sections = document.querySelectorAll('div[data-contentnavigation="true"]');
 
-function handleContentNavScroll() {
+function activeAnchor() {
+  sections.forEach((section) => {
+    const scrollPosition = window.scrollY;
+    const sectionId = section.getAttribute('data-anchorid');
+    const sectionOffset = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if (scrollPosition >= sectionOffset && scrollPosition < sectionOffset + sectionHeight) {
+      document.querySelector(`[data-anchor="#${sectionId}"]`)?.parentNode.classList.add('active');
+    } else {
+      document.querySelector(`[data-anchor="#${sectionId}"]`)?.parentNode.classList.remove('active');
+    }
+  });
+}
+
+function handleContentNavFixedHeader() {
   const navigation = document.getElementById('navigation');
   const contentNavWrapper = document.querySelector('.cmp-contentnavigation-wrapper');
   const contentNavContainer = document.querySelector('.content-navigation-container');
   const offset = contentNavContainer?.offsetTop;
+  // activeAnchor();
   if (window.pageYOffset >= offset) {
     navigation.classList.add('fixed-nav');
     contentNavContainer.classList.remove('hide');
@@ -16,19 +32,6 @@ function handleContentNavScroll() {
       contentNavContainer.classList.add('hide');
     }
   }
-}
-
-function activeAnchor() {
-  const links = document.querySelectorAll('.cmp-contentnavigation-list-link');
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      document.getElementById('navdropdownMenuButton').textContent = e.target.textContent;
-      e.target.closest('.cmp-contentnavigation-list').classList.remove('visible-mobile');
-      document.getElementById('navdropdownMenuButton').classList.remove('visible-mobile-btn');
-      body.style.overflowY = 'auto';
-    });
-  });
 }
 
 function handleContenNavMobile() {
@@ -65,13 +68,34 @@ function handleContenNavDesktop() {
         }, 500);
       } else {
         // scroll to the desired section clicked;
+        e.preventDefault();
+        document.getElementById('navdropdownMenuButton').textContent = e.target.textContent;
+        e.target.closest('.cmp-contentnavigation-list').classList.remove('visible-mobile');
+        document.getElementById('navdropdownMenuButton').classList.remove('visible-mobile-btn');
+        body.style.overflowY = 'auto';
+        activeAnchor();
+        const targetId = e.target.getAttribute('data-anchor');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          // const targetOffset = targetSection.offsetTop;
+          window.scrollBy(0, 100);
+          setTimeout(() => {
+            window.scrollBy(0, 0);
+          }, 400);
+          setTimeout(() => {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+            // allowScrollEvent = true;
+            }, 500);
+          }, 400);
+        }
       }
     });
   });
 }
 
 let scrollAmount = 0;
-const step = 150;
+const step = 200;
 
 function updateButtons(leftBtn, rightBtn, list) {
   leftBtn.style.display = scrollAmount > 0 ? 'block' : 'none';
@@ -99,16 +123,8 @@ function scrollRight() {
   rightArrowSelector.addEventListener('click', () => {
     scrollAmount = Math.min(scrollAmount + step, list.scrollWidth - list.clientWidth);
     list.style.transition = 'transform 0.60s ease-in';
-    list.style.transform = `translateX(${-scrollAmount}px)`;
+    list.style.transform = `translateX(${-scrollAmount - 100}px)`;
     updateButtons(leftArrowSelector, rightArrowSelector, list);
-  });
-}
-
-function handleScrollOnContentNav() {
-  const contentNavSelector = document.querySelector('.cmp-contentnavigation-list');
-  contentNavSelector.addEventListener('scroll', (event) => {
-    console.log(event);
-    console.log(contentNavSelector.offset);
   });
 }
 
@@ -119,7 +135,7 @@ export default function decorate(block) {
   leftBtn.classList.add('cmp-contentnavigation-arrow-left');
   const rightBtn = document.createElement('button');
   rightBtn.classList.add('cmp-contentnavigation-arrow-right');
-  const sections = document.querySelectorAll('div[data-contentnavigation="true"]');
+  // const sections = document.querySelectorAll('div[data-contentnavigation="true"]');
   const wrapper = document.createElement('div');
   wrapper.classList.add('cmp-contentnavigation-wrapper');
   wrapper.id = 'navigation';
@@ -194,12 +210,10 @@ export default function decorate(block) {
     const backgroundDom = backgroundSelctor === 'Transparent' ? 'transparent' : 'white';
     wrapper.classList.add(backgroundDom);
   }
-  window.addEventListener('scroll', handleContentNavScroll);
+  window.addEventListener('scroll', handleContentNavFixedHeader);
   window.addEventListener('resize', this.handleTabletView);
-  activeAnchor();
   handleContenNavMobile();
   handleContenNavDesktop();
   scrollLeft();
   scrollRight();
-  handleScrollOnContentNav();
 }
