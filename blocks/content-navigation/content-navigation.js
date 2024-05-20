@@ -19,6 +19,7 @@ function handleContentNavFixedHeader() {
   const navigation = document.getElementById('navigation');
   const contentNavWrapper = document.querySelector('.cmp-contentnavigation-wrapper');
   const contentNavContainer = document.querySelector('.content-navigation-container');
+  const ulList = document.querySelector('.cmp-contentnavigation-list');
   const offset = contentNavContainer?.offsetTop;
   // activeAnchor();
   if (window.pageYOffset >= offset) {
@@ -31,6 +32,9 @@ function handleContentNavFixedHeader() {
     } else {
       contentNavContainer.classList.add('hide');
     }
+  }
+  if (contentNavWrapper.classList.contains('fixed-nav')) {
+    ulList.style = '';
   }
 }
 
