@@ -19,34 +19,18 @@ main .section.content-navigation-container.hide {
   display: none;
 }
 
-/* main .section.content-navigation-container .cmp-contentnavigation-wrapper.hide {
-  overflow: hidden;
-  opacity: 0;
-} */
-
 main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 87%;
+    width: auto !important;
     z-index: 6020;
     background-color: var(--background-color);
     padding: 0 6rem;
     border-bottom: 0.0625rem solid var(--light-grey-1);
+    right: 0;
+    height: 5.25rem;
   }
-
-  /* main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.hide {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 6020;
-    background-color: var(--background-color);
-    padding: 0 6rem;
-    border-bottom: 0.0625rem solid var(--light-grey-1);
-    opacity: 1;
-    overflow: unset;
-    width: 85%;
-  } */
 
   main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.transparent {
     backdrop-filter: blur(10px);
@@ -153,9 +137,14 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       margin: 0;
     }
 
+    main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav {     
+      height: 3.3rem !important;
+    }
+
     main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible{
       padding-left: 1.5rem;
-      width: 100%;
+      width: 100% !important;
+      height: 3.3rem !important;
     }
 
     main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.hide {
@@ -173,11 +162,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     height: 52px;
     align-self: center;
    }
-
-   /* .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-contentnavigation-list-item {    
-    background-color: pink;
-   }  */
-
+   
    .cmp-contentnavigation-wrapper:not(.fixed-nav) .cmp-filter-toggle {
     position: relative;
     padding-left: 0;
@@ -370,7 +355,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       padding-right: 3rem;
     }
 
-    main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible {
+    /* main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.visible {
         position: fixed;
         top: 0;
         left: 4%;
@@ -385,7 +370,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
         display: flex;
         align-items: center;
         justify-content: end;
-    }
+    } */
     
     .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list-link {
       padding: 0 8px;
@@ -538,12 +523,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       box-shadow: 9.8rem 0 86px 12.4rem white;
     }
     
-    /* .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-list.tablet-only{
-      padding-left: 3rem;
-      margin: 0;
-      overflow-x: scroll;
-      scrollbar-width: none;
-    } */
+  
 
     .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav.hide .cmp-contentnavigation-list.tablet-only {
       padding-top: 0;
@@ -581,10 +561,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       
      }
 
-     .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-anchor-container .cmp-contentnavigation-anchor {
-      display: inline-flex;
-    }
-
     .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-list .cmp-contentnavigation-anchor-container.desktop-only {
       display: none;
     }
@@ -594,7 +570,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       width: 50%;
       justify-content: right;
       align-items: center;
-      margin-right: 1.5rem;
       z-index: 999;
     }
 
@@ -602,10 +577,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       display: none;
     }
 
-     .content-navigation-container .content-navigation-wrapper .fixed-nav .cmp-contentnavigation-anchor-container.mobile-only {
-      margin-right: 2.5rem;
-     }
-
+    
      .content-navigation-container .cmp-contentnavigation-wrapper .cmp-contentnavigation-list.tablet-only .cmp-contentnavigation-anchor-container.mobile-only {
       display: block !important;
      }
@@ -618,6 +590,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
 
      main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav {
       padding-left: 0;
+      height: 3.3rem !important;
      }
 
      .cmp-contentnavigation-wrapper.variation-btn.fixed-nav .cmp-contentnavigation-list {
@@ -629,7 +602,6 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
 
      .cmp-contentnavigation-wrapper.variation-btn.fixed-nav .cmp-filter-toggle::after{
       display: none;
-      background-color: red;
      }
 
      .content-navigation-container .cmp-contentnavigation-wrapper.cmp-contentnavigation-wrapper.variation-btn:not(.fixed-nav) .cmp-contentnavigation-list{
@@ -643,9 +615,14 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
 
     .content-navigation-container .cmp-contentnavigation-wrapper.cmp-contentnavigation-wrapper.variation-btn:not(.fixed-nav) .cmp-contentnavigation-arrow-right::after {
       position: absolute;
-      background-color: red;
       right: 0;
     }
+
+    .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-anchor-container .cmp-contentnavigation-anchor {
+      min-height: 2.50rem;
+      display: inline-flex;
+    }
+
   }
 
   @media (width >= 1280px) { 
@@ -684,7 +661,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
  
 @media (width >= 830px) and (width < 1280px) {
   main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav {
-    width: 90% !important;
+    height: 3.25rem;
   }
  }
 
