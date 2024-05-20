@@ -1,0 +1,142 @@
+.video-js.text-with-video, .image {
+  width: 60%;
+}
+
+.eyebrowbold1 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: var(--fixed-font-family);
+  background-color: rgb(255 255 255 / 100%);
+  color: rgb(102 102 102 / 100%);
+}
+
+.eyebrowbold2 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  font-family: var(--fixed-font-family);
+  background-color: rgba(255 255 255 / 100%);
+  color: rgb(102 102 102 / 100%);
+}
+
+.iconization {
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.text-with-video-eyebrow, 
+.text-with-image-eyebrow {
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+
+.text-with-video-description, 
+.text-with-image-description {
+  margin-top: 12px;
+  padding: 0 12px;
+}
+
+.video-wrapper-div.left,
+.image-wrapper-div.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.video-wrapper-div.right,
+.image-wrapper-div.right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text-with-video-button,
+.text-with-image-button {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 24px;
+  padding: 0 12px;
+}
+
+.text-with-video-button:hover,
+.text-with-image-button:hover{
+  color: var(--link-hover-color);
+  cursor: pointer;
+}
+
+.text-with-video-headline, 
+.text-with-image-headline {
+  margin: 0;
+  padding: 0 12px;
+}
+
+.text-with-image-button > span,
+.text-with-video-button > span {
+  margin-top: 1rem;
+}
+
+@media (width >= 1280px) {
+  .text-alignment {
+    text-align: left;
+    padding: 0 0 0 40px;
+    width: 40%;
+  }
+}
+
+/* tablet */
+@media (width >= 768px) and (width < 1280px) {
+  .video-js.text-with-video, .image {
+    width: 50%;
+  }
+
+  .text-alignment {
+    text-align: left;
+    padding: 0 0 0 16px;
+    width: 50%;
+  }
+}
+
+/* mobile */
+@media (width >= 360px) and (width < 768px) {
+  .video-wrapper-div.left,
+  .video-wrapper-div.right,
+  .image-wrapper-div.left,
+  .image-wrapper-div.right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-js.text-with-video, .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text-with-video-eyebrow, 
+  .text-with-image-eyebrow {
+    margin-bottom: 8px;
+    padding: 0;
+  }
+  
+  .text-with-video-description, 
+  .text-with-image-description {
+    margin-top: 8px;
+    padding: 0;
+  }
+  
+  .text-with-video-button, 
+  .text-with-image-button {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .text-with-video-headline,
+  .text-with-image-headline {
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-alignment {
+    text-align: left;
+    padding: 0 8px;
+  }
+}

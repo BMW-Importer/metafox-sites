@@ -10,9 +10,10 @@
   "bodyTypeCode": "TO",
   "marketingBodyTypeCode": "TO",
   "bodyTypeDescription": "TOU",
-  "effectDate": "2024-05-06",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 108314,
+  "seats": 5,
   "fuelType": "O",
   "posiSpec": {
     "cosyBrand": "WBBM",
@@ -25,28 +26,34 @@
     {
       "transmissionCode": "A",
       "hybridCode": "NOHY",
+      "iD_LEIST_KONST": "00",
       "volt48": false,
       "technicalData": {
         "powerTrain": {
           "fuelType": "O",
-          "systemPower": "-",
-          "systemMaxTorque": "-",
-          "gearBox": "-",
+          "systemPower": "375 (510)",
+          "systemMaxTorque": "650",
+          "gearBox": "8 - automatisch",
           "driveType": "AR"
         },
         "engine": {
-          "cylinders": "-",
-          "technicalCapacity": "-",
-          "nominalPower": "-",
-          "nominalTorque": "-"
+          "cylinders": "6",
+          "technicalCapacity": "2993",
+          "nominalPower": "375 (510) / 6250",
+          "nominalTorque": "650 / 2750 - 5500"
         },
         "electric": {
           "systemPower": "-",
           "systemMaxTorque": "-"
         },
+        "performance": {
+          "acceleration": "3.6",
+          "topSpeed": "250",
+          "electricTopSpeed": "-"
+        },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "10.4 - 10.1",
-          "emissionsWltpCombined": "235 - 229",
+          "consumptionWltpCombined": "-",
+          "emissionsWltpCombined": "0",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
           "co2EquivalentOverallBest": "-",
@@ -61,8 +68,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "trunkCapacity": "-",
-          "tankCapacity": "-"
+          "length": "4801.0",
+          "width": "1903.0",
+          "height": "1446.0",
+          "widthMirrors": "2068 (1040 / 1028)",
+          "wheelTurn": "2857.0",
+          "weightNotLoaded": "1940",
+          "weightMax": "2370",
+          "permittedLoad": "505",
+          "trailerLoad": "-",
+          "trunkCapacity": "500 - 1510",
+          "tankCapacity": "59.0"
         }
       },
       "footnotes": {
@@ -75,9 +91,15 @@
         "emissionsConsumptionWltp": [
           "f1",
           "f4"
+        ],
+        "weightMeasurements_weightNotLoaded_label": [
+          "f8"
         ]
       },
-      "footnotesData": {}
+      "footnotesData": {
+        "overboostMax": "-",
+        "overboostKW": "-"
+      }
     }
   ]
 }

@@ -8,7 +8,7 @@
   "cosyBrand": "WBBM",
   "bodyTypeCode": "CP",
   "marketingBodyTypeCode": "CP",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 44117,
   "seats": 5,
@@ -66,17 +66,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4319",
-          "width": "1799",
-          "height": "1434",
+          "length": "4319.0",
+          "width": "1799.0",
+          "height": "1434.0",
           "widthMirrors": "2081 (1045 / 1036)",
-          "wheelTurn": "2670",
+          "wheelTurn": "2670.0",
           "weightNotLoaded": "1520",
           "weightMax": "2000",
           "permittedLoad": "555",
           "trailerLoad": "-",
           "trunkCapacity": "380 - 1200",
-          "tankCapacity": "50"
+          "tankCapacity": "50.0"
         }
       },
       "footnotes": {

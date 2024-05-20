@@ -1,14 +1,21 @@
+/* stylelint-disable no-descending-specificity */
+
 /* menu-flyout css */
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-main-container .flyout-scroll-indicator-arrow {
     position: absolute;
-    bottom: 0;    
-    left: 47%;
+    bottom: 0;
+    right: 0;
+    height: 3.75rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(255 255 255 / 0%), rgba(255 255 255 / 100%));
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-scroll-indicator-arrow::before{
-    position: absolute;
-    bottom: 0;
+    margin: .5rem;
     overflow-wrap: normal;
     font-size: 2rem;
     font-weight: 400;
@@ -91,10 +98,11 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a:hover,
+header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a:hover::after,
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a:hover
   {
     text-decoration: none;
-    color: var(--link-hover-color);
+    color: var(--light-link-hover-color);
 }
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .link-label a::after {
@@ -171,7 +179,7 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
     height: auto;
     overflow-y: auto;
     align-items: revert;
-    row-gap: 4rem;
+    row-gap: 3rem;
     max-height: calc(100vh - 15rem);
 }
 
@@ -207,7 +215,6 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
     }
 
     header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-main-container .flyout-scroll-indicator-arrow {
-       left: 45%;
        position: absolute;
     }
 
@@ -326,6 +333,7 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
 
     header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-main-container .flyout-scroll-indicator-arrow {
         bottom: 4.5%;
+        left: 0;
         position: absolute;
     }
 }

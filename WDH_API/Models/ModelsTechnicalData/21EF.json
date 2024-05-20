@@ -8,7 +8,7 @@
   "cosyBrand": "WBBM",
   "bodyTypeCode": "GF",
   "marketingBodyTypeCode": "SUV",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "PHEV",
   "fromPrice": 57692,
   "seats": 5,
@@ -66,17 +66,17 @@
           "chargingMaxAC": "7.4"
         },
         "weightMeasurements": {
-          "length": "4500",
-          "width": "1845",
-          "height": "1630",
+          "length": "4500.0",
+          "width": "1845.0",
+          "height": "1630.0",
           "widthMirrors": "2104 (1055 / 1049)",
-          "wheelTurn": "2692",
+          "wheelTurn": "2692.0",
           "weightNotLoaded": "1930",
           "weightMax": "2430",
           "permittedLoad": "575",
           "trailerLoad": "1700 / 80",
           "trunkCapacity": "490 - 1495",
-          "tankCapacity": "47"
+          "tankCapacity": "47.0"
         }
       },
       "footnotes": {
@@ -185,17 +185,17 @@
           "chargingMaxAC": "7.4"
         },
         "weightMeasurements": {
-          "length": "4500",
-          "width": "1845",
-          "height": "1630",
+          "length": "4500.0",
+          "width": "1845.0",
+          "height": "1630.0",
           "widthMirrors": "2104 (1055 / 1049)",
-          "wheelTurn": "2692",
+          "wheelTurn": "2692.0",
           "weightNotLoaded": "1930",
           "weightMax": "2430",
           "permittedLoad": "575",
           "trailerLoad": "1700 / 80",
           "trunkCapacity": "490 - 1495",
-          "tankCapacity": "47"
+          "tankCapacity": "47.0"
         }
       },
       "footnotes": {

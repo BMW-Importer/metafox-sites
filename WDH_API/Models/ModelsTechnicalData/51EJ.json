@@ -9,17 +9,17 @@
   "bodyTypeCode": "LI",
   "marketingBodyTypeCode": "LI",
   "bodyTypeDescription": "LIM",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-10",
   "hybridCode": "BEVE",
   "fromPrice": 159368,
   "seats": 5,
   "fuelType": "E",
   "posiSpec": {
     "cosyBrand": "WBBM",
-    "agCode": "21EJ",
-    "paint": "P0C64",
-    "fabric": "FVDF2",
-    "options": "S02VS,S03DM,S03DN,S0407,S0453,S04A2,S04FM,S04T7,S05AU,S05DW,S06FR,S06U3"
+    "agCode": "51EJ",
+    "paint": "P0C4A",
+    "fabric": "FKVRI",
+    "options": "S01F2,S0230,S02PA,S02VB,S02VH,S0302,S03DN,S0416,S0428,S0465,S04D7,S04FL,S04FM,S04HA,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S05AS,S05AW,S05DN,S0654,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0801,S0851,S0879,S08R9,S08TF,S08WN,S09QV"
   },
   "vehicles": [
     {
@@ -61,17 +61,17 @@
         "charging": {
           "batteryCapacity": "101.7",
           "chargeACDC": "11 (-) / 195",
-          "charge_AC_0_100": "10.75 (-)",
+          "charge_AC_0_100": "10.75",
           "charge_DC_10_80": "34",
           "additionalRangeDC": "151 - 186",
           "chargingMaxAC": "11"
         },
         "weightMeasurements": {
-          "length": "5391",
-          "width": "1950",
-          "height": "1544",
+          "length": "5391.0",
+          "width": "1950.0",
+          "height": "1544.0",
           "widthMirrors": "2192 (1099 / 1093)",
-          "wheelTurn": "3215",
+          "wheelTurn": "3215.0",
           "weightNotLoaded": "2715",
           "weightMax": "3250",
           "permittedLoad": "610",

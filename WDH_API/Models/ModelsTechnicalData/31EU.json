@@ -9,7 +9,7 @@
   "marketingVehicleType": "M",
   "bodyTypeCode": "GF",
   "marketingBodyTypeCode": "SUV",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 126900,
   "seats": 5,
@@ -67,17 +67,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4935",
-          "width": "2004",
-          "height": "1765",
+          "length": "4935.0",
+          "width": "2004.0",
+          "height": "1765.0",
           "widthMirrors": "2218 (1122 / 1096)",
-          "wheelTurn": "2975",
+          "wheelTurn": "2975.0",
           "weightNotLoaded": "2420",
           "weightMax": "3065",
           "permittedLoad": "720",
           "trailerLoad": "2700 / 140",
           "trunkCapacity": "650 - 1870",
-          "tankCapacity": "83"
+          "tankCapacity": "83.0"
         }
       },
       "footnotes": {

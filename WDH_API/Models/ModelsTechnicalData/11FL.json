@@ -9,17 +9,17 @@
   "bodyTypeCode": "LI",
   "marketingBodyTypeCode": "LI",
   "bodyTypeDescription": "LIM",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 61852,
   "seats": 5,
   "fuelType": "D",
   "posiSpec": {
     "cosyBrand": "WBBM",
-    "agCode": "71AG",
-    "paint": "P0C4F",
-    "fabric": "FKHSW",
-    "options": "S01CB,S01CE,S01DF,S01RB,S0230,S0258,S02PA,S02TE,S02VB,S0302,S0337,S0423,S0428,S0465,S0481,S0494,S04KH,S04NE,S04UR,S0508,S0534,S0548,S05AV,S0654,S06AC,S06AE,S06AK,S06C4,S06U3,S06WD,S0704,S0710,S0715,S0760,S0775,S0801,S0851,S0879,S08KA,S08R9,S08TF,S08WL,S09QX"
+    "agCode": "11FJ",
+    "paint": "P0C3Z",
+    "fabric": "FVCJN",
+    "options": "S03GM, S043N, S03DP,S02TE,S05AT,S05DN,S02PA,S02VB,S0300,S0428,S05AY,S06AF,S08TF,S06NX,S06U2,S0674,S06AK,S06C4,S0316,S03DK,S06CP,S08TG,S0453,S0465,S0481,S0494,S04T8,S09QW,S01CR,S0416,S0420,S0534"
   },
   "vehicles": [
     {
@@ -51,7 +51,7 @@
           "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "5.7 - 5.1",
+          "consumptionWltpCombined": "",
           "emissionsWltpCombined": "149 - 134",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
@@ -67,17 +67,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "5060",
-          "width": "1900",
-          "height": "1515",
+          "length": "5060.0",
+          "width": "1900.0",
+          "height": "1515.0",
           "widthMirrors": "2156 (1081 / 1075)",
-          "wheelTurn": "2995",
+          "wheelTurn": "2995.0",
           "weightNotLoaded": "1850",
           "weightMax": "2405",
           "permittedLoad": "630",
           "trailerLoad": "2000 / 100",
           "trunkCapacity": "520",
-          "tankCapacity": "60"
+          "tankCapacity": "60.0"
         }
       },
       "footnotes": {

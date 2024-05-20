@@ -14,8 +14,6 @@ const page_tracking = {"page": {
             "version": "acdl: 2024-03-27t12: 24: 35.759+01: 00",
             "destinationURL": "https://www.bmw.rs/sr/index.html",
             "variant": "real page",
-            "geoRegion": "RS",
-            "language": "sr",
             "pageTitle": "BMW Srbija",
             "windowInfo": {
                 "screenWidth": 3840,
@@ -112,10 +110,8 @@ function set_page_tracking(){
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
     page_tracking.page.pageInfo.pageID = window.location.pathname;
-    page_tracking.page.pageInfo.version = timestamp;
+    page_tracking.page.pageInfo.version = 'acdl: ' +timestamp;
     page_tracking.page.pageInfo.destinationURL = window.location.href;
-    page_tracking.page.pageInfo.language = lang.getAttribute('content');
-    page_tracking.page.pageInfo.geoRegion = geoReg.getAttribute('content');
     page_tracking.page.pageInfo.pageTitle = document.title;
     // eventinfo
     const randomNum = 1000000000 + Math.random() * 9000000000;
@@ -126,20 +122,26 @@ function set_page_tracking(){
     // camapaign attributes
     if(window.location.search !== ''){
       var queryParam = new URLSearchParams(window.location.search);
-      page_tracking.page['campaign'] = {};
-      page_tracking.page.pageInfo.windowInfo.campaign = window.location.search.slice(1);
-      page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search.slice(1);
-      page_tracking.page.campaign.trackingCode = window.location.search.slice(1);
-      page_tracking.page.campaign.campaignSource = queryParam.get('utm_source');
-      page_tracking.page.campaign.campaignMedium = queryParam.get('utm_medium');
-      page_tracking.page.campaign.campaignName = queryParam.get('utm_campaign');
-      page_tracking.page.campaign.campaignID = queryParam.get('utm_id');
-      page_tracking.page.campaign.campaignTerm = queryParam.get('utm_term');
-      page_tracking.page.campaign.campaignContent = queryParam.get('utm_content');
+      const utmParameters = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_id', 'utm_term', 'utm_content'];
+      const hasUtmParams = utmParameters.some(param => queryParam.has(param));
+
       if(queryParam.has('intCampID')){
-      page_tracking.page.pageInfo.windowInfo.internalCampaign = 'intCampID='+queryParam.get('intCampID');
+        page_tracking.page.pageInfo.windowInfo.internalCampaign = 'intCampID='+queryParam.get('intCampID');
+      }
+      if (hasUtmParams) {
+        page_tracking.page['campaign'] = {};
+        page_tracking.page.pageInfo.windowInfo.queryParam = window.location.search.slice(1);
+        page_tracking.page.campaign.campaignSource = queryParam.get('utm_source');
+        page_tracking.page.campaign.campaignMedium = queryParam.get('utm_medium');
+        page_tracking.page.campaign.campaignName = queryParam.get('utm_campaign');
+        page_tracking.page.campaign.campaignID = queryParam.get('utm_id');
+        page_tracking.page.campaign.campaignTerm = queryParam.get('utm_term');
+        page_tracking.page.campaign.campaignContent = queryParam.get('utm_content');
+        page_tracking.page.pageInfo.windowInfo.campaign = window.location.search.slice(1);
+        page_tracking.page.campaign.trackingCode = window.location.search.slice(1);
+      }
     }
-    }
+
     if (window.matchMedia("(min-width: 1024px)").matches) {
         page_tracking.page.pageInfo.sysEnv = "desktop";
     } else {
@@ -148,15 +150,24 @@ function set_page_tracking(){
 
     
     const path = window.location.pathname;
-    const pathParts = path.split('/');
-    const lastPart = pathParts[pathParts.length - 1];
-    if(lastPart !== ''){
-        page_tracking.page.pageInfo.pageName = "web:" + lastPart;
+    const pathParts = path.split('/').filter(part => part !== ''); // Filter out empty parts
+    const formattedPath = pathParts.map(part => part.replace(/[^\w\s]/g, '')).join(':'); // Remove special characters
+    if(formattedPath !== ''){
+        page_tracking.page.pageInfo.pageName = "web:" +formattedPath;
+    }
+    else {
+        page_tracking.page.pageInfo.pageName = "web:home";
     }
 
     const metaTag = document.querySelector('meta[name="env"]');
     if (metaTag && metaTag.content) {
       page_tracking.page.pageInfo.websiteEnv = metaTag.content;
+    }
+    if (lang && lang.content) {
+      page_tracking.page.pageInfo.language = lang.content;
+    }
+    if (geoReg && geoReg.content) {
+      page_tracking.page.pageInfo.geoRegion = geoReg.content;
     }
     
     window.adobeDataLayer.push(page_tracking);

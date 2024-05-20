@@ -17,12 +17,5 @@
       "shortName": "M8",
       "shortRangeName": "F92"
     }
-  ],
-  "posiSpec": {
-    "cosyBrand": "WBBM",
-    "agCode": "AE01",
-    "paint": "P0P5A",
-    "fabric": "FX3SW",
-    "options": "S01MA,S01MD,S02PA,S02T4,S02VB,S0302,S0322,S0323,S0358,S03DS,S03M5,S03MF,S0420,S0428,S0488,S048C,S0494,S04GQ,S0548,S05AC,S05AU,S05AZ,S05DN,S0654,S06AE,S06AF,S06AK,S06CP,S06C4,S06F1,S06NW,S06U3,S071C,S0760,S0776,S07M9,S07MA,S07ME,S07MN"
-  }
+  ]
 }

@@ -19,23 +19,26 @@
     ],
     "hybridCode": "BEVE",
     "fromPrice": 128568,
-    "acceleration": "-",
+    "acceleration": "5.5",
+    "trunkCapacity": 500,
+    "seats": 5,
+    "topSpeed": "205",
     "bodyTypeCode": "LI",
     "marketingBodyTypeCode": "LI",
     "bodyTypeDescription": "LIM",
     "pureElectricRange": 612,
     "posiSpec": {
       "cosyBrand": "WBBM",
-      "agCode": "21EJ",
-      "paint": "P0C64",
-      "fabric": "FVDF2",
-      "options": "S02VS,S03DM,S03DN,S0407,S0453,S04A2,S04FM,S04T7,S05AU,S05DW,S06FR,S06U3"
+      "agCode": "51EJ",
+      "paint": "P0C4A",
+      "fabric": "FKVRI",
+      "options": "S01F2,S0230,S02PA,S02VB,S02VH,S0302,S03DN,S0416,S0428,S0465,S04D7,S04FL,S04FM,S04HA,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S05AS,S05AW,S05DN,S0654,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0801,S0851,S0879,S08R9,S08TF,S08WN,S09QV"
     },
     "powerTrain": {
       "fuelType": "E",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "335 (455)",
+      "systemMaxTorque": "650",
+      "gearBox": "1 - automatisch",
       "driveType": "HR"
     }
   }

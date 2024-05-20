@@ -93,6 +93,11 @@ function triggerAfterResize() {
       // setting min height of mcgBlock
       mcgBlock.style.minHeight = `${mcgBlockHeight}px`;
 
+      // if height is greater than zero then remove no-visiblity class
+      if (mcgBlockHeight > 0) {
+        mcgBlock.classList.remove('no-visiblity');
+      }
+
       const desktopVidDetailHeadingHeight = mcgBlock.offsetHeight - videoImgContainer.offsetHeight;
 
       // setting height of video detail heading which is only visible in desktop
@@ -384,7 +389,7 @@ export default function decorate(block) {
       // converting string to boolen
       const isLoopVideo = videoContentPtags[videoContentPtags.length - 2].textContent.trim() === 'true';
       const isAutoPlayVideo = videoContentPtags[videoContentPtags.length - 1].textContent.trim() === 'true';
-      const isEnableControls = false;
+      const enableHideControls = true;
       const isMuted = true;
       const onHoverPlay = false;
       // generating video
@@ -396,7 +401,7 @@ export default function decorate(block) {
         videoLinkObj,
         isAutoPlayVideo,
         isLoopVideo,
-        isEnableControls,
+        enableHideControls,
         isMuted,
         posterObj,
         onHoverPlay,
@@ -436,12 +441,11 @@ export default function decorate(block) {
         imageSlideHeadline.textContent.trim(), imageSlideCopyText,
         button, index, showless]));
     }
-    // panel.textContent = '';
   });
 
-  // block.textContent = '';
   block.append(videoImageContainer);
   block.append(videoImageDetailsContainer);
+  block.classList.add('no-visiblity');
 
   // attache events for details div
   attachShowMoreEvents(block);

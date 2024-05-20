@@ -10,7 +10,7 @@
   "bodyTypeCode": "LI",
   "marketingBodyTypeCode": "LI",
   "bodyTypeDescription": "LIM",
-  "effectDate": "2024-05-06",
+  "effectDate": "2024-05-10",
   "hybridCode": "NOHY",
   "fromPrice": 106704,
   "seats": 5,
@@ -68,17 +68,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4794",
-          "width": "1903",
-          "height": "1434",
+          "length": "4794.0",
+          "width": "1903.0",
+          "height": "1434.0",
           "widthMirrors": "2068 (1040 / 1028)",
-          "wheelTurn": "2857",
+          "wheelTurn": "2857.0",
           "weightNotLoaded": "1855",
           "weightMax": "2260",
           "permittedLoad": "480",
           "trailerLoad": "-",
           "trunkCapacity": "480",
-          "tankCapacity": "59"
+          "tankCapacity": "59.0"
         }
       },
       "footnotes": {

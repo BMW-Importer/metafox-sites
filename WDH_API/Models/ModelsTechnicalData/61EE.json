@@ -8,7 +8,7 @@
   "cosyBrand": "WBBM",
   "bodyTypeCode": "GF",
   "marketingBodyTypeCode": "SUV",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-10",
   "hybridCode": "NOHY",
   "fromPrice": 60802,
   "seats": 5,
@@ -66,17 +66,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4500",
-          "width": "1845",
-          "height": "1642",
+          "length": "4500.0",
+          "width": "1845.0",
+          "height": "1642.0",
           "widthMirrors": "2104 (1055 / 1049)",
-          "wheelTurn": "2692",
+          "wheelTurn": "2692.0",
           "weightNotLoaded": "1730",
           "weightMax": "2220",
           "permittedLoad": "565",
           "trailerLoad": "2000 / 80",
           "trunkCapacity": "500 - 1545",
-          "tankCapacity": "45"
+          "tankCapacity": "45.0"
         }
       },
       "footnotes": {
@@ -156,17 +156,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4500",
-          "width": "1845",
-          "height": "1642",
+          "length": "4500.0",
+          "width": "1845.0",
+          "height": "1642.0",
           "widthMirrors": "2104 (1055 / 1049)",
-          "wheelTurn": "2692",
+          "wheelTurn": "2692.0",
           "weightNotLoaded": "1730",
           "weightMax": "2220",
           "permittedLoad": "565",
           "trailerLoad": "2000 / 80",
           "trunkCapacity": "500 - 1545",
-          "tankCapacity": "45"
+          "tankCapacity": "45.0"
         }
       },
       "footnotes": {

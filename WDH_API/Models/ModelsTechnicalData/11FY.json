@@ -9,9 +9,10 @@
   "bodyTypeCode": "TO",
   "marketingBodyTypeCode": "TO",
   "bodyTypeDescription": "TOU",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 49763,
+  "seats": 5,
   "fuelType": "O",
   "posiSpec": {
     "cosyBrand": "WBBM",
@@ -24,24 +25,30 @@
     {
       "transmissionCode": "S02TE",
       "hybridCode": "NOHY",
+      "iD_LEIST_KONST": "00",
       "volt48": false,
       "technicalData": {
         "powerTrain": {
           "fuelType": "O",
-          "systemPower": "-",
-          "systemMaxTorque": "-",
-          "gearBox": "-",
+          "systemPower": "115 (156)",
+          "systemMaxTorque": "250",
+          "gearBox": "8 - automatisch",
           "driveType": "HR"
         },
         "engine": {
-          "cylinders": "-",
-          "technicalCapacity": "-",
-          "nominalPower": "-",
-          "nominalTorque": "-"
+          "cylinders": "4",
+          "technicalCapacity": "1998",
+          "nominalPower": "115 (156) / 4500 - 6500",
+          "nominalTorque": "250 / 1300 - 4300"
         },
         "electric": {
           "systemPower": "-",
           "systemMaxTorque": "-"
+        },
+        "performance": {
+          "acceleration": "8.8",
+          "topSpeed": "218",
+          "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
           "consumptionWltpCombined": "7.5 - 6.7",
@@ -60,8 +67,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "trunkCapacity": "-",
-          "tankCapacity": "-"
+          "length": "4713.0",
+          "width": "1827.0",
+          "height": "1440.0",
+          "widthMirrors": "2068 (1040 / 1028)",
+          "wheelTurn": "2851.0",
+          "weightNotLoaded": "1650",
+          "weightMax": "2170",
+          "permittedLoad": "595",
+          "trailerLoad": "1300 / 75",
+          "trunkCapacity": "500 - 1510",
+          "tankCapacity": "59.0"
         }
       },
       "footnotes": {
@@ -74,9 +90,18 @@
         "emissionsConsumptionWltp": [
           "f1",
           "f4"
+        ],
+        "weightMeasurements_weightNotLoaded_label": [
+          "f8"
+        ],
+        "weightMeasurements_trailerLoad_label": [
+          "f13"
         ]
       },
-      "footnotesData": {}
+      "footnotesData": {
+        "overboostMax": "-",
+        "overboostKW": "-"
+      }
     }
   ]
 }

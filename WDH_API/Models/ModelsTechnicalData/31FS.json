@@ -9,13 +9,14 @@
   "bodyTypeCode": "LI",
   "marketingBodyTypeCode": "LI",
   "bodyTypeDescription": "LIM",
-  "effectDate": "2024-05-08",
+  "effectDate": "2024-05-15",
   "hybridCode": "PHEV",
   "fromPrice": 67292,
+  "seats": 5,
   "fuelType": "X",
   "posiSpec": {
     "cosyBrand": "WBBM",
-    "agCode": "21FF",
+    "agCode": "61FF",
     "paint": "P0C4P",
     "fabric": "FKHG7",
     "options": "S01PL,S04LN,S04AW,S0801,S0337,S07EW,S01CB,S01DF,S01DZ,S0230,S0248,S0258,S02PA,S02TN,S02VB,S02VF,S02VL,S0302,S0316,S0320,S0322,S03KA,S0403,S0420,S0428,S0430,S0431,S0459,S0465,S0481,S0493,S0494,S04NE,S04UR,S0534,S0548,S0552,S05AC,S05AQ,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06CP,S06DR,S06NX,S06PA,S06U3,S06VB,S06WC,S0710,S0715,S0760,S0775,S08EB,S08R3,S08R9,S08S3,S08TF,S08TR,S08WD,S0901,S0991,S09AD"
@@ -24,24 +25,30 @@
     {
       "transmissionCode": "S02TE",
       "hybridCode": "PHEV",
+      "iD_LEIST_KONST": "20",
       "volt48": false,
       "technicalData": {
         "powerTrain": {
           "fuelType": "X",
-          "systemPower": "-",
-          "systemMaxTorque": "-",
-          "gearBox": "-",
+          "systemPower": "215 (292)",
+          "systemMaxTorque": "420",
+          "gearBox": "8 - automatisch",
           "driveType": "AR"
         },
         "engine": {
-          "cylinders": "-",
-          "technicalCapacity": "-",
-          "nominalPower": "null (null) / null",
-          "nominalTorque": "-"
+          "cylinders": "4",
+          "technicalCapacity": "1998",
+          "nominalPower": "135 (184) / 5000 - 6500",
+          "nominalTorque": "300 / 1350 - 4000"
         },
         "electric": {
-          "systemPower": "-",
-          "systemMaxTorque": "-"
+          "systemPower": "80 (109)",
+          "systemMaxTorque": "265"
+        },
+        "performance": {
+          "acceleration": "5.8",
+          "topSpeed": "230",
+          "electricTopSpeed": "140"
         },
         "emissionsConsumptionWltp": {
           "consumptionWltpCombined": "2.1 - 1.6",
@@ -52,22 +59,37 @@
           "co2EquivalentOverall": "-"
         },
         "charging": {
-          "batteryCapacity": "-",
-          "chargeACDC": "-",
-          "charge_AC_0_100": "-",
+          "batteryCapacity": "10.5",
+          "chargeACDC": "3.7 (-) / -",
+          "charge_AC_0_100": "4.0",
           "charge_DC_10_80": "-",
           "additionalRangeDC": "-",
-          "chargingMaxAC": "-"
+          "chargingMaxAC": "3.7"
         },
         "weightMeasurements": {
-          "trunkCapacity": "-",
-          "tankCapacity": "-"
+          "length": "4713.0",
+          "width": "1827.0",
+          "height": "1444.0",
+          "widthMirrors": "2068 (1040 / 1028)",
+          "wheelTurn": "2851.0",
+          "weightNotLoaded": "1900",
+          "weightMax": "2345",
+          "permittedLoad": "520",
+          "trailerLoad": "1500 / 75",
+          "trunkCapacity": "375",
+          "tankCapacity": "40.0"
         }
       },
       "footnotes": {
         "powerTrain": [
           "f1",
           "f2"
+        ],
+        "powerTrain_systemPower_value": [
+          "f11"
+        ],
+        "powerTrain_systemMaxTorque_value": [
+          "f11"
         ],
         "engine": [
           "f1"
@@ -106,31 +128,46 @@
         ],
         "charging": [
           "f7"
+        ],
+        "weightMeasurements_weightNotLoaded_label": [
+          "f8"
+        ],
+        "weightMeasurements_trailerLoad_label": [
+          "f13"
         ]
       },
-      "footnotesData": {}
+      "footnotesData": {
+        "overboostMax": 135,
+        "overboostKW": 80
+      }
     },
     {
       "transmissionCode": "S02TB",
       "hybridCode": "PHEV",
+      "iD_LEIST_KONST": "20",
       "volt48": false,
       "technicalData": {
         "powerTrain": {
           "fuelType": "X",
-          "systemPower": "-",
-          "systemMaxTorque": "-",
-          "gearBox": "-",
+          "systemPower": "215 (292)",
+          "systemMaxTorque": "420",
+          "gearBox": "8 - automatisch",
           "driveType": "AR"
         },
         "engine": {
-          "cylinders": "-",
-          "technicalCapacity": "-",
-          "nominalPower": "null (null) / null",
-          "nominalTorque": "-"
+          "cylinders": "4",
+          "technicalCapacity": "1998",
+          "nominalPower": "135 (184) / 5000 - 6500",
+          "nominalTorque": "300 / 1350 - 4000"
         },
         "electric": {
-          "systemPower": "-",
-          "systemMaxTorque": "-"
+          "systemPower": "80 (109)",
+          "systemMaxTorque": "265"
+        },
+        "performance": {
+          "acceleration": "5.8",
+          "topSpeed": "230",
+          "electricTopSpeed": "140"
         },
         "emissionsConsumptionWltp": {
           "consumptionWltpCombined": "2.1 - 1.6",
@@ -141,22 +178,37 @@
           "co2EquivalentOverall": "-"
         },
         "charging": {
-          "batteryCapacity": "-",
-          "chargeACDC": "-",
-          "charge_AC_0_100": "-",
+          "batteryCapacity": "10.5",
+          "chargeACDC": "3.7 (-) / -",
+          "charge_AC_0_100": "4.0",
           "charge_DC_10_80": "-",
           "additionalRangeDC": "-",
-          "chargingMaxAC": "-"
+          "chargingMaxAC": "3.7"
         },
         "weightMeasurements": {
-          "trunkCapacity": "-",
-          "tankCapacity": "-"
+          "length": "4713.0",
+          "width": "1827.0",
+          "height": "1444.0",
+          "widthMirrors": "2068 (1040 / 1028)",
+          "wheelTurn": "2851.0",
+          "weightNotLoaded": "1900",
+          "weightMax": "2345",
+          "permittedLoad": "520",
+          "trailerLoad": "1500 / 75",
+          "trunkCapacity": "375",
+          "tankCapacity": "40.0"
         }
       },
       "footnotes": {
         "powerTrain": [
           "f1",
           "f2"
+        ],
+        "powerTrain_systemPower_value": [
+          "f11"
+        ],
+        "powerTrain_systemMaxTorque_value": [
+          "f11"
         ],
         "engine": [
           "f1"
@@ -195,9 +247,18 @@
         ],
         "charging": [
           "f7"
+        ],
+        "weightMeasurements_weightNotLoaded_label": [
+          "f8"
+        ],
+        "weightMeasurements_trailerLoad_label": [
+          "f13"
         ]
       },
-      "footnotesData": {}
+      "footnotesData": {
+        "overboostMax": 135,
+        "overboostKW": 80
+      }
     }
   ]
 }

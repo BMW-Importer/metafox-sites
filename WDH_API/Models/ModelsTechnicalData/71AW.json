@@ -9,28 +9,30 @@
   "bodyTypeCode": "CO",
   "marketingBodyTypeCode": "CP",
   "bodyTypeDescription": "COU",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "BEVE",
   "fromPrice": 72218,
+  "seats": 5,
   "fuelType": "E",
   "posiSpec": {
     "cosyBrand": "WBBM",
-    "agCode": "11AV",
-    "paint": "P0C57",
-    "fabric": "FKGNL",
-    "options": "S03FK,S04KA,S02NH,S02PA,S02TB,S02VB,S02VC,S02VL,S0302,S0316,S0322,S03AG,S0403,S0420,S0428,S0430,S0459,S0488,S0490,S0493,S0494,S04AW,S04UR,S0508,S0534,S05AC,S05AL,S05AQ,S05AU,S05AZ,S05DA,S05DN,S0610,S0654,S0688,S06AC,S06AE,S06AF,S06AK,S06CP,S06C4,S06DR,S06NW,S06UH,S06U3,S06U8,S06WD,S0704,S0710,S0715,S0760,S0775,S07LF"
+    "agCode": "71AW",
+    "paint": "P0A96",
+    "fabric": "FMAH7",
+    "options": "S0255,S0316,S0322,S0428,S0430,S0490,S0493,S0494,S0534,S0544,S0654,S0688,S02PA,S02VB,S03AG,S03MB,S04AW,S04U9,S04UR,S04V1,S05AC,S05AQ,S05AU,S05AZ,S05DA,S05DN,S06AC,S06AE,S06AF,S06AG,S06AK,S06C4,S06CP,S06DR,S06NX,S06U3,S0431,S03FG,S04KA"
   },
   "vehicles": [
     {
       "transmissionCode": "A",
       "hybridCode": "BEVE",
+      "iD_LEIST_KONST": "30",
       "volt48": false,
       "technicalData": {
         "powerTrain": {
           "fuelType": "E",
-          "systemPower": "-",
-          "systemMaxTorque": "-",
-          "gearBox": "-",
+          "systemPower": "250 (340)",
+          "systemMaxTorque": "430",
+          "gearBox": "1 - automatisch",
           "driveType": "HR"
         },
         "engine": {
@@ -40,8 +42,13 @@
           "nominalTorque": "-"
         },
         "electric": {
-          "systemPower": "-",
-          "systemMaxTorque": "-"
+          "systemPower": "250 (340) / 105 (143)",
+          "systemMaxTorque": "430"
+        },
+        "performance": {
+          "acceleration": "5.6",
+          "topSpeed": "-",
+          "electricTopSpeed": "190"
         },
         "emissionsConsumptionWltp": {
           "consumptionWltpCombined": "-",
@@ -52,15 +59,24 @@
           "co2EquivalentOverall": "-"
         },
         "charging": {
-          "batteryCapacity": "-",
-          "chargeACDC": "-",
-          "charge_AC_0_100": "-",
-          "charge_DC_10_80": "-",
-          "additionalRangeDC": "-",
-          "chargingMaxAC": "-"
+          "batteryCapacity": "81.1",
+          "chargeACDC": "11 (-) / 205",
+          "charge_AC_0_100": "8.5",
+          "charge_DC_10_80": "30",
+          "additionalRangeDC": "154 - 197",
+          "chargingMaxAC": "11"
         },
         "weightMeasurements": {
-          "trunkCapacity": "-",
+          "length": "4783.0",
+          "width": "1852.0",
+          "height": "1448.0",
+          "widthMirrors": "2073 (1042 / 1031)",
+          "wheelTurn": "2856.0",
+          "weightNotLoaded": "2125",
+          "weightMax": "2605",
+          "permittedLoad": "555",
+          "trailerLoad": "1600 / 75",
+          "trunkCapacity": "470 - 1290",
           "tankCapacity": "-"
         }
       },
@@ -76,9 +92,21 @@
         ],
         "charging": [
           "f7"
+        ],
+        "weightMeasurements_weightNotLoaded_label": [
+          "f8"
+        ],
+        "weightMeasurements_trailerLoad_label": [
+          "f13"
+        ],
+        "charging_additionalRangeDC_label": [
+          "f7"
         ]
       },
-      "footnotesData": {}
+      "footnotesData": {
+        "overboostMax": "-",
+        "overboostKW": "-"
+      }
     }
   ]
 }

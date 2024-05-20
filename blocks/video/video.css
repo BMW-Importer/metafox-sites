@@ -27,7 +27,7 @@
 .video-js {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 1rem;
   position: relative;
 }

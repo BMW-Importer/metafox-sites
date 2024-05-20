@@ -19,7 +19,10 @@
     ],
     "hybridCode": "BEVE",
     "fromPrice": 87733,
-    "acceleration": "-",
+    "acceleration": "6.1",
+    "trunkCapacity": 500,
+    "seats": 5,
+    "topSpeed": "200",
     "bodyTypeCode": "GF",
     "marketingBodyTypeCode": "SUV",
     "pureElectricRange": 436,
@@ -32,9 +35,9 @@
     },
     "powerTrain": {
       "fuelType": "E",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "240 (326)",
+      "systemMaxTorque": "630",
+      "gearBox": "1 - automatisch",
       "driveType": "AR"
     }
   }

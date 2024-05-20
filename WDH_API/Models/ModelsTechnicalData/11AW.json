@@ -10,41 +10,49 @@
   "bodyTypeCode": "CO",
   "marketingBodyTypeCode": "CP",
   "bodyTypeDescription": "COU",
-  "effectDate": "2024-05-08",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 74504,
+  "seats": 5,
   "fuelType": "O",
   "posiSpec": {
     "cosyBrand": "WBBM",
     "agCode": "11AW",
-    "paint": "P0X1F",
-    "fabric": "FMAOI",
-    "options": "S03FX,S0XED,S02NH,S02PA,S02T4,S02TB,S02VB,S02VC,S02VF,S02VL,S0302,S0316,S0322,S033T,S03AG,S03M2,S03MF,S0403,S0420,S0428,S0430,S0459,S0488,S0490,S0493,S0494,S04GQ,S04M5,S04UR,S0508,S0534,S05AC,S05AL,S05AQ,S05AU,S05AZ,S05DA,S05DN,S0610,S0654,S0688,S06AC,S06AE,S06AF,S06AK,S06CP,S06C4,S06DR,S06NW,S06UH,S06U3,S06U8,S06WD,S0704,S0710,S0715,S0754,S0760,S0775,S07M9"
+    "paint": "P0300",
+    "fabric": "FKGNL",
+    "options": "S0230,S02T4,S0465,S0491,S08R3,S0493,S01CB,S01CE,S02TB,S06WC,S0676,S08KH,S0316,S03AG,S0431,S02NH,S06VB,S0423,S0544,S0548,S05DA,S08WD,S0508,S0754,S08WM,S04NE,S0775,S0534,S05AQ,S0888,S0760,S06U2,S0715,S02VL,S02VB,S02VC,S08R9,S0704,S01DF,S06AF,S0851,S08TF"
   },
   "vehicles": [
     {
       "transmissionCode": "S02TB",
       "hybridCode": "NOHY",
+      "iD_LEIST_KONST": "10",
       "volt48": true,
       "technicalData": {
         "powerTrain": {
           "fuelType": "O",
-          "systemPower": "-",
-          "systemMaxTorque": "-",
-          "gearBox": "-",
+          "systemPower": "275 (374)",
+          "systemMaxTorque": "500",
+          "gearBox": "8 - automatisch",
           "driveType": "AR"
         },
         "engine": {
-          "cylinders": "-",
-          "technicalCapacity": "-",
-          "nominalPower": "-",
-          "nominalTorque": "-"
+          "cylinders": "6",
+          "technicalCapacity": "2998",
+          "nominalPower": "275 (374) / 5500 - 6500",
+          "nominalTorque": "500 / 1900 - 5000"
         },
         "electric": {
-          "systemPower": "-"
+          "systemPower": "8 (11) / -",
+          "systemMaxTorque": "25"
+        },
+        "performance": {
+          "acceleration": "4.7",
+          "topSpeed": "250",
+          "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "8.5 - 8",
+          "consumptionWltpCombined": "",
           "emissionsWltpCombined": "194 - 181",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
@@ -52,7 +60,7 @@
           "co2EquivalentOverall": "-"
         },
         "charging": {
-          "batteryCapacity": "-",
+          "batteryCapacity": "0.4",
           "chargeACDC": "-",
           "charge_AC_0_100": "-",
           "charge_DC_10_80": "-",
@@ -60,8 +68,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "trunkCapacity": "-",
-          "tankCapacity": "-"
+          "length": "4783.0",
+          "width": "1852.0",
+          "height": "1442.0",
+          "widthMirrors": "2073 (1042 / 1031)",
+          "wheelTurn": "2856.0",
+          "weightNotLoaded": "1900",
+          "weightMax": "2380",
+          "permittedLoad": "555",
+          "trailerLoad": "1800 / 75",
+          "trunkCapacity": "470 - 1290",
+          "tankCapacity": "59.0"
         }
       },
       "footnotes": {
@@ -77,9 +94,18 @@
         ],
         "charging": [
           "f7"
+        ],
+        "weightMeasurements_weightNotLoaded_label": [
+          "f8"
+        ],
+        "weightMeasurements_trailerLoad_label": [
+          "f13"
         ]
       },
-      "footnotesData": {}
+      "footnotesData": {
+        "overboostMax": "-",
+        "overboostKW": "-"
+      }
     }
   ]
 }

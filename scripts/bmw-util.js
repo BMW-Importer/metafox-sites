@@ -22,25 +22,13 @@ function setAlignmentStyle(style, element) {
   }
 }
 
-function addIcon(element, iconType, className = '') {
+export function addIcon(element, iconType, className = '') {
   if (iconType === 'arrow_chevron_right') {
     const iconSpan = document.createElement('span');
     iconSpan.innerHTML = '<i class="icon-gt" aria-hidden="true" data-icon="arrow_chevron_right"></i>';
     iconSpan.classList = className;
     element.append(iconSpan);
   }
-}
-
-function addClass(callElement, bindElemet, eventName, className) {
-  callElement.addEventListener(eventName, () => {
-    bindElemet.classList.add(className);
-  });
-}
-
-function removeClass(callElement, bindElemet, eventName, className) {
-  callElement.addEventListener(eventName, () => {
-    bindElemet.classList.remove(className);
-  });
 }
 
 export function decorateBMWButtons(element) {
@@ -78,8 +66,6 @@ export function decorateBMWButtons(element) {
           const alignment = getAlignmentStyle(element, 'div.section');
           setAlignmentStyle(alignment, twoup);
           addIcon(up, 'arrow_chevron_right', 'align-center');
-          addClass(a, twoup, 'mouseover', 'align-icon-hover');
-          removeClass(a, twoup, 'mouseout', 'align-icon-hover');
         }
       }
     }

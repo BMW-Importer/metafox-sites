@@ -95,7 +95,7 @@ function getVideoElement(
   video.setAttribute('width', '641');
   video.setAttribute('height', '264');
   video.setAttribute('title', videoTitle?.textContent ?? '');
-  video.setAttribute('data-description', videoDescp?.textContent);
+  video.setAttribute('data-description', videoDescp?.textContent ?? '');
 
   const sourceEl = document.createElement('source');
 
@@ -175,25 +175,44 @@ function getVideoElement(
     video.removeEventListener('mouseleave', () => {});
   }
 
-  video.addEventListener('touchstart', (event) => {
-    event.preventDefault();
+  video.addEventListener('touchstart', () => {
     if (video.paused) {
       video.play();
     } else {
       video.pause();
     }
-  });
+  }, { passive: false });
+
+  document.body.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+  }, { passive: false });
+
   video.dataset.autoplay = autoplay ? 'true' : 'false';
   if (window.IntersectionObserver) {
-    let isPaused = false;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.intersectionRatio !== 1 && !video.paused) {
-          video.pause(); isPaused = true;
-        } else if (isPaused) { video.play(); isPaused = false; }
+        if (video) {
+          if (entry.isIntersecting) {
+            if (video.paused) {
+              video.play().catch();
+            }
+          } else if (!video.paused) {
+            video.pause();
+          }
+        }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.5 });
     observer.observe(video);
+    video.oncanplay = () => {
+      if (autoplay) {
+        video.muted = true;
+        video.play();
+      }
+      if (userUnmuted) {
+        video.muted = false;
+        video.play();
+      }
+    };
   } else document.querySelector('#warning').style.display = 'block';
   return video;
 }
@@ -213,7 +232,7 @@ export function loadVideoEmbed(
   enableHideControls,
   muted,
   posters,
-  onHoverPlay,
+  onHoverPlay = false,
 ) {
   if (block.dataset.embedIsLoaded) {
     return;
@@ -285,8 +304,7 @@ export default async function decorate(block) {
     videoLoop,
     videoAutoPlay,
     videoHideControls,
-    videoMute,
-    playonHover] = props;
+    videoMute] = props;
 
   const placeholder = block.querySelector('picture');
   const desktopVideolink = videoDesktopPath?.textContent;
@@ -306,7 +324,7 @@ export default async function decorate(block) {
   const loop = videoLoop?.textContent.trim() === 'true';
   const enableHideControls = videoHideControls?.textContent.trim() === 'true';
   const muted = videoMute?.textContent.trim() === 'true';
-  const onHoverPlay = playonHover?.textContent.trim() === 'true';
+  const onHoverPlay = false;
 
   if (placeholder) {
     loadVideoEmbed(

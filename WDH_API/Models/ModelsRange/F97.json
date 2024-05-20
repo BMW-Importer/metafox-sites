@@ -17,12 +17,5 @@
       "shortName": "X3 M",
       "shortRangeName": "F97"
     }
-  ],
-  "posiSpec": {
-    "cosyBrand": "WBBM",
-    "agCode": "F97",
-    "paint": "P0C28",
-    "fabric": "FHDJA",
-    "options": "S01Y5,S01MA,S0302,S0322,S03MC,S0402,S0423,S0430,S0431,S0459,S0488,S0494,S04AW,S04GQ,S04HA,S04NM,S0508,S0534,S0544,S0552,S05AC,S05AL,S0609,S0610,S0688,S06AC,S06NW,S06U8,S0712,S0760,S0775,S07MA"
-  }
+  ]
 }

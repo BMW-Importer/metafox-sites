@@ -9,7 +9,7 @@
   "bodyTypeCode": "RO",
   "marketingBodyTypeCode": "CARO",
   "bodyTypeDescription": "ROA",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-10",
   "hybridCode": "NOHY",
   "fromPrice": 67752,
   "seats": 2,
@@ -67,17 +67,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4324",
-          "width": "1864",
-          "height": "1304",
+          "length": "4324.0",
+          "width": "1864.0",
+          "height": "1304.0",
           "widthMirrors": "2024 (1018 / 1006)",
-          "wheelTurn": "2470",
+          "wheelTurn": "2470.0",
           "weightNotLoaded": "1545",
           "weightMax": "1760",
           "permittedLoad": "290",
           "trailerLoad": "-",
           "trunkCapacity": "281",
-          "tankCapacity": "52"
+          "tankCapacity": "52.0"
         }
       },
       "footnotes": {

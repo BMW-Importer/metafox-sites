@@ -9,7 +9,7 @@
   "bodyTypeCode": "CA",
   "marketingBodyTypeCode": "CARO",
   "bodyTypeDescription": "CAB",
-  "effectDate": "2024-05-07",
+  "effectDate": "2024-05-15",
   "hybridCode": "NOHY",
   "fromPrice": 139270,
   "seats": 4,
@@ -51,8 +51,8 @@
           "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "7.2 - 6.9",
-          "emissionsWltpCombined": "189 - 180",
+          "consumptionWltpCombined": "-",
+          "emissionsWltpCombined": "0",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
           "co2EquivalentOverallBest": "-",
@@ -67,17 +67,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4851",
-          "width": "1902",
-          "height": "1345",
+          "length": "4851.0",
+          "width": "1902.0",
+          "height": "1345.0",
           "widthMirrors": "2137 (1074 / 1063)",
-          "wheelTurn": "2822",
+          "wheelTurn": "2822.0",
           "weightNotLoaded": "2100",
           "weightMax": "2500",
           "permittedLoad": "475",
           "trailerLoad": "-",
           "trunkCapacity": "350",
-          "tankCapacity": "66"
+          "tankCapacity": "66.0"
         }
       },
       "footnotes": {

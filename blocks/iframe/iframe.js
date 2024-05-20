@@ -1,3 +1,22 @@
+function loadScript(url, callback) {
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  script.async = true;
+  document.head.append(script);
+  // Call the callback function once the script is loaded
+  script.onload = () => {
+    callback();
+  };
+}
+// Load the iFrameResize library dynamically
+loadScript('https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js', () => {
+  // Initialize the iFrameResize function once the library is loaded
+  if (typeof iFrameResize === 'function') {
+    // eslint-disable-next-line no-undef
+    iFrameResize({ log: true }, '#bmwIframe');
+  }
+});
 export function generateIFrameDOM(props) {
   // Extract properties, always same order as in model, empty string if not set
   const [iFrameUrl] = props;

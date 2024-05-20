@@ -19,7 +19,11 @@
     ],
     "hybridCode": "PHEV",
     "fromPrice": 68592,
-    "acceleration": "-",
+    "acceleration": "5.9",
+    "trunkCapacity": 410,
+    "seats": 5,
+    "horsePower": 292,
+    "topSpeed": "225",
     "bodyTypeCode": "TO",
     "marketingBodyTypeCode": "TO",
     "bodyTypeDescription": "TOU",
@@ -32,9 +36,9 @@
     },
     "powerTrain": {
       "fuelType": "X",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "215 (292)",
+      "systemMaxTorque": "420",
+      "gearBox": "8 - automatisch",
       "driveType": "AR"
     }
   }

@@ -17,12 +17,5 @@
       "shortName": "X5 M Competition",
       "shortRangeName": "F95"
     }
-  ],
-  "posiSpec": {
-    "cosyBrand": "WBBM",
-    "agCode": "JU01",
-    "paint": "P0C1K",
-    "fabric": "FX3A9",
-    "options": "S01TE,S04WT,S01MA,S02T4,S03MC,S0407,S0417,S0418,S0420,S0423,S044A,S0453,S0459,S0488,S0494,S04GQ,S04HA,S04HB,S04M5,S04MA,S04MN,S04NB,S04T7,S04T8,S04UR,S0552,S05AC,S05AU,S05AZ,S05DN,S0610,S06DR,S06F1,S06FH,S06NW,S06U3,S0760,S0776,S07MA"
-  }
+  ]
 }

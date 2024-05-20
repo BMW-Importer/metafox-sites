@@ -19,23 +19,26 @@
     ],
     "hybridCode": "BEVE",
     "fromPrice": 64318,
-    "acceleration": "-",
+    "acceleration": "6",
+    "trunkCapacity": 470,
+    "seats": 5,
+    "topSpeed": "190",
     "bodyTypeCode": "CO",
     "marketingBodyTypeCode": "CP",
     "bodyTypeDescription": "COU",
     "pureElectricRange": 483,
     "posiSpec": {
       "cosyBrand": "WBBM",
-      "agCode": "11AV",
-      "paint": "P0C57",
-      "fabric": "FKGNL",
-      "options": "S03FK,S04KA,S02NH,S02PA,S02TB,S02VB,S02VC,S02VL,S0302,S0316,S0322,S03AG,S0403,S0420,S0428,S0430,S0459,S0488,S0490,S0493,S0494,S04AW,S04UR,S0508,S0534,S05AC,S05AL,S05AQ,S05AU,S05AZ,S05DA,S05DN,S0610,S0654,S0688,S06AC,S06AE,S06AF,S06AK,S06CP,S06C4,S06DR,S06NW,S06UH,S06U3,S06U8,S06WD,S0704,S0710,S0715,S0760,S0775,S07LF"
+      "agCode": "71AW",
+      "paint": "P0A96",
+      "fabric": "FMAH7",
+      "options": "S0255,S0316,S0322,S0428,S0430,S0490,S0493,S0494,S0534,S0544,S0654,S0688,S02PA,S02VB,S03AG,S03MB,S04AW,S04U9,S04UR,S04V1,S05AC,S05AQ,S05AU,S05AZ,S05DA,S05DN,S06AC,S06AE,S06AF,S06AG,S06AK,S06C4,S06CP,S06DR,S06NX,S06U3,S0431,S03FG,S04KA"
     },
     "powerTrain": {
       "fuelType": "E",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "210 (286)",
+      "systemMaxTorque": "400",
+      "gearBox": "1 - automatisch",
       "driveType": "HR"
     }
   }

@@ -1,0 +1,45 @@
+p {
+    margin: 0;
+}
+
+.disclaimer-wrapper .disclaimer-content{
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 300;
+}
+
+.disclaimer-wrapper .disclaimer-content p a {
+    color: var(--light-text-color);
+    border-bottom: 1px solid;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.disclaimer-wrapper .disclaimer-content p a::after{
+    overflow-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+    content: "arrow_up_right";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif ;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    width: auto;
+    outline: transparent solid 1px;
+    white-space: nowrap;
+}
+
+.disclaimer-wrapper .disclaimer-content p a:hover{
+    color: var(--link-hover-color);
+}

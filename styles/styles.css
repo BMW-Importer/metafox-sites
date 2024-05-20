@@ -100,19 +100,48 @@ main {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--fixed-font-family);
-  font-weight: 300;
-  line-height: 1.25;
-  margin-top: 1em;
-  margin-bottom: .5em;
+  color: var(--background-color);
+  
+  /* padding: 1.25rem 6rem; */
+  margin: 0;
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
-h6 { font-size: var(--heading-font-size-xs) }
+h1 { 
+  font-size: 2.188rem; 
+  line-height: 3.125rem;
+  font-weight: 300;
+}
+
+h2 { 
+  font-size: 1.813rem; 
+  line-height: 2.625rem; 
+  font-weight: 300;
+}
+
+h3 { 
+  font-size: 1.75rem; 
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+h4 { 
+  font-size: 0.875rem; 
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+h5 { 
+  font-size: 0.75rem; 
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+h6 { 
+  font-size: 0.875rem; 
+  line-height: 0.75rem;
+  font-weight: 700;
+}
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
@@ -254,11 +283,11 @@ a.button.hyperlink {
 }
 
 .align-icon {
-  display: flex;
+  display: inline-flex;
 }
 
 a.button.hyperlink:hover,
-.align-icon-hover{
+.align-icon:hover{
   color: var(--link-hover-color);
   font-weight: bold;
   cursor: pointer;
@@ -291,16 +320,16 @@ a.button.hyperlink:hover,
   margin-top: 1rem;
 }
 
-.button-container.button-align-right > .align-icon {
-  justify-content: end;
+.button-container.button-align-right{
+  text-align: right;
 }
 
-.button-container.button-align-left > .align-icon {
-  justify-content: left;
+.button-container.button-align-left{
+  text-align: left;
 }
 
-.button-container.button-align-center > .align-icon {
-  justify-content: center;
+.button-container.button-align-center{
+  text-align: center;
 }
 
 .section.alignment-center > div.default-content-wrapper > p,
@@ -355,6 +384,10 @@ main img {
   width: 100%;
 }
 
+[data-fixedsectiontopmargin='true']{
+  margin-top: 3rem;
+}
+
 /* sections */
 main .section {
   max-width: var(--max-component-width);
@@ -403,6 +436,10 @@ main .section {
     align-self: center;
     margin-top: 0.5rem;
   }
+
+  [data-fixedsectiontopmargin='true']{
+    margin-top: 2.5rem;
+  }
 }
 
 /* desktop */
@@ -431,6 +468,10 @@ main .section {
 
 /* mobile */
 @media (width >= 360px) and (width < 768px) {
+  header {
+    height: var(--nav-height);
+  }
+
   a.button.ghost-dark
   {
     margin-top: 0.5rem;
@@ -468,6 +509,10 @@ main .section {
   .align-icon > .align-center {
     align-self: center;
     margin-top: 0.5rem;
+  }
+
+  [data-fixedsectiontopmargin='true']{
+    margin-top: 2.5rem;
   }
 }
 
@@ -526,5 +571,39 @@ textarea{
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.no-visiblity {
+  visibility: hidden !important;
+}
+
+@media (width >= 360px) and (width < 768px) {
+    h1 { 
+      font-size: 2.063rem; 
+      line-height: 2.875rem; 
+    }
+
+    h2 { 
+      font-size: 1.75rem; 
+      line-height: 2.5rem; 
+    }
+
+    h3 { 
+      font-size: 2.063rem; 
+      line-height: 2.875rem; 
+    }
+}
+
+@media (width >= 768px) and (width < 1280px) {
+  h3 {
+      font-size: 1.563rem;
+      line-height: 2.25rem;
+    }
+  
+    /* h1,
+    h2,
+    h3 {
+      padding: 1.25rem 3rem;
+    } */
 }

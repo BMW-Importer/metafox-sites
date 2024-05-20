@@ -19,7 +19,10 @@
     ],
     "hybridCode": "BEVE",
     "fromPrice": 80939,
-    "acceleration": "-",
+    "acceleration": "6",
+    "trunkCapacity": 490,
+    "seats": 5,
+    "topSpeed": "193",
     "bodyTypeCode": "LI",
     "marketingBodyTypeCode": "LI",
     "bodyTypeDescription": "LIM",
@@ -29,14 +32,14 @@
       "agCode": "31FK",
       "paint": "P0C4P",
       "fabric": "FKSJX",
-      "options": "S0230, S0248, S02PA, S02VB ,S0302 ,S0316 ,S0322 ,S0337 ,S03GV ,S03M1 ,S0402 ,S0420 ,S0428 ,S043R ,S0453 ,S0459 ,S0488 ,S04A2 ,S04FL ,S04HA ,S04NB ,S04NR ,S04T2,S04T3,S04U6,S04U9,S04UR,S04V1,S0548,S0552,S05AU,S05DW,S0654,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0704,S0710,S0760,S0775,S07EW,S07LK,S07VB,S0801,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S09T1,S09T2",
+      "options": "S0230,S0248,S02PA,S02VB,S0302,S0316,S0322,S0337,S03GV,S03M1,S0402,S0420,S0428,S043R,S0453,S0459,S0488,S04A2,S04FL,S04HA,S04NB,S04NR,S04T2,S04T3,S04U6,S04U9,S04UR,S04V1,S0548,S0552,S05AU,S05DW,S0654,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0704,S0710,S0760,S0775,S07EW,S07LK,S07VB,S0801,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S09T1,S09T2",
       "productionDate": "2023-09-07"
     },
     "powerTrain": {
       "fuelType": "E",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "250 (340)",
+      "systemMaxTorque": "400",
+      "gearBox": "1 - automatisch",
       "driveType": "HR"
     }
   }

@@ -312,7 +312,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .flyout-wrapper .flyout-main-container {
-   padding: 1rem 2.5rem;
+   padding: 2rem 3.5rem 1.5rem;
   }
   
   header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly {
@@ -321,6 +321,10 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     border-top: 1px solid var(--light-bbb);
     padding: 0;
     display: block;
+   }
+
+   header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .link-list-wrapper.vertical .link-list .link-list-title {
+    margin-bottom: 0 !important;
    }
 
    header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly::after {
@@ -336,13 +340,18 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     cursor: pointer;
     letter-spacing: 0;
     margin-bottom: 1.5rem;
+    line-height: 1.25rem;
+    position: relative;
   }
 
-  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:hover {
-    color: var(--link-hover-color);
+  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:hover,
+  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list .link-list-title:hover::after,
+  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:active {
+    color: var(--light-link-hover-color);
   }
 
-  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title::after {
+  /* stylelint-disable-next-line no-descending-specificity */
+  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:hover::after {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
@@ -364,11 +373,12 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     white-space: nowrap;
     width: auto;
     position: absolute;
-    right: 2.5rem;
+    right: 0;
+    top: 0.625rem;
    }
 
   header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout .flyout-main-container .flyout-link-list {
-    padding: 1.5rem 0 0;
+    padding: 0;
     width: 100%;
     margin: 0 auto;
     font-size: .875rem;
@@ -379,7 +389,8 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s ease;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .flyout-link-list .link-list .link-list-title.expand::after{
@@ -391,7 +402,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1.4rem 1.5rem;
     font-weight: 400;
     font-size: 1rem;
     color: #262626;
@@ -408,7 +419,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     height: 1em;
     line-height: 1;
     position: absolute;
-    left: 1rem;
+    left: 1.5rem;
   }
 
   header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .menu-teaser-image p {
@@ -512,6 +523,12 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     color: var(--light-border-color);
     padding: 12px 0;
     font-size: 16px;
+  }
+
+  header nav[aria-expanded="true"] .menu-link-wrapper a:hover,
+  header nav[aria-expanded="true"] .menu-flyout-link:hover {
+    color: var(--light-text-color);
+    text-decoration: none;
   }
 
   header nav[aria-expanded="false"] .nav-tools .default-content-wrapper .icon-search {
@@ -663,8 +680,8 @@ header nav[aria-expanded="true"] .menu-flyout-wrapper::after {
     color: var(--light-border-color);
     font-weight: 400;
     position: absolute;
-    right: 50px;
-    top: 12px;
+    right: 7rem;
+    top: 0.75rem;
 }
 
 /* flyout css ipad code */ 
@@ -720,7 +737,7 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.s
  header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper:nth-last-child(2) .link-list-wrapper.vertical .link-list-title {
   padding-right: 0;
   margin: 0 0 1rem;
-  color: var(--medium-text-color);
+  color: var(--light-text-color);
   font-size: 0.625rem;
   font-weight: 300;
   line-height: 0.75rem;
@@ -729,8 +746,9 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.s
   text-transform: uppercase;
  }
 
-header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:hover {
-  color: var(--link-hover-color);
+header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:hover,
+header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title:active {
+  color: var(--light-link-hover-color);
 }
 
 header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title::after {
@@ -800,7 +818,8 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout .flyout-m
   max-height: 0;
   overflow: hidden;
   transition: max-height .25s ease;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout .flyout-wrapper.bmw-info .flyout-main-container .flyout-link-list .link-list .link-list-detail {
@@ -973,13 +992,14 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
   header nav .icon-link-list-container .icon-link-list-container .icon .icon-container,
   header.header-wrapper.white-background nav .icon-link-list-container .icon-link-list-container .icon .icon-container
   {
-    padding: 27px .75rem;
+    padding: 1.688rem 0;
     text-decoration: none;
     cursor: pointer;
     margin: 0;
+    display: block;
   }
 
-  header.header-wrapper nav .icon-link-list-container .icon-link-list-container .icon .icon-container:hover{
+  header.header-wrapper nav .icon-link-list-container .icon-link-list-container .icon.block:hover{
     border-bottom: .25rem solid var(--light-link-hover-color);
     border-top: .25rem solid transparent;
     color:transparent;
@@ -1080,19 +1100,15 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper {
     position: absolute;
     right: 0;
-    top: 30px;
   }
 
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon {
-    margin-right: 1.88rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    padding: 0 0.75rem;
   }
 
   header.header-wrapper nav .nav-brand .icon-link-list-wrapper .icon-link-list-container .icon .search {
    position: relative;
-   left: 5px;
   }
 
   /* css for flyout */
@@ -1104,7 +1120,7 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
     position: absolute;
     left: 0;
     right: 0;
-    padding: 2rem 0;
+    padding: 2.5rem 5.25rem;
     height: auto;
     width: 100%;
     opacity: 0;
@@ -1132,7 +1148,7 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
 
   .showfly .flyout-main-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     opacity: 1;
     transform: scaleY(1);
     transition-delay: 0s, 0s;
@@ -1279,9 +1295,8 @@ header nav[aria-expanded="true"] .section {
   
   header nav .menu-link-wrapper .menu-link a,
   header nav .menu-flyout-wrapper .menu-flyout-link {
-    padding: 27px 0;
+    padding: 1.688rem 0.75rem;
     text-decoration: none;
-    margin: 0 12px;
     flex: 0 1 auto;
     position: relative;
     font-weight: 700;
