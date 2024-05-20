@@ -127,7 +127,6 @@
   },
   {
     "id": "quote",
-    "components": [],
     "rte": {
       "format": ["bold"],
       "alignment": [],
