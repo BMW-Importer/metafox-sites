@@ -387,7 +387,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       white-space: nowrap;
       color: var(--text-color);
       background-attachment: var(--background-color);
-      box-shadow: -23px 0.063rem 1.1875rem white;
+      box-shadow: -23px 0.063rem 1.1875rem var(--background-color);
       visibility: hidden;
     }
 
@@ -424,7 +424,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       height: 100%;
       z-index: 600;
       display: block;
-      background-color: white;
+      background-color: var(--background-color)
     }
 
     .content-navigation-container .cmp-contentnavigation-wrapper.fixed-nav .cmp-contentnavigation-arrow-left {    
@@ -438,7 +438,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       height: 100%;
       z-index: 600;
       display: none;
-      background-color: white;
+      background-color: var(--background-color)
     }
 
     /** without btn below **/
@@ -461,7 +461,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       outline: transparent solid 1px;
       white-space: nowrap;
       color: var(--text-color);
-      box-shadow: -27px -22px 21px 19px white,-14px -7px 18px 28px white;
+      box-shadow: -27px -22px 21px 19px var(--background-color),-14px -7px 18px 28px var(--background-color)
     }
   
     /** without btn below **/
@@ -484,7 +484,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
       outline: transparent solid 1px;
       white-space: nowrap;
       color: var(--text-color);
-      box-shadow: 13px -9px 21px 19px white,54px -8px 21px 1.25rem white;
+      box-shadow: 13px -9px 21px 19px var(--background-color),54px -8px 21px 1.25rem var(--background-color);
      
     }
 
@@ -497,7 +497,7 @@ main .section.content-navigation-container .cmp-contentnavigation-wrapper.fixed-
     }
 
     .content-navigation-container .content-navigation-wrapper .cmp-contentnavigation-wrapper.variation-btn.fixed-nav .cmp-contentnavigation-arrow-right::before {
-      box-shadow: 9.8rem 0 86px 12.4rem white;
+      box-shadow: 9.8rem 0 86px 12.4rem var(--background-color);
     }
     
   
