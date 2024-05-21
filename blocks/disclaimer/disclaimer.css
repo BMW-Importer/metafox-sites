@@ -43,3 +43,15 @@ p {
 .disclaimer-wrapper .disclaimer-content p a:hover{
     color: var(--link-hover-color);
 }
+
+@media (width >= 768px) and (width < 1280px) {
+    .disclaimer-wrapper .disclaimer-content {
+        padding: 0 0.75rem;
+    }
+}
+
+@media (width >= 1280px) {
+    .disclaimer-wrapper .disclaimer-content {
+        padding: 0 0.75rem;
+    }
+}

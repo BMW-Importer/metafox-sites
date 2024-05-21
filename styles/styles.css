@@ -100,7 +100,6 @@ main {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--fixed-font-family);
-  color: var(--background-color);
   
   /* padding: 1.25rem 6rem; */
   margin: 0;
