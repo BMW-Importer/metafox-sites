@@ -1,35 +1,4 @@
 let isScriptAdded = false;
-export function changeAllVidSrcOnResize() {
-  window.addEventListener('resize', () => {
-    const listOfVideos = document.querySelectorAll('video');
-    listOfVideos.forEach((video) => {
-      const sourceEl = video.querySelector('source');
-      const posterDiv = video.parentElement.querySelector('.vjs-poster picture img');
-
-      const desktopVidPath = sourceEl.getAttribute('data-desktop-vid');
-      const mobileVidPath = sourceEl.getAttribute('data-mobile-vid');
-
-      const desktopPosterPath = video.getAttribute('data-desktop-poster');
-      const mobilePosterPath = video.getAttribute('data-mobile-poster');
-
-      if (window.innerWidth > 768) {
-        if (video.src !== desktopVidPath) {
-          video.src = desktopVidPath;
-          sourceEl.src = desktopVidPath;
-          video.poster = desktopPosterPath;
-          posterDiv.src = desktopPosterPath;
-        }
-      } else if (mobileVidPath) {
-        if (video.src !== mobileVidPath) {
-          video.src = mobileVidPath;
-          sourceEl.src = mobileVidPath;
-          video.poster = mobilePosterPath;
-          posterDiv.src = mobilePosterPath;
-        }
-      }
-    });
-  });
-}
 
 function embedYoutube(url, autoplay) {
   const usp = new URLSearchParams(url.search);
@@ -98,7 +67,6 @@ function getVideoElement(
   video.setAttribute('data-description', videoDescp?.textContent ?? '');
 
   const sourceEl = document.createElement('source');
-
   const mobileWidth = window.innerWidth < 768;
   if (source.desktop && !mobileWidth) {
     sourceEl.setAttribute('src', source?.desktop);
@@ -132,6 +100,7 @@ function getVideoElement(
     }
     video.append(sourceEl);
   }
+
   video.addEventListener('click', (event) => {
     event.stopImmediatePropagation();
     if (video.paused) {
@@ -290,6 +259,74 @@ export function loadVideoEmbed(
   }
 
   block.dataset.embedIsLoaded = true;
+}
+
+export function changeAllVidSrcOnResize() {
+  window.addEventListener('resize', () => {
+    const listOfVideos = document.querySelectorAll('video');
+    listOfVideos.forEach((video) => {
+      const sourceEl = video.querySelector('source');
+      const desktopVidPath = sourceEl.getAttribute('data-desktop-vid');
+      const mobileVidPath = sourceEl.getAttribute('data-mobile-vid');
+      const desktopPosterPath = video.getAttribute('data-desktop-poster');
+      const mobilePosterPath = video.getAttribute('data-mobile-poster');
+      const linkObject = {
+        desktop: desktopVidPath,
+        mobile: mobileVidPath,
+      };
+      const posters = {
+        desktop: desktopPosterPath,
+        mobile: mobilePosterPath,
+      };
+      const parentBlock = video?.parentNode?.parentNode;
+      const videoTitle = parentBlock.getAttribute('title');
+      const videoDescp = parentBlock.getAttribute('data-description');
+      const autoplay = parentBlock.hasAttribute('autoplay') || false;
+      const loop = parentBlock.hasAttribute('loop') || false;
+      const enableHideControls = false;
+      const muted = parentBlock.hasAttribute('muted') || false;
+      const onHoverPlay = false;
+      let { src } = video;
+      if (src.startsWith('blob:')) {
+        src = src.replace(/^blob:/, '');
+      }
+      if (window.innerWidth > 768) {
+        if (src.length > 0 && src !== desktopVidPath) {
+          // parentBlock.dataset.embedIsLoaded = '';
+          delete parentBlock.dataset.embedIsLoaded;
+          loadVideoEmbed(
+            parentBlock,
+            videoTitle,
+            videoDescp,
+            linkObject,
+            autoplay,
+            loop,
+            enableHideControls,
+            muted,
+            posters,
+            onHoverPlay,
+          );
+        }
+      } else if (mobileVidPath) {
+        if (src.length > 0 && src !== mobileVidPath) {
+          // parentBlock.dataset.embedIsLoaded = '';
+          delete parentBlock.dataset.embedIsLoaded;
+          loadVideoEmbed(
+            parentBlock,
+            videoTitle,
+            videoDescp,
+            linkObject,
+            autoplay,
+            loop,
+            enableHideControls,
+            muted,
+            posters,
+            onHoverPlay,
+          );
+        }
+      }
+    });
+  });
 }
 
 export default async function decorate(block) {
