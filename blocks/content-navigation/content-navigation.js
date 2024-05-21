@@ -1,21 +1,19 @@
 const { body } = document;
 const sections = document.querySelectorAll('div[data-contentnavigation="true"]');
 
-// function activeAnchor() {
-//   sections.forEach((section) => {
-//     const scrollPosition = window.scrollY;
-//     const sectionId = section.getAttribute('data-anchorid');
-//     const sectionOffset = section.offsetTop;
-//     const sectionHeight = section.offsetHeight;
-//     if (scrollPosition >= sectionOffset && scrollPosition < sectionOffset + sectionHeight) {
-//       document.querySelector(`[data-anchor="#${sectionId}"]`)?
-//       .parentNode.classList.add('active');
-//     } else {
-//       document.querySelector(`[data-anchor="#${sectionId}"]`)?
-//      .parentNode.classList.remove('active');
-//     }
-//   });
-// }
+function activeAnchor() {
+  sections.forEach((section) => {
+    const scrollPosition = window.scrollY;
+    const sectionId = section.getAttribute('data-anchorid');
+    const sectionOffset = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if (scrollPosition >= sectionOffset && scrollPosition < sectionOffset + sectionHeight) {
+      document.querySelector(`[data-anchor="#${sectionId}"]`)?.parentNode.classList.add('active');
+    } else {
+      document.querySelector(`[data-anchor="#${sectionId}"]`)?.parentNode.classList.remove('active');
+    }
+  });
+}
 
 function handleContentNavFixedHeader() {
   const navigation = document.getElementById('navigation');
@@ -23,7 +21,7 @@ function handleContentNavFixedHeader() {
   const contentNavContainer = document.querySelector('.content-navigation-container');
   const ulList = document.querySelector('.cmp-contentnavigation-list');
   const offset = contentNavContainer?.offsetTop;
-  // activeAnchor();
+  activeAnchor();
   if (window.pageYOffset >= offset) {
     navigation.classList.add('fixed-nav');
     contentNavContainer.classList.remove('hide');
@@ -73,17 +71,15 @@ function handleContenNavDesktop() {
           contentNavWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 500);
       } else {
-        // scroll to the desired section clicked;
         e.preventDefault();
+        body.style.overflowY = 'auto';
         document.getElementById('navdropdownMenuButton').textContent = e.target.textContent;
         e.target.closest('.cmp-contentnavigation-list').classList.remove('visible-mobile');
         document.getElementById('navdropdownMenuButton').classList.remove('visible-mobile-btn');
-        body.style.overflowY = 'auto';
-        // activeAnchor();
-        const targetId = e.target.getAttribute('data-anchor');
-        const targetSection = document.querySelector(targetId);
+        activeAnchor();
+        const targetId = e.target.getAttribute('data-anchor').replace('#', '');
+        const targetSection = document.querySelector(`[data-anchorid=${targetId}]`);
         if (targetSection) {
-          // const targetOffset = targetSection.offsetTop;
           window.scrollBy(0, 100);
           setTimeout(() => {
             window.scrollBy(0, 0);
@@ -91,7 +87,6 @@ function handleContenNavDesktop() {
           setTimeout(() => {
             targetSection.scrollIntoView({ behavior: 'smooth' });
             setTimeout(() => {
-            // allowScrollEvent = true;
             }, 500);
           }, 400);
         }
