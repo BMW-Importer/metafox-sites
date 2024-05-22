@@ -1221,7 +1221,8 @@
         "name": "videoTitle",
         "value": "",
         "label": "Video Title",
-        "required": true
+        "required": true,
+        "description" : "Defines the title of the video"
       },
       {
         "component": "text",
@@ -1229,7 +1230,8 @@
         "name": "videoDescription",
         "value": "",
         "label": "Video Description",
-        "required": true
+        "required": true,
+        "description" : "Defines the description of the video."
       },
       {
         "component": "reference",
@@ -1237,14 +1239,16 @@
         "name": "desktopVideoPath",
         "label": "Desktop Video Path",
         "multi": false,
-        "required": true
+        "required": true,
+        "description" : "Defines the path to a video on the desktop."
       },
       {
         "component": "reference",
         "valueType": "string",
         "name": "mobileVideoPath",
         "label": "Mobile Video Path",
-        "multi": false
+        "multi": false,
+        "description" : "Defines the path to a video on the mobile."
       },
       {
         "component": "reference",
@@ -1252,42 +1256,48 @@
         "name": "desktopPosterRef",
         "label": "Desktop Poster Image Path",
         "multi": false,
-        "required": true
+        "required": true,
+        "description" : "Defines the path that will be displaying poster image on desktop while loading the page."
       },
       {
         "component": "reference",
         "valueType": "string",
         "name": "mobilePosterRef",
         "label": "Mobile Poster Image Path",
-        "multi": false
+        "multi": false,
+        "description" : "Defines the path that will be displaying poster image on mobile while loading the page."
       },
       {
         "component": "boolean",
         "label": "Loop Video",
         "name": "loopVideo",
         "valueType": "boolean",
-        "value": true
+        "value": true,
+        "description" : "Defines if the video will play on loop. If toggled on, the video will loop."
       },
       {
         "component": "boolean",
         "label": "Autoplay",
         "name": "videoAutoplay",
         "valueType": "boolean",
-        "value": true
+        "value": true,
+        "description" : "Defines if the video will autoplay. If toggled on, the video will autoplay and will be always on mute even if mute video sound boolean is set to off."
       },
       {
         "component": "boolean",
-        "label": "Hide Video Controls",
+        "label": "Video Controls",
         "name": "hideVideoControl",
         "valueType": "boolean",
-        "value": true
+        "value": true,
+        "description" : "Defines if the video controls will be displayed. If toggled on, they will appear."
       },
       {
         "component": "boolean",
         "label": "Mute Video Sound",
         "name": "muteVideo",
         "valueType": "boolean",
-        "value": true
+        "value": true,
+        "description": "Defines if the video will be play on mute. If toggled on, there will be no sound."
       }
     ]
   },
@@ -1657,7 +1667,7 @@
         "component": "text",
         "name": "cn_general_descp",
         "label": "Content Navigation Description"
-      },
+      },      
       {
         "component": "select",
         "name": "cn_general_bgColor",
@@ -1678,9 +1688,10 @@
       },
       {
         "component": "boolean",
-        "name": "cn_general_isDisplayCN",
-        "label": "Display Content Navigation"
-      },
+        "label": "Display Content Navigation",
+        "name": "cn_general_visible",
+        "valueType": "boolean"
+      },   
       {
         "component": "tab",
         "label": "Button/Link",
@@ -1699,7 +1710,7 @@
         "name": "cn_button_linkText",
         "value": "",
         "label": "Link Label"        
-      },      
+      },
       {
         "component": "select",
         "name": "cn_button_linkType",
