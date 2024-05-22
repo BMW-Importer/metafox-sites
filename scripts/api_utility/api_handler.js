@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
