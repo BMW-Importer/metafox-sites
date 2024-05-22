@@ -1,13 +1,26 @@
 .download-wrapper .download.block p a {
     text-decoration: none;
+    font-family: var(--fixed-font-family);
+    font-size: 0.938rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    min-height: 3.25rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.download-wrapper .download.block p {
+    display: inline-block;
 }
 
 .download-wrapper .download.block p a::before {
     content: url("../../icons/download.svg");
-    display: inline;
-    margin-right: 0.75rem;
+    display: inline-block;
     position: relative;
-    top: 0.125rem;
+    top: -0.125rem;
+    height: 1.25rem;
+    color: var(--light-text-color);
 }
 
 .download-wrapper .download.block p a:hover::before {

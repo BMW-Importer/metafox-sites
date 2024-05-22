@@ -32,6 +32,8 @@
   --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
   --icon-font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
   --opacity-color: #0006;
+  --bg-media-btn-hover: #0653b6;
+  --bg-media-ghost-btn: #f2f2f2;
 
   /* base font size */
   --base-font-size: 16px;
@@ -398,13 +400,13 @@ main img {
 /* sections */
 main .section {
   max-width: var(--max-component-width);
-  padding: 20px var(--section-mobile-padding);
+  padding: 0 var(--section-mobile-padding);
 }
 
 /* tablet */
 @media (width >= 768px){
   main .section {
-    padding: 20px var(--section-tablet-padding);
+    padding: 0 var(--section-tablet-padding);
   }
 }
 
@@ -452,7 +454,7 @@ main .section {
 /* desktop */
 @media (width >= 1280px){
   main .section {
-    padding: 20px var(--section-desktop-padding);
+    padding: 0 var(--section-desktop-padding);
   }
 
   .appear.white-background main .section {

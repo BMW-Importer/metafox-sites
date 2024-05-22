@@ -8,7 +8,7 @@
   "cosyBrand": "WBBM",
   "bodyTypeCode": "GF",
   "marketingBodyTypeCode": "SUV",
-  "effectDate": "2024-05-15",
+  "effectDate": "2024-05-08",
   "hybridCode": "NOHY",
   "fromPrice": 63151,
   "seats": 5,
@@ -50,7 +50,7 @@
           "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "",
+          "consumptionWltpCombined": "8.5 - 7.6",
           "emissionsWltpCombined": "193 - 172",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
@@ -66,17 +66,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4708.0",
-          "width": "1891.0",
-          "height": "1676.0",
+          "length": "4708",
+          "width": "1891",
+          "height": "1676",
           "widthMirrors": "2138 (1080 / 1058)",
-          "wheelTurn": "2864.0",
+          "wheelTurn": "2864",
           "weightNotLoaded": "1875",
           "weightMax": "2410",
           "permittedLoad": "610",
           "trailerLoad": "2000 / 100",
           "trunkCapacity": "550 - 1600",
-          "tankCapacity": "65.0"
+          "tankCapacity": "65"
         }
       },
       "footnotes": {
@@ -134,7 +134,7 @@
           "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "",
+          "consumptionWltpCombined": "8.4 - 7.6",
           "emissionsWltpCombined": "192 - 172",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
@@ -150,17 +150,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4708.0",
-          "width": "1891.0",
-          "height": "1676.0",
+          "length": "4708",
+          "width": "1891",
+          "height": "1676",
           "widthMirrors": "2138 (1080 / 1058)",
-          "wheelTurn": "2864.0",
+          "wheelTurn": "2864",
           "weightNotLoaded": "1875",
           "weightMax": "2410",
           "permittedLoad": "610",
           "trailerLoad": "2000 / 100",
           "trunkCapacity": "550 - 1600",
-          "tankCapacity": "65.0"
+          "tankCapacity": "65"
         }
       },
       "footnotes": {

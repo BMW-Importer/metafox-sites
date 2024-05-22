@@ -10,7 +10,7 @@
   "bodyTypeCode": "CO",
   "marketingBodyTypeCode": "CP",
   "bodyTypeDescription": "COU",
-  "effectDate": "2024-05-15",
+  "effectDate": "2024-05-08",
   "hybridCode": "NOHY",
   "fromPrice": 87522,
   "seats": 4,
@@ -68,17 +68,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4580.0",
-          "width": "1887.0",
-          "height": "1403.0",
+          "length": "4580",
+          "width": "1887",
+          "height": "1403",
           "widthMirrors": "2068 (1040 / 1028)",
-          "wheelTurn": "2747.0",
+          "wheelTurn": "2747",
           "weightNotLoaded": "1775",
           "weightMax": "2155",
           "permittedLoad": "455",
           "trailerLoad": "-",
           "trunkCapacity": "390",
-          "tankCapacity": "52.0"
+          "tankCapacity": "52"
         }
       },
       "footnotes": {
@@ -146,17 +146,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "4580.0",
-          "width": "1887.0",
-          "height": "1403.0",
+          "length": "4580",
+          "width": "1887",
+          "height": "1403",
           "widthMirrors": "2068 (1040 / 1028)",
-          "wheelTurn": "2747.0",
+          "wheelTurn": "2747",
           "weightNotLoaded": "1800",
           "weightMax": "2155",
           "permittedLoad": "430",
           "trailerLoad": "-",
           "trunkCapacity": "390",
-          "tankCapacity": "52.0"
+          "tankCapacity": "52"
         }
       },
       "footnotes": {

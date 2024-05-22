@@ -1,0 +1,572 @@
+.background-media.block {
+    aspect-ratio: unset;
+    width: calc( 100% + 1.5rem + 1.5rem);
+    margin-left: -1.5rem;
+    position: relative;
+}
+
+.background-media.block .background-media-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.background-media.block .background-media-item-text {
+    position: relative;
+    left: unset;
+    width: 100%;
+    top: unset;
+    bottom: unset;
+    transform: unset;
+    overflow: hidden;
+    margin-top: -11rem;
+    min-height: 10.75rem;
+    padding-top: 3rem;
+    z-index: 2;
+}
+
+.background-media.block .background-media-item-text > *{
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto
+}
+
+.background-media.block .background-media-item-text::before {
+    background: linear-gradient(180deg,transparent,#000 8rem)!important;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.background-media.block .background-media-item-text-eyebrow {
+    color: var(--background-color);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .125rem;
+    line-height: 1rem;
+    text-transform: uppercase;    
+    margin-bottom: 0.5rem;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    word-break: break-word; 
+}
+
+.background-media.block .background-media-item-text-headline {
+    color: var(--background-color);
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 7.5rem;   
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    word-break: break-word;
+}
+
+.background-media.block .background-media-item-details {
+    text-align: center;
+}
+
+.background-media.block .background-media-item-details.subbrandi{
+    position: relative;
+}
+
+.background-media.block .background-media-item-details.subbrandi::before {
+    position: relative;
+    content: '';
+    background-image: url("../../icons/BMW_subrand_i.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 1rem;
+    width: 1.8125rem;
+    margin-right: 0.5rem;
+    z-index: 2;
+}
+
+.background-media.block .background-media-item-details.subbrandm::before {
+    position: relative;
+    content: '';
+    background-image: url("../../icons/BMW_subrand_m.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 1.25rem;
+    width: 3.5rem;
+    margin-right: 0.5rem;
+    z-index: 2;
+}
+
+.background-media.block .background-media-item-text-copytext {
+    color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 4px 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.background-media.block .background-media-item-cta-money {
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0;
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-media.block .background-media-item-cta-ghost {
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0;
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-media.block .background-media-item-cta-money *,
+.background-media.block .background-media-item-cta-ghost * {
+    box-sizing: border-box;
+}
+
+
+.background-media.block .background-media-item-cta-money .money-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    word-break: break-word;
+    background-color: var(--light-link-hover-color);
+    color: var(--background-color);
+    min-height: 3.25rem;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.background-media.block .background-media-item-cta-money .money-btn-flex {    
+    width: 100%;
+}
+
+.background-media.block .background-media-item-cta-money .money-btn:hover {
+    background-color: var(--bg-media-btn-hover);
+    box-shadow: none;
+    color: var(--background-color);
+}
+
+.background-media.block .background-media-item-cta-ghost .ghost-img-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    border: 1px solid var(--bg-media-ghost-btn);
+    outline: 1px solid transparent;
+    border-color: var(--bg-media-ghost-btn);
+    background-color: transparent;
+    color: var(--bg-media-ghost-btn);
+    word-break: break-word;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 3.25rem;    
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: .25rem 12px;
+}
+
+.background-media.block .background-media-item-cta-ghost .ghost-img-flex-btn {   
+    width: 100%;
+}
+
+.background-media.block .background-media-item-cta-ghost .ghost-img-btn:hover {
+    border: 2px solid var(--bg-media-ghost-btn);
+    outline: unser;   
+}
+
+.background-media.block .background-media-item-vidimg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 3/4;
+}
+
+.background-media.block .background-media-item-vidimg > * {
+    height: 100%;
+    width: 100%;
+}
+
+.background-media.block .background-media-item-vidimg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.background-media.block .background-media-item-vidimg.dark.left::before,
+.background-media.block .background-media-item-vidimg.light.left::before {
+    background: linear-gradient(180deg,transparent,#000 11.75rem);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.background-media.block .background-media-item-vidimg.dark.top::before,
+.background-media.block .background-media-item-vidimg.light.top::before {
+    background: linear-gradient(180deg,transparent,#000 11.75rem);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.background-media.block .background-media-item-vidimg.dark.bottom::before,
+.background-media.block .background-media-item-vidimg.light.bottom::before {
+    background: linear-gradient(180deg,transparent,#000 11.75rem);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+/* tablet */
+@media (width >= 768px) and (width <= 1279px){ 
+    .background-media.block {
+        aspect-ratio: unset;
+        width: calc(100% + 3rem + 3rem);
+        margin-left: -3rem;
+    }
+
+    .background-media.block .background-media-item-text {
+        left: unset;
+        top: unset;
+        bottom: unset;
+        transform: unset;
+        width: 100%;
+        margin-top: -14.75rem;
+        min-height: 14.5rem;
+        padding-top: 5rem;
+    }
+
+    .background-media.block .background-media-item-text > *{
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-vidimg {
+        aspect-ratio: 4 / 3;
+    }
+
+    .background-media.block .background-media-item-cta-money {       
+        width: 30%;
+    }
+    
+    .background-media.block .background-media-item-cta-ghost {
+        width: 30%;
+    }
+
+    .background-media.block .background-media-item-cta-money.flex,
+    .background-media.block .background-media-item-cta-ghost.flex {
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-cta-money .money-btn-flex {       
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-cta-ghost .ghost-img-flex-btn {        
+        width: auto;
+    }
+    
+}
+
+/* desktop */
+@media (width >= 1280px) and (width <= 1920px){ 
+    .background-media.block {
+        aspect-ratio: 16 / 7;
+        margin-left: -6rem;
+        width: calc(100% + 6rem + 6rem);
+    }
+
+    .background-media.block .background-media-item-text {
+        position: absolute;
+        left: 6rem;
+        width: 35.4%;
+        top: 50%;
+        transform: translateX(0) translateY(-50%);
+        padding: 0;
+        margin-top: unset;
+        min-height: unset;
+    }
+
+    .background-media.block .background-media-item-details {
+        text-align: start;
+    }
+
+    .background-media.block .background-media-item-text > *{
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-text::before {
+        display: none;
+    }
+
+    .background-media.block .background-media-item-vidimg {
+        aspect-ratio: unset;
+    }
+
+    .background-media.block .background-media-item-text-eyebrow {
+        text-align: start;
+    }
+
+    .background-media.block .background-media-item-text-headline {        
+        text-align: start;
+        font-size: 8rem;
+        line-height: 7.75rem;
+    }
+    
+    .background-media.block .background-media-item-text-copytext {
+        text-align: start;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    
+    .background-media.block .background-media-item-cta-money {
+        text-align: start;
+        display: inline-block;
+        margin: 2rem 0;
+        width: 50%;
+    }
+    
+    .background-media.block .background-media-item-cta-ghost {
+        text-align: start;
+        display: inline-block;
+        margin: 2rem 0;
+        width: 50%;
+    }
+
+    .background-media.block .background-media-item-cta-money *{
+        display: inline-block;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 1.5rem;
+    }
+
+    .background-media.block .background-media-item-cta-ghost *{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        padding-right: 1.5rem;
+    }
+
+    .background-media.block .background-media-item-cta-money.flex,
+    .background-media.block .background-media-item-cta-ghost.flex {
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-cta-money .money-btn-flex {       
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-cta-ghost .ghost-img-flex-btn {        
+        width: auto;
+    }
+    
+    .background-media.block .background-media-item-vidimg.dark.left::before {
+        background: linear-gradient(90deg, #000 10%, rgba(0 0 0 / 80%) 20%, rgba(0 0 0 / 60%) 30%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 20%) 50%, transparent 60%, transparent);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    
+    .background-media.block .background-media-item-vidimg.dark.top::before {
+        background: linear-gradient(180deg, #000 10%, rgba(0 0 0 / 80%) 20%, rgba(0 0 0 / 60%) 30%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 20%) 50%, transparent 60%, transparent);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .background-media.block .background-media-item-vidimg.dark.bottom::before {
+        background: linear-gradient(0deg, #000 10%, rgba(0 0 0 / 80%) 20%, rgba(0 0 0 / 60%) 30%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 20%) 50%, transparent 60%, transparent);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .background-media.block .background-media-item-vidimg.light::before {
+        background: none !important;
+    }
+}
+
+/* large desktop */
+@media (width >= 1920px) { 
+    .background-media.block {
+        aspect-ratio: 16 / 7;       
+        margin-left: -6rem;
+        width: calc(100% + 6rem + 6rem);
+        max-width: var(--max-component-width);
+    }
+    
+    .background-media.block .background-media-item-text {
+        position: absolute;
+        left: 6rem;
+        width: 37.5%;
+        top: 50%;
+        transform: translateX(0) translateY(-50%);
+        padding: 0;
+        margin-top: unset;
+        min-height: unset;
+    }
+
+    .background-media.block .background-media-item-details {
+        text-align: start;
+    }
+
+    .background-media.block .background-media-item-text > *{
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-text::before {
+        display: none;
+    }
+    
+    .background-media.block .background-media-item-vidimg {
+        aspect-ratio: unset;
+    }
+
+    .background-media.block .background-media-item-text-eyebrow {
+        text-align: start;
+    }
+
+    .background-media.block .background-media-item-text-headline {
+        font-size: 8rem;
+        line-height: 7.75rem;
+        text-align: start;
+    }
+
+    .background-media.block .background-media-item-text-copytext {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-align: start;
+    }
+
+    .background-media.block .background-media-item-cta-money {
+        text-align: start;
+        display: inline-block;
+        margin: 2rem 0;
+        width: 50%;
+    }
+
+    .background-media.block .background-media-item-cta-money *{
+        display: inline-block;
+        text-align: start;
+        margin:0;
+        width: 100%;
+        padding-right: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .background-media.block .background-media-item-cta-ghost {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .background-media.block .background-media-item-cta-ghost *{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        padding-right: 1.5rem;
+    }
+
+    .background-media.block .background-media-item-cta-money.flex,
+    .background-media.block .background-media-item-cta-ghost.flex {
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-cta-money .money-btn-flex {       
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-cta-ghost .ghost-img-flex-btn {        
+        width: auto;
+    }
+
+    .background-media.block .background-media-item-vidimg.dark.left::before {
+        background: linear-gradient(90deg, #000 10%, rgba(0 0 0 / 80%) 20%, rgba(0 0 0 / 60%) 30%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 20%) 50%, transparent 60%, transparent);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .background-media.block .background-media-item-vidimg.dark.top::before {
+        background: linear-gradient(180deg, #000 10%, rgba(0 0 0 / 80%) 20%, rgba(0 0 0 / 60%) 30%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 20%) 50%, transparent 60%, transparent);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .background-media.block .background-media-item-vidimg.dark.bottom::before {
+        background: linear-gradient(0deg, #000 10%, rgba(0 0 0 / 80%) 20%, rgba(0 0 0 / 60%) 30%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 20%) 50%, transparent 60%, transparent);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .background-media.block .background-media-item-vidimg.light::before {
+        background: none !important;
+    }
+}

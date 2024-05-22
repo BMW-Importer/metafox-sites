@@ -9,7 +9,7 @@
   "bodyTypeCode": "CO",
   "marketingBodyTypeCode": "CP",
   "bodyTypeDescription": "COU",
-  "effectDate": "2024-05-15",
+  "effectDate": "2024-05-08",
   "hybridCode": "NOHY",
   "fromPrice": 120730,
   "seats": 5,
@@ -51,8 +51,8 @@
           "electricTopSpeed": "-"
         },
         "emissionsConsumptionWltp": {
-          "consumptionWltpCombined": "-",
-          "emissionsWltpCombined": "0",
+          "consumptionWltpCombined": "9.3 - 8.7",
+          "emissionsWltpCombined": "211 - 199",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
           "co2EquivalentOverallBest": "-",
@@ -67,17 +67,17 @@
           "chargingMaxAC": "-"
         },
         "weightMeasurements": {
-          "length": "5082.0",
-          "width": "1932.0",
-          "height": "1407.0",
+          "length": "5082",
+          "width": "1932",
+          "height": "1407",
           "widthMirrors": "2137 (1074 / 1063)",
-          "wheelTurn": "3023.0",
+          "wheelTurn": "3023",
           "weightNotLoaded": "1945",
           "weightMax": "2480",
           "permittedLoad": "610",
           "trailerLoad": "-",
           "trunkCapacity": "440",
-          "tankCapacity": "68.0"
+          "tankCapacity": "68"
         }
       },
       "footnotes": {
