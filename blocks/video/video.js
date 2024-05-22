@@ -278,51 +278,44 @@ export function changeAllVidSrcOnResize() {
         desktop: desktopPosterPath,
         mobile: mobilePosterPath,
       };
-      const parentBlock = video?.parentNode?.parentNode;
-      const videoTitle = parentBlock.getAttribute('title');
-      const videoDescp = parentBlock.getAttribute('data-description');
-      const autoplay = parentBlock.hasAttribute('autoplay') || false;
-      const loop = parentBlock.hasAttribute('loop') || false;
-      const enableHideControls = false;
-      const muted = parentBlock.hasAttribute('muted') || false;
-      const onHoverPlay = false;
-      let { src } = video;
-      if (src.startsWith('blob:')) {
-        src = src.replace(/^blob:/, '');
+      // const parentBlock = video?.parentNode?.parentNode;
+
+      const parentBlock = video.closest('.video-js');
+      if (!parentBlock) {
+        console.error('Parent block not found for video:', video);
+        return;
       }
+      const videoTitle = parentBlock.getAttribute('title');
+      const controlElement = parentBlock.querySelector('.vjs-controls-enabled');
+      const videoDescp = parentBlock.getAttribute('data-description');
+      const autoplay = parentBlock.getAttribute('data-autoplay');
+      const loop = parentBlock.getAttribute('data-loop');
+      const enableHideControls = !!controlElement;
+      const muted = parentBlock.getAttribute('data-muted');
+      const onHoverPlay = false;
+
+      const newVideoElement = getVideoElement(
+        videoTitle,
+        videoDescp,
+        linkObject,
+        '.mp4',
+        autoplay,
+        loop,
+        enableHideControls,
+        muted,
+        posters,
+        onHoverPlay,
+      );
+
       if (window.innerWidth > 768) {
-        if (src.length > 0 && src !== desktopVidPath) {
-          // parentBlock.dataset.embedIsLoaded = '';
+        if (video.src.length > 0 && video.src !== desktopVidPath) {
           delete parentBlock.dataset.embedIsLoaded;
-          loadVideoEmbed(
-            parentBlock,
-            videoTitle,
-            videoDescp,
-            linkObject,
-            autoplay,
-            loop,
-            enableHideControls,
-            muted,
-            posters,
-            onHoverPlay,
-          );
+          video.replaceWith(newVideoElement);
         }
       } else if (mobileVidPath) {
-        if (src.length > 0 && src !== mobileVidPath) {
-          // parentBlock.dataset.embedIsLoaded = '';
+        if (video.src.length > 0 && video.src !== mobileVidPath) {
           delete parentBlock.dataset.embedIsLoaded;
-          loadVideoEmbed(
-            parentBlock,
-            videoTitle,
-            videoDescp,
-            linkObject,
-            autoplay,
-            loop,
-            enableHideControls,
-            muted,
-            posters,
-            onHoverPlay,
-          );
+          video.replaceWith(newVideoElement);
         }
       }
     });
