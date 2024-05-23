@@ -2334,12 +2334,7 @@
         "valueType": "string",
         "name": "download",
         "label": "Download",
-        "value": "",
-        "description": "Defines the downloadable element.",
-        "validation": {
-          "allowedFileTypes": [".pdf", ".xls", ".xlsx"],
-          "customErrorMsg": "Invalid file type. Only PDF and Excel files are allowed."
-        }
+        "description": "Defines the downloadable element."
       },
       {
         "component": "text-input",
