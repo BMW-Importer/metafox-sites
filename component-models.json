@@ -2334,7 +2334,7 @@
         "valueType": "string",
         "name": "download",
         "label": "Download",
-        "value": ".",
+        "value": "",
         "description": "Defines the downloadable element.",
         "validation": {
           "allowedFileTypes": [".pdf", ".xls", ".xlsx"],
