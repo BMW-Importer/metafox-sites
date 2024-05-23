@@ -45,11 +45,12 @@
   .accordion details summary::after {
     content: "";
     transform: translateY(-50%) rotate(135deg);
-    width: 9px;
-    height: 9px;
-    border: 2px solid;
-    border-width: 2px 2px 0 0;
+    width: 0.625rem;
+    height: 0.563rem;
+    border: 0.125rem solid;
+    border-width: 0.125rem 0.125rem 0 0;
     transition: transform 0.2s;
+    margin: 0.5rem;
   }
   
   .accordion details[open] summary::after {

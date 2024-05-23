@@ -458,7 +458,7 @@ main .section {
   }
 
   .appear.white-background main .section {
-    padding: 0;
+    padding: 0 var(--section-desktop-padding);
   }
   
   .appear.white-background main .section.columns-container .default-content-wrapper p {

@@ -152,19 +152,19 @@ function set_page_tracking(){
     const path = window.location.pathname;
     const pathParts = path.split('/').filter(part => part !== ''); // Filter out empty parts
     const formattedPath = pathParts.map(part => part.replace(/[^\w\s]/g, '')).join(':'); // Remove special characters
-    var response = {body:"getOtp 200 OK"};
-    if (formattedPath !== '') {
-      if (response.body.match(/20[01] OK/)) {
-          page_tracking.page.pageInfo.pageName = "web:" + formattedPath;
-          console.log('not error page - show formated path');
+
+    fetch(window.location.href)
+    .then(response => {
+      if (!response.ok) {
+        page_tracking.page.pageInfo.pageName = "web:errorpage";
       } else {
-          page_tracking.page.pageInfo.pageName = "web:" + document.title;
-          console.log('error page - show page not found title')
+        if (formattedPath !== '') {
+          page_tracking.page.pageInfo.pageName = "web:home:" + formattedPath;
+        } else {
+            page_tracking.page.pageInfo.pageName = "web:home";
+        }
       }
-    } else {
-        page_tracking.page.pageInfo.pageName = "web:home";
-        console.log('home')
-    }
+    })
 
     const metaTag = document.querySelector('meta[name="env"]');
     if (metaTag && metaTag.content) {

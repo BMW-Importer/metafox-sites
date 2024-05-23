@@ -1695,28 +1695,34 @@
       {
         "component": "tab",
         "label": "Button/Link",
-        "name": "cn_button_tab"
+        "name": "cnButton_tab"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "cn_button_link",
+        "name": "cnButton_link",
         "value": "",
         "label": "Link"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "cn_button_linkText",
+        "name": "cnButton_linkText",
         "value": "",
         "label": "Link Label"        
       },
       {
         "component": "select",
-        "name": "cn_button_linkType",
+        "name": "cnButton_linkType",
         "value": "secondary",
         "label": "Button styling",
-        "valueType": "string"        
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Money Button",
+            "value": "Money Button"
+          }
+        ]    
       }
     ]
   },
@@ -1820,7 +1826,7 @@
       {
         "component": "select",
         "name": "bgImgIcon_subbrandicon",
-        "value": "",
+        "value": "noicon",
         "label": "Subbrand Icon Type",
         "valueType": "string",        
         "description": "Defines the subbrand icons that are being displayed.",
@@ -1832,6 +1838,10 @@
           {
             "name": "Subbrand M",
             "value": "subbrandm"
+          },
+          {
+            "name": "No Subbrand Icon",
+            "value": "noicon"
           }
         ]
       },
@@ -1868,6 +1878,37 @@
         ]
       },
       {
+        "component": "select",
+        "name": "bgImgStyle_elementAlign",
+        "label": "Element Alignment",
+        "valueType": "string",
+        "value": "central-left",
+        "description": "Defines alignment of the elements on image",       
+        "options": [
+          {
+            "name": "Top Left",
+            "value": "top-left"
+          },
+          {
+            "name": "Central Left",
+            "value": "central-left"
+          }
+          ,
+          {
+            "name": "Bottom Left",
+            "value": "bottom-left"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "bgImgStyle_elementAlignType",
+        "label": "Element Alignment Type",
+        "valueType": "string",
+        "value": "h3",
+        "hidden": true
+      },
+      {
         "component": "tab",
         "label": "Image",
         "name": "bgImgImage_tab"
@@ -1898,16 +1939,14 @@
         "name": "bgImgCta1_Link",
         "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
         "label": "Link",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "text-input",
         "name": "bgImgCta1_LinkText",
         "description": "Defines the text to be displayed in the button or as the link.",
         "label": "Link Label",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "select",
@@ -1932,16 +1971,14 @@
         "name": "bgImgCta2_Link",
         "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
         "label": "Link",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "text-input",
         "name": "bgImgCta2_LinkText",
         "description": "Defines the text to be displayed in the button or as the link.",
         "label": "Link Label",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "select",
@@ -2034,11 +2071,11 @@
       {
         "component": "select",
         "name": "bgVidIcon_subbrandicon",
-        "value": "",
+        "value": "noicon",
         "label": "Subbrand Icon Type",
         "valueType": "string",        
         "description": "Defines the subbrand icons that are being displayed.",
-        "options": [
+        "options": [         
           {
             "name": "Subbrand i",
             "value": "subbrandi"
@@ -2046,6 +2083,10 @@
           {
             "name": "Subbrand M",
             "value": "subbrandm"
+          },
+          {
+            "name": "No Subbrand Icon",
+            "value": "noicon"
           }
         ]
       },
@@ -2081,6 +2122,37 @@
             ]
           }
         ]
+      },      
+      {
+        "component": "select",
+        "name": "bgVidStyle_elementAlign",
+        "label": "Element Alignment",
+        "valueType": "string",
+        "value": "central-left",
+        "description": "Defines alignment of the elements on image",       
+        "options": [
+          {
+            "name": "Top Left",
+            "value": "top-left"
+          },
+          {
+            "name": "Central Left",
+            "value": "central-left"
+          }
+          ,
+          {
+            "name": "Bottom Left",
+            "value": "bottom-left"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "bgVidStyle_elementAlignType",
+        "label": "Element Alignment Type",
+        "valueType": "string",
+        "value": "h3",
+        "hidden": true
       },
       {
         "component": "tab",
@@ -2159,16 +2231,14 @@
         "name": "bgVidCta1_Link",
         "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
         "label": "Link",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "text-input",
         "name": "bgVidCta1_LinkText",
         "description": "Defines the text to be displayed in the button or as the link.",
         "label": "Link Label",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "select",
@@ -2193,16 +2263,14 @@
         "name": "bgVidCta2_Link",
         "description": "Defines the page to which the user will be directed to. Please add the full URL including https://",
         "label": "Link",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "text-input",
         "name": "bgVidCta2_LinkText",
         "description": "Defines the text to be displayed in the button or as the link.",
         "label": "Link Label",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
       {
         "component": "select",

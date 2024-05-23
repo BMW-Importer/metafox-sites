@@ -19,7 +19,11 @@
     ],
     "hybridCode": "NOHY",
     "fromPrice": 76425,
-    "acceleration": "-",
+    "acceleration": "4.7",
+    "trunkCapacity": 500,
+    "seats": 5,
+    "horsePower": 340,
+    "topSpeed": "250",
     "marketingVehicleType": "M",
     "bodyTypeCode": "TO",
     "marketingBodyTypeCode": "TO",
@@ -33,9 +37,9 @@
     },
     "powerTrain": {
       "fuelType": "D",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "250 (340)",
+      "systemMaxTorque": "700",
+      "gearBox": "8 - automatisch",
       "driveType": "AR"
     }
   }

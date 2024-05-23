@@ -25,7 +25,7 @@ function embedVimeo(url, autoplay) {
     </div>`;
 }
 
-function getVideoElement(
+export function getVideoElement(
   videoTitle,
   videoDescp,
   source,

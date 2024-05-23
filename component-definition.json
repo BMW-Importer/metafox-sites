@@ -614,6 +614,9 @@
                 "template": {
                   "name": "Background Image",
                   "model": "background-image",
+                  "bgImgIcon_subbrandicon": "noicon",
+                  "bgImgStyle_elementAlignType": "h3",
+                  "bgImgStyle_elementAlign": "central-left",
                   "bgImgCta1_CtaClassName": "money-btn money-btn-flex",
                   "bgImgCta2_CtaClassName": "ghost-img-btn ghost-img-flex-btn"
                 }
@@ -631,8 +634,11 @@
                 "template": {
                   "name": "Background Video",
                   "model": "background-video",
-                  "bgVidVideoControls_loopVideo": true,
-                  "bgVidVideoControls_autoPlayVideo": true,
+                  "bgVidIcon_subbrandicon": "none",
+                  "bgVidStyle_elementAlign": "central-left",
+                  "bgVidStyle_elementAlignType": "h3",
+                  "bgVidVideo_loopVideo": true,
+                  "bgVidVideo_autoPlayVideo": true,
                   "bgVidCta1_CtaBtnStyle": "money-btn money-btn-flex",
                   "bgVidCta2_CtaBtnStyle": "ghost-img-btn ghost-img-flex-btn"
                 }

@@ -8,7 +8,7 @@
   "cosyBrand": "WBBM",
   "bodyTypeCode": "CP",
   "marketingBodyTypeCode": "CP",
-  "effectDate": "2024-05-15",
+  "effectDate": "2024-05-21",
   "hybridCode": "NOHY",
   "fromPrice": 36607,
   "seats": 5,
@@ -54,6 +54,8 @@
           "emissionsWltpCombined": "157 - 137",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
+          "noiseDriving": "-",
+          "noiseStationary": "-",
           "co2EquivalentOverallBest": "-",
           "co2EquivalentOverall": "-"
         },
@@ -138,6 +140,8 @@
           "emissionsWltpCombined": "157 - 137",
           "electricConsumption": "-",
           "electricRangeWltpCombined": "-",
+          "noiseDriving": "-",
+          "noiseStationary": "-",
           "co2EquivalentOverallBest": "-",
           "co2EquivalentOverall": "-"
         },
