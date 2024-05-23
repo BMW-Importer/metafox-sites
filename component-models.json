@@ -2330,11 +2330,15 @@
     "id": "download",
     "fields": [
       {
-        "component": "reference",
+        "component": "text",
         "valueType": "string",
         "name": "download",
         "label": "Download",
-        "description": "Defines the downloadable element."
+        "description": "Defines the downloadable element.",
+        "validation": {
+        "regExp": "/.(pdf|doc|docx|txt)$/i",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
       },
       {
         "component": "text-input",
