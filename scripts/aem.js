@@ -746,4 +746,5 @@ export {
   toClassName,
   updateSectionsStatus,
   waitForLCP,
+  validateFileType,
 };
