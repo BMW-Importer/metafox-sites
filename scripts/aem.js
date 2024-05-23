@@ -708,6 +708,18 @@ async function waitForLCP(lcpBlocks) {
   });
 }
 
+async function validateFileType(value) {
+  const allowedExtensions = ['pdf', 'xls', 'xlsx'];
+  const fileExtension = value.split('.').pop().toLowerCase();
+
+  if (!allowedExtensions.includes(fileExtension)) {
+    return false; // Validation failed
+  }
+  return true; // Validation passed
+}
+
+window.validateFileType = validateFileType;
+
 init();
 
 export {
