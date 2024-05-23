@@ -157,13 +157,15 @@ function getVideoElement(
   }, { passive: false });
 
   video.dataset.autoplay = autoplay ? 'true' : 'false';
+
   if (window.IntersectionObserver) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (video) {
           if (entry.isIntersecting) {
             if (video.paused) {
-              video.play().catch();
+              video.play().catch(() => {
+              });
             }
           } else if (!video.paused) {
             video.pause();
@@ -171,18 +173,23 @@ function getVideoElement(
         }
       });
     }, { threshold: 0.5 });
+
     observer.observe(video);
+
     video.oncanplay = () => {
       if (autoplay) {
         video.muted = true;
-        video.play();
+        video.play().catch(() => {
+        });
       }
       if (userUnmuted) {
         video.muted = false;
-        video.play();
+        video.play().catch(() => {});
       }
     };
-  } else document.querySelector('#warning').style.display = 'block';
+  } else {
+    document.querySelector('#warning').style.display = 'block';
+  }
   return video;
 }
 
@@ -278,7 +285,6 @@ export function changeAllVidSrcOnResize() {
         desktop: desktopPosterPath,
         mobile: mobilePosterPath,
       };
-      // const parentBlock = video?.parentNode?.parentNode;
 
       const parentBlock = video.closest('.video-js');
       if (!parentBlock) {
@@ -294,28 +300,39 @@ export function changeAllVidSrcOnResize() {
       const muted = parentBlock.getAttribute('data-muted');
       const onHoverPlay = false;
 
-      const newVideoElement = getVideoElement(
-        videoTitle,
-        videoDescp,
-        linkObject,
-        '.mp4',
-        autoplay,
-        loop,
-        enableHideControls,
-        muted,
-        posters,
-        onHoverPlay,
-      );
-
       if (window.innerWidth > 768) {
         if (video.src.length > 0 && video.src !== desktopVidPath) {
           delete parentBlock.dataset.embedIsLoaded;
-          video.replaceWith(newVideoElement);
+          loadVideoEmbed(
+            parentBlock,
+            videoTitle,
+            videoDescp,
+            linkObject,
+            autoplay,
+            loop,
+            enableHideControls,
+            muted,
+            posters,
+            onHoverPlay,
+          );
+          video.load();
         }
       } else if (mobileVidPath) {
         if (video.src.length > 0 && video.src !== mobileVidPath) {
           delete parentBlock.dataset.embedIsLoaded;
-          video.replaceWith(newVideoElement);
+          loadVideoEmbed(
+            parentBlock,
+            videoTitle,
+            videoDescp,
+            linkObject,
+            autoplay,
+            loop,
+            enableHideControls,
+            muted,
+            posters,
+            onHoverPlay,
+          );
+          video.load();
         }
       }
     });
