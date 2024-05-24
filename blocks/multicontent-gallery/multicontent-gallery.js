@@ -343,7 +343,7 @@ export default function decorate(block) {
 
   // loop through all children blocks
   [...panels].forEach((panel, index) => {
-    const [, content, , vidOrImg, , button] = panel.children;
+    const [content, vidOrImg, button] = panel.children;
 
     // hidding origin div so that in author page its not visible
     panel.classList.add('hidden');
