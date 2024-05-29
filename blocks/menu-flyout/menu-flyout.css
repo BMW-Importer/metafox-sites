@@ -54,8 +54,8 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image picture,
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image img {
-    width: 15.625rem;
-    height: 9.375rem;
+    width: 25.875rem;
+    height: 14.5rem;
     object-fit: cover;
     vertical-align: middle;
 }
