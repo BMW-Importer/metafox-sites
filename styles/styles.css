@@ -92,6 +92,8 @@ body.appear {
 body {
   display: none;
   background-color: var(--background-color);
+  opacity: 0;
+
 }
 
 main {
