@@ -277,7 +277,8 @@
         "label": "Display in Content Navigation",
         "description": "",
         "name": "contentnavigation",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value": true
       }
     ]
   },
@@ -365,7 +366,8 @@
         "label": "Display in Content Navigation",
         "description": "",
         "name": "contentnavigation",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value": true
       }
     ]
   },
@@ -394,13 +396,51 @@
         "value": "",
         "label": "Tab description",
         "required": true
-      },   
+      },
+      {
+        "component": "select",
+        "name": "tab-style",
+        "value": "secondary",
+        "label": "Tab Style",
+        "valueType": "string",
+        "required": true,
+        "description": "Defines the styling in which the tab will be displayed.",
+        "options": [
+          {
+            "name": "Default",
+            "value": "secondary"
+          },
+          {
+            "name": "Buttons",
+            "value": "primary"
+          }
+        ]
+      },
       {
         "component": "boolean", 
         "label": "Display Top Margin",
         "description": "Defines if the top margin is displayed. If toggled off, the top margin will not be displayed.",
         "name": "tab-topmargin",
         "valueType": "boolean"
+      },
+      {
+        "component": "select",
+        "name": "tab-style",
+        "value": "",
+        "label": "Tab Style",
+        "valueType": "string",
+        "description": "Defines the styling in which the tab will be displayed.",
+        "required": true,
+        "options": [
+          {
+            "name": "Default",
+            "value": "primary"
+          },
+          {
+            "name": "Buttons",
+            "value": "secondary"
+          } 
+        ]
       },
       {
         "component": "tab",
@@ -911,12 +951,28 @@
         "description": "Defines if the video will play on loop. If toggled on, the video will loop."
       },
       {
+        "component": "text",
+        "label": "Loop Video",
+        "name": "media_loopVideoType",
+        "valueType": "string",
+        "value": "h2",
+        "hidden": true
+      },
+      {
         "component": "boolean",
         "label": "Autoplay",
         "name": "media_autoplay",
         "valueType": "boolean",
         "value": true,
         "description": "Defines if the video will autoplay. If toggled on, the video will autoplay."
+      },
+      {
+        "component": "text",
+        "label": "Autoplay",
+        "name": "media_autoplayType",
+        "valueType": "string",
+        "value": "h3",
+        "hidden": true
       },
       {
         "component": "boolean",
@@ -927,12 +983,28 @@
         "description": "Defines if the video controls will be displayed. If toggled on, they will appear."
       },
       {
+        "component": "text",
+        "label": "Loop Video",
+        "name": "media_videoControlsType",
+        "valueType": "string",
+        "value": "h4",
+        "hidden": true
+      },
+      {
         "component": "boolean",
         "label": "Mute Video",
         "name": "media_muteVideo",
         "valueType": "boolean",
         "value": true,
         "description": "Defines if the video will be play on mute. If toggled on, there will be no sound."
+      },
+      {
+        "component": "text",
+        "label": "Loop Video",
+        "name": "media_muteVideoType",
+        "valueType": "string",
+        "value": "h5",
+        "hidden": true
       },
       {
         "component": "tab",
@@ -2521,7 +2593,7 @@
       },
       {
         "component": "boolean",
-        "label": "Muted Video Sound",
+        "label": "Mute Video Sound",
         "name": "media_videoCarouselMuteSoundVideo",
         "description": "Defines how video will be played.",
         "valueType": "boolean",

@@ -15,7 +15,8 @@ header {
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  z-index: 2;
+  z-index: 3;
+  position: relative;
 }
 
 header nav {
@@ -196,6 +197,8 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     margin: 0;
     width: 100%;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
   }
 
   .header nav .section .default-content-wrapper {
@@ -682,6 +685,8 @@ header nav[aria-expanded="true"] .menu-flyout-wrapper .flyout-wrapper {
 
 header nav[aria-expanded="true"] .menu-flyout-wrapper .menu-flyout.block p{
   margin: 0;
+  position: relative;
+  z-index: 2;
 }
 
 header nav[aria-expanded="true"] .menu-flyout-wrapper::after {       
@@ -707,6 +712,7 @@ header nav[aria-expanded="true"] .menu-flyout-wrapper::after {
     position: absolute;
     right: 7rem;
     top: 0.75rem;
+    z-index: 1;
 }
 
 /* flyout css ipad code */ 
@@ -1144,16 +1150,14 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
     transform: scaleY(0);
   }
   
-  .flyout-wrapper {
-    overflow: hidden;
-  }
-
   .menu-flyout .flyout-wrapper {
     position: absolute;
     z-index: 999;
+    visibility: hidden; 
   }
 
   .showfly .flyout-wrapper {
+    visibility: visible;
     overflow: visible;
     top: 84px;
     width: 100vw;
@@ -1256,7 +1260,6 @@ header nav[aria-expanded="true"] .section {
   visibility: visible;
   align-self: start;
 }
-
 
 @media (width >= 1280px) {
   header nav .nav-brand picture {

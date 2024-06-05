@@ -1,13 +1,10 @@
-const fs = require('fs');
-const path = require('path');
 const { callApi, writeToFile } = require('./api_handler.js');
+const config = require('./config.js');
 
 function getApiUrl(modelJson) {
   const { posiSpec } = modelJson.model;
-  const configPath = path.join(__dirname, 'api_config.json');
-  const cosyApiConfig = JSON.parse(fs.readFileSync(configPath, 'utf8'));
-  const cosyApiUrl = cosyApiConfig.cosyApiBaseUrl;
-  const cosyHub = cosyApiConfig.cosyApiHub;
+  const cosyApiUrl = config.cosyApiBaseUrl;
+  const cosyHub = config.cosyApiHub;
   const apiUrl = `${cosyApiUrl}${posiSpec.agCode}?hub=${cosyHub}&imagetype=webp&options=${posiSpec.options}`;
   return apiUrl;
 }

@@ -19,7 +19,10 @@
     ],
     "hybridCode": "BEVE",
     "fromPrice": 87733,
-    "acceleration": "-",
+    "acceleration": "6.1",
+    "trunkCapacity": 500,
+    "seats": 5,
+    "topSpeed": "200",
     "bodyTypeCode": "GF",
     "marketingBodyTypeCode": "SUV",
     "pureElectricRange": 436,
@@ -32,10 +35,107 @@
     },
     "powerTrain": {
       "fuelType": "E",
-      "systemPower": "-",
-      "systemMaxTorque": "-",
-      "gearBox": "-",
+      "systemPower": "240 (326)",
+      "systemMaxTorque": "630",
+      "gearBox": "1 - automatisch",
       "driveType": "AR"
-    }
+    },
+    "effectDate": "2024-06-04",
+    "vehicles": [
+      {
+        "transmissionCode": "A",
+        "hybridCode": "BEVE",
+        "iD_LEIST_KONST": "30",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "E",
+            "systemPower": "240 (326)",
+            "systemMaxTorque": "630",
+            "gearBox": "1 - automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "240 (326) / 102 (139)",
+            "systemMaxTorque": "630"
+          },
+          "performance": {
+            "acceleration": "6.1",
+            "topSpeed": "-",
+            "electricTopSpeed": "200"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "-",
+            "emissionsWltpCombined": "0",
+            "electricConsumption": "21.4 - 19.4",
+            "electricRangeWltpCombined": "403 - 436",
+            "noiseDriving": "-",
+            "noiseStationary": "-",
+            "co2EquivalentOverallBest": "-",
+            "co2EquivalentOverall": "-"
+          },
+          "charging": {
+            "batteryCapacity": "74.1",
+            "chargeACDC": "11 (-) / 150",
+            "charge_AC_0_100": "8.25",
+            "charge_DC_10_80": "31",
+            "additionalRangeDC": "102 - 133",
+            "chargingMaxAC": "11"
+          },
+          "weightMeasurements": {
+            "length": "4953.0",
+            "width": "1967.0",
+            "height": "1695.0",
+            "widthMirrors": "2230 (1118 / 1112)",
+            "wheelTurn": "3000.0",
+            "weightNotLoaded": "2440",
+            "weightMax": "3010",
+            "permittedLoad": "645",
+            "trailerLoad": "2500 / 100",
+            "trunkCapacity": "500 - 1750",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "emissionsConsumptionWltp": [
+            "f4"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombinedBest_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "charging_chargeAC_value": [
+            "f15"
+          ],
+          "charging_charge_AC_0_100_value": [
+            "f15"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
   }
 }

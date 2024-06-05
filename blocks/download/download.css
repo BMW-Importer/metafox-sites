@@ -8,6 +8,7 @@
     display: flex;
     gap: .5rem;
     align-items: center;
+    color: var(--light-text-color);
 }
 
 .download-wrapper {
@@ -17,6 +18,7 @@
 .download-wrapper .download.block p {
     display: inline-block;
     margin-top: 0;
+    color: var(--light-text-color);
 }
 
 .download-wrapper .download.block p a::before {
@@ -25,9 +27,17 @@
     position: relative;
     top: -0.125rem;
     height: 1.25rem;
-    color: var(--light-text-color);
 }
 
 .download-wrapper .download.block p a:hover::before {
     content: url("../../icons/download-blue.svg");
+    color: var(--light-link-hover-color);
 }
+
+.download-wrapper .download.block p a:hover {
+    color: var(--light-link-hover-color);
+}
+
+.download-wrapper .download.block p a:active {
+    color: var(--bg-media-btn-hover);
+} 

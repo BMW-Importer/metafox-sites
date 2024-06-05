@@ -5,13 +5,13 @@ export function generatebgVideoDom(block) {
   if (block?.querySelector('a')) {
     // video tab details
     const videoContentPtags = block.querySelectorAll('p');
-    const vidTitle = videoContentPtags[0];
-    const vidDescp = videoContentPtags[1];
+    const vidTitle = videoContentPtags[0] || '';
+    const vidDescp = videoContentPtags[1] || '';
 
     // video tab media
     const videoContentAtags = block.querySelectorAll('a');
-    const DesktopVideoRef = videoContentAtags[0];
-    const mobileVideoRef = videoContentAtags[1];
+    const DesktopVideoRef = videoContentAtags[0] || '';
+    const mobileVideoRef = videoContentAtags[1] || '';
 
     const videoContentPictureTags = block.querySelectorAll('picture');
     const videoSlideDesktopPosterImgRef = videoContentPictureTags[0]?.querySelector('img')?.getAttribute('src');
@@ -37,8 +37,8 @@ export function generatebgVideoDom(block) {
     // delete replace link with 'videoSlideDesktopVideoRef.textContent.trim()
     loadVideoEmbed([
       block,
-      vidTitle.textContent,
-      vidDescp.textContent,
+      vidTitle?.textContent,
+      vidDescp?.textContent,
       videoLinkObj,
       isAutoPlayVideo,
       isLoopVideo,

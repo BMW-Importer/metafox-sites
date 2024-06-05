@@ -1,1 +1,124 @@
-/* tabs.css */
+.tabs.block {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    box-shadow: #00000014 0 0.125rem 0.5rem 0, #00000047 0 0 0.0625rem 0;
+    margin: .5rem 0;
+    min-height: 3.25rem;
+    border-radius: 0.188rem;
+    overflow-x: auto;
+}
+
+.tabs li {
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    height: 100%;
+}
+
+.tabs li button {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    font-family: var(--fixed-font-family);
+    text-transform: capitalize;
+    padding: .5rem 1.125rem;
+    height: inherit;
+    border-radius: 0;
+    background-color: var(--light-grey);
+    color: var(--light-border-color);
+    border-width: 0.25rem 0;
+    border-top: .25rem solid transparent !important;
+    border-bottom: .25rem solid transparent !important;
+}
+
+.tabs li button.active {
+    border: none;
+    background-color: var(--background-color);
+    border-bottom-color: transparent;
+    color: var(--light-text-color);
+}
+
+.default-tab li button {
+    background-color: #0000;
+    color: var(--light-border-color);
+    font-size: var(--base-font-size);
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+@media (width >=1280px){
+    .tabs li button:not(.active):hover {
+            color: var(--light-link-hover-color);
+        }
+}
+
+.default-tab li button.active {
+    border-bottom: 0.25rem solid;
+    border-bottom-color: var(--light-text-color) !important;
+    border-top: 0.25rem solid #0000;
+
+}
+
+@media (width >=1280px){
+    .default-tab li button:not(.active):hover {
+            color: var(--light-link-hover-color);
+            border-bottom-color: var(--light-link-hover-color);
+        }
+}
+
+.default-tab {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border-bottom: 0.6667px solid var(--light-grey-1);
+    gap: .5rem;
+    cursor: grab;
+}
+
+.tabs ul::after {
+    content: '';
+    display: inline-block;
+    box-shadow: -2rem -4px 20px 4rem #fcfcfc91;
+    position: absolute;
+    right: 0;
+}
+
+[data-tab-topmargin='true'] {
+    margin-top: 3rem;
+}
+
+@media (width >=360px) and (width < 1280px) {
+    [data-tab-topmargin='true'] {
+            margin-top: 2.5rem;
+        }
+}
+
+body.activity main {
+    grid-auto-flow: column;
+    grid-template-rows: auto auto min-content minmax(auto, 100%);
+    grid-template-areas:
+        "bread bread bread bread"
+        "hero hero hero hero"
+        "padleft left tabs padright"
+        "padleft left main padright";
+}
+
+body.activity main .tabs-container {
+    grid-area: tabs;
+    padding-bottom: 0;
+}
+
+body.activity main [data-tab] {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+body.activity main [data-tab] :first-child {
+    margin-top: 0;
+}

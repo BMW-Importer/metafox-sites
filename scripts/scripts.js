@@ -9,6 +9,8 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
+  buildBlock,
+  readBlockConfig,
 } from './aem.js';
 
 import { decorateBMWButtons } from './bmw-util.js';
@@ -61,18 +63,54 @@ async function loadFonts() {
   }
 }
 
+function buildTabs(main) {
+  const tabs = [...main.querySelectorAll(':scope > div')]
+    .map((section) => {
+      const sectionMeta = section.querySelector('div.section-metadata');
+      if (sectionMeta) {
+        const meta = readBlockConfig(sectionMeta);
+        return [section, meta['tab-label']];
+      }
+      return null;
+    })
+    .filter((el) => !!el && el[1]);
+
+  if (tabs.length) {
+    const section = document.createElement('div');
+    section.className = 'section';
+    const ul = document.createElement('ul');
+    ul.append(...tabs
+      .map(([, tab]) => {
+        if (tab) {
+          const li = document.createElement('li');
+          li.innerText = tab;
+          return li;
+        }
+        return null;
+      })
+      .filter((li) => li !== null));
+
+    const tabsBlock = buildBlock('tabs', [[ul]]);
+    section.append(tabsBlock);
+    console.log(tabsBlock);
+    tabs[0][0].insertAdjacentElement('beforebegin', section);
+  }
+}
+
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks() {
+function buildAutoBlocks(main) {
   try {
-    // TODO: add auto block, if needed
+    buildTabs(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
   }
 }
+
 
 /**
  * Decorates the main element.

@@ -310,9 +310,13 @@
                   "classes": "left",
                   "content_videoheadlineType": "h2",
                   "media_loopVideo":true,
+                  "media_loopVideoType":"h2",
                   "media_autoplay":true,
+                  "media_autoplayType": "h3",
                   "media_videoControls":false,
-                  "media_muteVideo":true
+                  "media_videoControlsType": "h4",
+                  "media_muteVideo":true,
+                  "media_muteVideoType": "h5"
                 }
               }
             }

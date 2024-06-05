@@ -54,8 +54,6 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-
 
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image picture,
 header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image img {
-    width: 15.625rem;
-    height: 9.375rem;
     object-fit: cover;
     vertical-align: middle;
 }
@@ -328,3 +326,25 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
         position: absolute;
     }
 }
+
+/* Desktop  */
+@media (width >= 1280px) and (width < 1920px) { 
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image picture,
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image img {
+        width: 15.875rem;
+        height: 8.938rem;
+  }
+}
+
+/* large desktop */
+@media (width >= 1920px) {
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .flyout-wrapper .flyout-main-container .flyout-scroll-indicator-arrow {
+        display: none;
+    }
+
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image picture,
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .menu-flyout .flyout-main-container .flyout-menu-teaser .menu-teaser-image img {
+      width: 25.875rem;
+      height: 14.5rem;
+    }
+  }

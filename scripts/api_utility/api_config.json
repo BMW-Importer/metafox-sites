@@ -1,4 +1,6 @@
 {
     "cosyApiBaseUrl": "https://int.cosy.bmw.cloud/image-urls/dynamic-images/mandators/metafox/collections/walkaround/brands/bmwCar/models/",
-    "cosyApiHub": "CLOUD_INT_INTERNET"
+    "cosyApiHub": "CLOUD_INT_INTERNET",
+    "wdhModelDetailsApiUrl": "https://productdata-int1.api.bmw/pdh/categoryhub/v1.0/model/bmw+marketB4R1+bmw_rs+sr_RS/latest/",
+    "wdhModelTechnicalDataApiUrl": "https://productdata-int1.api.bmw/pdh/technicaldata/v2.0/model/bmw+marketB4R1+bmw_rs+sr_RS/latest/"
 }  
