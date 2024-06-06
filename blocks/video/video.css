@@ -166,10 +166,12 @@
 @keyframes changecontent {
   0% {
     visibility: hidden;
+    opacity: 0;
   }
-  
+
   100% {
     visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -178,6 +180,8 @@
 .video-js .vjs-play-control .vjs-icon-placeholder::before {
   content: "play" !important;
   font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif !important;
+  visibility: hidden;
+  opacity: 0;
   animation: changecontent 3s forwards; 
   -webkit-animation: changecontent 3s forwards; 
 }
@@ -203,6 +207,8 @@
   text-transform: none;
   white-space: nowrap;
   width: auto;
+  visibility: hidden;
+  opacity: 0;
   animation: changecontent 3s forwards; 
   -webkit-animation: changecontent 3s forwards; 
 }
@@ -214,6 +220,8 @@
 .video-js.vjs-has-started.vjs-playing .vjs-icon-play::before,
 .video-js.vjs-has-started.vjs-playing .vjs-play-control .vjs-icon-placeholder::before {
   content: "pause" !important;
+  visibility: hidden;
+  opacity: 0;
   animation: changecontent 3s forwards; 
   -webkit-animation: changecontent 3s forwards; 
 }
@@ -247,6 +255,8 @@
   text-transform: none;
   white-space: nowrap;
   width: auto;
+  visibility: hidden;
+  opacity: 0;
   animation: changecontent 3s forwards; 
   -webkit-animation: changecontent 3s forwards; 
 }
