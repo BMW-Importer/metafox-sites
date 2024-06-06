@@ -1,3 +1,4 @@
+/* stylelint-disable property-no-vendor-prefix */
 
 .video-container.bmw-video-container {
     padding: 0;
@@ -162,11 +163,23 @@
   display: block;
 }
 
+@keyframes changecontent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .video-js .vjs-big-play-button .vjs-icon-placeholder::before,
 .video-js .vjs-icon-play::before,
 .video-js .vjs-play-control .vjs-icon-placeholder::before {
   content: "play" !important;
   font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif !important;
+  animation: changecontent 4s forwards; 
+  -webkit-animation :changecontent 4s forwards; 
 }
 
 .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
@@ -190,6 +203,8 @@
   text-transform: none;
   white-space: nowrap;
   width: auto;
+  animation: changecontent 4s forwards; 
+  -webkit-animation :changecontent 4s forwards; 
 }
 
 .video-js.vjs-playing .vjs-big-play-button .vjs-icon-placeholder::before {
@@ -199,6 +214,8 @@
 .video-js.vjs-has-started.vjs-playing .vjs-icon-play::before,
 .video-js.vjs-has-started.vjs-playing .vjs-play-control .vjs-icon-placeholder::before {
   content: "pause" !important;
+  animation: changecontent 4s forwards; 
+  -webkit-animation :changecontent 4s forwards; 
 }
 
 .video-js .vjs-control-bar .vjs-picture-in-picture-control.vjs-control.vjs-button {
@@ -230,6 +247,8 @@
   text-transform: none;
   white-space: nowrap;
   width: auto;
+  animation: changecontent 4s forwards; 
+  -webkit-animation :changecontent 4s forwards; 
 }
 
 .video-container .video-parent-block .video-js {
