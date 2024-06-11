@@ -79,7 +79,9 @@ export default function decorate(block) {
     const [classes, content, media, cta, analytics] = childrenBlockProps.children;
     // removing classes div
     const [analyticsLabel, analyticsBtnValue, analyticsOther] = analytics.children;
+
     childrenBlockProps.removeChild(classes);
+
     const imageAlignment = classes?.textContent?.split(',')?.[1] || 'left';
     childrenBlockProps.classList.add(imageAlignment?.trim());
     let mediaType;
@@ -109,8 +111,9 @@ export default function decorate(block) {
       ctaElem?.classList?.add('text-with-media-cta');
       if (analytics.children) {
         ctaElem.dataset.analyticsLabel = analyticsLabel.textContent;
-        ctaElem.dataset.buttonLink = analyticsBtnValue.textContent || analyticsOther.textContent;
+        ctaElem.dataset.buttonLink = analyticsBtnValue.textContent !== 'Other' ? analyticsBtnValue.textContent : analyticsOther.textContent;
         ctaElem.dataset.analyticsCustomeClick = 'true';
+        ctaElem.dataset.analyticsBlockName = ctaElem.closest('.block').dataset.blockName;
       }
       content.append(ctaElem);
     }
