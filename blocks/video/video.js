@@ -178,9 +178,9 @@ export function getVideoElement(props) {
     }
   }, { passive: false });
 
-  document.body.addEventListener('touchmove', (event) => {
-    event.preventDefault();
-  }, { passive: false });
+  // document.body.addEventListener('touchmove', (event) => {
+  //   event.preventDefault();
+  // }, { passive: false });
 
   video.dataset.autoplay = autoplay ? 'true' : 'false';
 
