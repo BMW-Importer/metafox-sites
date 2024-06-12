@@ -31,7 +31,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .media-carousel-wrapper .video-image-carousel-content {
@@ -98,6 +98,9 @@
 }
 
 @media (width >= 1280px){
+.media-carousel-wrapper {
+    margin: 2rem 0;
+}
 .media-carousel-wrapper .carousel-wrapper-lft-area,
 .media-carousel-wrapper .carousel-wrapper-rth-area {
     justify-content: flex-end;
