@@ -27,11 +27,16 @@
     position: relative;
     top: -0.125rem;
     height: 1.25rem;
+    width: 1.25rem; /* Ensure the width is set */
+    vertical-align: middle; /* Align the icon vertically to the middle */
 }
 
 .download-wrapper .download.block p a:hover::before {
     content: url("../../icons/download-blue.svg");
     color: var(--light-link-hover-color);
+    height: 1.25rem; /* Ensure the height is consistent */
+    width: 1.25rem; /* Ensure the width is consistent */
+    vertical-align: middle; /* Align the icon vertically to the middle */
 }
 
 .download-wrapper .download.block p a:hover {
