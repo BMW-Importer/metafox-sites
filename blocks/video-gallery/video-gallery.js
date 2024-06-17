@@ -364,7 +364,7 @@ function generateMediaGallery(videoGallery, block, callback) {
       onHoverPlay,
     ]);
 
-    // videoGallery.textContent = '';
+    videoGallery.textContent = '';
 
     videocontainer.append(containerDiv);
     videoGallery.append(
