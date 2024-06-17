@@ -186,7 +186,105 @@ export function getVideoElement(props) {
       video.play();
     }
   };
+
+  
+  let checkVideoEnd = "";
+  video.addEventListener('play', () => {
+    triggerMediaPlayAnalytics(video);
+   checkVideoEnd = setInterval(function() {
+    console.log(video.title + 'video  title')
+    console.log(Math.ceil(video.currentTime),Math.ceil(video.duration))
+    if (Math.ceil(video.currentTime) === Math.ceil(video.duration)) {
+      console.log('Video ended');
+      triggerMediaCompleteAnalytics(video)
+      //clearInterval(checkVideoEnd); 
+    }
+    }, 1000);
+  });
+
+  video.addEventListener('pause', () => {
+    console.log('video paused')
+    clearInterval(checkVideoEnd); 
+  }, 1000); 
   return video;
+}
+
+function triggerMediaPlayAnalytics(video) {
+  const blockName  = video.closest('.block').dataset.blockName;
+  const sectionName  = video.closest('.section').dataset.sectionName;
+  const mediaUrl = video.getAttribute('src');
+  video.dataset.analyticsBlockName = blockName ? blockName : ''; 
+  video.dataset.analyticsSectionName = sectionName ? sectionName : '';
+  video.dataset.analyticsMediaUrl = mediaUrl ? mediaUrl : '';
+  const mediaPlayObject = {
+    "event": "media.play",
+    "eventInfo": {
+        "id": "2121221",
+        "attributes": {
+            "mediaInfo": {
+                "mediaName": "https://renderings.evecp.bmw.cloud/trunks/9a8e9c541f03c53a00f195fe0a6502adb6a8ace0050e98f456332257/g82_de_villa_day_int.mp4",
+                "mediaHosting": "renderings.evecp.bmw.cloud",
+                "mediaType": "video"
+        }
+      },
+      "section": {
+        "sectionInfo": {
+            "sectionName" : "Section",
+            "sectionID" : "bmw/RS_sr/home/header"
+        }
+      },
+
+      "block": {
+        "blockInfo": {
+            "blockName" : "Video Slide",
+            "blockDetails" : "Video Slide 2",
+        }
+    }
+  }
+  }
+  mediaPlayObject.eventInfo.attributes.mediaInfo.mediaName = mediaUrl ? mediaUrl : '';
+  mediaPlayObject.eventInfo.block.blockInfo.blockName = blockName ? blockName : '';
+  mediaPlayObject.eventInfo.section.sectionInfo.sectionName = sectionName ? sectionName : '';
+  window.adobeDataLayer.push(mediaPlayObject);
+}
+
+function triggerMediaCompleteAnalytics(video) {
+  const blockName  = video.closest('.block').dataset.blockName;
+  const sectionName  = video.closest('.section').dataset.sectionName;
+  const mediaUrl = video.getAttribute('src');
+  video.dataset.analyticsBlockName = blockName ? blockName : ''; 
+  video.dataset.analyticsSectionName = sectionName ? sectionName : '';
+  video.dataset.analyticsMediaUrl = mediaUrl ? mediaUrl : '';
+  const mediaCompleteObject = {
+    "event": "video.complete",
+    "eventInfo": {
+        "id": "2121221",
+        "attributes": {
+            "mediaInfo": {
+                "mediaName": "https://renderings.evecp.bmw.cloud/trunks/9a8e9c541f03c53a00f195fe0a6502adb6a8ace0050e98f456332257/g82_de_villa_day_int.mp4",
+                "mediaHosting": "renderings.evecp.bmw.cloud",
+                "mediaType": "video"
+            }
+        },
+        "section": {
+            "sectionInfo": {
+                "sectionName" : "Section",
+                "sectionID" : "bmw/RS_sr/home/header"
+            }
+        },
+        
+        "block": {
+              "blockInfo": {
+                  "blockName" : "Video Slide",
+                  "blockDetails" : "Video Slide 2",
+              }
+        }
+      }
+    }
+  mediaCompleteObject.eventInfo.attributes.mediaInfo.mediaName = mediaUrl ? mediaUrl : '';
+  mediaCompleteObject.eventInfo.block.blockInfo.blockName = blockName ? blockName : '';
+  mediaCompleteObject.eventInfo.section.sectionInfo.sectionName = sectionName ? sectionName : '';
+  window.adobeDataLayer.push(mediaCompleteObject);
 }
 
 // function to check given url is absolute or relative
@@ -257,6 +355,7 @@ export function loadVideoEmbed(props) {
   }
 
   block.dataset.embedIsLoaded = true;
+  
 }
 
 export function enableObserverForVideos() {
