@@ -364,7 +364,7 @@ function generateMediaGallery(videoGallery, block, callback) {
       onHoverPlay,
     ]);
 
-    videoGallery.textContent = '';
+    // videoGallery.textContent = '';
 
     videocontainer.append(containerDiv);
     videoGallery.append(
@@ -408,6 +408,7 @@ export default function decorate(block) {
       parentContainerDiv.append(generatedDOM);
       completedGalleries += 1;
       if (completedGalleries === totalGalleries) {
+        block.textContent = '';
         block.append(videoSlideLeftWrapper, videoSlideRightWrapper);
         block.append(parentContainerDiv);
         const parentElements = document.querySelectorAll('.video-gallery-content');
