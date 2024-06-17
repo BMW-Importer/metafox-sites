@@ -1,0 +1,286 @@
+.video-gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.video-gallery-content {
+    box-sizing: border-box;
+    display: flex;
+    transition: transform 0.5s ease;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    transition-property: transform;
+    transition-timing-function: linear;
+    z-index: 1;
+}
+
+.video-gallery-card {
+    flex-shrink: 0;
+    height: auto;
+    touch-action: pan-y;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    position: relative;
+    transition-property: transform;
+    width: 100%;
+}
+
+.video-content .video-js {
+    height: auto !important;
+    margin-bottom: 1rem;
+}
+
+.video-content .video-js video{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    height: auto !important;
+    vertical-align: middle;
+    position: relative !important;
+    box-sizing: border-box;
+}
+
+.video-gallery-title {
+    margin-bottom: .5rem;
+    display: flex;
+    padding: 0 .75rem;
+    vertical-align: bottom;
+    color: #262626;
+    font-size: 1.1875rem;;
+    font-weight: 300;
+    line-height: 1.75rem;
+    margin-left: 8.33%;
+    width: 83.33%;
+}
+
+.video-gallery-wrapper .dots-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.video-gallery-wrapper .dot {
+    background-color: #8e8e8e;
+    cursor: pointer;
+    border: 0;
+    height: .5rem;
+    margin: .125rem .75rem;
+    padding: 0;
+    width: .5rem;
+    position: relative;
+    flex: 0 1 auto;
+    border-radius: 50%;
+    font-size: 0;
+    text-indent: -187.5rem;
+}
+
+.video-gallery-wrapper .dot.active {
+    background-color: #262626;
+    transform: scale(1.5);
+    margin: .125rem .75rem;
+    cursor: pointer;
+}
+
+.slide-wrapper-rth-area,
+.slide-wrapper-lft-area {
+    justify-content: flex-end;
+    left: 0;
+    width: 1rem;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.slide-wrapper-lft-area  {
+    justify-content: flex-end;
+    left: 0;
+}
+
+.slide-wrapper-rth-area {
+    justify-content: flex-start;
+    left: auto;
+    right: 0;
+}
+
+.video-gallery-wrapper .slide-wrapper-lft-area .carousel-btn-prev {
+    margin-right: 2rem;
+
+}
+
+.video-gallery-wrapper .slide-wrapper-rth-area .carousel-btn-next {
+    margin-left: 2rem;
+}
+
+.video-gallery-wrapper .slide-wrapper-lft-area .carousel-btn-prev,
+.video-gallery-wrapper .slide-wrapper-rth-area .carousel-btn-next
+{
+    line-height: 1;
+    background-color: white;
+    box-shadow: #00000029 0 0.375rem 1.25rem 0, #0000003D 0 0 0.0625rem 0;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.9;
+    border-width: 0;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 0;
+    border-radius: 0.125rem;
+    transition: opacity 0.75s ease-in-out 0s;
+}
+
+.video-gallery-wrapper .slide-wrapper-lft-area .carousel-btn-prev::before {
+    content: "arrow_chevron_left";
+}
+
+.video-gallery-wrapper .slide-wrapper-rth-area .carousel-btn-next::before {
+    content: "arrow_chevron_right";
+}
+
+.video-gallery-wrapper .slide-wrapper-lft-area .carousel-btn-prev::before,
+.video-gallery-wrapper .slide-wrapper-rth-area .carousel-btn-next::before {
+    overflow-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    color: var(--text-color);
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    text-align: center;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    width: auto;
+    outline: transparent solid 1px;
+    white-space: nowrap
+}
+
+.video-gallery-wrapper .slide-wrapper-lft-area,
+.video-gallery-wrapper .slide-wrapper-rth-area,
+.video-gallery-wrapper .slide-wrapper-lft-area.hide-icon,
+.video-gallery-wrapper .slide-wrapper-rth-area.hide-icon {
+    display: unset;
+    visibility: hidden;
+}
+
+.video-gallery-wrapper .slide-wrapper-lft-area{
+    justify-content: flex-end;
+}
+
+.video-gallery-wrapper .slide-wrapper-rth-area{
+    justify-content: flex-start;
+}
+
+@media (width >= 360px) and (width < 768px) {
+    .section.video-gallery-container {
+        padding: 0;
+    }
+
+    .video-gallery-wrapper .video-gallery-content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .video-gallery-title {
+        margin-left: 0;
+        width: auto;
+        padding: 0 .5rem;
+    }
+}
+
+/* tablet view */
+@media (width >= 768px) and (width < 1280px) {
+    .section.video-gallery-container {
+        padding: 0;
+    }
+
+    .video-gallery-wrapper .video-gallery-content {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .video-gallery-wrapper .slide-wrapper-lft-area,
+    .video-gallery-wrapper .slide-wrapper-rth-area {
+        display: flex;
+        visibility: visible;
+        width: 3rem;
+    }
+
+    .video-gallery-title {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+}
+
+/* desktop view */
+@media (width >= 1280px) and (width < 1920px) {
+    .video-gallery-wrapper .video-gallery-content {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .section.video-gallery-container {
+        padding: 0;
+    }
+
+    .video-content .video-js {
+        margin-bottom: 1.25rem;
+    }
+
+    .video-gallery-title {
+        font-size: 1.4375rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media (width >= 1280px) {
+    .video-gallery-wrapper .slide-wrapper-lft-area,
+    .video-gallery-wrapper .slide-wrapper-rth-area {
+        display: flex;
+        visibility: visible;
+        width: 6rem;
+    }
+}
+
+/* higher resultion */
+@media (width >= 1920px) {
+    .video-gallery-wrapper {
+        --grid-full: 6rem;
+
+        margin-left: calc(var(--grid-full)* -1);
+        margin-right: calc(var(--grid-full)* -1);
+        width: calc(100% + var(--grid-full)* 2);
+    }
+
+    .section.video-gallery-container .video-gallery-wrapper .block {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+
+    .section.video-gallery-container .video-gallery-wrapper .video-gallery {
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .video-content .video-js {
+        margin-bottom: 1.5rem;
+    }
+
+    .video-gallery-title {
+        margin-bottom: 1rem;
+        font-size: 1.5625rem;
+        line-height: 2.375rem;
+    }
+}

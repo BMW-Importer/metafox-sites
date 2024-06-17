@@ -3,6 +3,8 @@ import { sampleRUM } from './aem.js';
 import { multiContentGalFunAfterPageLoad } from '../blocks/multicontent-gallery/multicontent-gallery.js';
 import { changeAllVidSrcOnResize, enableObserverForVideos } from '../blocks/video/video.js';
 import { mediaCarouselResizer } from '../blocks/media-carousel/media-carousel.js';
+import { videoGalleryResizer } from '../blocks/video-gallery/video-gallery.js';
+
 
 
 // Core Web Vitals RUM collection
@@ -11,6 +13,7 @@ multiContentGalFunAfterPageLoad();
 changeAllVidSrcOnResize();
 enableObserverForVideos();
 mediaCarouselResizer();
+videoGalleryResizer();
 
 const page_tracking = {"page": {
         "pageInfo": {

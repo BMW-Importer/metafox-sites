@@ -1,6 +1,5 @@
 import { loadVideoEmbed } from '../video/video.js';
 
-const viewportWidth = window.innerWidth;
 let iconClicked = false;
 
 function updateCarousel(content, currentIndex, gap) {
@@ -114,29 +113,19 @@ function addTouchSlideFunctionality(block, content, totalItems, itemsToShow, cur
   });
 }
 
-function addDotsNavigation(block, content, totalItems, itemsToShow, gap) {
-  const dotsWrapper = document.createElement('div');
+function addDotsNavigation(block, content, totalItems, itemsToShow, gap, totalDots) {
+  let dotsWrapper = block.querySelector('.dots-navigation');
+  if (dotsWrapper) {
+    dotsWrapper.remove();
+  }
+  dotsWrapper = document.createElement('div');
   dotsWrapper.classList.add('dots-navigation');
   const preButton = block.querySelector('.carousel-btn-prev');
   const nexButton = block.querySelector('.carousel-btn-next');
 
-  let totalDots;
   let currentIndex = 0;
   function updateDotCarousel() {
     updateCarousel(content, currentIndex, gap);
-  }
-
-  if (viewportWidth >= 1280) {
-    const visibleCards = 4;
-    totalDots = totalItems > visibleCards ? totalItems - 3 : 0;
-  } else if (viewportWidth >= 1024) {
-    const visibleCards = 3;
-    totalDots = totalItems > visibleCards ? totalItems - 2 : 0;
-  } else if (viewportWidth >= 768) {
-    const visibleCards = 2;
-    totalDots = totalItems > visibleCards ? totalItems - 1 : 0;
-  } else {
-    totalDots = totalItems;
   }
   function createClickHandler(index) {
     return function handleClick() {
@@ -163,6 +152,7 @@ function addDotsNavigation(block, content, totalItems, itemsToShow, gap) {
   }
 
   block.append(dotsWrapper);
+  block.dataset.dotsAdded = 'true';
 }
 
 function addIconCarouselControls(
@@ -174,10 +164,21 @@ function addIconCarouselControls(
   carouselRightWrapper,
   gap,
 ) {
-  const prevButton = document.createElement('button');
+  let prevButton = block.querySelector('.carousel-btn-prev');
+  let nextButton = block.querySelector('.carousel-btn-next');
+
+  if (prevButton) {
+    prevButton.remove();
+  }
+
+  if (nextButton) {
+    nextButton.remove();
+  }
+
+  prevButton = document.createElement('button');
   prevButton.classList.add('carousel-btn-prev');
 
-  const nextButton = document.createElement('button');
+  nextButton = document.createElement('button');
   nextButton.classList.add('carousel-btn-next');
 
   carouselLeftWrapper.append(prevButton);
@@ -267,8 +268,6 @@ function updateItemsToShow(carouselContent) {
   }
   return { cardsToShow, availableWidth, totalItems };
 }
-let carouselControlsAdded = false;
-let carouselControlsIcon = false;
 
 function resizeBlock() {
   const viewport = window.innerWidth;
@@ -295,8 +294,7 @@ function resizeBlock() {
       0,
       gap,
     );
-
-    if (viewport >= 1280 && totalItems > 4 && !carouselControlsIcon) {
+    if (viewport >= 1280 && totalItems > 4) {
       addIconCarouselControls(
         block,
         carouselContent,
@@ -306,12 +304,23 @@ function resizeBlock() {
         carouselRightWrapper,
         gap,
       );
-      carouselControlsIcon = true;
     }
-    if (!carouselControlsAdded) {
-      addDotsNavigation(block, carouselContent, totalItems, cardsToShow, gap);
-      carouselControlsAdded = true;
+
+    let totalDots;
+    if (viewport >= 1280) {
+      const visibleCards = 4;
+      totalDots = totalItems > visibleCards ? totalItems - 3 : 0;
+    } else if (viewport >= 1024) {
+      const visibleCards = 3;
+      totalDots = totalItems > visibleCards ? totalItems - 2 : 0;
+    } else if (viewport >= 768) {
+      const visibleCards = 2;
+      totalDots = totalItems > visibleCards ? totalItems - 1 : 0;
+    } else {
+      totalDots = totalItems;
     }
+    addDotsNavigation(block, carouselContent, totalItems, cardsToShow, gap, totalDots);
+    updateCarousel(carouselContent, 0, gap);
   });
 }
 
@@ -335,6 +344,7 @@ export default function decorate(block) {
 
   const carouselRightWrapper = document.createElement('div');
   carouselRightWrapper.classList.add('carousel-wrapper-rth-area');
+
   if (block.children.length > 0) {
   // loop through all children blocks
     [...panels].forEach((panel, index) => {
