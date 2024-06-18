@@ -353,8 +353,7 @@ export default function decorate(block) {
     [...panels].forEach((panel, index) => {
       const videoCarouselCard = document.createElement('div');
       videoCarouselCard.classList.add('video-img-carousel-card');
-      const [classes, content, media, cta] = panel.children;
-      console.log(classes);
+      const [content, media, cta] = panel.children;
       if (media?.children?.length > 1) {
         const vidImgTitleWrapper = document.createElement('div');
         vidImgTitleWrapper.classList.add('video-img-title');
