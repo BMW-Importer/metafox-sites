@@ -753,6 +753,7 @@
                   "model": "video-carousel",
                   "filter": "video-carousel",
                   "content_carouselHeadlineType": "h2",
+                  "classes": "Left",
                   "media_carouselLoopVideoType": "h3",
                   "media_carouselLoopVideo" : true,
                   "media_carouselMouseHoverVideoType": "h4",
@@ -777,6 +778,7 @@
                   "name": "Image Carousel",
                   "model": "image-carousel",
                   "filter": "image-carousel",
+                  "classes": "Left",
                   "content_imageCarouselHeadlineType": "h2"
                 }
               }
