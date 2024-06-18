@@ -351,13 +351,11 @@ export default function decorate(block) {
 
   if (block.children.length > 0) {
     [...panels].forEach((panel, index) => {
-      const videoImgCarouselCard = document.createElement('div');
-      videoImgCarouselCard.classList.add('video-img-carousel-card');
+      const videoCarouselCard = document.createElement('div');
+      videoCarouselCard.classList.add('video-img-carousel-card');
 
       const [content, media, cta] = panel.children;
-      if (media?.querySelector('a')) {
-        // Create a wrapper for video card elements
-
+      if (media?.children?.length > 4) {
         // Title , cta and description wrappers
         const vidImgTitleWrapper = document.createElement('div');
         vidImgTitleWrapper.classList.add('video-img-title');
@@ -425,16 +423,15 @@ export default function decorate(block) {
             posterObj,
             onHoverPlay],
         );
-
         // Append elements to the video card
-        videoImgCarouselCard.append(
+        videoCarouselCard.append(
           videoDOMContainer,
           vidImgTitleWrapper,
           vidImgDesWrapper,
           vidImgCtaWrap,
         );
-        videoImageCarouselContent.append(videoImgCarouselCard);
-      } else if (media?.querySelector('picture') && media?.querySelector('a') === '') {
+        videoImageCarouselContent.append(videoCarouselCard);
+      } else {
       // image
         const imgTitleWrapper = document.createElement('div');
         imgTitleWrapper.classList.add('video-img-title');
@@ -458,6 +455,9 @@ export default function decorate(block) {
         imgTitleWrapper.append(imgCarouselHeadline);
         imgDesWrapper.append(imgCarouselCopyText);
 
+        const imageCarouselCard = document.createElement('div');
+        imageCarouselCard.classList.add('video-img-carousel-card');
+
         const imageCarouselImgRef = media?.querySelector('picture');
 
         if (index === 0) {
@@ -474,8 +474,8 @@ export default function decorate(block) {
         pictureElement.append(imgElem);
         imgDOMContainer.append(pictureElement);
         imageCarouselImgRef.classList.add('hidden');
-        videoImgCarouselCard.append(imgDOMContainer, imgTitleWrapper, imgDesWrapper, vidImgCtaWrap);
-        videoImageCarouselContent.append(videoImgCarouselCard);
+        imageCarouselCard.append(imgDOMContainer, imgTitleWrapper, imgDesWrapper, vidImgCtaWrap);
+        videoImageCarouselContent.append(imageCarouselCard);
       }
     });
     block.textContent = '';
