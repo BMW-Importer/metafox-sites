@@ -353,8 +353,8 @@ export default function decorate(block) {
   // loop through all children blocks
     [...panels].forEach((panel, index) => {
       const [content, media, cta] = panel.children;
-      panel.textContent = '';
       if (media?.children?.length > 1) {
+        console.log(media?.children?.length);
         // Create a wrapper for video card elements
         const videoCarouselCard = document.createElement('div');
         videoCarouselCard.classList.add('video-img-carousel-card');
@@ -481,6 +481,7 @@ export default function decorate(block) {
         videoImageCarouselContent.append(imageCarouselCard);
       }
     });
+    block.textContent = '';
     block.append(carouselLeftWrapper, carouselRightWrapper);
     block.append(videoImageCarouselContent);
     resizeBlock();
