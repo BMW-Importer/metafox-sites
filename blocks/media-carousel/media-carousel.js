@@ -355,7 +355,7 @@ export default function decorate(block) {
       videoCarouselCard.classList.add('video-img-carousel-card');
 
       const [content, media, cta] = panel.children;
-      if (media?.children?.length > 4) {
+      if (media?.children?.length > 0) {
         // Title , cta and description wrappers
         const vidImgTitleWrapper = document.createElement('div');
         vidImgTitleWrapper.classList.add('video-img-title');
@@ -473,7 +473,7 @@ export default function decorate(block) {
 
         pictureElement.append(imgElem);
         imgDOMContainer.append(pictureElement);
-        imageCarouselImgRef.classList.add('hidden');
+        imageCarouselImgRef?.classList.add('hidden');
         imageCarouselCard.append(imgDOMContainer, imgTitleWrapper, imgDesWrapper, vidImgCtaWrap);
         videoImageCarouselContent.append(imageCarouselCard);
       }
