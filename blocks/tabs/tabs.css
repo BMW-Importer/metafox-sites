@@ -46,9 +46,6 @@ main .section.tabs-container {
 @media (width >=768px) {
     .buttons-tab {
         --tabs-multiplier: 10;
-    }
-    
-    .buttons-tab, .default-tab {
         --grid-full: 3rem
     }
 }
@@ -118,6 +115,10 @@ main .section.tabs-container {
     width: 100%;
 }
 
+div:has(> .buttons-tab) {
+    padding: 0 96px;
+}
+
 @media (width >=1280px) {
     .tabs li button:not(.active):hover {
         color: var(--light-link-hover-color);
@@ -136,6 +137,10 @@ main .section.tabs-container {
         color: var(--light-link-hover-color);
         border-bottom-color: var(--light-link-hover-color) !important;
     }
+
+    .buttons-tab, .default-tab {
+        --grid-full: 6rem
+    }
 }
 
 .default-tab {
@@ -149,6 +154,16 @@ main .section.tabs-container {
 @media (width >=360px) and (width < 768px) {
     .default-tab {
         padding: .5rem 3rem .5rem 2rem !important;
+    }
+
+    div:has(> .buttons-tab) {
+        padding: 0 24px;
+    }
+}
+
+@media (width >=768px) and (width < 1280px) {
+    div:has(> .buttons-tab) {
+        padding: 0 48px;
     }
 }
 

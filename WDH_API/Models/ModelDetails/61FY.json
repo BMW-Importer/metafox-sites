@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "S02TE",
@@ -83,16 +83,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4713.0",
-            "width": "1827.0",
-            "height": "1440.0",
+            "length": "4713",
+            "width": "1827",
+            "height": "1440",
             "widthMirrors": "2068 (1040 / 1028)",
             "wheelTurn": "2851.0",
             "weightNotLoaded": "1675",
@@ -166,16 +166,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4713.0",
-            "width": "1827.0",
-            "height": "1440.0",
+            "length": "4713",
+            "width": "1827",
+            "height": "1440",
             "widthMirrors": "2068 (1040 / 1028)",
             "wheelTurn": "2851.0",
             "weightNotLoaded": "1675",

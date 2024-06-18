@@ -40,7 +40,7 @@
       "gearBox": "7 - automatisch",
       "driveType": "VR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -82,16 +82,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4500.0",
-            "width": "1845.0",
-            "height": "1642.0",
+            "length": "4500",
+            "width": "1845",
+            "height": "1642",
             "widthMirrors": "2104 (1055 / 1049)",
             "wheelTurn": "2692.0",
             "weightNotLoaded": "1650",
@@ -165,16 +165,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4500.0",
-            "width": "1845.0",
-            "height": "1642.0",
+            "length": "4500",
+            "width": "1845",
+            "height": "1642",
             "widthMirrors": "2104 (1055 / 1049)",
             "wheelTurn": "2692.0",
             "weightNotLoaded": "1650",

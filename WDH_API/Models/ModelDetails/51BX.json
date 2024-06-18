@@ -37,7 +37,7 @@
       "gearBox": "-",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -73,10 +73,10 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
@@ -164,10 +164,10 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {

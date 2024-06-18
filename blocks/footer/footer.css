@@ -58,6 +58,7 @@ footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-de
 footer .footer .section:first-child .link-list-detail .button-container a {
   text-decoration: none;
   font-weight: 500;
+  color: #262626;
 }
 
 footer .footer .section:nth-child(3) .link-list-wrapper.horizontal .link-list-detail ul li a{

@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -84,16 +84,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4867.0",
-            "width": "1907.0",
-            "height": "1353.0",
+            "length": "4867",
+            "width": "1907",
+            "height": "1353",
             "widthMirrors": "2137 (1074 / 1063)",
             "wheelTurn": "2827.0",
             "weightNotLoaded": "2100",

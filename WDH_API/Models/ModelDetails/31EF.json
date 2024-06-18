@@ -40,7 +40,7 @@
       "gearBox": "7 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -82,16 +82,16 @@
           },
           "charging": {
             "batteryCapacity": "14.2",
+            "additionalRangeDC": "-",
             "chargeACDC": "7.4 (-) / -",
             "charge_AC_0_100": "2.5",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "7.4"
           },
           "weightMeasurements": {
-            "length": "4500.0",
-            "width": "1845.0",
-            "height": "1630.0",
+            "length": "4500",
+            "width": "1845",
+            "height": "1630",
             "widthMirrors": "2104 (1055 / 1049)",
             "wheelTurn": "2692.0",
             "weightNotLoaded": "1935",
@@ -150,12 +150,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"
@@ -209,16 +203,16 @@
           },
           "charging": {
             "batteryCapacity": "14.2",
+            "additionalRangeDC": "-",
             "chargeACDC": "7.4 (-) / -",
             "charge_AC_0_100": "2.5",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "7.4"
           },
           "weightMeasurements": {
-            "length": "4500.0",
-            "width": "1845.0",
-            "height": "1630.0",
+            "length": "4500",
+            "width": "1845",
+            "height": "1630",
             "widthMirrors": "2104 (1055 / 1049)",
             "wheelTurn": "2692.0",
             "weightNotLoaded": "1935",
@@ -277,12 +271,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"

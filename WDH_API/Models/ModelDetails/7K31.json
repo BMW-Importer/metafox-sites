@@ -40,7 +40,7 @@
       "gearBox": "6 - handgeschaltet",
       "driveType": "VR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "Default",
@@ -82,16 +82,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4319.0",
-            "width": "1799.0",
-            "height": "1434.0",
+            "length": "4319",
+            "width": "1799",
+            "height": "1434",
             "widthMirrors": "2081 (1045 / 1036)",
             "wheelTurn": "2670.0",
             "weightNotLoaded": "1365",
@@ -165,16 +165,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4319.0",
-            "width": "1799.0",
-            "height": "1434.0",
+            "length": "4319",
+            "width": "1799",
+            "height": "1434",
             "widthMirrors": "2081 (1045 / 1036)",
             "wheelTurn": "2670.0",
             "weightNotLoaded": "1395",

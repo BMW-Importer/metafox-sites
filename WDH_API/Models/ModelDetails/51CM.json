@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-14",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -84,16 +84,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4548.0",
-            "width": "1838.0",
-            "height": "1404.0",
+            "length": "4548",
+            "width": "1838",
+            "height": "1404",
             "widthMirrors": "2068 (1040 / 1028)",
             "wheelTurn": "2741.0",
             "weightNotLoaded": "1765",
