@@ -354,6 +354,7 @@ export default function decorate(block) {
       const videoCarouselCard = document.createElement('div');
       videoCarouselCard.classList.add('video-img-carousel-card');
       const [content, media, cta] = panel.children;
+      panel.textContent = '';
       if (media?.children?.length > 1) {
         const vidImgTitleWrapper = document.createElement('div');
         vidImgTitleWrapper.classList.add('video-img-title');
@@ -476,7 +477,7 @@ export default function decorate(block) {
         videoImageCarouselContent.append(imageCarouselCard);
       }
     });
-    block.textContent = '';
+    // block.textContent = '';
     block.append(carouselLeftWrapper, carouselRightWrapper);
     block.append(videoImageCarouselContent);
     resizeBlock();
