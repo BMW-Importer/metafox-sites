@@ -2993,7 +2993,7 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "content_videoCarouselCopyText",
+        "name": "classes",
         "description": "Defines the text that will appear in the page.",
         "value": "",
         "label": "Copy Text"
@@ -3200,7 +3200,7 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "content_imageCarouselCopyText",
+        "name": "classes",
         "description": "Defines the text that will appear in the page.",
         "value": "",
         "label": "Copy Text"
