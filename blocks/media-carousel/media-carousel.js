@@ -349,7 +349,7 @@ export default function decorate(block) {
   const carouselRightWrapper = document.createElement('div');
   carouselRightWrapper.classList.add('carousel-wrapper-rth-area');
 
-  if (block.children.length > 0) {
+  if (block.children.length > 4) {
   // loop through all children blocks
     [...panels].forEach((panel, index) => {
       const [content, media, cta] = panel.children;
