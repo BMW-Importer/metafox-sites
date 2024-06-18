@@ -355,8 +355,9 @@ export default function decorate(block) {
       videoCarouselCard.classList.add('video-img-carousel-card');
 
       const [content, media, cta] = panel.children;
-      if (media?.children?.length > 0) {
-        // Title , cta and description wrappers
+      console.log(media?.children?.length);
+      if (media?.children?.length > 1) {
+        console.log(media?.children?.length);
         const vidImgTitleWrapper = document.createElement('div');
         vidImgTitleWrapper.classList.add('video-img-title');
         const vidImgCtaWrap = document.createElement('div');
