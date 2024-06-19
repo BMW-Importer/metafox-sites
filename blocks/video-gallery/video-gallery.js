@@ -319,7 +319,9 @@ function generateMediaGallery(videoGallery, block, callback) {
   const videoSlideTextDiv = document.createElement('div');
   if (videoGallery?.querySelector('a')) {
     videoSlideTextDiv.classList.add('video-gallery-title');
-    const videoSlideText = videoGallery.querySelector('h3')?.textContent || '';
+    let videoSlideText = videoGallery.querySelectorAll('h3, h4') || '';
+
+    videoSlideText = videoSlideText.length > 0 ? videoSlideText[0].textContent : '';
     videoSlideTextDiv.append(videoSlideText);
     const videoContentPtags = videoGallery.querySelectorAll('p');
     const vidTitle = videoContentPtags[0] || '';
@@ -345,8 +347,10 @@ function generateMediaGallery(videoGallery, block, callback) {
     if (videoSlideMobPosterImgRef) posterObj.mobile = videoSlideMobPosterImgRef;
 
     // converting string to boolen
-    const isLoopVideo = videoGallery.querySelector('h3')?.textContent.trim() === 'true';
-    const isAutoPlayVideo = videoGallery.querySelector('h4')?.textContent.trim() === 'true';
+    const isLoopVideo = videoGallery.querySelector('h1')?.textContent.trim() === 'true';
+    console.log(isLoopVideo);
+    const isAutoPlayVideo = videoGallery.querySelector('h2')?.textContent.trim() === 'true';
+    console.log(isAutoPlayVideo);
     const enableHideControls = videoGallery.querySelector('h5')?.textContent.trim() === 'true';
     const isMuted = videoGallery.querySelector('h6')?.textContent.trim() === 'true';
     const onHoverPlay = false;
@@ -364,7 +368,7 @@ function generateMediaGallery(videoGallery, block, callback) {
       onHoverPlay,
     ]);
 
-    videoGallery.textContent = '';
+    // videoGallery.textContent = '';
 
     videocontainer.append(containerDiv);
     videoGallery.append(
@@ -408,7 +412,7 @@ export default function decorate(block) {
       parentContainerDiv.append(generatedDOM);
       completedGalleries += 1;
       if (completedGalleries === totalGalleries) {
-        block.textContent = '';
+        // block.textContent = '';
         block.append(videoSlideLeftWrapper, videoSlideRightWrapper);
         block.append(parentContainerDiv);
         const parentElements = document.querySelectorAll('.video-gallery-content');

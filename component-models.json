@@ -3358,7 +3358,7 @@
         "label": "Loop Video",
         "name": "videoSlide_loopVideoType",
         "valueType": "string",
-        "value": "h3",
+        "value": "h1",
         "hidden": true
       },
       {
@@ -3374,7 +3374,7 @@
         "label": "Autoplay",
         "name": "videoSlide_autoPlayVideoType",
         "valueType": "string",
-        "value": "h4",
+        "value": "h2",
         "hidden": true
       },
       {
