@@ -3144,7 +3144,7 @@
       {
         "component": "text",
         "name": "cta_videoCarouselCtaLinkText",
-        "label": "Link Label",
+        "label": "Button/Link",
         "description": "Defines the text to be displayed in the button or as the link. ",
         "valueType": "string"
       },
@@ -3260,7 +3260,7 @@
         "component": "text",
         "name": "cta_imageCarouselLinkText",
         "description": "Defines the text to be displayed in the button or as the link. ",
-        "label": "Link Label",
+        "label": "Button/Link",
         "valueType": "string"
       },
       {
