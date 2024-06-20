@@ -141,7 +141,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   header nav[aria-expanded="true"] .menu-flyout-wrapper{
    color: var(--light-border-color);
    text-decoration: none;
-   font-size: 14px;
+   font-size: 0.875rem;
   }
 
   header nav[aria-expanded="true"] .logo-wrapper {
@@ -349,7 +349,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     cursor: pointer;
     letter-spacing: 0;
     margin-bottom: 1.5rem;
-    line-height: 1.25rem;
+    line-height: 22px;
     position: relative;
   }
 
@@ -563,7 +563,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     color: var(--light-border-color);
     cursor: pointer;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 22px;
     font-weight: 500;
   }

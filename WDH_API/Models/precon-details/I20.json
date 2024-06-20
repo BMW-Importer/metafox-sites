@@ -1,0 +1,109 @@
+{
+  "7113": {
+    "id": 7113,
+    "name": "BMW iX - Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "11CF",
+    "agModelCode": "11CF",
+    "vgModelCode": "11CF",
+    "modelRangeCode": "I20",
+    "options": "S01LD,S0230,S02PA,S02VB,S02VC,S02VH,S02VR,S0302,S0323,S0330,S03AC,S03L7,S0407,S0413,S0428,S042A,S04AA,S04HC,S04NB,S04T8,S04U9,S04UR,S04V1,S0544,S0548,S05AC,S05AL,S05AQ,S05AU,S05AV,S05DN,S0688,S06AF,S06U3,S06U7,S0851,S0880,S08R3,S08R9,S08TF,S08WN,S0991,S09T8",
+    "paint": "P0C57",
+    "fabric": "FSCIC",
+    "headline": "",
+    "hidePrice": true,
+    "fuelType": "E",
+    "headlightsOn": true,
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "imageTitle": "",
+    "imageAltText": "",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "exHigh": 0,
+        "city": 0,
+        "comb": 0
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {},
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {
+        "city": 477,
+        "comb": 406
+      },
+      "electricConsumption": {
+        "comb": 20.8
+      }
+    },
+    "modelName": "BMW iX xDrive40",
+    "hybridCode": "BEVE",
+    "brand": "BI",
+    "cosyBrand": "WBBI",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvS8KM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rOmwtZ8X6Ausxpz9mlD3AfzBy2od4e8vTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeJ4uzWQdjc0Qt3aeZQ6KAqSXRjcZwBO5nrx6Kc%252g8%254WwBKupUPYFe%252B3ibMOIjup2XHNLDv63iprJk4aGwXHi4TnHB9%25rJHFl5NFou4TJIs8qOL3FlTv0YkgyXIslGAtdjCrv0s9OfoNE4GA0ogSLlNF9OALUdMskIogOybQkynvLUgChZjB5GybUEqcPP89ChbNmKQLPoEqhk7BZeMLNmqn12JRDyk7m5Vqz9YCn178zmaftE5V1Pa7cPfN8zVMR1K8SkPazDxVBJdnMRaYWz2RQ5DxRteapuZ8YWxfjRNdcPteWS6iCBKMfjedwHJ8BDS6jQ%25J0k2Ydw6ZuTArptQ%25wc3wkFifZu%25KX%255jHSc3uBruRPJdKX3243xZTQBrXpFXsSlZ24riIr6JscpF4HvWCL0KiIFJGeOOABHvIfIAnH7GRCPxh7sYpNxUGfh19mpzpUeqKhN7DlMA8nCB9%25UdDOPFY2V",
+    "technicalData": {
+      "enginePower": "0",
+      "systemPower": "240",
+      "systemHorsePower": "326",
+      "volt48": false
+    }
+  },
+  "7226": {
+    "id": 7226,
+    "name": "Shop the Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "31CF",
+    "agModelCode": "31CF",
+    "vgModelCode": "31CF",
+    "modelRangeCode": "I20",
+    "options": "S01LF,S0230,S02PA,S02VB,S02VC,S02VH,S02VR,S0302,S0323,S03AC,S03L7,S03M1,S0407,S0413,S0428,S043M,S0453,S048Z,S04AA,S04FM,S04HC,S04NB,S04T3,S04T8,S04U6,S04U9,S04UR,S04V1,S0544,S0548,S05AC,S05AL,S05AQ,S05AU,S05AV,S05AZ,S05DM,S06AE,S06AF,S06AK,S06C4,S06F1,S06PA,S06U3,S06U7,S0710,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S0991,S09T8",
+    "paint": "P0C3N",
+    "fabric": "FSCHA",
+    "headline": "",
+    "hidePrice": true,
+    "fuelType": "E",
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "exHigh": 0,
+        "city": 0,
+        "comb": 0
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {},
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {
+        "city": 610,
+        "comb": 552
+      },
+      "electricConsumption": {
+        "comb": 22.5
+      }
+    },
+    "modelName": "iX M60",
+    "hybridCode": "BEVE",
+    "brand": "BI",
+    "cosyBrand": "WBBI",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvS8KM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rOmQzZ8X6Ausxpz9mlD3AfzBy2od4eXiTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeJ7uzWQdjc0Qt3aeZQ6KAqSXRjcZwBO5nrx6Kc%252g8%254WwBKupUPYFe%252B3ibMOIjup2XHNLDv63iprJk4aGwXHi4TnE49%25rJHFl5hAou4TJIs8egL3FlTv0YkgyXIslGAtdjCrv0s9OfoNE4GA0ogSA5NF9OALUd6%25kIogOybQ%25QnvLUgChZYA5GybUEqc7D89ChbNmK8NPoEqhk7B%25iMLNmqn12YFDyk7m5VpttYCn178ziBrtE5V1PaH2kfN8zVMRJpuSkPazDxTA6dnMRaYWzeEQ5DxRteajcZ8YWxfjRifcPteWS6xHtKMfjedwWJABDS6jQ%25eT62Ydw6ZujlFptQ%25wc36sbifZu%25KXwMlHSc3uBr0A2JdKX324AOfTQBrXpFOgVlZ24riIgkSscpF4HvU9L0KiIFJGbfrABHvIT9h1SO2JGvloqVCgpT9GsLljFUilo90y9dkbHsLoACo6ThJ0yLOELrKqTACygNy4smlOECUkC1J7sgNEbnEGq10UkNh5FtDVAbnkq8IaazOSJ5jqLQ7ayV7xJqw1p75zfAtUDPkiyXqcfbYGSHR",
+    "technicalData": {
+      "enginePower": "0",
+      "systemPower": "397",
+      "systemHorsePower": "540",
+      "volt48": false
+    }
+  }
+}

@@ -405,7 +405,7 @@ export default function decorate(block) {
       // converting string to boolen
       const isLoopVideo = vidOrImg?.querySelector('h2')?.textContent === 'true';
       const isAutoPlayVideo = vidOrImg?.querySelector('h3')?.textContent === 'true';
-      const enableHideControls = true;
+      const enableVideoControls = false;
       const isMuted = true;
       const onHoverPlay = false;
 
@@ -417,7 +417,7 @@ export default function decorate(block) {
         videoLinkObj,
         isAutoPlayVideo,
         isLoopVideo,
-        enableHideControls,
+        enableVideoControls,
         isMuted,
         posterObj,
         onHoverPlay,

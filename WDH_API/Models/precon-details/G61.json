@@ -1,0 +1,33 @@
+{
+  "8505": {
+    "id": 8505,
+    "name": "BMW 520d Touring - Shop The look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "11GW",
+    "agModelCode": "11GW",
+    "vgModelCode": "11GW",
+    "modelRangeCode": "G61",
+    "options": "S043H,S02PA,S02TE,S02VB,S02VC,S0316,S03DK,S03DP,S0417,S0420,S0428,S0453,S0456,S0465,S0488,S04T8,S0534,S05AT,S05AY,S05DN,S0674,S06AF,S06AK,S06C4,S06CP,S06NX,S06U2,S08TF",
+    "paint": "P0C1M",
+    "fabric": "FVCJM",
+    "rim": "S03GH",
+    "headline": "Shop The Look",
+    "hidePrice": true,
+    "fuelType": "D",
+    "headlightsOn": true,
+    "productionDate": "2024-05-07",
+    "effectDate": "2024-05-07",
+    "imageTitle": "BMW 520d Touring",
+    "imageAltText": "BMW 520d Touring",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
+    "modelName": "BMW 520d Touring",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rImZBZ8X6Ausxpz9mlD3AfzBy2od4eV0TQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gpdYXcw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiI14escpF4Hv5tX0KiIFJG8OTABHvIT9PeWO2JGvloMjlgpT9GsLzjtUilo90yaKjbHsLoACRBmhJ0yLOEj%25nqTACygN6U9mlOECUkwb17sgNEbn%25Bp10UkNh5u2KVAbnkq83CzzOh5nmPXHRagq857MrxxRUmP81D5PAxb7MPVY8%25EWh1DMztPuueqVYDafMgxjmztYRS3ob67aftxdXrqw1RSfWQr4y%25VxdSeZ4lmuzWQdjcFsr3aeZQ6KIOmXRjcZwBvL5rx6Kc%252cFa4WwBKupClYFe%252B1BFO%25Cp5lb8oCrm608Gp1oEiy6kR6MLWo0CqXhFUOleifGzqIbKmjN",
+    "technicalData": {
+      "volt48": true
+    }
+  }
+}

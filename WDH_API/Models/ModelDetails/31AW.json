@@ -42,7 +42,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-10",
+    "effectDate": "2024-06-18",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -74,33 +74,35 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
+            "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "0",
-            "electricConsumption": "22.6 - 18",
-            "electricRangeWltpCombined": "414 - 520",
+            "electricConsumption": "22.6–18",
+            "electricRangeWltpCombined": "414–520",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "81.1",
-            "chargeACDC": "11 (-) / 205",
-            "charge_AC_0_100": "8.5",
-            "charge_DC_10_80": "30",
             "additionalRangeDC": "132 - 171",
-            "chargingMaxAC": "11"
+            "chargeACDC": "11 (-) / 205",
+            "chargeAC": "11",
+            "charge_AC_0_100": "8.5",
+            "chargeDC": "205",
+            "charge_DC_10_80": "30"
           },
           "weightMeasurements": {
-            "length": "4783.0",
-            "width": "1852.0",
-            "height": "1448.0",
+            "length": "4783",
+            "width": "1852",
+            "height": "1448",
             "widthMirrors": "2073 (1042 / 1031)",
             "wheelTurn": "2856.0",
             "weightNotLoaded": "2290",
             "weightMax": "2735",
             "permittedLoad": "520",
             "trailerLoad": "1600 / 75",
-            "trunkCapacity": "470 - 1290",
+            "trunkCapacity": "470–1290",
             "tankCapacity": "-"
           }
         },
@@ -116,12 +118,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"

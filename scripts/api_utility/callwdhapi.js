@@ -1,5 +1,6 @@
 const getData = require('./all_models.js');
 const getModelsData = require('./model-details.js');
+const getPreconData = require('./preconapi.js');
 
 function getModelDetailsByModelCode(modelsArray) {
   modelsArray.forEach((modelObject) => {
@@ -22,6 +23,7 @@ async function callWdhApi() {
       const modelsArray = allModelsJson.models;
       getModelDetailsByModelCode(modelsArray);
     }
+    getPreconData();
   } catch (error) {
     console.error(error);
   }

@@ -1,0 +1,55 @@
+{
+  "6619": {
+    "id": 6619,
+    "name": "Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "11EC",
+    "agModelCode": "11EC",
+    "vgModelCode": "11EC",
+    "modelRangeCode": "F97",
+    "options": "S01DF,S01MA,S01RQ,S0223,S0230,S02T4,S02TB,S02VB,S02VC,S02VG,S0316,S03MC,S0423,S0430,S0431,S0459,S0465,S0481,S0488,S0494,S04AW,S04GQ,S04KN,S04NE,S04UR,S0508,S0534,S0544,S0548,S0552,S05AC,S05AL,S05AV,S0688,S06AF,S06U3,S0712,S0760,S0775,S07M9,S07MA,S07MN,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WD,S0925",
+    "paint": "P0C1K",
+    "fabric": "FHDJA",
+    "headline": "",
+    "hidePrice": true,
+    "fuelType": "O",
+    "headlightsOn": true,
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 358,
+        "mid": 245,
+        "high": 208,
+        "exHigh": 237,
+        "comb": 246
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {
+        "low": 15.7,
+        "mid": 10.7,
+        "high": 9.2,
+        "exHigh": 10.4,
+        "comb": 10.8
+      },
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {},
+      "electricConsumption": {}
+    },
+    "modelName": "X3 M",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rzeZzZ8X6Ausxpz9mlD3AfzBy2od4eV1TQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeq7uzWQdjcjqf3aeZQ6K6PyXRjcZwBO%25mrx6Kc%252gKd4WwBKupUIaFe%252B3ibvPIjup2XHhDMv63iprJqYrGwXHi4Tmt%259%25rJHFl5tVou4TJIs8eIL3FlTv0YGeyXIslGAtsHCrv0s9Of0hE4GA0ogSjINF9OALUdlkkIogOybQ%257nvLUgChZu85GybUEqcaF89ChbNmKfjPoEqhk7BRKMLNmqn12k8Dyk7m5Vp38YCn178ziBwtE5V1Pa7ZSfN8zVMR1zySkPazDxVWCdnMRaYWzeZQ5DxRteaogZ8YWxfjRifcPteWS6xHtKMfjedwWJrBDS6jQ%25JNp2Ydw6ZuTlMptQ%25wc3lO5ifZu%25KXc71HSc3uBrK66JdKX324B1TTQBrXpF2YclZ24riIpt3scpF4HvifT0KiIFJGFYyABHvIT9IfgO2JGvlovT%25gpT9GsLGuQUilo90y93JbHsLoACoHchJ0yLOELmiqTACygNyIzmlOECUkrb77sgNE2E7fgekuMQ3ReqKAY3zk2RjnWAwOwrxlRYechZ7dfMsnvzic1QCK06",
+    "technicalData": {
+      "enginePower": "353",
+      "engineHorsePower": "480",
+      "technicalCapacity": "2993",
+      "volt48": false
+    }
+  }
+}

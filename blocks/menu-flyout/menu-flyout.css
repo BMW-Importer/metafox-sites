@@ -241,11 +241,24 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
     header.header-wrapper .nav-brand .menu-flyout-wrapper .flyout-main-container.single-submenu .link-list-wrapper.vertical li {
         margin-bottom: 1.5rem;
     }
+
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a {
+        font-size: 0.875rem;
+        line-height: 22px;
+        font-weight: 500;
+       
+    }
 }
 
 @media (width >= 830px) and (width < 1023px) {
     header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-main-container .container-link-list{
         width: 50%;
+    }
+
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a {
+        font-size: 0.875rem;
+        line-height: 22px;
+        font-weight: 500;       
     }
 }
 
@@ -268,11 +281,6 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
         gap: 0;
         row-gap:0;
         padding: 0 2.5rem;
-    }
-
-    header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a {
-        font-size: 0.875rem;
-        word-break: unset;
     }
 
     header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper.showfly .link-list-wrapper.vertical .link-list-title::after {
@@ -312,6 +320,12 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
         text-transform: uppercase;
       }
 
+      header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a {
+        font-size: 0.875rem;
+        line-height: 22px;
+        font-weight: 500;       
+        word-break: unset;
+    }
    
 }
 
@@ -361,6 +375,12 @@ header.header-wrapper .nav-brand .menu-flyout-wrapper:nth-last-child(2) .flyout-
         bottom: 4.5%;
         left: 0;
         position: absolute;
+    }
+
+    header.header-wrapper .nav-brand .menu-flyout-wrapper .link-list-wrapper.vertical .link-list-detail li a {
+        font-size: 0.875rem;
+        line-height: 22px;
+        font-weight: 500;       
     }
 }
 

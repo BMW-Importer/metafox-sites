@@ -1,0 +1,32 @@
+{
+  "8328": {
+    "id": 8328,
+    "name": "BMW M Sport Cabrio – Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "41FP",
+    "agModelCode": "41FP",
+    "vgModelCode": "41FP",
+    "modelRangeCode": "G23",
+    "options": "S01HD,S04H1,S033B,S0337,S0760,S04NW,S04U0,S04A2,S02TB,S02VF,S02NH,S02PA,S02VL,S0715,S05AU,S05DN,S02VB,S0428,S05DA,S06NX,S06PA,S06U3,S06WC,S0688,S0654,S06C4,S0302,S0322,S0488,S04FH,S04NH,S0493,S0710,S0430,S04UR,S0552,S0534,S0387,S03YA",
+    "paint": "P0300",
+    "fabric": "FMAMU",
+    "headline": "Shop The Look",
+    "hidePrice": true,
+    "fuelType": "O",
+    "headlightsOn": true,
+    "productionDate": "2024-05-07",
+    "effectDate": "2024-05-07",
+    "imageTitle": "BMW M Sport Pro Convertible  konfigurieren",
+    "imageAltText": "BMW M Sport Pro Convertible  konfigurieren",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
+    "modelName": "BMW 430i xDrive Cabrio",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rTNCxZ8X6Ausxpz9mlD3AfzBy2od4bAwTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gpdYXcw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIilgscpF4HvVsL0KiIFJG7IxABHvIT91vyO2JGvloT44gpT9GsLxYMUilo90yWaIbHsLoACeV%25hJ0yLOEfm%25qTACygNS3HmlOECUkdQF7sgNEbnQpy10UkNh5Z4UVAbnkq8h4zzOh5nmPkj5agq857MnsVRUmP81D2Gvxb7MPVYFzeWh1DMztPO8eqVYDafuJOjmztYRS3OM67aftxdXIgw1RSfWQr8W%25VxdSeZ4U3uzWQdjcFU73aeZQ6KI01XRjcZwBLv5rx6Kc%252yu84WwBKupk7IFe%252B3inJtIjup2XH5qfv63iprJ8OaGwXHi4TrYB9%25rJHFlMJ2ou4TJIsD8qL3FlTv0JxdyXIslGATs%25Crv0s9ODjbE4GA0ogY3lNF9OAwANz9YgQmxZPYCjv1Z5gwPtUDYS%252KM4P1YeyWNRzmFUi5uekx0jIf",
+    "technicalData": {
+      "volt48": false
+    }
+  }
+}

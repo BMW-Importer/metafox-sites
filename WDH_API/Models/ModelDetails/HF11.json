@@ -41,7 +41,7 @@
       "gearBox": "6 - handgeschaltet",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-11",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "Default",
@@ -83,16 +83,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4324.0",
-            "width": "1864.0",
-            "height": "1304.0",
+            "length": "4324",
+            "width": "1864",
+            "height": "1304",
             "widthMirrors": "2024 (1018 / 1006)",
             "wheelTurn": "2470.0",
             "weightNotLoaded": "1510",
@@ -163,16 +163,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "4324.0",
-            "width": "1864.0",
-            "height": "1304.0",
+            "length": "4324",
+            "width": "1864",
+            "height": "1304",
             "widthMirrors": "2024 (1018 / 1006)",
             "wheelTurn": "2470.0",
             "weightNotLoaded": "1525",

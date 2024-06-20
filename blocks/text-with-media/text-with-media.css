@@ -28,7 +28,7 @@
   margin-bottom: 0.5rem;
 }
 
-.text-with-media-item .media-detail-container > h2 {
+.text-with-media-item .media-detail-container .text-media-title {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.75rem;

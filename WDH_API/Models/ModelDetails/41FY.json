@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-11",
+    "effectDate": "2024-06-18",
     "vehicles": [
       {
         "transmissionCode": "S02TE",
@@ -73,26 +73,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "2–1.5",
+            "consumptionWltpCombinedChargeSustaining": "8–7.1",
             "emissionsWltpCombined": "45–33",
             "electricConsumption": "20.6–18.7",
             "electricRangeWltpCombined": "48–55",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "10.5",
-            "chargeACDC": "3.7 (-) / -",
-            "charge_AC_0_100": "4.0",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "3.7"
+            "chargeACDC": "3.7 (-) / -",
+            "chargeAC": "3.7",
+            "charge_AC_0_100": "4.0",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4713.0",
-            "width": "1827.0",
-            "height": "1442.0",
+            "length": "4713",
+            "width": "1827",
+            "height": "1442",
             "widthMirrors": "2068 (1040 / 1028)",
             "wheelTurn": "2851.0",
             "weightNotLoaded": "1900",
@@ -151,12 +153,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"
@@ -200,26 +196,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "2–1.5",
+            "consumptionWltpCombinedChargeSustaining": "8–7.1",
             "emissionsWltpCombined": "45–33",
             "electricConsumption": "20.6–18.7",
             "electricRangeWltpCombined": "48–55",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "10.5",
-            "chargeACDC": "3.7 (-) / -",
-            "charge_AC_0_100": "4.0",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "3.7"
+            "chargeACDC": "3.7 (-) / -",
+            "chargeAC": "3.7",
+            "charge_AC_0_100": "4.0",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4713.0",
-            "width": "1827.0",
-            "height": "1442.0",
+            "length": "4713",
+            "width": "1827",
+            "height": "1442",
             "widthMirrors": "2068 (1040 / 1028)",
             "wheelTurn": "2851.0",
             "weightNotLoaded": "1900",
@@ -278,12 +276,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"

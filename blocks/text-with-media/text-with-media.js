@@ -47,7 +47,7 @@ function generateMediaDom(mediaType, media) {
     // converting string to boolen
     const isLoopVideo = media.querySelector('h2')?.textContent.trim() === 'true';
     const isAutoPlayVideo = media.querySelector('h3')?.textContent.trim() === 'true';
-    const enableHideControls = media.querySelector('h4')?.textContent.trim() === 'true';
+    const enableVideoControls = media.querySelector('h4')?.textContent.trim() === 'true';
     const isMuted = media.querySelector('h5')?.textContent.trim() === 'true';
     const onHoverPlay = false;
 
@@ -58,7 +58,7 @@ function generateMediaDom(mediaType, media) {
       videoLinkObj,
       isAutoPlayVideo,
       isLoopVideo,
-      enableHideControls,
+      enableVideoControls,
       isMuted,
       posterObj,
       onHoverPlay,
@@ -75,14 +75,14 @@ export default function decorate(block) {
 
   textWithMediaChildrens.forEach((childrenBlockProps) => {
     childrenBlockProps.classList.add('text-with-media-item');
-    const [classes, content, media, cta] = childrenBlockProps.children;
 
+    const [classes, content, media, cta, analytics] = childrenBlockProps.children;
     // removing classes div
+    const [analyticsLabel, analyticsCategory, analyticsSubCategory] = analytics.children;
     childrenBlockProps.removeChild(classes);
-
+    childrenBlockProps.removeChild(analytics);
     const imageAlignment = classes?.textContent?.split(',')?.[1] || 'left';
     childrenBlockProps.classList.add(imageAlignment?.trim());
-
     let mediaType;
     if (classes.textContent.includes('text-with-video')) {
       mediaType = 'video';
@@ -98,6 +98,15 @@ export default function decorate(block) {
 
     // generate media
     generateMediaDom(mediaType, media);
+    const headlineMedia = content.querySelector('h2');
+
+    const mediaTitleWrapper = document.createElement('p');
+    mediaTitleWrapper.classList.add('text-media-title');
+    mediaTitleWrapper.textContent = content.querySelector('h2')?.textContent || '';
+    Array.from(headlineMedia?.attributes).forEach((attr) => {
+      mediaTitleWrapper.setAttribute(attr.name, attr.value);
+    });
+    content.replaceChild(mediaTitleWrapper, headlineMedia);
 
     // add class to content div
     content.classList.add('media-detail-container');
@@ -108,6 +117,14 @@ export default function decorate(block) {
     //  and bind it inside content
     if (ctaElem) {
       ctaElem?.classList?.add('text-with-media-cta');
+      if (analytics.children) {
+        ctaElem.dataset.analyticsLabel = analyticsLabel?.textContent?.trim() || '';
+        ctaElem.dataset.analyticsCategory = analyticsCategory?.textContent?.trim() || '';
+        ctaElem.dataset.analyticsSubCategory = analyticsSubCategory?.textContent?.trim() || '';
+        ctaElem.dataset.analyticsCustomClick = 'true';
+        ctaElem.dataset.analyticsBlockName = ctaElem.closest('.block').dataset.blockName;
+        ctaElem.dataset.analyticsSectionId = ctaElem.closest('.section').dataset.analyticsLabel;
+      }
       content.append(ctaElem);
     }
 

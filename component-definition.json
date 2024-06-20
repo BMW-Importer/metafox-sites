@@ -757,8 +757,8 @@
                   "media_carouselLoopVideo" : true,
                   "media_carouselMouseHoverVideoType": "h4",
                   "media_carouselMouseHoverVideo" : true,
-                  "media_carouselHideControlsVideoType" : "h5",
-                  "media_carouselHideControlsVideo" : true,
+                  "media_videoControlsVideoType" : "h5",
+                  "media_videoControlsVideo" : true,
                   "media_carouselMuteSoundVideoType": "h6",
                   "media_carouselMuteSoundVideo" : true
                 }
@@ -778,6 +778,61 @@
                   "model": "image-carousel",
                   "filter": "image-carousel",
                   "content_imageCarouselHeadlineType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video Gallery",
+          "id": "video-gallery",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Video Gallery",
+                  "model": "video-gallery",
+                  "filter": "video-gallery"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video Slide",
+          "id": "video-gallery-slide",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Video Slide",
+                  "model": "video-gallery-slide",
+                  "filter": "video-gallery-slide",
+                  "videoSlide_loopVideoType": "h1",
+                  "videoSlide_loopVideo" : true,
+                  "videoSlide_autoPlayVideoType": "h2",
+                  "videoSlide_autoPlayVideo" : true,
+                  "videoSlide_videoControlsVideoType" : "h5",
+                  "videoSlide_videoControlsVideo" : true,
+                  "videoSlide_muteSoundVideoType": "h6",
+                  "videoSlide_muteSoundVideo" : true
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Custom Image One",
+          "id": "custom-asset-one",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Custom Image One",
+                  "model": "custom-asset-one"
                 }
               }
             }

@@ -66,13 +66,13 @@
 }
 
 
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: bmwtypenextweb;
   font-weight: 300;
   src: url("../fonts/BMWTypeNextLightLatinExtended.woff2") format("woff2"),url("../fonts/BMWTypeNextLightLatinExtended.woff") format("woff");
   unicode-range: u+0100-017f,u+0180-024f
-}
+} */
 
 @font-face {
   font-display: swap;
@@ -91,14 +91,14 @@
       "../fonts/BMWTypeNext-Light.woff2") format("woff")
 }
 
-
+/* 
 @font-face {
   font-display: swap;
   font-family: bmwtypenextweb;
   font-weight: 500;
   src: url("../fonts/BMWTypeNextBoldLatinExtended.woff2") format("woff2"),url("../fonts/BMWTypeNextBoldLatinExtended.woff") format("woff");
   unicode-range: u+0100-017f,u+0180-024f
-}
+} */
 
 @font-face {
   font-display: swap;

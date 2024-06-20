@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-11",
+    "effectDate": "2024-06-18",
     "vehicles": [
       {
         "transmissionCode": "S0205",
@@ -73,26 +73,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "7.4–6.5",
+            "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "167–149",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "-",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4526.0",
-            "width": "1800.0",
-            "height": "1420.0",
+            "length": "4526",
+            "width": "1800",
+            "height": "1420",
             "widthMirrors": "2081 (1045 / 1036)",
             "wheelTurn": "2670.0",
             "weightNotLoaded": "1595",
@@ -159,26 +161,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "7.4–6.5",
+            "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "167–149",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "-",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4526.0",
-            "width": "1800.0",
-            "height": "1420.0",
+            "length": "4526",
+            "width": "1800",
+            "height": "1420",
             "widthMirrors": "2081 (1045 / 1036)",
             "wheelTurn": "2670.0",
             "weightNotLoaded": "1595",

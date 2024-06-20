@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-11",
+    "effectDate": "2024-06-18",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -74,26 +74,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "8–7.9",
+            "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "181–179",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "-",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4324.0",
-            "width": "1864.0",
-            "height": "1303.0",
+            "length": "4324",
+            "width": "1864",
+            "height": "1303",
             "widthMirrors": "2024 (1018 / 1006)",
             "wheelTurn": "2470.0",
             "weightNotLoaded": "1640",
@@ -154,26 +156,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "8.7",
+            "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "197–195",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "-",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4324.0",
-            "width": "1864.0",
-            "height": "1303.0",
+            "length": "4324",
+            "width": "1864",
+            "height": "1303",
             "widthMirrors": "2024 (1018 / 1006)",
             "wheelTurn": "2470.0",
             "weightNotLoaded": "1625",

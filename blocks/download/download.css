@@ -2,7 +2,7 @@
     text-decoration: none;
     font-family: var(--fixed-font-family);
     font-size: 0.938rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5rem;
     min-height: 3.25rem;
     display: flex;
@@ -22,15 +22,26 @@
 }
 
 .download-wrapper .download.block p a::before {
-    content: url("../../icons/download.svg");
-    display: inline-block;
-    position: relative;
-    top: -0.125rem;
-    height: 1.25rem;
+    word-wrap: normal;
+    content: "download";
+    direction: ltr;
+    display: block;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid #0000;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
 }
 
 .download-wrapper .download.block p a:hover::before {
-    content: url("../../icons/download-blue.svg");
     color: var(--light-link-hover-color);
 }
 
@@ -42,8 +53,24 @@
     color: var(--bg-media-btn-hover);
 } 
 
+.download-wrapper .download.block p a:active::before {
+    color: var(--bg-media-btn-hover);
+}
+
 @media (width >=360px) and (width < 1280px) {
     .download-wrapper {
         margin-bottom: .5rem;
+    }
+
+    .download-wrapper .download.block p a {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+}
+
+@media (width >= 1920px) {
+    .download-wrapper .download.block p a {
+        font-size: 1rem;
+        line-height: 1.625rem;
     }
 }

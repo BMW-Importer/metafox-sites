@@ -151,7 +151,8 @@
     content: "arrow_chevron_left";
     direction: ltr;
     display: block;
-    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
     color: var(--text-color);
     font-style: normal;
     height: 1em;
@@ -188,7 +189,8 @@
     content: "arrow_chevron_right";
     direction: ltr;
     display: block;
-    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
     color: var(--text-color);
     font-style: normal;
     height: 1em;
@@ -200,18 +202,6 @@
     outline: transparent solid 1px;
     white-space: nowrap
 }
-}
-
-.media-carousel-wrapper .video-img-carousel-card .video-img-title {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5rem;
-}
-
-.media-carousel-wrapper .video-img-carousel-card .video-img-description>* {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5rem;
 }
 
 .media-carousel-wrapper .video-img-carousel-card .video-img-cta a {
@@ -235,6 +225,7 @@
     direction: ltr;
     display: block;
     font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
     font-style: normal;
     height: 1em;
     line-height: 1;
@@ -264,6 +255,16 @@
     .media-carousel-wrapper .carousel-wrapper-lft-area,
     .media-carousel-wrapper .carousel-wrapper-rth-area {
         display: none;
+    }
+
+    .media-carousel-wrapper .video-img-carousel-card .video-img-title {
+        font-size: 1.1875rem;  
+        line-height: 1.75rem;
+    }
+    
+    .media-carousel-wrapper .video-img-carousel-card .video-img-description>* {
+        font-size: 1rem;
+        line-height: 1.625rem;
     }
 }
 
@@ -306,6 +307,16 @@
         aspect-ratio: 3 / 2;
         object-fit: cover;
         vertical-align: middle;
+    }
+
+    .media-carousel-wrapper .video-img-carousel-card .video-img-title {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+    
+    .media-carousel-wrapper .video-img-carousel-card .video-img-description>* {
+        font-size: 1.0625rem;
+        line-height: 1.75rem;
     }
 }
 
@@ -463,9 +474,15 @@
         margin-bottom: 1.5rem;
     }
 
-    .media-carousel-wrapper .video-img-carousel-card .video-img-title> * {
-        font-size: 1.5rem;
-        line-height: 2rem;
+    .media-carousel-wrapper .video-img-carousel-card .video-img-title{
+        font-size: 1.5625rem;
+        line-height: 2.375rem;
+    }
+
+    .media-carousel-wrapper .video-img-carousel-card .video-img-description > *{
+        font-size: 1.1875rem;
+        line-height: 1.875rem;
+
     }
 
     .media-carousel-wrapper .video-img-carousel-card .video-img-title,
@@ -492,5 +509,17 @@
     .media-carousel-wrapper .video-img-carousel-card .video-img-title,
     .media-carousel-wrapper .video-img-carousel-card .video-img-description {
         margin-bottom: 0.75rem;
+    }
+
+    .media-carousel-wrapper .video-img-carousel-card .video-img-title {
+        font-size: 1.4375rem;
+        font-weight: 300;
+        line-height: 2.25rem;
+    }
+    
+    .media-carousel-wrapper .video-img-carousel-card .video-img-description>* {
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.75rem;
     }
 }

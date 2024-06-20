@@ -1,0 +1,215 @@
+{
+  "1946": {
+    "id": 1946,
+    "name": "Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "21BX",
+    "vgModelCode": "21BX",
+    "modelRangeCode": "U06",
+    "options": "S01CB,S01DF,S01LY,S0230,S02TE,S02VB,S02VC,S02VF,S02VG,S0316,S0337,S03MB,S0481,S04H2,S0534,S0548,S05A2,S05AV,S05DA,S05DM,S06AF,S06U2,S0710,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08TF,S08WC,S09T1,S09T2",
+    "paint": "P0C31",
+    "fabric": "FKTNL",
+    "headline": "",
+    "highlight1": "",
+    "highlight2": "",
+    "highlight3": "",
+    "badge": "",
+    "hidePrice": true,
+    "fuelType": "O",
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "backgroundImage": "",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 200,
+        "mid": 148,
+        "high": 129,
+        "exHigh": 146,
+        "comb": 148
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {
+        "low": 8.9,
+        "mid": 6.6,
+        "high": 5.7,
+        "exHigh": 6.5,
+        "comb": 6.6
+      },
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {},
+      "electricConsumption": {}
+    },
+    "modelName": "218i",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqLvDZ8X6Ausxpz9mlD3AfzBy2od4eXGTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6lvXRjcZwBOcSrx6Kc%252gFu4WwBKupUP8Fe%252B3ibM3Ijup2XHhDWv63iprJqYwGwXHi4TnY19%25rJHFl5JAou4TJIs8efL3FlTv0YWUyXIslGAtyQCrv0s9Ol0uE4GA0ogsUkNF9OALU0MKkIogOybAD1nvLUgChOrA5GybUEqg4D89ChbNmtfvPoEqhk7fZHMLNmqn1kHUDyk7m5VnHYYCn178z7FWtE5V1Pa1vSfN8zVMRVPgSkPazDxzUodnMRaYWab8Q5DxRteRckZ8YWxfjx7fcPteWS6hB3KMfjedwq2hBDFk6TdzvZ2aKwiitscCZ6B4Mrt3%25eEagd94fX7FNp",
+    "technicalData": {
+      "enginePower": "0",
+      "volt48": false
+    }
+  },
+  "5986": {
+    "id": 5986,
+    "name": "218i Active Tourer",
+    "status": "OK",
+    "vehicleType": "PRECON",
+    "modelCode": "21BX",
+    "agModelCode": "21BX",
+    "vgModelCode": "21BX",
+    "modelRangeCode": "U06",
+    "options": "S01CB,S01DF,S01LY,S0230,S02TE,S02VB,S02VC,S02VF,S02VG,S0316,S0337,S03MB,S0481,S04H2,S0534,S0548,S05A2,S05AV,S05DA,S05DM,S06AF,S06U2,S0710,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08TF,S08WC,S09T1,S09T2",
+    "paint": "P0C55",
+    "fabric": "FKTNL",
+    "headline": "ESSENCE.",
+    "hidePrice": true,
+    "fuelType": "O",
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "imageTitle": " ",
+    "imageAltText": " ",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Architecture_A.jpg",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 200,
+        "mid": 148,
+        "high": 129,
+        "exHigh": 146,
+        "comb": 148
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {
+        "low": 8.9,
+        "mid": 6.6,
+        "high": 5.7,
+        "exHigh": 6.5,
+        "comb": 6.6
+      },
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {},
+      "electricConsumption": {}
+    },
+    "modelName": "218i",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqLvDZ8X6Ausxpz9mlD3AfzBy2od4e8TTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6lvXRjcZwBOcSrx6Kc%252gFu4WwBKupUP8Fe%252B3ibM3Ijup2XHhDWv63iprJqYwGwXHi4TnY19%25rJHFl5JAou4TJIs8efL3FlTv0YWUyXIslGAtyQCrv0s9Ol0uE4GA0ogsUkNF9OALU0MKkIogOybAD1nvLUgChOrA5GybUEqg4D89ChbNmtfvPoEqhk7fZHMLNmqn1kHUDyk7m5VnHYYCn178z7FWtE5V1Pa1vSfN8zVMRVPgSkPazDxzUodnMRaYWab8Q5DxRteRckZ8YWxfjx7fcPteWS6hB3KMfjedwq2hBDFk6TdzvZ2aKwiitscCZ6B4Mrt3%25eEagd94fX7FNp",
+    "technicalData": {
+      "enginePower": "0",
+      "volt48": false
+    }
+  },
+  "5987": {
+    "id": 5987,
+    "name": "218d Active Tourer",
+    "status": "OK",
+    "vehicleType": "PRECON",
+    "modelCode": "21BY",
+    "agModelCode": "21BY",
+    "vgModelCode": "21BY",
+    "modelRangeCode": "U06",
+    "options": "S01CB,S01DF,S01LQ,S0230,S02TF,S02VB,S02VC,S02VF,S02VG,S0316,S03MC,S0481,S04GN,S0534,S0548,S05A2,S05AV,S05DA,S05DM,S06AF,S06U2,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08TF",
+    "paint": "P0300",
+    "fabric": "FKUSW",
+    "headline": "BALANCE.",
+    "hidePrice": true,
+    "fuelType": "D",
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "imageTitle": " ",
+    "imageAltText": " ",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Architecture_B.jpg",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 180,
+        "mid": 122,
+        "high": 105,
+        "exHigh": 125,
+        "comb": 125
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {
+        "low": 6.9,
+        "mid": 4.6,
+        "high": 4,
+        "exHigh": 4.8,
+        "comb": 4.8
+      },
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {},
+      "electricConsumption": {}
+    },
+    "modelName": "218d",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq55FZ8X6Ausxpz9mlD3AfzBy2od4bAwTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6lyXRjcZwBOcSrx6Kc%252gFa4WwBKupUP8Fe%252B3ibM3Ijup2XHhDWv63iprJqYwGwXHi4TnY19%25rJHFl5WFou4TJIsDxgL3FlTv0Yb9yXIslGATs%25Crv0s9OlgNE4GA0ogsPcNF9OALU0M7kIogOybAX0nvLUgChOrM5GybUEqYtI89ChbNmtQiPoEqhk7NpMMLNmqn1qrRDyk7m5VmFtYCn178z75AtE5V1Pa1OGfN8zVMRVgnSkPazDxzQEdnuLR2DqXtQmSxccsifGtRd%25kw8jWz9mlD4%25P6UuoZ",
+    "technicalData": {
+      "enginePower": "0",
+      "volt48": false
+    }
+  },
+  "5988": {
+    "id": 5988,
+    "name": "223i Active Tourer",
+    "status": "OK",
+    "vehicleType": "PRECON",
+    "modelCode": "31BX",
+    "agModelCode": "31BX",
+    "vgModelCode": "31BX",
+    "modelRangeCode": "U06",
+    "options": "S01CB,S01CE,S01DF,S01LW,S0230,S02TC,S02VB,S02VC,S02VF,S02VG,S0316,S0337,S03MB,S0481,S04H2,S0534,S0548,S05A2,S05AV,S05DA,S05DM,S06AF,S06U2,S0710,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08TF,S08WC,S09T1,S09T2",
+    "paint": "P0C31",
+    "fabric": "FKTNL",
+    "headline": "SIGNATURE.",
+    "hidePrice": true,
+    "fuelType": "O",
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "imageTitle": " ",
+    "imageAltText": " ",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Architecture_C.jpg",
+    "emissionDataWltp": {
+      "co2": {},
+      "co2ChargeSustaining": {
+        "low": 199,
+        "mid": 131,
+        "high": 115,
+        "exHigh": 131,
+        "comb": 135
+      },
+      "fuelConsumption": {},
+      "fuelConsumptionChargeSustaining": {
+        "low": 8.8,
+        "mid": 5.8,
+        "high": 5.1,
+        "exHigh": 5.8,
+        "comb": 6
+      },
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {},
+      "electricConsumption": {}
+    },
+    "modelName": "223i",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqLvDZ8X6Ausxpz9mlD3AfzBy2od4eXGTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwsArx6Kc%252gKd4WwBKupUIuFe%252B3ibMPIjup2XHhDXv63iprJqYeGwXHi4Tmt%259%25rJHFl5tVou4TJIs8TOL3FlTv0PjSyXIslGAtebCrv0s9OfCZE4GA0ogsA3NF9OALU0bnkIogOybADBnvLUgChOYV5GybUEqg4O89ChbNmUFYPoEqhk7fSGMLNmqn1ScJDyk7m5VnJbYCn178z5JttE5V1Pa1IefN8zVMRVGdSkPazDxzMUdnMRaYWabLQ5DxRteRhPZ8YWxfjxKncPteWS6W1SKMfjedwq2XBDS6jQ%25mpq2YInwlQaGcpRBcHHf0KEcw2FD4fXujNRUQoFSr1Iki",
+    "technicalData": {
+      "enginePower": "0",
+      "volt48": true
+    }
+  }
+}

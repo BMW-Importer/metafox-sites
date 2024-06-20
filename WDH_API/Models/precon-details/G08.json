@@ -1,0 +1,59 @@
+{
+  "7957": {
+    "id": 7957,
+    "name": "Shop the look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "41DU",
+    "agModelCode": "41DU",
+    "vgModelCode": "41DU",
+    "modelRangeCode": "G08",
+    "options": "S01VA,S0223,S0230,S02PA,S02VB,S02VC,S0316,S03MC,S0402,S0413,S0423,S0428,S0430,S0431,S0459,S0461,S0465,S0481,S0493,S0494,S04AW,S04LU,S04U0,S04U9,S04UR,S0534,S0548,S0552,S05AC,S05AL,S05AV,S05DA,S05DM,S06AF,S06NW,S06U3,S0710,S0715,S0760,S0775,S07EY,S0851,S0888,S08R3,S08R9,S08S3,S08TF,S08WD,S08WN,S0925,S0991",
+    "paint": "P0416",
+    "fabric": "FKHSW",
+    "headline": "",
+    "highlight1": "",
+    "highlight2": "",
+    "highlight3": "",
+    "badge": "",
+    "hidePrice": true,
+    "fuelType": "E",
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "backgroundImage": "",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "exHigh": 0,
+        "city": 0,
+        "comb": 0
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {},
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {
+        "city": 584,
+        "comb": 471
+      },
+      "electricConsumption": {
+        "comb": 17.6
+      }
+    },
+    "modelName": "iX3 M Sport",
+    "hybridCode": "BEVE",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq95FZ8X6Ausxpz9mlD3AfzBy2od4mVnTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeNtuzWQdjc06h3aeZQ6KAZfXRjcZwBOmdrx6Kc%252g854WwBKupUPuFe%252B3iEPqIjup2XHNaXv63iprJ8yYGwXHi4TPYR9%25rJHFlMIxou4TJIsDvyL3FlTv0YliyXIslGAtsbCrv0s9OfeFE4GA0ogSTqNF9OALUdlkkIogOybQ%257nvLUgChZz35GybUEqcaF89ChbNmKfjPoEqhk7BeqMLNmqn12cUDyk7m5VpKEYCn178ziBwtE5V1Pa7VLfN8zVMR1xdSkPazDxVGAdnMRaYWz2YQ5DxRteapDZ8YWxfjRi3cPteWS6xkRKMfjedwWniBDS6jQ%25JTP2Ydw6ZuTyoptQ%25wc3lO5ifZu%25KXc7jHSc3uBrK1JJdKX324BwwTQBrXpF2VllZ24riIpnUscpF4Hv4DL0KiIFJGFtOABHvIT9IwSO2JGvlov%25igpT9GsLGpQUilo90y9h2bHsLoACo41hJ0yLOELFUqTACygNXUmmlOECUkrDP7sYpNxUGfh19m7zODeqKhN7DlMA8nCB9%25UdDOPFY2V",
+    "technicalData": {
+      "enginePower": "0",
+      "systemPower": "210",
+      "systemHorsePower": "286",
+      "volt48": false
+    }
+  }
+}

@@ -1,6 +1,6 @@
+/* eslint-disable max-len */
 import { loadVideoEmbed } from '../video/video.js';
 
-const viewportWidth = window.innerWidth;
 let iconClicked = false;
 
 function updateCarousel(content, currentIndex, gap) {
@@ -114,29 +114,19 @@ function addTouchSlideFunctionality(block, content, totalItems, itemsToShow, cur
   });
 }
 
-function addDotsNavigation(block, content, totalItems, itemsToShow, gap) {
-  const dotsWrapper = document.createElement('div');
+function addDotsNavigation(block, content, totalItems, itemsToShow, gap, totalDots) {
+  let dotsWrapper = block.querySelector('.dots-navigation');
+  if (dotsWrapper) {
+    dotsWrapper.remove();
+  }
+  dotsWrapper = document.createElement('div');
   dotsWrapper.classList.add('dots-navigation');
   const preButton = block.querySelector('.carousel-btn-prev');
   const nexButton = block.querySelector('.carousel-btn-next');
 
-  let totalDots;
   let currentIndex = 0;
   function updateDotCarousel() {
     updateCarousel(content, currentIndex, gap);
-  }
-
-  if (viewportWidth >= 1280) {
-    const visibleCards = 4;
-    totalDots = totalItems > visibleCards ? totalItems - 3 : 0;
-  } else if (viewportWidth >= 1024) {
-    const visibleCards = 3;
-    totalDots = totalItems > visibleCards ? totalItems - 2 : 0;
-  } else if (viewportWidth >= 768) {
-    const visibleCards = 2;
-    totalDots = totalItems > visibleCards ? totalItems - 1 : 0;
-  } else {
-    totalDots = totalItems;
   }
   function createClickHandler(index) {
     return function handleClick() {
@@ -163,6 +153,7 @@ function addDotsNavigation(block, content, totalItems, itemsToShow, gap) {
   }
 
   block.append(dotsWrapper);
+  block.dataset.dotsAdded = 'true';
 }
 
 function addIconCarouselControls(
@@ -174,10 +165,21 @@ function addIconCarouselControls(
   carouselRightWrapper,
   gap,
 ) {
-  const prevButton = document.createElement('button');
+  let prevButton = block.querySelector('.carousel-btn-prev');
+  let nextButton = block.querySelector('.carousel-btn-next');
+
+  if (prevButton) {
+    prevButton.remove();
+  }
+
+  if (nextButton) {
+    nextButton.remove();
+  }
+
+  prevButton = document.createElement('button');
   prevButton.classList.add('carousel-btn-prev');
 
-  const nextButton = document.createElement('button');
+  nextButton = document.createElement('button');
   nextButton.classList.add('carousel-btn-next');
 
   carouselLeftWrapper.append(prevButton);
@@ -267,8 +269,6 @@ function updateItemsToShow(carouselContent) {
   }
   return { cardsToShow, availableWidth, totalItems };
 }
-let carouselControlsAdded = false;
-let carouselControlsIcon = false;
 
 function resizeBlock() {
   const viewport = window.innerWidth;
@@ -282,8 +282,12 @@ function resizeBlock() {
     const gap = viewport >= 768 ? 24 : 16;
     const { cardsToShow, availableWidth, totalItems } = updateItemsToShow(carouselContent);
     const cardWidth = ((availableWidth - ((cardsToShow - 1) * gap)) / cardsToShow);
+    let scrollbarWidth = 0;
+    if (viewport < 1024) {
+      scrollbarWidth = `${viewport - document.body.clientWidth}`;
+    }
     cards.forEach((card) => {
-      card.style.width = `${cardWidth}px`;
+      card.style.width = `${cardWidth - scrollbarWidth}px`;
       card.style.marginRight = `${gap}px`;
     });
 
@@ -295,8 +299,7 @@ function resizeBlock() {
       0,
       gap,
     );
-
-    if (viewport >= 1280 && totalItems > 4 && !carouselControlsIcon) {
+    if (viewport >= 1280 && totalItems > 4) {
       addIconCarouselControls(
         block,
         carouselContent,
@@ -306,12 +309,23 @@ function resizeBlock() {
         carouselRightWrapper,
         gap,
       );
-      carouselControlsIcon = true;
     }
-    if (!carouselControlsAdded) {
-      addDotsNavigation(block, carouselContent, totalItems, cardsToShow, gap);
-      carouselControlsAdded = true;
+
+    let totalDots;
+    if (viewport >= 1280) {
+      const visibleCards = 4;
+      totalDots = totalItems > visibleCards ? totalItems - 3 : 0;
+    } else if (viewport >= 1024) {
+      const visibleCards = 3;
+      totalDots = totalItems > visibleCards ? totalItems - 2 : 0;
+    } else if (viewport >= 768) {
+      const visibleCards = 2;
+      totalDots = totalItems > visibleCards ? totalItems - 1 : 0;
+    } else {
+      totalDots = totalItems;
     }
+    addDotsNavigation(block, carouselContent, totalItems, cardsToShow, gap, totalDots);
+    updateCarousel(carouselContent, 0, gap);
   });
 }
 
@@ -322,6 +336,126 @@ export function mediaCarouselResizer() {
   window.addEventListener('resize', () => {
     resizeBlock();
   });
+}
+
+function genarateVideo(mediaType, media, vidImgTitleWrapper, vidImgDesWrapper, vidImgCtaWrap, videoImageCarouselContent) {
+  const videoCarouselCard = document.createElement('div');
+  const videoDOMContainer = document.createElement('div');
+  videoCarouselCard.classList.add('video-img-carousel-card');
+  // video tab details
+  const videoCarouselContentPtags = media?.querySelectorAll('p');
+  const videoCarouselTitle = videoCarouselContentPtags[0] || '';
+  const videoCarouselDescription = videoCarouselContentPtags[1] || '';
+
+  // video tab media
+  const videoCarouselContentAtags = media?.querySelectorAll('a');
+  const videoCarouselDesktopVideoRef = videoCarouselContentAtags[0] || '';
+  const videoCarouselMobVideoRef = videoCarouselContentAtags[1] || '';
+
+  const videoContentPictureTags = media?.querySelectorAll('picture');
+  const videoCarouselDesktopPosterImgRef = videoContentPictureTags[0]?.querySelector('img')?.getAttribute('src');
+  const videoCarouselMobPosterImgRef = videoContentPictureTags[1]?.querySelector('img')?.getAttribute('src');
+  // extracting video link
+  const videoLinkObj = {};
+  const posterObj = {};
+
+  if (videoCarouselDesktopVideoRef) videoLinkObj.desktop = videoCarouselDesktopVideoRef.href;
+  if (videoCarouselMobVideoRef) videoLinkObj.mobile = videoCarouselMobVideoRef.href;
+
+  if (videoCarouselDesktopPosterImgRef) posterObj.desktop = videoCarouselDesktopPosterImgRef;
+  if (videoCarouselMobPosterImgRef) posterObj.mobile = videoCarouselMobPosterImgRef;
+
+  // converting string to boolen
+  const isLoopVideo = media.querySelector('h3')?.textContent.trim() === 'true';
+  const onHoverPlay = media.querySelector('h4')?.textContent.trim() === 'true';
+  const enableHideControls = media.querySelector('h5')?.textContent.trim() === 'true';
+  const isMuted = media.querySelector('h6')?.textContent.trim() === 'true';
+  const isAutoPlayVideo = false;
+
+  loadVideoEmbed(
+    [videoDOMContainer,
+      videoCarouselTitle?.textContent,
+      videoCarouselDescription?.textContent,
+      videoLinkObj,
+      isAutoPlayVideo,
+      isLoopVideo,
+      enableHideControls,
+      isMuted,
+      posterObj,
+      onHoverPlay],
+  );
+  media.textContent = '';
+  videoCarouselCard.append(
+    videoDOMContainer,
+    vidImgTitleWrapper,
+    vidImgDesWrapper,
+    vidImgCtaWrap,
+  );
+  videoImageCarouselContent.append(videoCarouselCard);
+}
+
+function genearteImageDom(content, media, cta, block, videoImageCarouselContent, mediaType, callback) {
+  const vidImgTitleWrapper = document.createElement('div');
+  vidImgTitleWrapper.classList.add('video-img-title');
+  const vidImgCtaWrap = document.createElement('div');
+  vidImgCtaWrap.classList.add('video-img-cta');
+  const vidImgDesWrapper = document.createElement('div');
+  vidImgDesWrapper.classList.add('video-img-description');
+
+  const vidImgCarouselCard = document.createElement('div');
+  vidImgCarouselCard.classList.add('video-img-carousel-card');
+  const vidImgAnchorElm = cta?.querySelector('a')?.textContent || '';
+  const ctaHref = cta?.querySelector('a')?.getAttribute('href') || '';
+  let newAnchor = '';
+  if (cta?.querySelector('a')) {
+    newAnchor = document.createElement('a');
+    newAnchor.textContent = vidImgAnchorElm;
+    newAnchor.setAttribute('href', ctaHref);
+    newAnchor.textContent = vidImgAnchorElm;
+  }
+
+  const contentElem = content?.children;
+  let videoImgCarouselHeadline = content.querySelector('h2').textContent || '';
+  videoImgCarouselHeadline = (videoImgCarouselHeadline !== null && videoImgCarouselHeadline !== undefined && videoImgCarouselHeadline) ? videoImgCarouselHeadline : '';
+  let videoImgCarouselCopyText = contentElem[1].textContent || '';
+  videoImgCarouselCopyText = (videoImgCarouselCopyText !== null && videoImgCarouselCopyText !== undefined && videoImgCarouselCopyText) ? videoImgCarouselCopyText : '';
+
+  cta.classList.add('hidden');
+  vidImgCtaWrap.append(newAnchor);
+
+  content.classList.add('hidden');
+  vidImgTitleWrapper.append(videoImgCarouselHeadline);
+  vidImgDesWrapper.append(videoImgCarouselCopyText);
+
+  if (mediaType === 'image') {
+    const imgDOMContainer = document.createElement('div');
+
+    const imageCarouselImgRef = media?.querySelector('picture');
+
+    const propImgElem = imageCarouselImgRef?.querySelector('img');
+    const imageCarouselAltText = propImgElem?.getAttribute('alt');
+
+    const pictureElement = document.createElement('picture');
+    const imgElem = document.createElement('img');
+    imgElem.src = propImgElem?.src;
+    imgElem.setAttribute('alt', imageCarouselAltText);
+
+    pictureElement.append(imgElem);
+    imgDOMContainer.append(pictureElement);
+    imageCarouselImgRef?.classList.add('hidden');
+
+    vidImgCarouselCard.append(imgDOMContainer, vidImgTitleWrapper, vidImgDesWrapper, vidImgCtaWrap);
+    media.textContent = '';
+    videoImageCarouselContent.append(vidImgCarouselCard);
+  } else if (mediaType === 'video') {
+    genarateVideo(mediaType, media, vidImgTitleWrapper, vidImgDesWrapper, vidImgCtaWrap, videoImageCarouselContent);
+  }
+  media.append(videoImageCarouselContent);
+  block.append(media);
+  if (typeof callback === 'function') {
+    callback(media);
+  }
+  resizeBlock();
 }
 
 export default function decorate(block) {
@@ -335,137 +469,28 @@ export default function decorate(block) {
 
   const carouselRightWrapper = document.createElement('div');
   carouselRightWrapper.classList.add('carousel-wrapper-rth-area');
-  if (block.children.length > 0) {
-  // loop through all children blocks
-    [...panels].forEach((panel, index) => {
-      const [content, media, cta] = panel.children;
-      panel.textContent = '';
-      if (media?.children?.length > 1) {
-        // Create a wrapper for video card elements
-        const videoCarouselCard = document.createElement('div');
-        videoCarouselCard.classList.add('video-img-carousel-card');
 
-        // Title , cta and description wrappers
-        const vidImgTitleWrapper = document.createElement('div');
-        vidImgTitleWrapper.classList.add('video-img-title');
-        const vidImgCtaWrap = document.createElement('div');
-        vidImgCtaWrap.classList.add('video-img-cta');
-        const vidImgDesWrapper = document.createElement('div');
-        vidImgDesWrapper.classList.add('video-img-description');
-
-        // headline and copy text under general tab
-        const contentElem = content?.children;
-        const videoCarouselHeadline = content.querySelector('h2')?.textContent || '';
-        const videoHeadline = (videoCarouselHeadline !== null && videoCarouselHeadline !== undefined && videoCarouselHeadline) ? videoCarouselHeadline : '';
-        let videoCarouselCopyText = contentElem[1] || '';
-        videoCarouselCopyText = (videoCarouselCopyText !== null && videoCarouselCopyText !== undefined && videoCarouselCopyText.textContent) ? videoCarouselCopyText : '';
-        let vidImgAnchorElm = cta.querySelector('a');
-        vidImgAnchorElm = (vidImgAnchorElm && vidImgAnchorElm.href) ? vidImgAnchorElm : '';
-        vidImgCtaWrap.append(vidImgAnchorElm);
-        vidImgTitleWrapper.append(videoHeadline);
-        vidImgDesWrapper.append(videoCarouselCopyText);
-
-        // video tab details
-        const videoCarouselContentPtags = media?.querySelectorAll('p');
-        const videoCarouselTitle = videoCarouselContentPtags[0] || '';
-        const videoCarouselDescription = videoCarouselContentPtags[1] || '';
-
-        // video tab media
-        const videoCarouselContentAtags = media?.querySelectorAll('a');
-        const videoCarouselDesktopVideoRef = videoCarouselContentAtags[0] || '';
-        const videoCarouselMobVideoRef = videoCarouselContentAtags[1] || '';
-
-        const videoContentPictureTags = media.querySelectorAll('picture');
-        const videoCarouselDesktopPosterImgRef = videoContentPictureTags[0]?.querySelector('img')?.getAttribute('src');
-        const videoCarouselMobPosterImgRef = videoContentPictureTags[1]?.querySelector('img')?.getAttribute('src');
-
-        const videoDOMContainer = document.createElement('div');
-
-        const imgDOMContainer = document.createElement('div');
-
-        if (index === 0) {
-          imgDOMContainer.classList.add('visible');
-        }
-
-        // extracting video link
-        const videoLinkObj = {};
-        const posterObj = {};
-
-        if (videoCarouselDesktopVideoRef) videoLinkObj.desktop = videoCarouselDesktopVideoRef.href;
-        if (videoCarouselMobVideoRef) videoLinkObj.mobile = videoCarouselMobVideoRef.href;
-
-        if (videoCarouselDesktopPosterImgRef) posterObj.desktop = videoCarouselDesktopPosterImgRef;
-        if (videoCarouselMobPosterImgRef) posterObj.mobile = videoCarouselMobPosterImgRef;
-
-        // converting string to boolen
-        const isLoopVideo = media.querySelector('h3')?.textContent.trim() === 'true';
-        const onHoverPlay = media.querySelector('h4')?.textContent.trim() === 'true';
-        const enableHideControls = media.querySelector('h5')?.textContent.trim() === 'true';
-        const isMuted = media.querySelector('h6')?.textContent.trim() === 'true';
-        const isAutoPlayVideo = false;
-
-        loadVideoEmbed(
-          [videoDOMContainer,
-            videoCarouselTitle?.textContent,
-            videoCarouselDescription?.textContent,
-            videoLinkObj,
-            isAutoPlayVideo,
-            isLoopVideo,
-            enableHideControls,
-            isMuted,
-            posterObj,
-            onHoverPlay],
-        );
-        // Append elements to the video card
-        videoCarouselCard.append(
-          videoDOMContainer,
-          vidImgTitleWrapper,
-          vidImgDesWrapper,
-          vidImgCtaWrap,
-        );
-        videoImageCarouselContent.append(videoCarouselCard);
-      } else {
-      // image
-        const imgTitleWrapper = document.createElement('div');
-        imgTitleWrapper.classList.add('video-img-title');
-        const imgDesWrapper = document.createElement('div');
-        imgDesWrapper.classList.add('video-img-description');
-        const vidImgCtaWrap = document.createElement('div');
-        vidImgCtaWrap.classList.add('video-img-cta');
-
-        let vidImgAnchorElm = cta?.querySelector('a');
-        vidImgAnchorElm = (vidImgAnchorElm && vidImgAnchorElm.href) ? vidImgAnchorElm : '';
-        vidImgCtaWrap.append(vidImgAnchorElm);
-        // headline and copy text under general tab
-        const contentElem = content?.children;
-        const imgCarouselHeadline = content.querySelector('h2')?.textContent || '';
-        const imgHeadline = (imgCarouselHeadline !== null && imgCarouselHeadline !== undefined && imgCarouselHeadline) ? imgCarouselHeadline : '';
-        let imgCarouselCopyText = contentElem[1] || '';
-        imgCarouselCopyText = (imgCarouselCopyText !== null && imgCarouselCopyText !== undefined && imgCarouselCopyText.textContent) ? imgCarouselCopyText : '';
-        imgTitleWrapper.append(imgHeadline);
-        imgDesWrapper.append(imgCarouselCopyText);
-
-        const imageCarouselCard = document.createElement('div');
-        imageCarouselCard.classList.add('video-img-carousel-card');
-
-        const pictureElement = document.createElement('picture');
-        const imgElem = document.createElement('img');
-        const imageCarouselImgRef = media?.querySelector('picture');
-        if (imageCarouselImgRef) {
-          const propImgElem = imageCarouselImgRef?.querySelector('img');
-          if (propImgElem) {
-            const imageSlideAltText = propImgElem?.getAttribute('alt');
-            imgElem.src = propImgElem?.src;
-            imgElem.setAttribute('alt', imageSlideAltText || '');
-            pictureElement.append(imgElem);
-          }
-        }
-        imageCarouselCard.append(pictureElement, imgTitleWrapper, imgDesWrapper, vidImgCtaWrap);
-        videoImageCarouselContent.append(imageCarouselCard);
-      }
-    });
-    block.append(carouselLeftWrapper, carouselRightWrapper);
-    block.append(videoImageCarouselContent);
-    resizeBlock();
-  }
+  panels.forEach((panel) => {
+    const [classes, content, media, cta] = panel.children;
+    panel.removeChild(classes);
+    let mediaType;
+    if (classes.textContent.includes('video-carousel')) {
+      mediaType = 'video';
+    } else {
+      mediaType = 'image';
+    }
+    genearteImageDom(
+      content,
+      media,
+      cta,
+      block,
+      videoImageCarouselContent,
+      mediaType,
+      (generateDom) => {
+        block.append(carouselLeftWrapper, carouselRightWrapper);
+        block.append(generateDom);
+        resizeBlock();
+      },
+    );
+  });
 }

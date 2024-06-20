@@ -1,0 +1,60 @@
+{
+  "6626": {
+    "id": 6626,
+    "name": "Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "GV01",
+    "agModelCode": "GV01",
+    "vgModelCode": "GV01",
+    "modelRangeCode": "F93",
+    "options": "S01DF,S01TG,S0230,S02T4,S02TB,S02VB,S02VC,S0316,S0322,S0488,S0494,S04MC,S04NB,S0548,S0552,S05AC,S05AV,S05DM,S0688,S06AF,S06U3,S0712,S0754,S0760,S0776,S0851,S08KH,S08R3,S08R9,S08S3,S08TF,S08WD",
+    "paint": "P0300",
+    "fabric": "FLKSW",
+    "headline": "",
+    "highlight1": "",
+    "highlight2": "",
+    "highlight3": "",
+    "badge": "",
+    "hidePrice": true,
+    "fuelType": "O",
+    "headlightsOn": true,
+    "productionDate": "",
+    "effectDate": "2024-06-18",
+    "backgroundImage": "",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 493,
+        "mid": 249,
+        "high": 214,
+        "exHigh": 225,
+        "comb": 262
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {
+        "low": 21.6,
+        "mid": 10.9,
+        "high": 9.4,
+        "exHigh": 9.9,
+        "comb": 11.5
+      },
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {},
+      "electricConsumption": {}
+    },
+    "modelName": "M8",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rQ45FZ8X6Ausxpz9mlD3AfzBy2od4bAwTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeq7uzWQdjcjXa3aeZQ6KAZfXRjcZwBO4Vrx6Kc%252gF54WwBKupUP8Fe%252B3ibM3Ijup2XHNMmv63iprJk4YGwXHi4TPao9%25rJHFlMUjou4TJIsDeIL3FlTv0YzSyXIslGATOECrv0s9OleZE4GA0ogsPoNF9OALU0M7kIogOybAXPnvLUgChDu85GybUEqYtI89ChbNmtQrPoEqhk7NiHMLNmqn1krGDyk7m5VnbbYCn178z5JrtE5V1Pa1IefN8zVMRVPgSkPazDxzUodnMRaYWab8Q5DxRteR5yZ8YWxfjxKncPteWS6W1iKMfjeEeKIfl6gX9UHlZyY4Up6EHswTOO1nhJPH4lLQoKGIXMw1pkLB9WyD0",
+    "technicalData": {
+      "enginePower": "441",
+      "engineHorsePower": "600",
+      "technicalCapacity": "4395",
+      "volt48": false
+    }
+  }
+}

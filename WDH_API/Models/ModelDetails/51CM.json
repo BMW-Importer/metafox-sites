@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-11",
+    "effectDate": "2024-06-18",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -74,26 +74,28 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "8.8–8.1",
+            "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "200–185",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "-",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4548.0",
-            "width": "1838.0",
-            "height": "1404.0",
+            "length": "4548",
+            "width": "1838",
+            "height": "1404",
             "widthMirrors": "2068 (1040 / 1028)",
             "wheelTurn": "2741.0",
             "weightNotLoaded": "1765",

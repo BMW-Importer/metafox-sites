@@ -822,29 +822,29 @@
       {
         "component":"select",
         "name":"analytics_button",
-        "label":"Button/Link type", 
+        "label":"Button/Link Type", 
         "valueType": "string",
         "options": [
           {
-            "name": "Exit",
-            "value": "Exit"
+            "name": "exit",
+            "value": "exit"
           },
           {
-            "name": "Download",
-            "value": "Download"
+            "name": "download",
+            "value": "download"
           },
           {
-            "name": "Other",
-            "value": "Other"
+            "name": "other",
+            "value": "other"
           }          
         ]    
       },
       {
         "component": "select",
-        "label": "Only if other is selected the following opotions should appear:",
+        "label": "Only if other is selected the following options should appear:",
         "name": "analytics_others",
         "valueType": "string",
-        "condition": { "===": [{"var" : "analytics_button"}, "Other"] },
+        "condition": { "===": [{"var" : "analytics_button"}, "other"] },
         "options": [
           {
             "name": "Learn More",
@@ -1147,7 +1147,7 @@
       {
         "component":"select",
         "name":"analytics_button",
-        "label":"Button/Link type", 
+        "label":"Button/Link Type", 
         "valueType": "string",
         "options": [
           {
@@ -1166,7 +1166,7 @@
       },
       {
         "component": "select",
-        "label": "Only if other is selected the following opotions should appear:",
+        "label": "Only if other is selected the following options should appear:",
         "name": "analytics_others",
         "valueType": "string",
         "condition": { "===": [{"var" : "analytics_button"}, "Other"] },
@@ -1497,7 +1497,7 @@
       },
       {
         "component": "multiselect",
-        "name": "cq:robotTags",
+        "name": "cq:robotsTags",
         "required": true,
         "description": "Defines the robots tags to control search engine crawler behaviour.",
         "label": "Robot Tags",
@@ -1547,14 +1547,12 @@
         "valueType": "string",
         "name": "imageReference",
         "label": "Image",
-        "required": true,
         "description": "Defines the image to be displayed when sharing the link to the page."
       },
       {
         "component": "text-input",
         "name": "altText",
         "label": "Alt Text",
-        "required": true,
         "description": "Defines the alternative text that will be read by screen-readers for the image."
       }
     ]
@@ -2188,30 +2186,24 @@
         "label": "Analytics"
       },
       {
-        "component": "text-input",
-        "name": "analytics_label",
-        "label": "Analytics Label",
-        "valueType": " "
-      },
-      {
-        "component": "select",
-        "name": "analytics_button",
-        "label": "Button/Link type",
+        "component":"select",
+        "name":"analytics_button",
+        "label":"Button/Link Type", 
         "valueType": "string",
         "options": [
           {
-            "name": "Exit",
-            "value": "Exit"
+            "name": "exit",
+            "value": "exit"
           },
           {
-            "name": "Download",
-            "value": "Download"
+            "name": "download",
+            "value": "download"
           },
           {
-            "name": "Other",
-            "value": "Other"
-          }
-        ]
+            "name": "other",
+            "value": "other"
+          }          
+        ]    
       },
       {
         "component": "select",
@@ -2221,9 +2213,9 @@
         "condition": {
           "===": [
             {
-              "var": "analytics-button"
+              "var": "analytics_button"
             },
-            "Other"
+            "other"
           ]
         },
         "options": [
@@ -2978,6 +2970,14 @@
       {
         "component": "text",
         "valueType": "string",
+        "name": "classes",
+        "description": "Defines the classes",
+        "value": "",
+        "hidden": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
         "name": "content_carouselHeadline",
         "description": "Defines the headline of the text that will appear in the page.",
         "value": "",
@@ -3070,7 +3070,7 @@
         "component": "boolean",
         "label": "Loop Video",
         "name": "media_carouselLoopVideo",
-        "description": "Defines how video will be played.",
+        "description": "Defines if the video will play on loop. If toggled on, the video will loop.",
         "valueType": "boolean",
         "value": true
       },
@@ -3086,14 +3086,14 @@
         "component": "boolean",
         "label": "Play on mouseover",
         "name": "media_carouselMouseHoverVideo",
-        "description": "Defines how video will be played.",
+        "description": "Defines if the video will play on loop. If toggled on, the video will loop.",
         "valueType": "boolean",
         "value": true
       },
       {
         "component": "text",
         "label": "Hide Video Controls",
-        "name": "media_carouselHideControlsVideoType",
+        "name": "media_videoControlsVideoType",
         "valueType": "string",
         "value": "h5",
         "hidden": true
@@ -3101,8 +3101,8 @@
       {
         "component": "boolean",
         "label": "Video Controls",
-        "name": "media_carouselHideControlsVideo",
-        "description": "Defines how video will be played.",
+        "name": "media_videoControlsVideo",
+        "description": "Defines if the video controls will be displayed. If toggled on, they will appear.",
         "valueType": "boolean",
         "value": true
       },
@@ -3118,7 +3118,7 @@
         "component": "boolean",
         "label": "Mute Video Sound",
         "name": "media_carouselMuteSoundVideo",
-        "description": "Defines how video will be played.",
+        "description": "Defines if the video will be play on mute. If toggled on, there will be no sound.",
         "valueType": "boolean",
         "value": true
       },
@@ -3175,6 +3175,14 @@
         "label": "General",
         "name": "content_imageCarouselTab1",
         "description": "Tab that includes general property fields."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "description": "Defines the classes",
+        "value": "",
+        "hidden": true
       },
       {
         "component": "text",
@@ -3271,6 +3279,176 @@
             "value": "secondary"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "video-gallery-slide",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "videoSlide_text",
+        "description": "Defines the text below the Video Slide.",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "select",
+        "name": "videoSlide_textType",
+        "value": "",
+        "label": "Text Type",
+        "valueType": "string",
+        "description": "Defines styles for the text.",
+        "options": [
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "videoSlide_videoTitle",
+        "description": "Defines the title of the video.",
+        "value": "",
+        "label": "Video Title",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videoSlide__videoText",
+        "description": "Defines the description of the video.",
+        "value": "",
+        "label": "Video Description",
+        "required": true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlide_desktopVideoPath",
+        "label": "Desktop Video Path",
+        "multi": false,
+        "required": true,
+        "description": "Defines the path to a video on the desktop."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlide_mobileVideoPath",
+        "label": "Mobile Video Path",
+        "multi": false,
+        "description": "Defines the path to a video on the mobile."
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlide_videoPosterDesktop",
+        "description": "Defines the path that will be displaying poster image on desktop while loading the page.",
+        "label": "Desktop Poster Image Path",
+        "multi": false,
+        "required": true
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoSlide_videoPosterMobile",
+        "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
+        "label": "Mobile Poster Image Path",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "label": "Loop Video",
+        "name": "videoSlide_loopVideoType",
+        "valueType": "string",
+        "value": "h1",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Loop Video",
+        "name": "videoSlide_loopVideo",
+        "description": "Defines if the video will play on loop. If toggled on, the video will loop.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",
+        "label": "Autoplay",
+        "name": "videoSlide_autoPlayVideoType",
+        "valueType": "string",
+        "value": "h2",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Autoplay",
+        "name": "videoSlide_autoPlayVideo",
+        "description": "Defines if the video will autoplay. If toggled on, the video will autoplay and will be always on mute even if mute video sound boolean is set to off.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",
+        "label": "Video Controls",
+        "name": "videoSlide_videoControlsVideoType",
+        "valueType": "string",
+        "value": "h5",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Video Controls",
+        "name": "videoSlide_videoControlsVideo",
+        "description": "Defines if the video controls will be displayed. If toggled on, they will appear.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",
+        "label": "Mute Video Sound",
+        "name": "videoSlide_muteSoundVideoType",
+        "valueType": "string",
+        "value": "h6",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Mute Video Sound",
+        "name": "videoSlide_muteSoundVideo",
+        "description": "Defines if the video will be play on mute. If toggled on, there will be no sound.",
+        "valueType": "boolean",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": "custom-asset-one",
+    "fields": [
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "name": "image",
+        "label": "Image",
+        "configUrl": "https://raw.githubusercontent.com/nitinja/xwalk-test-gems/main/tools/assets-selector/image.config.json",
+        "valueType": "string"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "imageMimeType"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "valueType": "string"
       }
     ]
   }

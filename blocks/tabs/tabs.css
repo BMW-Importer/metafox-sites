@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+main .section.tabs-container {
+    padding: 0;
+}
+
 .tabs ul {
     display: flex;
     padding-left: 0;
@@ -12,11 +16,38 @@
     border-radius: 0.188rem;
     overflow-x: auto;
     scrollbar-width: none;
+    visibility: visible;
 }
 
-.buttons-tab {
-    padding: 0;
-    margin: .5rem 0;
+.tabs.mask-right ul{
+    mask: linear-gradient(to left,#fff0 0,#fff 4.5rem);
+}
+
+.tabs.mask-left ul{
+    mask: linear-gradient(to right, #fff0 0, #fff 4.5rem);
+}
+
+.tabs.mask-left.mask-right ul{
+    mask: linear-gradient(to left, #fff0 0, #fff 4.5rem) right, linear-gradient(to right, #fff0 0, #fff 4.5rem) left;
+    mask-repeat: no-repeat;
+    mask-size: 51% 100%;
+}
+
+@media (width >=360px) and (width < 768px) {
+    .buttons-tab {
+        --tabs-multiplier: 16;
+    }
+
+    .buttons-tab, .default-tab {
+        --grid-full: 1.5rem
+    }
+}
+
+@media (width >=768px) {
+    .buttons-tab {
+        --tabs-multiplier: 10;
+        --grid-full: 3rem
+    }
 }
 
 .tabs li {
@@ -27,11 +58,11 @@
 }
 
 .tabs li button {
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1.25rem;
+    font-size: 0.938rem;
+    font-weight: 500;
+    line-height: 1.5rem;
     font-family: var(--fixed-font-family);
-    text-transform: capitalize;
+    text-transform: none;
     padding: .5rem 1.125rem;
     height: inherit;
     border-radius: 0;
@@ -52,8 +83,8 @@
 .default-tab li button {
     background-color: #0000;
     color: var(--light-border-color);
-    font-size: var(--base-font-size);
-    font-weight: 700;
+    font-size: 0.938rem;
+    font-weight: 500;
     line-height: 1.5rem;
     padding: 0 0.5rem;
 }
@@ -63,10 +94,35 @@
     padding-left: .5rem;
 }
 
-@media (width >=1280px){
+.tabs .buttons-tab {
+    padding: 0;
+    margin: .5rem 0;
+    max-width: calc(var(--grid-full)* var(--tabs-multiplier));
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(4.8rem, 1fr);
+}
+
+.buttons-tab li button {
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    padding: 0.3rem 1.125rem;
+    width: 100%;
+}
+
+div:has(> .buttons-tab) {
+    padding: 0 6rem;
+}
+
+@media (width >=1280px) {
     .tabs li button:not(.active):hover {
-            color: var(--light-link-hover-color);
-        }
+        color: var(--light-link-hover-color);
+    }
 }
 
 .default-tab li button.active {
@@ -76,11 +132,15 @@
 
 }
 
-@media (width >=1280px){
+@media (width >=1280px) {
     .default-tab li button:not(.active):hover {
-            color: var(--light-link-hover-color);
-            border-bottom-color: var(--light-link-hover-color) !important;
-        }
+        color: var(--light-link-hover-color);
+        border-bottom-color: var(--light-link-hover-color) !important;
+    }
+
+    .buttons-tab, .default-tab {
+        --grid-full: 6rem
+    }
 }
 
 .default-tab {
@@ -93,16 +153,18 @@
 
 @media (width >=360px) and (width < 768px) {
     .default-tab {
-        padding: .5rem 1.5rem .5rem .5rem !important;
+        padding: .5rem 3rem .5rem 2rem !important;
+    }
+
+    div:has(> .buttons-tab) {
+        padding: 0 1.5rem;
     }
 }
 
-.tabs ul::after {
-    content: '';
-    display: inline-block;
-    box-shadow: -2rem -4px 20px 4rem #fcfcfc91;
-    position: absolute;
-    right: 0;
+@media (width >=768px) and (width < 1280px) {
+    div:has(> .buttons-tab) {
+        padding: 0 3rem;
+    }
 }
 
 [data-tab-topmargin='true'] {
@@ -111,8 +173,13 @@
 
 @media (width >=360px) and (width < 1280px) {
     [data-tab-topmargin='true'] {
-            margin-top: 2.5rem;
-        }
+        margin-top: 2.5rem;
+    }
+
+    .tabs li button {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
 }
 
 body.activity main {

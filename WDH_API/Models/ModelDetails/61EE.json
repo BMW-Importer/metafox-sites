@@ -40,7 +40,7 @@
       "gearBox": "7 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-10",
+    "effectDate": "2024-06-18",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -71,34 +71,36 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "7.1 - 6.3",
-            "emissionsWltpCombined": "159 - 142",
+            "consumptionWltpCombined": "7.1–6.3",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "159–142",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "0.9",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4500.0",
-            "width": "1845.0",
-            "height": "1642.0",
+            "length": "4500",
+            "width": "1845",
+            "height": "1642",
             "widthMirrors": "2104 (1055 / 1049)",
             "wheelTurn": "2692.0",
             "weightNotLoaded": "1730",
             "weightMax": "2220",
             "permittedLoad": "565",
             "trailerLoad": "2000 / 80",
-            "trunkCapacity": "500 - 1545",
+            "trunkCapacity": "500–1545",
             "tankCapacity": "45.0"
           }
         },
@@ -121,12 +123,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"
@@ -169,34 +165,36 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "7.1 - 6.3",
-            "emissionsWltpCombined": "159 - 142",
+            "consumptionWltpCombined": "7.1–6.3",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "159–142",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
-            "noiseStationary": "-",
-            "co2EquivalentOverallBest": "-",
-            "co2EquivalentOverall": "-"
+            "noiseStationary": "-"
           },
           "charging": {
             "batteryCapacity": "0.9",
-            "chargeACDC": "-",
-            "charge_AC_0_100": "-",
-            "charge_DC_10_80": "-",
             "additionalRangeDC": "-",
-            "chargingMaxAC": "-"
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4500.0",
-            "width": "1845.0",
-            "height": "1642.0",
+            "length": "4500",
+            "width": "1845",
+            "height": "1642",
             "widthMirrors": "2104 (1055 / 1049)",
             "wheelTurn": "2692.0",
             "weightNotLoaded": "1730",
             "weightMax": "2220",
             "permittedLoad": "565",
             "trailerLoad": "2000 / 80",
-            "trunkCapacity": "500 - 1545",
+            "trunkCapacity": "500–1545",
             "tankCapacity": "45.0"
           }
         },
@@ -219,12 +217,6 @@
           ],
           "charging": [
             "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"

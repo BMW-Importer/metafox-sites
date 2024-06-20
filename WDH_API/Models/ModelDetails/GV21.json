@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-11",
+    "effectDate": "2024-06-17",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -83,16 +83,16 @@
           },
           "charging": {
             "batteryCapacity": "-",
+            "additionalRangeDC": "-",
             "chargeACDC": "-",
             "charge_AC_0_100": "-",
             "charge_DC_10_80": "-",
-            "additionalRangeDC": "-",
             "chargingMaxAC": "-"
           },
           "weightMeasurements": {
-            "length": "5082.0",
-            "width": "1932.0",
-            "height": "1407.0",
+            "length": "5082",
+            "width": "1932",
+            "height": "1407",
             "widthMirrors": "2137 (1074 / 1063)",
             "wheelTurn": "3023.0",
             "weightNotLoaded": "1890",

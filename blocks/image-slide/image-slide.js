@@ -28,13 +28,14 @@ export function generateImgSlideDetailMarkUp(props) {
 
   videoImgDetailDOMContainer.classList.add('vid-img-slide');
   videoImgDetailDOMContainer.classList.add(`vid-img-slide-${index}`);
+
   if (index === 0) {
     videoImgDetailDOMContainer.classList.add('visible');
   }
   videoImgDetailDOMContainer.classList.add('detail');
 
   // desktop view collapsed state detail cover
-  const vidImgDetailCover = document.createElement('div');
+  const vidImgDetailCover = document.createElement('button');
   vidImgDetailCover.classList.add('vid-img-slide-cover');
   // if headline is authored
   if (imageSlideHeadline) {

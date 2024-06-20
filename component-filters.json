@@ -207,7 +207,9 @@
       "disclaimer",
       "download",
       "quote",
-      "media-carousel"
+      "media-carousel",
+      "video-gallery",
+      "custom-asset-one"
     ]
   },
   {
@@ -223,7 +225,8 @@
       "eyebrow",
       "headline",
       "download",
-      "quote"
+      "quote",
+      "custom-asset-one"
     ]
   },
   {
@@ -317,6 +320,12 @@
     "components":[
       "background-image",
       "background-video"
+    ]
+  },
+  {
+    "id": "video-gallery",
+    "components": [
+      "video-gallery-slide"
     ]
   }
 ]

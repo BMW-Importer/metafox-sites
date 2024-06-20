@@ -30,7 +30,7 @@ export function generatebgVideoDom(block) {
     // converting string to boolen
     const isLoopVideo = block.querySelector('h1')?.textContent.trim() === 'true';
     const isAutoPlayVideo = block.querySelector('h2')?.textContent.trim() === 'true';
-    const enableHideControls = true;
+    const enableVideoControls = false;
     const isMuted = true;
     const onHoverPlay = false;
     // generating video
@@ -42,7 +42,7 @@ export function generatebgVideoDom(block) {
       videoLinkObj,
       isAutoPlayVideo,
       isLoopVideo,
-      enableHideControls,
+      enableVideoControls,
       isMuted,
       posterObj,
       onHoverPlay,

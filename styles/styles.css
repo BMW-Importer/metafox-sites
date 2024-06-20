@@ -122,18 +122,21 @@ h1 {
   font-size: 2.688rem; 
   line-height: 3.75rem;
   font-weight: 300;
+  margin-top: 0.75rem;
 }
 
 h2 { 
   font-size: 2.188rem; 
   line-height: 3.125rem; 
   font-weight: 300;
+  margin-top: .5rem;
 }
 
 h3 { 
   font-size: 1.75rem; 
   line-height: 2.5rem;
   font-weight: 300;
+  margin-top: 0.25rem;
 }
 
 h4 { 
@@ -162,7 +165,7 @@ h6 {
   letter-spacing: 0.563rem;
   font-weight: 300;
   text-transform: uppercase;
-  color: var(--background-color);
+  color: var(--light-text-color);
 }
 
 p, dl, ol, ul, pre, blockquote {
@@ -280,6 +283,7 @@ a.button.ghost-dark {
   align-content: center;
   text-rendering: optimizespeed;
   margin-bottom: 0;
+  border-radius: 3px;
 }
 
 a.button.ghost-dark.button-fixed-width {
@@ -622,17 +626,20 @@ textarea{
 @media (width >= 360px) and (width < 1280px) {
     h1 { 
       font-size: 2.063rem; 
-      line-height: 2.875rem; 
+      line-height: 2.875rem;
+      margin-top: .5rem; 
     }
 
     h2 { 
       font-size: 1.75rem; 
-      line-height: 2.5rem; 
+      line-height: 2.5rem;
+      margin-top: .5rem;
     }
 
     h3 { 
       font-size: 1.438rem; 
-      line-height: 2rem; 
+      line-height: 2rem;
+      margin-top: 0.25rem;
     }
 
     h6 {
@@ -646,16 +653,19 @@ textarea{
   h1 {
     font-size: 3.75rem;
     line-height: 5.25rem;
+    margin-top: 1rem;
   }
 
   h2 {
     font-size: 2.813rem;
     line-height: 3.875rem;
+    margin-top: .5rem;
   }
 
   h3 {
     font-size: 2.125rem;
     line-height: 3rem;
+    margin-top: .5rem;
   }
 
   h6 {

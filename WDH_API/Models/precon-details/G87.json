@@ -1,0 +1,35 @@
+{
+  "3602": {
+    "id": 3602,
+    "name": "Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "11DM",
+    "vgModelCode": "11DM",
+    "modelRangeCode": "G87",
+    "options": "S01E6,S04MC,S01MB,S0248,S02MA,S02PA,S02T4,S02VB,S02VC,S02VF,S0302,S0322,S03M5,S03MF,S040C,S0423,S0428,S0430,S043A,S0459,S0465,S0488,S048C,S0493,S0494,S04GQ,S04UR,S0508,S0534,S0544,S0548,S0552,S05AC,S05AS,S05AV,S05DA,S05DC,S05DM,S0654,S0688,S06AE,S06AF,S06AK,S06CP,S06NW,S06U3,S06WD,S0710,S0760,S0775,S07M9,S07ME",
+    "paint": "P0C6E",
+    "fabric": "FMAMM",
+    "headline": "",
+    "highlight1": "",
+    "highlight2": "",
+    "highlight3": "",
+    "badge": "",
+    "hidePrice": true,
+    "fuelType": "O",
+    "productionDate": "2022-12-15",
+    "effectDate": "2024-06-18",
+    "backgroundImage": "",
+    "modelName": "M2 Coupé",
+    "hybridCode": "NOHY",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rTNCBZ8X6Ausxpz9mlD3AfzBy2od4ewpTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2guJTyww1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIin8scpF4HvVfH0KiIFJGJSxABHvIT9PogO2JGvloMQFgpT9GsLDQIUilo90yYhBbHsLoACt%25whJ0yLOEfuOqTACygNS3HmlOECUkeaX7sgNEbnjhr10UkNh56HVVAbnkq8wJszOh5nmPXemagq857Mr1TRUmP81D4VWxb7MPVYFMnWh1DMztID8eqVYDafvs7jmztYRSGP667aftxd9O%25w1RSfWQogW%25VxdSeZLibuzWQdjcyH73aeZQ6KCHyXRjcZwBELsrx6Kc%252ZGF4WwBKupcBaFe%252B3iKHRIjup2XHBJGv63iprJ2VYGwXHi4TpE49%25rJHFliN5ou4TJIsHkUL3FlTv0J6HyXIslGATwGCrv0s9Ol%25nE4GA0og8j3NF9OALUPwnkIogOybMDCnvLUgChDYF5GybUEqYtB89ChbNmtjDPoEqhk7f%256MLNmqn1ScFDyk7m5VdOdYCn178z5ThtE5V1Pa8qqfN8zVMRPlSSkPazDxML5dnMRaYWDytQ53yxpYmrfZ7dyKMlHS9fxQun%25P6eao7sYFuMwb3Lc",
+    "technicalData": {
+      "enginePower": "338",
+      "engineHorsePower": "460",
+      "technicalCapacity": "2993",
+      "volt48": false
+    }
+  }
+}

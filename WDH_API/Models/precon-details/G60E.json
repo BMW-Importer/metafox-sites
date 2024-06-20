@@ -1,0 +1,147 @@
+{
+  "8227": {
+    "id": 8227,
+    "name": "BMW i5 eDrive40 – ESSENCE",
+    "status": "OK",
+    "vehicleType": "PRECON",
+    "modelCode": "31FK",
+    "agModelCode": "31FK",
+    "vgModelCode": "31FK",
+    "modelRangeCode": "G60E",
+    "options": "S0230,S02PA,S02VB,S02VC,S0302,S03G3,S0423,S0428,S043G,S0465,S0481,S0494,S04T3,S04T8,S04U9,S04UR,S04V1,S0534,S0548,S0552,S05AS,S05AV,S05DM,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U2,S0704,S0851,S0879,S08R3,S08R9,S08TF,S08WN",
+    "paint": "P0475",
+    "fabric": "FKUSW",
+    "headline": "ESSENCE • Maximum Range • 6.0 s from 0-100 km/h • 250 kW (340 hp)",
+    "hidePrice": true,
+    "fuelType": "E",
+    "headlightsOn": true,
+    "productionDate": "2023-07-03",
+    "effectDate": "2024-01-03",
+    "imageTitle": "BMW i5 Limousine G60 Konfigurieren 01",
+    "imageAltText": "BMW i5 Limousine G60 Konfigurieren 01",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "exHigh": 0,
+        "city": 0,
+        "comb": 0
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {},
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {
+        "city": 738,
+        "comb": 582
+      },
+      "electricConsumption": {
+        "comb": 15.9
+      }
+    },
+    "modelName": "BMW i5 eDrive40",
+    "hybridCode": "BEVE",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq55FZ8X6Ausxpz9mlD3AfzBy2od4m1TTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gKdRXgw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIn4uscpF4Hv5tX0KiIFJG8WxABHvIT9PeTO2JGvloVqjgpT9GsLzkQUilo90yWAZbHsLoACeOqhJ0yLOEjyTqTACygN69mmlOECUkwBP7sgNEbn%25YJ10UkNh5uziVAbnkq83aazOh5nmPX%25Uagq857MruZRUmP81D4GSxb7MPVY8MOWh1DMztPfjeqVYDafMsLjmztYRSDXF67aftxdYrBw1RSfWQthX%25VxdSeZ4FjuzWQdjcFI13aeZQ6KIvNXRjcZwBvAVrx6Kc%252GU14WwBKup91ZFe%252B3ioEMIjup2XH3Lxv63iprJpV0GwXHi4TiDu9%25rJHFlHQxou4TJIsJZXL3FlTv0TC%25yXIslGAl2oCrv0sjsC1vMAShad5MLWFmdkAj5DOP5t6AZ8X5mMxoRCz1hrO2kwxEalW4Y",
+    "technicalData": {
+      "enginePower": "0",
+      "systemPower": "250",
+      "systemHorsePower": "340",
+      "volt48": false
+    }
+  },
+  "8228": {
+    "id": 8228,
+    "name": "BMW i5 eDrive40 – BALANCE",
+    "status": "OK",
+    "vehicleType": "PRECON",
+    "modelCode": "31FK",
+    "agModelCode": "31FK",
+    "vgModelCode": "31FK",
+    "modelRangeCode": "G60E",
+    "options": "S0230,S02PA,S02VB,S02VC,S0302,S0316,S0322,S0337,S03G8,S0420,S0423,S0428,S043L,S0453,S0456,S0465,S04FL,S04HA,S04NB,S04NR,S04T3,S04T8,S04U6,S04U9,S04UR,S04V1,S0548,S0552,S05AU,S05AV,S05DW,S0674,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0704,S0710,S0760,S0775,S07EW,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S09T1,S09T2",
+    "paint": "P0C3Z",
+    "fabric": "FKSJX",
+    "headline": "BALANCE • M Sport • 6.0 s from 0-100 km/h • 250 kW (340 hp)",
+    "hidePrice": true,
+    "fuelType": "E",
+    "headlightsOn": true,
+    "productionDate": "2023-07-03",
+    "effectDate": "2024-01-03",
+    "imageTitle": "BMW i5 Limousine G60 Konfigurieren 02",
+    "imageAltText": "BMW i5 Limousine G60 Konfigurieren 02",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
+    "emissionDataWltp": {
+      "co2": {
+        "low": 0,
+        "mid": 0,
+        "high": 0,
+        "exHigh": 0,
+        "city": 0,
+        "comb": 0
+      },
+      "co2ChargeSustaining": {},
+      "fuelConsumption": {},
+      "fuelConsumptionChargeSustaining": {},
+      "fuelEfficiency": {},
+      "fuelEfficiencyChargeSustaining": {},
+      "equivalentAllElectricRange": {},
+      "pureElectricRange": {
+        "city": 661,
+        "comb": 563
+      },
+      "electricConsumption": {
+        "comb": 16.8
+      }
+    },
+    "modelName": "BMW i5 eDrive40",
+    "hybridCode": "BEVE",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq%25ZCZ8X6Ausxpz9mlD3AfzBy2od4eXmTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gKdRXgw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIn4uscpF4Hv5tX0KiIFJG8WxABHvIT9PeTO2JGvloVqjgpT9GsLzjtUilo90yaAwbHsLoACRLkhJ0yLOEx8mqTACygN6U9mlOECUkwb27sgNEbn%25hV10UkNh5ukUVAbnkq83pHzOh5nmPXi2agq857MrNRRUmP81D4tmxb7MPVYFx5Wh1DMztIH9eqVYDafvJ2jmztYRSGwO67aftxd9%25%25w1RSfWQov0%25VxdSeZLGauzWQdjcy9T3aeZQ6KCniXRjcZwBQ24rx6Kc%252Zq84WwBKupcoBFe%252B3iKLsIjup2XHBRbv63iprJyMWGwXHi4TCEF9%25rJHFlEN6ou4TJIsNktL3FlTv0k1wyXIslGAna6Crv0s9O56TE4GA0og8YwNF9OALUPtqkIogOybLMrnvLUgChyB05GybUEqCAA89ChbNmE2PPoEqhk7Nw6MLNmqn1qrRDyk7m5VmHEYCn178z7AvtE5V1Pa1OkfN8zVMRVdCSkPazDxzhtdnMRaYWgZwQ5DxRteUcgZ8YWxyxZ4YJeAuvOpJdoMXOBeypTjHpsCeUi5pXJ9SGZI4u8jmBE9cvRoPl",
+    "technicalData": {
+      "enginePower": "0",
+      "systemPower": "250",
+      "systemHorsePower": "340",
+      "volt48": false
+    }
+  },
+  "8229": {
+    "id": 8229,
+    "name": "BMW i5 eDrive40 – SIGNATURE",
+    "status": "OK",
+    "vehicleType": "PRECON",
+    "modelCode": "31FK",
+    "agModelCode": "31FK",
+    "vgModelCode": "31FK",
+    "modelRangeCode": "G60E",
+    "options": "S03GT,S043H,S033B,S09T1,S09T2,S09TB,S03DP,S0760,S07M9,S043H,S03GT,S04A2,S0775,S04U8,S04U9,S04V1,S03M2,S05AU,S05AX,S05DW,S05AY,S08TF,S04NR,S06NX,S06PA,S06U3,S06U7,S0654,S06F4,S06C4,S0302,S0316,S0322,S03DK,S06CP,S08TG,S0453,S04GQ,S04HA,S04MA,S04FL,S03CL,S03MF,S04T8,S04UR,S0552,S0402,S0420,S04NB",
+    "paint": "P0C5A",
+    "fabric": "FVCJL",
+    "headline": "SIGNATURE • M Sport Pro • 6.0 s from 0-100 km/h • 250 kW (340 hp)",
+    "hidePrice": true,
+    "fuelType": "E",
+    "headlightsOn": true,
+    "productionDate": "2023-07-03",
+    "effectDate": "2024-01-03",
+    "imageTitle": "BMW i5 Limousine G60 Konfigurieren 03",
+    "imageAltText": "BMW i5 Limousine G60 Konfigurieren 03",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
+    "modelName": "BMW i5 eDrive40",
+    "hybridCode": "BEVE",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rImZDZ8X6Ausxpz9mlD3AfzBy2od4e8%25TQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gKdRXgw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIqL6scpF4HvVFj0KiIFJG7IxABHvIT9jgCO2JGvlo6UjgpT9GsLwbjUilo90yaKqbHsLoAC0vvhJ0yLOEABlqTACygN6C4mlOECUkeMv7sgNEbn%25xr10UkNh5bXVVAbnkq83wazOh5nmPX%25Uagq857MrvfRUmP81D3sGxb7MPVY8%25MWh1DMztPuAeqVYDafMgijmztYRSDXX67aftxdt%25qw1RSfWQosH%25VxdSeZ40huzWQdjcFhf3aeZQ6KIoqXRjcZwBvLirx6Kc%252Gqz4WwBKup9HaFe%252B3ioURIjup2XHNLDv63iprJkD7GwXHi4TnFt9%25rJHFl5eYou4TJIsN7CL3FlTv0TCXyXIslGAtWjCrv0s9OfqtE4GA0ogSElNF9OALUduskIogOybQqonvLUgChSWL5GybUEqdrI89ChbNmKMMPoEqhk7BZeMLNmqn1hrJDyk7m5VpdTYCn178ziPhtE5V1PaHrlfN8zVGVfu82aTjrlc2YInwlQaGcpRBcH9a0KEcw2FD4fXujNRUQoFSr1Iki",
+    "technicalData": {
+      "enginePower": "0",
+      "systemPower": "250",
+      "systemHorsePower": "340",
+      "volt48": false
+    }
+  }
+}

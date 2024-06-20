@@ -3,9 +3,6 @@ name: Call WDH API New
 on:
 
  workflow_dispatch:
-  
- schedule:
-    - cron: '0 */48 * * *'
 
 permissions: write-all
  
