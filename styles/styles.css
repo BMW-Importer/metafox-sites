@@ -286,6 +286,10 @@ a.button.ghost-dark {
   border-radius: 3px;
 }
 
+.section.alignment-center.columns-container .columns.left .button-container a {
+  width: 33%;
+} 
+
 a.button.ghost-dark.button-fixed-width {
   width: auto;
   min-width: auto;

@@ -197,5 +197,8 @@ margin-bottom: 48px;
   .columns .button {
     margin-top: 24px;
   }
-
+  
+  .section.alignment-right.columns-container .columns.right > div{
+    align-items: initial;
+  }
 }
