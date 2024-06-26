@@ -248,3 +248,19 @@ document.fonts.addEventListener('loading', ({ target }) => {
       });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Set a cookie named "exampleCookie" with the value "cookieValue" that expires in 7 days
+  setCookie("cc_consentCookie", "Sample cookie value", 7);
+});
