@@ -2973,28 +2973,7 @@
         "name":"analytics_label",
         "label":"Analytics Label",
         "valueType": " "
-
-      },
-      {
-        "component":"select",
-        "name":"analytics_button",
-        "label":"Button/Link Type", 
-        "valueType": "string",
-        "options": [
-          {
-            "name": "exit",
-            "value": "exit"
-          },
-          {
-            "name": "download",
-            "value": "download"
-          },
-          {
-            "name": "other",
-            "value": "other"
-          }          
-        ]    
-      }
+      }    
     ]
   },
   {
