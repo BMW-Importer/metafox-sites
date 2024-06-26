@@ -1,7 +1,20 @@
 import {
-  DEV, STAGE,
-  PROD, disclaimerGQlEndpoint,
+  DEV,
+  STAGE,
+  PROD,
+  disclaimerGQlEndpoint,
 } from '../../scripts/common/constants.js';
+import {
+  fetchModelPlaceholderObject,
+  fetchTechDataPlaceholderObject,
+} from '../../scripts/common/wdh-placeholders.js';
+import {
+  buildContext,
+  getCosyImage,
+  getCosyImageUrl,
+  replacePlaceholder,
+  getResolutionKey,
+} from '../../scripts/common/wdh-util.js';
 
 const env = document.querySelector('meta[name="env"]').content;
 const hostName = window?.location?.hostname;
@@ -87,29 +100,27 @@ function generateTechnicalData2(technicalDetail2Cell, techTableData) {
   if (tableRow4.textContent) techTableData.append(tableRow4);
 }
 
-function generateLeftPanelModelList(modelGroup, element, selectedModelDdlMob, analytics, block) {
+function generateLeftPanelModelList(
+  modelGroup,
+  element,
+  selectedModelDdlMob,
+  analytics,
+  block,
+) {
   const [modelCategory, modelLink, isSelected] = modelGroup.children;
   const [analyticsLabel, BtnType, btnSubType] = analytics.children;
   element.textContent = '';
   if (isSelected?.textContent === 'true') {
-    element.append(
-      document.createRange().createContextualFragment(`
-                <span>${modelCategory?.textContent}</span>
-                <span></span>`),
-    );
+    element.append(document.createRange().createContextualFragment(`<span>${modelCategory?.textContent}</span><span></span>`));
     selectedModelDdlMob.textContent = modelCategory?.textContent;
   } else {
-    element.append(
-      document.createRange().createContextualFragment(`
-                <span>${modelCategory?.textContent}</span>
-                <a href='${modelLink?.textContent}' data-analytics-label='${analyticsLabel?.textContent?.trim() || ''}'
-                data-analytics-category='${BtnType?.textContent?.trim() || ''}'
-                data-analytics-subCategory='${btnSubType?.textContent?.trim() || ''}'
-                data-analytics-block-name='${block?.dataset?.blockName?.trim() || ''}'
-                data-analytics-section-id='${block?.closest('.section')?.dataset?.analyticsLabel || ''}'
-                data-analytics-custom-click='true'
-                ></a>`),
-    );
+    element.append(document.createRange().createContextualFragment(`<span>${modelCategory?.textContent}</span>
+        <a href='${modelLink?.textContent}' data-analytics-label='${analyticsLabel?.textContent?.trim() || ''}'
+        data-analytics-category='${BtnType?.textContent?.trim() || ''}'
+        data-analytics-subCategory='${btnSubType?.textContent?.trim() || ''}'
+        data-analytics-block-name='${block?.dataset?.blockName?.trim() || ''}'
+        data-analytics-section-id= "${block?.closest('.section')?.dataset?.analyticsLabel || ''}"
+        data-analytics-custom-click='true'></a>`));
   }
 }
 
@@ -129,31 +140,24 @@ function bindAnalyticsValue(analytics, technicalLink, block) {
 
 export default async function decorate(block) {
   block.classList.add('drivetrain-switch-block');
-
   const leftPanel = document.createElement('div');
   leftPanel.classList.add('dts-left-panel');
   const rightPanel = document.createElement('div');
   rightPanel.classList.add('dts-right-panel');
-
   const selectedModelDdlMob = document.createElement('button');
   selectedModelDdlMob.classList.add('dts-selected-model-mob');
-
   const leftPanelModelGrouping = document.createElement('ul');
   leftPanelModelGrouping.classList.add('dts-model-grouping');
-
   const rightPanelTitleAndImg = document.createElement('div');
   rightPanelTitleAndImg.classList.add('dts-right-model-title');
-
   const rightPanelTechDetail = document.createElement('div');
   rightPanelTechDetail.classList.add('dts-right-tech-detail');
-
   const techTable = document.createElement('table');
   techTable.setAttribute('role', 'table');
   rightPanelTechDetail.append(techTable);
   const techTableData = document.createElement('tbody');
   techTableData.setAttribute('role', 'rowgroup');
   techTable.append(techTableData);
-
   const [
     fuelType,
     detailCell,
@@ -186,8 +190,9 @@ export default async function decorate(block) {
   rightPanelTechDetail.append(technicalLink);
 
   const popover = detailCell?.querySelector('h6');
-  if (popover.textContent === 'true') rightPanelTechDetail.classList.add('enable-popover');
-
+  if (popover.textContent === 'true') {
+    rightPanelTechDetail.classList.add('enable-popover');
+  }
   // removing detailcell so that it wont appear in content tree
   block.removeChild(detailCell);
   // disclaimer fragment
@@ -223,22 +228,91 @@ export default async function decorate(block) {
   // looping through children model card blocks
   rows.forEach((element) => {
     const [modelGroup, context, analytics] = element?.children || '';
+    // API call for getCosyImage and calling buildContext
+    // const modelDetail = ['4, 445, 7k19, true, transmissionType'];
+    const modelCodeArray = ['7K11'];
+    block.textContent = '';
+    modelCodeArray.forEach((agCode) => {
+      getCosyImage(agCode).then((responseJson) => {
+        const screenWidth = window.innerWidth;
+        const resolutionKey = getResolutionKey(screenWidth);
+        const createPictureTag = (quality) => {
+          const pictureTag = document.createElement('picture');
+          const resolutions = [480, 1024, 1920];
+          resolutions.forEach((resolution) => {
+            const sourceTag = document.createElement('source');
+            sourceTag.srcset = getCosyImageUrl(
+              responseJson,
+              getResolutionKey(resolution),
+              quality,
+            );
+            sourceTag.media = `(min-width: ${resolution}px)`;
+            pictureTag.appendChild(sourceTag);
+          });
 
-    if (context) element.removeChild(context);
+          // Fallback img tag
+          const imgTag = document.createElement('img');
+          imgTag.src = getCosyImageUrl(responseJson, resolutionKey, quality);
+          imgTag.alt = 'Cosy Image';
+          pictureTag.appendChild(imgTag);
 
-    // if (context) {
-    //   const [seriesRangeCode, enableTechData, transmissionType] = context.children;
-    // }
+          return pictureTag;
+        };
 
-    bindAnalyticsValue(analytics, technicalLink, block);
+        const createImgTag = (quality) => {
+          const imgTag = document.createElement('img');
+          imgTag.src = getCosyImageUrl(responseJson, resolutionKey, quality);
+          imgTag.alt = 'Cosy Image';
+          return imgTag;
+        };
+        // for condition based cosyImage if selected
+        if (modelGroup.children[2].textContent === 'true') {
+          const modelPictureElement = createPictureTag(40);
+          rightPanelTitleAndImg.append(modelPictureElement);
+        }
+        const modelThumbnailElement = createImgTag(90); // for left Nav
 
-    if (modelGroup.children) {
-      generateLeftPanelModelList(modelGroup, element, selectedModelDdlMob, analytics, block);
-      const modelListItem = document.createElement('li');
-      modelListItem.append(element);
-      analytics.classList.add(selectedFuelType?.textContent || '');
-      leftPanelModelGrouping.append(modelListItem);
-    }
+        if (context) element.removeChild(context);
+
+        // if (context) {
+        //   const [seriesRangeCode, enableTechData, transmissionType] = context.children;
+        // }
+
+        bindAnalyticsValue(analytics, technicalLink, block);
+
+        if (modelGroup.children) {
+          generateLeftPanelModelList(
+            modelGroup,
+            element,
+            selectedModelDdlMob,
+            analytics,
+            block,
+          );
+          const modelListItem = document.createElement('li');
+          modelListItem.append(element);
+          analytics.classList.add(selectedFuelType?.textContent || '');
+          leftPanelModelGrouping.append(modelListItem);
+        }
+
+        leftPanelModelGrouping.append(modelThumbnailElement);
+      });
+    });
+
+    buildContext(modelCodeArray).then(() => {
+      const wdhModelPlaceholder = fetchModelPlaceholderObject();
+      // const wdhSetPlaceholder = fetchSetPlaceholderObject();
+      const wdhTechPlaceholder = fetchTechDataPlaceholderObject();
+      const modelRegex = /\{model(.*?)}/g;
+      let textContent; // const textContent = placeholder.innerText
+      let updatedPlaceholder = replacePlaceholder(textContent, wdhModelPlaceholder, modelRegex);
+      // const setRegex = /\{set(.*?)}/g;
+      // updatedPlaceholder = replacePlaceholder(updatedPlaceholder, wdhSetPlaceholder, setRegex);
+      // technicalData
+      const techRegex = /\{tech(.*?)}/g;
+      updatedPlaceholder = replacePlaceholder(updatedPlaceholder, wdhTechPlaceholder, techRegex);
+      console.log(wdhTechPlaceholder);
+      block.append(updatedPlaceholder);
+    });
   });
 
   // appending model group to UI
