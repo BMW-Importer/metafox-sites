@@ -2943,6 +2943,11 @@
     "id": "download",
     "fields": [
       {
+        "component": "tab",
+        "name": "general",
+        "label": "General"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "download",
@@ -2956,6 +2961,35 @@
         "value": "",
         "label": "Download Label",
         "description": "Defines the name of the downloadable element."
+      },
+      {
+        "component": "tab",
+        "name": "analytics",
+        "label": "Analytics Settings"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "analyticsTab",
+        "value": "",
+        "label": "Analytics Tab",
+        "description": "Defines settings related to analytics tab."
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "analyticsLabel",
+        "value": "",
+        "label": "Analytics Label",
+        "description": "Defines the label for analytics."
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "analyticLabel",
+        "value": "",
+        "label": "Analytic Label",
+        "description": "Defines the label for analytic settings."
       }
     ]
   },
