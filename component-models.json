@@ -2970,10 +2970,11 @@
       },
       {
         "component":"text-input",
-        "name":"analytics_label",
+        "name":"analytics-label",
         "label":"Analytics Label",
-        "valueType": " "
-      }    
+        "valueType": "string",
+        "value": ""
+      }   
     ]
   },
   {
