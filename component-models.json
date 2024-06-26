@@ -2973,7 +2973,8 @@
         "name":"analytics-label",
         "label":"Analytics Label",
         "valueType": "string",
-        "value": ""
+        "value": "",
+        "description": "Defines the label for analytics."
       }   
     ]
   },
