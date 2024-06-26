@@ -59,7 +59,6 @@ export default function decorate(block) {
     anchorEle.dataset.eventInfo = JSON.stringify(eventInfo);
     console.log('eventType:', 'custom.link');
     console.log('eventInfo.category.linkURL:', linkURL);
-    
     console.log('subCategory:', subCategory);
     console.log('block:', blockName);
     console.log('section:', anchorEle.dataset.analyticsSectionId);

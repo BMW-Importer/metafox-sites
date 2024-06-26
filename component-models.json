@@ -2963,33 +2963,37 @@
         "description": "Defines the name of the downloadable element."
       },
       {
-        "component": "tab",
-        "name": "analytics",
-        "label": "Analytics Settings"
+        "component":"tab",
+        "name":"analytics_tab",
+        "label":"Analytics"
+
       },
       {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "analyticsTab",
-        "value": "",
-        "label": "Analytics Tab",
-        "description": "Defines settings related to analytics tab."
+        "component":"text-input",
+        "name":"analytics_label",
+        "label":"Analytics Label",
+        "valueType": " "
+
       },
       {
-        "component": "text-input",
+        "component":"select",
+        "name":"analytics_button",
+        "label":"Button/Link Type", 
         "valueType": "string",
-        "name": "analyticsLabel",
-        "value": "",
-        "label": "Analytics Label",
-        "description": "Defines the label for analytics."
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "analyticLabel",
-        "value": "",
-        "label": "Analytic Label",
-        "description": "Defines the label for analytic settings."
+        "options": [
+          {
+            "name": "exit",
+            "value": "exit"
+          },
+          {
+            "name": "download",
+            "value": "download"
+          },
+          {
+            "name": "other",
+            "value": "other"
+          }          
+        ]    
       }
     ]
   },
