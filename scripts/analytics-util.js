@@ -33,6 +33,7 @@ const event_tracking = {
       blockName,
       sectionId,
       linkURL,
+      linkName,
     ] = prop;
   
     const randomNum = 100000 + Math.random() * 900000;
@@ -49,6 +50,10 @@ const event_tracking = {
     if (analyticsLabel) {
       event_tracking.eventInfo.category.linkName = analyticsLabel;
       event_tracking.eventInfo.block.blockInfo.blockDetails = analyticsLabel;
+    }
+
+    if(linkName) {
+      event_tracking.eventInfo.category.linkName = linkName;
     }
   
     if (linkURL) {

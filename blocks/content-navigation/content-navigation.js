@@ -216,8 +216,8 @@ export default function decorate(block) {
 
   const generealTabSelector = block.querySelectorAll('p:not([class])');
   const generalTabValues = getTextContent(generealTabSelector);
-  const [contentnavigationLabel, background, isEnabled, analyticsCategory,
-    analyticsSubCategory] = generalTabValues;
+  const [contentnavigationLabel, background, isEnabled, analyticsLabel,
+    analyticsCategory, analyticsSubCategory] = generalTabValues;
 
   const getButtonTabValues = (selector) => Array.from(selector).map((p) => {
     const anchor = p.querySelector('a');
@@ -277,6 +277,9 @@ export default function decorate(block) {
       anchor.classList.add('cmp-contentnavigation-anchor');
       anchor.textContent = label;
       anchor.href = link;
+      if (analyticsLabel) {
+        anchor.dataset.analyticsLabel = analyticsLabel;
+      }
       if (analyticsCategory) {
         anchor.dataset.analyticsCategory = analyticsCategory;
       }

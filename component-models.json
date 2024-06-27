@@ -3301,6 +3301,11 @@
     "id": "download",
     "fields": [
       {
+        "component": "tab",
+        "name": "general",
+        "label": "General"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "download",
@@ -3314,7 +3319,21 @@
         "value": "",
         "label": "Download Label",
         "description": "Defines the name of the downloadable element."
-      }
+      },
+      {
+        "component":"tab",
+        "name":"analytics_tab",
+        "label":"Analytics"
+
+      },
+      {
+        "component":"text-input",
+        "name":"analytics-label",
+        "label":"Analytics Label",
+        "valueType": "string",
+        "value": "",
+        "description": "Defines the label for analytics."
+      }   
     ]
   },
   {
