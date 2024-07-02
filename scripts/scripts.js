@@ -262,5 +262,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Set a cookie named "exampleCookie" with the value "cookieValue" that expires in 7 days
-  setCookie("cc_consentCookie", "Sample cookie value", 7);
+  setCookie("cc_consentCookie", "{'bmw_rs_family':{'cmm':{'advertising':1},'cdc':1,'tp':1661330829156,'lmt':1719478708680}}", 7);
 });
