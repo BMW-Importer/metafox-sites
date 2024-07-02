@@ -5,8 +5,7 @@ import {
 
 export default function decorate(block) {
   let imgTag = document.createElement('img');
-  const props = [...block.children].map((row) => row.firstElementChild);
-  const [, placeholder] = props;
+  
   const modelCodeArray = ['7K11'];
   //  const modelCodeArray = ['7K11', '61CM', '7K11'];
   block.textContent = '';

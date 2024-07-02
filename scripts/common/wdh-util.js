@@ -1,6 +1,6 @@
 import {
-  buildModelPlaceholder, buildSetPlaceholder,
-  fetchSetPlaceholderObject, fetchModelPlaceholderObject,
+  buildModelPlaceholder, buildSetPlaceholder, buildTechDataPlaceholder,
+  fetchSetPlaceholderObject, fetchModelPlaceholderObject, fetchTechDataPlaceholderObject
 } from './wdh-placeholders.js';
 
 async function getApiResponse(modelCode) {
@@ -43,10 +43,14 @@ export async function buildContext(modelCodesArray) {
   try {
     await fetchAllModels(modelCodesArray).then((response) => {
       buildSetPlaceholder(response);
-      buildModelPlaceholder(response[0]);
+      buildModelPlaceholder(response[0]);      
       const modelPlaceholder = fetchModelPlaceholderObject();
       const setPlaceholder = fetchSetPlaceholderObject();
-      return { modelPlaceholder, setPlaceholder };
+      const techDataPlaceholder = fetchTechDataPlaceholderObject();
+      // response[0].model.vehicles.forEach(function (data) {
+      //   buildTechDataPlaceholder(data, data.transmissionCode);
+      // })
+      return { modelPlaceholder, setPlaceholder, techDataPlaceholder };
     });
   } catch (error) {
     console.log('Error fetching data for building get placeholder', error);
@@ -100,4 +104,20 @@ export function getResolutionKey(screenWidth) {
   // Determine the appropriate resolution based on screen width
   const matchingBreakpoint = breakpoints.find((breakpoint) => screenWidth >= breakpoint.minWidth);
   return matchingBreakpoint ? matchingBreakpoint.key : 'res_1280x720'; // Default to medium desktop if no match for fallback case
+}
+
+export function getFuelTypeImage(powerTrain) {
+  const fuelTypeMap = {
+      'E': 'fuel_type_bev',
+      'X': 'fuel_type_phev'
+  };
+  return fuelTypeMap[powerTrain] || 'no_image_type';
+}
+
+export function getFuelTypeLabelDesc(powerTrain) {
+  const fuelTypeDesc = {
+      'E': 'Vollelektrisch',
+      'X': 'Plug-in-Hybrid'
+  };
+  return fuelTypeDesc[powerTrain] || ' ';
 }

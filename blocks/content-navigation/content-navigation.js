@@ -1,5 +1,8 @@
 const { body } = document;
 const sections = document.querySelectorAll('div[data-contentnavigation="true"],:not([data-contentnavigation])');
+
+// if it is true or if it is data attr is not avilable
+// in case of false it should not select
 const viewPortWidth = window.innerWidth;
 
 function handleOnScrollActiveLink() {

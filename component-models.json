@@ -49,12 +49,27 @@
         "description": "Defines the pre-headline that will appear on the page."
       },
       {
-        "component": "text",
-        "valueType": "string",
+        "component": "select",
         "name": "type",
-        "label": "Eyebrow",
-        "value": "p",
-        "hidden": true
+        "value": "",
+        "label": "Eyebrow Type",
+        "valueType": "string",
+        "required": true,
+        "description": "Defines the styling of the eyebrow that will be displayed on the page.",
+        "options": [
+          {
+            "name": "Eyebrow 1 Bold",
+            "value": "h4"
+          },
+          {
+            "name": "Eyebrow 2 Bold",
+            "value": "h5"
+          },
+          {
+            "name": "Iconization",
+            "value": "h6"
+          }
+        ]
       }
     ]
   },
@@ -2167,13 +2182,6 @@
         "label": "Analytics"
       },
       {
-        "component":"text-input",
-        "name":"analytics_label",
-        "label":"Analytics Label",
-        "valueType": " "
-
-      },
-      {
         "component":"select",
         "name":"analytics_button",
         "label":"Button/Link Type", 
@@ -2558,191 +2566,6 @@
             "value": "ghost-img-btn ghost-img-flex-btn"
           }
         ]
-      },
-      {
-        "component": "tab",
-        "name": "analytics_tab",
-        "label": "Analytics"
-      },
-      {
-        "component":"text-input",
-        "name":"analyticscta1_label",
-        "label":"Analytics Link Label",
-        "description":"Defines a brief description of the content within the Text with Video for analytics. Please fill out this field in English.",
-        "valueType": " "
-
-      },
-      {
-        "component":"select",
-        "name":"analyticscta1_button",
-        "label":"Button/Link Type", 
-        "valueType": "string",
-        "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
-        "options": [
-          {
-            "name": "exit",
-            "value": "exit"
-          },
-          {
-            "name": "download",
-            "value": "download"
-          },
-          {
-            "name": "other",
-            "value": "other"
-          }          
-        ]    
-      },
-      {
-        "component": "select",
-        "label": "Only if other is selected the following opotions should appear:",
-        "name": "analyticscta1_others",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "analyticscta1_button"}, "other"] },
-        "options": [
-          {
-            "name": "Learn More",
-            "value": "learnMore"
-          },
-          {
-            "name": "Configure",
-            "value": "Configure"
-          },
-          {
-            "name": "Technical Data",
-            "value": "Technical Data"
-          },
-          {
-            "name": "Options and Prices",
-            "value": "Options and Prices"
-          },
-          {
-            "name": "Vehicles in Stock",
-            "value": "Vehicles in Stock"
-          },
-          {
-            "name": "Request for Offer",
-            "value": "Request for Offer"
-          },
-          {
-            "name": "Sales and Service Network",
-            "value": "Sales and Service Network"
-          },
-          {
-            "name": "Test Drive",
-            "value": "Test Drive"
-          },
-          {
-            "name": "Newsletter Signup",
-            "value": "Newsletter Signup"
-          },
-          {
-            "name": "Contact",
-            "value": "Contact"
-          },
-          {
-            "name": "Search",
-            "value": "Search"
-          },
-          {
-            "name": "Show More / Show Less",
-            "value": "Show More / Show Less"
-          },
-          {
-            "name": "Other",
-            "value": "Other"
-          }
-        ]
-      },
-      {
-        "component":"text-input",
-        "name":"analyticscta2_label",
-        "label":"Analytics Link Label",
-        "description":"Defines a brief description of the content within the Text with Video for analytics. Please fill out this field in English.",
-        "valueType": " "
-
-      },
-      {
-        "component":"select",
-        "name":"analyticscta2_button",
-        "label":"Button/Link 2 Type", 
-        "valueType": "string",
-        "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
-        "options": [
-          {
-            "name": "exit",
-            "value": "exit"
-          },
-          {
-            "name": "download",
-            "value": "download"
-          },
-          {
-            "name": "other",
-            "value": "other"
-          }          
-        ]    
-      },
-      {
-        "component": "select",
-        "label": "Only if other is selected the following opotions should appear:",
-        "name": "analyticscta2_others",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "analyticscta2_button"}, "other"] },
-        "options": [
-          {
-            "name": "Learn More",
-            "value": "learnMore"
-          },
-          {
-            "name": "Configure",
-            "value": "Configure"
-          },
-          {
-            "name": "Technical Data",
-            "value": "Technical Data"
-          },
-          {
-            "name": "Options and Prices",
-            "value": "Options and Prices"
-          },
-          {
-            "name": "Vehicles in Stock",
-            "value": "Vehicles in Stock"
-          },
-          {
-            "name": "Request for Offer",
-            "value": "Request for Offer"
-          },
-          {
-            "name": "Sales and Service Network",
-            "value": "Sales and Service Network"
-          },
-          {
-            "name": "Test Drive",
-            "value": "Test Drive"
-          },
-          {
-            "name": "Newsletter Signup",
-            "value": "Newsletter Signup"
-          },
-          {
-            "name": "Contact",
-            "value": "Contact"
-          },
-          {
-            "name": "Search",
-            "value": "Search"
-          },
-          {
-            "name": "Show More / Show Less",
-            "value": "Show More / Show Less"
-          },
-          {
-            "name": "Other",
-            "value": "Other"
-          }
-        ]
       }
     ]
   },
@@ -3075,191 +2898,6 @@
             "value": "ghost-img-btn ghost-img-flex-btn"
           }
         ]
-      },
-      {
-        "component": "tab",
-        "name": "analytics_tab",
-        "label": "Analytics"
-      },
-      {
-        "component":"text-input",
-        "name":"analyticscta1_label",
-        "label":"Analytics Link Label",
-        "description":"Defines a brief description of the content within the Text with Video for analytics. Please fill out this field in English.",
-        "valueType": " "
-
-      },
-      {
-        "component":"select",
-        "name":"analyticscta1_button",
-        "label":"Button/Link Type", 
-        "valueType": "string",
-        "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
-        "options": [
-          {
-            "name": "exit",
-            "value": "exit"
-          },
-          {
-            "name": "download",
-            "value": "download"
-          },
-          {
-            "name": "other",
-            "value": "other"
-          }          
-        ]    
-      },
-      {
-        "component": "select",
-        "label": "Only if other is selected the following opotions should appear:",
-        "name": "analyticscta1_others",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "analyticscta1_button"}, "other"] },
-        "options": [
-          {
-            "name": "Learn More",
-            "value": "learnMore"
-          },
-          {
-            "name": "Configure",
-            "value": "Configure"
-          },
-          {
-            "name": "Technical Data",
-            "value": "Technical Data"
-          },
-          {
-            "name": "Options and Prices",
-            "value": "Options and Prices"
-          },
-          {
-            "name": "Vehicles in Stock",
-            "value": "Vehicles in Stock"
-          },
-          {
-            "name": "Request for Offer",
-            "value": "Request for Offer"
-          },
-          {
-            "name": "Sales and Service Network",
-            "value": "Sales and Service Network"
-          },
-          {
-            "name": "Test Drive",
-            "value": "Test Drive"
-          },
-          {
-            "name": "Newsletter Signup",
-            "value": "Newsletter Signup"
-          },
-          {
-            "name": "Contact",
-            "value": "Contact"
-          },
-          {
-            "name": "Search",
-            "value": "Search"
-          },
-          {
-            "name": "Show More / Show Less",
-            "value": "Show More / Show Less"
-          },
-          {
-            "name": "Other",
-            "value": "Other"
-          }
-        ]
-      },
-      {
-        "component":"text-input",
-        "name":"analyticscta2_label",
-        "label":"Analytics Link Label",
-        "description":"Defines a brief description of the content within the Text with Video for analytics. Please fill out this field in English.",
-        "valueType": " "
-
-      },
-      {
-        "component":"select",
-        "name":"analyticscta2_button",
-        "label":"Button/Link 2 Type", 
-        "valueType": "string",
-        "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
-        "options": [
-          {
-            "name": "exit",
-            "value": "exit"
-          },
-          {
-            "name": "download",
-            "value": "download"
-          },
-          {
-            "name": "other",
-            "value": "other"
-          }          
-        ]    
-      },
-      {
-        "component": "select",
-        "label": "Only if other is selected the following opotions should appear:",
-        "name": "analyticscta2_others",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "analyticscta2_button"}, "other"] },
-        "options": [
-          {
-            "name": "Learn More",
-            "value": "learnMore"
-          },
-          {
-            "name": "Configure",
-            "value": "Configure"
-          },
-          {
-            "name": "Technical Data",
-            "value": "Technical Data"
-          },
-          {
-            "name": "Options and Prices",
-            "value": "Options and Prices"
-          },
-          {
-            "name": "Vehicles in Stock",
-            "value": "Vehicles in Stock"
-          },
-          {
-            "name": "Request for Offer",
-            "value": "Request for Offer"
-          },
-          {
-            "name": "Sales and Service Network",
-            "value": "Sales and Service Network"
-          },
-          {
-            "name": "Test Drive",
-            "value": "Test Drive"
-          },
-          {
-            "name": "Newsletter Signup",
-            "value": "Newsletter Signup"
-          },
-          {
-            "name": "Contact",
-            "value": "Contact"
-          },
-          {
-            "name": "Search",
-            "value": "Search"
-          },
-          {
-            "name": "Show More / Show Less",
-            "value": "Show More / Show Less"
-          },
-          {
-            "name": "Other",
-            "value": "Other"
-          }
-        ]
       }
     ]
   },
@@ -3301,11 +2939,6 @@
     "id": "download",
     "fields": [
       {
-        "component": "tab",
-        "name": "general",
-        "label": "General"
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "download",
@@ -3319,21 +2952,7 @@
         "value": "",
         "label": "Download Label",
         "description": "Defines the name of the downloadable element."
-      },
-      {
-        "component":"tab",
-        "name":"analytics_tab",
-        "label":"Analytics"
-
-      },
-      {
-        "component":"text-input",
-        "name":"analytics-label",
-        "label":"Analytics Label",
-        "valueType": "string",
-        "value": "",
-        "description": "Defines the label for analytics."
-      }   
+      }
     ]
   },
   {
@@ -3343,14 +2962,6 @@
         "component": "tab",
         "label": "General",
         "name": "content_videoCarouselTab1"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "classes",
-        "description": "Defines the classes",
-        "value": "",
-        "hidden": true
       },
       {
         "component": "text",
@@ -3515,7 +3126,7 @@
       {
         "component": "text",
         "name": "cta_videoCarouselCtaLinkText",
-        "label": "Button/Link",
+        "label": "Link Label",
         "description": "Defines the text to be displayed in the button or as the link. ",
         "valueType": "string"
       },
@@ -3552,14 +3163,6 @@
         "label": "General",
         "name": "content_imageCarouselTab1",
         "description": "Tab that includes general property fields."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "classes",
-        "description": "Defines the classes",
-        "value": "",
-        "hidden": true
       },
       {
         "component": "text",
@@ -3631,7 +3234,7 @@
         "component": "text",
         "name": "cta_imageCarouselLinkText",
         "description": "Defines the text to be displayed in the button or as the link. ",
-        "label": "Button/Link",
+        "label": "Link Label",
         "valueType": "string"
       },
       {
@@ -3813,7 +3416,7 @@
         "component": "custom-asset-namespace:custom-asset",
         "name": "image",
         "label": "Image",
-        "configUrl": "https://raw.githubusercontent.com/BMW-Importer/metafox-sites/main/tools/image-config.json",
+        "configUrl": "https://raw.githubusercontent.com/nitinja/xwalk-test-gems/main/tools/assets-selector/image.config.json",
         "valueType": "string"
       },
       {
@@ -3826,399 +3429,6 @@
         "name": "imageAlt",
         "label": "Alt Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "drivetrain-switch",
-    "fields": [
-      {
-        "component": "tab",
-        "label": "General",
-        "name": "content"
-      },
-      {
-        "component": "select",
-        "label": "Model Label Source",
-        "name": "content_labelsource",
-        "valueType": "string",
-        "description": "Defines the source of the Model Labels displayed in the panels with the vehicles on the left-hand side of the DriveTrain Switch.",
-        "options": [
-          {
-            "name": "Description",
-            "value": "description"
-          },
-          {
-            "name": "Fuel Type",
-            "value": "fuel-type"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "content_labelsourceType",        
-        "valueType": "string",
-        "value": "h2",
-        "hidden": true
-      },
-      {
-        "component": "tab",
-        "label": "Details",
-        "name": "detail"
-      },
-      {
-        "component": "text",
-        "label": "Active Model Title",
-        "name": "detail_activemodel",
-        "description": "Defines the active model title to be displayed behind the image of the vehicle.",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "label": "Active Model Title",
-        "name": "detail_activemodelType",        
-        "valueType": "string",
-        "value": "h3",
-        "hidden": true
-      },     
-      {
-        "component": "text",
-        "label": "Model Description",
-        "name": "detail_descp",
-        "description": "Defines the title that will appear above the Technical Data facts, e.g., BMW X2 SDrive18d. Placeholders like {model.description} can be authored.",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "label": "Model Description",
-        "name": "detail_descpType",        
-        "valueType": "string",
-        "value": "h4",
-        "hidden": true
-      },
-      {
-        "component": "text",
-        "label": "Technical Data Link",
-        "name": "detail_technocalLink",
-        "description": "Defines the Technical Data page to which the user will be directed to. Please add the full URL including https://",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "label": "Technical Data Link Label",
-        "name": "detail_technocalLinkText",
-        "description": "Defines the text to be displayed in the Technical Data button.",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "label": "Technical Data Button Stying",
-        "name": "detail_technocalLinkType",
-        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
-        "valueType": "string",
-        "value": "primary",
-        "hidden": true
-      },      
-      {
-        "component": "boolean",
-        "label": "Enable Popover",
-        "name": "detail_popover",
-        "description": "Defines if a popover is enabled for this button.",
-        "value": true,
-        "valueType": "boolean"
-      },
-      {
-        "component": "text",
-        "label": "Enable Popover",
-        "name": "detail_popoverType",        
-        "valueType": "string",
-        "value": "h6",
-        "hidden": true
-      },
-      {
-        "component": "aem-content-fragment",
-        "label": "Disclaimer",
-        "name": "fragment_disclaimerLink",
-        "description": "Defines the Disclaimer Content Fragment that will be displayed in the DriveTrain Switch. Please select the relevant disclaimers per market and language under /content/dam/metafox/",
-        "valueType": "string"
-      },
-      {
-        "component": "tab",
-        "label": "Technical Data Facts",
-        "name": "technical"
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Label 1",
-        "name": "technical_fact1",
-        "description": "Defines the label appearing above the Technical Data Fact Value 1. ",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical_fact1Type",        
-        "valueType": "string",
-        "value": "h2",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Value 1",
-        "name": "technical_value1",
-        "description": "Defines value appearing underneath the Technical Data Fact Label 1. Placeholders can be authored to populate technical data values.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical_value1Type",        
-        "valueType": "string",
-        "value": "h3",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Label 2",
-        "name": "technical_fact2",
-        "description": "Defines the label appearing above the Technical Data Fact Value 2.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical_fact2Type",        
-        "valueType": "string",
-        "value": "h4",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Value 2",
-        "name": "technical_value2",
-        "description": "Defines value appearing underneath the Technical Data Fact Label 2. Placeholders can be authored to populate technical data values.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical_value2Type",        
-        "valueType": "string",
-        "value": "h5",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Label 3",
-        "name": "technical1_fact3",
-        "description": "Defines the label appearing above the Technical Data Fact Value 3.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical1_fact3Type",        
-        "valueType": "string",
-        "value": "h2",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Value 3",
-        "name": "technical1_value3",
-        "description": "Defines value appearing underneath the Technical Data Fact Label 3. Placeholders can be authored to populate technical data values.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical1_value3Type",        
-        "valueType": "string",
-        "value": "h3",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Label 4",
-        "name": "technical1_fact4",
-        "description": "Defines the label appearing above the Technical Data Fact Value 4.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical1_fact4Type",        
-        "valueType": "string",
-        "value": "h4",
-        "hidden": true
-      },
-      {
-        "component": "text-input",
-        "label": "Technical Data Fact Value 4",
-        "name": "technical1_value4",
-        "description": "Defines value appearing underneath the Technical Data Fact Label 4. Placeholders can be authored to populate technical data values.",        
-        "valueType": "string"
-      },
-      {
-        "component": "text",        
-        "name": "technical1_value4Type",        
-        "valueType": "string",
-        "value": "h5",
-        "hidden": true
-      }
-    ]
-  },
-  {
-    "id": "drivetrain-model-card",
-    "fields": [
-      {
-        "component": "tab",
-        "label": "General",
-        "name": "group"
-      },
-      {
-        "component": "select",
-        "label": "Model Group",
-        "name": "group_model",
-        "description": "Defines the grouping of the vehicles.",
-        "required": true,
-        "valueType": "string",
-        "options": [
-          {
-            "name": "All Models",
-            "value": "all"
-          },
-          {
-            "name": "M Models",
-            "value": "m"
-          },
-          {
-            "name": "i Models",
-            "value": "i"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "label": "Model Group",
-        "name": "group_modelType",
-        "description": "Defines the grouping of the vehicles.",
-        "hidden": true,
-        "value": "h2",
-        "valueType": "string"
-      },
-      {
-        "component": "text-input",
-        "label": "Model Group Item Link",
-        "name": "group_modelLink",
-        "description": "Defines the link to the page a user lands on when clicking on the panel with the vehicle image on the left-hand side of the DriveTrain Switch.",
-        "required": true,
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "label": "Selected Model",
-        "description": "Defines if the model item and model card of this vehicle will be selected and displayed on the right hand side upon loading the DriveTrain Switch within a page. Please tick this option for the model card of the vehicle to be highlighted.",
-        "name": "group_selectedmodel",
-        "valueType": "boolean",
-        "value": false
-      },
-      {
-        "component": "tab",
-        "label": "Context",
-        "name": "wdh"
-      },
-      {
-        "component": "customtype",
-        "label": "Model Card Context",
-        "name": "wdh_customSeriesModelRangeSelection",
-        "description": "Defines the link to the page a user lands on when clicking on the panel with the vehicle image on the left-hand side of the DriveTrain Switch.",        
-        "valueType": "string"
-      },
-      {
-        "component": "tab",
-        "label": "Analytics",
-        "name": "analytics"
-      },
-      {
-        "component":"text-input",
-        "name":"analytics_label",
-        "label":"Analytics Label",
-        "valueType": "string"
-      },
-      {
-        "component":"select",
-        "name":"analytics_button",
-        "label":"Button/Link Type", 
-        "valueType": "string",
-        "options": [
-          {
-            "name": "exit",
-            "value": "exit"
-          },
-          {
-            "name": "download",
-            "value": "download"
-          },
-          {
-            "name": "other",
-            "value": "other"
-          }          
-        ]    
-      },
-      {
-        "component": "select",
-        "label": "Only if other is selected the following options should appear:",
-        "name": "analytics_others",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "analytics_button"}, "other"] },
-        "options": [
-          {
-            "name": "Learn More",
-            "value": "learnMore"
-          },
-          {
-            "name": "Configure",
-            "value": "Configure"
-          },
-          {
-            "name": "Technical Data",
-            "value": "Technical Data"
-          },
-          {
-            "name": "Options and Prices",
-            "value": "Options and Prices"
-          },
-          {
-            "name": "Vehicles in Stock",
-            "value": "Vehicles in Stock"
-          },
-          {
-            "name": "Request for Offer",
-            "value": "Request for Offer"
-          },
-          {
-            "name": "Sales and Service Network",
-            "value": "Sales and Service Network"
-          },
-          {
-            "name": "Test Drive",
-            "value": "Test Drive"
-          },
-          {
-            "name": "Newsletter Signup",
-            "value": "Newsletter Signup"
-          },
-          {
-            "name": "Contact",
-            "value": "Contact"
-          },
-          {
-            "name": "Search",
-            "value": "Search"
-          },
-          {
-            "name": "Show More / Show Less",
-            "value": "Show More / Show Less"
-          },
-          {
-            "name": "Other",
-            "value": "Other"
-          }    
-        ]
       }
     ]
   }

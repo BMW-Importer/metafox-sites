@@ -3,26 +3,468 @@
     flex-direction: column;
 }
 
+.drivetrain-switch-block .dts-selected-model-mob {   
+    align-items: center;
+    background-color: var(--background-color);
+    border: .0625rem solid var(--light-bbb);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: .5rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.drivetrain-switch-block .dts-selected-model-mob-popover {
+    border: .125rem solid #4d4d4d;
+    height: 3rem;
+    margin-top: 0;
+    padding-left: 0;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-right: 0;
+    text-align: left;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    min-height: 3.25rem;
+    text-decoration: none;
+}
+
+.drivetrain-switch-block .dts-selected-model-mob-popover .dts-selected-model-title {
+    color: #262626;
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-left: 1.25rem;
+}
+
+.dts-selected-model-mob-popover .dts-arrow-icon {
+    transform: rotate(-180deg);
+}
+
+
+.drivetrain-switch-block .dts-selected-model-title {
+    color: var(--light-text-color);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    padding-left: 1.25rem;
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    word-break: break-word;
+}
+
+.drivetrain-switch-block .dts-arrow-icon {
+    color: var(--light-border-color);
+    padding: 0 1.25rem;
+    transition: transform .5s ease-in-out;
+}
+
+.drivetrain-switch-block .dts-selected-model-mob.active .dts-arrow-icon {
+    transform: rotate(-180deg);
+}
+
 .drivetrain-switch-block .dts-left-panel {
     flex: 0 0 100%;
+    display: none;
+}
+
+.drivetrain-switch-block .dts-left-panel.enablepopover {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.drivetrain-switch-block .dts-left-panel.enablepopover::before {
+    background-color: #000c;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    content: "";
+}
+
+.drivetrain-switch-block .enablepopover .dts-model-grouping {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    z-index: 9999;
+    background: white;
+    padding: 0;
 }
 
 .drivetrain-switch-block .dts-right-panel {
     flex: 0 0 100%;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.drivetrain-switch-block .dts-right-model-title-container {
+    position: relative;     
+    width: 100%;
+    aspect-ratio: 1.5;
+}
+
+.drivetrain-switch-block .dts-active-model-title {
+    position: absolute;
+    margin: 0;   
+    color: #e6e6e6;
+    text-align: left;
+    padding: .75rem 1.25rem 0 0;
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    font-size: 119px;
+    font-weight: 300;
+    line-height: 119px;
+    z-index: -1;
+}
+
+.drivetrain-switch-block .dts-close-btn {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    padding-right: 1.25rem;
+}
+
+.drivetrain-switch-block .dts-close-btn-li {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    cursor: pointer;
+}
+
+.drivetrain-switch-block .dts-active-model-descp {
+    margin-top: 2rem;
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 32px;
+    width: 100%;
+    color: #262626;
+    text-transform: unset;
+}
+
+.drivetrain-switch-block .dts-model-category-img {
+    display: none;
+}
+
+.drivetrain-switch-block .dts-model-category-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.drivetrain-switch-block .dts-model-category-title {
+    background-color: #f2f2f2;
+    display: block;
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    padding: .5rem 1.25rem;
+}
+
+.drivetrain-switch-block .dts-model-category-descp {
+    background-color: #fff;
+    outline: 0;
+    width: 100%;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: start;
+    min-height: 3.25rem;
+    padding: 0 0 0 1.25rem;
+    text-decoration: none;
+    pointer-events: none;
+    text-align: start;
+    color: #262626;
+    font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    word-break: break-word;
+}
+
+.drivetrain-switch-block .dts-model-category-container.selected .dts-model-category-descp {
+    background-color: #000;
+    color: #fff;
+}
+
+.drivetrain-switch-block .dts-model-category-icon--selected {
+    padding-right: 20px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+.drivetrain-switch-block .dts-model-category-icon--selected::before {
+    font-size: 1.5rem;
+    font-weight: 400;
+    word-wrap: normal;
+    font-feature-settings: "liga";
+    content: "checkmark";
+    direction: ltr;
+    display: block;
+    font-family: bmw_next_icons;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid #0000;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.drivetrain-switch-block .fuel_type_phev::before{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: 'fuel_type_phev';
+    direction: ltr;
+    display: block;
+    font-family: bmw_next_icons;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid #0000;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.drivetrain-switch-block .fuel_type_bev::before{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: 'fuel_type_bev';
+    direction: ltr;
+    display: block;
+    font-family: bmw_next_icons;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid #0000;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.drivetrain-switch-block .dts-active-model-img img{
+    object-fit: cover;
+}
+
+@media (width >= 768px) {
+    .drivetrain-switch-block .dts-right-model-title-container {
+        aspect-ratio: 1.7777777778;
+    }
+
+    .drivetrain-switch-block .dts-active-model-title {
+        font-size: 126px;
+        line-height: 126px;
+        padding-top: 20px;
+    }
+
+    .drivetrain-switch-block .dts-active-model-descp {
+        font-size: 25px;
+        line-height: 36px;
+    }
 }
 
 /* desktop */
-@media (width >= 1280px) {
+@media (width >= 1024px) {
     .drivetrain-switch-block {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 19% 83.3%;
+        margin: 0 -12px;
+    }
+
+    .drivetrain-switch-block .mob-visible {
+        display: none;
+    }
+
+    .drivetrain-switch-block .dts-selected-model-mob {
+        display: none;
     }
 
     .drivetrain-switch-block .dts-left-panel {
-        flex: 0 0 40%;
+        display: block;
+        padding: 0 12px;
+    }
+
+    .drivetrain-switch-block .dts-left-panel.enablepopover {
+        position: relative;
     }
     
     .drivetrain-switch-block .dts-right-panel {
-        flex: 0 0 60%;
+        margin-top: 0;
+        padding: 0 12px;
+    }
+
+    .drivetrain-switch-block .dts-right-model-title-container {
+        aspect-ratio: 2.3333333333;
+    }
+
+    .drivetrain-switch-block .dts-active-model-title {        
+        padding-top: 24px;
+        padding-left: 96px;
+    }
+
+    .drivetrain-switch-block .dts-model-grouping {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        transition: opacity .5s ease-in .25s;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .drivetrain-switch-block .dts-model-category-title {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    .drivetrain-switch-block .dts-model-category-img {
+        display: inline-block;
+        max-width: 6.65vw;
+    }  
+    
+    .drivetrain-switch-block  .dts-category-box {
+        display: flex;
+        flex-direction: row;
+        padding: .875rem;
+        border: .125rem solid #bbb;
+        background-color: #fff;
+        color: #262626;
+        align-items: center;
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 var(--border-width, .125rem) var(--border-color, unset);
+        cursor: pointer;
+        gap: .25rem;
+        justify-content: center;
+        justify-content: unset;
+        min-height: 3.25rem;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .drivetrain-switch-block .dts-model-category-icon--selected {
+        display: none;
+    }
+
+    .drivetrain-switch-block .dts-model-category-descp {
+        font-weight: 300;
+        background-color: transparent;
+        color: #262626;
+        padding: 0;
+        min-height: unset;
+    }
+
+    .drivetrain-switch-block .dts-model-category-container.selected .dts-model-category-descp {
+        background-color: transparent;
+        color: #262626;
+    }
+
+    .drivetrain-switch-block .dts-model-category-container.selected .dts-category-box {
+        border: .125rem solid #4d4d4d;
+    }
+
+    .drivetrain-switch-block .dts-model-category-link {
+        display: flex;
+        gap: .25rem;
+    }
+
+    .drivetrain-switch-block .dts-model-category-container.selected .dts-category-box::before {
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 400;
+        height: 1rem;
+        padding: .25em;
+        width: 1rem;
+        word-wrap: normal;
+        background: #4d4d4d;
+        border-radius: 50%;
+        color: #fff;
+        content: "checkmark";
+        direction: ltr;
+        display: block;
+        font-family: bmw_next_icons;
+        font-style: normal;
+        line-height: 1;
+        outline: 1px solid #0000;
+        right: -.333em;
+        text-align: left;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        top: -10px;
+        white-space: nowrap;
+    }
+}
+
+@media (width >= 1280px) {
+    .drivetrain-switch-block {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    .drivetrain-switch-block .dts-active-model-title {
+        font-size: 210px;
+        line-height: 210px;
+        padding-top: 0;
+        padding-right: 24px;
+    }
+
+    .drivetrain-switch-block .dts-active-model-descp {
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: -20px;
+    }
+}
+
+@media (width >= 1440px) {
+    .drivetrain-switch-block {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+}
+
+@media (width >= 1920px) {
+    .drivetrain-switch-block .dts-active-model-title {
+        font-size: 252px;
+        line-height: 252px;
+        padding: 40px 32px 0 172px;
+    }
+
+    .drivetrain-switch-block .dts-active-model-descp {
+        font-size: 34px;
+        line-height: 48px;
+        margin-top: -24px;
     }
 }

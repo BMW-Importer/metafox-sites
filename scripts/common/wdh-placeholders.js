@@ -183,9 +183,9 @@ export function buildModelPlaceholder(responseJson) {
   modelPlaceholderObject.trunkCapacity = responseJson.model.trunkCapacity;
 }
 
-export function buildTechDataPlaceholder(responseJson) {
-  console.log(responseJson.vechile);
-  techPlaceholderObject.brand = responseJson.vechile[0].brand;
+export function buildTechDataPlaceholder(vehicleJSON, transmissionCode) {
+  techPlaceholderObject.fuelType = vehicleJSON.technicalData.powerTrain.fuelType;
+  techPlaceholderObject.brand = vehicleJSON.technicalData.powerTrain.transmissionCode;
 }
 
 export function buildSetPlaceholder(responseJsonArray) {
