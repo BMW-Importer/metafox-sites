@@ -231,6 +231,24 @@
         ]
       },
       {
+        "component": "select",
+        "name": "style",
+        "description": "Defines the Background color.",
+        "value": "default",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "boolean",
         "label": "Display Top Margin",
         "name": "fixedsectiontopmargin",
