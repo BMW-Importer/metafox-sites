@@ -231,6 +231,24 @@
         ]
       },
       {
+        "component": "select",
+        "name": "background",
+        "description": "Defines the background color of the section.",
+        "value": "default",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "boolean",
         "label": "Display Top Margin",
         "name": "fixedsectiontopmargin",
@@ -331,6 +349,24 @@
         ]
       },
       {
+        "component": "select",
+        "name": "sectionbgcolor",
+        "description": "Defines the background color of the flexible width section.",
+        "value": "",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "boolean",
         "label": "Display Top Margin",
         "name": "sectiontopmargin",
@@ -420,6 +456,24 @@
           {
             "name": "Buttons",
             "value": "primary"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "background",
+        "description": "Defines the background color of the tabs section.",
+        "value": "default",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
           }
         ]
       },
