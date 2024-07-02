@@ -232,7 +232,7 @@
       },
       {
         "component": "select",
-        "name": "style",
+        "name": "background",
         "description": "Defines the Background color.",
         "value": "default",
         "label": "Background Color",
