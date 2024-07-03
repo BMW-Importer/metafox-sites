@@ -328,6 +328,24 @@
       },
       {
         "component": "select",
+        "name": "background",
+        "description": "Defines the Background color.",
+        "value": "default",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
+        "component": "select",
         "name": "sectionalignment",
         "description": "Defines the alignment of the Default Content added within the Section.",
         "value": "",

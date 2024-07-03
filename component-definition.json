@@ -111,6 +111,7 @@
                   "model": "flexible-width-section",
                   "sectiontopmargin": true,
                   "sectionalignment": "center",
+                  "sectionbgcolor":"grey",
                   "sectionwidth":"grid-10",
                   "filter": "flexible-width-section"
                 }

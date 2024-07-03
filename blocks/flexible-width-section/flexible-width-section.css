@@ -40,6 +40,10 @@
   justify-content: center;
 }
 
+[data-sectionbgcolor='grey'] {
+  background-color: grey;
+}
+
  [data-sectionwidth^='grid'][data-sectionalignment='left']  .button-container > .align-icon {
   justify-content: left;
 }
