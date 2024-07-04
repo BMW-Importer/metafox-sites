@@ -394,6 +394,24 @@
         "label": "Anchor ID"
       },
       {
+        "component": "select",
+        "name": "background",
+        "description": "Defines the Background color.",
+        "value": "default",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "boolean",
         "label": "Display in Content Navigation",
         "name": "contentnavigation",
@@ -411,6 +429,24 @@
         "name": "analytics-label",
         "value": "",
         "label": "Section Label"
+      },
+      {
+        "component": "select",
+        "name": "background",
+        "description": "Defines the Background color.",
+        "value": "default",
+        "label": "Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
       }
     ]
   },
