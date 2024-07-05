@@ -3,14 +3,67 @@
 <script src="/scripts/scripts.js" type="module"></script>
 <link rel="stylesheet" href="/styles/styles.css"/>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<!-- <script type="text/javascript"  src="https://main--metafox-sites--bmw-importer.hlx.page/scripts/epaas.js" onload="epaas.api.initialize({tenant: 'bmw_rs', locale: 'sr_RS', devmode:true, async : false, stage : 'int'})"></script> -->
+<script type="text/javascript" src="https://www.bmw.com/etc/clientlibs/wcmp/consentcontroller.fallback/epaas.js" onload="epaas.api.initialize({tenant: 'bmw_rs', locale: 'sr_RS'})"></script>
+<script>
 
-<script type="text/javascript">
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://main--metafox-sites--bmw-importer.hlx.page/scripts/epaas.js';
-    script.onload = function() {
-        epaas.api.initialize({tenant: 'bmw_rs', locale: 'sr_RS', devmode: true, async: false, stage: 'int'});
-    };
-    document.head.appendChild(script);
+
+function myInitFn(event) {
+    console.log(event, 'test event');
+  if (event.detail) {
+      console.log('epaas api available and ready to use for accept', event.detail);
+      alloy("setConsent", {
+        consent: [{
+        standard: "Adobe",
+        version: "2.0",
+        value: {
+            collect: {
+            val: "y"
+            },
+            metadata: {
+            time: "2021-03-17T15:48:42-07:00"
+            }
+        }
+        }]
+    });
+  } else {
+      // DEPRECATED. In the future, the event will not be sent when ePaaS fails to initialize, but only when the initialization was successful.
+      // Please use 'consentcontroller.api.notavailable' instead, for a callback when ePaaS fails to initialize. See not below
+      console.log('ERROR: epaas api initialization failed');
+      
+  }
+} 
+
+function myInitFnR(event) {
+    console.log(event, 'test event');
+  if (event.detail) {
+      console.log('epaas api available and ready to use for reject', event.detail);
+      alloy("setConsent", {
+        consent: [{
+        standard: "Adobe",
+        version: "2.0",
+        value: {
+            collect: {
+            val: "n"
+            },
+            metadata: {
+            time: "2021-03-17T15:48:42-07:00"
+            }
+        }
+        }]
+    });
+  } else {
+      // DEPRECATED. In the future, the event will not be sent when ePaaS fails to initialize, but only when the initialization was successful.
+      // Please use 'consentcontroller.api.notavailable' instead, for a callback when ePaaS fails to initialize. See not below
+      console.log('ERROR: epaas api initialization failed');
+      
+  }
+} 
+
+window.onload = function() {
+  // register for 'initialized' event inside the client application
+  ((window.epaas && window.epaas.api) || window).addEventListener('consentcontroller.api.initialized', myInitFn);
+// de-register 'initialized' event inside the client application
+((window.epaas && window.epaas.api) || window).removeEventListener('consentcontroller.api.initialized', myInitFnR);
+};
+
 </script>
