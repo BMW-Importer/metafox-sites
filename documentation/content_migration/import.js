@@ -1,25 +1,22 @@
 const createMetadata = (main, document) => {
-const accordianWrpper = document.querySelectorAll('.accordion-wrapper');
 const listOfAccordian = document.querySelectorAll('.accordion');
 listOfAccordian.forEach((accordion) => {
-  const accordianBlock =[];
-  const name=['Accordian'];
-  accordianBlock.push(name);
+	const accordianBlock =[];
+	const name=['Accordian'];
+	accordianBlock.push(name);
 const listOfAccordianItem = document.querySelectorAll('.cmp-accordion__item');
 listOfAccordianItem.forEach((accordionItem) => {
-  const accordianData=[];
+	const accordianData=[];
     const heading = accordionItem.querySelector('.cmp-accordion__title').textContent;
 accordianData.push(heading);
 const detail = accordionItem.querySelector('.cmp-text').textContent;
 accordianData.push(detail);
 accordianData.push(false);
-  accordianBlock.push(accordianData);
+	accordianBlock.push(accordianData);
   });
   const accordianTable = WebImporter.DOMUtils.createTable(accordianBlock,document);
-// main.append(accordianTable);
-accordianWrpper.append(accordianTable);
-accordianContainer.append(accordianWrpper);
-main.append(accordianContainer);
+main.append(accordianTable);
+
 const accordiancells = [
   ['Section Metadata'],
   ['sectionwidth', 'grid-6'],  //replace with query later
@@ -63,7 +60,7 @@ elements.forEach(element => {
 		}
         
     });
-    const description = element.querySelector('.cmp-text__paragraph').textContent;
+    const description = element.querySelector('.cmp-text').textContent;
 	const para = document.createElement('p');
           para.textContent = description;
 		  textWithMediaBlockData1.push(para);
@@ -129,7 +126,7 @@ elements1.forEach(element => {
 		}
         
     });
-    const description = element.querySelector('.cmp-text__paragraph').textContent;
+    const description = element.querySelector('.cmp-text').textContent;
 	const para = document.createElement('p');
           para.textContent = description;
 		  textWithMediaBlockData1.push(para);
