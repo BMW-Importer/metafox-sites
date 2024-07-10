@@ -1,4 +1,5 @@
 const createMetadata = (main, document) => {
+
     const listOfAccordian = document.querySelectorAll('.accordion');
     listOfAccordian.forEach((accordion) => {
         const accordianBlock = [];
@@ -24,7 +25,10 @@ const createMetadata = (main, document) => {
             ['sectiontopmargin', true],
         ];
         const table = WebImporter.DOMUtils.createTable(accordiancells, document); //replace with putting back at the same position
-        accordion.append(table);
+        main.append(table);
+		const hr = document.createElement('hr');
+		main.append(hr);
+
     });
 
 
@@ -90,7 +94,10 @@ const createMetadata = (main, document) => {
             ['fixedsectiontopmargin', true]
         ];
         const table = WebImporter.DOMUtils.createTable(cells, document);
-        element.append(table);
+        main.append(table);
+		const hr = document.createElement('hr');
+		main.append(hr);
+
 
     });
 
@@ -157,6 +164,8 @@ const createMetadata = (main, document) => {
         ];
         const tableTextLeft = WebImporter.DOMUtils.createTable(cellsTextLeft, document);
         main.append(tableTextLeft);
+		const hr = document.createElement('hr');
+		main.append(hr);
 
     });
 
