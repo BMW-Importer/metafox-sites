@@ -2,7 +2,7 @@ const createMetadata = (main, document) => {
   const listOfAccordian = document.querySelectorAll('.accordion');
   listOfAccordian.forEach((accordion) => {
     const accordianBlock = [];
-    const name = ['Accordian'];
+    const name = ['Accordion'];
     accordianBlock.push(name);
     const listOfAccordianItem = document.querySelectorAll('.cmp-accordion__item');
     listOfAccordianItem.forEach((accordionItem) => {
