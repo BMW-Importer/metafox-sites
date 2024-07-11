@@ -25,7 +25,7 @@ const hostName = window?.location?.hostname;
 const regExp = /^(.*\.hlx\.(page|live)|localhost)$/;
 let galOrigin = '';
 let publishDomain = '';
-const modelText = placeholders?.modelText || '';
+const modelText = placeholders?.modeltext || '';
 
 if (env === 'dev') {
   publishDomain = DEV.hostName;
@@ -537,22 +537,14 @@ export default async function decorate(block) {
             const wdhModelPlaceholder = fetchModelPlaceholderObject();
             const wdhTechPlaceholder = fetchTechDataPlaceholderObject();
 
-            // updating description
-            const descpTextContent = replacePlaceholder(
-              modelDescp.textContent,
-              wdhModelPlaceholder,
-              modelRegex,
-            );
-            if (descpTextContent) modelDescp.textContent = descpTextContent;
-
             const categoryItem = leftPanelModelGrouping.querySelectorAll('.dts-category-box');
             if (categoryItem) {
               const lastCatItem = categoryItem[categoryItem.length - 1];
               const modelCozyImg = lastCatItem.querySelector('.dts-model-category-img');
               modelCozyImg.alt = wdhModelPlaceholder?.description;
               const fuelTypeVal = wdhModelPlaceholder?.fuelType?.toLowerCase() || '';
+              lastCatItem.classList.add(getFuelTypeImage(fuelTypeVal?.toUpperCase()));
               if (selectedFuelTypeText === 'fuel-type') {
-                lastCatItem.classList.add(getFuelTypeImage(fuelTypeVal?.toUpperCase()));
                 lastCatItem.querySelector('.dts-model-category-descp').textContent = placeholders[fuelTypeVal] || '';
               } else {
                 lastCatItem.querySelector('.dts-model-category-descp').textContent = wdhModelPlaceholder?.description;
@@ -571,6 +563,14 @@ export default async function decorate(block) {
               // updating alt text for image
               const rightPanelImg = rightPanelTitleAndImg.querySelector('img');
               rightPanelImg.alt = wdhModelPlaceholder?.description;
+
+              // updating description
+              const descpTextContent = replacePlaceholder(
+                modelDescp.textContent,
+                wdhModelPlaceholder,
+                modelRegex,
+              );
+              if (descpTextContent) modelDescp.textContent = descpTextContent;
 
               // buildContext
               generateTechnicalData1(

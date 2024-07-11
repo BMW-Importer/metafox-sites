@@ -19,6 +19,15 @@
  .speeddial-button {
     margin-left: auto;
     pointer-events: auto;
+    opacity: 1;
+    transition: all .3s ease;
+ }
+
+ .speeddial-button-hidden {
+    cursor: default;
+    height: 0;
+    opacity: 0;
+    width: 0
  }
 
  .speed-dial.block {
@@ -35,8 +44,17 @@
     margin-left: auto;
     z-index: 6030;
     transition: all .3s ease;
-    display: none;
+    display: flex;
+    margin-bottom: 0;
+    opacity: 1;
  }
+
+ .speeddial-backtotop-hidden {
+    cursor: default;
+    margin-bottom: -1rem;
+    opacity: 0;
+    pointer-events: none;
+}
 
 .speeddial-backtotop:focus-visible {
     box-shadow: 0 0 0 .0625rem var(--background-color), 0 0 0 .3125rem var(--light-link-hover-color)

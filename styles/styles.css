@@ -712,7 +712,8 @@ textarea{
   content: attr(data-icon);
   direction: ltr;
   display: block;
-  font-family: 'bmw_next_icons', Arial, Helvetica, Roboto, sans-serif;
+  font-family: var(--icon-font-family) !important;
+  opacity: var(--iconfont400-opacity);
   font-style: normal;
   height: 1em;
   line-height: 1;

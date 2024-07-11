@@ -2,9 +2,9 @@ function scrollFunction(backToTopBtn) {
   const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
 
   if ((document.documentElement.scrollTop / scrollTotal) > 0.75) {
-    backToTopBtn.style.display = 'flex';
+    backToTopBtn.classList.remove('speeddial-backtotop-hidden');
   } else {
-    backToTopBtn.style.display = 'none';
+    backToTopBtn.classList.add('speeddial-backtotop-hidden');
   }
 }
 
@@ -19,8 +19,8 @@ function topFunction() {
 export default function decorate(block) {
   const speeddialBtn = document.createElement('button');
   const speeddialBackBtn = document.createElement('button');
-  speeddialBtn.classList.add('speeddial-button');
-  speeddialBackBtn.classList.add('speeddial-backtotop');
+  speeddialBtn.classList.add('speeddial-button', 'speeddial-button-hidden');
+  speeddialBackBtn.classList.add('speeddial-backtotop', 'speeddial-backtotop-hidden');
 
   // creating a container for links
   const listOfLinkContainer = document.createElement('div');
@@ -91,4 +91,8 @@ export default function decorate(block) {
   block.append(speeddialBackBtn);
   block.append(speeddialBtn);
   block.append(listOfLinkContainer);
+
+  setTimeout(() => {
+    speeddialBtn.classList.remove('speeddial-button-hidden');
+  }, 4000);
 }

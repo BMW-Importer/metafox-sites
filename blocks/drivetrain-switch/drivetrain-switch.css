@@ -105,6 +105,7 @@
     z-index: 9999;
     background: var(--background-color);
     padding: 0;
+    margin: 0;
 }
 
 .drivetrain-switch-block .dts-right-panel {
@@ -140,12 +141,12 @@
     color: var(--background-color);
     cursor: pointer;
     outline: 0;
-    padding-right: 1.25rem;
+    padding: 1px 20px 1px 6px;
 }
 
 .drivetrain-switch-block .dts-close-btn-li {
     position: absolute;
-    top: -3.4375rem;
+    top: -2rem;
     right: 0;
     cursor: pointer;
 }
@@ -197,6 +198,9 @@
     word-break: break-word;
     border: none;
     padding: 0 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drivetrain-switch-block .dts-right-tech-detail .dts-technical-link-btn:hover {
@@ -247,7 +251,8 @@
     content: "checkmark";
     direction: ltr;
     display: block;
-    font-family: 'bmw_next_icons', Arial, Helvetica, Roboto, sans-serif;
+    font-family: var(--icon-font-family) !important;
+    opacity: var(--iconfont400-opacity);
     font-style: normal;
     height: 1.5rem;
     line-height: 1;
@@ -331,6 +336,14 @@
     margin-top: 1rem;
 }
 
+/* mobile */
+@media (width >= 360px) and (width < 768px) {
+    .drivetrain-switch-block .dts-model-category-descp {
+        font-size: 0.875rem;
+        line-height: 1.375rem;  
+    }
+}
+
 @media (width >= 768px) {
     .drivetrain-switch-block .dts-right-model-title-container {
         aspect-ratio: 1.7778;
@@ -340,6 +353,11 @@
         font-size: 7.875rem;
         line-height: 7.875rem;
         padding-top: 1.25rem;
+    }
+
+    .drivetrain-switch-block .dts-model-category-descp {
+        font-size: 0.875rem;
+        line-height: 1.375rem;  
     }
 
     .drivetrain-switch-block .dts-active-model-descp {
@@ -417,11 +435,11 @@
     .drivetrain-switch-block .dts-right-tech-detail {
         margin: 1rem 0 0;        
         flex-flow: row wrap;
-        gap: 2rem 2.5rem;
+        gap: 1.5rem 2rem;
         width: auto;
         align-self: center;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .drivetrain-switch-block .dts-tech-detail-table {
@@ -540,6 +558,8 @@
         color: var(--light-text-color);
         padding: 0;
         min-height: unset;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
     }
 
     .drivetrain-switch-block .dts-model-category-container.selected .dts-model-category-descp {
@@ -580,7 +600,8 @@
         content: "checkmark";
         direction: ltr;
         display: block;
-        font-family: 'bmw_next_icons', Arial, Helvetica, Roboto, sans-serif;
+        font-family: var(--icon-font-family) !important;
+        opacity: var(--iconfont400-opacity);
         font-style: normal;
         line-height: 1;
         outline: 1px solid transparent;
@@ -637,7 +658,7 @@
     .drivetrain-switch-block .dts-tech-detail-table tbody {        
         display: flex;
         flex-flow: row wrap;
-        gap: 2rem 2.5rem;
+        gap: 1.5rem 2rem;
     }
 
     .drivetrain-switch-block .dts-tech-detail-table tr {
@@ -672,6 +693,8 @@
     .drivetrain-switch-block .dts-right-tech-detail {
         margin: 1.25rem auto 0;
         max-width: 45.75rem;
+        gap: 2rem 2.5rem;
+        justify-content: flex-start;
     }
 
     .drivetrain-switch-block .disclaimer-content {
