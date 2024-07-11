@@ -1,18 +1,26 @@
+/* eslint-disable no-await-in-loop */
+/* eslint-disable max-len */
 import {
   getPreConApiResponse, getPreConCosyImage, getResolutionKey, getCosyImageUrl,
 } from '../../scripts/common/wdh-util.js';
 
+export function getConfiguratorURL() {
+  const url = document.querySelector('meta[name="configuratorurl"]')?.content;
+  return url;
+}
+
+const configuratorURL = getConfiguratorURL();
 
 function configureCTA(selectedModel, currentVechileData) {
   let selectedModelValue;
-  if (selectedModel === 'modelRange'){
-    return selectedModelValue = `https://configure.bmw.rs/sr_RS/configure/${currentVechileData.modelRangeCode}`
+  if (selectedModel === 'modelRange') {
+    selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}`;
   }
   if (selectedModel === 'modelCode') {
-    return selectedModelValue = `https://configure.bmw.rs/sr_RS/configure/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}`
+    selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}`;
   }
   if (selectedModel === 'allOptions') {
-    return selectedModelValue = `https://configure.bmw.rs/sr_RS/configure/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}/${currentVechileData.fabric}/${currentVechileData.paint}/${currentVechileData.options}`
+    selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}/${currentVechileData.fabric}/${currentVechileData.paint}/${currentVechileData.options}`;
   }
   return selectedModelValue;
 }
@@ -21,15 +29,15 @@ export default async function decorate(block) {
   let headLineDom;
   const precon = [...block.children];
   let preConImageDOM;
+  // eslint-disable-next-line no-restricted-syntax
   for (const preconData of precon) {
     let preConModelResponse;
     let preConCosyImage;
     let preConHeadLine;
     let optionsValue;
-    let titleName;
-    let modeRangeCode;
     let configureLink;
     let configureCTADom;
+    let modelName;
 
     const [wdhContext, linkTab] = preconData.children;
     const splitPreconData = wdhContext.querySelectorAll('p')[0]?.textContent.split(',') || '';
@@ -48,11 +56,13 @@ export default async function decorate(block) {
     }
     if (preConModelResponse) {
       let preConModeCode;
-      for (let key in preConModelResponse.responseJson) {
+      // eslint-disable-next-line no-restricted-syntax, guard-for-in, no-unreachable-loop
+      for (const key in preConModelResponse.responseJson) {
         if (preConModelResponse.responseJson[key].id === selectedPreConId);
         preConModeCode = preConModelResponse.responseJson[key]?.modelCode; // MODEL-CODE
         preConHeadLine = preConModelResponse.responseJson[key]?.headline; // Show the headline below cosy Image
         optionsValue = preConModelResponse.responseJson[key]?.options; //
+        modelName = preConModelResponse.responseJson[key]?.modelName;
         configureLink = configureCTA(selctedModelData, preConModelResponse.responseJson[key]);
         break;
       }
@@ -60,11 +70,11 @@ export default async function decorate(block) {
       preConCosyImage = await getPreConCosyImage(preConModeCode); // Calling PRECON Cosy Image
       headLineDom = document.createElement('div');
       headLineDom.classList.add('headerline-wrapper');
-      headLineDom.textContent = `HeadLine test: ${preConHeadLine}, ${optionsCount}`;
+      headLineDom.textContent = `HeadLine test: ${modelName} ${preConHeadLine}, ${optionsCount}`;
       configureCTADom = document.createElement('a');
       configureCTADom.classList.add('button');
       configureCTADom.href = configureLink;
-      configureCTADom.textContent = "CLICK ME";
+      configureCTADom.textContent = 'CLICK ME';
       headLineDom.append(configureCTADom);
     }
     if (preConCosyImage) { // cosy image to show for Pre-Con
