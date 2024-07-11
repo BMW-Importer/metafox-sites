@@ -1,4 +1,3 @@
-/* eslint-disable for onject */
 import {
   buildModelPlaceholder, buildSetPlaceholder, buildTechDataPlaceholder,
   fetchSetPlaceholderObject, fetchModelPlaceholderObject, fetchTechDataPlaceholderObject,
@@ -168,4 +167,3 @@ export async function getPreConCosyImage(modelCode) {
     throw error;
   }
 }
-
