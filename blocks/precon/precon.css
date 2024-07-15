@@ -36,10 +36,10 @@
 }
 
 .precon-wrapper .precon-image-container picture img {
-    aspect-ratio: 2.5 / 1;
-    vertical-align: middle;
+    aspect-ratio: 2.5;
+    display: block;
+    height: 100%;
     max-width: 100%;
-    height: auto !important;
     object-fit: contain;
     width: 100%;
 }
