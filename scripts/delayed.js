@@ -6,6 +6,8 @@ import { mediaCarouselResizer } from '../blocks/media-carousel/media-carousel.js
 import { pushCustomLinkAnalyticData } from './analytics-util.js';
 import { videoGalleryResizer } from '../blocks/video-gallery/video-gallery.js';
 import { drivetrainResize } from '../blocks/drivetrain-switch/drivetrain-switch.js';
+import { preconResizer } from '../blocks/precon/precon.js';
+
 
 // Core Web Vitals RUM collection
 sampleRUM('cwv');
@@ -16,6 +18,7 @@ enableObserverForVideos();
 mediaCarouselResizer();
 videoGalleryResizer();
 drivetrainResize();
+preconResizer();
 
 const page_tracking = {"page": {
   "pageInfo": {

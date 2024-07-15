@@ -621,7 +621,8 @@
         content: 'fuel_type_bev';
         direction: ltr;
         display: block;
-        font-family: 'bmw_next_icons',Arial, Helvetica, Roboto, sans-serif;
+        font-family: var(--icon-font-family) !important;
+        opacity: var(--iconfont400-opacity);
         font-style: normal;
         outline: 1px solid #0000;
         text-align: left;
