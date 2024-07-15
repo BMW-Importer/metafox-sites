@@ -1187,15 +1187,15 @@
         "options": [
           {
             "name": "Exit",
-            "value": "Exit"
+            "value": "exit"
           },
           {
             "name": "Download",
-            "value": "Download"
+            "value": "download"
           },
           {
             "name": "Other",
-            "value": "Other"
+            "value": "other"
           }          
         ]    
       },
@@ -4576,15 +4576,15 @@
         "valueType": "string",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }
         ]
