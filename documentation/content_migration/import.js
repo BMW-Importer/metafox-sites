@@ -4,6 +4,7 @@ const createMetadata = (main, document) => {
     createTextWithMediaLeft(main, document);
     createTextWithMediaRight(main, document);
     createVideo(main, document);
+	createCarousel(main, document);
     createDefaultContent(main, document);
     const meta = {};
     const title = document.querySelector('title');
@@ -508,7 +509,7 @@ const createDefaultContent = (main, document) => {
 
     });
 
-    // default buttonsmodeloverview
+    // default buttons
     const buttons = document.querySelectorAll('.button');
     const defaultButtons = Array.from(buttons).filter((div) =>!div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
     defaultButtons.forEach((button) => {
@@ -524,3 +525,163 @@ const createDefaultContent = (main, document) => {
     });
 
 };
+
+const createCarousel = (main, document) => {
+    const listOfMediaCarousel = document.querySelectorAll('.carousel .cmp-carousel');
+    listOfMediaCarousel.forEach((mediaCarousel) => {
+        let isMediaCarousel = true;
+        if (!mediaCarousel.querySelectorAll('.cmp-text').length > 0) {
+            isMediaCarousel = false;
+        }
+        const carouselBlock = [];
+        const videoGalleryBlock = [];
+        let name;
+        if (isMediaCarousel) {
+            name = ['Media Carousel'];
+            carouselBlock.push(name);
+        } else {
+            name = ['Video Gallery'];
+            videoGalleryBlock.push(name)
+        }
+        const mediaCarouselContent = mediaCarousel.querySelector('.cmp-carousel__content');
+        const mediaSlides = mediaCarouselContent.querySelectorAll('.swiper-slide.swiper-slide--slide');
+        if (mediaSlides) {
+            mediaSlides.forEach((slide) => {
+                let carouselType = '';
+                const carouselVideoData = [];
+                const carouselRow = [];
+                const videoGalleryData = [];
+                const videoGalleryRow = [];
+ 
+                if (slide.querySelector('.cmp-video__video-player')) {
+                    carouselType = 'video-carousel';
+                    carouselRow.push(carouselType);
+ 
+                }
+                if (slide.querySelector('.cmp-image .cmp-image__image')) {
+                    carouselType = 'image-carousel';
+                    carouselRow.push(carouselType);
+                }
+                const headline = slide.querySelector('.title .cmp-title')?.textContent || '';
+                const copyText = slide.querySelector('.text .cmp-text')?.textContent || '';
+ 
+                const h2 = document.createElement('h2');
+                h2.textContent = headline;
+                const p = document.createElement('p');
+                p.textContent = copyText;
+ 
+                const contentArray = [];
+                if (headline) {
+                    contentArray.push(h2);
+                    if (!isMediaCarousel) {
+                        const h4 = document.createElement('h4');
+                        h4.textContent = headline;
+                        videoGalleryData.push(h4);
+                    }
+                }
+                if (copyText)
+                    contentArray.push(p);
+                if (contentArray.length > 0)
+                    carouselRow.push(contentArray);
+                if (slide.querySelector('.cmp-video__video-player')) {
+                    const videoTitle = slide.querySelector('.cmp-video__video-player')?.getAttribute('aria-label');
+                    const paraTitle = document.createElement("p");
+                    const nodeTitle = document.createTextNode(videoTitle);
+                    if (videoTitle)
+                        paraTitle.appendChild(nodeTitle);
+                    const videoDescription = slide.querySelector('.cmp-video__video-player')?.getAttribute('aria-description');
+                    const paraDesc = document.createElement("p");
+                    const nodeDesc = document.createTextNode(videoDescription);
+                    if (videoDescription)
+                        paraDesc.appendChild(nodeDesc);
+                    const dsktpPosterImgPath = slide.querySelector('.cmp-video__video img')?.getAttribute('src');
+                    const para3 = document.createElement("p");
+                    const el = document.createElement('img');
+                    el.src = dsktpPosterImgPath;
+                    if (dsktpPosterImgPath)
+                        para3.appendChild(el);
+                    const mblPosterImgPath = slide.querySelector('.cmp-video__video img')?.getAttribute('src');
+                    const para4 = document.createElement("p");
+                    const e2 = document.createElement('img');
+                    e2.src = mblPosterImgPath;
+                    if (mblPosterImgPath)
+                        para4.appendChild(e2);
+                    const desktopVideoPath = slide.querySelector('.cmp-video__video-player')?.getAttribute('data-src-large');
+                    const para5 = document.createElement("p");
+                    const node5 = document.createTextNode(desktopVideoPath);
+                    if (desktopVideoPath)
+                        para5.appendChild(node5);
+                    const mobileVideoPath = slide.querySelector('.cmp-video__video-player').getAttribute('src') || slide.querySelector('.cmp-video__video-player').getAttribute('data-src-medium');
+                    const para6 = document.createElement("p");
+                    const e4 = document.createElement('img');
+                    e4.src = mobileVideoPath;
+                    if (mobileVideoPath && !mobileVideoPath.startsWith('blob:'))
+                        para6.appendChild(e4);
+                    const h1 = document.createElement('h1');
+                    h1.textContent = "true";
+                    const h2 = document.createElement('h2');
+                    h2.textContent = "true";
+                    const h3 = document.createElement('h1');
+                    h3.textContent = "true";
+                    if (!isMediaCarousel) {
+                        h3.textContent = "false";
+                    }
+                    const h4 = document.createElement('h2');
+                    h4.textContent = "true";
+                    // Log video details if needed
+                    if (videoTitle) console.log('videoTitle:' + videoTitle);
+                    if (videoDescription) console.log('videoDescp:' + videoDescription);
+                    if (desktopVideoPath) console.log('videoDesktopPath:' + desktopVideoPath);
+                    if (mobileVideoPath) console.log('videomobilepath:' + mobileVideoPath);
+                    if (dsktpPosterImgPath) console.log('desktopPosterimg:' + dsktpPosterImgPath);
+                    if (mblPosterImgPath) console.log('mobileposterimg:' + mblPosterImgPath);
+                    carouselVideoData.push(paraTitle, paraDesc, para5, para6, para3, para4, h1, h2, h3, h4);
+                    carouselRow.push(carouselVideoData);
+                    if (!isMediaCarousel) {
+                        videoGalleryData.push(paraTitle, paraDesc, para5, para6, para3, para4, h1, h2, h3, h4);
+                        console.log(videoGalleryData)
+                    }
+                }
+ 
+                if (slide.querySelector('.cmp-image .cmp-image__image')) {
+                    const imgSrc = slide.querySelector('.cmp-image .cmp-image__image').getAttribute('src');
+                    const imgAlt = slide.querySelector('.cmp-image .cmp-image__image').getAttribute('alt');
+                    // Log image details if needed
+                    if (imgSrc) {
+                        const el = document.createElement('img');
+                        el.src = imgSrc;
+                        if (imgAlt)
+                            el.alt = imgAlt;
+                        carouselRow.push(el);
+                    }
+                }
+ 
+                const link = slide.querySelector('.button .cmp-button')?.getAttribute('href');
+                const linkLabel = slide.querySelector('.cmp-button .cmp-button__text')?.textContent;
+                if (link && linkLabel) {
+                    const aTag = document.createElement('a');
+                    aTag.setAttribute('href', link);
+                    aTag.innerText = linkLabel;
+                    carouselRow.push(aTag);
+                }
+ 
+                if (carouselRow.length > 0) {
+                    carouselBlock.push(carouselRow);
+                }
+                if (!isMediaCarousel) {
+                    videoGalleryRow.push(videoGalleryData)
+                    videoGalleryBlock.push(videoGalleryRow)
+                }
+            });
+        }
+        if (isMediaCarousel) {
+            const carouselTable = WebImporter.DOMUtils.createTable(carouselBlock, document);
+            main.append(carouselTable);
+        } else {
+            const videoGalleryTable = WebImporter.DOMUtils.createTable(videoGalleryBlock, document);
+            main.append(videoGalleryTable);
+        }
+ 
+    });
+};
+ 
