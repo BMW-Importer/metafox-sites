@@ -406,7 +406,6 @@ function generatePrecon(wdhContext, linkTab, preConOuterWrapper, headLineDom, co
 
   const preconDesWrapper = document.createElement('div');
   preconDesWrapper.classList.add('precon-description');
-
   // linkTab.textContent = '';
   preCtaWrap.append(configureCTADom);
   preconPreiceDetails.append(headLineDom, preConPriceInnerWrapper);
@@ -416,6 +415,31 @@ function generatePrecon(wdhContext, linkTab, preConOuterWrapper, headLineDom, co
 
   preConOuterWrapper.append(wdhContext);
   resizePreconBlock();
+}
+
+function getBackgroundImgURL(backgroundImages, resolutionKey, quality) {
+  // Replace this with the actual logic to generate the image URL based on resolutionKey and quality
+  return `${backgroundImages}?res=${resolutionKey}&q=${quality}`;
+}
+
+function createBgImgaeUrl(backgroundImages, quality) {
+  const pictureTag = document.createElement('picture');
+  const resolutions = [320, 768, 1024];
+  resolutions.forEach((resolution) => {
+    const sourceTag = document.createElement('source');
+    sourceTag.srcset = getBackgroundImgURL(backgroundImages, getResolutionKey(resolution), resolution === 768 ? 30 : quality);
+    sourceTag.media = `(min-width: ${resolution}px)`;
+    pictureTag.appendChild(sourceTag);
+  });
+
+  // Fallback img tag
+  const imgTag = document.createElement('img');
+  imgTag.loading = 'lazy';
+  imgTag.alt = 'pre con Image';
+  imgTag.src = getBackgroundImgURL(backgroundImages, getResolutionKey(window.innerWidth), 40);
+  pictureTag.appendChild(imgTag);
+
+  return pictureTag;
 }
 
 function configureCTA(selectedModel, currentVechileData) {
@@ -483,8 +507,18 @@ export default async function decorate(block) {
   const imageDomContainer = document.createElement('div');
   imageDomContainer.classList.add('precon-image-container');
 
+  const parentBlock = document.createElement('div');
+  parentBlock.classList.add('precon-swiper-initialized');
+
   const preconRightWrapper = document.createElement('div');
   preconRightWrapper.classList.add('precon-wrapper-rth-area');
+
+  const backgroundImages = 'https://www.bmw.rs/etc.clientlibs/bmw-web/clientlibs/clientlib-site/resources/images/street-bg_1x_320.webp';
+  const quality = 50; // Adjust as needed
+  const pictureElement = createBgImgaeUrl(backgroundImages, quality);
+
+  const bgImg = document.createElement('picture').appendChild(pictureElement);
+  bgImg.classList.add('precon-background');
 
   const precon = [...block.children];
   // eslint-disable-next-line no-plusplus
@@ -507,8 +541,8 @@ export default async function decorate(block) {
 
     const splitPreconData = wdhContext.querySelectorAll('p')[0]?.textContent.split(',') || '';
     const selctedModelData = wdhContext.querySelectorAll('p')[1]?.textContent || '';
-    const selectedModelRange = splitPreconData[1]?.trim() || ''; // authored selected ModelRange G21
-    const selectedPreConId = splitPreconData[2]?.trim() || ''; // authored selected PRECODN-ID
+    const selectedModelRange = splitPreconData[2]?.trim() || ''; // authored selected ModelRange G21
+    const selectedPreConId = splitPreconData[3]?.trim() || ''; // authored selected PRECODN-ID
     try {
       if (selectedModelRange) {
         preConModelResponse = await getPreConApiResponse(selectedModelRange); // calling PRECon API
@@ -537,15 +571,15 @@ export default async function decorate(block) {
       configureCTADom = document.createElement('a');
       configureCTADom.classList.add('button');
       configureCTADom.href = configureLink;
-      configureCTADom.textContent = linkTab.querySelector('p').textContent;
+      configureCTADom.textContent = linkTab.querySelector('p')?.textContent || '';
       linkTab.textContent = '';
     }
-
     generateCosyImage(imageDomContainer, preConCosyImage);
     generatePrecon(wdhContext, linkTab, preconData, headLineDom, configureCTADom, preConModelName, optionsCount);
     contentData.append(preconData);
   }
+  parentBlock.append(bgImg, imageDomContainer);
   block.textContent = '';
-  block.append(imageDomContainer, preconLeftWrapper, preconRightWrapper, contentData);
+  block.append(parentBlock, preconLeftWrapper, preconRightWrapper, contentData);
   resizePreconBlock();
 }

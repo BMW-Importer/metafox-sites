@@ -11,24 +11,20 @@
     position: relative;
 }
 
-.precon-wrapper .precon.block::before {
-    position: absolute;
-    content: '';
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 0.8) 0%,
-            rgba(255, 255, 255, 0) 20%,
-            rgba(255, 255, 255, 0) 80%,
-            rgba(255, 255, 255, 0.8) 100%),
-        url("../../icons/street-bg_1x_320.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+.precon-wrapper .precon.block .precon-swiper-initialized {
+    position: relative;
+}
+
+.precon-wrapper .precon.block .precon-background {
     height: 100%;
     inset: 0;
-    max-height: 35%;
+    position: absolute;
+    top: 25%;
+}
+
+.precon-wrapper .precon.block .precon-background img {
+    max-height: 90%;
     width: 100%;
-    top: 22%;
 }
 
 .precon-wrapper .precon-content-data .pre-content-outer-wrapper.in-active {
@@ -43,12 +39,6 @@
     object-fit: contain;
     width: 100%;
 }
-
-/* .precon-wrapper .precon-image-container picture {
-    display: flex;
-    justify-content: center;
-} */
-
 
 .precon-wrapper .precon-image-container {
     position: relative;
