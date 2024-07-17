@@ -87,6 +87,7 @@ export function replacePlaceholder(string, data, regex) {
 // /* dummy URL called */
 // export function getCosyImageUrl(response, resolution, angle) {
 //   const imagesObject = mockResponses.imageResponse1;
+// eslint-disable-next-line max-len
 //   // const imgUrl = imagesObject.find((img) => img.angle === angle && img.viewImage !== undefined);
 //   return imagesObject;
 // }
@@ -97,8 +98,6 @@ export function getCosyImageUrl(response, resolution, angle) {
   const imgUrl = imagesObject.find((img) => img.angle === angle && img.viewImage !== undefined);
   return imgUrl.viewImage;
 }
-
-/*  real URL to get cosy Image */
 
 export async function getCosyImage(modelCode) {
   try {

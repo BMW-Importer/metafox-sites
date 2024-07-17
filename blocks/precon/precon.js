@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-await-in-loop */
-/* eslint-disable max-len */
 import {
   getPreConApiResponse, getPreConCosyImage, getResolutionKey, getCosyImageUrl,
 } from '../../scripts/common/wdh-util.js';
@@ -11,18 +8,22 @@ export function getConfiguratorURL() {
 }
 
 const configuratorURL = getConfiguratorURL();
+// eslint-disable-next-line no-unused-vars
 let iconClicked = false;
-
+// eslint-disable-next-line no-unused-vars
 function updateCarousel(content, currentIndex, gap) {
-  const itemWidth = (content?.children[currentIndex]?.offsetWidth);
-  const offset = -(currentIndex * (itemWidth));
+  const itemWidth = content?.children[currentIndex]?.offsetWidth;
+  let offset = -(currentIndex * (itemWidth * 0.60));
+  if (currentIndex === 0) offset = itemWidth * 0.50;
+  const cards = content.children;
+  if (currentIndex === cards.length - 1) offset -= itemWidth * 0.40;
   content.style.transform = `translate3d(${offset}px, 0px, 0px)`;
   content.style.transitionDuration = '750ms';
   content.style.transitionDelay = '100ms';
 
   const preconWrapper = document.querySelectorAll('.pre-content-outer-wrapper');
 
-  const cards = content.children;
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < cards.length; i++) {
     if (i === currentIndex) {
       cards[i].classList.add('active');
@@ -32,6 +33,7 @@ function updateCarousel(content, currentIndex, gap) {
       cards[i].classList.add('not-active');
     }
   }
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < preconWrapper.length; i++) {
     if (i === currentIndex) {
       preconWrapper[i].classList.remove('in-active');
@@ -43,10 +45,6 @@ function updateCarousel(content, currentIndex, gap) {
 
 function updateDots(dotsWrapper, currentIndex) {
   const dots = dotsWrapper.querySelectorAll('.dot');
-  if (currentIndex === null || currentIndex === undefined) {
-    currentIndex = 1;
-  }
-
   dots.forEach((dot, index) => {
     if (index === currentIndex) {
       dot.classList.add('active');
@@ -54,24 +52,6 @@ function updateDots(dotsWrapper, currentIndex) {
       dot.classList.remove('active');
     }
   });
-}
-function onHoverCarousel(content, currentIndex, direction, gap) {
-  const itemWidth = (content.children[currentIndex].offsetWidth);
-  const offsetPercentage = 0.07;
-  const currentOffset = -(currentIndex * (itemWidth + gap));
-  const offset = direction === 'right' ? -((offsetPercentage * itemWidth) + gap) : ((offsetPercentage * itemWidth) + gap);
-  content.style.transform = `translate3d(${offset + currentOffset}px, 0px, 0px)`;
-  content.style.transitionDuration = '750ms';
-  content.style.transitionDelay = '100ms';
-}
-
-function onHoverCarouselLeave(content, currentIndex, gap) {
-  content.style.transform = 'translate3d(0px, 0px, 0px)';
-  content.style.transitionDuration = '0ms';
-  content.style.transitionDelay = '0ms';
-  if (iconClicked) {
-    updateCarousel(content, currentIndex, gap);
-  }
 }
 
 function updateButtonVisibility(prevButton, nextButton, currentIndex, totalItems, itemsToShow) {
@@ -163,7 +143,7 @@ function addDotsNavigation(block, content, totalItems, itemsToShow, gap) {
 
   const preButton = block && block.querySelector('.carousel-btn-prev');
   const nexButton = block.querySelector('.carousel-btn-next');
-  let currentIndex = 1;
+  let currentIndex = 0;
   function updateDotCarousel() {
     updateCarousel(content, currentIndex, gap);
   }
@@ -303,8 +283,9 @@ function updateItemsToShow(preconGalleryContent) {
   const paddingLeftDesktop = parseFloat(computedStyleDesktop.paddingLeft);
   const paddingRightDesktop = parseFloat(computedStyleDesktop.paddingRight);
   const ultraScreenWidth = viewport - (paddingLeftDesktop + paddingRightDesktop);
+
+  const cardsToShow = 1;
   const availableWidth = viewport >= 1920 ? ultraScreenWidth : desktopScreenWidth;
-  const cardsToShow = 1.5;
   return { cardsToShow, availableWidth, totalItems };
 }
 
@@ -314,15 +295,18 @@ export function resizePreconBlock() {
   carousels.forEach((carouselContent) => {
     const block = carouselContent.closest('.precon.block');
     const cards = carouselContent.querySelectorAll('.img-card-container');
+    console.log(cards);
     const carouselLeftWrapper = block.querySelector('.precon-wrapper-lft-area');
     const carouselRightWrapper = block.querySelector('.precon-wrapper-rth-area');
-
     const gap = 0;
     const { cardsToShow, availableWidth, totalItems } = updateItemsToShow(carouselContent);
 
-    const cardWidth = ((availableWidth - (cardsToShow - 1)) / cardsToShow);
     cards.forEach((card) => {
-      card.style.width = `${cardWidth}px`;
+      if (viewport < 768) {
+        card.style.width = `${availableWidth * 0.625}px`;
+      } else {
+        card.style.width = `${(availableWidth * 0.454545) + 87.273}px`;
+      }
       card.style.marginRight = `${gap}px`;
     });
 
@@ -346,14 +330,13 @@ export function resizePreconBlock() {
       );
     }
     addDotsNavigation(block, carouselContent, totalItems, cardsToShow, gap);
-    updateCarousel(carouselContent, 1, gap);
-    updateDots(block.querySelector('.dots-navigation'), 1);
+    updateCarousel(carouselContent, 0, gap);
+    updateDots(block.querySelector('.dots-navigation'), 0);
   });
 }
 
 export function preconResizer() {
   resizePreconBlock();
-  console.log('hello');
 
   // windo resize event
   window.addEventListener('resize', () => {
@@ -361,7 +344,8 @@ export function preconResizer() {
   });
 }
 
-function generatePrecon(wdhContext, linkTab, preConOuterWrapper, headLineDom, configureCTADom, preConModelName, optionsCount) {
+// eslint-disable-next-line max-len
+function generatePrecon(wdhContext, linkTab, preConOuterWrapper, headLineDom, configureCTADom, configureLink, preConModelName, optionsCount) {
   const preTitle = document.createElement('div');
   preTitle.classList.add('precon-title');
 
@@ -406,7 +390,6 @@ function generatePrecon(wdhContext, linkTab, preConOuterWrapper, headLineDom, co
 
   const preconDesWrapper = document.createElement('div');
   preconDesWrapper.classList.add('precon-description');
-  // linkTab.textContent = '';
   preCtaWrap.append(configureCTADom);
   preconPreiceDetails.append(headLineDom, preConPriceInnerWrapper);
   preConPriceDetailWrapper.append(preconPreiceDetails, preCtaWrap);
@@ -427,6 +410,7 @@ function createBgImgaeUrl(backgroundImages, quality) {
   const resolutions = [320, 768, 1024];
   resolutions.forEach((resolution) => {
     const sourceTag = document.createElement('source');
+    // eslint-disable-next-line max-len
     sourceTag.srcset = getBackgroundImgURL(backgroundImages, getResolutionKey(resolution), resolution === 768 ? 30 : quality);
     sourceTag.media = `(min-width: ${resolution}px)`;
     pictureTag.appendChild(sourceTag);
@@ -445,13 +429,16 @@ function createBgImgaeUrl(backgroundImages, quality) {
 function configureCTA(selectedModel, currentVechileData) {
   let selectedModelValue;
   if (selectedModel === 'modelRange') {
-    selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}`;
+    // eslint-disable-next-line no-return-assign
+    return selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}`;
   }
   if (selectedModel === 'modelCode') {
-    selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}`;
+    // eslint-disable-next-line no-return-assign
+    return selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}`;
   }
   if (selectedModel === 'allOptions') {
-    selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}/${currentVechileData.fabric}/${currentVechileData.paint}/${currentVechileData.options}`;
+    // eslint-disable-next-line no-return-assign
+    return selectedModelValue = `${configuratorURL}/${currentVechileData.modelRangeCode}/${currentVechileData.modelCode}/${currentVechileData.fabric}/${currentVechileData.paint}/${currentVechileData.options}`;
   }
   return selectedModelValue;
 }
@@ -466,29 +453,29 @@ async function generateCosyImage(imageDomContainer, preConCosyImage) {
   if (preConCosyImage) { // cosy image to show for Pre-Con
     const screenWidth = window.innerWidth;
     const resolutionKey = getResolutionKey(screenWidth);
-    const createPictureTag = () => {
+    const createPictureTag = (quality) => {
       const pictureTag = document.createElement('picture');
       const resolutions = [767, 1023, 1919];
       resolutions.forEach((resolution) => {
-        const quality = (resolution <= 767) ? 40 : 30;
         const sourceTag = document.createElement('source');
         sourceTag.srcset = getCosyImageUrl(
           preConCosyImage,
-          resolutionKey,
-          quality,
+          getResolutionKey(resolution),
+          resolution === 768 ? 30 : quality,
         );
         sourceTag.media = `(min-width: ${resolution}px)`;
         pictureTag.appendChild(sourceTag);
       });
+
+      // Fallback img tag
       const imgTag = document.createElement('img');
-      const quality = (screenWidth <= 767) ? 40 : 30;
-      imgTag.src = getCosyImageUrl(preConCosyImage, resolutionKey, quality);
+      imgTag.src = getCosyImageUrl(preConCosyImage, resolutionKey, 40);
       imgTag.alt = 'pre con Cosy Image';
       pictureTag.appendChild(imgTag);
       return pictureTag;
     };
 
-    preConImageDOM = createPictureTag();
+    preConImageDOM = createPictureTag(40);
     imageCard.append(preConImageDOM);
     imageCardContainer.append(imageCard);
     imageDomContainer.append(imageCardContainer);
@@ -497,7 +484,6 @@ async function generateCosyImage(imageDomContainer, preConCosyImage) {
 }
 
 export default async function decorate(block) {
-  let headLineDom;
   const preconLeftWrapper = document.createElement('div');
   preconLeftWrapper.classList.add('precon-wrapper-lft-area');
 
@@ -514,7 +500,7 @@ export default async function decorate(block) {
   preconRightWrapper.classList.add('precon-wrapper-rth-area');
 
   const backgroundImages = 'https://www.bmw.rs/etc.clientlibs/bmw-web/clientlibs/clientlib-site/resources/images/street-bg_1x_320.webp';
-  const quality = 50; // Adjust as needed
+  const quality = 50;
   const pictureElement = createBgImgaeUrl(backgroundImages, quality);
 
   const bgImg = document.createElement('picture').appendChild(pictureElement);
@@ -531,6 +517,7 @@ export default async function decorate(block) {
 
     let preConModelResponse;
     let preConCosyImage;
+    let headLineDom;
     let preConHeadLine;
     let optionsValue;
     let configureLink;
@@ -545,37 +532,40 @@ export default async function decorate(block) {
     const selectedPreConId = splitPreconData[3]?.trim() || ''; // authored selected PRECODN-ID
     try {
       if (selectedModelRange) {
+        // eslint-disable-next-line no-await-in-loop
         preConModelResponse = await getPreConApiResponse(selectedModelRange); // calling PRECon API
-        console.log('preConModel response', preConModelResponse);
       }
     } catch (error) {
       console.error(error);
     }
     if (preConModelResponse) {
-      // eslint-disable-next-line guard-for-in, no-unreachable-loop
+      // eslint-disable-next-line no-restricted-syntax, guard-for-in, no-unreachable-loop
       for (const key in preConModelResponse.responseJson) {
         if (preConModelResponse.responseJson[key].id === selectedPreConId);
         preConModeCode = preConModelResponse.responseJson[key]?.modelCode; // MODEL-CODE
-        preConHeadLine = preConModelResponse.responseJson[key]?.fabric; // Show the headline below cosy Image
+        // eslint-disable-next-line max-len
+        preConHeadLine = preConModelResponse.responseJson[key]?.headline; // Show the headline below cosy Image
         preConModelName = preConModelResponse.responseJson[key]?.modelName;
         optionsValue = preConModelResponse.responseJson[key]?.options; //
         configureLink = configureCTA(selctedModelData, preConModelResponse.responseJson[key]);
         break;
       }
       optionsCount = optionsValue.split(',').length;
+      // eslint-disable-next-line no-await-in-loop
       preConCosyImage = await getPreConCosyImage(preConModeCode); // Calling PRECON Cosy Image
       headLineDom = document.createElement('div');
       headLineDom.classList.add('headerline-wrapper');
       headLineDom.textContent = `${preConHeadLine}` || '';
-
-      configureCTADom = document.createElement('a');
-      configureCTADom.classList.add('button');
-      configureCTADom.href = configureLink;
-      configureCTADom.textContent = linkTab.querySelector('p')?.textContent || '';
-      configureCTADom.textContent = 'click ME';
+      configureCTADom = linkTab.querySelector('a') || '';
+      if (configureCTADom) {
+        configureCTADom.href = configureLink || (linkTab.querySelector('a').href || '');
+        configureCTADom.textContent = linkTab.querySelectorAll('p')[1]?.textContent || '';
+        linkTab.textContent = '';
+      }
     }
     generateCosyImage(imageDomContainer, preConCosyImage);
-    generatePrecon(wdhContext, linkTab, preconData, headLineDom, configureCTADom, preConModelName, optionsCount);
+    // eslint-disable-next-line max-len
+    generatePrecon(wdhContext, linkTab, preconData, headLineDom, configureCTADom, configureLink, preConModelName, optionsCount);
     contentData.append(preconData);
   }
   parentBlock.append(bgImg, imageDomContainer);

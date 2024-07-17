@@ -36,12 +36,13 @@
     display: block;
     height: 100%;
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
 }
 
 .precon-wrapper .precon-image-container {
     position: relative;
+    align-items: center;
     transition-property: transform;
     width: 100%;
     box-sizing: initial;
@@ -51,13 +52,14 @@
     transform: translateZ(0);
 }
 
+
 .precon-wrapper .precon-image-container .img-card-container {
     flex-shrink: 0;
     align-items: center;
-    display: flex;
-    justify-content: center;
     text-align: center;
     height: auto;
+    display: flex;
+    justify-content: center;
     touch-action: pan-y;
     backface-visibility: hidden;
     transform: translateZ(0);
@@ -103,7 +105,19 @@
     transition: filter .25s linear;
     right: .75rem;
 }
+.img-card {
+    position: relative;
+}
 
+
+.img-card picture {
+    display: flex;
+    justify-content: center;
+}
+.precon-wrapper .precon-image-container .img-card-container.not-active img{
+    transition: margin .25s linear;
+    width: 80%;
+}
 .precon-wrapper .precon-content-data {
     order: 1;
 }
@@ -117,9 +131,11 @@
 .precon-wrapper .pre-content-outer-wrapper .precon-wdh {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .precon-title {
+    text-align: center;
     font-size: 1.4375rem;
     font-weight: 300;
     line-height: 2.25rem;
@@ -131,6 +147,31 @@
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 1.75rem;
+    text-align: center;
+}
+
+.precon-wrapper .precon-content-data .precon-link {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.precon-wrapper .precon-content-data .precon-link a {
+    background-color: #262626;
+    color: #fff;
+    align-items: center;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: .25rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
 }
 
 @media (width >=1280px) {
@@ -164,6 +205,9 @@
         padding-top: 1.5rem;
     }
 
+    .precon-title, .headerline-wrapper {
+        text-align: initial;
+    }
 
     .precon-wrapper .precon-content-data .price-details-wrapper {
         --grid-gutter: .75rem;
@@ -176,29 +220,9 @@
     }
 
     .precon-wrapper .precon-content-data .precon-link {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-end;
         flex: 3;
     }
 
-    .precon-wrapper .precon-content-data .precon-link a {
-        background-color: #262626;
-        color: #fff;
-        align-items: center;
-        border: 0;
-        border-radius: 3px;
-        box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
-        cursor: pointer;
-        display: inline-flex;
-        justify-content: center;
-        min-height: 3.25rem;
-        padding: .25rem;
-        text-align: center;
-        text-decoration: none;
-        margin: 0;
-    }
 }
 
 .precon-wrapper .precon-wrapper-lft-area .carousel-btn-prev {
@@ -283,6 +307,10 @@
     display: flex;
 }
 
+.price-details-inner-wrapper:last-child {
+    margin-bottom: 2rem;
+}
+
 .price-details-inner-wrapper .swatches {
     align-items: center;
     display: flex;
@@ -302,7 +330,6 @@
 }
 
 .price-details-inner-wrapper .swatches .options-count {
-    margin-right: 1.5rem;
     align-items: center;
     background-color: #262626;
     color: #fff;
@@ -339,32 +366,27 @@
     display: none;
 }
 
-@media (width >=360px) {
+.precon-wrapper .precon-content-data .pre-content-outer-wrapper {
+    padding-bottom: 0;
+    padding-top: 1.25rem;
+}
 
+@media (width >= 360px) {
     .precon-wrapper .precon-wrapper-lft-area,
     .precon-wrapper .precon-wrapper-rth-area {
         display: none;
     }
 
-    /* .precon-wrapper .precon .img-card .video-img-title > * {
-            font-size: 1.1875rem;  
-            line-height: 1.75rem;
-        } */
 
-    /* .precon-wrapper .precon .img-card .video-img-description>* {
-            font-size: 1rem;
-            line-height: 1.625rem;
-        } */
 }
 
-@media (width >=1280px) {
+@media (width >= 1280px) {
 
     .precon-wrapper .precon-wrapper-lft-area,
     .precon-wrapper .precon-wrapper-rth-area {
         display: flex;
         justify-content: flex-start;
         width: 15rem;
-        height: 100%;
     }
 
     .precon .img-card picture img {
@@ -372,7 +394,6 @@
         object-fit: cover;
         vertical-align: middle;
         transition: margin .25s linear;
-        width: 80%;
     }
 
     .price-details-inner-wrapper {
@@ -401,27 +422,34 @@
 
     .price-details-inner-wrapper .swatches .options-count {
         margin-right: 1.5rem;
-        align-items: center;
-        background-color: #262626;
-        color: #fff;
-        display: inline-flex;
-        font-size: .75rem;
-        font-weight: 300;
-        height: 3.05rem;
-        justify-content: center;
-        line-height: 1rem;
-        width: 3.05rem;
     }
 }
 
-@media (width >=768px) and (width < 1280px) {
+@media (width >= 768px) and (width < 1024px) {
+    .precon-wrapper .precon-content-data .pre-content-outer-wrapper {
+        padding-left: 16.667%;
+        padding-right: 16.667%;
+    }
+}
+
+@media (width >= 768px) and (width < 1280px) {
     .precon-wrapper .precon-image-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .precon-wrapper .precon-content-data {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
     .section.precon-container {
         padding: 0;
+    }
+
+    .precon-wrapper .precon-content-data .precon-link a {
+        margin: 0 auto;
+        width: 50%;
     }
 
 }
@@ -431,7 +459,8 @@
         padding: 0;
     }
 
-    .precon-wrapper .precon-image-container {
+    .precon-wrapper .precon-image-container, 
+    .precon-wrapper .precon-content-data {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -443,18 +472,13 @@
 
 }
 
-@media (width >=1920px) {
+@media (width >= 1920px) {
     .precon-wrapper {
-        --grid-full: 6rem;
+        /* --grid-full: 6rem;
 
         margin-left: calc(var(--grid-full)* -1);
         margin-right: calc(var(--grid-full)* -1);
-        width: calc(100% + var(--grid-full)* 2);
-    }
-
-    .section.precon-container .precon-wrapper .block {
-        padding-left: 6rem !important;
-        padding-right: 6rem !important;
+        width: calc(100% + var(--grid-full)* 2); */
     }
 
     .section.precon-container .precon-wrapper .precon {
@@ -572,7 +596,7 @@
 
 }
 
-@media (width >=1280px) and (width < 1920px) {
+@media (width >= 1280px) and (width < 1920px) {
     .precon-wrapper .precon-image-container {
         padding-left: 6rem;
         padding-right: 6rem;
