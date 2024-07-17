@@ -14,7 +14,7 @@ const configuratorURL = getConfiguratorURL();
 let iconClicked = false;
 
 function updateCarousel(content, currentIndex, gap) {
-  const itemWidth = (content.children[currentIndex].offsetWidth);
+  const itemWidth = (content?.children[currentIndex]?.offsetWidth);
   const offset = -(currentIndex * (itemWidth));
   content.style.transform = `translate3d(${offset}px, 0px, 0px)`;
   content.style.transitionDuration = '750ms';
@@ -466,29 +466,29 @@ async function generateCosyImage(imageDomContainer, preConCosyImage) {
   if (preConCosyImage) { // cosy image to show for Pre-Con
     const screenWidth = window.innerWidth;
     const resolutionKey = getResolutionKey(screenWidth);
-    const createPictureTag = (quality) => {
+    const createPictureTag = () => {
       const pictureTag = document.createElement('picture');
       const resolutions = [767, 1023, 1919];
       resolutions.forEach((resolution) => {
+        const quality = (resolution <= 767) ? 40 : 30;
         const sourceTag = document.createElement('source');
         sourceTag.srcset = getCosyImageUrl(
           preConCosyImage,
-          getResolutionKey(resolution),
-          resolution === 768 ? 30 : quality,
+          resolutionKey,
+          quality,
         );
         sourceTag.media = `(min-width: ${resolution}px)`;
         pictureTag.appendChild(sourceTag);
       });
-
-      // Fallback img tag
       const imgTag = document.createElement('img');
-      imgTag.src = getCosyImageUrl(preConCosyImage, resolutionKey, 40);
+      const quality = (screenWidth <= 767) ? 40 : 30;
+      imgTag.src = getCosyImageUrl(preConCosyImage, resolutionKey, quality);
       imgTag.alt = 'pre con Cosy Image';
       pictureTag.appendChild(imgTag);
       return pictureTag;
     };
 
-    preConImageDOM = createPictureTag(40);
+    preConImageDOM = createPictureTag();
     imageCard.append(preConImageDOM);
     imageCardContainer.append(imageCard);
     imageDomContainer.append(imageCardContainer);
@@ -572,7 +572,7 @@ export default async function decorate(block) {
       configureCTADom.classList.add('button');
       configureCTADom.href = configureLink;
       configureCTADom.textContent = linkTab.querySelector('p')?.textContent || '';
-      linkTab.textContent = '';
+      configureCTADom.textContent = 'click ME';
     }
     generateCosyImage(imageDomContainer, preConCosyImage);
     generatePrecon(wdhContext, linkTab, preconData, headLineDom, configureCTADom, preConModelName, optionsCount);
