@@ -18,7 +18,7 @@
       "BMW Serije 3 Touring"
     ],
     "hybridCode": "NOHY",
-    "fromPrice": 62083,
+    "fromPrice": 57814,
     "acceleration": "6",
     "trunkCapacity": 500,
     "seats": 5,
@@ -32,7 +32,7 @@
       "agCode": "11FY",
       "paint": "P0C3Z",
       "fabric": "FMAOI",
-      "options": "S01R3,S0XED,S04M5,S0337,S07EW,S01CB,S01CX,S01DF,S0230,S0248,S02NH,S02PA,S02TB,S02VB,S02VC,S02VF,S02VL,S0302,S0332,S03AT,S03KA,S03MB,S0420,S0428,S0430,S0431,S0459,S0481,S0488,S0490,S0493,S0494,S04NE,S04T2,S04U9,S04UR,S0534,S0548,S0552,S05AC,S05AQ,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AG,S06AK,S06C4,S06CP,S06DR,S06NX,S06PA,S06U3,S06VB,S0710,S0715,S0775,S0851,S0879,S08EB,S08R3,S08R9,S08TF,S08TR,S08WD,S0901,S0925,S0991,S09AD"
+      "options": "S01CB,S01DF,S01HX,S0230,S0248,S02NH,S02PA,S02TE,S02VB,S02VC,S02VL,S0302,S0322,S0337,S03KA,S03MC,S0420,S0428,S0430,S0431,S0459,S0481,S0488,S0491,S0493,S0494,S04LN,S04NE,S04UR,S0534,S0548,S0552,S05AC,S05AQ,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06VB,S0704,S0710,S0715,S0760,S0775,S07A2,S07LG,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08TR,S08WM,S0925,S0991"
     },
     "powerTrain": {
       "fuelType": "O",
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TE",
@@ -72,9 +72,9 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "8.1–7.3",
+            "consumptionWltpCombined": "7.5–7.2",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "182–164",
+            "emissionsWltpCombined": "169–162",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -111,6 +111,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -157,9 +166,9 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "8.1–7.3",
+            "consumptionWltpCombined": "7.5–7.2",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "182–164",
+            "emissionsWltpCombined": "169–162",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -196,6 +205,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

@@ -33,7 +33,7 @@
       "agCode": "51EH",
       "paint": "P0C36",
       "fabric": "FVEII",
-      "options": "S01FD,S02TB,S02VB,S02VH,S02VS,S0302,S0319,S0356,S03CD,S03DM,S03M3,S03MY,S0407,S0416,S0420,S0428,S0453,S0454,S0465,S046A,S04A2,S04F4,S04F5,S04FL,S04FM,S04HC,S04NR,S04T6,S04T7,S04V1,S05AU,S05DW,S0654,S06C4,S06F1,S06FR,S06NX,S06U3,S06U7,S0754,S0760,S0775,S07M8,S07M9"
+      "options": "S01CB,S01DF,S01FD,S0230,S02PA,S02TB,S02VB,S02VH,S02VS,S0302,S0319,S0356,S03CD,S03DM,S03DN,S03M3,S03MY,S0407,S0416,S0420,S0428,S043B,S0453,S0454,S0465,S046A,S04A2,S04F4,S04F5,S04FL,S04FM,S04HC,S04NR,S04T2,S04T6,S04T7,S04U9,S04V1,S0548,S05AU,S05AW,S05DW,S0654,S06AE,S06AF,S06AK,S06C4,S06F1,S06FR,S06NX,S06PA,S06U3,S06U7,S0710,S0754,S0760,S07M8,S07M9,S07ML,S07R7,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08WN,S09DA,S09DB,S09DC,S09DD,S09T1,S09T2,S09TB"
     },
     "powerTrain": {
       "fuelType": "X",
@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -88,7 +88,7 @@
             "additionalRangeDC": "-",
             "chargeACDC": "7.4 (-) / -",
             "chargeAC": "7.4",
-            "charge_AC_0_100": "3.25",
+            "charge_AC_0_100": "3:00",
             "chargeDC": "-",
             "charge_DC_10_80": "-"
           },
@@ -123,6 +123,15 @@
           "electric": [
             "f2",
             "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

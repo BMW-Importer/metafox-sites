@@ -18,7 +18,7 @@
     "hidePrice": true,
     "fuelType": "O",
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "backgroundImage": "",
     "emissionDataWltp": {
       "co2": {},
@@ -77,7 +77,7 @@
     "hidePrice": true,
     "fuelType": "D",
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "imageTitle": " ",
     "imageAltText": " ",
     "backgroundImage": "/content/dam/bmw/common/preconfiguration/bmw-x-series-ix-onepager-pc-balance.jpg",
@@ -116,76 +116,6 @@
       "volt48": true
     }
   },
-  "5997": {
-    "id": 5997,
-    "name": "X3 xDrive30e",
-    "status": "OK",
-    "vehicleType": "PRECON",
-    "modelCode": "61DP",
-    "agModelCode": "61DP",
-    "vgModelCode": "61DP",
-    "modelRangeCode": "G01",
-    "options": "S01CB,S01DF,S0205,S0230,S0255,S025T,S02VB,S02VC,S0316,S0423,S0430,S0431,S0465,S0481,S04LU,S04NE,S04U9,S0508,S0534,S0548,S05A2,S05AV,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WC,S08WD,S0925",
-    "paint": "P0A90",
-    "fabric": "FKHRI",
-    "headline": "BALANCE.",
-    "hidePrice": true,
-    "fuelType": "X",
-    "productionDate": "",
-    "effectDate": "2024-06-24",
-    "imageTitle": " ",
-    "imageAltText": " ",
-    "backgroundImage": "/content/dam/bmw/common/preconfiguration/bmw-x-series-ix-onepager-pc-essence.jpg",
-    "emissionDataWltp": {
-      "co2": {},
-      "co2ChargeSustaining": {
-        "low": 242,
-        "mid": 170,
-        "high": 154,
-        "exHigh": 181,
-        "comb": 179
-      },
-      "co2ChargeDepletingCombined": 22,
-      "co2Weighted": 47,
-      "fuelConsumption": {},
-      "fuelConsumptionChargeSustaining": {
-        "low": 10.7,
-        "mid": 7.5,
-        "high": 6.8,
-        "exHigh": 8,
-        "comb": 7.9
-      },
-      "fuelConsumptionChargeDepletingCombined": 0.8,
-      "fuelConsumptionWeighted": 2.1,
-      "fuelEfficiency": {},
-      "fuelEfficiencyChargeSustaining": {},
-      "allElectricRangeCombined": 43,
-      "allElectricRangeCity": 46,
-      "equivalentAllElectricRange": {
-        "city": 47,
-        "comb": 44
-      },
-      "pureElectricRange": {},
-      "electricConsumptionAcWeighted": 21.5,
-      "electricConsumptionAcChargeDepletingCombined": 25.7,
-      "electricConsumption": {
-        "comb": 27.5
-      }
-    },
-    "modelName": "X3 xDrive30e",
-    "hybridCode": "PHEV",
-    "brand": "BM",
-    "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq9hnZ8X6Ausxpz9mlD3AfzBy2od4towTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6KAIXXRjcZwBOcSrx6Kc%252gq44WwBKupUmfFe%252B3ibMPIjup2XHhDXv63iprJkD7GwXHi4TPFR9%25rJHFlMJ2ou4TJIsDTgL3FlTv0YiyyXIslGAtebCrv0s9Of10E4GA0ogSxLNF9OALUdtvkIogOybAM5nvLUgChOU45GybUEqgmP89ChbNmUfiPoEqhk7bSRMLNmqn1ScJDyk7m5Vm4xYCn178z7IftE5V1Pa18OfN8zVMRVg9SkPazDxzU5dnMRaYWanLQ5DxRteRckZ8YWxfjx7fcPteWS6W1iKMfjedwqQBBDFk6TdzvZ2aKfifAscCZ6B4Mrt3%25eEagd94fX7FNp",
-    "technicalData": {
-      "enginePower": "215",
-      "engineHorsePower": "292",
-      "technicalCapacity": "1998",
-      "systemPower": "215",
-      "systemHorsePower": "292",
-      "volt48": false
-    }
-  },
   "5998": {
     "id": 5998,
     "name": "X3 M40i",
@@ -196,7 +126,7 @@
     "vgModelCode": "81DP",
     "modelRangeCode": "G01",
     "options": "S01CB,S01CE,S01DF,S022W,S0230,S0258,S02NH,S02T4,S02TB,S02VB,S02VG,S02VL,S0316,S03MC,S0423,S0430,S0431,S0465,S0481,S04AW,S04KN,S04NE,S0508,S0534,S0548,S0552,S05AC,S05AV,S0676,S06U2,S0704,S0710,S0715,S0760,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WD,S0925",
-    "paint": "P0C1M",
+    "paint": "P0300",
     "fabric": "FKHRI",
     "headline": "SIGNATURE.",
     "highlight1": "",
@@ -206,7 +136,7 @@
     "hidePrice": true,
     "fuelType": "O",
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "imageTitle": " ",
     "imageAltText": " ",
     "backgroundImage": "/content/dam/bmw/common/preconfiguration/bmw-x-series-ix-onepager-pc-signature.jpg",
@@ -237,7 +167,7 @@
     "hybridCode": "NOHY",
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq9hnZ8X6Ausxpz9mlD3AfzBy2od4eV0TQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBO%25Arx6Kc%252gKd4WwBKupUmIFe%252B3ibhtIjup2XHhGxv63iprJq9DGwXHi4TmtY9%25rJHFl7fuou4TJIs1S4L3FlTv0PSayXIslGAM6GCrv0s9Ofo6E4GA0ogSATNF9OALUdOmkIogOybQsnnvLUgChZu15GybUEqcte89ChbNmKEnPoEqhk7B%25nMLNmqn1hSYDyk7m5Vq79YCn178zmaftE5V1Pa7IsfN8zVMR1KMSkPazDxVBwdnMRaYWB0vQ5DxRte2JgZ8YWxfjtpkcPteWS6fUaKMfjedwSbBBDS6jQ%25dxx2Ydw6ZuQhpptQ%25wc3wkFifZu%25KX%255JHSc3uBruKRJdKX3243xMTQBrXpFXWclZ24riIrZYscpF4Hv4AQ0KiIFJGF%25bABHvIT9jlOO2kdGmT35sgXAebHz10tsGONBEiyoIfXRTPNHCwkSU",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq9hnZ8X6Ausxpz9mlD3AfzBy2od4bAwTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBO%25Arx6Kc%252gKd4WwBKupUmIFe%252B3ibhtIjup2XHhGxv63iprJq9DGwXHi4TmtY9%25rJHFl7fuou4TJIs1S4L3FlTv0PSayXIslGAM6GCrv0s9Ofo6E4GA0ogSATNF9OALUdOmkIogOybQsnnvLUgChZu15GybUEqcte89ChbNmKEnPoEqhk7B%25nMLNmqn1hSYDyk7m5Vq79YCn178zmaftE5V1Pa7IsfN8zVMR1KMSkPazDxVBwdnMRaYWB0vQ5DxRte2JgZ8YWxfjtpkcPteWS6fUaKMfjedwSbBBDS6jQ%25dxx2Ydw6ZuQhpptQ%25wc3wkFifZu%25KX%255JHSc3uBruKRJdKX3243xMTQBrXpFXWclZ24riIrZYscpF4Hv4AQ0KiIFJGF%25bABHvIT9jlOO2kdGmT35sgXAebHz10tsGONBEiyoIfXRTPNHCwkSU",
     "technicalData": {
       "enginePower": "265",
       "engineHorsePower": "360",

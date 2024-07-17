@@ -32,7 +32,7 @@
       "agCode": "11FJ",
       "paint": "P0C3Z",
       "fabric": "FVCJN",
-      "options": "S03GM, S043N, S03DP,S02TE,S05AT,S05DN,S02PA,S02VB,S0300,S0428,S05AY,S06AF,S08TF,S06NX,S06U2,S0674,S06AK,S06C4,S0316,S03DK,S06CP,S08TG,S0453,S0465,S0481,S0494,S04T8,S09QW,S01CR,S0416,S0420,S0534"
+      "options": "S01CB,S01CE,S01DF,S0230,S02PA,S02TE,S02VB,S0302,S0316,S0322,S03DP,S03FY,S0416,S0420,S0428,S043N,S0453,S0459,S04FL,S04HA,S04NB,S04NR,S0548,S0552,S05AS,S05AT,S05AV,S05DN,S0654,S0674,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S07EW,S07LK,S07VB,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF"
     },
     "powerTrain": {
       "fuelType": "D",
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TE",
@@ -111,6 +111,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

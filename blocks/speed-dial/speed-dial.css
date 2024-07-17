@@ -119,7 +119,7 @@
 }
 
 .speeddial-backtotop:hover {
-    background-color: var(--light-bbb);
+    background-color: var(--light-bbb) !important;
 }
 
 .speeddial-btn-clicked:hover {
@@ -252,11 +252,19 @@ div:has(> .chat)::before {
         font-size: 0.875rem;
         line-height: 1.375rem
     }
+
+    .list-of-containers {
+        width: 10.25rem;
+    }
 }
 
 @media (width >=1920px) {
     .list-of-containers a {
         font-size: 1rem;
         line-height: 1.625rem;
+    }
+
+    .list-of-containers {
+        width: 10.625rem;
     }
 }

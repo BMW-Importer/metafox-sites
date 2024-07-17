@@ -25,6 +25,7 @@
     "topSpeed": "200",
     "bodyTypeCode": "GF",
     "marketingBodyTypeCode": "SUV",
+    "pureElectricRange": 436,
     "posiSpec": {
       "cosyBrand": "WBBI",
       "agCode": "21CF",
@@ -39,7 +40,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -72,9 +73,9 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "0",
-            "electricConsumption": "-",
-            "electricRangeWltpCombined": "-",
+            "emissionsWltpCombined": "-",
+            "electricConsumption": "21.4–19.4",
+            "electricRangeWltpCombined": "403–436",
             "efficiencyCategoryMinChargeSustaining": "-",
             "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
@@ -83,11 +84,11 @@
           "charging": {
             "batteryCapacity": "74.1",
             "additionalRangeDC": "102 - 133",
-            "chargeACDC": "11 (-) / 150",
-            "chargeAC": "11",
-            "charge_AC_0_100": "8.25",
+            "chargeACDC": "11 (22) / 150",
+            "chargeAC": "11 / 22",
+            "charge_AC_0_100": "8:15 / 4:00",
             "chargeDC": "150",
-            "charge_DC_10_80": "31"
+            "charge_DC_10_80": "0:31"
           },
           "weightMeasurements": {
             "length": "4953",
@@ -104,11 +105,32 @@
           }
         },
         "footnotes": {
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
           "emissionsConsumptionWltp": [
             "f4"
           ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombinedBest_label": [
+            "f6"
+          ],
           "charging": [
             "f7"
+          ],
+          "charging_chargeAC_value": [
+            "f15"
+          ],
+          "charging_charge_AC_0_100_value": [
+            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"

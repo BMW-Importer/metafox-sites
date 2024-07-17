@@ -16,7 +16,7 @@
     "fuelType": "E",
     "headlightsOn": true,
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "imageTitle": "",
     "imageAltText": "",
     "emissionDataWltp": {
@@ -63,14 +63,14 @@
     "agModelCode": "31CF",
     "vgModelCode": "31CF",
     "modelRangeCode": "I20",
-    "options": "S01LF,S0230,S02PA,S02VB,S02VC,S02VH,S02VR,S0302,S0323,S03AC,S03L7,S03M1,S0407,S0413,S0428,S043M,S0453,S048Z,S04AA,S04FM,S04HC,S04NB,S04T3,S04T8,S04U6,S04U9,S04UR,S04V1,S0544,S0548,S05AC,S05AL,S05AQ,S05AU,S05AV,S05AZ,S05DM,S06AE,S06AF,S06AK,S06C4,S06F1,S06PA,S06U3,S06U7,S0710,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S0991,S09T8",
+    "options": "S01LF,S0230,S02PA,S02VB,S02VC,S02VH,S02VR,S0302,S0323,S03AC,S03L7,S03M1,S0407,S0413,S0428,S043M,S0453,S048Z,S04AA,S04FM,S04HC,S04NB,S04T8,S04U6,S04U9,S04UR,S04V1,S0544,S0548,S05AC,S05AL,S05AQ,S05AU,S05AV,S05AZ,S05DM,S06AE,S06AF,S06AK,S06C4,S06F1,S06PA,S06U3,S06U7,S0710,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S0991,S09T8",
     "paint": "P0C3N",
     "fabric": "FSCHA",
     "headline": "",
     "hidePrice": true,
     "fuelType": "E",
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "emissionDataWltp": {
       "co2": {
         "low": 0,
@@ -98,7 +98,7 @@
     "hybridCode": "BEVE",
     "brand": "BI",
     "cosyBrand": "WBBI",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvS8KM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rOmQzZ8X6Ausxpz9mlD3AfzBy2od4eXiTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeJ7uzWQdjc0Qt3aeZQ6KAqSXRjcZwBO5nrx6Kc%252g8%254WwBKupUPYFe%252B3ibMOIjup2XHNLDv63iprJk4aGwXHi4TnE49%25rJHFl5hAou4TJIs8egL3FlTv0YkgyXIslGAtdjCrv0s9OfoNE4GA0ogSA5NF9OALUd6%25kIogOybQ%25QnvLUgChZYA5GybUEqc7D89ChbNmK8NPoEqhk7B%25iMLNmqn12YFDyk7m5VpttYCn178ziBrtE5V1PaH2kfN8zVMRJpuSkPazDxTA6dnMRaYWzeEQ5DxRteajcZ8YWxfjRifcPteWS6xHtKMfjedwWJABDS6jQ%25eT62Ydw6ZujlFptQ%25wc36sbifZu%25KXwMlHSc3uBr0A2JdKX324AOfTQBrXpFOgVlZ24riIgkSscpF4HvU9L0KiIFJGbfrABHvIT9h1SO2JGvloqVCgpT9GsLljFUilo90y9dkbHsLoACo6ThJ0yLOELrKqTACygNy4smlOECUkC1J7sgNEbnEGq10UkNh5FtDVAbnkq8IaazOSJ5jqLQ7ayV7xJqw1p75zfAtUDPkiyXqcfbYGSHR",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvS8KM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rOmQzZ8X6Ausxpz9mlD3AfzBy2od4eXiTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZeJ7uzWQdjc0Qt3aeZQ6KAqSXRjcZwBO5nrx6Kc%252g8%254WwBKupUPYFe%252B3ibMOIjup2XHNLDv63iprJk4aGwXHi4TnE49%25rJHFl5hAou4TJIs8egL3FlTv0YkgyXIslGAtdjCrv0s9OfoNE4GA0ogSA5NF9OALUd6%25kIogOybQ%25QnvLUgChZYA5GybUEqc7D89ChbNmK8NPoEqhk7B%25iMLNmqn12YYDyk7m5VpKXYCn178ziBNtE5V1PaH2%25fN8zVMRJ0jSkPazDxVWCdnMRaYWzeZQ5DxRteaptZ8YWxfjRiYcPteWS6xH0KMfjedwWJjBDS6jQ%25eT42Ydw6ZujlUptQ%25wc36PTifZu%25KXs0BHSc3uBr0AtJdKX324AO1TQBrXpFONflZ24riIgGoscpF4HvUtX0KiIFJGb7fABHvIT9h1yO2JGvloTe4gpT9GsLGSNUilo90y9jJbHsLoACoXchJ0yLOELrlqTACygNy7HmlOECUkCvh7sgNEbn4YM10UkNh5FzzVAfHnehodmzL1mRHh672mnVt0YgM8NpL3hZtUDvfia",
     "technicalData": {
       "enginePower": "0",
       "systemPower": "397",

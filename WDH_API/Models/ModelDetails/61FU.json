@@ -18,12 +18,8 @@
       "BMW Serije 3 Touring"
     ],
     "hybridCode": "NOHY",
-    "fromPrice": 75035,
-    "acceleration": "4.6",
-    "trunkCapacity": 480,
-    "seats": 5,
-    "horsePower": 340,
-    "topSpeed": "250",
+    "fromPrice": 75486,
+    "acceleration": "-",
     "marketingVehicleType": "M",
     "bodyTypeCode": "LI",
     "marketingBodyTypeCode": "LI",
@@ -33,15 +29,90 @@
       "agCode": "61FU",
       "paint": "P0X1G",
       "fabric": "FMANL",
-      "options": "S1HZA,S04MC,S0248,S02NH,S02PA,S02T4,S02TB,S02VB,S02VF,S02VL,S0302,S0316,S0322,S0337,S033B,S033T,S03BE,S03KA,S03MF,S0420,S0428,S0430,S0431,S0459,S0465,S0481,S0488,S0493,S0494,S04A2,S04GQ,S04NW,S04U0,S04UR,S0534,S0548,S0552,S05AC,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AG,S06AK,S06C4,S06CP,S06DR,S06NX,S06PA,S06U3,S0710,S0711,S0715,S0754,S0760,S0775,S07EW,S07M9,S0801,S0851,S0879,S08R3,S08R9,S08S3,S08TF,CTRLLIGHTSON",
+      "options": "S01G0,S04MC,S0248,S03M2,S02PA,S02T4,S02TB,S02VB,S02VF,S02VL,S0302,S0316,S0322,S0337,S033B,S033T,S03BE,S03KA,S03MF,S0428,S0430,S0431,S0459,S0465,S0481,S0488,S0493,S0494,S04A2,S04GQ,S04NW,S04U0,S04UR,S0534,S0548,S0552,S05AC,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AG,S06AK,S06C4,S06CP,S06DR,S06NX,S06PA,S06U3,S0710,S0715,S0754,S0760,S0775,S07EW,S07M9,S0801,S0851,S0879,S08R3,S08R9,S08S3,S08TF,CTRLLIGHTSON",
       "productionDate": "2024-09-03"
     },
     "powerTrain": {
       "fuelType": "D",
-      "systemPower": "250 (340)",
-      "systemMaxTorque": "700",
-      "gearBox": "8 - automatisch",
+      "systemPower": "-",
+      "systemMaxTorque": "-",
+      "gearBox": "-",
       "driveType": "AR"
-    }
+    },
+    "effectDate": "2024-07-16",
+    "vehicles": [
+      {
+        "transmissionCode": "S02TB",
+        "hybridCode": "NOHY",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "D",
+            "systemPower": "-",
+            "systemMaxTorque": "-",
+            "gearBox": "-",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6.4–5.9",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "169–154",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "trunkCapacity": "-",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
   }
 }

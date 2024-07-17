@@ -34,8 +34,10 @@ export default function decorate(block) {
   });
 
   speeddialBackBtn.addEventListener('click', topFunction);
+  speeddialBackBtn.setAttribute('title', 'Back to top');
 
   speeddialBtn.setAttribute('aria-expanded', false);
+  speeddialBtn.setAttribute('title', 'Speed Dial Menu');
   speeddialBtn.addEventListener('click', () => {
     speeddialBtn.classList.toggle('speeddial-btn-clicked');
     listOfLinkContainer.classList.toggle('btn-opened');

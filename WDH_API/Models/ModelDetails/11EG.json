@@ -31,7 +31,7 @@
       "agCode": "61EE",
       "paint": "P0C66",
       "fabric": "FMACX",
-      "options": "S0801,S07EW,S07HW,S01CB,S01CE,S01DF,S01EU,S0230,S0248,S02PA,S02TF,S02VB,S02VC,S02VG,S0302,S0322,S03AT,S03MB,S0402,S0413,S0428,S0430,S0431,S0455,S0459,S0478,S0481,S0494,S04AT,S04NR,S04NW,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S0610,S0654,S0674,S06AE,S06AF,S06AK,S06C4,S06CP,S06NX,S06PA,S06U3,S0775,S0851,S0879,S08EB,S08KA,S08R3,S08R9,S08TF,S0901,S0925,S09T5,S0610,S0654,S0674"
+      "options": "S01CB,S01CE,S01DF,S01EU,S0230,S0248,S02PA,S02TF,S02TM,S02VB,S02VC,S0302,S0322,S03AT,S03MB,S0402,S0413,S0428,S0430,S0431,S0455,S0459,S0478,S0481,S0494,S04AT,S04NR,S04NW,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S0610,S0654,S0674,S06AE,S06AF,S06NX,S06PA,S06U3,S0775,S07EW,S07HW,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S0925,S09T5"
     },
     "powerTrain": {
       "fuelType": "D",
@@ -40,7 +40,7 @@
       "gearBox": "7 - automatisch",
       "driveType": "VR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -110,6 +110,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -195,6 +204,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

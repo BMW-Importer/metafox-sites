@@ -8,7 +8,7 @@
     "agModelCode": "11EG",
     "vgModelCode": "11EG",
     "modelRangeCode": "U11",
-    "options": "S01CB,S01DF,S01LS,S0230,S02TF,S02VB,S02VC,S02VG,S0316,S04GN,S0534,S0548,S05AV,S05DA,S05DM,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08TF",
+    "options": "S01CB,S01DF,S01LS,S0230,S02TF,S02VB,S02VC,S02VG,S0316,S04GN,S0534,S0548,S05AV,S05DA,S05DM,S06AF,S06U2,S0851,S0880,S08KH,S08R3,S08R9,S08TF",
     "paint": "P0C66",
     "fabric": "FBLAT",
     "headline": "",
@@ -19,7 +19,7 @@
     "hidePrice": true,
     "fuelType": "D",
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "backgroundImage": "",
     "emissionDataWltp": {
       "co2": {
@@ -48,7 +48,7 @@
     "hybridCode": "NOHY",
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rmhpmZ8X6Ausxpz9mlD3AfzBy2od4ewnTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6loXRjcZwBOcSrx6Kc%252gFa4WwBKupUP8Fe%252B3ibM3Ijup2XHhD6v63iprJkD7GwXHi4TPOI9%25rJHFliJjou4TJIsH0yL3FlTv0JnbyXIslGATwJCrv0s9Ol%25nE4GA0og8PXNF9OALUPtKkIogOybOw7nvLUgChgu85GybUEqUCJ89ChbNmbTrPoEqhk7hlyMLNmqn1qY9DyeI7QnO68YgMIfvPcPr87DWLxEaVq4gpn%25WNRseFt",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rmhpmZ8X6Ausxpz9mlD3AfzBy2od4ewnTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6loXRjcZwBOcSrx6Kc%252gFa4WwBKupUP8Fe%252B3ibM3Ijup2XHhD6v63iprJkD7GwXHi4TPOI9%25rJHFliJjou4TJIsH0yL3FlTv0JnbyXIslGATwJCrv0s9Ol%25nE4GA0og8PXNF9OALUPtKkIogOybOw7nvLUgChgu05GybUEqUCJ89ChbNmbTrPoEqhk7hlyMLNmqn1qY9DyeI7QnO68YgMIfvPcPr87DWLxEaVq4gpn%25WNRseFt",
     "technicalData": {
       "enginePower": "110",
       "engineHorsePower": "150",

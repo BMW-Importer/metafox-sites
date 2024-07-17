@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -113,6 +113,15 @@
           "engine": [
             "f1"
           ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
           "emissionsConsumptionWltp": [
             "f1",
             "f4"
@@ -129,30 +138,24 @@
       {
         "transmissionCode": "S02MA",
         "hybridCode": "NOHY",
-        "iD_LEIST_KONST": "00",
         "volt48": false,
         "technicalData": {
           "powerTrain": {
             "fuelType": "O",
-            "systemPower": "250 (340)",
-            "systemMaxTorque": "500",
-            "gearBox": "6 - handgeschaltet",
+            "systemPower": "-",
+            "systemMaxTorque": "-",
+            "gearBox": "-",
             "driveType": "HR"
           },
           "engine": {
-            "cylinders": "6",
-            "technicalCapacity": "2998",
-            "nominalPower": "250 (340) / 5000 - 6500",
-            "nominalTorque": "500 / 1600 - 4500"
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
           },
           "electric": {
             "systemPower": "-",
             "systemMaxTorque": "-"
-          },
-          "performance": {
-            "acceleration": "4.6",
-            "topSpeed": "250",
-            "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "8.7",
@@ -175,17 +178,8 @@
             "charge_DC_10_80": "-"
           },
           "weightMeasurements": {
-            "length": "4324",
-            "width": "1864",
-            "height": "1303",
-            "widthMirrors": "2024 (1018 / 1006)",
-            "wheelTurn": "2470.0",
-            "weightNotLoaded": "1625",
-            "weightMax": "1860",
-            "permittedLoad": "310",
-            "trailerLoad": "-",
-            "trunkCapacity": "281",
-            "tankCapacity": "52.0"
+            "trunkCapacity": "-",
+            "tankCapacity": "-"
           }
         },
         "footnotes": {
@@ -195,18 +189,21 @@
           "engine": [
             "f1"
           ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
           "emissionsConsumptionWltp": [
             "f1",
             "f4"
-          ],
-          "weightMeasurements_weightNotLoaded_label": [
-            "f8"
           ]
         },
-        "footnotesData": {
-          "overboostMax": "-",
-          "overboostKW": "-"
-        }
+        "footnotesData": {}
       }
     ]
   }

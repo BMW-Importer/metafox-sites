@@ -883,7 +883,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -1204,11 +1204,11 @@
         "label": "Only if other is selected the following options should appear:",
         "name": "analytics_others",
         "valueType": "string",
-        "condition": { "===": [{"var" : "analytics_button"}, "Other"] },
+        "condition": { "===": [{"var" : "analytics_button"}, "other"] },
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -2268,7 +2268,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -2661,7 +2661,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -2751,7 +2751,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -3178,7 +3178,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -3268,7 +3268,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -4227,7 +4227,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -4282,18 +4282,6 @@
     ]
   },
   {
-    "id": "preconcomp",
-    "fields": [
-      {
-        "component": "preconcustomtype",
-        "label": "precon Context",
-        "name": "wdh_preconcustomvalues",
-        "description": "for testing purpose",        
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "shopbylookcomp",
     "fields": [
       {
@@ -4308,6 +4296,33 @@
   {
     "id": "precon-vehicle",
     "fields": [
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "contextualised"
+      },
+      {
+        "component": "text",
+        "label": "Link",
+        "valueType": "string",
+        "name": "contextualised_Link",
+        "description": "Defines the link of the contextualised button."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Link Label",
+        "name": "contextualised_LinkText",
+        "description": "Defines the text to be displayed in the contextualised button."
+      },
+      {
+        "component": "boolean",
+        "label": "Select as Highlighted Model",
+        "name": "contextualised_HighlightedModel",
+        "description": "Defines the vehicle that will be highlighted when loading the page.",
+        "valueType": "boolean",
+        "value": false
+      },
       {
         "component": "tab",
         "label": "Context",
@@ -4343,20 +4358,102 @@
       },
       {
         "component": "tab",
-        "label": "Contexturalised Link",
-        "name": "contexturalised"
+        "label": "Analytics",
+        "name": "analytics"
       },
       {
         "component": "text-input",
-        "label": "Link Label",
-        "name": "contexturalised_linkLabel",
-        "description": "Defines the text to be displayed in the contextualised button."
+        "name": "analytics_label",
+        "label": "Analytics Label",
+        "valueType": "string"
       },
       {
-        "component": "text-input",
-        "label": "Link",
-        "name": "contexturalised_linkText",
-        "description": "Defines the link of the contextualised button."
+        "component": "select",
+        "name": "analytics_button",
+        "label": "Button/Link Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit",
+            "value": "exit"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "Other",
+            "value": "other"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "label": "Button/Link Category",
+        "name": "analytics_others",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "analytics_button"
+            },
+            "other"
+          ]
+        },
+        "options": [
+          {
+            "name": "Learn More",
+            "value": "learnMore"
+          },
+          {
+            "name": "Configure",
+            "value": "Configure"
+          },
+          {
+            "name": "Technical Data",
+            "value": "Technical Data"
+          },
+          {
+            "name": "Options and Prices",
+            "value": "Options and Prices"
+          },
+          {
+            "name": "Vehicles in Stock",
+            "value": "Vehicles in Stock"
+          },
+          {
+            "name": "Request for Offer",
+            "value": "Request for Offer"
+          },
+          {
+            "name": "Sales and Service Network",
+            "value": "Sales and Service Network"
+          },
+          {
+            "name": "Test Drive",
+            "value": "Test Drive"
+          },
+          {
+            "name": "Newsletter Signup",
+            "value": "Newsletter Signup"
+          },
+          {
+            "name": "Contact",
+            "value": "Contact"
+          },
+          {
+            "name": "Search",
+            "value": "Search"
+          },
+          {
+            "name": "Show More / Show Less",
+            "value": "Show More / Show Less"
+          },
+          {
+            "name": "Other",
+            "value": "Other"
+          }
+        ]
       }
     ]
   },
@@ -4444,7 +4541,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -4605,7 +4702,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",

@@ -37,7 +37,7 @@
       "gearBox": "-",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -63,7 +63,7 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "0.9–0.8",
-            "consumptionWltpCombinedChargeSustaining": "6.5–5.7",
+            "consumptionWltpCombinedChargeSustaining": "6.4–5.7",
             "emissionsWltpCombined": "21–19",
             "electricConsumption": "18.1–16.1",
             "electricRangeWltpCombined": "78–88",
@@ -97,6 +97,15 @@
           "electric": [
             "f2",
             "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -156,7 +165,7 @@
           },
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "0.9–0.8",
-            "consumptionWltpCombinedChargeSustaining": "6.5–5.7",
+            "consumptionWltpCombinedChargeSustaining": "6.4–5.7",
             "emissionsWltpCombined": "21–19",
             "electricConsumption": "18.1–16.1",
             "electricRangeWltpCombined": "78–88",
@@ -190,6 +199,15 @@
           "electric": [
             "f2",
             "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

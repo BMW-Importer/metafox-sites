@@ -33,7 +33,7 @@
       "agCode": "21ET",
       "paint": "P0C5A",
       "fabric": "FX3DA",
-      "options": "S01EZ,S04MC,S01MA,S01MD,S02PA,S02VB,S02VC,S0302,S03KA,S03M5,S03ME,S03MF,S03MG,S0407,S0417,S0418,S0420,S0423,S0428,S044A,S0453,S0459,S0488,S04FL,S04GQ,S04HA,S04HB,S04M5,S04MA,S04NB,S04NM,S04T7,S05AL,S05AU,S05AV,S05DW,S0654,S06C4,S06CP,S06F1,S06NX,S06PA,S06U3,S06U8,S0760,S0776,S07M9,S07ME,S07RS,CTRLLIGHTSON",
+      "options": "S01CE,S01DF,S01EZ,S01MA,S01MD,S0230,S02PA,S02VB,S02VC,S0302,S0322,S03KA,S03M5,S03ME,S03MF,S03MG,S0407,S0417,S0418,S0420,S0423,S0428,S044A,S0453,S0459,S04FL,S04GQ,S04HA,S04HB,S04MA,S04MC,S04NB,S04NM,S04T7,S0548,S0552,S05AC,S05AL,S05AU,S05AV,S05DW,S0654,S06AE,S06AF,S06AK,S06C4,S06F1,S06NX,S06PA,S06U3,S06U8,S0776,S07LK,S07M9,S07ME,S07R7,S07RS,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S0925",
       "productionDate": "2023-02-05"
     },
     "powerTrain": {
@@ -43,7 +43,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -76,7 +76,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "0",
+            "emissionsWltpCombined": "-",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -113,6 +113,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

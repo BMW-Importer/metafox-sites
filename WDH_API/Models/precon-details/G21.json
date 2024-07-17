@@ -8,9 +8,9 @@
     "agModelCode": "81FY",
     "vgModelCode": "81FY",
     "modelRangeCode": "G21",
-    "options": "S01CB,S01CE,S01DF,S01PT,S0230,S0258,S02T4,S02TB,S02VB,S02VL,S0316,S03MC,S0413,S0423,S0431,S0465,S0481,S0491,S0493,S04LN,S04NE,S0508,S0534,S0544,S0548,S05AQ,S05DA,S05DC,S0676,S06AF,S06U2,S06VB,S06WC,S0704,S0710,S0715,S0760,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WD,S08WM",
+    "options": "S01CB,S01CE,S01DF,S01G0,S0230,S0258,S02T4,S02TB,S02VB,S02VL,S0316,S03MC,S0413,S0423,S0431,S0465,S0481,S0491,S0493,S04LN,S04NE,S0508,S0534,S0544,S0548,S05AQ,S05DA,S05DC,S0676,S06AF,S06U2,S06VB,S06WC,S0704,S0715,S0760,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WD,S08WM",
     "paint": "P0475",
-    "fabric": "FKGNL",
+    "fabric": "FMANL",
     "headline": "",
     "highlight1": "",
     "highlight2": "",
@@ -19,7 +19,7 @@
     "hidePrice": true,
     "fuelType": "O",
     "productionDate": "",
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "backgroundImage": "",
     "emissionDataWltp": {
       "co2": {},
@@ -48,7 +48,7 @@
     "hybridCode": "NOHY",
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqgvDZ8X6Ausxpz9mlD3AfzBy2od4m1TTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwmYrx6Kc%252gKd4WwBKupUmIFe%252B3ibvRIjup2XHhGMv63iprJqYDGwXHi4TmtX9%25rJHFl5tVou4TJIs8eIL3FlTv0YSeyXIslGAt9jCrv0s9Of0hE4GA0ogSTNNF9OALUdwmkIogOybQV7nvLUgChZz35GybUEqcxk89ChbNmKwkPoEqhk7bfDMLNmqn1hmGDyk7m5Vqz9YCn178zmaftE5V1Pa7cifN8zVMR1L7SkPazDxVyDdnMRaYWB0vQ5DxRte2pkZ8YWxfjpTUcPteWS6ibUKMfjedwHVdBDS6jQ%25dJ82Ydw6ZuQqWptQ%25wc3ZmiifZu%25KXcjjHSc3uBrK7JJdKX32438GTQBrXpFXMslZ24riIrpescpF4Hv4jt0KiIFJGF62ABHvIT9IBSO2JGvlovUKgpT9GsLGXmUilo90y9rmbH8cLV04MOhFUwmDjagdOLb5inTNC9QFe0Y5lk38Zq",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rTNvDZ8X6Ausxpz9mlD3AfzBy2od4m1TTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwJSrx6Kc%252gKd4WwBKupUmIFe%252B3ibvRIjup2XHhGMv63iprJqYDGwXHi4TmtX9%25rJHFl5tVou4TJIs8eIL3FlTv0YSeyXIslGAt9jCrv0s9Of0hE4GA0ogSTNNF9OALUdwmkIogOybQV7nvLUgChZz35GybUEqcxk89ChbNmKwkPoEqhk7bfDMLNmqn1hmGDyk7m5Vqz9YCn178zmaftE5V1Pa7cifN8zVMR1L7SkPazDxVyDdnMRaYWB0vQ5DxRte2pkZ8YWxfjpTUcPteWS6ibUKMfjedwHVdBDS6jQ%25dJ82Ydw6ZuQqpptQ%25wc3ZeeifZu%25KXcmHHSc3uBru5vJdKX3243PlTQBrXpFX2WlZ24riIreYscpF4Hv4jB0KiIFJGFKfABHvIT9IgcO2JGvlov3qgpT9GsLGXqUi5Zo1srPAb4g6qMezOSAoUnpkJEyGd4WsDnTNu5Qh",
     "technicalData": {
       "enginePower": "275",
       "engineHorsePower": "374",
@@ -56,78 +56,6 @@
       "systemPower": "275",
       "systemHorsePower": "374",
       "volt48": true
-    }
-  },
-  "7234": {
-    "id": 7234,
-    "name": "Shop the Look",
-    "status": "OK",
-    "vehicleType": "SHOP_THE_LOOK",
-    "modelCode": "81CY",
-    "agModelCode": "81CY",
-    "vgModelCode": "81CY",
-    "modelRangeCode": "G21",
-    "options": "S01CB,S01CX,S01DF,S01WG,S0230,S0255,S02TE,S02VB,S02VC,S02VF,S02VL,S0316,S03MC,S0413,S0423,S0431,S0465,S0493,S04GN,S04NE,S04U9,S0508,S0534,S0544,S0548,S05AQ,S05DA,S05DC,S06AF,S06U2,S06VB,S06WC,S0760,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WC,S08WD,S08WM",
-    "paint": "P0C1M",
-    "fabric": "FEHAT",
-    "headline": "",
-    "highlight1": "",
-    "highlight2": "",
-    "highlight3": "",
-    "badge": "",
-    "hidePrice": true,
-    "fuelType": "X",
-    "productionDate": "",
-    "effectDate": "2024-06-24",
-    "backgroundImage": "",
-    "emissionDataWltp": {
-      "co2": {},
-      "co2ChargeSustaining": {
-        "low": 228,
-        "mid": 150,
-        "high": 139,
-        "exHigh": 162,
-        "comb": 162
-      },
-      "co2ChargeDepletingCombined": 9,
-      "co2Weighted": 34,
-      "fuelConsumption": {},
-      "fuelConsumptionChargeSustaining": {
-        "low": 10.1,
-        "mid": 6.7,
-        "high": 6.2,
-        "exHigh": 7.2,
-        "comb": 7.2
-      },
-      "fuelConsumptionChargeDepletingCombined": 0.3,
-      "fuelConsumptionWeighted": 1.5,
-      "fuelEfficiency": {},
-      "fuelEfficiencyChargeSustaining": {},
-      "allElectricRangeCombined": 51,
-      "allElectricRangeCity": 53,
-      "equivalentAllElectricRange": {
-        "city": 61,
-        "comb": 56
-      },
-      "pureElectricRange": {},
-      "electricConsumptionAcWeighted": 18.9,
-      "electricConsumptionAcChargeDepletingCombined": 22.5,
-      "electricConsumption": {
-        "comb": 22.2
-      }
-    },
-    "modelName": "330e",
-    "hybridCode": "PHEV",
-    "brand": "BM",
-    "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rK9pmZ8X6Ausxpz9mlD3AfzBy2od4eV0TQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjsq3aeZQ6K67VXRjcZwBwYxrx6Kc%252gKd4WwBKupUmFFe%252B3ibvXIjup2XHhDMv63iprJqYrGwXHi4Tmtj9%25rJHFl7frou4TJIs8fzL3FlTv0PjvyXIslGAtdjCrv0s9Ofo6E4GA0ogSAqNF9OALUdlkkIogOybQVunvLUgChZVN5GybUEqc6N89ChbNmKQLPoEqhk7bfDMLNmqn1hmGDyk7m5Vqz9YCn178zmaftE5V1Pa7cifN8zVMR1L7SkPazDxVyDdnMRaYWB2NQ5DxRte2JgZ8YWxfjpUgcPteWS6i1SKMfjedwSRRBDS6jQ%25jEr2Ydw6Zu6kiptQ%25wc3wZzifZu%25KX%25a8HSc3uBruRQJdKX3243dMTQBrXpFXsSlZ24riIr6iscpF4Hv4wU0KiIFJGF%25UABNSvqJunlO30WUSR7sYlvAEKCpL9Ft3aJ8Eiy6Nfg",
-    "technicalData": {
-      "enginePower": "215",
-      "engineHorsePower": "292",
-      "technicalCapacity": "1998",
-      "systemPower": "215",
-      "systemHorsePower": "292",
-      "volt48": false
     }
   },
   "8238": {
@@ -184,77 +112,6 @@
       "engineHorsePower": "190",
       "technicalCapacity": "1995",
       "volt48": true
-    }
-  },
-  "8239": {
-    "id": 8239,
-    "name": "BMW 330e",
-    "status": "OK",
-    "vehicleType": "PRECON",
-    "modelCode": "81CY",
-    "agModelCode": "81CY",
-    "vgModelCode": "81CY",
-    "modelRangeCode": "G21",
-    "options": "S01CB,S01CX,S01DF,S01R3,S0230,S02PA,S02TE,S02VB,S02VC,S0316,S0337,S03MC,S0413,S0423,S0428,S0430,S0431,S0465,S0481,S0493,S0494,S04LN,S04NE,S04T3,S04U9,S0508,S0534,S0544,S0548,S05AQ,S05DA,S05DC,S06AE,S06AF,S06AK,S06C4,S06U2,S06VB,S06WC,S0710,S0715,S0760,S0775,S07M9,S0801,S0851,S0879,S08KH,S08R9,S08S3,S08TF,S08WC,S08WM,S09QX",
-    "paint": "P0C4P",
-    "fabric": "FKHG7",
-    "headline": "BALANCE",
-    "hidePrice": true,
-    "fuelType": "X",
-    "headlightsOn": true,
-    "productionDate": "2022-08-04",
-    "effectDate": "2024-01-04",
-    "imageTitle": "BMW Serije 3 Touring LCI G21 Balance",
-    "imageAltText": "BMW Serije 3 Touring LCI G21 Balance",
-    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
-    "emissionDataWltp": {
-      "co2": {},
-      "co2ChargeSustaining": {
-        "low": 228,
-        "mid": 150,
-        "high": 139,
-        "exHigh": 161,
-        "comb": 161
-      },
-      "co2ChargeDepletingCombined": 13,
-      "co2Weighted": 31,
-      "fuelConsumption": {},
-      "fuelConsumptionChargeSustaining": {
-        "low": 10.1,
-        "mid": 6.6,
-        "high": 6.2,
-        "exHigh": 7.1,
-        "comb": 7.1
-      },
-      "fuelConsumptionChargeDepletingCombined": 0.3,
-      "fuelConsumptionWeighted": 1.4,
-      "fuelEfficiency": {},
-      "fuelEfficiencyChargeSustaining": {},
-      "allElectricRangeCombined": 52,
-      "allElectricRangeCity": 64,
-      "equivalentAllElectricRange": {
-        "city": 65,
-        "comb": 61
-      },
-      "pureElectricRange": {},
-      "electricConsumptionAcWeighted": 16.1,
-      "electricConsumptionAcChargeDepletingCombined": 21.7,
-      "electricConsumption": {
-        "comb": 20.6
-      }
-    },
-    "modelName": "330e",
-    "hybridCode": "PHEV",
-    "brand": "BM",
-    "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq9uwZ8X6Ausxpz9mlD3AfzBy2od4eFsTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gudtXhw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIikascpF4HvHnf0KiIFJGJdZABHvIT9TwSO2JGvloMG4gpT9GsLDQIUilo90yYhAbHsLoACt%25whJ0yLOEfuOqTACygNWuQmlOECUkeE87sgNEbnjib10UkNh5uriVAbnkq83mHzOh5nmPX7Ragq857Mr8NRUmP81D4PSxb7MPVYFnWWh1DMztIsQeqVYDafvKAjmztYRSGBb67aftxd9iew1RSfWQose%25VxdSeZL3buzWQdjcy9R3aeZQ6KdIrXRjcZwBQcVrx6Kc%252Zpz4WwBKupciIFe%252B3iKLkIjup2XHBRKv63iprJ2xrGwXHi4TCEF9%25rJHFlEN6ou4TJIsNktL3FlTv0k1wyXIslGAnMQCrv0s9O5ZQE4GA0og8ioNF9OALUoclkIogOybLKnnvLUgChy005GybUEqCB889ChbNmE4LPoEqhk7hfaMLNmqn1qrRDyk7m5VmHEYCn178z75AtE5V1Pa1OkfN8zVMRVN9SkPazDxzQEdnMRaYWaqYQ5DxRteRmBZ8YWxfjbMEcPteWCWcFtTjO3GgiTQLDrg2jCil6Jz0D1bH8irTod9cvF3P672NoKGxLMs",
-    "technicalData": {
-      "enginePower": "215",
-      "engineHorsePower": "292",
-      "technicalCapacity": "1998",
-      "systemPower": "215",
-      "systemHorsePower": "292",
-      "volt48": false
     }
   },
   "8240": {
