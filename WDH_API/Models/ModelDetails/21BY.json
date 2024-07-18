@@ -37,7 +37,7 @@
       "gearBox": "-",
       "driveType": "VR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -64,7 +64,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "5.2–4.8",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "137–125",
+            "emissionsWltpCombined": "138–125",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -92,6 +92,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -125,7 +134,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "5.2–4.8",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "137–125",
+            "emissionsWltpCombined": "138–125",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -153,6 +162,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -186,7 +204,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "5.2–4.8",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "137–125",
+            "emissionsWltpCombined": "138–126",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -214,6 +232,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

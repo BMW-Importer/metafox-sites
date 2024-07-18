@@ -128,7 +128,6 @@ export default function decorate(block) {
         ctaElem.dataset.analyticsCustomClick = 'true';
         ctaElem.dataset.analyticsBlockName = ctaElem.closest('.block').dataset.blockName;
         ctaElem.dataset.analyticsSectionId = ctaElem.closest('.section').dataset.analyticsLabel;
-        ctaElem.dataset.analyticsLinkLabel = ctaElem?.textContent?.trim() || '';
       }
       content.append(ctaElem);
     }

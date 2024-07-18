@@ -82,6 +82,12 @@
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "fileReferenceMimeType"
+      },
+      {
         "component": "text-input",
         "valueType": "string",
         "name": "alt",
@@ -192,6 +198,12 @@
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "imageMimeType"
+      },
+      {
         "component": "text-area",
         "name": "text",
         "value": "",
@@ -227,6 +239,24 @@
           {
             "name": "Right",
             "value": "alignment-right"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "sectionbgcolor",
+        "description": "Defines the colour of the background.",
+        "value": "white",
+        "label": "Background Colour",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
           }
         ]
       },
@@ -331,6 +361,24 @@
         ]
       },
       {
+        "component": "select",
+        "name": "sectionbgcolor",
+        "description": "Defines the colour of the background.",
+        "value": "white",
+        "label": "Background Colour",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "boolean",
         "label": "Display Top Margin",
         "name": "sectiontopmargin",
@@ -424,6 +472,24 @@
         ]
       },
       {
+        "component": "select",
+        "name": "sectionbgcolor",
+        "description": "Defines the colour of the background.",
+        "value": "white",
+        "label": "Background Colour",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "boolean",
         "label": "Display Top Margin",
         "description": "Defines if the top margin is displayed. If toggled off, the top margin will not be displayed.",
@@ -486,6 +552,12 @@
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "imageMimeType"
+      },
+      {
         "component": "text-input",
         "valueType": "string",
         "name": "imageAlt",
@@ -512,6 +584,12 @@
         "value": "",
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "fileReferenceMimeType"
       },
       {
         "component": "text-input",
@@ -581,6 +659,12 @@
         "value": "",
         "description": "Image path from AEM DAM - only choose from the dedicated asset folder",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "bg_fileReferenceMimeType"
       },
       {
         "component": "text-input",
@@ -758,6 +842,12 @@
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_fileReferenceMimeType"
+      },
+      {
         "component": "text-input",
         "valueType": "string",
         "name": "media_fileReferenceAlt",
@@ -807,15 +897,15 @@
         "valueType": "string",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -829,7 +919,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -1019,6 +1109,12 @@
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_desktopPosterFileReferenceMimeType"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "media_mobilePosterFileReference",
@@ -1026,6 +1122,12 @@
         "value": "",
         "description": "Defines the the poster image of the video that will play on mobile. It will be displayed while loading the page.",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_mobilePosterFileReferenceMimeType"
       },
       {
         "component": "boolean",
@@ -1133,15 +1235,15 @@
         "options": [
           {
             "name": "Exit",
-            "value": "Exit"
+            "value": "exit"
           },
           {
             "name": "Download",
-            "value": "Download"
+            "value": "download"
           },
           {
             "name": "Other",
-            "value": "Other"
+            "value": "other"
           }          
         ]    
       },
@@ -1150,11 +1252,11 @@
         "label": "Only if other is selected the following options should appear:",
         "name": "analytics_others",
         "valueType": "string",
-        "condition": { "===": [{"var" : "analytics_button"}, "Other"] },
+        "condition": { "===": [{"var" : "analytics_button"}, "other"] },
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -1684,12 +1786,24 @@
         "description": "Defines the path that will be displaying poster image on desktop while loading the page."
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "desktopPosterRefMimeType"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "mobilePosterRef",
         "label": "Mobile Poster Image Path",
         "multi": false,
         "description": "Defines the path that will be displaying poster image on mobile while loading the page."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "mobilePosterRefMimeType"
       },
       {
         "component": "boolean",
@@ -1791,6 +1905,12 @@
         "name": "img_image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "img_imageMimeType"
       },
       {
         "component": "text",
@@ -1942,12 +2062,24 @@
         "required": true
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_videoSlidePosterMimeType"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "media_videoSlidePosterMobile",
         "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
         "label": "Mobile Poster Image Path",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_videoSlidePosterMobileMimeType"
       },
       {
         "component": "boolean",
@@ -2058,6 +2190,12 @@
         "description": "Defines media object that can be displayed on the right side.",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_imageSlideImgMimeType"
       },
       {
         "component": "text-input",
@@ -2185,15 +2323,15 @@
         "valueType": "string",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -2214,7 +2352,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -2488,6 +2626,12 @@
         "required": true
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "bgImgImage_imageMimeType"
+      },
+      {
         "component": "text-input",
         "label": "Alt Text",
         "name": "bgImgImage_imageAlt",
@@ -2585,15 +2729,15 @@
         "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -2607,7 +2751,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -2673,17 +2817,17 @@
         "label":"Button/Link 2 Type", 
         "valueType": "string",
         "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
-        "options": [
+       "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -2697,7 +2841,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -2972,11 +3116,23 @@
         "required": true
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "bgVidVideo_imgMimeType"
+      },
+      {
         "component": "reference",
         "label": "Mobile Poster Image Path",
         "name": "bgVidVideo_imgMobile",
         "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "bgVidVideo_imgMobileMimeType"
       },
       {
         "component": "boolean",
@@ -3102,15 +3258,15 @@
         "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -3124,7 +3280,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -3192,15 +3348,15 @@
         "description":"Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -3214,7 +3370,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -3433,12 +3589,24 @@
         "required": true
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_videoCarouselPosterDesktopMimeType"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "media_videoCarouselPosterMobile",
         "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
         "label": "Mobile Poster Image Path",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "media_videoCarouselPosterMobileMimeType"
       },
       {
         "component": "text",
@@ -3614,6 +3782,12 @@
       {
         "component": "text",
         "valueType": "string",
+        "hidden": true,
+        "name": "media_imageCarouselImgMimeType"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
         "name": "media_imageCarouselImgAlt",
         "description": "Defines textual description of images for users with visual limitation.",
         "value": "",
@@ -3738,12 +3912,24 @@
         "required": true
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "videoSlide_videoPosterDesktopMimeType"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "videoSlide_videoPosterMobile",
         "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
         "label": "Mobile Poster Image Path",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "hidden": true,
+        "name": "videoSlide_videoPosterMobileMimeType"
       },
       {
         "component": "text",
@@ -4151,15 +4337,15 @@
         "valueType": "string",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -4173,7 +4359,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -4228,18 +4414,6 @@
     ]
   },
   {
-    "id": "preconcomp",
-    "fields": [
-      {
-        "component": "preconcustomtype",
-        "label": "precon Context",
-        "name": "wdh_preconcustomvalues",
-        "description": "for testing purpose",        
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "shopbylookcomp",
     "fields": [
       {
@@ -4248,6 +4422,170 @@
         "name": "wdh_shopbylookcustomvalues",
         "description": "for testing purpose",        
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "precon-vehicle",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "contextualised"
+      },
+      {
+        "component": "text",
+        "label": "Link",
+        "valueType": "string",
+        "name": "contextualised_Link",
+        "description": "Defines the link of the contextualised button."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Link Label",
+        "name": "contextualised_LinkText",
+        "description": "Defines the text to be displayed in the contextualised button."
+      },
+      {
+        "component": "boolean",
+        "label": "Select as Highlighted Model",
+        "name": "contextualised_HighlightedModel",
+        "description": "Defines the vehicle that will be highlighted when loading the page.",
+        "valueType": "boolean",
+        "value": false
+      },
+      {
+        "component": "tab",
+        "label": "Context",
+        "name": "wdh"
+      },
+      {
+        "component": "preconcustomtype",
+        "label": "Precon Context",
+        "name": "wdh_preconCustomModelRangeSelection",
+        "description": "Defines the link to the page a user lands on when clicking on the panel with the vehicle image on the left-hand side of the DriveTrain Switch.",        
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "wdh_contextType",
+        "label": "Context Type",
+        "valueType": "string",
+        "description" : "Defines the type of context to be set.",
+        "options": [
+          {
+            "name": "Model Range",
+            "value": "modelRange"
+          },
+          {
+            "name": "Model Code",
+            "value": "modelCode"
+          },
+          {
+            "name": "All Options",
+            "value": "allOptions"
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Analytics",
+        "name": "analytics"
+      },
+      {
+        "component": "text-input",
+        "name": "analytics_label",
+        "label": "Analytics Label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "analytics_button",
+        "label": "Button/Link Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit",
+            "value": "exit"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "Other",
+            "value": "other"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "label": "Button/Link Category",
+        "name": "analytics_others",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "analytics_button"
+            },
+            "other"
+          ]
+        },
+        "options": [
+          {
+            "name": "Learn More",
+            "value": "learnMore"
+          },
+          {
+            "name": "Configure",
+            "value": "Configure"
+          },
+          {
+            "name": "Technical Data",
+            "value": "Technical Data"
+          },
+          {
+            "name": "Options and Prices",
+            "value": "Options and Prices"
+          },
+          {
+            "name": "Vehicles in Stock",
+            "value": "Vehicles in Stock"
+          },
+          {
+            "name": "Request for Offer",
+            "value": "Request for Offer"
+          },
+          {
+            "name": "Sales and Service Network",
+            "value": "Sales and Service Network"
+          },
+          {
+            "name": "Test Drive",
+            "value": "Test Drive"
+          },
+          {
+            "name": "Newsletter Signup",
+            "value": "Newsletter Signup"
+          },
+          {
+            "name": "Contact",
+            "value": "Contact"
+          },
+          {
+            "name": "Search",
+            "value": "Search"
+          },
+          {
+            "name": "Show More / Show Less",
+            "value": "Show More / Show Less"
+          },
+          {
+            "name": "Other",
+            "value": "Other"
+          }
+        ]
       }
     ]
   },
@@ -4313,15 +4651,15 @@
         "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
         "options": [
           {
-            "name": "exit",
+            "name": "Exit",
             "value": "exit"
           },
           {
-            "name": "download",
+            "name": "Download",
             "value": "download"
           },
           {
-            "name": "other",
+            "name": "Other",
             "value": "other"
           }          
         ]    
@@ -4335,7 +4673,7 @@
         "options": [
           {
             "name": "Learn More",
-            "value": "learnMore"
+            "value": "LearnMore"
           },
           {
             "name": "Configure",
@@ -4388,5 +4726,166 @@
         ]
       }
     ]
-  }
+  },
+  {
+    "id": "technical-data",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "content"
+      },
+      {
+        "component": "boolean",
+        "label": "Enable Automatic Data",
+        "name": "content_autoData",
+        "description": "Defines if automatic technical data will be pulled from the backend. If toggled on, the technical data values will be automatically fetched. If toggled off, the values and keys have to be manually authored in the Technical Data Spreadsheet.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",        
+        "name": "content_autoDataType",
+        "valueType": "string",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Enable Accordion View",
+        "name": "content_accordionView",
+        "description": "Defines if the technical data element categories will be displayed as an accordion item. If toggled on, they will be displayed as an accordion, which will by default be expanded and can be collapsed.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",        
+        "name": "content_accordionViewType",
+        "valueType": "string",
+        "hidden": true
+      },
+      {
+        "component": "aem-content",
+        "name": "content_spreadsheet",
+        "description": "Defines the Technical Data Spreadsheet that will be read if Automatic Data is toggled off.",
+        "label": "Technical Data Spreadsheet",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "model-data",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Context",
+        "name": "wdh"
+      },
+      {
+        "component": "customtype",
+        "label": "Model Card Context",
+        "name": "wdh_customSeriesModelRangeSelection",
+        "description": "Defines the link to the page a user lands on when clicking on the panel with the vehicle image on the left-hand side of the DriveTrain Switch.",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Analytics",
+        "name": "analytics"
+      },
+      {
+        "component": "text-input",
+        "name": "analytics_label",
+        "label": "Analytics Label",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "analytics_button",
+        "label": "Button/Link Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit",
+            "value": "exit"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "Other",
+            "value": "other"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "label": "Only if other is selected the following options should appear:",
+        "name": "analytics_others",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "analytics_button"
+            },
+            "other"
+          ]
+        },
+        "options": [
+          {
+            "name": "Learn More",
+            "value": "LearnMore"
+          },
+          {
+            "name": "Configure",
+            "value": "Configure"
+          },
+          {
+            "name": "Technical Data",
+            "value": "Technical Data"
+          },
+          {
+            "name": "Options and Prices",
+            "value": "Options and Prices"
+          },
+          {
+            "name": "Vehicles in Stock",
+            "value": "Vehicles in Stock"
+          },
+          {
+            "name": "Request for Offer",
+            "value": "Request for Offer"
+          },
+          {
+            "name": "Sales and Service Network",
+            "value": "Sales and Service Network"
+          },
+          {
+            "name": "Test Drive",
+            "value": "Test Drive"
+          },
+          {
+            "name": "Newsletter Signup",
+            "value": "Newsletter Signup"
+          },
+          {
+            "name": "Contact",
+            "value": "Contact"
+          },
+          {
+            "name": "Search",
+            "value": "Search"
+          },
+          {
+            "name": "Show More / Show Less",
+            "value": "Show More / Show Less"
+          },
+          {
+            "name": "Other",
+            "value": "Other"
+          }
+        ]
+      }
+    ]
+  }  
 ]

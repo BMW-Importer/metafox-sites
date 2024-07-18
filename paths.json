@@ -1,14 +1,18 @@
 {
   "mappings": [
-    "/content/metafox/:/",
-    "/content/metafox/index/price-list:/auto-price-list.json",
-    "/content/metafox/placeholders:/placeholders.json",
-    "/content/metafox/masters/en/placeholders:/masters/en/placeholders.json",
-    "/content/metafox/metadata:/metadata.json",
-    "/content/metafox/models-overview:/models-overview.json",
-    "/content/metafox/model-filters:/model-filters.json",
-    "/content/metafox/concept-cars-details:/concept-cars-details",
+    "/content/metafox/masters/:/",
+    "/content/metafox/masters/en/placeholders:/en/placeholders.json",
+    "/content/metafox/masters/sr/placeholders:/sr/placeholders.json",
+    "/content/metafox/masters/metadata:/metadata.json",
+    "/content/metafox/masters/en/models-overview:/en/models-overview.json",
+    "/content/metafox/masters/sr/models-overview:/sr/models-overview.json",
+    "/content/metafox/masters/en/model-filters:/en/model-filters.json",
+    "/content/metafox/masters/sr/model-filters:/sr/model-filters.json",
+    "/content/metafox/masters/en/concept-cars-details:/en/concept-cars-details.json",
+    "/content/metafox/masters/sr/concept-cars-details:/sr/concept-cars-details.json",
+    "/content/metafox/masters/en/technical-data:/en/technical-data.json",
+    "/content/metafox/masters/sr/technical-data:/sr/technical-data.json",
     "/content/dam/metafox/:/assets/"
 ],
-  "includes": ["/content/metafox/","/content/dam/metafox/"]
+  "includes": ["/content/metafox/masters/","/content/dam/metafox/"]
 }

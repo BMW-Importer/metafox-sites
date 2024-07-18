@@ -1,51 +1,6 @@
 {
   "models": [
     {
-      "modelCode": "7K11",
-      "description": "116i",
-      "modelRangeCode": "F40",
-      "shortName": "116i",
-      "shortRangeName": "F40",
-      "marketingSeries": "1",
-      "seriesCode": "1"
-    },
-    {
-      "modelCode": "7K31",
-      "description": "118i",
-      "modelRangeCode": "F40",
-      "shortName": "118i",
-      "shortRangeName": "F40",
-      "marketingSeries": "1",
-      "seriesCode": "1"
-    },
-    {
-      "modelCode": "7K51",
-      "description": "120i",
-      "modelRangeCode": "F40",
-      "shortName": "120i",
-      "shortRangeName": "F40",
-      "marketingSeries": "1",
-      "seriesCode": "1"
-    },
-    {
-      "modelCode": "7L11",
-      "description": "M135i xDrive",
-      "modelRangeCode": "F40",
-      "shortName": "M135i xDrive",
-      "shortRangeName": "F40",
-      "marketingSeries": "1",
-      "seriesCode": "1"
-    },
-    {
-      "modelCode": "7L51",
-      "description": "128ti",
-      "modelRangeCode": "F40",
-      "shortName": "128ti",
-      "shortRangeName": "F40",
-      "marketingSeries": "1",
-      "seriesCode": "1"
-    },
-    {
       "modelCode": "11CM",
       "description": "220i",
       "modelRangeCode": "G42",
@@ -244,6 +199,24 @@
       "seriesCode": "3"
     },
     {
+      "modelCode": "61FU",
+      "description": "M340d xDrive",
+      "modelRangeCode": "G20",
+      "shortName": "M340d xDrive",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "51CD",
+      "description": "330d",
+      "modelRangeCode": "G20",
+      "shortName": "330d",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
       "modelCode": "71FF",
       "description": "320i xDrive",
       "modelRangeCode": "G20",
@@ -280,10 +253,10 @@
       "seriesCode": "3"
     },
     {
-      "modelCode": "11FS",
-      "description": "320e",
+      "modelCode": "51FU",
+      "description": "330d xDrive",
       "modelRangeCode": "G20",
-      "shortName": "320e",
+      "shortName": "330d xDrive",
       "shortRangeName": "G20",
       "marketingSeries": "3",
       "seriesCode": "3"
@@ -293,15 +266,6 @@
       "description": "330i xDrive",
       "modelRangeCode": "G20",
       "shortName": "330i xDrive",
-      "shortRangeName": "G20",
-      "marketingSeries": "3",
-      "seriesCode": "3"
-    },
-    {
-      "modelCode": "21FS",
-      "description": "330e",
-      "modelRangeCode": "G20",
-      "shortName": "330e",
       "shortRangeName": "G20",
       "marketingSeries": "3",
       "seriesCode": "3"
@@ -320,15 +284,6 @@
       "description": "318d",
       "modelRangeCode": "G20",
       "shortName": "318d",
-      "shortRangeName": "G20",
-      "marketingSeries": "3",
-      "seriesCode": "3"
-    },
-    {
-      "modelCode": "31FS",
-      "description": "330e xDrive",
-      "modelRangeCode": "G20",
-      "shortName": "330e xDrive",
       "shortRangeName": "G20",
       "marketingSeries": "3",
       "seriesCode": "3"
@@ -388,10 +343,10 @@
       "seriesCode": "3"
     },
     {
-      "modelCode": "81CY",
-      "description": "330e",
+      "modelCode": "61FZ",
+      "description": "M340d xDrive",
       "modelRangeCode": "G21",
-      "shortName": "330e",
+      "shortName": "M340d xDrive",
       "shortRangeName": "G21",
       "marketingSeries": "3",
       "seriesCode": "3"
@@ -406,15 +361,6 @@
       "seriesCode": "3"
     },
     {
-      "modelCode": "51FY",
-      "description": "320e xDrive",
-      "modelRangeCode": "G21",
-      "shortName": "320e xDrive",
-      "shortRangeName": "G21",
-      "marketingSeries": "3",
-      "seriesCode": "3"
-    },
-    {
       "modelCode": "61FY",
       "description": "330i",
       "modelRangeCode": "G21",
@@ -424,94 +370,22 @@
       "seriesCode": "3"
     },
     {
-      "modelCode": "41FY",
-      "description": "320e",
+      "modelCode": "51FZ",
+      "description": "330d xDrive",
       "modelRangeCode": "G21",
-      "shortName": "320e",
+      "shortName": "330d xDrive",
       "shortRangeName": "G21",
       "marketingSeries": "3",
       "seriesCode": "3"
     },
     {
-      "modelCode": "71CY",
-      "description": "330e xDrive",
+      "modelCode": "41FZ",
+      "description": "330d",
       "modelRangeCode": "G21",
-      "shortName": "330e xDrive",
+      "shortName": "330d",
       "shortRangeName": "G21",
       "marketingSeries": "3",
       "seriesCode": "3"
-    },
-    {
-      "modelCode": "11AV",
-      "description": "420i",
-      "modelRangeCode": "G26",
-      "shortName": "420i",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "31AW",
-      "description": "i4 M50",
-      "modelRangeCode": "G26",
-      "shortName": "i4 M50",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "71AW",
-      "description": "i4 eDrive40",
-      "modelRangeCode": "G26",
-      "shortName": "i4 eDrive40",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "11AW",
-      "description": "M440i xDrive",
-      "modelRangeCode": "G26",
-      "shortName": "M440i xDrive",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "61AV",
-      "description": "430i",
-      "modelRangeCode": "G26",
-      "shortName": "430i",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "71AV",
-      "description": "430i xDrive",
-      "modelRangeCode": "G26",
-      "shortName": "430i xDrive",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "61AW",
-      "description": "M440i",
-      "modelRangeCode": "G26",
-      "shortName": "M440i",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
-    },
-    {
-      "modelCode": "41AW",
-      "description": "i4 eDrive35",
-      "modelRangeCode": "G26",
-      "shortName": "i4 eDrive35",
-      "shortRangeName": "G26",
-      "marketingSeries": "4",
-      "seriesCode": "4"
     },
     {
       "modelCode": "11FL",
@@ -932,15 +806,6 @@
       "description": "X3 xDrive30i",
       "modelRangeCode": "G01",
       "shortName": "X3 xDrive30i",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "61DP",
-      "description": "X3 xDrive30e",
-      "modelRangeCode": "G01",
-      "shortName": "X3 xDrive30e",
       "shortRangeName": "G01",
       "marketingSeries": "X3",
       "seriesCode": "X3"

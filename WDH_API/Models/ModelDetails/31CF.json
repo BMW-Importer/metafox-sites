@@ -26,6 +26,7 @@
     "marketingVehicleType": "M",
     "bodyTypeCode": "GF",
     "marketingBodyTypeCode": "SUV",
+    "pureElectricRange": 567,
     "posiSpec": {
       "cosyBrand": "WBBI",
       "agCode": "31CF",
@@ -40,7 +41,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -73,9 +74,9 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "0",
-            "electricConsumption": "-",
-            "electricRangeWltpCombined": "-",
+            "emissionsWltpCombined": "-",
+            "electricConsumption": "24.7–21.8",
+            "electricRangeWltpCombined": "500–567",
             "efficiencyCategoryMinChargeSustaining": "-",
             "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
@@ -86,9 +87,9 @@
             "additionalRangeDC": "145 - 175",
             "chargeACDC": "11 (22) / 195",
             "chargeAC": "11 / 22",
-            "charge_AC_0_100": "11 / 6.25",
+            "charge_AC_0_100": "11:00 / 6:15",
             "chargeDC": "195",
-            "charge_DC_10_80": "35"
+            "charge_DC_10_80": "0:35"
           },
           "weightMeasurements": {
             "length": "4953",
@@ -108,8 +109,23 @@
           "powerTrain_systemPower_value": [
             "f12"
           ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
           "emissionsConsumptionWltp": [
             "f4"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombinedBest_label": [
+            "f6"
           ],
           "charging": [
             "f7"

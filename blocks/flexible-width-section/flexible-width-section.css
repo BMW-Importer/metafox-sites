@@ -52,6 +52,10 @@
   margin-top: 3rem;
 }
 
+[data-sectionbgcolor='grey'] {
+  background-color: var(--light-grey-1);
+}
+
 /* tablet */
 @media (width >=768px) and (width < 1280px) {
    [data-sectionwidth^='grid'] {

@@ -1,1 +1,270 @@
-/* speeddial.css */
+ .speeddial-button, .speeddial-btn-clicked, .speeddial-backtotop {
+    background-color: var(--background-color);
+    color: var(--light-text-color);
+    border-radius: 50%;
+    box-shadow: 0 .375rem 1.25rem 0 #00000029, 0 0 .0625rem 0 #0000003d;
+    border: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0;
+    position: fixed;
+    right: 3.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 12.5rem;
+ }
+
+ .speeddial-button {
+    margin-left: auto;
+    pointer-events: auto;
+    opacity: 1;
+    transition: all .3s ease;
+ }
+
+ .speeddial-button-hidden {
+    cursor: default;
+    height: 0;
+    opacity: 0;
+    width: 0
+ }
+
+ .speed-dial.block {
+    position: fixed;
+    right: 3.5rem;
+    z-index: 6040;
+    display: flex;
+    flex-direction: column;
+    bottom: 12.5rem;
+ }
+
+ .speeddial-backtotop {
+    bottom: 16.5rem;
+    margin-left: auto;
+    z-index: 6030;
+    transition: all .3s ease;
+    display: flex;
+    margin-bottom: 0;
+    opacity: 1;
+ }
+
+ .speeddial-backtotop-hidden {
+    cursor: default;
+    margin-bottom: -1rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.speeddial-backtotop:focus-visible {
+    box-shadow: 0 0 0 .0625rem var(--background-color), 0 0 0 .3125rem var(--light-link-hover-color)
+}
+
+ .speeddial-button::before {
+    animation: slideup1 0.15s ease-out forwards;
+    transform: translateY(-50%);
+    content: 'speech_bubbles';
+ }
+
+ @keyframes slideup1 {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+ }
+
+ .speeddial-btn-clicked::before {
+    animation: slideup 0.15s ease-out forwards;
+    transform: translateY(50%);
+    content: 'close';
+ }
+
+ @keyframes slideup {
+    0% {
+      transform: translateY(50%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+ }
+
+ .speeddial-backtotop::before, .speeddial-button::before, .speeddial-btn-clicked::before, .cmp-speeddial-item-arrow::before {
+    word-wrap: normal;
+    direction: ltr;
+    display: block;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid #0000;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: 1.5rem;
+    font-weight: 400;
+}
+
+.speeddial-backtotop::before {
+    content: 'arrow_up';
+}
+
+.speeddial-button:active {
+    background-color: var(--light-bbb);
+}
+
+.speeddial-backtotop:hover {
+    background-color: var(--light-bbb) !important;
+}
+
+.speeddial-btn-clicked:hover {
+    background-color: var(--background-color);
+}
+
+.speeddial-button[aria-expanded="false"]:hover {
+    background-color: var(--light-bbb);
+}
+
+.speeddial-button:focus, .speeddial-backtotop:focus {
+    background-color: var(--background-color);
+}
+
+.list-of-containers {
+    /* max-width: 18.75rem; */
+    width: 10.375rem;
+    padding: 0.25rem;
+    align-items: stretch;
+    background-color: var(--background-color);
+    border-radius: 0.188rem;
+    box-shadow: 0 .3125rem 2.5rem 0 #00000029;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 0.75rem;
+    z-index: 6040;
+    transform: translateY(-45%) scale(1);
+    transform-origin: bottom right;
+    transition: all 0.15s ease-out 0s;
+}
+
+.item-reversed {
+    transform: translateY(110%) scale(1);
+    margin-bottom:0;
+    margin-top: 0.75rem;
+}
+
+.list-of-containers.btn-opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+div:has(> .faq)::before, div:has(> .contact)::before, div:has(> .chat)::before {
+    word-wrap: normal;
+    content: 'help';
+    direction: ltr;
+    display: block;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
+    font-style: normal;
+    height: 1.5rem;
+    line-height: 1;
+    outline: 1px solid #0000;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    white-space: nowrap;
+    width: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+div:has(> .faq)::before {
+    content: 'help';
+}
+
+div:has(> .contact)::before {
+    content: 'telephone';
+}
+
+div:has(> .chat)::before {
+    content: 'speech_bubbles';
+}
+
+.speed-dial-item {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    justify-content: space-between;
+    padding: 0.875rem 1rem;
+    cursor: pointer;
+}
+
+.speed-dial-item:hover {
+    background-color: var(--bg-media-ghost-btn);
+    border-radius: 0.188rem;
+}
+
+.list-of-containers a {
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-family: var(--fixed-font-family);
+    color: var(--light-text-color);
+    margin-left: -2px;
+    display: block;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.cmp-speeddial-item-arrow {
+    font-size: 1.5rem;
+}
+
+.cmp-speeddial-item-arrow::before {
+    content: 'arrow_chevron_right';
+}
+
+@media (width >=360px) and (width < 768px) {
+    .speeddial-button, .speeddial-btn-clicked, .speeddial-backtotop {
+        bottom: 6rem;
+        right: 1rem;
+    }
+
+    .speed-dial.block {
+        right: 1rem;
+        bottom: 6rem;
+    }
+
+    .speeddial-backtotop {
+        bottom: 10rem;
+    }
+}
+
+@media (width >= 360px) and (width < 1280px) {
+    .list-of-containers a {
+        font-size: 0.875rem;
+        line-height: 1.375rem
+    }
+
+    .list-of-containers {
+        width: 10.25rem;
+    }
+}
+
+@media (width >=1920px) {
+    .list-of-containers a {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .list-of-containers {
+        width: 10.625rem;
+    }
+}

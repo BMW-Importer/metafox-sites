@@ -18,7 +18,7 @@
       "BMW Serije 3 Touring"
     ],
     "hybridCode": "NOHY",
-    "fromPrice": 53693,
+    "fromPrice": 49424,
     "acceleration": "7.4",
     "trunkCapacity": 480,
     "seats": 5,
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TE",
@@ -72,9 +72,9 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "7.3–6.5",
+            "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "165–147",
+            "emissionsWltpCombined": "-",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -111,6 +111,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -157,9 +166,9 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "7.3–6.5",
+            "consumptionWltpCombined": "6.7–6.4",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "165–147",
+            "emissionsWltpCombined": "151–145",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -196,6 +205,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

@@ -29,9 +29,9 @@
     "posiSpec": {
       "cosyBrand": "WBBM",
       "agCode": "21EM",
-      "paint": "P0C55",
-      "fabric": "FZBJJ",
-      "options": "S02PA,S02VB,S02VH,S02VS,S0319,S0323,S0328,S03AC,S03AT,S03DN,S03E3,S03MB,S0407,S0413,S0417,S0420,S0423,S0428,S044A,S0453,S0456,S04A2,S04FL,S04HA,S04HB,S04M5,S04NM,S04NN,S04T7,S04U5,S0536,S05AU,S05DW,S06C4,S06F1,S06NX,S06U3,S06U8,S0710,S07RS,S0XD5,S0PAA,S01MA,S02NH,S0300,S03MC,S04GQ,S04MA,S05AS,S05DM,S0688,S0715,S0760,S0776,S037A"
+      "paint": "P0300",
+      "fabric": "FZBTQ",
+      "options": "S01CB,S01CE,S01DF,S01MA,S01PB,S0230,S0258,S02NH,S02PA,S02TB,S02VB,S02VH,S02VS,S0302,S0319,S0322,S0323,S0328,S0337,S033B,S03AC,S03DN,S03MC,S0407,S0417,S0418,S0420,S0423,S0428,S044A,S0453,S04A2,S04FL,S04GQ,S04HA,S04HB,S04KR,S04M5,S04MA,S04NM,S04T7,S04U5,S04UR,S0536,S0548,S05AC,S05AL,S05AU,S05AV,S05AX,S05DW,S0654,S06AE,S06AF,S06AK,S06C4,S06F1,S06NX,S06PA,S06U3,S06U8,S0710,S0715,S0760,S07M9,S07RS,S0801,S0851,S0879,S08KA,S08R3,S08R9,S0925,S0XD5"
     },
     "powerTrain": {
       "fuelType": "D",
@@ -40,7 +40,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -116,6 +116,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

@@ -33,7 +33,7 @@
       "agCode": "11DM",
       "paint": "P0C6E",
       "fabric": "FMAMM",
-      "options": "S01E6,S04MC,S01MB,S0248,S02MA,S02PA,S02T4,S02VB,S02VC,S02VF,S0302,S0322,S03M5,S03MF,S040C,S0423,S0428,S0430,S043A,S0459,S0465,S0488,S048C,S0493,S0494,S04GQ,S04UR,S0508,S0534,S0544,S0548,S0552,S05AC,S05AS,S05AV,S05DA,S05DC,S05DM,S0654,S0688,S06AE,S06AF,S06AK,S06CP,S06NW,S06U3,S06WD,S0710,S0760,S0775,S07M9,S07ME"
+      "options": "S01E6,S04MC,S01MB,S0248,S02MA,S02PA,S02T4,S02VB,S02VC,S02VF,S0302,S0322,S03M5,S03MF,S040C,S0423,S0428,S0430,S043A,S0459,S0465,S0488,S048C,S0493,S0494,S04GQ,S04UR,S0508,S0534,S0544,S0548,S0552,S05AC,S05AS,S05AV,S05DA,S05DC,S05DM,S0654,S0688,S06AE,S06AF,S06AK,S06CP,S06NW,S06U3,S06WD,S0710,S0760,S0775,S07M9,S07ME,CTRLLIGHTSON"
     },
     "powerTrain": {
       "fuelType": "O",
@@ -42,7 +42,7 @@
       "gearBox": "6 - handgeschaltet",
       "driveType": "HR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "S02MA",
@@ -112,6 +112,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",
@@ -194,6 +203,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

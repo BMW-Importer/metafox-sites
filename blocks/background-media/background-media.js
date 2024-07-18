@@ -49,9 +49,6 @@ function generateTextProps(generalProps, generalPropIcon, copyTextContainer, gra
 }
 
 export default function decorate(block) {
-  // binding no-padding class to closest parent section so that bg media will have width of 1920px
-  block?.closest('.section')?.classList?.add('no-padding');
-
   // get children blocks
   const bgMediaChildrens = [...block.children];
   block.textContent = '';

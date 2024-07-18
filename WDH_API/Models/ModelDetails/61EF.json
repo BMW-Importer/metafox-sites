@@ -31,7 +31,7 @@
       "agCode": "61EF",
       "paint": "P0A96",
       "fabric": "FBLAT",
-      "options": "S01EA,S0230,S02PA,S02VB,S02VF,S0428,S0478,S04GN,S04T3,S04T4,S04U9,S04V1,S0548,S05DM,S0654,S06AE,S06AF,S06AK,S06C4,S06WC,S0801,S0851,S0879,S08R9,S08TF,S08WQ"
+      "options": "S01EA,S0230,S02PA,S02VB,S02VF,S0428,S0478,S04GN,S04T2,S04T3,S04U9,S04V1,S0548,S05AV,S05DM,S05YA,S0654,S06AE,S06AF,S0801,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S08WQ"
     },
     "powerTrain": {
       "fuelType": "E",
@@ -40,7 +40,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -73,7 +73,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "0",
+            "emissionsWltpCombined": "-",
             "electricConsumption": "18.1–16.9",
             "electricRangeWltpCombined": "417–440",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -84,11 +84,11 @@
           "charging": {
             "batteryCapacity": "64.8",
             "additionalRangeDC": "118 - 135",
-            "chargeACDC": "11 (-) / 130",
-            "chargeAC": "11",
-            "charge_AC_0_100": "6.5",
+            "chargeACDC": "11 (22) / 130",
+            "chargeAC": "11 / 22",
+            "charge_AC_0_100": "6:30 / 3:45",
             "chargeDC": "130",
-            "charge_DC_10_80": "29"
+            "charge_DC_10_80": "0:29"
           },
           "weightMeasurements": {
             "length": "4500",
@@ -108,6 +108,15 @@
           "powerTrain_systemPower_value": [
             "f12"
           ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
           "emissionsConsumptionWltp": [
             "f4"
           ],
@@ -119,6 +128,12 @@
           ],
           "charging": [
             "f7"
+          ],
+          "charging_chargeAC_value": [
+            "f15"
+          ],
+          "charging_charge_AC_0_100_value": [
+            "f15"
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"

@@ -39,7 +39,8 @@
     "components": [
       "icon-link-list",
       "copyright",
-      "link-list"
+      "link-list",
+      "speed-dial"
     ]
   },
   {
@@ -213,8 +214,9 @@
       "drivetrain-switch",
       "preconcomp",
       "shopbylookcomp",
-      "speed-dial",
-      "cookiepolicy"
+      "cookiepolicy",
+      "technical-data",
+      "precon"
     ]
   },
   {
@@ -243,7 +245,9 @@
       "title",
       "hero",
       "cards",
-      "video"
+      "video",
+      "eyebrow",
+      "headline"
     ]
   },
   {
@@ -340,9 +344,21 @@
     ]
   },
   {
+    "id": "precon",
+    "components": [
+      "precon-vehicle"
+    ]
+  },
+  {
     "id": "speed-dial",
     "components":[
       "speed-dial-item"
+    ]
+  },
+  {
+    "id": "technical-data",
+    "components":[
+      "model-data"
     ]
   }
 ]

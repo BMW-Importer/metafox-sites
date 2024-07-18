@@ -654,12 +654,12 @@
 /* large desktop */
 @media (width >= 1920px) { 
     .background-media.block {
-        aspect-ratio: 16 / 7;       
-        margin-left: auto;
+        aspect-ratio: 16 / 7;
+        margin-left: calc(var(--section-desktop-padding)* -1);
         margin-right: auto;
-        width: 100%;
+        width: var(--max-component-width);
         max-width: var(--max-component-width);
-    }
+    }    
     
     .background-media.block .background-media-item-text {
         position: absolute;

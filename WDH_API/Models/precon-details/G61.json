@@ -29,5 +29,36 @@
     "technicalData": {
       "volt48": true
     }
+  },
+  "9298": {
+    "id": 9298,
+    "name": "BMW 530e Touring - Shop The Look",
+    "status": "OK",
+    "vehicleType": "SHOP_THE_LOOK",
+    "modelCode": "31GV",
+    "agModelCode": "31GV",
+    "vgModelCode": "31GV",
+    "modelRangeCode": "G61",
+    "options": "S043K,S07EW,S02PA,S02TE,S02VB,S02VC,S0316,S0319,S03AC,S03DK,S03DP,S0402,S0420,S0428,S0459,S0465,S0481,S0488,S0494,S04A2,S04T8,S04U9,S04UR,S04V1,S0534,S0552,S05AT,S05AY,S05DN,S0654,S0674,S06AE,S06AF,S06AK,S06C4,S06CP,S06NX,S06U3,S06U7,S08TF",
+    "paint": "P0300",
+    "fabric": "FKSFU",
+    "rim": "S03GH",
+    "headline": "Shop The Look",
+    "hidePrice": true,
+    "fuelType": "X",
+    "headlightsOn": true,
+    "productionDate": "2024-05-07",
+    "effectDate": "2024-05-07",
+    "imageTitle": "BMW 530e Touring - Konfigurieren",
+    "imageAltText": "BMW 530e Touring - Konfigurieren",
+    "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
+    "modelName": "BMW 530e xDrive Touring",
+    "hybridCode": "PHEV",
+    "brand": "BM",
+    "cosyBrand": "WBBM",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq%256xZ8X6Ausxpz9mlD3AfzBy2od4bAwTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gpdYXcw1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiI14zscpF4Hvi5n0KiIFJG8frABHvIT9PglO2JGvloMjegpT9GsLD6sUilo90ya6fbHsLoACRwThJ0yLOExzOqTACygNWp%25mlOECUkeiV7sgNEbn%25Rr10UkNh5uqyVAbnkq83mazOh5nmPXiUagq857MrNRRUmP81D4TSxb7MPVYFleWh1DMztIcgeqVYDafv3LjmztYRSGww67aftxd9IVw1RSfWQovH%25VxdSeZLN2uzWQdjcSQ73aeZQ6KdbnXRjcZwBQGYrx6Kc%252Z994WwBKupczXFe%252B3io7RIjup2XHLPxv63iprJyC4GwXHi4TCEj9%25rJHFlENYou4TJIsN76L3FlTv0k1EyXIslGAna6Crv0s9O5D6E4GA0og8YhNF9OALUAnrkIogOybf1invLUgugnRLfbc1eKDfNw9zKPbuDShtDQ442YIDzf6EjnWR1vhJPX65eOwGd",
+    "technicalData": {
+      "volt48": false
+    }
   }
 }

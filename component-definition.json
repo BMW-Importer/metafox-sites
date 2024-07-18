@@ -93,7 +93,8 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "style":"alignment-center",
-                  "fixedsectiontopmargin": true
+                  "fixedsectiontopmargin": true,
+                  "sectionbgcolor": "white"
                 }
               }
             }
@@ -111,6 +112,7 @@
                   "model": "flexible-width-section",
                   "sectiontopmargin": true,
                   "sectionalignment": "center",
+                  "sectionbgcolor": "white",
                   "sectionwidth":"grid-10",
                   "filter": "flexible-width-section"
                 }
@@ -128,7 +130,8 @@
                 "template": {
                   "name": "Tabs Section",
                   "model": "tabs-section",
-                  "filter": "tabs-section"
+                  "filter": "tabs-section",
+                  "sectionbgcolor": "white"
                 }
               }
             }
@@ -852,17 +855,26 @@
                   "filter": "drivetrain-switch",
                   "content_labelsourceType": "h2",
                   "detail_activemodelType": "h3",
+                  "detail_descp":"{model.description}",
                   "detail_descpType": "h4",
                   "detail_technocalLinkType": "primary",
                   "detail_popoverType": "h6",
                   "detail_popover": true,
+                  "technical_fact1":"Snaga",
                   "technical_fact1Type": "h2",
+                  "technical_value1":"{model.systemPower}",
                   "technical_value1Type": "h3",
+                  "technical_fact2":" 0-100 km/h ",
                   "technical_fact2Type": "h4",
+                  "technical_value2":"{model.acceleration} s",
                   "technical_value2Type": "h5",
+                  "technical1_fact3":"Vmax",
                   "technical1_fact3Type": "h2",
+                  "technical1_value3":"{model.topSpeed} km/h",
                   "technical1_value3Type": "h3",
+                  "technical1_fact4":"Domet (do)",
                   "technical1_fact4Type": "h4",
+                  "technical1_value4":"{model.electricRange} km",
                   "technical1_value4Type": "h5"
                 }
               }
@@ -950,6 +962,38 @@
           }
         },
         {
+          "title": "PreCon",
+          "id": "precon",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "PreCon",
+                  "model": "precon",
+                  "filter":"precon"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "PreCon Vehicle",
+          "id": "precon-vehicle",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "PreCon Vehicle",
+                  "model": "precon-vehicle",
+                  "filter":"precon-vehicle"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "cookiepolicy",
           "id": "cookiepolicy",
           "plugins": {
@@ -963,8 +1007,42 @@
               }
             }
           }
+        },
+        {
+          "title": "Technical Data",
+          "id": "technical-data",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Technical Data",
+                  "model": "technical-data",
+                  "filter": "technical-data",
+                  "content_autoData": "true",
+                  "content_accordionView": "true",
+                  "content_autoDataType": "h2",
+                  "content_accordionViewType": "h3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Model Data",
+          "id": "model-data",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Model Data",
+                  "model": "model-data"
+                }
+              }
+            }
+          }
         }
-
       ]
     },    
     {

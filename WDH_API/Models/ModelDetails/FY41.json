@@ -33,7 +33,7 @@
       "agCode": "DZ21",
       "paint": "P0C4E",
       "fabric": "FVARI",
-      "options": "S01CB,S01DF,S01PZ,S0230,S0258,S02NH,S02PA,S02T4,S02VB,S0302,S0316,S0322,S0323,S03DS,S0428,S0494,S04FM,S04L8,S04NE,S0548,S0552,S05AC,S05AS,S05DM,S0654,S06AE,S06AF,S06AK,S06C4,S06NW,S06U3,S06WD,S0710,S0715,S0760,S0801,S0851,S0879,S08KA,S08R9,S08TF,S08TL,S08WL"
+      "options": "S01CB,S01DF,S01PZ,S0230,S0258,S02NH,S02PA,S02T4,S02VB,S0302,S0316,S0322,S0323,S0428,S0494,S04FM,S04L8,S04NE,S0548,S0552,S05AC,S05AS,S05AV,S05DM,S0654,S06AE,S06AF,S06AK,S06C4,S06NW,S06U3,S06WD,S0710,S0715,S0760,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08TL"
     },
     "powerTrain": {
       "fuelType": "O",
@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-06-24",
+    "effectDate": "2024-07-16",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -75,7 +75,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "0",
+            "emissionsWltpCombined": "-",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",
@@ -98,9 +98,9 @@
             "height": "1345",
             "widthMirrors": "2137 (1074 / 1063)",
             "wheelTurn": "2822.0",
-            "weightNotLoaded": "2135",
+            "weightNotLoaded": "2125",
             "weightMax": "2515",
-            "permittedLoad": "455",
+            "permittedLoad": "465",
             "trailerLoad": "-",
             "trunkCapacity": "350",
             "tankCapacity": "68.0"
@@ -112,6 +112,15 @@
           ],
           "engine": [
             "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
           ],
           "emissionsConsumptionWltp": [
             "f1",

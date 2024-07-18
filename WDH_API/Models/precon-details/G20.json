@@ -68,25 +68,16 @@
     "fabric": "FKHG7",
     "headline": "BALANCE",
     "hidePrice": true,
-    "fuelType": "X",
+    "fuelType": "",
     "productionDate": "2022-07-15",
     "effectDate": "2022-07-15",
     "imageTitle": "BMW 330e",
     "imageAltText": "BMW 330e",
     "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_Grey.jpg",
-    "modelName": "330e",
-    "hybridCode": "PHEV",
     "brand": "BM",
     "cosyBrand": "WBBM",
     "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rq9uwZ8X6Ausxpz9mlD3AfzBy2od4eFsTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2gudRyww1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIikascpF4HvHnf0KiIFJGJdZABHvIT9TwSO2JGvloMG4gpT9GsLDQIUilo90yYh6bHsLoACt%25whJ0yLOEfuOqTACygNS3HmlOECUkdXO7sgNEbnjXc10UkNh56q4VAbnkq8wnDzOh5nmP%255Fagq857MulvRUmP81D3sOxb7MPVYFznWh1DMztIa0eqVYDafvY8jmztYRSGtc67aftxd9AVw1RSfWQogB%25VxdSeZLibuzWQdjcyH73aeZQ6KCHyXRjcZwBEsurx6Kc%252NUu4WwBKupkCjFe%252B3inEOIjup2XHBpxv63iprJ2T9GwXHi4Tpzt9%25rJHFliNFou4TJIsHkML3FlTv0JnPyXIslGATwJCrv0s9Ol%253E4GA0ogsu5NF9OALUPZekIogOybMD4nvLUgChDjX5GybUEqYdp89ChbNmtipPoEqhk7f0kMLNmqn1kHUDyk7m5VnJYYCn178z5FotE5V1Pa8qqfN8zVMRPlSSkPazDxML5dnMRaYWa9wQ5DxRteRLcZ8YWxfjxvOcPteWS6WfmKMfjedwe7YBDS6jQ%25jDk2Ydw6Zu6iMptQ%25wc3wRcifZu%25KX%25xlHSc3uBruWWJdoMXOBeypTjHrsCzUi5pXJ9SGZI4u8jmBE9cvRoPl",
-    "technicalData": {
-      "enginePower": "215",
-      "engineHorsePower": "292",
-      "technicalCapacity": "1998",
-      "systemPower": "215",
-      "systemHorsePower": "292",
-      "volt48": false
-    }
+    "technicalData": {}
   },
   "5900": {
     "id": 5900,

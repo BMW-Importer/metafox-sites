@@ -18,12 +18,8 @@
       "BMW Serije 3 Touring"
     ],
     "hybridCode": "NOHY",
-    "fromPrice": 63593,
-    "acceleration": "5.3",
-    "trunkCapacity": 480,
-    "seats": 5,
-    "horsePower": 286,
-    "topSpeed": "250",
+    "fromPrice": 59324,
+    "acceleration": "-",
     "bodyTypeCode": "LI",
     "marketingBodyTypeCode": "LI",
     "bodyTypeDescription": "LIM",
@@ -36,10 +32,157 @@
     },
     "powerTrain": {
       "fuelType": "D",
-      "systemPower": "210 (286)",
-      "systemMaxTorque": "650",
-      "gearBox": "8 - automatisch",
+      "systemPower": "-",
+      "systemMaxTorque": "-",
+      "gearBox": "-",
       "driveType": "HR"
-    }
+    },
+    "effectDate": "2024-07-16",
+    "vehicles": [
+      {
+        "transmissionCode": "S02TE",
+        "hybridCode": "NOHY",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "D",
+            "systemPower": "-",
+            "systemMaxTorque": "-",
+            "gearBox": "-",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "5.8–5.1",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "153–135",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "trunkCapacity": "-",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      },
+      {
+        "transmissionCode": "S02TB",
+        "hybridCode": "NOHY",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "D",
+            "systemPower": "-",
+            "systemMaxTorque": "-",
+            "gearBox": "-",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "5.8–5.1",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "153–135",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "trunkCapacity": "-",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
   }
 }

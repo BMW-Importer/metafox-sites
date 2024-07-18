@@ -15,15 +15,17 @@ import {
   replacePlaceholder,
   getResolutionKey,
   getFuelTypeImage,
-  getFuelTypeLabelDesc,
 } from '../../scripts/common/wdh-util.js';
+import { fetchPlaceholders } from '../../scripts/aem.js';
 
+const lang = document.querySelector('meta[name="language"]').content;
+const placeholders = await fetchPlaceholders(`/${lang}`);
 const env = document.querySelector('meta[name="env"]').content;
 const hostName = window?.location?.hostname;
 const regExp = /^(.*\.hlx\.(page|live)|localhost)$/;
 let galOrigin = '';
 let publishDomain = '';
-const modelText = 'Modeli';
+const modelText = placeholders?.modeltext || '';
 
 if (env === 'dev') {
   publishDomain = DEV.hostName;
@@ -71,6 +73,14 @@ function enableClickEvent(selectedModelDdlMob) {
     const nextElement = e.target.nextElementSibling;
     nextElement.classList.add('enablepopover');
   });
+
+  const ddlIcon = selectedModelDdlMob.querySelector('i');
+  if (ddlIcon) {
+    ddlIcon.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.target.closest('.dts-selected-model-mob')?.click();
+    });
+  }
 }
 
 function generateTechnicalData1(
@@ -271,8 +281,8 @@ function generateLeftPanelModelList(
       document.createRange().createContextualFragment(`
                 <span class='dts-model-category-title'>${modelTitle}</span>               
                 <div class='dts-category-box'><a class='dts-model-category-link' href='${modelLink?.textContent}' data-analytics-label='${analyticsLabel?.textContent?.trim() || ''}'
-                data-analytics-category='${BtnType?.textContent?.trim() || ''}'
-                data-analytics-subCategory='${btnSubType?.textContent?.trim() || ''}'
+                data-analytics-link-type='${BtnType?.textContent?.trim() || ''}'
+                data-analytics-link-other-type='${btnSubType?.textContent?.trim() || ''}'
                 data-analytics-block-name='${block?.dataset?.blockName?.trim() || ''}'
                 data-analytics-section-id='${block?.closest('.section')?.dataset?.analyticsLabel || ''}'
                 data-analytics-custom-click='true'>
@@ -288,8 +298,8 @@ function bindAnalyticsValue(analytics, technicalLink, block) {
     const [analyticsLabel, BtnType, btnSubType] = analytics?.children || [];
     if (technicalLink) {
       technicalLink.dataset.analyticsLabel = analyticsLabel?.textContent?.trim() || '';
-      technicalLink.dataset.analyticsCategory = BtnType?.textContent?.trim() || '';
-      technicalLink.dataset.analyticsSubCategory = btnSubType?.textContent?.trim() || '';
+      technicalLink.dataset.analyticsLinkType = BtnType?.textContent?.trim() || '';
+      technicalLink.dataset.analyticsLinkOtherType = btnSubType?.textContent?.trim() || '';
       technicalLink.dataset.analyticsCustomClick = 'true';
       technicalLink.dataset.analyticsBlockName = block?.dataset?.blockName || '';
       technicalLink.dataset.analyticsSectionId = block?.closest('.section')?.dataset?.analyticsLabel || '';
@@ -306,6 +316,15 @@ function appendClassToLeftModelCategory(block) {
   if (allModelCategory) allModelCategory.querySelector('.dts-model-category-title')?.classList.add('visible');
   if (iModelCategory) iModelCategory.querySelector('.dts-model-category-title')?.classList?.add('visible');
   if (mModelCategory) mModelCategory.querySelector('.dts-model-category-title')?.classList.add('visible');
+}
+
+function generateContentFragUI(cfData, rightPanel, block, disclaimerFragment) {
+  const disclaimerHtml = cfData?.disclaimercfmodelByPath?.item?.disclaimer?.html;
+  const disclaimerContent = document.createElement('div');
+  disclaimerContent.className = 'disclaimer-content';
+  disclaimerContent.innerHTML = disclaimerHtml;
+  rightPanel.append(disclaimerContent);
+  block.removeChild(disclaimerFragment);
 }
 
 export default async function decorate(block) {
@@ -384,17 +403,16 @@ export default async function decorate(block) {
       galOrigin = publishDomain;
     }
   }
-  await getContentFragmentData(disclaimerCF, galOrigin).then((response) => {
+  /* eslint-disable no-console */
+  try {
+    const response = await getContentFragmentData(disclaimerCF, galOrigin);
     const cfData = response?.data;
     if (cfData) {
-      const disclaimerHtml = cfData?.disclaimercfmodelByPath?.item?.disclaimer?.html;
-      const disclaimerContent = document.createElement('div');
-      disclaimerContent.className = 'disclaimer-content';
-      disclaimerContent.innerHTML = disclaimerHtml;
-      rightPanel.append(disclaimerContent);
-      block.removeChild(disclaimerFragment);
+      generateContentFragUI(cfData, rightPanel, block, disclaimerFragment);
     }
-  });
+  } catch (error) {
+    console.log('fragment fetching failed');
+  }
 
   const selectedModelCount = Array.from(rows).reduce((count, element) => {
     if (element?.children[0]?.children[2]?.textContent === 'true') {
@@ -436,7 +454,10 @@ export default async function decorate(block) {
 
     if (splitContextData && splitContextData?.length >= 3) {
       const agCode = splitContextData[2]?.trim() || '';
-
+      let transCode;
+      if (splitContextData[3]?.trim() === 'true') {
+        transCode = splitContextData[4].trim() || '';
+      }
       let response;
 
       try {
@@ -482,7 +503,7 @@ export default async function decorate(block) {
         };
 
         // for condition based cosyImage if selected
-        if (modelGroup?.children[2].textContent === 'true') {
+        if (modelGroup?.children[2]?.textContent === 'true') {
           const modelPictureElement = createPictureTag(40);
           modelPictureElement.classList.add('dts-active-model-img');
           rightPanelTitleAndImg.append(modelPictureElement);
@@ -501,64 +522,80 @@ export default async function decorate(block) {
         );
         const modelListItem = document.createElement('li');
         modelListItem.append(element);
-        if (modelGroup?.children[0] && modelGroup?.children[0]?.textContent) {
+        if (modelGroup?.children[0]?.textContent) {
           modelListItem.classList.add(modelGroup?.children[0]?.textContent?.trim());
         }
-        if (selectedFuelType && selectedFuelType?.textContent) {
+        if (selectedFuelType?.textContent) {
           analytics.classList.add(selectedFuelType?.textContent);
         }
         leftPanelModelGrouping.append(modelListItem);
       }
 
       if (agCode) {
-        await buildContext([agCode]).then(() => {
-          const wdhModelPlaceholder = fetchModelPlaceholderObject();
-          const wdhTechPlaceholder = fetchTechDataPlaceholderObject();
+        try {
+          const buildContextResponse = await buildContext([agCode, transCode]).then(() => {
+            const wdhModelPlaceholder = fetchModelPlaceholderObject();
+            const wdhTechPlaceholder = fetchTechDataPlaceholderObject();
 
-          const categoryItem = leftPanelModelGrouping.querySelectorAll('.dts-category-box');
-          if (categoryItem) {
-            const lastCatItem = categoryItem[categoryItem.length - 1];
-            if (selectedFuelTypeText === 'fuel-type') {
-              lastCatItem.classList.add(getFuelTypeImage(wdhModelPlaceholder?.fuelType));
-              lastCatItem.querySelector('.dts-model-category-descp').textContent = getFuelTypeLabelDesc(wdhModelPlaceholder?.fuelType);
-            } else {
-              lastCatItem.querySelector('.dts-model-category-descp').textContent = wdhModelPlaceholder?.seriesDescription;
-
-              // if current model is selected then update value der also
-              if (modelGroup?.children[2].textContent === 'true') {
-                const mobSelectedModelTxt = selectedModelDdlMob.querySelector('.dts-selected-model-title');
-                mobSelectedModelTxt.textContent = getFuelTypeLabelDesc(
-                  wdhModelPlaceholder?.seriesDescription,
-                );
+            const categoryItem = leftPanelModelGrouping.querySelectorAll('.dts-category-box');
+            if (categoryItem) {
+              const lastCatItem = categoryItem[categoryItem.length - 1];
+              const modelCozyImg = lastCatItem.querySelector('.dts-model-category-img');
+              modelCozyImg.alt = wdhModelPlaceholder?.description;
+              const fuelTypeVal = wdhModelPlaceholder?.fuelType?.toLowerCase() || '';
+              lastCatItem.classList.add(getFuelTypeImage(fuelTypeVal?.toUpperCase()));
+              if (selectedFuelTypeText === 'fuel-type') {
+                lastCatItem.querySelector('.dts-model-category-descp').textContent = placeholders[fuelTypeVal] || '';
+              } else {
+                lastCatItem.querySelector('.dts-model-category-descp').textContent = wdhModelPlaceholder?.description;
               }
             }
-          }
-          // if current model is selected then update value der also
-          if (modelGroup?.children[2].textContent === 'true') {
-            const mobSelectedModelTxt = selectedModelDdlMob.querySelector('.dts-selected-model-title');
-            mobSelectedModelTxt.textContent = getFuelTypeLabelDesc(
-              wdhModelPlaceholder?.fuelType,
-            );
-            // buildContext
-            generateTechnicalData1(
-              technicalDetail1Cell,
-              techTableData,
-              wdhModelPlaceholder,
-              wdhTechPlaceholder,
-            );
+            // if current model is selected then update value der also
+            if (modelGroup?.children[2]?.textContent === 'true') {
+              const mobSelectedModelTxt = selectedModelDdlMob.querySelector('.dts-selected-model-title');
+              const fuelTypeVal = wdhModelPlaceholder?.fuelType?.toLowerCase() || '';
+              if (selectedFuelTypeText === 'fuel-type') {
+                mobSelectedModelTxt.textContent = placeholders[fuelTypeVal] || '';
+              } else {
+                mobSelectedModelTxt.textContent = wdhModelPlaceholder?.description;
+              }
 
-            // removing techdetail1 so that it wont appear in content tree
-            block.removeChild(technicalDetail1Cell);
+              // updating alt text for image
+              const rightPanelImg = rightPanelTitleAndImg.querySelector('img');
+              rightPanelImg.alt = wdhModelPlaceholder?.description;
 
-            generateTechnicalData2(
-              technicalDetail2Cell,
-              techTableData,
-              wdhModelPlaceholder,
-              wdhTechPlaceholder,
-            );
-            block.removeChild(technicalDetail2Cell);
-          }
-        }).catch();
+              // updating description
+              const descpTextContent = replacePlaceholder(
+                modelDescp.textContent,
+                wdhModelPlaceholder,
+                modelRegex,
+              );
+              if (descpTextContent) modelDescp.textContent = descpTextContent;
+
+              // buildContext
+              generateTechnicalData1(
+                technicalDetail1Cell,
+                techTableData,
+                wdhModelPlaceholder,
+                wdhTechPlaceholder,
+              );
+
+              // removing techdetail1 so that it wont appear in content tree
+              block.removeChild(technicalDetail1Cell);
+
+              generateTechnicalData2(
+                technicalDetail2Cell,
+                techTableData,
+                wdhModelPlaceholder,
+                wdhTechPlaceholder,
+              );
+              block.removeChild(technicalDetail2Cell);
+            }
+          });
+          console.log(buildContextResponse);
+        } catch (e) {
+          console.error('build context failed');
+        }
       }
     } else {
       const modelListItem = document.createElement('li');
