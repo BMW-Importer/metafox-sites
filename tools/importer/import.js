@@ -270,7 +270,7 @@ const createBackgroundMedia = (main, document) => {
 			const para = document.createElement("p");
             const node = document.createTextNode("money-btn money-btn-flex");
             para.appendChild(node);
-			backgroundMediaBlockData.push(node);
+			backgroundMediaBlockData.push(para);
 
 		}
         if (linkLabel2 && linkurl2) {
@@ -288,10 +288,19 @@ const createBackgroundMedia = (main, document) => {
             backgroundMediaLinkData2.push(aTag, para);
             backgroundMediaBlockData.push(backgroundMediaLinkData2);
  
-        }
- 
+        }else{
+			const paraBtn2 = document.createElement("p");
+            const node2 = document.createTextNode("ghost-img-btn ghost-img-flex-btn");
+            paraBtn2.appendChild(node2);
+			backgroundMediaBlockData.push(paraBtn2);
+		}
+		const para3 = document.createElement("p");
+        const node3 = document.createTextNode("");
+        para3.appendChild(node3);
+		backgroundMediaBlockData.push(para3);
+		backgroundMediaBlockData.push(para3);	
         backgroundMediaBlock.push(backgroundMediaBlockData);
-        console.log(backgroundMediaBlock);
+		
         const backgroundMediaTable = WebImporter.DOMUtils.createTable(backgroundMediaBlock, document);
         bgmedia.replaceWith(backgroundMediaTable);
     });
@@ -322,21 +331,18 @@ const createAccordion = (main, document) => {
 
 };
 
-const createTextWithMediaRight = (main, document) => {
-    function isAbsoluteUrl(url) {
-        return /^https?:\/\//i.test(url);
-    }
-    const elements = document.querySelectorAll('[data-tracking-regionid*="item-image-text-teaser-right"]');
-    elements.forEach(element => {
+const createTextWithMediaLeft = (main, document) => {
+    const elements1 = document.querySelectorAll('[data-tracking-regionid*="item-image-text-teaser-left"]');
+    elements1.forEach(element => {
         const textWithMediaBlock = [];
         const name = ['Text With Media'];
         textWithMediaBlock.push(name);
         const textWithMediaBlockData = [];
-        textWithMediaBlockData.push("text-with-image, right");
+        textWithMediaBlockData.push("text-with-image, left");
         const textWithMediaBlockData1 = [];
- 
+
         const titles = element.querySelectorAll('.title');
-       titles.forEach(title => {
+        titles.forEach(title => {
             const titleText = title.querySelector('.cmp-title').textContent;
             let titleStyle = '';
             if (title.classList.contains('style-title__text--eyebrow2-bold')) {
@@ -344,13 +350,13 @@ const createTextWithMediaRight = (main, document) => {
             const eyebrow = document.createElement('h4');
             eyebrow.textContent = titleText;
             textWithMediaBlockData1.push(eyebrow);
- 
+
         } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
             titleStyle = 'Eyebrow Bold 1';
             const eyebrow = document.createElement('h4');
             eyebrow.textContent = titleText;
             textWithMediaBlockData1.push(eyebrow);
- 
+
         } else if (title.classList.contains('style-title--iconization-1')) {
             titleStyle = 'Iconization';
             const eyebrow = document.createElement('h4');
@@ -368,53 +374,49 @@ const createTextWithMediaRight = (main, document) => {
             const h3 = document.createElement('h3');
             h3.textContent = titleText;
             textWithMediaBlockData1.push(h3);
- 
+
         }else{
-            const h4 = document.createElement('h4');
+			const h4 = document.createElement('h4');
                 h4.textContent = titleText;
                 textWithMediaBlockData1.push(h4);
-        }
-          });
+		}  
+
+        });
         const description = element.querySelector('.cmp-text').textContent;
         const para = document.createElement('p');
         para.textContent = description;
         textWithMediaBlockData1.push(para);
- 
- 
+
+
         textWithMediaBlockData.push(textWithMediaBlockData1);
         const image = element.querySelector('.cmp-image .cmp-image__image');
         const imageSrc = element.querySelector('.cmp-image .cmp-image__image').getAttribute('src');
         const imageAltTxt = element.querySelector('.cmp-image .cmp-image__image').getAttribute('alt');
-        const pictureTag = document.createElement('picture');
-        pictureTag.appendChild(image);
+		const pictureTag = document.createElement('picture');
+		pictureTag.appendChild(image);
         textWithMediaBlockData.push(pictureTag);
- 
-        let link = element.querySelector('.cmp-button').getAttribute('href');
+		
+        const link = element.querySelector('.cmp-button').getAttribute('href');
         const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
         const aTag = document.createElement('a');
-        if (link && !isAbsoluteUrl(link)) {
-            var currentDomain = window.location.origin;
-            link = currentDomain + link;
-        }
         aTag.setAttribute('href', link);
         aTag.innerText = linkLabel;
         textWithMediaBlockData.push(aTag);
-        const analytics = document.createElement('p');
-        analytics.textContent = 'analytics Details';
-        textWithMediaBlockData.push(analytics);
- 
+        const paraAnaly = document.createElement('p');
+        paraAnaly.textContent = "Analytics Details";
+        textWithMediaBlockData.push(paraAnaly);
+
         textWithMediaBlock.push(textWithMediaBlockData);
- 
-        const textWithMediaTable = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
-        element.replaceWith(textWithMediaTable);
- 
+
+        const textWithMediaTableLeft = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
+       element.replaceWith(textWithMediaTableLeft);
+      
     });
- 
+
+
+
 };
 const createTextWithMediaRight = (main, document) => {
-    function isAbsoluteUrl(url) {
-        return /^https?:\/\//i.test(url);
-    }
     const elements = document.querySelectorAll('[data-tracking-regionid*="item-image-text-teaser-right"]');
     elements.forEach(element => {
         const textWithMediaBlock = [];
@@ -423,7 +425,7 @@ const createTextWithMediaRight = (main, document) => {
         const textWithMediaBlockData = [];
         textWithMediaBlockData.push("text-with-image, right");
         const textWithMediaBlockData1 = [];
- 
+
         const titles = element.querySelectorAll('.title');
        titles.forEach(title => {
             const titleText = title.querySelector('.cmp-title').textContent;
@@ -433,13 +435,13 @@ const createTextWithMediaRight = (main, document) => {
             const eyebrow = document.createElement('h4');
             eyebrow.textContent = titleText;
             textWithMediaBlockData1.push(eyebrow);
- 
+
         } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
             titleStyle = 'Eyebrow Bold 1';
             const eyebrow = document.createElement('h4');
             eyebrow.textContent = titleText;
             textWithMediaBlockData1.push(eyebrow);
- 
+
         } else if (title.classList.contains('style-title--iconization-1')) {
             titleStyle = 'Iconization';
             const eyebrow = document.createElement('h4');
@@ -457,19 +459,19 @@ const createTextWithMediaRight = (main, document) => {
             const h3 = document.createElement('h3');
             h3.textContent = titleText;
             textWithMediaBlockData1.push(h3);
- 
+
         }else{
-            const h4 = document.createElement('h4');
+			const h4 = document.createElement('h4');
                 h4.textContent = titleText;
                 textWithMediaBlockData1.push(h4);
-        }
-          });
+		}
+		  });
         const description = element.querySelector('.cmp-text').textContent;
         const para = document.createElement('p');
         para.textContent = description;
         textWithMediaBlockData1.push(para);
- 
- 
+
+
         textWithMediaBlockData.push(textWithMediaBlockData1);
         const image = element.querySelector('.cmp-image .cmp-image__image');
         const imageSrc = element.querySelector('.cmp-image .cmp-image__image').getAttribute('src');
@@ -477,28 +479,25 @@ const createTextWithMediaRight = (main, document) => {
         const pictureTag = document.createElement('picture');
         pictureTag.appendChild(image);
         textWithMediaBlockData.push(pictureTag);
- 
-        let link = element.querySelector('.cmp-button').getAttribute('href');
+
+        const link = element.querySelector('.cmp-button').getAttribute('href');
         const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
         const aTag = document.createElement('a');
-        if (link && !isAbsoluteUrl(link)) {
-            var currentDomain = window.location.origin;
-            link = currentDomain + link;
-        }
         aTag.setAttribute('href', link);
         aTag.innerText = linkLabel;
         textWithMediaBlockData.push(aTag);
-        const analytics = document.createElement('p');
-        analytics.textContent = 'analytics Details';
-        textWithMediaBlockData.push(analytics);
- 
+		
+		const paraAnaly = document.createElement('p');
+        paraAnaly.textContent = "Analytics Details";
+        textWithMediaBlockData.push(paraAnaly);
+
         textWithMediaBlock.push(textWithMediaBlockData);
- 
+
         const textWithMediaTable = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
-        element.replaceWith(textWithMediaTable);
- 
+	    element.replaceWith(textWithMediaTable);
+
     });
- 
+
 };
 
 const createVideo = (main, document) => {
@@ -515,15 +514,40 @@ const createVideo = (main, document) => {
         } else {
             deskVideoPath = videoElem.getAttribute('src');
         }
+		const paraDeskVideoPath = document.createElement("p");
+			const aTag1 = document.createElement('a');
+			aTag1.setAttribute('href', deskVideoPath);  
+			aTag1.innerText = deskVideoPath;
+            paraDeskVideoPath.appendChild(aTag1);
+			
         if (videoElem.hasAttribute('data-src-medium')) {
             mobVideoPath = videoElem.getAttribute('data-src-medium');
         } else {
             mobVideoPath = videoElem.getAttribute('src');
         }
+			const paraMobVideoPath = document.createElement("p");
+			const aTag2 = document.createElement('a');
+			aTag2.setAttribute('href', deskVideoPath);  
+			aTag2.innerText = deskVideoPath;
+            paraMobVideoPath.appendChild(aTag2);
+			
         const imgPath = video.querySelector('.cmp-video__video');
         const img = imgPath.querySelector('img');
         const deskPosterImgPath = img.getAttribute('src');
         const mobPosterImgPath = img.getAttribute('src');
+		const pictureDesk = document.createElement('picture');
+            const paraDeskImg = document.createElement("p");
+            const el = document.createElement('img');
+            el.src = deskPosterImgPath;
+			pictureDesk.appendChild(el);
+            paraDeskImg.appendChild(pictureDesk);
+			
+			const pictureMob= document.createElement('picture');
+            const paraMobImg = document.createElement("p");
+            const e2 = document.createElement('img');
+            e2.src = mobPosterImgPath;
+			pictureMob.appendChild(e2);
+            paraMobImg.appendChild(pictureMob);	
         const loopVideo = 'TRUE';
         const autoplay = 'TRUE';
         const videoControls = 'FALSE';
@@ -533,10 +557,10 @@ const createVideo = (main, document) => {
             ["Video"],
             [videoTitle],
             [videoDesc],
-            [deskVideoPath],
-            [mobVideoPath],
-            [mobPosterImgPath],
-            [img],
+            [paraDeskVideoPath],
+            [paraMobVideoPath],
+            [paraDeskImg],
+            [paraMobImg],
             [loopVideo],
             [autoplay],
             [videoControls],
