@@ -322,88 +322,10 @@ const createAccordion = (main, document) => {
 
 };
 
-const createTextWithMediaLeft = (main, document) => {
-    const elements1 = document.querySelectorAll('[data-tracking-regionid*="item-image-text-teaser-left"]');
-    elements1.forEach(element => {
-        const textWithMediaBlock = [];
-        const name = ['Text With Media'];
-        textWithMediaBlock.push(name);
-        const textWithMediaBlockData = [];
-        textWithMediaBlockData.push("text-with-image, left");
-        const textWithMediaBlockData1 = [];
-
-        const titles = element.querySelectorAll('.title');
-        titles.forEach(title => {
-            const titleText = title.querySelector('.cmp-title').textContent;
-            let titleStyle = '';
-            if (title.classList.contains('style-title__text--eyebrow2-bold')) {
-            titleStyle = 'Eyebrow Bold 2';
-            const eyebrow = document.createElement('h4');
-            eyebrow.textContent = titleText;
-            textWithMediaBlockData1.push(eyebrow);
-
-        } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
-            titleStyle = 'Eyebrow Bold 1';
-            const eyebrow = document.createElement('h4');
-            eyebrow.textContent = titleText;
-            textWithMediaBlockData1.push(eyebrow);
-
-        } else if (title.classList.contains('style-title--iconization-1')) {
-            titleStyle = 'Iconization';
-            const eyebrow = document.createElement('h4');
-            eyebrow.textContent = titleText;
-            textWithMediaBlockData1.push(eyebrow);
-        } else if (title.classList.contains('style-title--headline-1')) {
-            const h1 = document.createElement('h1');
-            h1.textContent = titleText;
-            textWithMediaBlockData1.push(h1);
-        } else if (title.classList.contains('style-title--headline-2')) {
-            const h2 = document.createElement('h2');
-            h2.textContent = titleText;
-            textWithMediaBlockData1.push(h2);
-        } else if (title.classList.contains('style-title--headline-3')) {
-            const h3 = document.createElement('h3');
-            h3.textContent = titleText;
-            textWithMediaBlockData1.push(h3);
-
-        }else{
-			const h4 = document.createElement('h4');
-                h4.textContent = titleText;
-                textWithMediaBlockData1.push(h4);
-		}  
-
-        });
-        const description = element.querySelector('.cmp-text').textContent;
-        const para = document.createElement('p');
-        para.textContent = description;
-        textWithMediaBlockData1.push(para);
-
-
-        textWithMediaBlockData.push(textWithMediaBlockData1);
-        const image = element.querySelector('.cmp-image .cmp-image__image');
-        const imageSrc = element.querySelector('.cmp-image .cmp-image__image').getAttribute('src');
-        const imageAltTxt = element.querySelector('.cmp-image .cmp-image__image').getAttribute('alt');
-        textWithMediaBlockData.push(image);
-
-        const link = element.querySelector('.cmp-button').getAttribute('href');
-        const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
-        const aTag = document.createElement('a');
-        aTag.setAttribute('href', link);
-        aTag.innerText = linkLabel;
-        textWithMediaBlockData.push(aTag);
-        textWithMediaBlockData.push('analytics Details');
-
-        textWithMediaBlock.push(textWithMediaBlockData);
-
-        const textWithMediaTableLeft = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
-       element.replaceWith(textWithMediaTableLeft);
-      
-    });
-
-
-
-};
 const createTextWithMediaRight = (main, document) => {
+    function isAbsoluteUrl(url) {
+        return /^https?:\/\//i.test(url);
+    }
     const elements = document.querySelectorAll('[data-tracking-regionid*="item-image-text-teaser-right"]');
     elements.forEach(element => {
         const textWithMediaBlock = [];
@@ -412,7 +334,7 @@ const createTextWithMediaRight = (main, document) => {
         const textWithMediaBlockData = [];
         textWithMediaBlockData.push("text-with-image, right");
         const textWithMediaBlockData1 = [];
-
+ 
         const titles = element.querySelectorAll('.title');
        titles.forEach(title => {
             const titleText = title.querySelector('.cmp-title').textContent;
@@ -422,13 +344,13 @@ const createTextWithMediaRight = (main, document) => {
             const eyebrow = document.createElement('h4');
             eyebrow.textContent = titleText;
             textWithMediaBlockData1.push(eyebrow);
-
+ 
         } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
             titleStyle = 'Eyebrow Bold 1';
             const eyebrow = document.createElement('h4');
             eyebrow.textContent = titleText;
             textWithMediaBlockData1.push(eyebrow);
-
+ 
         } else if (title.classList.contains('style-title--iconization-1')) {
             titleStyle = 'Iconization';
             const eyebrow = document.createElement('h4');
@@ -446,40 +368,137 @@ const createTextWithMediaRight = (main, document) => {
             const h3 = document.createElement('h3');
             h3.textContent = titleText;
             textWithMediaBlockData1.push(h3);
-
+ 
         }else{
-			const h4 = document.createElement('h4');
+            const h4 = document.createElement('h4');
                 h4.textContent = titleText;
                 textWithMediaBlockData1.push(h4);
-		}
-		  });
+        }
+          });
         const description = element.querySelector('.cmp-text').textContent;
         const para = document.createElement('p');
         para.textContent = description;
         textWithMediaBlockData1.push(para);
-
-
+ 
+ 
         textWithMediaBlockData.push(textWithMediaBlockData1);
         const image = element.querySelector('.cmp-image .cmp-image__image');
         const imageSrc = element.querySelector('.cmp-image .cmp-image__image').getAttribute('src');
         const imageAltTxt = element.querySelector('.cmp-image .cmp-image__image').getAttribute('alt');
-        textWithMediaBlockData.push(image);
-
-        const link = element.querySelector('.cmp-button').getAttribute('href');
+        const pictureTag = document.createElement('picture');
+        pictureTag.appendChild(image);
+        textWithMediaBlockData.push(pictureTag);
+ 
+        let link = element.querySelector('.cmp-button').getAttribute('href');
         const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
         const aTag = document.createElement('a');
+        if (link && !isAbsoluteUrl(link)) {
+            var currentDomain = window.location.origin;
+            link = currentDomain + link;
+        }
         aTag.setAttribute('href', link);
         aTag.innerText = linkLabel;
         textWithMediaBlockData.push(aTag);
-        textWithMediaBlockData.push('analytics Details');
-
+        const analytics = document.createElement('p');
+        analytics.textContent = 'analytics Details';
+        textWithMediaBlockData.push(analytics);
+ 
         textWithMediaBlock.push(textWithMediaBlockData);
-
+ 
         const textWithMediaTable = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
-	    element.replaceWith(textWithMediaTable);
-
+        element.replaceWith(textWithMediaTable);
+ 
     });
-
+ 
+};
+const createTextWithMediaRight = (main, document) => {
+    function isAbsoluteUrl(url) {
+        return /^https?:\/\//i.test(url);
+    }
+    const elements = document.querySelectorAll('[data-tracking-regionid*="item-image-text-teaser-right"]');
+    elements.forEach(element => {
+        const textWithMediaBlock = [];
+        const name = ['Text With Media'];
+        textWithMediaBlock.push(name);
+        const textWithMediaBlockData = [];
+        textWithMediaBlockData.push("text-with-image, right");
+        const textWithMediaBlockData1 = [];
+ 
+        const titles = element.querySelectorAll('.title');
+       titles.forEach(title => {
+            const titleText = title.querySelector('.cmp-title').textContent;
+            let titleStyle = '';
+            if (title.classList.contains('style-title__text--eyebrow2-bold')) {
+            titleStyle = 'Eyebrow Bold 2';
+            const eyebrow = document.createElement('h4');
+            eyebrow.textContent = titleText;
+            textWithMediaBlockData1.push(eyebrow);
+ 
+        } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
+            titleStyle = 'Eyebrow Bold 1';
+            const eyebrow = document.createElement('h4');
+            eyebrow.textContent = titleText;
+            textWithMediaBlockData1.push(eyebrow);
+ 
+        } else if (title.classList.contains('style-title--iconization-1')) {
+            titleStyle = 'Iconization';
+            const eyebrow = document.createElement('h4');
+            eyebrow.textContent = titleText;
+            textWithMediaBlockData1.push(eyebrow);
+        } else if (title.classList.contains('style-title--headline-1')) {
+            const h1 = document.createElement('h1');
+            h1.textContent = titleText;
+            textWithMediaBlockData1.push(h1);
+        } else if (title.classList.contains('style-title--headline-2')) {
+            const h2 = document.createElement('h2');
+            h2.textContent = titleText;
+            textWithMediaBlockData1.push(h2);
+        } else if (title.classList.contains('style-title--headline-3')) {
+            const h3 = document.createElement('h3');
+            h3.textContent = titleText;
+            textWithMediaBlockData1.push(h3);
+ 
+        }else{
+            const h4 = document.createElement('h4');
+                h4.textContent = titleText;
+                textWithMediaBlockData1.push(h4);
+        }
+          });
+        const description = element.querySelector('.cmp-text').textContent;
+        const para = document.createElement('p');
+        para.textContent = description;
+        textWithMediaBlockData1.push(para);
+ 
+ 
+        textWithMediaBlockData.push(textWithMediaBlockData1);
+        const image = element.querySelector('.cmp-image .cmp-image__image');
+        const imageSrc = element.querySelector('.cmp-image .cmp-image__image').getAttribute('src');
+        const imageAltTxt = element.querySelector('.cmp-image .cmp-image__image').getAttribute('alt');
+        const pictureTag = document.createElement('picture');
+        pictureTag.appendChild(image);
+        textWithMediaBlockData.push(pictureTag);
+ 
+        let link = element.querySelector('.cmp-button').getAttribute('href');
+        const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
+        const aTag = document.createElement('a');
+        if (link && !isAbsoluteUrl(link)) {
+            var currentDomain = window.location.origin;
+            link = currentDomain + link;
+        }
+        aTag.setAttribute('href', link);
+        aTag.innerText = linkLabel;
+        textWithMediaBlockData.push(aTag);
+        const analytics = document.createElement('p');
+        analytics.textContent = 'analytics Details';
+        textWithMediaBlockData.push(analytics);
+ 
+        textWithMediaBlock.push(textWithMediaBlockData);
+ 
+        const textWithMediaTable = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
+        element.replaceWith(textWithMediaTable);
+ 
+    });
+ 
 };
 
 const createVideo = (main, document) => {
