@@ -4,6 +4,8 @@
     "/content/metafox/masters/en/placeholders:/en/placeholders.json",
     "/content/metafox/masters/sr/placeholders:/sr/placeholders.json",
     "/content/metafox/masters/metadata:/metadata.json",
+    "/content/metafox/masters/configuration:/.helix/config.json",
+    "/content/metafox/masters/headers:/.helix/headers.json",
     "/content/metafox/masters/en/models-overview:/en/models-overview.json",
     "/content/metafox/masters/sr/models-overview:/sr/models-overview.json",
     "/content/metafox/masters/en/model-filters:/en/model-filters.json",

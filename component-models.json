@@ -542,6 +542,24 @@
     ]
   },
   {
+    "id": "all-models-section",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Analytics",
+        "name": "tab-analytics"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "description": "Defines the name of the section for analytics. Please define the Section Name in English.",
+        "name": "analytics-label",
+        "value": "",
+        "label": "Section Label"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -4887,5 +4905,176 @@
         ]
       }
     ]
+  },
+  {
+    "id": "all-models",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "All Models Overview",
+        "name": "content_models_overview"
+      },
+      {
+          "component": "text-input",
+          "valueType": "string",
+          "name": "content_description",
+          "label": "Content Navigation Description",
+          "value": "",
+          "description": "Summarises the description of the Content Navigation for the accessibility purposes.",
+          "required": true
+      },
+      {
+        "component": "text",
+        "name": "content_descriptionType",        
+        "valueType": "string",
+        "value": "h2",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Activate Configurator Variant",
+        "name": "content_confvariant",
+        "description": "Defines if some models will appear on the Configurator page.",
+        "valueType": "boolean",
+        "value": false
+      },
+      {
+        "component": "text",
+        "name": "content_confvariantType",        
+        "valueType": "string",
+        "value": "h3",
+        "hidden": true
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "content_headline",
+        "label": "Filter Headline",
+        "value": "",
+        "description": "Defines the headline for the filters"
+    },
+    {
+      "component": "text",
+      "name": "content_headlineType",        
+      "valueType": "string",
+      "value": "h4",
+      "hidden": true
+    },
+    {
+      "component": "aem-content",
+      "name": "content_spreadsheet1",
+      "description": "Contains the filter labels and their translations.",
+      "label": "Filter Spreadsheet ",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "content_spreadsheet1Type",        
+      "valueType": "string",
+      "value": "h5",
+      "hidden": true
+    },
+    {
+      "component": "aem-content",
+      "name": "content_spreadsheet2",
+      "description": "Contains all models labels and details (e.g. model name, model code, price etc.).",
+      "label": "Model Overview Spreadsheet",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "content_spreadsheet2Type",        
+      "valueType": "string",
+      "value": "h5",
+      "hidden": true
+    },
+    {
+      "component":"tab",
+      "name":"analytics_tab",
+      "label":"Analytics"
+    },
+    {
+      "component":"select",
+      "name":"analytics_button",
+      "label":"Button/Link Type", 
+      "valueType": "string",
+      "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
+      "options": [
+        {
+          "name": "Exit",
+          "value": "exit"
+        },
+        {
+          "name": "Download",
+          "value": "download"
+        },
+        {
+          "name": "Other",
+          "value": "other"
+        }          
+      ]    
+    },
+    {
+      "component": "select",
+      "label": "Only if other is selected the following options should appear:",
+      "name": "analytics_others",
+      "valueType": "string",
+      "condition": { "===": [{"var" : "analytics_button"}, "other"] },
+      "options": [
+        {
+          "name": "Learn More",
+          "value": "LearnMore"
+        },
+        {
+          "name": "Configure",
+          "value": "Configure"
+        },
+        {
+          "name": "Technical Data",
+          "value": "Technical Data"
+        },
+        {
+          "name": "Options and Prices",
+          "value": "Options and Prices"
+        },
+        {
+          "name": "Vehicles in Stock",
+          "value": "Vehicles in Stock"
+        },
+        {
+          "name": "Request for Offer",
+          "value": "Request for Offer"
+        },
+        {
+          "name": "Sales and Service Network",
+          "value": "Sales and Service Network"
+        },
+        {
+          "name": "Test Drive",
+          "value": "Test Drive"
+        },
+        {
+          "name": "Newsletter Signup",
+          "value": "Newsletter Signup"
+        },
+        {
+          "name": "Contact",
+          "value": "Contact"
+        },
+        {
+          "name": "Search",
+          "value": "Search"
+        },
+        {
+          "name": "Show More / Show Less",
+          "value": "Show More / Show Less"
+        },
+        {
+          "name": "Other",
+          "value": "Other"
+        }    
+      ]
+    }
+   ]
   }  
 ]
