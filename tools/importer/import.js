@@ -153,9 +153,9 @@ const createBackgroundMedia = (main, document) => {
             }
             mediaImageDescription = bgmedia.querySelector('.cmp-text .cmp-text__paragraph')?.textContent;
             if(mediaImageDescription) {
-				const h3 = document.createElement('h3');
-				h3.textContent = mediaImageDescription;
-				backgroundMediaBlockData.push(h3);
+				const mDesc = document.createElement('h3');
+				mDesc.textContent = mediaImageDescription;
+				backgroundMediaBlockData.push(mDesc);
             }
         }
 
@@ -183,16 +183,22 @@ const createBackgroundMedia = (main, document) => {
             if(videoDescription)
             paraDesc.appendChild(nodeDesc);
             const dsktpPosterImgPath = bgmedia.querySelector('.cmp-video__video img')?.getAttribute('src');
+			const pictureDesk = document.createElement('picture');
             const paraDeskImg = document.createElement("p");
             const el = document.createElement('img');
             el.src = dsktpPosterImgPath;
-            paraDeskImg.appendChild(el);
+			pictureDesk.appendChild(el);
+            paraDeskImg.appendChild(pictureDesk);
+			        
             const mblPosterImgPath = bgmedia.querySelector('.cmp-video__video img')?.getAttribute('src');
+			const pictureMob = document.createElement('picture');
+
             const paraMobImg = document.createElement("p");
             const e2 = document.createElement('img');
             e2.src = mblPosterImgPath;
             if(mblPosterImgPath)
-            paraMobImg.appendChild(e2);
+			pictureMob.appendChild(e2);
+            paraMobImg.appendChild(pictureMob);
 		
             const desktopVideoPath = bgmedia.querySelector('.cmp-video__video-player').getAttribute('data-src-large');
             const paraVideoPath = document.createElement("p");
