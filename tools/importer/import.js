@@ -57,6 +57,9 @@ export default {
       '.visualizer',
       '.preCon',
       '.tabs',
+	  '.modelnavigation',
+	  '.cmp-modelhubcard',
+	  '.technicaldata',
       /* '.accordion',
        '.container',
        '.backgroundmedia',
@@ -591,9 +594,7 @@ const createDefaultContent = (main, document) => {
     const para = document.createElement('p');
     para.textContent = description;
     desc.replaceWith(para);
-	const para3 = document.createElement('p');
-      para3.textContent = "&nbsp;";
-      para.parentElement.appendChild(para3);
+	
   });
 
 
@@ -738,27 +739,41 @@ const createCarousel = (main, document) => {
             paraDesc.appendChild(nodeDesc);
           const dsktpPosterImgPath = slide.querySelector('.cmp-video__video img')?.getAttribute('src');
           const para3 = document.createElement("p");
+		const pictureDesk = document.createElement('picture');
+
           const el = document.createElement('img');
           el.src = dsktpPosterImgPath;
           if (dsktpPosterImgPath)
-            para3.appendChild(el);
+			pictureDesk.appendChild(el);
+            para3.appendChild(pictureDesk);
+		
+		
           const mblPosterImgPath = slide.querySelector('.cmp-video__video img')?.getAttribute('src');
           const para4 = document.createElement("p");
+		  const pictureMob = document.createElement('picture');
           const e2 = document.createElement('img');
           e2.src = mblPosterImgPath;
           if (mblPosterImgPath)
-            para4.appendChild(e2);
+			pictureMob.appendChild(e2);
+            para4.appendChild(pictureMob);
+		
+		
           const desktopVideoPath = slide.querySelector('.cmp-video__video-player')?.getAttribute('data-src-large');
-          const para5 = document.createElement("p");
-          const node5 = document.createTextNode(desktopVideoPath);
+          const paraVideoPath = document.createElement("p");
+			const aTag1 = document.createElement('a');
+			aTag1.setAttribute('href', desktopVideoPath);
+			aTag1.innerText = desktopVideoPath;
+		 
           if (desktopVideoPath)
-            para5.appendChild(node5);
+			paraVideoPath.appendChild(aTag1);
+		
           const mobileVideoPath = slide.querySelector('.cmp-video__video-player').getAttribute('src') || slide.querySelector('.cmp-video__video-player').getAttribute('data-src-medium');
-          const para6 = document.createElement("p");
-          const e4 = document.createElement('img');
-          e4.src = mobileVideoPath;
-          if (mobileVideoPath && !mobileVideoPath.startsWith('blob:'))
-            para6.appendChild(e4);
+           const paraMobVideoPath = document.createElement("p");
+			const aTag2 = document.createElement('a');
+			aTag2.setAttribute('href', desktopVideoPath);
+			aTag2.innerText = desktopVideoPath;
+				paraMobVideoPath.appendChild(aTag2);
+			
           const h1 = document.createElement('h1');
           h1.textContent = "true";
           const h2 = document.createElement('h2');
@@ -768,14 +783,17 @@ const createCarousel = (main, document) => {
           if (!isMediaCarousel) {
             h3.textContent = "false";
           }
-          const h4 = document.createElement('h2');
+          const h4 = document.createElement('h4');
           h4.textContent = "true";
           // Log video details if needed
-
-          carouselVideoData.push(paraTitle, paraDesc, para5, para6, para3, para4, h1, h2, h3, h4);
+			const h5 = document.createElement('h5');
+          h5.textContent = "false";
+		  const h6 = document.createElement('h6');
+          h6.textContent = "true";
+          carouselVideoData.push(paraTitle, paraDesc, paraVideoPath, paraMobVideoPath, para3, para4, h1, h2, h3, h4);
           carouselRow.push(carouselVideoData);
           if (!isMediaCarousel) {
-            videoGalleryData.push(paraTitle, paraDesc, para5, para6, para3, para4, h1, h2, h3, h4);
+            videoGalleryData.push(paraTitle, paraDesc, paraVideoPath, paraMobVideoPath, para3, para4, h1, h2, h5, h6);
             console.log(videoGalleryData)
           }
         }
@@ -785,11 +803,14 @@ const createCarousel = (main, document) => {
           const imgAlt = slide.querySelector('.cmp-image .cmp-image__image').getAttribute('alt');
           // Log image details if needed
           if (imgSrc) {
+			const picture = document.createElement('picture');
             const el = document.createElement('img');
             el.src = imgSrc;
+
             if (imgAlt)
-              el.alt = imgAlt;
-            carouselRow.push(el);
+            el.alt = imgAlt;
+			picture.appendChild(el);
+            carouselRow.push(picture);
           }
         }
 
