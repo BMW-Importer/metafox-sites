@@ -594,7 +594,9 @@ const createDefaultContent = (main, document) => {
     const para = document.createElement('p');
     para.textContent = description;
     desc.replaceWith(para);
-	
+	const para3 = document.createElement('p');
+      para3.textContent = "&nbsp;";
+      para.parentElement.appendChild(para3);
   });
 
 
