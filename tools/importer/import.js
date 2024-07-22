@@ -126,7 +126,9 @@ const createBackgroundMedia = (main, document) => {
                 }
                 if (copyText)
                     backgroundMediaBlockData.push(subBrandIconType);
-                    backgroundMediaBlockData.push(copyText);
+					const h3 = document.createElement("h3");
+					h3.textContent = copyText;
+					backgroundMediaBlockData.push(h3);
             }
         });
 
@@ -386,7 +388,10 @@ const createTextWithMediaLeft = (main, document) => {
         const para = document.createElement('p');
         para.textContent = description;
         textWithMediaBlockData1.push(para);
-
+		const para3 = document.createElement("p");
+      const node3 = document.createTextNode("");
+      para3.appendChild(node3);
+      textWithMediaBlockData1.push(para3);
 
         textWithMediaBlockData.push(textWithMediaBlockData1);
         const image = element.querySelector('.cmp-image .cmp-image__image');
@@ -470,7 +475,10 @@ const createTextWithMediaRight = (main, document) => {
         const para = document.createElement('p');
         para.textContent = description;
         textWithMediaBlockData1.push(para);
-
+		const para3 = document.createElement("p");
+		const node3 = document.createTextNode("");
+		para3.appendChild(node3);
+		textWithMediaBlockData1.push(para3);
 
         textWithMediaBlockData.push(textWithMediaBlockData1);
         const image = element.querySelector('.cmp-image .cmp-image__image');
@@ -582,6 +590,9 @@ const createDefaultContent = (main, document) => {
         const para = document.createElement('p');
         para.textContent = description;
 		desc.replaceWith(para);
+		const para3 = document.createElement('p');
+		para3.textContent = "";
+		para.parentElement.appendChild(para3);
     });
 
 
