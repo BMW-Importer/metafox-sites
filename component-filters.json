@@ -9,7 +9,8 @@
       "bmw-video",
       "flexible-width-section",
       "tabs-section",
-      "all-models-section"
+      "all-models-section",
+      "stock-locator-section"
     ]
   },
   {
@@ -287,6 +288,31 @@
     ]
   },
   {
+    "id": "stock-locator-model-properties",
+    "components": [],
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+   "id" : "stock-locator-section",
+   "components":[
+    "headline",
+    "copy_text",
+    "stock-locator-model-properties",
+    "stock-locator-model-defination"
+   ]
+  },
+  {
     "id": "copy_text",
     "rte": {
       "format": ["bold"],
@@ -395,6 +421,17 @@
     "id": "technical-data",
     "components":[
       "model-data"
-    ]
+    ],
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [],
+      "advanced": ["h2"],
+      "extensions": [],
+       "editor": []
+    }
   }
 ]

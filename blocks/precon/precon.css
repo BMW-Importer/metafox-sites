@@ -121,6 +121,14 @@
     justify-content: center;
 }
 
+img.card-animation-right {
+    margin-right: .25rem;
+}
+
+img.card-animation-left {
+    margin-left: .25rem;
+}
+
 .precon-wrapper .precon-content-data {
     z-index: 1;
 }

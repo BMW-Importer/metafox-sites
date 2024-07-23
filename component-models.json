@@ -2985,8 +2985,7 @@
         "component": "text",
         "valueType": "string",
         "name": "bgVidGeneral_headlineclassType",
-        "value": "h2",
-        "label": "Eyebrow",
+        "value": "h2",        
         "hidden": true
       },
       {
@@ -4346,13 +4345,15 @@
         "component":"text-input",
         "name":"analytics_label",
         "label":"Analytics Label",
-        "valueType": "string"
+        "valueType": "string",
+        "description": "Defines a brief description of the content for analytics. Please fill out this field in English."
       },
       {
         "component":"select",
         "name":"analytics_button",
         "label":"Button/Link Type", 
         "valueType": "string",
+        "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
         "options": [
           {
             "name": "Exit",
@@ -4373,6 +4374,7 @@
         "label": "Only if other is selected the following options should appear:",
         "name": "analytics_others",
         "valueType": "string",
+        "description": "Defines the category of the Button/Link authored if Other is selected as its Type.",
         "condition": { "===": [{"var" : "analytics_button"}, "other"] },
         "options": [
           {
@@ -4786,7 +4788,64 @@
         "name": "content_spreadsheet",
         "description": "Defines the Technical Data Spreadsheet that will be read if Automatic Data is toggled off.",
         "label": "Technical Data Spreadsheet",
-        "valueType": "string"
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "headline1_headlineAndText1",
+        "label": "Headline and Text",
+        "description": "Defines the headline and copy text to be displayed underneath the technical data table."        
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline1_headline1Link",
+        "label": "Link",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://"        
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline1_headline1LinkText",
+        "label": "Link Label",
+        "description": "Defines the text to be displayed as the Link Button."        
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline1_headline1LinkType",
+        "label": "Link Label",
+        "hidden": true        
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "headline2_headlineAndText2",
+        "label": "Headline and Text",        
+        "description": "Defines the headline and copy text to be displayed underneath the technical data table."        
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline2_headline2Link",
+        "label": "Link",
+        "description": "Defines the page to which the user will be directed to. Please add the full URL including https://"        
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline2_headline2LinkText",
+        "label": "Link Label",
+        "description": "Defines the text to be displayed as the Link Button."        
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "headline2_headline2LinkType",
+        "label": "Link Label",
+        "hidden": true        
       }
     ]
   },
@@ -4799,9 +4858,9 @@
         "name": "wdh"
       },
       {
-        "component": "customtype",
+        "component": "techdatacustomfield",
         "label": "Model Card Context",
-        "name": "wdh_customSeriesModelRangeSelection",
+        "name": "wdh_techdatacustomfield",
         "description": "Defines the link to the page a user lands on when clicking on the panel with the vehicle image on the left-hand side of the DriveTrain Switch.",
         "valueType": "string"
       },
@@ -4815,94 +4874,6 @@
         "name": "analytics_label",
         "label": "Analytics Label",
         "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "analytics_button",
-        "label": "Button/Link Type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Exit",
-            "value": "exit"
-          },
-          {
-            "name": "Download",
-            "value": "download"
-          },
-          {
-            "name": "Other",
-            "value": "other"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "label": "Only if other is selected the following options should appear:",
-        "name": "analytics_others",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "analytics_button"
-            },
-            "other"
-          ]
-        },
-        "options": [
-          {
-            "name": "Learn More",
-            "value": "LearnMore"
-          },
-          {
-            "name": "Configure",
-            "value": "Configure"
-          },
-          {
-            "name": "Technical Data",
-            "value": "Technical Data"
-          },
-          {
-            "name": "Options and Prices",
-            "value": "Options and Prices"
-          },
-          {
-            "name": "Vehicles in Stock",
-            "value": "Vehicles in Stock"
-          },
-          {
-            "name": "Request for Offer",
-            "value": "Request for Offer"
-          },
-          {
-            "name": "Sales and Service Network",
-            "value": "Sales and Service Network"
-          },
-          {
-            "name": "Test Drive",
-            "value": "Test Drive"
-          },
-          {
-            "name": "Newsletter Signup",
-            "value": "Newsletter Signup"
-          },
-          {
-            "name": "Contact",
-            "value": "Contact"
-          },
-          {
-            "name": "Search",
-            "value": "Search"
-          },
-          {
-            "name": "Show More / Show Less",
-            "value": "Show More / Show Less"
-          },
-          {
-            "name": "Other",
-            "value": "Other"
-          }
-        ]
       }
     ]
   },
@@ -5076,5 +5047,329 @@
       ]
     }
    ]
-  }  
+  },
+  {
+    "id" : "stock-locator-section",
+    "fields" :[
+      {
+        "component": "text",
+        "name": "stockLocatorLabel",        
+        "valueType": "string",
+        "label": "Section Label",
+        "description": "Defines the name of the Section for analytics. Please define the Section Name in English."
+      }
+    ]
+  },
+  {
+    "id": "stock-locator-model-properties",
+    "fields":[
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "content_modelPropertiesTab"
+      },
+      {
+        "component": "text",
+        "label": "Model Tile Button Label",
+        "name": "content_modeltitlebtn",
+        "valueType": "string",
+        "description": "Defines the label of the button appearing in the model tile that directs the user to the more detailed overview.",
+        "value": "See the details"
+      },
+      {
+        "component": "select",
+        "name": "content_modeltitlebtnstyle",
+        "label": "Model Tile Button Styling",
+        "valueType": "string",
+        "hidden": true,
+        "value": "Money Button",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link."
+      },
+      {
+        "component": "reference",
+        "name": "mp_general_infoIcon",
+        "label": "Info Icon Text",
+        "valueType": "string",
+        "description": "Defines the text appearing in the tooltip of the info icon displayed next to the price. Please select the relevant Info Icon Text per market and language under /content/dam/metafox/."
+      },
+      {
+        "component": "text",
+        "name": "mp_general_resultsCount",
+        "label": "Results Count Text",
+        "valueType": "string",
+        "value": "{count} of {count}",
+        "description": "Defines the text displaying the number of results being displayed above the show more results button."
+      },
+      {
+        "component": "reference",
+        "name": "mp_general_disclaimer",
+        "label": "Disclaimers",
+        "valueType": "string",
+        "description": "Defines the Disclaimer Content Fragment that will be displayed in the page. Please select the relevant disclaimers per market and language under /content/dam/metafox/"
+      },
+      {
+        "component": "tab",
+        "label": "Fallback Banner",
+        "name": "banner_modelPropertiesTab2"
+      },
+      {
+        "component": "richtext",
+        "name": "banner_tabRte",
+        "label": "Fallback Banner Content",
+        "valueType": "string",
+        "value": "Sorry, there are no vehicles in stock matching your filter criteria. (note: in headline styling) Please enter new filter criteria. (note: in paragraph styling)",
+        "description": "Defines the content of the fallback banner displayed if there are no results matching the applied filter. Please use Headline 1 styling for the headline, paragraph for the copy text and links can be added if required."
+      }
+    ]
+  },
+  {
+   "id" : "stock-locator-model-defination",
+    "fields" :[
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "content_modelDefinitionTab"
+      },
+      {
+        "component": "text",
+        "label": "RFO Form Button Label",
+        "name": "content_button",
+        "valueType": "string",
+        "description": "Defines the label of the two buttons leading to the RFO form.",
+        "value": "Request an offer"
+      },
+      {
+        "component": "select",
+        "name": "content_buttonstyling",
+        "label": "RFO Form Button Styling",
+        "valueType": "string",
+        "hidden": true,
+        "value": "Money Button",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link."
+      },
+      {
+        "component": "text",
+        "label": "Dealer Location Button Label",
+        "name": "content_dealerButton",
+        "valueType": "string",
+        "description": "Defines the label of the button leading to the Google Maps link with the location of the Dealer with the vehicle in stock.",
+        "value": "Find the dealer"
+      },
+      {
+        "component": "select",
+        "name": "content_dealerButtonStyling",
+        "label": "Dealer Location Button Styling",
+        "valueType": "string",
+        "hidden": true,
+        "value": "Ghost Dark",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link."
+      },
+      {
+        "component": "reference",
+        "name": "content_infoIconText",
+        "label": "Info Icon Text",
+        "valueType": "string",
+        "description": "Defines the text appearing in the tooltip of the info icon displayed next to the price. Please select the relevant Info Icon Text per market and language under /content/dam/metafox/"
+      },
+      {
+        "component": "reference",
+        "name": "content_fallbackImgOptions",
+        "label": "Fallback Image for Options",
+        "valueType": "string",
+        "description": "Defines the fallback image to be displayed if there is no defined image for the vehicle options."
+      },
+      {
+        "component": "reference",
+        "name": "content_disclaimer",
+        "label": "Disclaimers",
+        "valueType": "string",
+        "description": "Defines the Disclaimer Content Fragment that will be displayed in the page. Please select the relevant disclaimers per market and language under /content/dam/metafox/"
+      },
+      {
+        "component": "tab",
+        "label": "Analytics",
+        "name": "analytics_tab"
+      },
+      {
+        "component": "select",
+        "name": "analytics_rfoButton",
+        "label": "RFO Form Button/Link Type",
+        "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit",
+            "value": "exit"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "Other",
+            "value": "other"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "label": "RFO Form Button Category",
+        "name": "analytics_others",
+        "valueType": "string",
+        "description": "Defines the category of the Button/Link authored if Other is selected as its Type.",
+        "condition": {
+          "===": [
+            {
+              "var": "analytics_rfoButton"
+            },
+            "other"
+          ]
+        },
+        "options": [
+          {
+            "name": "Learn More",
+            "value": "LearnMore"
+          },
+          {
+            "name": "Configure",
+            "value": "Configure"
+          },
+          {
+            "name": "Technical Data",
+            "value": "Technical Data"
+          },
+          {
+            "name": "Options and Prices",
+            "value": "Options and Prices"
+          },
+          {
+            "name": "Vehicles in Stock",
+            "value": "Vehicles in Stock"
+          },
+          {
+            "name": "Request for Offer",
+            "value": "Request for Offer"
+          },
+          {
+            "name": "Sales and Service Network",
+            "value": "Sales and Service Network"
+          },
+          {
+            "name": "Test Drive",
+            "value": "Test Drive"
+          },
+          {
+            "name": "Newsletter Signup",
+            "value": "Newsletter Signup"
+          },
+          {
+            "name": "Contact",
+            "value": "Contact"
+          },
+          {
+            "name": "Search",
+            "value": "Search"
+          },
+          {
+            "name": "Show More / Show Less",
+            "value": "Show More / Show Less"
+          },
+          {
+            "name": "Other",
+            "value": "Other"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "analytics_dealerButton",
+        "label": "Dealer Location Button/Link Type",
+        "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Exit",
+            "value": "exit"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "Other",
+            "value": "other"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "label": "Dealer Location Button Category",
+        "name": "analytics_othersButtonCategory",
+        "valueType": "string",
+        "description": "Defines the category of the Button/Link authored if Other is selected as its Type..",
+        "condition": {
+          "===": [
+            {
+              "var": "analytics_dealerButton"
+            },
+            "other"
+          ]
+        },
+        "options": [
+          {
+            "name": "Learn More",
+            "value": "LearnMore"
+          },
+          {
+            "name": "Configure",
+            "value": "Configure"
+          },
+          {
+            "name": "Technical Data",
+            "value": "Technical Data"
+          },
+          {
+            "name": "Options and Prices",
+            "value": "Options and Prices"
+          },
+          {
+            "name": "Vehicles in Stock",
+            "value": "Vehicles in Stock"
+          },
+          {
+            "name": "Request for Offer",
+            "value": "Request for Offer"
+          },
+          {
+            "name": "Sales and Service Network",
+            "value": "Sales and Service Network"
+          },
+          {
+            "name": "Test Drive",
+            "value": "Test Drive"
+          },
+          {
+            "name": "Newsletter Signup",
+            "value": "Newsletter Signup"
+          },
+          {
+            "name": "Contact",
+            "value": "Contact"
+          },
+          {
+            "name": "Search",
+            "value": "Search"
+          },
+          {
+            "name": "Show More / Show Less",
+            "value": "Show More / Show Less"
+          },
+          {
+            "name": "Other",
+            "value": "Other"
+          }
+        ]
+      }
+    ] 
+  }
 ]

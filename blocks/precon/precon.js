@@ -282,10 +282,24 @@ function buttonHover(direction, start = true) {
   const content = mainContent.querySelector('.precon-image-container');
   const cards = content.querySelectorAll('.img-card-container');
   const index = Array.from(cards).findIndex((each) => each.classList.contains('active'));
-  if (direction === 'left' && start) cards[index - 1].classList.add('blur-inactive');
-  else if (direction === 'left' && !start) cards[index - 1].classList.remove('blur-inactive');
-  else if (direction === 'right' && start) cards[index + 1].classList.add('blur-inactive');
-  else cards[index + 1].classList.remove('blur-inactive');
+
+  if (direction === 'left') {
+    if (start && index > 0) {
+      cards[index - 1]?.classList.add('blur-inactive');
+      cards[index - 1]?.querySelector('img').classList.add('card-animation-left');
+    } else if (!start && index > 0) {
+      cards[index - 1]?.classList.remove('blur-inactive');
+      cards[index - 1]?.querySelector('img').classList.remove('card-animation-left');
+    }
+  } else if (direction === 'right') {
+    if (start && index < cards.length - 1) {
+      cards[index + 1]?.classList.add('blur-inactive');
+      cards[index + 1]?.querySelector('img').classList.add('card-animation-right');
+    } else if (!start && index < cards.length - 1) {
+      cards[index + 1]?.classList.remove('blur-inactive');
+      cards[index + 1]?.querySelector('img').classList.remove('card-animation-right');
+    }
+  }
 }
 
 function addButtons(preconLeftWrapper, preconRightWrapper) {
@@ -297,7 +311,6 @@ function addButtons(preconLeftWrapper, preconRightWrapper) {
 
   preconLeftWrapper.addEventListener('click', () => buttonClick('left'));
   preconRightWrapper.addEventListener('click', () => buttonClick('right'));
-
   preconLeftWrapper.addEventListener('mouseover', () => buttonHover('left'));
   preconRightWrapper.addEventListener('mouseover', () => buttonHover('right'));
   preconLeftWrapper.addEventListener('mouseleave', () => buttonHover('left', false));
@@ -308,34 +321,33 @@ function addButtons(preconLeftWrapper, preconRightWrapper) {
   preconRightWrapper.append(nextButton);
 }
 
-function updateItemsToShow(preconGalleryContent) {
-  const viewport = window.innerWidth;
+// function updateItemsToShow(preconGalleryContent) {
+//   const viewport = window.innerWidth;
 
-  const totalItems = preconGalleryContent.childElementCount;
-  const computedStyle = getComputedStyle(preconGalleryContent);
-  const paddingLeft = parseFloat(computedStyle.paddingLeft);
-  const paddingRight = parseFloat(computedStyle.paddingRight);
-  const desktopScreenWidth = viewport - (paddingLeft + paddingRight);
+//   const totalItems = preconGalleryContent.childElementCount;
+//   const computedStyle = getComputedStyle(preconGalleryContent);
+//   const paddingLeft = parseFloat(computedStyle.paddingLeft);
+//   const paddingRight = parseFloat(computedStyle.paddingRight);
+//   const desktopScreenWidth = viewport - (paddingLeft + paddingRight);
 
-  // padding only for more than 1280 viewport
-  const desktopContentPadding = document.querySelector('.section.precon-container');
-  const computedStyleDesktop = getComputedStyle(desktopContentPadding);
-  const paddingLeftDesktop = parseFloat(computedStyleDesktop.paddingLeft);
-  const paddingRightDesktop = parseFloat(computedStyleDesktop.paddingRight);
-  const ultraScreenWidth = viewport - (paddingLeftDesktop + paddingRightDesktop);
+//   // padding only for more than 1280 viewport
+//   const desktopContentPadding = document.querySelector('.section.precon-container');
+//   const computedStyleDesktop = getComputedStyle(desktopContentPadding);
+//   const paddingLeftDesktop = parseFloat(computedStyleDesktop.paddingLeft);
+//   const paddingRightDesktop = parseFloat(computedStyleDesktop.paddingRight);
+//   const ultraScreenWidth = viewport - (paddingLeftDesktop + paddingRightDesktop);
 
-  const cardsToShow = 1;
-  const availableWidth = viewport >= 1920 ? ultraScreenWidth : desktopScreenWidth;
-  return { cardsToShow, availableWidth, totalItems };
-}
+//   const cardsToShow = 1;
+//   const availableWidth = viewport >= 1920 ? ultraScreenWidth : desktopScreenWidth;
+//   console.log(viewport);
+//   return { cardsToShow, availableWidth, totalItems };
+// }
 
 export function resizePreconBlock() {
   const viewport = window.innerWidth;
   const carousels = document.querySelectorAll('.precon-image-container');
   carousels.forEach((carouselContent) => {
     const cards = carouselContent.querySelectorAll('.img-card-container');
-    const gap = 0;
-    const { availableWidth } = updateItemsToShow(carouselContent);
 
     cards.forEach((card) => {
       let multiplier;
@@ -348,9 +360,7 @@ export function resizePreconBlock() {
       } else if (viewport >= 1280 && viewport < 1920) {
         multiplier = 0.454545;
       }
-
-      card.style.width = `${multiplier ? availableWidth * multiplier : 872.727}px`;
-      card.style.marginRight = `${gap}px`;
+      card.style.width = `${multiplier ? multiplier * viewport : 872.727}px`;
     });
   });
   updateCarousel(defaultIndex);

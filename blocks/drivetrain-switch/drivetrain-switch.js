@@ -280,7 +280,8 @@ function generateLeftPanelModelList(
     element.append(
       document.createRange().createContextualFragment(`
                 <span class='dts-model-category-title'>${modelTitle}</span>               
-                <div class='dts-category-box'><a class='dts-model-category-link' href='${modelLink?.textContent}' data-analytics-label='${analyticsLabel?.textContent?.trim() || ''}'
+                <div class='dts-category-box'><a class='dts-model-category-link' href='${modelLink?.textContent}' 
+                data-analytics-label='${analyticsLabel?.textContent?.trim() || ''}'
                 data-analytics-link-type='${BtnType?.textContent?.trim() || ''}'
                 data-analytics-link-other-type='${btnSubType?.textContent?.trim() || ''}'
                 data-analytics-block-name='${block?.dataset?.blockName?.trim() || ''}'

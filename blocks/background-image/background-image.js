@@ -6,7 +6,7 @@ export function generatebgImgDom(block) {
     pictureElem = image.querySelector('picture');
   }
   block.textContent = '';
-  return pictureElem;
+  return pictureElem || '';
 }
 
 export default function decorate(block) {

@@ -152,6 +152,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Stock Locator Section",
+          "id": "stock-locator-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Stock Locator Section",
+                  "model": "stock-locator-section",
+                  "filter": "stock-locator-section"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -1038,7 +1054,9 @@
                   "content_autoData": "true",
                   "content_accordionView": "true",
                   "content_autoDataType": "h2",
-                  "content_accordionViewType": "h3"
+                  "content_accordionViewType": "h3",
+                  "headline1_headline1LinkType": "secondary",
+                  "headline2_headline2LinkType": "secondary"
                 }
               }
             }
@@ -1075,6 +1093,38 @@
                   "content_headlineType": "h4",
                   "content_spreadsheet1Type": "h5",
                   "content_spreadsheet2Type": "h6"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Stock Locator Model Overview Properties",
+          "id": "stock-locator-model-properties",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Stock Locator Model Overview Properties",
+                  "model": "stock-locator-model-properties",
+                  "filter": "stock-locator-model-properties"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Stock Locator Model Detail Definition Specification",
+          "id": "stock-locator-model-defination",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Stock Locator Model Detail Definition Specification",
+                  "model": "stock-locator-model-defination",
+                  "filter": "stock-locator-model-defination"
                 }
               }
             }

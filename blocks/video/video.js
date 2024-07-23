@@ -150,13 +150,21 @@ function removeEmptyObjectKeys(obj) {
   });
 }
 
+const isValidUrl = (url) => {
+  try {
+    return !!(new URL(url));
+  } catch (e) {
+    return false;
+  }
+};
+
 function triggerMediaPlayAnalytics(video) {
   window.adobeDataLayer = window.adobeDataLayer || [];
   const { blockName } = video.closest('.block').dataset;
   const { analyticsLabel: sectionId } = video.closest('.section').dataset;
   const { blockDetails } = video.closest('div').dataset;
   const mediaUrl = video.querySelector('source').getAttribute('src');
-  const mediaHostname = mediaUrl ? new URL(mediaUrl).hostname : '';
+  const mediaHostname = isValidUrl(mediaUrl) ? new URL(mediaUrl).hostname : window.location.host;
   if (blockName) {
     video.dataset.analyticsBlockName = blockName || '';
   }
@@ -227,8 +235,7 @@ function triggerMediaCompleteAnalytics(video) {
   const { analyticsLabel: sectionId } = video.closest('.section').dataset;
   const { blockDetails } = video.closest('div').dataset;
   const mediaUrl = video.querySelector('source').getAttribute('src');
-  const mediaHostname = mediaUrl ? new URL(mediaUrl).hostname : '';
-
+  const mediaHostname = isValidUrl(mediaUrl) ? new URL(mediaUrl).hostname : window.location.host;
   // Only assign non-blank values to data attributes
   if (blockName) {
     video.dataset.analyticsBlockName = blockName;

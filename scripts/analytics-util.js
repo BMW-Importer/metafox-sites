@@ -9,6 +9,7 @@ const event_tracking = {
         subCategory: "",
         linkName: "",
         linkURL: "",
+        subCategory2: "",
       },
       section: {
         sectionInfo: {
@@ -47,6 +48,7 @@ const event_tracking = {
       sectionId,
       linkURL,
       linkName,
+      subCategory2,
     ] = prop;
   
     const randomNum = 100000 + Math.random() * 900000;
@@ -58,6 +60,10 @@ const event_tracking = {
   
     if (subCategory) {
       event_tracking.eventInfo.category.subCategory = subCategory;
+    }
+
+    if (subCategory2) {
+      event_tracking.eventInfo.category.subCategory2 = subCategory2;
     }
   
     if (analyticsLabel) {

@@ -6,6 +6,8 @@ import { mediaCarouselResizer } from '../blocks/media-carousel/media-carousel.js
 import { pushCustomLinkAnalyticData } from './analytics-util.js';
 import { videoGalleryResizer } from '../blocks/video-gallery/video-gallery.js';
 import { drivetrainResize } from '../blocks/drivetrain-switch/drivetrain-switch.js';
+import { timeStamp, marketingValue } from './bmw-util.js';
+import { onLoadCalculateTechDataTableHeight, technicalDataResize, onLoadTechDataAttachAnchorClick } from '../blocks/technical-data/technical-data.js';
 import { preconResizer } from '../blocks/precon/precon.js';
 
 
@@ -18,6 +20,9 @@ enableObserverForVideos();
 mediaCarouselResizer();
 videoGalleryResizer();
 drivetrainResize();
+onLoadCalculateTechDataTableHeight();
+technicalDataResize();
+onLoadTechDataAttachAnchorClick();
 preconResizer();
 
 const page_tracking = {"page": {
@@ -54,7 +59,7 @@ const page_tracking = {"page": {
     "consent": {
         "analytics": true,
         "marketing": true,
-        "personalization": false
+        "personalization": true
     }
 }}
 
@@ -88,7 +93,8 @@ function addAnalyticsCustomClickEvent() {
       const primaryCategory = anchorTag.getAttribute('data-analytics-link-type');
       const linkURL = anchorTag.getAttribute('href');
       let subCategory;
-      let linkName; 
+      let linkName;
+      let subCategory2;
       
       if (primaryCategory.toLowerCase() === "other") {
         subCategory = "CTA";
@@ -117,34 +123,33 @@ function addAnalyticsCustomClickEvent() {
         subCategory = getFileType(linkURL);
         linkName = getFileName(linkURL);
       }
+
+      // technical data related analytics
+      if (primaryCategory.toLowerCase() === "technicaldata.option") {
+        subCategory = anchorTag.getAttribute('data-analytics-subcategory-1');
+        subCategory2 = anchorTag.getAttribute('data-analytics-subcategory-2');
+      }
       
       const blockName = anchorTag.getAttribute('data-analytics-block-name');
       const sectionId = anchorTag.getAttribute('data-analytics-section-id');
       
-      pushCustomLinkAnalyticData([analyticsLabel, primaryCategory, subCategory, blockName, sectionId, linkURL, linkName]);      
+      pushCustomLinkAnalyticData([
+        analyticsLabel,
+        primaryCategory,
+        subCategory,
+        blockName,
+        sectionId,
+        linkURL,
+        linkName,
+        subCategory2
+      ]);      
     });
   });
 }
 
-var dateTime = new Date();
-
-// Format the date components
-var year = dateTime.getFullYear();
-var month = (dateTime.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
-var day = dateTime.getDate().toString().padStart(2, '0');
-var hours = dateTime.getHours().toString().padStart(2, '0');
-var minutes = dateTime.getMinutes().toString().padStart(2, '0');
-var seconds = dateTime.getSeconds().toString().padStart(2, '0');
-var milliseconds = dateTime.getMilliseconds().toString().padStart(3, '0');
-var timezoneOffset = -dateTime.getTimezoneOffset();
-var timezoneOffsetHours = Math.floor(Math.abs(timezoneOffset) / 60).toString().padStart(2, '0');
-var timezoneOffsetMinutes = (Math.abs(timezoneOffset) % 60).toString().padStart(2, '0');
-var timezoneSign = timezoneOffset >= 0 ? '+' : '-';
-
-// Construct the timestamp string
-var timestamp = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}${timezoneSign}${timezoneOffsetHours}:${timezoneOffsetMinutes}`;
 function set_page_tracking(){
   // adding page tracking properties
+  const dateTime = new Date();
   if(document.referrer !== ''){
     page_tracking.page.pageInfo.windowInfo.previousDomain = document.referrer;
     page_tracking.page.pageInfo.referringURL = document.referrer;
@@ -161,7 +166,7 @@ function set_page_tracking(){
     var geoReg = document.querySelector('meta[name="georegion"]');
     page_tracking.page.pageInfo.timeInfo.localTime = dateTime.toLocaleTimeString([], {hour12: false});
     page_tracking.page.pageInfo.timeInfo.utcTime = dateTime.toUTCString().match(/(\d{2}:\d{2}:\d{2})/)[0];
-    page_tracking.page.pageInfo.version = 'acdl: ' +timestamp;
+    page_tracking.page.pageInfo.version = 'acdl: ' +timeStamp();
     page_tracking.page.pageInfo.destinationURL = window.location.href;
     page_tracking.page.pageInfo.pageTitle = document.title;
     // eventinfo
@@ -228,6 +233,10 @@ function set_page_tracking(){
     if (geoReg && geoReg.content) {
       page_tracking.page.pageInfo.geoRegion = geoReg.content;
     }
+
+    page_tracking.user.consent.marketing =  marketingValue();
+    page_tracking.user.consent.analytics =  marketingValue();
+    page_tracking.user.consent.personalization =  marketingValue();
     
     window.adobeDataLayer.push(page_tracking);
 
