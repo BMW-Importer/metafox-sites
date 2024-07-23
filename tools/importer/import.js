@@ -353,6 +353,8 @@ const createTextWithMediaLeft = (main, document) => {
     const textWithMediaBlockData1 = [];
 
     const titles = element.querySelectorAll('.title');
+    let hasEybrow = false;
+    let hasTitle = false;
     titles.forEach(title => {
       const titleText = title.querySelector('.cmp-title').textContent;
       let titleStyle = '';
@@ -361,43 +363,58 @@ const createTextWithMediaLeft = (main, document) => {
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
-
+        hasEybrow = true;
       } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
         titleStyle = 'Eyebrow Bold 1';
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
-
+        hasEybrow = true;
       } else if (title.classList.contains('style-title--iconization-1')) {
         titleStyle = 'Iconization';
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
+        hasEybrow = true;
       } else if (title.classList.contains('style-title--headline-1')) {
         const h1 = document.createElement('h2');
         h1.textContent = titleText;
         textWithMediaBlockData1.push(h1);
+        hasTitle = true;
       } else if (title.classList.contains('style-title--headline-2')) {
         const h2 = document.createElement('h2');
         h2.textContent = titleText;
         textWithMediaBlockData1.push(h2);
+        hasTitle = true;
       } else if (title.classList.contains('style-title--headline-3')) {
         const h3 = document.createElement('h2');
         h3.textContent = titleText;
         textWithMediaBlockData1.push(h3);
-
+        hasTitle = true;
       } else {
         const h4 = document.createElement('h2');
         h4.textContent = titleText;
         textWithMediaBlockData1.push(h4);
+        hasTitle = true;
       }
-
     });
+
+    if (!hasEybrow) {
+      const eyebrow = document.createElement('p');
+      eyebrow.textContent = '&nbsp;';
+      textWithMediaBlockData1.unshift(eyebrow);
+    }
+    if (!hasTitle) {
+      const title = document.createElement('p');
+      title.textContent = '&nbsp;';
+      textWithMediaBlockData1.splice(1, 0, title); 
+    }
+
     const description = element.querySelector('.cmp-text').textContent;
     const para = document.createElement('p');
     para.textContent = description;
     textWithMediaBlockData1.push(para);
-	const para3 = document.createElement("p");
+	  const para3 = document.createElement("p");
     const node3 = document.createTextNode("&nbsp;");
     para3.appendChild(node3);
     textWithMediaBlockData1.push(para3);
@@ -441,6 +458,8 @@ const createTextWithMediaRight = (main, document) => {
     const textWithMediaBlockData1 = [];
 
     const titles = element.querySelectorAll('.title');
+    let hasEybrow = false;
+    let hasTitle = false;
     titles.forEach(title => {
       const titleText = title.querySelector('.cmp-title').textContent;
       let titleStyle = '';
@@ -449,37 +468,53 @@ const createTextWithMediaRight = (main, document) => {
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
-
+        hasEybrow = true;
       } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
         titleStyle = 'Eyebrow Bold 1';
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
-
+        hasEybrow = true;
       } else if (title.classList.contains('style-title--iconization-1')) {
         titleStyle = 'Iconization';
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
+        hasEybrow = true;
       } else if (title.classList.contains('style-title--headline-1')) {
         const h1 = document.createElement('h2');
         h1.textContent = titleText;
         textWithMediaBlockData1.push(h1);
+        hasTitle = true;
       } else if (title.classList.contains('style-title--headline-2')) {
         const h2 = document.createElement('h2');
         h2.textContent = titleText;
         textWithMediaBlockData1.push(h2);
+        hasTitle = true;
       } else if (title.classList.contains('style-title--headline-3')) {
         const h3 = document.createElement('h2');
         h3.textContent = titleText;
         textWithMediaBlockData1.push(h3);
-
+        hasTitle = true;
       } else {
         const h4 = document.createElement('h2');
         h4.textContent = titleText;
         textWithMediaBlockData1.push(h4);
+        hasTitle = true;
       }
     });
+
+    if (!hasEybrow) {
+      const eyebrow = document.createElement('p');
+      eyebrow.textContent = '&nbsp;';
+      textWithMediaBlockData1.unshift(eyebrow);
+    }
+    if (!hasTitle) {
+      const title = document.createElement('p');
+      title.textContent = '&nbsp;';
+      textWithMediaBlockData1.splice(1, 0, title); 
+    }
+
     const description = element.querySelector('.cmp-text').textContent;
     const para = document.createElement('p');
     para.textContent = description;
