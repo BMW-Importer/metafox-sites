@@ -79,7 +79,8 @@ const createBackgroundMedia = (main, document) => {
     backgroundMediaBlock.push(name);
     const backgroundMediaBlockData = [];
     const backgroundMediaBlockData1 = [];
-
+	let copyText;
+	let subBrandIconType;
     const titles = bgmedia.querySelectorAll('.title');
     titles.forEach((title, i) => {
       if (i == 0) {
@@ -95,7 +96,7 @@ const createBackgroundMedia = (main, document) => {
           const h4 = document.createElement('h4');
           h4.textContent = eyeBrow;
           backgroundMediaBlockData1.push(h4);
-        } else if (title.classList.contains('style-title--iconization-1')) {
+        } else {
           eyeBrowType = 'Iconization (h6)';
           const h6 = document.createElement('h6');
           h6.textContent = eyeBrow;
@@ -118,8 +119,8 @@ const createBackgroundMedia = (main, document) => {
       }
 
       if (i == 2) {
-        const copyText = title.querySelector('.cmp-title__text')?.textContent;
-        let subBrandIconType = title.querySelector('.cmp-title__image-branding')?.getAttribute('title');
+        copyText = title.querySelector('.cmp-title__text')?.textContent;
+        subBrandIconType = title.querySelector('.cmp-title__image-branding')?.getAttribute('title');
         if (subBrandIconType && subBrandIconType.toLowerCase() == 'bmw i') {
           subBrandIconType = 'subbrandi';
         } else if (subBrandIconType && subBrandIconType.toLowerCase() == 'bmw m') {
@@ -127,14 +128,19 @@ const createBackgroundMedia = (main, document) => {
         } else {
           subBrandIconType = 'noicon';
         }
-        if (copyText)
+       
+	  }
+    });
+		if (copyText){
           backgroundMediaBlockData.push(subBrandIconType);
 			const h3 = document.createElement("h3");
 			h3.textContent = copyText;
 			backgroundMediaBlockData.push(h3);      
+		}else{
+			backgroundMediaBlockData.push("noicon");
+			const para = document.createElement("p");
+			backgroundMediaBlockData.push(para); 
 		}
-    });
-
 
     let mediaImagetitle;
     let mediaImageDescription;
