@@ -374,7 +374,7 @@ const createTextWithMediaLeft = (main, document) => {
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
       } else if (title.classList.contains('style-title--headline-1')) {
-        const h1 = document.createElement('h1');
+        const h1 = document.createElement('h2');
         h1.textContent = titleText;
         textWithMediaBlockData1.push(h1);
       } else if (title.classList.contains('style-title--headline-2')) {
@@ -382,12 +382,12 @@ const createTextWithMediaLeft = (main, document) => {
         h2.textContent = titleText;
         textWithMediaBlockData1.push(h2);
       } else if (title.classList.contains('style-title--headline-3')) {
-        const h3 = document.createElement('h3');
+        const h3 = document.createElement('h2');
         h3.textContent = titleText;
         textWithMediaBlockData1.push(h3);
 
       } else {
-        const h4 = document.createElement('h4');
+        const h4 = document.createElement('h2');
         h4.textContent = titleText;
         textWithMediaBlockData1.push(h4);
       }
@@ -462,7 +462,7 @@ const createTextWithMediaRight = (main, document) => {
         eyebrow.textContent = titleText;
         textWithMediaBlockData1.push(eyebrow);
       } else if (title.classList.contains('style-title--headline-1')) {
-        const h1 = document.createElement('h1');
+        const h1 = document.createElement('h2');
         h1.textContent = titleText;
         textWithMediaBlockData1.push(h1);
       } else if (title.classList.contains('style-title--headline-2')) {
@@ -470,12 +470,12 @@ const createTextWithMediaRight = (main, document) => {
         h2.textContent = titleText;
         textWithMediaBlockData1.push(h2);
       } else if (title.classList.contains('style-title--headline-3')) {
-        const h3 = document.createElement('h3');
+        const h3 = document.createElement('h2');
         h3.textContent = titleText;
         textWithMediaBlockData1.push(h3);
 
       } else {
-        const h4 = document.createElement('h4');
+        const h4 = document.createElement('h2');
         h4.textContent = titleText;
         textWithMediaBlockData1.push(h4);
       }
