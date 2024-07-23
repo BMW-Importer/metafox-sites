@@ -349,7 +349,7 @@ const createTextWithMediaLeft = (main, document) => {
     const name = ['Text With Media'];
     textWithMediaBlock.push(name);
     const textWithMediaBlockData = [];
-    textWithMediaBlockData.push("text-with-image, left");
+    textWithMediaBlockData.push("left");
     const textWithMediaBlockData1 = [];
 
     const titles = element.querySelectorAll('.title');
@@ -437,7 +437,7 @@ const createTextWithMediaRight = (main, document) => {
     const name = ['Text With Media'];
     textWithMediaBlock.push(name);
     const textWithMediaBlockData = [];
-    textWithMediaBlockData.push("text-with-image, right");
+    textWithMediaBlockData.push("right");
     const textWithMediaBlockData1 = [];
 
     const titles = element.querySelectorAll('.title');
