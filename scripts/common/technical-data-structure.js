@@ -409,7 +409,7 @@ export const techDataWdhResponsObject = `
                 "technicalData": {
                     "powerTrain": {
                         "fuelType": "{responseJson.EngineType}",
-                        "systemPower": "{responseJson.Power}",
+                        "systemPower": "{responseJson.PowerkW}",
                         "systemMaxTorque": "{responseJson.TorqueNm}",
                         "gearBox": "{responseJson.Gearbox}",
                         "driveType": "{responseJson.Drive}"
@@ -417,11 +417,11 @@ export const techDataWdhResponsObject = `
                     "engine": {
                         "cylinders": "{responseJson.Cylinders}",
                         "technicalCapacity": "",
-                        "nominalPower": "{responseJson.NominalPower}",
+                        "nominalPower": "{responseJson.NominalPowerkW}",
                         "nominalTorque": "{responseJson.NominalTorqueNm}"
                     },
                     "electric": {
-                        "systemPower": "{responseJson.ElectricNominalPowerkW"
+                        "systemPower": "{responseJson.ElectricNominalPowerkW}"
                     },
                     "performance": {
                         "acceleration": "{responseJson.Acceleration}",

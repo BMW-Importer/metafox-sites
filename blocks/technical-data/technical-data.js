@@ -179,7 +179,7 @@ function replacePlaceholders(template, data) {
 }
 
 function replaceSpreadSheetPlaceholders(template, data) {
-  return template.replace(/\{responseJson\.(\w+)\}/g, (match, key) => (data[key] !== undefined ? data[key] : match));
+  return template.replace(/\{responseJson\.(\w+)\}/g, (match, key) => (data[key] !== undefined ? data[key] : ''));
 }
 
 function sortFootNotesArray(uniqueFootnotesArray) {
@@ -346,8 +346,8 @@ async function generateTechUi(parentBlock) {
     technicalData = transCodeArray[0].technicalData;
     footNotes = transCodeArray[0].footnotes;
   } else {
-    technicalData = agCodeArrayObj[0]?.json?.responseJson?.model?.vehicle[0]?.technicalData;
-    footNotes = agCodeArrayObj[0]?.json?.responseJson?.model?.vehicle[0]?.footnotes;
+    technicalData = agCodeArrayObj[0]?.json?.responseJson?.model?.vehicles[0]?.technicalData;
+    footNotes = agCodeArrayObj[0]?.json?.responseJson?.model?.vehicles[0]?.footnotes;
   }
 
   if (technicalData) {
@@ -769,9 +769,9 @@ function generateAuthoredModels(
 /* eslint-disable no-console */
 function formateSpreadSheetResponse(authoredAgCode, listOfModels, analyticsProp) {
   try {
-    savedSpreadSheetModels?.responseJson?.data?.forEach((modelObj) => {
-      if (modelObj[0].ModelCode === authoredAgCode) {
-        const responseJson = modelObj[0];
+    savedSpreadSheetModels?.responseJson?.data?.forEach((modelObj, index) => {
+      if (modelObj[index].ModelCode === authoredAgCode) {
+        const responseJson = modelObj[index];
         const newObj = replaceSpreadSheetPlaceholders(techDataWdhResponsObject, responseJson);
         const responseObj = {
           responseJson: JSON.parse(newObj),
