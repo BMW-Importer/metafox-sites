@@ -7,6 +7,7 @@ const createMetadata = (main, document) => {
   createVideo(main, document);
   createCarousel(main, document);
   createDefaultContent(main, document);
+  createColumns(main, document);
   createSection(main, document);
 
   const meta = {};
@@ -890,32 +891,100 @@ const createCarousel = (main, document) => {
 
 const createSection = (main, document) => {
   const root = document.querySelector('.root.container');
-  const sectionDivs = root.querySelectorAll('div.container.responsivegrid.aem-GridColumn--default--12 > div[data-tracking-regionid]');
-  sectionDivs.forEach((section) => {
-    const childContainer = section.querySelector('div.container.responsivegrid.aem-GridColumn--default--12 > div[data-tracking-regionid]');
-    if (childContainer == null) {
-      const containerDiv = section.querySelector('.container');
-      const classList = containerDiv?.getAttribute('class');
-      if (classList?.includes('aem-GridColumn--small') || classList?.includes('aem-GridColumn--medium')) {
-        const cells = [
-          ['Section Metadata'],
-          ['Alignment', 'center']
-        ];
-        const table = WebImporter.DOMUtils.createTable(cells, document);
-        section.append(table);
-        const hr = document.createElement('hr');
-        section.append(hr);
-      } else if (containerDiv?.classList.contains('aem-GridColumn--default--12')) {
-        const cells = [
-          ['Section Metadata'],
-          ['width', '10/12'],
-          ['Alignment', 'center']
-        ];
-        const table = WebImporter.DOMUtils.createTable(cells, document);
-        section.append(table);
-        const hr = document.createElement('hr');
-        section.append(hr);
-      }
+const sectionDivs = root.querySelectorAll('div[data-tracking-regionid]');
+const sectionDivArr = [];
+sectionDivs.forEach(section=>{
+    const parentSectionDiv = section.closest('.container.responsivegrid.aem-GridColumn--default--12')
+    if(!parentSectionDiv.querySelector('.contentnavigation')){
+        sectionDivArr.push(parentSectionDiv);
     }
-  });
+})
+const sections = [...new Set(sectionDivArr)];
+sections.forEach(s=>{
+  const cells = [
+          ['Section Metadata'],
+          ['Alignment', 'center']
+        ];
+        const table = WebImporter.DOMUtils.createTable(cells, document);
+        s.append(table);
+        const hr = document.createElement('hr');
+        s.append(hr);
+})
+};
+
+const createColumns = (main, document) => {
+    const root = document.querySelector('.root.container');
+const a = root.querySelectorAll('.aem-Grid.aem-Grid--12.aem-Grid--small--12.aem-Grid--default--12')
+const defaultCol = Array.from(a).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'))
+const arr = [];
+defaultCol.forEach((c)=>{
+    const d = c.querySelector('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation, .accordion, [data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]')
+    const columnDirect = c.querySelector('div > .aem-GridColumn--default--3, div > .aem-GridColumn--default--4, div > .aem-GridColumn--default--6')
+    if(columnDirect && !d) {
+        arr.push(columnDirect.parentElement);
+    }
+})
+const columns = [...new Set(arr)];
+columns.forEach((column)=>{
+  const columnBlock = [];
+  const columnTitle = ['Columns (center)'];
+  const ColumnTable = [];
+  columnBlock.push(columnTitle);
+  const columnDivs = column.children;
+  [...columnDivs].forEach((div)=>{
+    const divArr = [];
+    const copyText = div.querySelector('.text')?.textContent;
+    const titles = div.querySelectorAll('.title');
+    const image = div.querySelector('.cmp-image .cmp-image__image');
+    const pictureTag = document.createElement('picture');
+    pictureTag.append(image);
+    const para2 = document.createElement("p");
+    para2.appendChild(pictureTag);
+    const link = div.querySelector('.cmp-button')?.getAttribute('href');
+    const linkLabel = div.querySelector('.cmp-button')?.textContent;
+    const aTag = document.createElement('a');
+    aTag.setAttribute('href', link);
+    aTag.innerText = linkLabel;
+    const para3 = document.createElement('p');
+    para3.appendChild(aTag);
+    if(image) {
+      divArr.push(para2);
+    }
+    [...titles].forEach(t => {
+      const title = t.querySelector('.cmp-title')?.textContent;
+      if (t.classList.contains('style-title--headline-1')) {
+        const h1 = document.createElement('h2');
+        h1.textContent = title
+        divArr.push(h1);
+      } else if(t.classList.contains('style-title--headline-2')) {
+        const h2 = document.createElement('h2');
+        h2.textContent = title
+        divArr.push(h2);
+      } else if(t.classList.contains('style-title--headline-3')) {
+        const h3 = document.createElement('h2');
+        h3.textContent = title
+        divArr.push(h3);
+      } else {
+        const para1 = document.createElement('p');
+        para1.textContent = title;
+        divArr.push(para1);
+      }
+    })
+    const copyTextPara = document.createElement('p');
+    copyTextPara.textContent = copyText;
+    divArr.push(copyTextPara);
+    if(copyText){
+      const para4 = document.createElement('p');
+	  para4.textContent="&nbsp;";
+      divArr.push(para4);
+    }
+    if(link != null) {
+      divArr.push(para3);
+    }
+    ColumnTable.push(divArr);
+  })
+  columnBlock.push(ColumnTable);  
+    const table = WebImporter.DOMUtils.createTable(columnBlock, document);
+    column.replaceWith(table);
+})
 };
