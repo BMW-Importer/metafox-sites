@@ -40,42 +40,6 @@ function handleCancelSelectedValue() {
   });
 }
 
-// function handleCheckBoxSelectionForSeries() {
-//   const filterLists = document.querySelectorAll('.filter-list');
-//   filterLists.forEach((filterList) => {
-//     const filterLabelHeading = filterList.previousElementSibling;
-//     const checkboxes = filterList.querySelectorAll('.filter-checkbox');
-//     const selectedValues = [];
-//     const selectedCheckBoxType = [];
-
-//     checkboxes.forEach((checkbox) => {
-//       checkbox.addEventListener('change', () => {
-//         if (checkbox.checked) {
-//           if (!filterLabelHeading.classList.contains('is-active')) {
-//             filterLabelHeading.classList.add('is-active');
-//           }
-//           selectedValues.push(checkbox.id);
-//           selectedCheckBoxType.push(filterLabelHeading.textContent);
-//         } else {
-//           const index = selectedValues.indexOf(checkbox.id);
-//           if (index !== -1) {
-//             selectedValues.splice(index, 1);
-//           }
-//           // Remove is-active class if no checkbox is selected
-//           if (selectedValues.length === 0) {
-//             filterLabelHeading.classList.remove('is-active');
-//           }
-//         }
-//         // Update the displayed selected values
-//         // eslint-disable-next-line no-use-before-define
-//         updateSelectedValues(selectedValues, filterList);
-//         console.log(selectedValues);
-//         console.log(selectedCheckBoxType);
-//       });
-//     });
-//   });
-// }
-
 // eslint-disable-next-line import/no-mutable-exports
 export let vehicleURL;
 
@@ -145,7 +109,6 @@ function updateSelectedValues(values) {
 
   let hasSelectedValues = false;
 
-  // eslint-disable-next-line no-restricted-syntax, no-unused-vars
   for (const [heading, valuesArray] of Object.entries(values)) {
     if (valuesArray.length > 0) {
       hasSelectedValues = true;
@@ -172,6 +135,7 @@ function updateSelectedValues(values) {
     const resetAnchor = document.createElement('a');
     resetAnchor.classList.add('reset-filter-link');
     resetFilterElement.append(resetSpan, resetAnchor);
+
     selectedList.insertBefore(resetFilterElement, selectedList.firstChild);
     resetFilterElement.addEventListener('click', () => {
       resetAllFilters(values);
@@ -306,7 +270,6 @@ async function stockLocatorFiltersAPI(dropDownContainer) {
 export default async function decorate(block) {
   const filterWrapperContent = document.createElement('div');
   filterWrapperContent.className = 'stock-locator-container';
-
   const filterWrapper = document.createElement('div');
   filterWrapper.className = 'filter-wrapper';
 
@@ -356,6 +319,7 @@ export default async function decorate(block) {
   filterWrapperContent.append(filterWrapper);
 
   dropDownContainer.append(filterWrapperContent);
+
   const modelDetails = [...block.children];
   modelDetails.forEach((modelDetail) => {
     const [general] = modelDetail.children;
