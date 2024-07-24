@@ -1,22 +1,38 @@
 /******* stock locator Desktop ******/ 
 
 @media (width >= 1280px) and (width < 1920px) {
+    .stock-locator-model-detail-definition-specification .dropdown-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .stock-locator-container {
+        width: 20%;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    .box-container {
+        display: flex;
+    }
+
     .mobile-filter-wrapper {
         display: none;
     }
 
     .stock-locator-container .filter-wrapper {
         background-color: #fff;
-        width: 25%;
+        width: 100%;
         transition: all .2s ease-in-out;
         position: relative;
-        margin: 0 20px 20px;
     }
 
     .stock-locator-container .filter-wrapper .filter-label-heading {
         padding: 0 15px;
         border-color: #8e8e8e;
-        height: 45px;
+        height: 50px;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -88,11 +104,15 @@
         box-shadow: #0000001f 0 10px 17px 0, #00000026 0 4px 8px 0;
     }
 
-    .stock-locator-container .filter-wrapper .selected-filter-list{
+    .selected-filter-list{
         display: flex;
+        align-items: center;
+        order: 1;
+        flex-wrap: wrap;
+        padding-top: 20px;
     }
 
-    .stock-locator-container .filter-wrapper .selected-filter-list .selected-filter-value{
+    .selected-filter-list .selected-filter-value{
         border: 1px solid #000;
         padding: 5px 30px 5px 15px;
         font-size: 0.75rem;
@@ -108,6 +128,17 @@
 
     .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper label{
         padding-left: 20px;
+    }
+
+    .reset-filter {
+        height: 34px;
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 34px;
+        width: auto;
+        cursor: pointer;
+        color: #fff;
+        background: #4d4d4d;
     }
 
     .cancel-filter::after {

@@ -1,9 +1,8 @@
 // eslint-disable-next-line import/no-cycle
 import { getStockLocatorFiltersData, getStockLocatorVehiclesData } from '../../scripts/common/wdh-util.js';
 
+let currentlyOpenDropdown = null;
 function handleToggleFilterDropDown() {
-  let currentlyOpenDropdown = null;
-
   const filterSelectors = document.querySelectorAll('.filter-label-heading');
   filterSelectors.forEach((item) => {
     item.addEventListener('click', (e) => {
@@ -140,34 +139,73 @@ function constructVehicleUrl(selectedValues) {
   return fullUrl;
 }
 
-function updateSelectedValues(selectedValues) {
+function updateSelectedValues(values) {
   const selectedList = document.querySelector('.series-selected-list');
   selectedList.innerHTML = '';
-  // eslint-disable-next-line no-restricted-syntax
-  for (const [heading, values] of Object.entries(selectedValues)) {
-    if (values.length > 0) {
-      // Create a heading element
-      const headingElement = document.createElement('div');
-      headingElement.classList.add('selected-filter-heading', 'hidden');
-      headingElement.textContent = heading;
-      selectedList.appendChild(headingElement);
 
-      // Iterate over the selected values for this heading
-      values.forEach((value) => {
+  let hasSelectedValues = false;
+
+  // eslint-disable-next-line no-restricted-syntax, no-unused-vars
+  for (const [heading, valuesArray] of Object.entries(values)) {
+    if (valuesArray.length > 0) {
+      hasSelectedValues = true;
+
+      valuesArray.forEach((value) => {
         const valueElement = document.createElement('div');
         valueElement.classList.add('selected-filter-value');
-        valueElement.textContent = value;
-        selectedList.appendChild(valueElement);
-
-        const cancelElement = document.createElement('div');
+        const eleSpan = document.createElement('span');
+        eleSpan.textContent = value;
+        const cancelElement = document.createElement('a');
         cancelElement.classList.add('cancel-filter');
-        selectedList.appendChild(cancelElement);
+        cancelElement.textContent = '×';
+        valueElement.append(eleSpan, cancelElement);
+        selectedList.append(valueElement);
       });
     }
   }
+
+  if (!document.querySelector('.reset-filter') && hasSelectedValues) {
+    const resetFilterElement = document.createElement('div');
+    resetFilterElement.classList.add('reset-filter');
+    const resetSpan = document.createElement('span');
+    resetSpan.textContent = 'Reset The filters';
+    const resetAnchor = document.createElement('a');
+    resetAnchor.classList.add('reset-filter-link');
+    resetFilterElement.append(resetSpan, resetAnchor);
+    selectedList.insertBefore(resetFilterElement, selectedList.firstChild);
+    resetFilterElement.addEventListener('click', () => {
+      resetAllFilters(values);
+    });
+  }
 }
 
-function stockLocatorFilterDom(filterData, typeKey) {
+function resetAllFilters(values) {
+  const checkboxes = document.querySelectorAll('.filter-checkbox');
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+
+  const filterLabels = document.querySelectorAll('.filter-label-heading');
+  filterLabels.forEach((label) => {
+    label.classList.remove('is-active');
+  });
+
+  values.DriveType = '';
+  values.Fuel = '';
+  values.Series = '';
+
+  updateSelectedValues(values);
+
+  currentlyOpenDropdown.style.display = 'none';
+  currentlyOpenDropdown.previousElementSibling.classList.remove('show-dropdown');
+  vehicleURL = constructVehicleUrl(values);
+  getStockLocatorVehiclesData(vehicleURL);
+}
+
+function stockLocatorFilterDom(filterData, typeKey, dropDownContainer) {
+  const boxContainer = document.createElement('div');
+  boxContainer.classList.add('box-container', `${typeKey}-box`);
+
   const filterContainer = document.createElement('div');
   filterContainer.classList.add('stock-locator-container', `${typeKey}-container`);
 
@@ -214,8 +252,11 @@ function stockLocatorFilterDom(filterData, typeKey) {
   filterContainer.appendChild(filterWrapperContainer);
   filterWrapperContainer.appendChild(filterLabelHeading);
   filterWrapperContainer.appendChild(filterList);
-  filterWrapperContainer.appendChild(selectedFilterList);
-  document.querySelector('.stock-locator-model-detail-definition-specification').appendChild(filterContainer);
+  boxContainer.appendChild(filterWrapperContainer);
+  filterContainer.appendChild(boxContainer);
+  dropDownContainer.append(filterContainer, selectedFilterList);
+  document.querySelector('.stock-locator-model-detail-definition-specification').append(dropDownContainer);
+
   handleMobileSeriesFilter();
   return filterContainer;
 }
@@ -235,7 +276,7 @@ function sortFilterResponse(data) {
   });
 }
 
-function processFilterData(filterData, typeKey) {
+function processFilterData(filterData, typeKey, dropDownContainer) {
   if (!filterData) return;
   const sortedFilterData = sortFilterResponse(filterData);
   const filterResponseData = [];
@@ -245,28 +286,82 @@ function processFilterData(filterData, typeKey) {
     filterResponseData.push(responseData);
   });
 
-  stockLocatorFilterDom(filterResponseData, typeKey);
+  stockLocatorFilterDom(filterResponseData, typeKey, dropDownContainer);
 }
 
-function createStockLocatorFilter(filterResponse) {
-  processFilterData(filterResponse?.series, 'series');
-  processFilterData(filterResponse?.driveType, 'driveType');
-  processFilterData(filterResponse?.fuel, 'fuel');
+function createStockLocatorFilter(filterResponse, dropDownContainer) {
+  processFilterData(filterResponse?.series, 'series', dropDownContainer);
+  processFilterData(filterResponse?.driveType, 'driveType', dropDownContainer);
+  processFilterData(filterResponse?.fuel, 'fuel', dropDownContainer);
+
   handleToggleFilterDropDown();
 }
 
-async function stockLocatorFiltersAPI() {
+async function stockLocatorFiltersAPI(dropDownContainer) {
   const stockLocatorFilterResponse = await getStockLocatorFiltersData();
   const stockLocatorFilterData = stockLocatorFilterResponse.data.attributes;
-  createStockLocatorFilter(stockLocatorFilterData);
+  createStockLocatorFilter(stockLocatorFilterData, dropDownContainer);
 }
 
 export default async function decorate(block) {
+  const filterWrapperContent = document.createElement('div');
+  filterWrapperContent.className = 'stock-locator-container';
+
+  const filterWrapper = document.createElement('div');
+  filterWrapper.className = 'filter-wrapper';
+
+  const dropDownContainer = document.createElement('div');
+  dropDownContainer.classList.add('dropdown-container');
+
+  // Create the heading for the filter label
+  const filterLabelHeading = document.createElement('div');
+  filterLabelHeading.className = 'filter-label';
+  filterLabelHeading.textContent = 'Sort by';
+  filterWrapper.appendChild(filterLabelHeading);
+
+  const filterList = document.createElement('ul');
+  filterList.className = 'filter-list dropdown-list-wrapper';
+  filterWrapper.appendChild(filterList);
+
+  const filterLabelDefault = document.createElement('div');
+  filterLabelDefault.className = 'filter-label-heading';
+  filterLabelDefault.textContent = 'Relevence';
+  filterWrapper.appendChild(filterLabelDefault);
+
+  const sortOptions = [
+    { id: 'a-z', text: 'A-z' },
+    { id: 'z-a', text: 'Z-a' },
+    { id: 'lowest', text: 'lowest' },
+    { id: 'highest', text: 'highest' },
+  ];
+
+  sortOptions.forEach((option) => {
+    const listItem = document.createElement('li');
+    listItem.className = 'filter-item';
+
+    const checkbox = document.createElement('input');
+    checkbox.className = 'fuel-checkbox filter-checkbox';
+    checkbox.type = 'checkbox';
+    checkbox.id = option.id;
+
+    const label = document.createElement('label');
+    label.setAttribute('for', option.id);
+    label.textContent = option.text;
+
+    listItem.appendChild(checkbox);
+    listItem.appendChild(label);
+    filterList.appendChild(listItem);
+  });
+
+  filterWrapperContent.append(filterWrapper);
+
+  dropDownContainer.append(filterWrapperContent);
   const modelDetails = [...block.children];
   modelDetails.forEach((modelDetail) => {
     const [general] = modelDetail.children;
     console.log(general);
     // stock locator API called here
   });
-  stockLocatorFiltersAPI();
+  block.textContent = '';
+  stockLocatorFiltersAPI(dropDownContainer);
 }
