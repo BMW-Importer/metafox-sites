@@ -3,7 +3,11 @@ import {
   fetchSetPlaceholderObject, fetchModelPlaceholderObject, fetchTechDataPlaceholderObject,
 } from './wdh-placeholders.js';
 
-import { stockLocatorOrigin, stockLocatorFilterEndPoint } from './constants.js';
+import { stockLocatorOrigin, stockLocatorFilterEndPoint, stockLocatorVehiclesEndPoint } from './constants.js';
+// eslint-disable-next-line import/no-cycle
+// import { vehicleURL } from '../../blocks/precon/precon.js';
+// eslint-disable-next-line import/no-cycle
+import { vehicleURL } from '../../blocks/stock-locator-model-detail-definition-specification/stock-locator-model-detail-definition-specification.js';
 
 export async function getApiResponse(modelCode) {
   try {
@@ -196,3 +200,24 @@ export async function getStockLocatorFiltersData() {
     throw error;
   }
 }
+
+  export async function getStockLocatorVehiclesData() {
+    let url;
+    if (vehicleURL) { 
+      url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}${dynamicURLData}&${vehicleURL}`;
+    } else {
+      url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}${dynamicURLData}`;
+    }
+  
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const responseJson = await response.json();
+      return responseJson;
+    } catch (error) {
+      console.log('Error fetching data for building get placeholder', error);
+      throw error;
+    }
+  }
