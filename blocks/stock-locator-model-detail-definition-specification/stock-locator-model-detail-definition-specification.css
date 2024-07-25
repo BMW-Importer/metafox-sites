@@ -14,6 +14,11 @@
         padding-right: 10px;
     }
 
+    .stock-locator-container.relevance {
+        display: flex;
+        order: 1;
+    }
+
     .box-container {
         display: flex;
     }
@@ -83,13 +88,13 @@
         color: #8e8e8e;
     }
 
-    .stock-locator-container .filter-wrapper ul.filter-list {
+    .stock-locator-container .filter-wrapper .filter-list {
         margin: -1px;
         padding: 10px;
         display: none;
     }
 
-    .stock-locator-container .filter-wrapper ul.filter-list li{
+    .stock-locator-container .filter-wrapper .filter-list li{
         margin: 0;
         padding: 0;
         list-style-type: none;
@@ -116,6 +121,22 @@
         padding-top: 20px;
     }
 
+    .stock-locator-container.relevance .filter-item-relevance.selected::after {
+        content: 'checkmark';
+        direction: ltr;
+        font-family: var(--icon-font-family);
+        opacity: var(--iconfont400-opacity);
+        font-weight: 400;
+        color: #000;
+        border-color: #000;
+        position: absolute;
+        font-size: 16px;
+        right: 10px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+    }
+
     .selected-filter-list .selected-filter-value{
         border: 1px solid #000;
         padding: 5px 30px 5px 15px;
@@ -125,7 +146,7 @@
         position: relative;
     }
 
-    .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-checkbox{
+    .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-checkbox, .filter-checkbox-relevace {
         width: 20px;
         height: 20px;
     }
@@ -168,18 +189,18 @@
         display: none;
     }
     
-    .stock-locator-container .filter-wrapper ul.filter-list {
+    .stock-locator-container .filter-wrapper .filter-list {
         margin: 0;
         padding: 10px;
     }
 
-    .stock-locator-container .filter-wrapper ul.filter-list li{
+    .stock-locator-container .filter-wrapper .filter-list li{
         margin: 0;
         padding: 0;
         list-style-type: none;
     } 
 
-    .filter-checkbox {
+    .filter-checkbox, .filter-checkbox-relevace {
         display: none;
     }
 

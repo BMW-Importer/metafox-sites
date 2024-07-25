@@ -1,5 +1,8 @@
 // eslint-disable-next-line import/no-cycle
 import { getStockLocatorFiltersData, getStockLocatorVehiclesData } from '../../scripts/common/wdh-util.js';
+import {
+  DEV, STAGE, PROD, disclaimerGQlEndpoint,
+} from '../../scripts/common/constants.js';
 
 let currentlyOpenDropdown = null;
 function handleToggleFilterDropDown() {
@@ -18,7 +21,6 @@ function handleToggleFilterDropDown() {
       }
     });
   });
-  // eslint-disable-next-line no-use-before-define
   handleCheckBoxSelectionForSeries();
 }
 
@@ -31,29 +33,174 @@ function handleMobileSeriesFilter() {
   });
 }
 
-function handleCancelSelectedValue() {
-  const cancelSelctor = document.querySelectorAll('.cancel-filter');
-  cancelSelctor?.forEach((item) => {
-    cancelSelctor?.addEventListener('click', () => {
-      console.log(item);
+function handleCancelSelectedValue(values) {
+  const cancelSelectors = document.querySelectorAll('.cancel-filter');
+  cancelSelectors.forEach((item) => {
+    item.addEventListener('click', () => {
+      const valueElement = item.parentElement;
+      valueElement.remove();
+      removeLastSelectedValue(values);
     });
   });
 }
 
+function removeLastSelectedValue(values) {
+  // eslint-disable-next-line no-restricted-syntax
+  for (const [heading, valuesArray] of Object.entries(values)) {
+    if (valuesArray.length > 0) {
+      // Remove the last value from the array
+      valuesArray.pop();
+      if (valuesArray.length === 0) {
+        delete values[heading];
+      }
+      break;
+    }
+  }
+
+  // eslint-disable-next-line no-use-before-define
+  updateSelectedValues(values);
+  // eslint-disable-next-line no-use-before-define
+  vehicleURL = constructVehicleUrl(values);
+  // eslint-disable-next-line no-use-before-define
+  getStockLocatorVehiclesData(vehicleURL);
+  if (Object.entries(values).length === 0 && values.constructor === Object) {
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+
+    const filterLabels = document.querySelectorAll('.filter-label-heading');
+    filterLabels.forEach((label) => {
+      label.classList.remove('is-active');
+    });
+    currentlyOpenDropdown.style.display = 'none';
+    currentlyOpenDropdown.previousElementSibling.classList.remove('show-dropdown');
+  }
+}
+
+// function handleCheckBoxSelectionForSeries() {
+//   const filterLists = document.querySelectorAll('.filter-list');
+//   filterLists.forEach((filterList) => {
+//     const filterLabelHeading = filterList.previousElementSibling;
+//     const checkboxes = filterList.querySelectorAll('.filter-checkbox');
+//     const selectedValues = [];
+//     const selectedCheckBoxType = [];
+
+//     checkboxes.forEach((checkbox) => {
+//       checkbox.addEventListener('change', () => {
+//         if (checkbox.checked) {
+//           if (!filterLabelHeading.classList.contains('is-active')) {
+//             filterLabelHeading.classList.add('is-active');
+//           }
+//           selectedValues.push(checkbox.id);
+//           selectedCheckBoxType.push(filterLabelHeading.textContent);
+//         } else {
+//           const index = selectedValues.indexOf(checkbox.id);
+//           if (index !== -1) {
+//             selectedValues.splice(index, 1);
+//           }
+//           // Remove is-active class if no checkbox is selected
+//           if (selectedValues.length === 0) {
+//             filterLabelHeading.classList.remove('is-active');
+//           }
+//         }
+//         // Update the displayed selected values
+//         // eslint-disable-next-line no-use-before-define
+//         updateSelectedValues(selectedValues, filterList);
+//         console.log(selectedValues);
+//         console.log(selectedCheckBoxType);
+//       });
+//     });
+//   });
+// }
+
 // eslint-disable-next-line import/no-mutable-exports
 export let vehicleURL;
 
-function handleCheckBoxSelectionForSeries() {
+function cardTiles(filterVehicle) {
+  const cardWrapper = document.createElement('div');
+  cardWrapper.classList.add('card-tile-wrapper');
+  // eslint-disable-next-line array-callback-return
+  filterVehicle.data.map((vehicle) => {
+    const {
+      // eslint-disable-next-line max-len
+      model, powerKw, powerPs, priceInformation: { baseCurrencyCodeA, finalPriceWithTax }, groupReference,
+    } = vehicle.attributes;
+
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('card-tile-container');
+
+    const cardList = document.createElement('ul');
+    cardList.classList.add('card-tile-list');
+
+    const cardListElement = document.createElement('li');
+    cardListElement.classList.add('card-tile-list-ele');
+
+    const modelCard = document.createElement('div');
+    modelCard.classList.add('model-card');
+
+    const cardImgContainer = document.createElement('div');
+    cardImgContainer.classList.add('image-container');
+
+    const pictureTag = document.createElement('picture');
+
+    const imgElem = document.createElement('img');
+    imgElem.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fbmw&psig=AOvVaw2VIQ2prCpWALFDmQR11JMk&ust=1721922019328000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNiUv8WBwIcDFQAAAAAdAAAAABAE';
+    imgElem.alt = 'img';
+
+    const detailContent = document.createElement('div');
+    detailContent.classList.add('detail-content');
+
+    const modelName = document.createElement('h4');
+    modelName.classList.add('model-name');
+    modelName.textContent = model;
+
+    const cardLayerInfoContainer = document.createElement('div');
+    cardLayerInfoContainer.classList.add('card-layer-info-container');
+    const cardLayerInfoItem = document.createElement('div');
+    cardLayerInfoItem.classList.add('card-layer-info-item');
+    const infoSpan = document.createElement('span');
+    infoSpan.textContent = `${powerKw} kW (${powerPs} KS)`;
+
+    const priceContainer = document.createElement('div');
+    priceContainer.classList.add('price-container');
+
+    const price = document.createElement('span');
+    price.classList.add('car-price');
+    price.textContent = `${finalPriceWithTax.min} ${baseCurrencyCodeA}`;
+
+    priceContainer.append(price);
+    cardLayerInfoItem.append(infoSpan);
+    cardLayerInfoContainer.append(cardLayerInfoItem);
+    detailContent.append(modelName);
+    pictureTag.append(imgElem);
+    cardImgContainer.append(pictureTag);
+    cardListElement.append(cardImgContainer, detailContent, cardLayerInfoContainer, priceContainer);
+    cardList.append(cardListElement);
+    cardContainer.append(cardList);
+    cardWrapper.append(cardContainer);
+  });
+  document.querySelector('.stock-locator-model-detail-definition-specification.block').append(cardWrapper);
+}
+
+async function vehicleFiltersAPI() {
+  const getStockLocatorVehicles = await getStockLocatorVehiclesData();
+  cardTiles(getStockLocatorVehicles);
+}
+let selectedbolean = false;
+
+async function handleCheckBoxSelectionForSeries() {
   const filterLists = document.querySelectorAll('.filter-list');
   const selectedValues = {};
-
   filterLists.forEach((filterList) => {
     const filterLabelHeading = filterList.previousElementSibling;
     const checkboxes = filterList.querySelectorAll('.filter-checkbox');
     const headingText = filterLabelHeading.textContent;
 
     checkboxes.forEach((checkbox) => {
-      checkbox.addEventListener('change', () => {
+      checkbox.addEventListener('change', async () => {
+        selectedbolean = true;
+        console.log(checkbox.checked);
         if (checkbox.checked) {
           if (!filterLabelHeading.classList.contains('is-active')) {
             filterLabelHeading.classList.add('is-active');
@@ -75,15 +222,14 @@ function handleCheckBoxSelectionForSeries() {
           }
         }
         // Update the displayed selected values
-        // eslint-disable-next-line no-use-before-define
         updateSelectedValues(selectedValues);
-        console.log(selectedValues);
-        // eslint-disable-next-line no-use-before-define
         vehicleURL = constructVehicleUrl(selectedValues);
-        getStockLocatorVehiclesData(vehicleURL);
+        const data = await getStockLocatorVehiclesData(vehicleURL);
+        cardTiles(data);
       });
     });
   });
+  console.log(selectedbolean);
 }
 
 function constructVehicleUrl(selectedValues) {
@@ -109,6 +255,7 @@ function updateSelectedValues(values) {
 
   let hasSelectedValues = false;
 
+  // eslint-disable-next-line no-restricted-syntax, no-unused-vars
   for (const [heading, valuesArray] of Object.entries(values)) {
     if (valuesArray.length > 0) {
       hasSelectedValues = true;
@@ -120,7 +267,6 @@ function updateSelectedValues(values) {
         eleSpan.textContent = value;
         const cancelElement = document.createElement('a');
         cancelElement.classList.add('cancel-filter');
-        cancelElement.textContent = '×';
         valueElement.append(eleSpan, cancelElement);
         selectedList.append(valueElement);
       });
@@ -141,6 +287,7 @@ function updateSelectedValues(values) {
       resetAllFilters(values);
     });
   }
+  handleCancelSelectedValue(values);
 }
 
 function resetAllFilters(values) {
@@ -240,7 +387,7 @@ function sortFilterResponse(data) {
   });
 }
 
-function processFilterData(filterData, typeKey, dropDownContainer) {
+async function processFilterData(filterData, typeKey, dropDownContainer) {
   if (!filterData) return;
   const sortedFilterData = sortFilterResponse(filterData);
   const filterResponseData = [];
@@ -249,7 +396,6 @@ function processFilterData(filterData, typeKey, dropDownContainer) {
     const responseData = data || '';
     filterResponseData.push(responseData);
   });
-
   stockLocatorFilterDom(filterResponseData, typeKey, dropDownContainer);
 }
 
@@ -257,75 +403,150 @@ function createStockLocatorFilter(filterResponse, dropDownContainer) {
   processFilterData(filterResponse?.series, 'series', dropDownContainer);
   processFilterData(filterResponse?.driveType, 'driveType', dropDownContainer);
   processFilterData(filterResponse?.fuel, 'fuel', dropDownContainer);
-
   handleToggleFilterDropDown();
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const infoButton = document.querySelector('.description-popup-button');
+  const popupText = document.querySelector('.description-popup-container');
+  const closeButton = document.querySelector('.description-popup-close-button');
+  const toggleButton = document.querySelector('.popup-toggle-button');
+  const descriptionPopupDisclaimer = document.querySelector('.description-popup-disclaimer');
+
+  infoButton.addEventListener('click', () => {
+    popupText.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', () => {
+    popupText.style.display = 'none';
+  });
+
+  toggleButton.addEventListener('click', () => {
+    if (popupText.classList.contains('expanded')) {
+      popupText.classList.remove('expanded');
+      descriptionPopupDisclaimer.style.height = '200px';
+      toggleButton.textContent = '▼';
+    } else {
+      popupText.classList.add('expanded');
+      toggleButton.textContent = '▲';
+
+      descriptionPopupDisclaimer.style.height = 'max-content';
+    }
+  });
+
+  // Optional: Click outside to close the popup
+  document.addEventListener('click', (event) => {
+    if (!popupText.contains(event.target) && !infoButton.contains(event.target)) {
+      popupText.style.display = 'none';
+    }
+  });
+});
+
 async function stockLocatorFiltersAPI(dropDownContainer) {
   const stockLocatorFilterResponse = await getStockLocatorFiltersData();
+
   const stockLocatorFilterData = stockLocatorFilterResponse.data.attributes;
+
   createStockLocatorFilter(stockLocatorFilterData, dropDownContainer);
 }
 
-export default async function decorate(block) {
+// Function to handle single select for relevance dropdown
+function handleRelevanceSingleSelect() {
+  const relevanceDropdown = document.querySelector('.stock-locator-container.relevance .filter-list');
+  const items = relevanceDropdown.querySelectorAll('.filter-item-relevance');
+
+  items.forEach((item) => {
+    item.addEventListener('click', () => {
+      items.forEach((i) => i.classList.remove('selected')); // Deselect all items
+      item.classList.add('selected'); // Select the clicked item
+    });
+  });
+}
+
+// Function to create the relevance dropdown
+function createRelevanceDropdown(dropDownContainer) {
   const filterWrapperContent = document.createElement('div');
-  filterWrapperContent.className = 'stock-locator-container';
+  filterWrapperContent.classList.add('stock-locator-container', 'relevance');
+
   const filterWrapper = document.createElement('div');
   filterWrapper.className = 'filter-wrapper';
-
-  const dropDownContainer = document.createElement('div');
-  dropDownContainer.classList.add('dropdown-container');
-
-  // Create the heading for the filter label
   const filterLabelHeading = document.createElement('div');
   filterLabelHeading.className = 'filter-label';
   filterLabelHeading.textContent = 'Sort by';
   filterWrapper.appendChild(filterLabelHeading);
 
-  const filterList = document.createElement('ul');
-  filterList.className = 'filter-list dropdown-list-wrapper';
-  filterWrapper.appendChild(filterList);
+  const filterList = document.createElement('div');
+  filterList.classList.add('filter-list', 'dropdown-list-wrapper');
 
   const filterLabelDefault = document.createElement('div');
   filterLabelDefault.className = 'filter-label-heading';
-  filterLabelDefault.textContent = 'Relevence';
+  filterLabelDefault.textContent = 'Relevance';
   filterWrapper.appendChild(filterLabelDefault);
+  filterWrapper.appendChild(filterList);
 
   const sortOptions = [
-    { id: 'a-z', text: 'A-z' },
-    { id: 'z-a', text: 'Z-a' },
-    { id: 'lowest', text: 'lowest' },
-    { id: 'highest', text: 'highest' },
+    { id: 'a-z', text: 'A-Z' },
+    { id: 'z-a', text: 'Z-A' },
   ];
 
   sortOptions.forEach((option) => {
-    const listItem = document.createElement('li');
-    listItem.className = 'filter-item';
-
-    const checkbox = document.createElement('input');
-    checkbox.className = 'fuel-checkbox filter-checkbox';
-    checkbox.type = 'checkbox';
-    checkbox.id = option.id;
+    const listItem = document.createElement('div');
+    listItem.className = 'filter-item-relevance';
 
     const label = document.createElement('label');
     label.setAttribute('for', option.id);
     label.textContent = option.text;
 
-    listItem.appendChild(checkbox);
     listItem.appendChild(label);
     filterList.appendChild(listItem);
   });
 
   filterWrapperContent.append(filterWrapper);
-
   dropDownContainer.append(filterWrapperContent);
 
-  const modelDetails = [...block.children];
-  modelDetails.forEach((modelDetail) => {
-    const [general] = modelDetail.children;
-    console.log(general);
-    // stock locator API called here
-  });
+  document.querySelector('.stock-locator-model-detail-definition-specification').append(dropDownContainer);
+  handleRelevanceSingleSelect();
+}
+
+async function getContentFragmentData(disclaimerCFPath, gqlOrigin) {
+  const endpointUrl = gqlOrigin + disclaimerGQlEndpoint + disclaimerCFPath.innerText;
+  const response = await fetch(endpointUrl);
+  return response.json();
+}
+
+export default async function decorate(block) {
+  const dropDownContainer = document.createElement('div');
+  dropDownContainer.classList.add('dropdown-container');
+
+  // const modelDetails = [...block.children];
+
+  const props = [...block.children].map((row) => row.firstElementChild);
+  const env = document.querySelector('meta[name="env"]').content;
+  let publishDomain = '';
+  const [disclaimerCF] = props;
+  if (env === 'dev') {
+    publishDomain = DEV.hostName;
+  } else if (env === 'stage') {
+    publishDomain = STAGE.hostName;
+  } else {
+    publishDomain = PROD.hostName;
+  }
   block.textContent = '';
+  window.gqlOrigin = window.location.hostname.match('^(.*.hlx\\.(page|live))|localhost$') ? publishDomain : '';
+  getContentFragmentData(disclaimerCF, window.gqlOrigin).then((response) => {
+    const cfData = response?.data;
+    console.log(cfData);
+    if (cfData) {
+      const disclaimerHtml = cfData?.disclaimercfmodelByPath?.item?.disclaimer?.html;
+      const disclaimerContent = document.createElement('div');
+      disclaimerContent.className = 'disclaimer-content';
+      disclaimerContent.innerHTML = disclaimerHtml;
+      block.appendChild(disclaimerContent);
+    }
+  });
+
+  block.textContent = '';
+  vehicleFiltersAPI();
+  createRelevanceDropdown(dropDownContainer);
   stockLocatorFiltersAPI(dropDownContainer);
 }

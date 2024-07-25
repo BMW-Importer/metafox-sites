@@ -201,14 +201,23 @@ export async function getStockLocatorFiltersData() {
   }
 }
 
-export async function getStockLocatorVehiclesData() {
-  try {
-    const url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}${dynamicURLData}&${vehicleURL}`;
-    const response = await fetch(`${url}`);
-    const responseJson = await response.json();
-    return responseJson;
-  } catch (error) {
-    console.log('Error fetching data for building get placeholder', error);
-    throw error;
+  export async function getStockLocatorVehiclesData() {
+    let url;
+    if (vehicleURL) { 
+      url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}${dynamicURLData}&${vehicleURL}`;
+    } else {
+      url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}${dynamicURLData}`;
+    }
+  
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const responseJson = await response.json();
+      return responseJson;
+    } catch (error) {
+      console.log('Error fetching data for building get placeholder', error);
+      throw error;
+    }
   }
-}
