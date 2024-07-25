@@ -10,12 +10,18 @@
                   "element": "checkbox",
                   "name": "type",
                   "defaultValue": [
-                      "image/*"
+                      "image/*",
+                      "video/*"
                   ],
                   "options": [
                       {
                           "label": "Image",
                           "value": "image/*",
+                          "readOnly": true
+                      },
+                      {
+                          "label": "Video",
+                          "value": "video/*",
                           "readOnly": true
                       }
                   ],
