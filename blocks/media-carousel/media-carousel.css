@@ -490,12 +490,12 @@
 
 @media (width >= 1280px) and (width < 1920px) {
     .media-carousel-wrapper .video-image-carousel-content {
-        padding-left: 6rem;
+        /* padding-left: 6rem; */
         padding-right: 6rem;
     }
 
     .section.media-carousel-container {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .media-carousel .video-img-carousel-card img,

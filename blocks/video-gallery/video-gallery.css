@@ -211,12 +211,12 @@
 /* desktop view */
 @media (width >= 1280px) and (width < 1920px) {
     .video-gallery-wrapper .video-gallery-content {
-        padding-left: 6rem;
+        /* padding-left: 6rem; */
         padding-right: 6rem;
     }
 
     .section.video-gallery-container {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .video-gallery-wrapper .video-js {
