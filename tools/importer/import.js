@@ -62,7 +62,8 @@ export default {
 	  '.modelnavigation',
 	  '.cmp-modelhubcard',
 	  '.technicaldata',
-	  '.multicontentgallery'
+	  '.multicontentgallery',
+	  '.modelcard'
       /* '.accordion',
        '.container',
        '.backgroundmedia',
@@ -1004,6 +1005,9 @@ const createflexibleWidthSection = (main, document) => {
     //table creation 
     const cells = [
         ['Section Metadata'],
+		['name', 'Flexible Width Section'],
+		['model', 'flexible-width-section'],
+		['filter', 'flexible-width-section'],
         ['sectionwidth', 'grid-10'],
         ['sectionalignment', 'center'],
 		['sectionbgcolor', 'white'],
