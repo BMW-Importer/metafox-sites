@@ -147,7 +147,7 @@
 }
 
 .video-js .vjs-big-play-button {
-  /* margin-left: -4.5em; */
+  margin-left: -4.5em;
   border: none !important;
   background: none;
   background-color: unset !important;
