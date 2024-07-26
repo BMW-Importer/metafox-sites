@@ -200,6 +200,12 @@
     .stock-locator-card{
         padding: 30px 25px;
     }
+    .detail-content{
+        margin-bottom: 10px;
+    }
+    .detail-content .card-layer-info-item{
+        margin-bottom: 20px;
+    }
     /* .Card-text-container{
         text-align: center;
     } */
@@ -218,6 +224,7 @@
         height: 50px;
         text-decoration: none;
         background-color: #1c69d4;
+        margin: 30px 0 16px;
     }
     .stock-model-description-wrapper{
         display: flex;
@@ -242,11 +249,11 @@
     
     .description-popup-button {
         cursor: pointer;
-        margin-left: 10px;
+        margin:0 10px;
         font-style: normal; 
         font-weight: bold;
         border: 1px solid #666;
-        padding: 2px 8px;
+        padding: 2px 11px;
         border-radius: 50%;
     }
     .stock-model-description-popup{
@@ -254,6 +261,7 @@
     }
     .price-container{
         position: relative;
+        
     }
     .price-container .description-popup-container {
         display: none; 
