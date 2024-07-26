@@ -1,5 +1,6 @@
 const createMetadata = (main, document) => {
-
+	
+  createColumns(main, document);
   createBackgroundMedia(main, document);
   createAccordion(main, document);
   createTextWithMediaLeft(main, document);
@@ -7,7 +8,7 @@ const createMetadata = (main, document) => {
   createVideo(main, document);
   createCarousel(main, document);
   createDefaultContent(main, document);
-  createColumns(main, document);
+  createflexibleWidthSection(main, document);
   createSection(main, document);
 
   const meta = {};
@@ -61,12 +62,13 @@ export default {
 	  '.modelnavigation',
 	  '.cmp-modelhubcard',
 	  '.technicaldata',
+	  '.multicontentgallery'
       /* '.accordion',
        '.container',
        '.backgroundmedia',
        '.carousel'*/
     ]);
-    console.log(main)
+   // console.log(main)
     return main;
   },
 };
@@ -428,8 +430,8 @@ const createTextWithMediaLeft = (main, document) => {
     pictureTag.appendChild(image);
     textWithMediaBlockData.push(pictureTag);
 
-    const link = element.querySelector('.cmp-button').getAttribute('href');
-    const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
+    const link = element.querySelector('.cmp-button')?.getAttribute('href');
+    const linkLabel = element.querySelector('.cmp-button .cmp-button__text')?.textContent;
     const aTag = document.createElement('a');
     aTag.setAttribute('href', link);
     aTag.innerText = linkLabel;
@@ -534,8 +536,8 @@ const createTextWithMediaRight = (main, document) => {
     pictureTag.appendChild(image);
     textWithMediaBlockData.push(pictureTag);
 
-    const link = element.querySelector('.cmp-button').getAttribute('href');
-    const linkLabel = element.querySelector('.cmp-button .cmp-button__text').textContent;
+    const link = element.querySelector('.cmp-button')?.getAttribute('href');
+    const linkLabel = element.querySelector('.cmp-button .cmp-button__text')?.textContent;
     const aTag = document.createElement('a');
     aTag.setAttribute('href', link);
     aTag.innerText = linkLabel;
@@ -630,7 +632,7 @@ const createDefaultContent = (main, document) => {
 
   const copyText = document.querySelectorAll('.cmp-text');
   const descArr = [];
-  const defaultCopytext = Array.from(copyText).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
+  const defaultCopytext = Array.from(copyText).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
   defaultCopytext.forEach((desc) => {
     const description = desc?.textContent;
     const para = document.createElement('p');
@@ -839,7 +841,7 @@ const createCarousel = (main, document) => {
           carouselRow.push(carouselVideoData);
           if (!isMediaCarousel) {
             videoGalleryData.push(paraTitle, paraDesc, paraVideoPath, paraMobVideoPath, para3, para4, h1, h2, h5, h6);
-            console.log(videoGalleryData)
+          //  console.log(videoGalleryData)
           }
         }
 
@@ -891,17 +893,18 @@ const createCarousel = (main, document) => {
 
 
 const createSection = (main, document) => {
-  const root = document.querySelector('.root.container');
-const sectionDivs = root.querySelectorAll('div[data-tracking-regionid]');
-const sectionDivArr = [];
-sectionDivs.forEach(section=>{
-    const parentSectionDiv = section.closest('.container.responsivegrid.aem-GridColumn--default--12')
-    if(!parentSectionDiv.querySelector('.contentnavigation')){
-        sectionDivArr.push(parentSectionDiv);
-    }
+const root = document.querySelector('.root, #main, [role="main"]');
+const sectionDivs = root.querySelectorAll('.container.responsivegrid.aem-GridColumn--default--12 > div[data-tracking-regionid]');
+const sectionArr = [...sectionDivs].filter((a)=>{
+    const flexibleWidthSection = a.querySelector('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], .accordion, .contentnavigation')
+    return !flexibleWidthSection
 })
-const sections = [...new Set(sectionDivArr)];
-sections.forEach(s=>{
+const arr = [];
+sectionArr.forEach(sec=>{
+  arr.push(sec.parentElement)
+})
+//console.log(arr)
+arr.forEach(s=>{
   const cells = [
           ['Section Metadata'],
           ['style', 'alignment-center'],
@@ -916,12 +919,12 @@ sections.forEach(s=>{
 };
 
 const createColumns = (main, document) => {
-    const root = document.querySelector('.root.container');
+  const root = document.querySelector('.root, #main, [role="main"]');
 const a = root.querySelectorAll('.aem-Grid.aem-Grid--12.aem-Grid--small--12.aem-Grid--default--12')
-const defaultCol = Array.from(a).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'))
+const defaultCol = Array.from(a).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel,.accordion,.tabs,.cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="drivetrain switch"],[data-tracking-regionid*="modeloverview"]'))
 const arr = [];
 defaultCol.forEach((c)=>{
-    const d = c.querySelector('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation, .accordion, [data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]')
+    const d = c.querySelector('.cmp-multi-content,.accordion,.tabs, .backgroundmedia, .carousel, .cmp-globalnavigation, [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="drivetrain switch"],[data-tracking-regionid*="modeloverview"]')
     const columnDirect = c.querySelector('div > .aem-GridColumn--default--3, div > .aem-GridColumn--default--4, div > .aem-GridColumn--default--6')
     if(columnDirect && !d) {
         arr.push(columnDirect.parentElement);
@@ -976,11 +979,7 @@ columns.forEach((column)=>{
     const copyTextPara = document.createElement('p');
     copyTextPara.textContent = copyText;
     divArr.push(copyTextPara);
-    if(copyText){
-      const para4 = document.createElement('p');
-	  para4.textContent="&nbsp;";
-      divArr.push(para4);
-    }
+   
     if(link != null) {
       divArr.push(para3);
     }
@@ -990,4 +989,29 @@ columns.forEach((column)=>{
     const table = WebImporter.DOMUtils.createTable(columnBlock, document);
     column.replaceWith(table);
 })
+};
+
+const createflexibleWidthSection = (main, document) => {
+  const root = document.querySelector('.root, #main, [role="main"]');
+  const flexibleWidthSections = root.querySelectorAll('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], div.cmp-accordion ');
+  const flexibleSectionArr = [];
+  if(flexibleWidthSections){
+    flexibleWidthSections.forEach(flexibleSection=>{
+    flexibleSectionArr.push(flexibleSection.parentElement);
+    })
+  }
+  flexibleSectionArr.forEach(s=>{
+    //table creation 
+    const cells = [
+        ['Section Metadata'],
+        ['sectionwidth', 'grid-10'],
+        ['sectionalignment', 'center'],
+		['sectionbgcolor', 'white'],
+		['sectiontopmargin', true]
+      ];
+      const table = WebImporter.DOMUtils.createTable(cells, document);
+      s.append(table);
+      const hr = document.createElement('hr');
+      s.append(hr);
+  })
 };
