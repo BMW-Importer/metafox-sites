@@ -113,7 +113,7 @@ const createBackgroundMedia = (main, document) => {
         para.appendChild(node);
         backgroundMediaBlockData1.push(para);
         const h2 = document.createElement('h2');
-        h2.textContent = "big";
+        h2.textContent = "small";
         backgroundMediaBlockData1.push(h2);
         backgroundMediaBlockData.push(backgroundMediaBlockData1);
 
@@ -636,9 +636,7 @@ const createDefaultContent = (main, document) => {
     const para = document.createElement('p');
     para.textContent = description;
     desc.replaceWith(para);
-	const para3 = document.createElement('p');
-      para3.textContent = "&nbsp;";
-      para.parentElement.appendChild(para3);
+	
   });
 
 
@@ -685,19 +683,22 @@ const createDefaultContent = (main, document) => {
 
   // default buttons
   const buttons = document.querySelectorAll('.button');
-  const defaultButtons = Array.from(buttons).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
+  const defaultButtons = Array.from(buttons).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel,.multicontentgallery, .tabs,.accordion,.cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
   defaultButtons.forEach((button) => {
     const link = button.querySelector('.cmp-button')?.getAttribute('href');
     const linkLabel = button.querySelector('.cmp-button .cmp-button__text')?.textContent;
     const aTag = document.createElement('a');
     aTag.setAttribute('href', link);
     aTag.innerText = linkLabel;
+    const strongTag = document.createElement('strong');
     const para3 = document.createElement("p");
-    para3.appendChild(aTag);
+    para3.appendChild(strongTag);
+    strongTag.appendChild(aTag);
     button.replaceWith(aTag)
 
   });
-
+  
+  
   const images = document.querySelectorAll('.cmp-image .cmp-image__image');
   const defaultImg = Array.from(images).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'))
   defaultImg.forEach((img) => {
@@ -903,7 +904,9 @@ const sections = [...new Set(sectionDivArr)];
 sections.forEach(s=>{
   const cells = [
           ['Section Metadata'],
-          ['Alignment', 'center']
+          ['style', 'alignment-center'],
+		  ['sectionbgcolor', 'white'],
+		  ['fixedsectiontopmargin', true]
         ];
         const table = WebImporter.DOMUtils.createTable(cells, document);
         s.append(table);
