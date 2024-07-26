@@ -280,7 +280,12 @@
 }
 
 @media (width >= 768px) and (width < 1280px) {
-    .media-carousel-wrapper .video-image-carousel-content {
+    .media-carousel-wrapper .video-image-carousel-content{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .section.media-carousel-container .default-content-wrapper{
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -322,7 +327,12 @@
         padding: 0;
     }
 
-    .media-carousel-wrapper .video-image-carousel-content {
+    .section.media-carousel-container .default-content-wrapper{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .media-carousel-wrapper .video-image-carousel-content{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -490,12 +500,17 @@
 
 @media (width >= 1280px) and (width < 1920px) {
     .media-carousel-wrapper .video-image-carousel-content {
-        /* padding-left: 6rem; */
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .section.media-carousel-container .default-content-wrapper{
+        padding-left: 6rem;
         padding-right: 6rem;
     }
 
     .section.media-carousel-container {
-        /* padding: 0; */
+        padding: 0;
     }
 
     .media-carousel .video-img-carousel-card img,
