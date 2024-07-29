@@ -64,6 +64,9 @@ export default {
 	  '.technicaldata',
 	  '.modelcard',
 	  '.tabs',
+	  '.style-text--disclaimer-1',
+	  '[data-tracking-regionid*="drivetrain switch"]',
+	  '[data-tracking-regionid*="standalone-disclaimer"]',
       /* '.accordion',
        '.container',
        '.backgroundmedia',
@@ -83,9 +86,13 @@ const createBackgroundMedia = (main, document) => {
     backgroundMediaBlock.push(name);
     const backgroundMediaBlockData = [];
     const backgroundMediaBlockData1 = [];
+    const backgroundMediaImageBlockData = [];
 	let copyText;
 	let subBrandIconType;
+	    const mediaImageCmp = bgmedia.querySelector('.cmp-image .cmp-image__image');
+
     const titles = bgmedia.querySelectorAll('.title');
+	if(!mediaImageCmp){
     titles.forEach((title, i) => {
       if (i == 0) {
         const eyeBrow = title.querySelector('.cmp-title__text')?.textContent;
@@ -145,33 +152,76 @@ const createBackgroundMedia = (main, document) => {
 			const para = document.createElement("p");
 			backgroundMediaBlockData.push(para); 
 		}
-
+	}
     let mediaImagetitle;
     let mediaImageDescription;
+	let mediaImageEyebrow;
 
 
-    const mediaImageCmp = bgmedia.querySelector('.cmp-image .cmp-image__image');
     if (mediaImageCmp) {
-      mediaImagetitle = bgmedia.querySelector('.cmp-title .cmp-title__text')?.textContent;
-      if (mediaImagetitle) {
-        let subBrandIconType = bgmedia.querySelector('.cmp-title__image-branding')?.getAttribute('title');
-        if (subBrandIconType && subBrandIconType.toLowerCase() == 'bmw i') {
-          subBrandIconType = 'subbrandi';
-        } else if (subBrandIconType && subBrandIconType.toLowerCase() == 'bmw m') {
-          subBrandIconType = 'subbrandm';
+	mediaImageEyebrow = bgmedia.querySelector('.title');
+	const hasEyebrowClass = Array.from(mediaImageEyebrow.classList).some(className =>
+        className.startsWith('style-title__text--eyebrow')
+      );
+	if(mediaImageEyebrow&& hasEyebrowClass){
+		const eyebrowText = mediaImageEyebrow.querySelector('.cmp-title__text')?.textContent;
+        let eyeBrowType = '';
+		
+        if (mediaImageEyebrow.classList.contains('style-title__text--eyebrow2-bold')) {
+          eyeBrowType = "Eyebrow Bold 2 (h5)";
+          const h5 = document.createElement('h5');
+          h5.textContent = eyebrowText;
+          backgroundMediaBlockData1.push(h5);
+        } else if (mediaImageEyebrow.classList.contains('style-title__text--eyebrow1-bold')) {
+          eyeBrowType = "Eyebrow Bold 1 (h4)";
+          const h4 = document.createElement('h4');
+          h4.textContent = eyebrowText;
+          backgroundMediaBlockData1.push(h4);
         } else {
-          subBrandIconType = 'noicon';
+          eyeBrowType = 'Iconization (h6)';
+          const h6 = document.createElement('h6');
+          h6.textContent = eyebrowText;
+          backgroundMediaBlockData1.push(h6);
         }
-
-        backgroundMediaBlockData.push(mediaImagetitle);
-        backgroundMediaBlockData.push(subBrandIconType);
+      }else{
+		const eyebrow = document.createElement('p');
+		eyebrow.textContent='&nbsp;';
+        backgroundMediaBlockData1.push(eyebrow);
+	  }
+      mediaImagetitle = bgmedia.querySelector('.title');
+	  const hasTitleClass = Array.from(mediaImagetitle.classList).some(className =>
+        className.startsWith('style-title--headline')
+      );
+      if (hasTitleClass) {
+       const headline = mediaImagetitle.querySelector('.cmp-title__text')?.textContent;
+        const para = document.createElement("p");
+        const node = document.createTextNode(headline);
+        para.appendChild(node);
+        backgroundMediaBlockData1.push(para);
+        const h2 = document.createElement('h2');
+        h2.textContent = "small";
+        backgroundMediaBlockData1.push(h2);
+      }else{
+        const title = document.createElement('p');
+		title.textContent='&nbsp;';
+        backgroundMediaBlockData1.push(title);
+		backgroundMediaBlockData1.push("small");
       }
+	  backgroundMediaBlockData.push(backgroundMediaBlockData1);
+
       mediaImageDescription = bgmedia.querySelector('.cmp-text .cmp-text__paragraph')?.textContent;
       if (mediaImageDescription) {
-        const mDesc = document.createElement('h3');
-        mDesc.textContent = mediaImageDescription;
-        backgroundMediaBlockData.push(mDesc);
-      }
+          backgroundMediaBlockData.push("noicon");
+			const h3 = document.createElement("h3");
+			h3.textContent = mediaImageDescription;
+			backgroundMediaBlockData.push(h3);      
+		}else{
+			backgroundMediaBlockData.push("noicon");
+			const para = document.createElement("p");
+			para.textContent = 'copytext';
+			backgroundMediaBlockData.push(para); 
+		}
+
     }
 
     const backgroundMediaBlockData2 = [];
@@ -633,18 +683,18 @@ const createDefaultContent = (main, document) => {
 
   const copyText = document.querySelectorAll('.cmp-text');
   const descArr = [];
-  const defaultCopytext = Array.from(copyText).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],div.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
+  const defaultCopytext = Array.from(copyText).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="drivetrain switch"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"],[data-tracking-regionid*="standalone-drivetrain-switch"]'));
   defaultCopytext.forEach((desc) => {
     const description = desc?.textContent;
     const para = document.createElement('p');
     para.textContent = description;
-    desc.replaceWith(para);
+	desc.replaceWith(para);
 	
   });
 
 
   const titles = document.querySelectorAll('.title');
-  const defaultTitles = Array.from(titles).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
+  const defaultTitles = Array.from(titles).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="drivetrain switch"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"],[data-tracking-regionid*="standalone-drivetrain-switch"]'));
   defaultTitles.forEach((title) => {
 
     const titleText = title.querySelector('.cmp-title')?.textContent;
@@ -686,7 +736,7 @@ const createDefaultContent = (main, document) => {
 
   // default buttons
   const buttons = document.querySelectorAll('.button');
-  const defaultButtons = Array.from(buttons).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel,.multicontentgallery, .tabs,.accordion,.cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
+  const defaultButtons = Array.from(buttons).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="drivetrain switch"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"],[data-tracking-regionid*="standalone-drivetrain-switch"]'));
   defaultButtons.forEach((button) => {
     const link = button.querySelector('.cmp-button')?.getAttribute('href');
     const linkLabel = button.querySelector('.cmp-button .cmp-button__text')?.textContent;
@@ -703,7 +753,7 @@ const createDefaultContent = (main, document) => {
   
   
   const images = document.querySelectorAll('.cmp-image .cmp-image__image');
-  const defaultImg = Array.from(images).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"], [data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'))
+  const defaultImg = Array.from(images).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="drivetrain switch"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"],[data-tracking-regionid*="standalone-drivetrain-switch"]'));
   defaultImg.forEach((img) => {
     const imageSrc = img?.getAttribute('src');
     const imageAltTxt = img?.getAttribute('alt');
@@ -897,7 +947,7 @@ const createSection = (main, document) => {
 const root = document.querySelector('.root, #main, [role="main"]');
 const sectionDivs = root.querySelectorAll('.container.responsivegrid.aem-GridColumn--default--12 > div[data-tracking-regionid]');
 const sectionArr = [...sectionDivs].filter((a)=>{
-    const flexibleWidthSection = a.querySelector('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], .accordion, .contentnavigation')
+    const flexibleWidthSection = a.querySelector('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], div.accordion, div.contentnavigation,div.drivetrainswitch,div.modelnavigation,div.technicaldata,div.tabs,div.cmp-globalnavigation,div[data-tracking-regionid*="drivetrain switch"]')
     return !flexibleWidthSection
 })
 const arr = [];
@@ -1048,19 +1098,19 @@ const createMultiContentGallery = (main, document) => {
 
     const videoPlayer = mediaArr[i].querySelector('.cmp-video__video-player');
 	 const mcgVideoBlockData = [];
-    const videoTitle = videoPlayer.getAttribute('aria-label');
+    const videoTitle = videoPlayer?.getAttribute('aria-label');
 	const paraTitle = document.createElement("p");
       const nodeTitle = document.createTextNode(videoTitle);
       if (videoTitle)
         paraTitle.appendChild(nodeTitle);
 	
-    const videoDesc = videoPlayer.getAttribute('aria-description');
+    const videoDesc = videoPlayer?.getAttribute('aria-description');
 	  const paraDesc = document.createElement("p");
       const nodeDesc = document.createTextNode(videoDesc);
       if (videoDesc)
         paraDesc.appendChild(nodeDesc);
 	
-    const deskVideoPath = videoPlayer.getAttribute('data-src-large');
+    const deskVideoPath = videoPlayer?.getAttribute('data-src-large');
 	const paraVideoPath = document.createElement("p");
       const aTag1 = document.createElement('a');
       aTag1.setAttribute('href', deskVideoPath);
@@ -1070,10 +1120,10 @@ const createMultiContentGallery = (main, document) => {
 	  
     let mobVideoPath;
     let buttonStyle;
-    if (videoPlayer.hasAttribute('data-src-medium')) {
-      mobVideoPath = videoPlayer.getAttribute('data-src-medium');
+    if (videoPlayer?.hasAttribute('data-src-medium')) {
+      mobVideoPath = videoPlayer?.getAttribute('data-src-medium');
     } else {
-      mobVideoPath = videoPlayer.getAttribute('src')?.replace('blob:', '');
+      mobVideoPath = videoPlayer?.getAttribute('src')?.replace('blob:', '');
     }
 	  const paraMobVideoPath = document.createElement("p");
       const aTag2 = document.createElement('a');
@@ -1082,7 +1132,7 @@ const createMultiContentGallery = (main, document) => {
       paraMobVideoPath.appendChild(aTag2);
 	
     const ImgPath = mediaArr[i].querySelector('.cmp-video__video');
-    const img = ImgPath.querySelector('img');
+    const img = ImgPath?.querySelector('img');
     const deskPosterImgPath = img?.getAttribute('src');
 	const pictureDesk = document.createElement('picture');
       const paraDeskImg = document.createElement("p");
@@ -1120,9 +1170,6 @@ const createMultiContentGallery = (main, document) => {
 		carouselVideoData.push("<p></p>")
 	}
     mcgBlock.push(carouselVideoData);
-
-	
-   
   });
   const mcgTable = WebImporter.DOMUtils.createTable(mcgBlock, document);
 	slide.replaceWith(mcgTable);
