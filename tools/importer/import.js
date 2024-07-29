@@ -7,6 +7,7 @@ const createMetadata = (main, document) => {
   createTextWithMediaRight(main, document);
   createVideo(main, document);
   createCarousel(main, document);
+  createMultiContentGallery(main, document);
   createDefaultContent(main, document);
   createflexibleWidthSection(main, document);
   createSection(main, document);
@@ -58,12 +59,11 @@ export default {
       '.drivetrainswitch',
       '.visualizer',
       '.preCon',
-      '.tabs',
 	  '.modelnavigation',
 	  '.cmp-modelhubcard',
 	  '.technicaldata',
-	  '.multicontentgallery',
-	  '.modelcard'
+	  '.modelcard',
+	  '.tabs',
       /* '.accordion',
        '.container',
        '.backgroundmedia',
@@ -633,7 +633,7 @@ const createDefaultContent = (main, document) => {
 
   const copyText = document.querySelectorAll('.cmp-text');
   const descArr = [];
-  const defaultCopytext = Array.from(copyText).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
+  const defaultCopytext = Array.from(copyText).filter((div) => !div.closest('.cmp-multi-content, .backgroundmedia, .carousel, .cmp-globalnavigation,[data-tracking-regionid*="item-image-text-teaser-right"],div.style-text--disclaimer-1,[data-tracking-regionid*="standalone-disclaimer"],[data-tracking-regionid*="item-image-text-teaser-left"],[data-tracking-regionid*="footer"],[data-tracking-regionid*="modeloverview"]'));
   defaultCopytext.forEach((desc) => {
     const description = desc?.textContent;
     const para = document.createElement('p');
@@ -1019,3 +1019,113 @@ const createflexibleWidthSection = (main, document) => {
       s.append(hr);
   })
 };
+
+
+const createMultiContentGallery = (main, document) => {
+	const multicontentgallery = document.querySelectorAll('.multicontentgallery .cmp-multi-content');
+[...multicontentgallery].forEach((slide) => {
+  const mediaArr = slide.querySelector('.cmp-multi-content__slider--media').children;
+  const contentArr = slide.querySelector('.cmp-multi-content__slider--content').children;
+	const mcgBlock = [];
+    const name = ['Multicontent Gallery'];
+    mcgBlock.push(name);
+  const p = [...contentArr].map((e, i) => {
+	    const carouselVideoData = [];
+        const carouselRow = [];
+		const carouselContentData = [];
+
+	const headline = e.querySelector('.cmp-title')?.textContent;
+	const h4 = document.createElement("h4");
+	h4.textContent = headline;
+	carouselContentData.push(h4);
+    const copyText = e.querySelector('.cmp-text__paragraph')?.textContent;
+	const para = document.createElement("p");
+    const node = document.createTextNode(copyText);
+	para.appendChild(node);
+	carouselContentData.push(para);
+
+	carouselVideoData.push(carouselContentData);
+
+    const videoPlayer = mediaArr[i].querySelector('.cmp-video__video-player');
+	 const mcgVideoBlockData = [];
+    const videoTitle = videoPlayer.getAttribute('aria-label');
+	const paraTitle = document.createElement("p");
+      const nodeTitle = document.createTextNode(videoTitle);
+      if (videoTitle)
+        paraTitle.appendChild(nodeTitle);
+	
+    const videoDesc = videoPlayer.getAttribute('aria-description');
+	  const paraDesc = document.createElement("p");
+      const nodeDesc = document.createTextNode(videoDesc);
+      if (videoDesc)
+        paraDesc.appendChild(nodeDesc);
+	
+    const deskVideoPath = videoPlayer.getAttribute('data-src-large');
+	const paraVideoPath = document.createElement("p");
+      const aTag1 = document.createElement('a');
+      aTag1.setAttribute('href', deskVideoPath);
+	   aTag1.setAttribute('title', videoTitle);
+      aTag1.innerText = videoDesc;
+      paraVideoPath.appendChild(aTag1);
+	  
+    let mobVideoPath;
+    let buttonStyle;
+    if (videoPlayer.hasAttribute('data-src-medium')) {
+      mobVideoPath = videoPlayer.getAttribute('data-src-medium');
+    } else {
+      mobVideoPath = videoPlayer.getAttribute('src')?.replace('blob:', '');
+    }
+	  const paraMobVideoPath = document.createElement("p");
+      const aTag2 = document.createElement('a');
+      aTag2.setAttribute('href', deskVideoPath);
+      aTag2.innerText = deskVideoPath;
+      paraMobVideoPath.appendChild(aTag2);
+	
+    const ImgPath = mediaArr[i].querySelector('.cmp-video__video');
+    const img = ImgPath.querySelector('img');
+    const deskPosterImgPath = img?.getAttribute('src');
+	const pictureDesk = document.createElement('picture');
+      const paraDeskImg = document.createElement("p");
+      const el = document.createElement('img');
+      el.src = deskPosterImgPath;
+      pictureDesk.appendChild(el);
+      paraDeskImg.appendChild(pictureDesk);
+    
+	const mobPosterImgPath = img?.getAttribute('src');
+	const pictureMob = document.createElement('picture');
+	const paraMobImg = document.createElement("p");
+    const e2 = document.createElement('img');
+    e2.src = mobPosterImgPath;
+    if (mobPosterImgPath)
+    pictureMob.appendChild(e2);
+    paraMobImg.appendChild(pictureMob);
+	
+	const p1 = document.createElement('p');
+      p1.textContent = "true";
+      const p2 = document.createElement('p');
+      p2.textContent = "true";  
+  mcgVideoBlockData.push(paraVideoPath, paraMobVideoPath, paraDeskImg, paraMobImg, p1, p2);
+    carouselVideoData.push(mcgVideoBlockData);
+		
+    const link = e.querySelector('.cmp-button')?.getAttribute('href');
+    const linkLabel = e.querySelector('.cmp-button__text')?.textContent;
+	if(link && linkLabel){
+     const aTag = document.createElement('a');
+    aTag.setAttribute('href', link);
+    aTag.innerText = linkLabel;
+    const strongTag = document.createElement('strong');
+    strongTag.appendChild(aTag);
+	carouselVideoData.push(strongTag);
+	}else{
+		carouselVideoData.push("<p></p>")
+	}
+    mcgBlock.push(carouselVideoData);
+
+	
+   
+  });
+  const mcgTable = WebImporter.DOMUtils.createTable(mcgBlock, document);
+	slide.replaceWith(mcgTable);
+});
+};
+
