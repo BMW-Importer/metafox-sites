@@ -1007,24 +1007,40 @@ columns.forEach((column)=>{
     if(image) {
       divArr.push(para2);
     }
-    [...titles].forEach(t => {
-      const title = t.querySelector('.cmp-title')?.textContent;
-      if (t.classList.contains('style-title--headline-1')) {
+    [...titles].forEach(title => {
+		const titleText = title.querySelector('.cmp-title').textContent;
+      let titleStyle = '';
+      if (title.classList.contains('style-title__text--eyebrow2-bold')) {
+        titleStyle = 'Eyebrow Bold 2';
+        const eyebrow = document.createElement('h4');
+        eyebrow.textContent = titleText;
+                divArr.push(eyebrow);
+      } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
+        titleStyle = 'Eyebrow Bold 1';
+        const eyebrow = document.createElement('h4');
+        eyebrow.textContent = titleText;
+        divArr.push(eyebrow);
+      } else if (title.classList.contains('style-title--iconization-1')) {
+        titleStyle = 'Iconization';
+        const eyebrow = document.createElement('h4');
+        eyebrow.textContent = titleText;
+        divArr.push(eyebrow);
+      } else if (title.classList.contains('style-title--headline-1')) {
         const h1 = document.createElement('h2');
-        h1.textContent = title
+        h1.textContent = titleText;
         divArr.push(h1);
-      } else if(t.classList.contains('style-title--headline-2')) {
+      } else if (title.classList.contains('style-title--headline-2')) {
         const h2 = document.createElement('h2');
-        h2.textContent = title
+        h2.textContent = titleText;
         divArr.push(h2);
-      } else if(t.classList.contains('style-title--headline-3')) {
+      } else if (title.classList.contains('style-title--headline-3')) {
         const h3 = document.createElement('h2');
-        h3.textContent = title
+        h3.textContent = titleText;
         divArr.push(h3);
       } else {
-        const para1 = document.createElement('p');
-        para1.textContent = title;
-        divArr.push(para1);
+        const h4 = document.createElement('h2');
+        h4.textContent = titleText;
+        divArr.push(h4);
       }
     })
     const copyTextPara = document.createElement('p');
