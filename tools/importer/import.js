@@ -121,9 +121,15 @@ const createBackgroundMedia = (main, document) => {
         const para = document.createElement("p");
         const node = document.createTextNode(headline);
         para.appendChild(node);
+		let headlineType;
+		if (title.classList.contains('style-title--stage-model-1')) {
+			headlineType="big";
+		}else{
+			headlineType="small";
+		}
         backgroundMediaBlockData1.push(para);
         const h2 = document.createElement('h2');
-        h2.textContent = "small";
+        h2.textContent = headlineType;
         backgroundMediaBlockData1.push(h2);
         backgroundMediaBlockData.push(backgroundMediaBlockData1);
 
