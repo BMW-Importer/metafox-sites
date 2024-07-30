@@ -211,7 +211,9 @@ const createBackgroundMedia = (main, document) => {
         const title = document.createElement('p');
 		title.textContent='&nbsp;';
         backgroundMediaBlockData1.push(title);
-		backgroundMediaBlockData1.push("small");
+		const h2 = document.createElement('h2');
+        h2.textContent = "small";
+        backgroundMediaBlockData1.push(h2);
       }
 	  backgroundMediaBlockData.push(backgroundMediaBlockData1);
 
@@ -500,7 +502,7 @@ const createTextWithMediaLeft = (main, document) => {
     textWithMediaBlock.push(textWithMediaBlockData);
 
     const textWithMediaTableLeft = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
-    element.replaceWith(textWithMediaTableLeft);
+   element.firstElementChild.replaceWith(textWithMediaTableLeft);
 
   });
 
@@ -607,8 +609,7 @@ const createTextWithMediaRight = (main, document) => {
     textWithMediaBlock.push(textWithMediaBlockData);
 
     const textWithMediaTable = WebImporter.DOMUtils.createTable(textWithMediaBlock, document);
-    element.replaceWith(textWithMediaTable);
-
+	element.firstElementChild.replaceWith(textWithMediaTable);
   });
 
 };
@@ -953,7 +954,7 @@ const createSection = (main, document) => {
 const root = document.querySelector('.root, #main, [role="main"]');
 const sectionDivs = root.querySelectorAll('.container.responsivegrid.aem-GridColumn--default--12 > div[data-tracking-regionid]');
 const sectionArr = [...sectionDivs].filter((a)=>{
-    const flexibleWidthSection = a.querySelector('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], div.accordion, div.contentnavigation,div.drivetrainswitch,div.modelnavigation,div.technicaldata,div.tabs,div.cmp-globalnavigation,div[data-tracking-regionid*="drivetrain switch"]')
+    const flexibleWidthSection = a.querySelector('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], div.accordion, div.contentnavigation,div.drivetrainswitch,div.modelnavigation,div.technicaldata,div.tabs,div.cmp-globalnavigation,div[data-tracking-regionid*="drivetrain switch"],div[data-tracking-regionid*="accordion"]')
     return !flexibleWidthSection
 })
 const arr = [];
@@ -1068,7 +1069,7 @@ columns.forEach((column)=>{
 
 const createflexibleWidthSection = (main, document) => {
   const root = document.querySelector('.root, #main, [role="main"]');
-  const flexibleWidthSections = root.querySelectorAll('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], div.cmp-accordion ');
+  const flexibleWidthSections = root.querySelectorAll('div[data-tracking-regionid*="section intro full"], div[data-tracking-regionid*="standalone-frequently-asked-questions"], div.cmp-accordion, accordion, div[data-tracking-regionid*="accordion"]');
   const flexibleSectionArr = [];
   if(flexibleWidthSections){
     flexibleWidthSections.forEach(flexibleSection=>{
@@ -1082,7 +1083,7 @@ const createflexibleWidthSection = (main, document) => {
 		['name', 'Flexible Width Section'],
 		['model', 'flexible-width-section'],
 		['filter', 'flexible-width-section'],
-        ['sectionwidth', 'grid-10'],
+        ['sectionwidth', 'grid-6'],
         ['sectionalignment', 'center'],
 		['sectionbgcolor', 'white'],
 		['sectiontopmargin', true]
