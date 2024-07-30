@@ -708,17 +708,17 @@ const createDefaultContent = (main, document) => {
     let headlineStyle = '';
     if (title.classList.contains('style-title__text--eyebrow2-bold')) {
       titleStyle = 'Eyebrow Bold 2';
-      const eyebrow = document.createElement('h4');
+      const eyebrow = document.createElement('h6');
       eyebrow.textContent = titleText;
       title.replaceWith(eyebrow)
     } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
       titleStyle = 'Eyebrow Bold 1';
-      const eyebrow = document.createElement('h4');
+      const eyebrow = document.createElement('h6');
       eyebrow.textContent = titleText;
       title.replaceWith(eyebrow)
     } else if (title.classList.contains('style-title--iconization-1')) {
       titleStyle = 'Iconization';
-      const eyebrow = document.createElement('h4');
+      const eyebrow = document.createElement('h6');
       eyebrow.textContent = titleText;
       title.replaceWith(eyebrow)
     } else if (title.classList.contains('style-title--headline-1')) {
@@ -1020,17 +1020,17 @@ columns.forEach((column)=>{
       let titleStyle = '';
       if (title.classList.contains('style-title__text--eyebrow2-bold')) {
         titleStyle = 'Eyebrow Bold 2';
-        const eyebrow = document.createElement('h4');
+        const eyebrow = document.createElement('h6');
         eyebrow.textContent = titleText;
         divArr.push(eyebrow);
       } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
         titleStyle = 'Eyebrow Bold 1';
-        const eyebrow = document.createElement('h4');
+        const eyebrow = document.createElement('h6');
         eyebrow.textContent = titleText;
         divArr.push(eyebrow);
       } else if (title.classList.contains('style-title--iconization-1')) {
         titleStyle = 'Iconization';
-        const eyebrow = document.createElement('h4');
+        const eyebrow = document.createElement('h6');
         eyebrow.textContent = titleText;
         divArr.push(eyebrow);
       } else if (title.classList.contains('style-title--headline-1')) {
