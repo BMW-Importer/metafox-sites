@@ -708,17 +708,17 @@ const createDefaultContent = (main, document) => {
     let headlineStyle = '';
     if (title.classList.contains('style-title__text--eyebrow2-bold')) {
       titleStyle = 'Eyebrow Bold 2';
-      const eyebrow = document.createElement('p');
+      const eyebrow = document.createElement('h4');
       eyebrow.textContent = titleText;
       title.replaceWith(eyebrow)
     } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
       titleStyle = 'Eyebrow Bold 1';
-      const eyebrow = document.createElement('p');
+      const eyebrow = document.createElement('h4');
       eyebrow.textContent = titleText;
       title.replaceWith(eyebrow)
     } else if (title.classList.contains('style-title--iconization-1')) {
       titleStyle = 'Iconization';
-      const eyebrow = document.createElement('p');
+      const eyebrow = document.createElement('h4');
       eyebrow.textContent = titleText;
       title.replaceWith(eyebrow)
     } else if (title.classList.contains('style-title--headline-1')) {
@@ -753,7 +753,7 @@ const createDefaultContent = (main, document) => {
     const para3 = document.createElement("p");
     para3.appendChild(strongTag);
     strongTag.appendChild(aTag);
-    button.replaceWith(aTag)
+    button.replaceWith(strongTag);
 
   });
   
@@ -1005,11 +1005,13 @@ columns.forEach((column)=>{
     para2.appendChild(pictureTag);
     const link = div.querySelector('.cmp-button')?.getAttribute('href');
     const linkLabel = div.querySelector('.cmp-button')?.textContent;
+	const strongTag = document.createElement('strong');
     const aTag = document.createElement('a');
     aTag.setAttribute('href', link);
     aTag.innerText = linkLabel;
+	strongTag.appendChild(aTag);
     const para3 = document.createElement('p');
-    para3.appendChild(aTag);
+    para3.appendChild(strongTag);
     if(image) {
       divArr.push(para2);
     }
@@ -1020,7 +1022,7 @@ columns.forEach((column)=>{
         titleStyle = 'Eyebrow Bold 2';
         const eyebrow = document.createElement('h4');
         eyebrow.textContent = titleText;
-                divArr.push(eyebrow);
+        divArr.push(eyebrow);
       } else if (title.classList.contains('style-title__text--eyebrow1-bold')) {
         titleStyle = 'Eyebrow Bold 1';
         const eyebrow = document.createElement('h4');
@@ -1176,7 +1178,7 @@ const createMultiContentGallery = (main, document) => {
       p1.textContent = "true";
       const p2 = document.createElement('p');
       p2.textContent = "true";  
-  mcgVideoBlockData.push(paraVideoPath, paraMobVideoPath, paraDeskImg, paraMobImg, p1, p2);
+	mcgVideoBlockData.push(paraVideoPath, paraMobVideoPath, paraDeskImg, paraMobImg, p1, p2);
     carouselVideoData.push(mcgVideoBlockData);
 		
     const link = e.querySelector('.cmp-button')?.getAttribute('href');
