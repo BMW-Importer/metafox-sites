@@ -22,4 +22,4 @@ jobs:
 
       - name: Upload files to S3
         run: |
-          aws s3 cp WDH_API/wdh_error.txt s3://githublogstos3//logs/ --recursive
+          aws s3 cp WDH_API/ s3://githublogstos3//logs/ --recursive
