@@ -263,6 +263,10 @@ button,input,optgroup,select,textarea{
   margin:0
 }
 
+.section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
+  width: auto;
+}
+
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
@@ -295,9 +299,6 @@ a.button.ghost-dark {
   width: 33%;
 }
 
-.section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
-  width: auto;
-}
 
 a.button.ghost-dark.button-fixed-width {
   width: auto;
@@ -517,9 +518,6 @@ main .section:first-child {
     width: 32%;
   }
 
-  .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
-    width: auto;
-  }
 }
 
 /* large-desktop */
@@ -538,9 +536,6 @@ main .section:first-child {
     width: 32%;
   }
 
-  .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
-    width: auto;
-  }
 }
 
 /* mobile */
