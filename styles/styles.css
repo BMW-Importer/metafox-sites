@@ -295,7 +295,7 @@ a.button.ghost-dark {
   width: 33%;
 }
 
-.section.alignment-center.columns-container .columns.left .button-container a .button .hyperlink{
+.section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink{
   width: auto;
 }
 
@@ -517,7 +517,7 @@ main .section:first-child {
     width: 32%;
   }
 
-  .section.alignment-center.columns-container .columns.left .button-container a .button .hyperlink{
+  .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink{
     width: auto;
   }
 }
@@ -538,7 +538,7 @@ main .section:first-child {
     width: 32%;
   }
 
-  .section.alignment-center.columns-container .columns.left .button-container a .button .hyperlink{
+  .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink{
     width: auto;
   }
 }
