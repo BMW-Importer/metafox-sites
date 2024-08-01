@@ -295,6 +295,10 @@ a.button.ghost-dark {
   width: 33%;
 }
 
+.section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
+  width: auto;
+}
+
 a.button.ghost-dark.button-fixed-width {
   width: auto;
   min-width: auto;
@@ -512,6 +516,10 @@ main .section:first-child {
   .section.alignment-center.columns-container .columns.left .button-container a {
     width: 32%;
   }
+
+  .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
+    width: auto;
+  }
 }
 
 /* large-desktop */
@@ -528,6 +536,10 @@ main .section:first-child {
 
   .section.alignment-center.columns-container .columns.left .button-container a {
     width: 32%;
+  }
+
+  .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
+    width: auto;
   }
 }
 
