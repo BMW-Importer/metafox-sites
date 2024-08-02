@@ -1,1 +1,53 @@
 /* css  */
+
+.stock-locator-model-overview-properties.block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.stock-locator-model-overview-properties .carousels-container {
+    width: 66.66667%;
+}
+
+.stock-locator-model-overview-properties .card-container-slide {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -ms-touch-action: pan-Y;
+    touch-action: pan-Y;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.locator-image-container {
+    width: 100%;
+    height: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    white-space: normal;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.locator-img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stock-locator-details-container {
+    width: 33.33333%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
