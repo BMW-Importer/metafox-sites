@@ -100,6 +100,7 @@
 
 .precon-wrapper .dot.active {
     background: #000000;
+    outline: 2px solid blue;
     height: .75rem;
     opacity: 1;
     width: .75rem;
