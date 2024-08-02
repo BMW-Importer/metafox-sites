@@ -100,7 +100,7 @@
 }
 
 .precon-wrapper .dot.active {
-    background: #000000;
+    background: #000;
     outline: 3px solid blue;
     height: .75rem;
     opacity: 1;
@@ -191,6 +191,7 @@ img.card-animation-left {
     margin: 0;
     transition: background-color 0.3s, border-color 0.3s;
 }
+
 .precon-wrapper .precon-content-data .precon-link a:focus {
     border: 2px solid blue; 
 }
