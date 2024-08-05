@@ -33,7 +33,7 @@
  .speed-dial.block {
     position: fixed;
     right: 3.5rem;
-    z-index: 6040;
+    z-index: 990;
     display: flex;
     flex-direction: column;
     bottom: 12.5rem;
@@ -42,7 +42,7 @@
  .speeddial-backtotop {
     bottom: 16.5rem;
     margin-left: auto;
-    z-index: 6030;
+    z-index: 980;
     transition: all .3s ease;
     display: flex;
     margin-bottom: 0;
@@ -54,10 +54,6 @@
     margin-bottom: -1rem;
     opacity: 0;
     pointer-events: none;
-}
-
-.speeddial-backtotop:focus-visible {
-    box-shadow: 0 0 0 .0625rem var(--background-color), 0 0 0 .3125rem var(--light-link-hover-color)
 }
 
  .speeddial-button::before {
@@ -206,7 +202,7 @@ div:has(> .chat)::before {
     cursor: pointer;
 }
 
-.speed-dial-item:hover {
+.speed-dial-item:hover, .speed-dial-item:focus {
     background-color: var(--bg-media-ghost-btn);
     border-radius: 0.188rem;
 }
@@ -236,7 +232,7 @@ div:has(> .chat)::before {
         bottom: 6rem;
         right: 1rem;
     }
-
+    
     .speed-dial.block {
         right: 1rem;
         bottom: 6rem;
@@ -255,6 +251,11 @@ div:has(> .chat)::before {
 
     .list-of-containers {
         width: 10.25rem;
+    }
+
+    .speeddial-button:focus,
+    .speeddial-backtotop:focus {
+        background-color: var(--background-color) !important;
     }
 }
 

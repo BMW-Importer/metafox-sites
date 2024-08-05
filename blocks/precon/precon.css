@@ -83,7 +83,7 @@
 }
 
 .precon-wrapper .dot {
-    background-color: #8e8e8e;
+    background: #8e8e8e;
     cursor: pointer;
     border: 0;
     height: .5rem;
@@ -154,7 +154,7 @@ img.card-animation-left {
 }
 
 .headerline-wrapper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     margin-top: .5rem;
     font-size: 1rem;
     font-weight: 300;
@@ -172,11 +172,16 @@ img.card-animation-left {
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
-    min-height: 3.25rem;
+    min-height: 2.75rem;
     padding: .25rem;
     text-align: center;
     text-decoration: none;
     margin: 0;
+    font-weight: 500;
+}
+
+.precon-wrapper .precon-content-data .precon-link a:hover {
+    background-color: #666;
 }
 
 .precon-wrapper-lft-area .carousel-btn-prev,
@@ -378,17 +383,6 @@ img.card-animation-left {
 }
 
 @media (width >= 768px) and (width < 1024px) {
-    .precon-wrapper .precon-content-data .pre-content-outer-wrapper {
-        padding-left: 16.667%;
-        padding-right: 16.667%;
-    }
-
-    .precon-wrapper .precon-wrapper-lft-area, .precon-wrapper .precon-wrapper-rth-area{
-        display: none;
-    }
-}
-
-@media (width >= 768px) and (width < 1280px) {
     .precon-wrapper .precon-image-container {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -401,6 +395,15 @@ img.card-animation-left {
 
     .section.precon-container {
         padding: 0;
+    }
+
+    .precon-wrapper .precon-content-data .pre-content-outer-wrapper {
+        padding-left: 16.667%;
+        padding-right: 16.667%;
+    }
+
+    .precon-wrapper .precon-wrapper-lft-area, .precon-wrapper .precon-wrapper-rth-area{
+        display: none;
     }
 
     .headerline-wrapper {
@@ -416,9 +419,78 @@ img.card-animation-left {
     .precon-wrapper .precon-content-data .precon-link a {
         margin: 0 auto;
         width: 50%;
+        font-size: 14px;
+        line-height: 22px;
     }
 
 }
+
+@media (width >= 1024px) and (width < 1280px){
+    .precon-wrapper .precon-image-container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }  
+
+    .precon-wrapper .precon-content-data .pre-content-outer-wrapper {
+        padding: 8.333%;
+        padding-top: 1.5rem;
+    }
+
+    .precon-title {
+        font-size: 1.4375rem;
+        line-height: 2.25rem;
+        text-align: left;
+    }
+
+    .precon-wrapper .precon-content-data .price-details-wrapper {
+        --grid-gutter: .75rem;
+
+        display: flex;
+        gap: calc(var(--grid-gutter)* 2);
+    }
+
+    .precon-wrapper .precon-content-data .price-details-wrapper .pre-price-details {
+        flex: 9;
+    }
+
+    .headerline-wrapper {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        text-align: left;
+    }
+
+    .precon-wrapper .precon-content-data .precon-link a {
+        margin: unset;
+        width: unset;
+    }
+
+    .price-details-inner-wrapper {
+        flex-direction: row;
+    }
+
+    .price-details-inner-wrapper:last-child {
+        margin-bottom: 0;
+    }
+
+    .price-details-inner-wrapper .swatches .options-count {
+        margin-right: 1.5rem;
+    }
+
+    .price-details-inner-wrapper .swatches .swatches-image {
+        border: .125rem solid #f2f2f2;
+        border-radius: 50%;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .precon-wrapper .precon-content-data .precon-link {
+        flex: 3;
+    }
+
+}
+
 
 @media (width >= 360px) and (width < 768px) {
     .section.precon-container {
@@ -438,6 +510,11 @@ img.card-animation-left {
 
     .precon-wrapper .precon-wrapper-lft-area, .precon-wrapper .precon-wrapper-rth-area{
         display: none;
+    }
+
+    .precon-wrapper .precon-content-data .precon-link a {
+        font-size: 14px;
+        line-height: 22px;
     }
 
 }
@@ -465,6 +542,12 @@ img.card-animation-left {
     .precon-title {
         font-size: 1.5625rem;
         line-height: 2.375rem;
+    }
+
+    .precon-wrapper .precon-content-data .precon-link a {
+        font-size: 16px;
+        line-height: 26px;
+        width: 188px;
     }
 
 }
@@ -497,5 +580,11 @@ img.card-animation-left {
     .precon .img-card img {
         margin-bottom: 1.25rem;
     }
+
+    .precon-wrapper .precon-content-data .precon-link a {
+        font-size: 15px;
+        line-height: 24px;
+    }
+   
 
 }
