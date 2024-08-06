@@ -1206,6 +1206,49 @@ li::marker {
         display: flex;
         flex-direction: column;
     }
+    .car-spec-details-container :hover {
+        box-shadow: rgba(0, 0, 0, 12%) 0 0.625rem 1.0625rem 0, rgba(0, 0, 0, 15%) 0 0.25rem 0.5rem 0;
+    }
+
+    .car-spec-details-container :hover >*{
+        box-shadow: none;
+    }
+    .car-spec-details-container .spec-details-text-container{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .spec-details-Icon{
+        cursor: pointer;
+        border-style: solid;
+        border-color: var(--light-grey-1);
+        width: 1.375rem;
+        border-width: 0.125rem;
+        margin: 0 0.625rem;
+        height: 1.375rem;
+        border-radius: 9999px;
+    }
+    .spec-details-Icon-Button::before{
+        overflow-wrap: normal;
+        font-size: 2.5rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "liga";
+        content: 'i';
+        color: var(--light-border-color);
+        direction: ltr;
+        display: block;
+        font-family: var(--icon-font-family);
+        opacity: var(--iconfont400-opacity);
+        font-style: normal;
+        text-rendering: optimizelegibility;
+        text-transform: none;
+        width: auto;
+        outline: transparent solid 0.0625rem;
+        white-space: nowrap;
+        line-height: 1.1875rem;
+        text-align: center;
+    }
 }
 
 /** ipad AIR **/

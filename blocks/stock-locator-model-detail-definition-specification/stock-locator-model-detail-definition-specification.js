@@ -457,6 +457,9 @@ function stockCar() {
     specDetailsTextContainer.classList.add('spec-details-text-container');
     const specDetailsIcon = document.createElement('div');
     specDetailsIcon.classList.add('spec-details-Icon');
+    const specDetailsIconButton = document.createElement('i');
+    specDetailsIconButton.classList.add('spec-details-Icon-Button', 'icon-info-i');
+    specDetailsIcon.append(specDetailsIconButton);
     const specDetailsText = document.createElement('span');
     specDetailsText.classList.add('spec-details-text');
     specDetailsText.textContent = 'Attachment for child seat i-Size passenger seat (S0478)';
