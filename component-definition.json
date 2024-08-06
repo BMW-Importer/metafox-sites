@@ -147,7 +147,8 @@
                 "template": {
                   "name": "All Models Section",
                   "model": "all-models-section",
-                  "filter": "all-models-section"
+                  "filter": "all-models-section",
+                  "style": "allmodel-section"
                 }
               }
             }

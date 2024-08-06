@@ -556,6 +556,12 @@
         "name": "analytics-label",
         "value": "",
         "label": "Section Label"
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "value": "allmodel-section",
+        "hidden":true
       }
     ]
   },
