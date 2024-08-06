@@ -83,11 +83,12 @@
 }
 
 .precon-wrapper .dot {
-    background-color: #8e8e8e;
+    background-color: rgb(38 38 38);
     outline: none;
     cursor: pointer;
     border: 0;
     height: .5rem;
+    opacity: .2;
     display: inline-block;
     margin: 0 .125rem 1.25rem;
     padding: 0;
