@@ -22,7 +22,85 @@ function dotClickHandler() {
   const index = Number(this.classList[1].split('-')[1]);
 }
 
-function addButtons(preconLeftWrapper, preconRightWrapper) {
+function updateCarousel(currentIndex) {
+  const content = document.querySelector('.card-container-slide');
+  if (!content) return;
+  const imageContainer = content.querySelector('.locator-image-container');
+  const itemWidth = imageContainer.children[currentIndex]?.offsetWidth;
+
+  const viewport = window.innerWidth;
+  let multiplier = 0.60;
+  if (viewport < 768) {
+    multiplier = 0.3;
+  } else if (viewport >= 768 && viewport < 1024) {
+    multiplier = 0.2;
+  } else if (viewport >= 1024 && viewport < 1280) {
+    multiplier = 0.5;
+  }
+
+  const defaultOffset = itemWidth * multiplier;
+  const offset = defaultOffset - (currentIndex * itemWidth);
+  imageContainer.style.transform = `translate3d(${offset}px, 0px, 0px)`;
+  imageContainer.style.transitionDuration = '750ms';
+  imageContainer.style.transitionDelay = '100ms';
+
+  const cards = imageContainer.children;
+  // const preconWrapper = document.querySelectorAll('.precon-content-data .pre-content-outer-wrapper');
+  // const dots = content.querySelectorAll('.dot');
+  const itemsToShow = 1;
+
+  // eslint-disable-next-line no-plusplus
+  // for (let i = 0; i < cards.length; i++) {
+  //   if (i === currentIndex) {
+  //     cards[i].classList.remove('not-active', 'blur-inactive');
+  //     cards[i].classList.add('active');
+  //     preconWrapper[i].classList.remove('in-active');
+  //     dots[i].classList.add('active');
+  //   } else {
+  //     cards[i].classList.add('not-active');
+  //     cards[i].classList.remove('active');
+  //     preconWrapper[i].classList.add('in-active');
+  //     dots[i].classList.remove('active');
+  //   }
+  // }
+
+  const prevButton = document.querySelector('.slide-wrapper-lft-area');
+  const nextButton = document.querySelector('.slide-wrapper-rth-area');
+
+  if (!prevButton || !nextButton) return;
+
+  if (currentIndex === 0) {
+    prevButton.classList.add('hide-area');
+  } else {
+    prevButton.classList.remove('hide-area');
+  }
+  if (currentIndex >= cards.length - itemsToShow) {
+    nextButton.classList.add('hide-area');
+  } else {
+    nextButton.classList.remove('hide-area');
+  }
+}
+
+function buttonClick(direction) {
+  const mainContent = document.querySelector('.card-container-slide');
+  const content = mainContent.querySelector('.locator-image-container');
+  const index = Array.from(content.querySelectorAll('.locator-img-content')).findIndex((each) => each.classList.contains('active'));
+  if (direction === 'left') updateCarousel(index - 1);
+  else updateCarousel(index + 1);
+}
+
+function addButtons(slideLeftWrapper, slideRightWrapper) {
+  // create buttons
+  const prevButton = document.createElement('button');
+  prevButton.classList.add('carousel-btn-prev');
+  const nextButton = document.createElement('button');
+  nextButton.classList.add('carousel-btn-next');
+
+  slideLeftWrapper.addEventListener('click', () => buttonClick('left'));
+  slideRightWrapper.addEventListener('click', () => buttonClick('right'));
+  // add buttons to wrappers
+  slideLeftWrapper.append(prevButton);
+  slideRightWrapper.append(nextButton);
 }
 
 function generateLocatorDetails(stockLocatorDeatilsContainer) {
@@ -171,9 +249,6 @@ export default function decorate(block) {
 
   const carouselsContainer = document.createElement('div');
   carouselsContainer.classList.add('carousels-container');
-
-  const imageDomContainer = document.createElement('div');
-  imageDomContainer.classList.add('locator-image-container');
 
   const slideLeftWrapper = document.createElement('div');
   slideLeftWrapper.classList.add('slide-wrapper-lft-area');
