@@ -1164,6 +1164,48 @@ li::marker {
         margin-bottom: 1.5rem;
         text-align: center;
     }
+    .engine-details-elements{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .engine-details-elements .engine-elements-Container{
+        width: 25%;
+        max-width: 1200px;
+    }
+    .elements-design-container{
+        display: flex;
+        
+    }
+    .elements-design-container .design-elements{
+        width: 50%;
+    }
+    .design-elements-wrapper{
+        display: flex;
+    }
+    .elements-container{
+        width: 50%;
+        padding-right: 0.9375rem;
+        margin-bottom: 1.875rem;
+    }
+    .design-elements .design-elements-title{
+        margin-bottom: 2.8125rem;
+    }
+
+    .spec-details-container-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .car-spec-details-container{
+        width: 25%;
+        padding-bottom: 60px;
+        padding-top: 15px;
+        padding-right: 10px;
+        vertical-align: top;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /** ipad AIR **/

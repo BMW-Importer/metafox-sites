@@ -343,6 +343,132 @@ function cardTiles(getStockLocatorVehicles) {
   popupButton();
 }
 
+function stockCar() {
+  const stockDetailsWrapper = document.createElement('div');
+  stockDetailsWrapper.classList.add('stock-details-wrapper');
+  document.querySelector('.stock-locator-model-overview-properties-wrapper').appendChild(stockDetailsWrapper);
+
+  const engineDetailsWrapper = document.createElement('div');
+  engineDetailsWrapper.classList.add('engine-details-wrapper');
+
+  const engineTitleText = document.createElement('h2');
+  engineTitleText.classList.add('engine-title-text');
+  engineTitleText.textContent = 'Engin';
+
+  const engineDetailsContainer = document.createElement('div');
+  engineDetailsContainer.classList.add('engine-details-container');
+
+  const engineDetailsEle = document.createElement('div');
+  engineDetailsEle.classList.add('engine-details-elements');
+
+  for (let i = 0; i <= 4; i += 1) {
+    const engineEleContainer = document.createElement('div');
+    engineEleContainer.classList.add('engine-elements-Container');
+    const engineEleTitle = document.createElement('div');
+    engineEleTitle.classList.add('engine-elements-title');
+    engineEleTitle.textContent = 'Engine power';
+    const engineEleText = document.createElement('div');
+    engineEleText.classList.add('engine-elements-text');
+    engineEleText.textContent = '100 kW 136 hp';
+
+    engineEleContainer.append(engineEleTitle, engineEleText);
+    engineDetailsEle.append(engineEleContainer);
+  }
+  // const speedUpContainer = document.createElement('div');
+  // speedUpContainer.classList.add('speedUp-container');
+  // const speedUpTitle = document.createElement('div');
+  // speedUpTitle.classList.add('speedUp-title');
+  // const speedUpText = document.createElement('div');
+  // speedUpText.classList.add('speedUp-text');
+
+  // speedUpContainer.append(speedUpTitle, speedUpText);
+
+  const designDetailsWrapper = document.createElement('div');
+  designDetailsWrapper.classList.add('design-details-wrapper');
+
+  const ElementsDesignContainer = document.createElement('div');
+  ElementsDesignContainer.classList.add('elements-design-container');
+
+  for (let j = 0; j < 2; j += 1) {
+    const designEle = document.createElement('div');
+    designEle.classList.add('design-elements');
+
+    const designElementsTitle = document.createElement('h2');
+    designElementsTitle.classList.add('design-elements-title');
+    designElementsTitle.textContent = 'Exterior.';
+
+    const designEleWrapper = document.createElement('div');
+    designEleWrapper.classList.add('design-elements-wrapper');
+
+    for (let i = 0; i < 2; i += 1) {
+      const elementsContainer = document.createElement('div');
+      elementsContainer.classList.add('elements-container');
+
+      const elementsImageContainer = document.createElement('div');
+      elementsImageContainer.classList.add('elements-image-container');
+
+      const img = document.createElement('img');
+      img.classList.add('elements-image');
+      img.src = 'https://picsum.photos/200/100';
+      elementsImageContainer.appendChild(img);
+
+      const elementsTextContainer = document.createElement('div');
+      elementsTextContainer.classList.add('elements-text-container');
+      const elementsTextTitle = document.createElement('span');
+      elementsTextTitle.classList.add('elements-text-title');
+      elementsTextTitle.textContent = ' Felna ';
+      const elementsTextDec = document.createElement('h4');
+      elementsTextDec.classList.add('elements-text-dec');
+      elementsTextDec.textContent = '  Alu. felne M V-Spoke style 18" 554 M  ';
+
+      elementsTextContainer.append(elementsTextTitle, elementsTextDec);
+      elementsContainer.append(elementsImageContainer, elementsTextContainer);
+
+      designEleWrapper.appendChild(elementsContainer);
+    }
+    designEle.append(designElementsTitle, designEleWrapper);
+    ElementsDesignContainer.append(designEle);
+  }
+  engineDetailsWrapper.append(engineTitleText, engineDetailsEle);
+
+  const carSpecDetailsWrapper = document.createElement('div');
+  carSpecDetailsWrapper.classList.add('car-spec-details-wrapper');
+
+  const carSpecDetailsTitle = document.createElement('h2');
+  carSpecDetailsTitle.classList.add('car-spec-details-title');
+  carSpecDetailsTitle.textContent = 'Options.';
+
+  const specDetailsContainerWrapper = document.createElement('div');
+  specDetailsContainerWrapper.classList.add('spec-details-container-wrapper');
+
+  for (let i = 0; i <= 12; i += 1) {
+    const carSpecDetailsContainer = document.createElement('div');
+    carSpecDetailsContainer.classList.add('car-spec-details-container');
+
+    const specDetailsImg = document.createElement('div');
+    specDetailsImg.classList.add('spec-details-img');
+
+    const specImg = document.createElement('img');
+    specImg.classList.add('spec-img');
+    specImg.src = 'https://picsum.photos/200/100';
+    specDetailsImg.append(specImg);
+
+    const specDetailsTextContainer = document.createElement('div');
+    specDetailsTextContainer.classList.add('spec-details-text-container');
+    const specDetailsIcon = document.createElement('div');
+    specDetailsIcon.classList.add('spec-details-Icon');
+    const specDetailsText = document.createElement('span');
+    specDetailsText.classList.add('spec-details-text');
+    specDetailsText.textContent = 'Attachment for child seat i-Size passenger seat (S0478)';
+    specDetailsTextContainer.append(specDetailsIcon, specDetailsText);
+
+    carSpecDetailsContainer.append(specImg, specDetailsTextContainer);
+    specDetailsContainerWrapper.append(carSpecDetailsContainer);
+  }
+  carSpecDetailsWrapper.append(carSpecDetailsTitle, specDetailsContainerWrapper);
+  stockDetailsWrapper.append(engineDetailsWrapper, ElementsDesignContainer, carSpecDetailsWrapper);
+}
+
 function pagination(meta, getStockLocatorVehicles) {
   const pageOffset = meta.offset;
   const pageLimit = meta.limit;
@@ -1230,4 +1356,5 @@ export default async function decorate(block) {
   handleToggleFilterDropDown();
   handleMobileSeriesFilter();
   handleRelevanceSingleSelect();
+  stockCar();
 }
