@@ -2454,7 +2454,7 @@
         "label": "Collapse Accordion Icon",
         "name": "accordionItemIcon",
         "valueType": "boolean",
-        "value": false,
+        "value": true,
         "description": "If enabled, the Accordion Item will be collapsed by default"
       }
     ]
