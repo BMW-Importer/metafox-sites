@@ -530,10 +530,6 @@ img.card-animation-left {
         z-index: 1;
     }
 
-    .precon .img-card img {
-        margin-bottom: 1.5rem;
-    }
-
     .headerline-wrapper {
         font-size: 1.1875rem;
         line-height: 1.875rem;
@@ -547,7 +543,7 @@ img.card-animation-left {
     .precon-wrapper .precon-content-data .precon-link a {
         font-size: 16px;
         line-height: 26px;
-        width: 188px;
+        width: 180px;
     }
 
 }
@@ -575,10 +571,6 @@ img.card-animation-left {
     .precon-title {
         font-size: 1.4375rem;
         line-height: 2.25rem;
-    }
-
-    .precon .img-card img {
-        margin-bottom: 1.25rem;
     }
 
     .precon-wrapper .precon-content-data .precon-link a {
