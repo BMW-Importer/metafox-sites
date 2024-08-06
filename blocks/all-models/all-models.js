@@ -584,12 +584,13 @@ function filterBtnRowClickEvent(event) {
 }
 
 function applyStickyNav() {
-  const nav = document.querySelector('.content-navigation');
-  const sticky = nav.offsetTop;
-  if (window.pageYOffset < sticky) {
-    nav.classList.add('sticky');
+  const nav = document.querySelector('.navbar-wrap');
+  const container = document.querySelector('.content-navigation');
+  const top = nav.offsetTop;
+  if (window.scrollY > top) {
+    container.classList.add('sticky');
   } else {
-    nav.classList.remove('sticky');
+    container.classList.remove('sticky');
   }
 }
 
