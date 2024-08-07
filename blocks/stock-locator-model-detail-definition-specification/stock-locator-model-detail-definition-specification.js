@@ -439,6 +439,69 @@ function stockCar() {
   }
   engineDetailsWrapper.append(engineTitleText, engineDetailsEle);
 
+  const carSpecPackagesWrapper = document.createElement('div');
+  carSpecPackagesWrapper.classList.add('car-spec-packages-wrapper');
+
+  const carSpecPackagesTitle = document.createElement('h2');
+  carSpecPackagesTitle.classList.add('car-spec-packages-title');
+  carSpecPackagesTitle.textContent = 'Packages.';
+
+  const carSpecPackagesContainer = document.createElement('div');
+  carSpecPackagesContainer.classList.add('car-spec-packages-container');
+
+  const packagesAccordionContainer = document.createElement('div');
+  packagesAccordionContainer.classList.add('packages-accordion-container');
+  const packagesAccordionHeader = document.createElement('div');
+  packagesAccordionHeader.classList.add('packages-accordion-header');
+  const accordionToggleIcon = document.createElement('i');
+  accordionToggleIcon.classList.add('accordion-toggle-icon');
+
+  const accordionToggleText = document.createElement('span');
+  accordionToggleText.classList.add('accordion-toggle-text');
+  accordionToggleText.textContent = '"M Sport" package';
+  packagesAccordionHeader.append(accordionToggleIcon, accordionToggleText);
+
+  const packagesAccordionContentWrapper = document.createElement('div');
+  packagesAccordionContentWrapper.classList.add('packages-accordion-content-wrapper');
+
+  const packagesAccordionContentImg = document.createElement('div');
+  packagesAccordionContentImg.classList.add('packages-accordion-content-img');
+
+  const accordionContentImg = document.createElement('img');
+  accordionContentImg.classList.add('accordion-content-img');
+  accordionContentImg.src = 'https://picsum.photos/200/100';
+  packagesAccordionContentImg.append(accordionContentImg);
+
+  const packagesAccordionContentText = document.createElement('div');
+  packagesAccordionContentText.classList.add('packages-accordion-content-text');
+
+  const accordionContentTextTitle = document.createElement('p');
+  accordionContentTextTitle.classList.add('accordion-content-text-title');
+  accordionContentTextTitle.textContent = '"M Sport" package';
+
+  const accordionContentText = document.createElement('p');
+  accordionContentText.classList.add('accordion-content-text');
+  accordionContentText.textContent = 'package contents';
+
+  const accordionContentList = document.createElement('ul');
+  for (let i = 0; i < 10; i += 1) {
+    const accordionContentListEle = document.createElement('li');
+    accordionContentListEle.textContent = '+ Stof "Trigon" / Sensatec | Black';
+    accordionContentList.append(accordionContentListEle);
+  }
+  packagesAccordionContentText.append(
+    accordionContentTextTitle,
+    accordionContentText,
+    accordionContentList,
+  );
+
+  packagesAccordionContentWrapper.append(packagesAccordionContentImg, packagesAccordionContentText);
+  packagesAccordionContainer.append(packagesAccordionHeader, packagesAccordionContentWrapper);
+  carSpecPackagesContainer.append(packagesAccordionContainer);
+
+  carSpecPackagesWrapper.append(carSpecPackagesTitle, carSpecPackagesContainer);
+
+  // Options---------->
   const carSpecDetailsWrapper = document.createElement('div');
   carSpecDetailsWrapper.classList.add('car-spec-details-wrapper');
 
@@ -471,13 +534,52 @@ function stockCar() {
     const specDetailsText = document.createElement('span');
     specDetailsText.classList.add('spec-details-text');
     specDetailsText.textContent = 'Attachment for child seat i-Size passenger seat (S0478)';
-    specDetailsTextContainer.append(specDetailsIcon, specDetailsText);
+
+    const specPopoverWrapper = document.createElement('span');
+    specPopoverWrapper.classList.add('spec-popover-wrapper');
+
+    const specPopoverContainer = document.createElement('div');
+    specPopoverContainer.classList.add('spec-popover-container');
+
+    const specPopoverTitle = document.createElement('div');
+    specPopoverTitle.classList.add('spec-popover-title');
+    specPopoverTitle.textContent = 'Attachment for child seat i-Size passenger seat (S0478)';
+
+    const specPopoverImg = document.createElement('img');
+    specPopoverImg.classList.add('spec-popover-img');
+    specPopoverImg.src = 'https://picsum.photos/200/100';
+
+    const specPopoverDec = document.createElement('div');
+    specPopoverDec.classList.add('spec-popover-dec');
+    specPopoverDec.textContent = 'Connection for a child seat i-Size seat in the passenger seat';
+
+    const specPopoverCloseButton = document.createElement('div');
+    specPopoverCloseButton.classList.add('spec-popover-close-button');
+    specPopoverCloseButton.textContent = 'X';
+
+    specPopoverContainer.append(
+      specPopoverTitle,
+      specPopoverImg,
+      specPopoverDec,
+      specPopoverCloseButton,
+    );
+
+    specPopoverWrapper.append(specPopoverContainer);
+
+    specDetailsTextContainer.append(specDetailsIcon, specDetailsText, specPopoverWrapper);
 
     carSpecDetailsContainer.append(specImg, specDetailsTextContainer);
     specDetailsContainerWrapper.append(carSpecDetailsContainer);
   }
   carSpecDetailsWrapper.append(carSpecDetailsTitle, specDetailsContainerWrapper);
-  stockDetailsWrapper.append(engineDetailsWrapper, ElementsDesignContainer, carSpecDetailsWrapper);
+  stockDetailsWrapper.append(
+    engineDetailsWrapper,
+    ElementsDesignContainer,
+    carSpecPackagesWrapper,
+    carSpecDetailsWrapper,
+  );
+  // eslint-disable-next-line no-use-before-define
+  createPopover();
 }
 
 function pagination(meta, getStockLocatorVehicles) {
@@ -622,6 +724,47 @@ async function constructShowMoreUrl(
     const showMoreButton = document.querySelector('.show-more-button');
     showMoreButton.classList.add('hidden');
   }
+}
+
+function toggleButtonFunction() {
+  const toggleButton = document.querySelectorAll('.accordion-toggle-icon');
+  const togglewindow = document.querySelectorAll('.packages-accordion-content-wrapper');
+  toggleButton.addEventListener('click', () => {
+    if (togglewindow.style.display === 'none') {
+      togglewindow.style.display = 'block';
+      toggleButton.classList.add('up-arrow');
+      toggleButton.classList.remove('down-arrow');
+    } else {
+      togglewindow.style.height = 'none';
+      toggleButton.classList.add('down-arrow');
+      toggleButton.classList.remove('up-arrow');
+    }
+  });
+}
+
+function createPopover() {
+  const infoButtons = document.querySelectorAll('.spec-details-Icon-Button');
+  const popupTexts = document.querySelectorAll('.spec-popover-container');
+  const closeButtons = document.querySelectorAll('spec-popover-close-button');
+
+  infoButtons.forEach((infoButton, index) => {
+    const popupText = popupTexts[index];
+    const closeButton = closeButtons[index];
+    infoButton.addEventListener('click', () => {
+      popupText.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+      popupText.style.display = 'none';
+    });
+
+    // Optional: Click outside to close the popup
+    document.addEventListener('click', (event) => {
+      if (!popupText.contains(event.target) && !infoButton.contains(event.target)) {
+        popupText.style.display = 'none';
+      }
+    });
+  });
 }
 
 function popupButton() {
