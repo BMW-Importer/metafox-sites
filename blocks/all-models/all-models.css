@@ -118,6 +118,8 @@ main .section.allmodel-section {
     margin-bottom: 1.25rem;
     margin-top: -1.25rem;
     font-size: .875rem;
+    top: -0.625rem;
+    position: relative;
 }
 
 .show-more-btn:focus {
@@ -199,6 +201,9 @@ main .section.allmodel-section {
     transition: none;
     width: calc(100% + 1rem);
     z-index: 10;
+    font-size: 0.875rem;
+    line-height: 1.0063rem;
+    font-weight: 500;
 }
 
 
@@ -417,7 +422,7 @@ main .section.allmodel-section {
 .content-navigation-active .nav-list-button-active {
     border-left: .25rem solid var(--medium-text-color);
     outline: none;
-    padding: .75rem 1.25rem;
+    padding: .75rem 1.25rem !important;
 }
 
 .nav-list-button {
@@ -440,9 +445,10 @@ main .section.allmodel-section {
     width: 100%;
     background-color: transparent;
     color: var(--light-border-color);
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.0063rem;
+
 }
 
 .content-navigation-active .nav-list-button {
@@ -729,11 +735,15 @@ main .section.allmodel-section {
     font-family: var(--fixed-font-family);
 }
 
+.all-model-card-container:not(:first-child) .all-model-detail-model-fuel {
+    display: none;
+}
+
 .all-model-detail-model-price {
     color: var(--light-text-color);
     font-size: 0.875rem;
     font-weight: 700;
-    font-weight: 1.375rem;
+    line-height: 1.375rem;
     margin: 0;
 }
 
@@ -824,6 +834,10 @@ main .section.allmodel-section {
     position: relative;
     transition: opacity .2s ease-in;
     width: 100%;
+}
+
+.all-model-card-container:not(:first-child) .all-model-card-img-container {
+    padding: 33.3% 0;
 }
 
 .all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon{
@@ -942,6 +956,7 @@ main .section.allmodel-section {
 
 .all-model-card-img-container:not(.first-model-child) .all-model-picture-tag img {
     top: 0;
+    transform: scale(1.4);
 }
 
 /* link list css */
@@ -1063,6 +1078,10 @@ main .section.allmodel-section {
     font-family: var(--fixed-font-family);
 }
 
+.all-model-card-container:not(:first-child) .all-model-detail__new-model-label {
+    margin: 0;
+}
+
 .all-model-detail__subbrands {
     margin-bottom: .25rem;
     margin-right: .25rem;
@@ -1141,6 +1160,12 @@ main .section.allmodel-section {
     box-sizing: border-box;
 }
 
+.all-model-detail__showmore-btn:hover {
+    box-shadow: inset 0 0 0 2px var(--light-text-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
 .all-model-detail__container-links-configure {
     background-color: var(--bg-media-ghost-btn);
     padding: 1.5rem;
@@ -1172,6 +1197,13 @@ main .section.allmodel-section {
     box-sizing: border-box;
 }
 
+.all-model-detail__configure-btn:hover {
+    background-color: var(--bg-media-btn-hover);
+    box-shadow: none;
+    color: var(--light-grey);
+    text-decoration: none;
+}
+
 .all-model-detail__container-links-stock {
     background-color: var(--bg-media-ghost-btn);
     padding: 1.5rem;
@@ -1198,9 +1230,15 @@ main .section.allmodel-section {
     box-sizing: border-box;
 }
 
-.all-model-detail__close-btn {
-    background-color: initial;
+.all-model-detail__instock-btn:hover {
+    box-shadow: inset 0 0 0 2px var(--light-text-color);
     color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.all-model-detail__close-btn {
+    background-color: initial !important;
+    color: var(--light-text-color) !important;
     height: 3rem;
     padding: 0;
     position: absolute;
@@ -1238,6 +1276,11 @@ main .section.allmodel-section {
 @media (width >= 768px) {
     .section.all-models-container {
         margin-top: 2rem !important;
+    }
+
+    .filter-title {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
     }
     
     .content-nav-selected-value {
@@ -1310,6 +1353,17 @@ main .section.allmodel-section {
         mask: linear-gradient(90deg, var(--black-shade) 0, var(--black-shade) 2.1875rem, var(--background-color) 6.6875rem);
     }
 
+    .all-model-card-btn {
+        height: calc(100% - 4rem);
+        width: calc(100% + 1rem);        
+        inset: 4.5rem -.5rem -.5rem; 
+    }
+
+    .all-model-card-container {
+        margin: -4rem 0 .5rem;
+        padding-top: 5rem;
+    }
+
     .content-navigation.arrow-right-active .navbar-wrap {
         mask: linear-gradient(270deg, var(--black-shade) 0, var(--black-shade) 2.1875rem, var(--background-color) 6.6875rem);
     }
@@ -1380,6 +1434,18 @@ main .section.allmodel-section {
         padding: 24.3% 0;
     }
 
+    .all-model-card-img-container.first-model-child {
+        padding: 24.3% 0;
+    }
+
+    .all-model-card-container:not(:first-child) .all-model-card-img-container {
+        padding: 24.3% 0;
+    }
+
+    .all-model-card-container:not(:first-child) .all-model-detail-model-fuel {
+        display: block;
+    }
+
     .all-model-card-container .all-model-card__subbrands {
         height: 10.82%;
         display: flex !important;
@@ -1396,6 +1462,7 @@ main .section.allmodel-section {
     .all-model-picture-tag img,
     .all-model-card-img-container:not(.first-model-child) .all-model-picture-tag img {
         top: -23.9%;
+        transform: none;
     }
 
     .all-model-card-img-container .all-model-card__fuel-type-icon,
@@ -1474,6 +1541,10 @@ main .section.allmodel-section {
 }
 
 @media (width >= 1024px) {
+    main .section.allmodel-section {
+        padding: 0 3rem;
+    }
+
     .section.all-models-container {
         margin-top: 4rem !important;
         margin-left: auto !important;
@@ -1486,6 +1557,10 @@ main .section.allmodel-section {
         max-width: 54rem;
         min-width: 39.2727rem;
         width: 50%
+    }
+
+    .filter-title {
+        margin: 1.5rem 0;
     }
 
     .all-model-group-title {
@@ -1501,7 +1576,15 @@ main .section.allmodel-section {
     }
 
     .all-model-card-img-container {
-        padding: 23.9% 0;
+        padding: 23.9% 0 !important;
+    }
+
+    .all-model-card-btn {
+        height: calc(100% - 4.26rem);
+    }
+
+    .all-model-detail-model-name {
+        padding: .25rem 0 !important;
     }
 
     .all-model-card-container .all-model-card__subbrands {
@@ -1536,6 +1619,8 @@ main .section.allmodel-section {
     .all-model-detail {
         grid-column: span 4;
         padding: 0 0 3rem;
+        width: 100vw;
+        margin-left: -3rem;
     }
 
     .all-model-detail__container-img-wrap {
@@ -1551,15 +1636,20 @@ main .section.allmodel-section {
         height: auto;
     }
 
+    .all-model-detail__container {
+        padding: 0 3rem;
+    }
+
     .all-model-detail__container-links {
         border-color: var(--bg-media-ghost-btn);
         border-style: solid;
         border-width: 0 1.5rem;
         margin-left: -3rem;
-        width: calc(100% + 6rem);
+        width: calc(100% + 3rem);
         margin-top: calc(-18.0645rem + 16.1290%);
         grid-template-columns: 1fr 1fr 1fr;
         min-height: 14rem;
+        grid-column-gap: 4px;
     }
 
     .section.all-models-container .link-list-wrapper .link-list-detail {
@@ -1640,6 +1730,14 @@ main .section.allmodel-section {
 }
 
 @media (width >= 1280px) {
+    main .section.allmodel-section {
+        padding: 0 2.25rem;
+    }
+
+    main .section.allmodel-section > * {
+        padding: 0 0.75rem;
+    }
+
     .all-model-group-title {
         font-size: 1.4375rem;
         line-height: 2.25rem;
@@ -1647,12 +1745,12 @@ main .section.allmodel-section {
 
     .all-model-detail-model-name {        
         font-size: 0.9375rem;
-        font-weight: 1.5rem;
+        line-height: 1.5rem;
     }
 
     .all-model-detail-model-price {        
         font-size: 0.9375rem;        
-        font-weight: 1.5rem;
+        line-height: 1.5rem;
     }
 
     .all-model-detail__model-name {
@@ -1667,6 +1765,11 @@ main .section.allmodel-section {
     .all-model-detail__showmore-btn {
         font-size: 0.9375rem;
         line-height: 1.5rem;
+    }
+
+    .all-model-detail {
+        width: auto;
+        margin-left: unset;
     }
 
     .all-model-detail__configure-btn {
@@ -1688,17 +1791,17 @@ main .section.allmodel-section {
 
     .all-model-detail-model-name {        
         font-size: 1rem;
-        font-weight: 1.625rem;
+        line-height: 1.625rem;
     }
 
     .all-model-detail-model-price {        
         font-size: 1rem;        
-        font-weight: 1.625rem;
+        line-height: 1.625rem;
     }
 
     .all-model-detail__model-name {
-        font-size: 22px;        
-        line-height: 34px;
+        font-size: 1.375rem;        
+        line-height: 2.125rem;
     }
 
     .all-model-detail__price {

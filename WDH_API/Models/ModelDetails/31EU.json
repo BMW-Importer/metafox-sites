@@ -13,12 +13,12 @@
     "series": [
       "X5"
     ],
-    "seriesDescription": "BMW X5",
+    "seriesDescription": "BMW X5 - M verzije",
     "seriesDescriptions": [
-      "BMW X5"
+      "BMW X5 - M verzije"
     ],
     "hybridCode": "NOHY",
-    "fromPrice": 126900,
+    "fromPrice": 128473,
     "acceleration": "4.3",
     "trunkCapacity": 650,
     "seats": 5,
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-06",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
