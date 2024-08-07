@@ -598,6 +598,7 @@ async function handleCheckBoxSelection() {
 }
 
 async function updateSelectedValues(newValues) {
+  const viewportwidth = window.innerWidth;
   const mergedValues = { ...newValues };
   const existingSelectedValues = JSON.parse(document.querySelector('body').getAttribute('data-selected-values')) || {};
   // Merge existing values with new values
@@ -611,7 +612,10 @@ async function updateSelectedValues(newValues) {
     }
   }
   const selectedList = document.querySelector('.series-selected-list');
-  selectedList.innerHTML = '';
+
+  if (viewportwidth > 1024) {
+    selectedList.innerHTML = '';
+  }
   let hasSelectedValues = false;
 
   // eslint-disable-next-line no-restricted-syntax, no-unused-vars
@@ -640,8 +644,7 @@ async function updateSelectedValues(newValues) {
   const viewport = window.innerWidth;
   if (viewport <= 768 && hasSelectedValues && !existingResetButton) {
     // eslint-disable-next-line no-use-before-define, no-undef
-    const resetFilterElement = createResetFilterButton(mergedValues);
-    document.querySelector('.stock-locator-model-detail-definition-specification.block').append(resetFilterElement);
+    // const resetFilterElement = createResetFilterButton(mergedValues);
   } else if (viewport > 768 && !document.querySelector('.reset-filter') && hasSelectedValues) {
     const resetFilterElement = document.createElement('div');
     resetFilterElement.classList.add('reset-filter');
@@ -663,71 +666,60 @@ async function updateSelectedValues(newValues) {
 async function handleMobileSeriesFilter() {
   const dropdowns = document.querySelectorAll('.filter-list');
   const selectedValue = {};
-
   dropdowns.forEach((dropdown) => {
     const filterLabelHeading = dropdown.previousElementSibling;
     const headingText = filterLabelHeading.textContent;
     const filterItems = dropdown.querySelectorAll('.filter-item');
-    const allItem = Array.from(filterItems).find((item) => item.children[0].id === 'all');
 
     filterItems.forEach((item) => {
       const checkbox = item.children[0];
-      // Initialize 'All' option
-      if (checkbox.id === 'all') {
-        checkbox.checked = true;
-        item.classList.add('selected-filter');
-      }
+      const label = item.querySelector('label');
 
-      item.addEventListener('click', (event) => {
-        if (event.target.tagName.toLowerCase() === 'input') {
-          return;
-        }
-        // Toggle checkbox state and selected class
-        checkbox.checked = !checkbox.checked;
-        item.classList.toggle('selected-filter');
-
-        if (checkbox.checked) {
-          if (!selectedValue[headingText]) {
-            selectedValue[headingText] = [];
+      // Add event listener for the checkbox and label
+      [item, label].forEach((element) => {
+        element.addEventListener('click', (event) => {
+          event.stopPropagation();
+          if (event.target === label || event.target === checkbox) {
+            checkbox.checked = !checkbox.checked;
           }
-          if (!selectedValue[headingText].includes(checkbox.id)) {
-            selectedValue[headingText].push(checkbox.id);
-          }
-        } else {
-          const index = selectedValue[headingText].indexOf(checkbox.id);
-          if (index !== -1) {
-            selectedValue[headingText].splice(index, 1);
-          }
-        }
-        // Handle 'All' option logic
-        if (item === allItem) {
-          filterItems.forEach((otherItem) => {
-            if (otherItem !== allItem) {
-              otherItem.classList.remove('selected-filter');
-              otherItem.children[0].checked = false;
+          item.classList.toggle('selected-filter', checkbox.checked);
+          if (checkbox.checked) {
+            if (!filterLabelHeading.classList.contains('is-active')) {
+              filterLabelHeading.classList.add('is-active');
             }
-          });
-          selectedValue[headingText] = ['All'];
-        } else {
-          if (selectedValue[headingText].includes('All')) {
-            const index = selectedValue[headingText].indexOf('All');
-            selectedValue[headingText].splice(index, 1);
+            if (!selectedValue[headingText]) {
+              selectedValue[headingText] = [];
+            }
+            if (!selectedValue[headingText].includes(checkbox.id)) {
+              selectedValue[headingText].push(checkbox.id);
+            }
+          } else {
+            const index = selectedValue[headingText]?.indexOf(checkbox.id);
+            if (index !== -1) {
+              selectedValue[headingText]?.splice(index, 1);
+            }
+            // Remove is-active class if no checkbox is selected for this heading
+            if (selectedValue[headingText]?.length === 0) {
+              filterLabelHeading.classList.remove('is-active');
+            }
           }
-          allItem.classList.remove('selected-filter');
-          allItem.children[0].checked = false;
-        }
-
-        // eslint-disable-next-line max-len, no-shadow
-        const anyChecked = Array.from(filterItems).some((item) => item !== allItem && item.children[0].checked);
-        if (anyChecked) {
-          allItem.classList.add('all-disabled');
-        } else {
-          allItem.classList.remove('all-disabled');
-        }
-        updateSelectedValues(selectedValue);
-        // eslint-disable-next-line no-use-before-define
-        vehicleURL = constructVehicleUrl(selectedValue);
-        showResulsHandler(vehicleURL);
+          // Debounce the API call
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(async () => {
+            // update the filter DOM value after selection
+            // update the Vehicle DOM after selection
+            // eslint-disable-next-line no-use-before-define
+            updateSelectedValues(selectedValue);
+            // eslint-disable-next-line no-use-before-define
+            vehicleURL = constructVehicleUrl(selectedValue);
+            const getStockLocatorSelectedFilter = await getStockLocatorFiltersData(vehicleURL);
+            // eslint-disable-next-line no-use-before-define
+            updateFilterDropDownValuePostSelection(getStockLocatorSelectedFilter?.data?.attributes);
+            const getStockLocatorVehicles = await getStockLocatorVehiclesData(vehicleURL);
+            cardTiles(getStockLocatorVehicles);
+            showResulsHandler(vehicleURL);
+          }, 300); // 300ms delay
+        });
       });
     });
   });
@@ -790,7 +782,6 @@ function resetAllFilters(values) {
   checkboxes.forEach((checkbox) => {
     checkbox.checked = false;
   });
-
   const filterLabels = document.querySelectorAll('.filter-label-heading');
   filterLabels.forEach((label) => {
     label.classList.remove('is-active');
@@ -875,7 +866,7 @@ function stockLocatorFilterDom(filterData, typeKey, dropDownContainer) {
 
     // Add "All" option
     const allListItem = document.createElement('li');
-    allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop');
+    allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop', 'selected-filter');
     const allCheckbox = document.createElement('input');
     allCheckbox.classList.add(`${typeKey}-checkbox`, 'filter-checkbox');
     allCheckbox.type = 'checkbox';
@@ -884,6 +875,9 @@ function stockLocatorFilterDom(filterData, typeKey, dropDownContainer) {
     const allLabel = document.createElement('label');
     allLabel.htmlFor = 'All';
     allLabel.textContent = 'All';
+    const tickIcon = document.createElement('i');
+    tickIcon.classList.add('icon-checkmark');
+    allLabel.prepend(tickIcon);
     allListItem.appendChild(allCheckbox);
     allListItem.appendChild(allLabel);
     filterList.appendChild(allListItem);
@@ -903,7 +897,7 @@ function stockLocatorFilterDom(filterData, typeKey, dropDownContainer) {
 
     // Update "All" option
     const allListItem = document.createElement('li');
-    allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop');
+    allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop', 'selected-filter');
     const allCheckbox = document.createElement('input');
     allCheckbox.classList.add(`${typeKey}-checkbox`, 'filter-checkbox');
     allCheckbox.type = 'checkbox';
@@ -912,6 +906,9 @@ function stockLocatorFilterDom(filterData, typeKey, dropDownContainer) {
     const allLabel = document.createElement('label');
     allLabel.htmlFor = 'All';
     allLabel.textContent = 'All';
+    const tickIcon = document.createElement('i');
+    tickIcon.classList.add('icon-checkmark');
+    allLabel.prepend(tickIcon);
     allListItem.appendChild(allCheckbox);
     allListItem.appendChild(allLabel);
     filterList.appendChild(allListItem);
@@ -928,6 +925,9 @@ function stockLocatorFilterDom(filterData, typeKey, dropDownContainer) {
     const label = document.createElement('label');
     label.htmlFor = item.id;
     label.textContent = `${item.label} (${item.count})`;
+    const tickIcon = document.createElement('i');
+    tickIcon.classList.add('icon-checkmark');
+    label.prepend(tickIcon);
     listItem.appendChild(checkbox);
     listItem.appendChild(label);
     filterList.appendChild(listItem);
@@ -982,16 +982,19 @@ function updateStockLocatorFilterDom(filterResponseData, typeKey) {
   filterList.innerHTML = '';
   // Add "All" option
   const allListItem = document.createElement('li');
-  allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop');
+  allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop', 'all-disabled');
   const allCheckbox = document.createElement('input');
   allCheckbox.classList.add(`${typeKey}-checkbox`, 'filter-checkbox');
   allCheckbox.type = 'checkbox';
-  allCheckbox.id = 'all';
+  allCheckbox.id = 'All';
   allCheckbox.checked = true;
   const allLabel = document.createElement('label');
   allLabel.htmlFor = 'All';
   allLabel.textContent = 'All';
   allListItem.appendChild(allCheckbox);
+  const tickIcon = document.createElement('i');
+  tickIcon.classList.add('icon-checkmark');
+  allLabel.prepend(tickIcon);
   allListItem.appendChild(allLabel);
   filterList.appendChild(allListItem);
   // Populate with new filterResponseData
@@ -1006,10 +1009,14 @@ function updateStockLocatorFilterDom(filterResponseData, typeKey) {
     checkbox.disabled = item.count === 0;
     // Restore the checked state if previously selected
     checkbox.checked = previouslySelected.has(item.id);
+    if (previouslySelected.has(item.id)) {
+      listItem.classList.add('selected-filter');
+    }
 
     const label = document.createElement('label');
     label.htmlFor = item.id;
     label.textContent = `${item.label} (${item.count})`;
+    label.prepend(tickIcon);
     listItem.appendChild(checkbox);
     listItem.appendChild(label);
     filterList.appendChild(listItem);
@@ -1114,6 +1121,24 @@ function closeModelPopup() {
   filterBtn.style.display = 'flex';
 }
 
+function setResetFilterBtn(hasSelectedValues) {
+  const selectedList = document.querySelector('.series-selected-list');
+  // Reset button management
+  if ((!document.querySelector('.reset-filter') && hasSelectedValues) || (!document.querySelector('.reset-filter') && viewport <= 1024)) {
+    const resetFilterElement = document.createElement('div');
+    resetFilterElement.classList.add('reset-filter');
+    const resetSpan = document.createElement('span');
+    resetSpan.textContent = 'Reset The filters';
+    const resetAnchor = document.createElement('a');
+    resetAnchor.classList.add('reset-filter-link');
+    resetFilterElement.append(resetSpan, resetAnchor);
+    selectedList.insertBefore(resetFilterElement, selectedList.firstChild);
+    resetFilterElement.addEventListener('click', () => {
+      resetAllFilters({});
+    });
+  }
+}
+
 // open filter button for tablet -
 function openFilterPopup() {
   const parentWrapper = document.querySelector('.stock-locator-model-detail-definition-specification-wrapper');
@@ -1134,6 +1159,7 @@ function openFilterPopup() {
   relevanceContent.style.display = 'none';
   filterBtn.style.display = 'none';
   closeFilterPopupButton.addEventListener('click', closeModelPopup);
+  setResetFilterBtn();
 }
 
 function openFiltersBtn() {
