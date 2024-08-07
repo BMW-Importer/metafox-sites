@@ -188,8 +188,8 @@
       {
         "component": "select",
         "name": "verticalAlignment",
-        "description": "Defines the alignment of the elements added to the Columns.",
-        "value": "centre",
+        "description": "Defines the vertical alignment of the elements added to the Columns.",
+        "value": "middle",
         "label": "Vertical Alignment",
         "valueType": "string",
         "options": [
