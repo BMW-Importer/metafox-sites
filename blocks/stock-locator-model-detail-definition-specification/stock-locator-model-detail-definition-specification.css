@@ -729,6 +729,11 @@ li::marker {
         margin-bottom: 1.25rem;
         width: 100%;
     }
+
+    .vehicle-count-wrapper{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
 }
 
 /*  tablet view */
@@ -876,6 +881,11 @@ li::marker {
     .mobile-filter-wrapper.driveType-wrapper,
     .mobile-filter-wrapper.fuel-wrapper {
         display: none;
+    }
+
+    .vehicle-count-wrapper{
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -1183,6 +1193,10 @@ li::marker {
         padding: 1.25rem 3.75rem;
         margin-bottom: 1.5rem;        
         width: 33%;
+    }
+
+    .stock-locator-model-detail-definition-specification .show-more-container .show-more-button:hover{
+        border: 2px solid var(--text-color);       
     }
 
     .filter-item.not-desktop {
