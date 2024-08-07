@@ -29,13 +29,18 @@
   --light-grey: #f6f6f6;
   --light-bbb: #bbb;
   --light-grey-1:#e6e6e6;
-  --fixed-font-family: bmwtypenextweb,arial,helvetica,roboto,sans-serif;
+  --fixed-font-family: 'bmwtypenextweb',arial,helvetica,roboto,sans-serif;
   --icon-font-family: "bmw_next_icons", arial,helvetica,roboto,sans-serif;
   --opacity-color: #0006;
   --bg-media-btn-hover: #0653b6;
   --bg-media-ghost-btn: #f2f2f2;
   --fuel-icon-color: #0066b1;
   --ddl-selected-color:#000c;
+  --white-shade: #fffffff2;
+  --black-shade: #fff0;
+  --border-grey:#8e8e8e;
+  --text-color-grey:#333;
+  --black-shade-1: #0000;
 
   /* base font size */
   --base-font-size: 16px;

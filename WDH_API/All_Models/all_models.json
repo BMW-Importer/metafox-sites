@@ -46,15 +46,6 @@
       "seriesCode": "2"
     },
     {
-      "modelCode": "41CM",
-      "description": "M240i",
-      "modelRangeCode": "G42",
-      "shortName": "M240i",
-      "shortRangeName": "G42",
-      "marketingSeries": "2",
-      "seriesCode": "2"
-    },
-    {
       "modelCode": "21BX",
       "description": "218i",
       "modelRangeCode": "U06",
@@ -168,15 +159,6 @@
       "modelRangeCode": "F44",
       "shortName": "220i xDrive",
       "shortRangeName": "F44",
-      "marketingSeries": "2",
-      "seriesCode": "2"
-    },
-    {
-      "modelCode": "11DM",
-      "description": "M2",
-      "modelRangeCode": "G87",
-      "shortName": "M2",
-      "shortRangeName": "G87",
       "marketingSeries": "2",
       "seriesCode": "2"
     },
@@ -746,87 +728,6 @@
       "shortRangeName": "G29",
       "marketingSeries": "Z4",
       "seriesCode": "Z4"
-    },
-    {
-      "modelCode": "11EC",
-      "description": "X3 M",
-      "modelRangeCode": "F97",
-      "shortName": "X3 M",
-      "shortRangeName": "F97",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "11BZ",
-      "description": "X3 xDrive20d",
-      "modelRangeCode": "G01",
-      "shortName": "X3 xDrive20d",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "21DN",
-      "description": "X3 M40d",
-      "modelRangeCode": "G01",
-      "shortName": "X3 M40d",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "21DP",
-      "description": "X3 xDrive20i",
-      "modelRangeCode": "G01",
-      "shortName": "X3 xDrive20i",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "31DN",
-      "description": "X3 sDrive20i",
-      "modelRangeCode": "G01",
-      "shortName": "X3 sDrive20i",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "51BZ",
-      "description": "X3 sDrive18d",
-      "modelRangeCode": "G01",
-      "shortName": "X3 sDrive18d",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "51DP",
-      "description": "X3 xDrive30i",
-      "modelRangeCode": "G01",
-      "shortName": "X3 xDrive30i",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "81BZ",
-      "description": "X3 xDrive30d",
-      "modelRangeCode": "G01",
-      "shortName": "X3 xDrive30d",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
-    },
-    {
-      "modelCode": "81DP",
-      "description": "X3 M40i",
-      "modelRangeCode": "G01",
-      "shortName": "X3 M40i",
-      "shortRangeName": "G01",
-      "marketingSeries": "X3",
-      "seriesCode": "X3"
     },
     {
       "modelCode": "41DU",

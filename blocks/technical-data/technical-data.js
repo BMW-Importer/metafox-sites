@@ -68,9 +68,6 @@ const placeholders2 = {
   techDataOptionallySuppliedTowing: 'Optionally supplied towing hook for trailer mass, braked up to 12%/rigid connection in kg',
   techDataCapacityofTheLuggageSpaceUl: 'Capacity of the luggage space ul',
   techDataTheVolumeOfTheReservoirUl: 'The volume of the reservoir ul',
-  techDataBmwWheelsAndTires: 'BMW WHEELS AND TIRES.',
-  techDataFindOutMore: 'find out more',
-  techDataConsumptionAndC02Emissions: 'Consumption and CO2 emissions.',
 };
 
 placeholders = { ...placeholders, ...placeholders2 };
@@ -359,11 +356,10 @@ async function generateTechUi(parentBlock) {
 
   if (technicalData) {
     technicalDataTableContainer.textContent = '';
-    const brand = agCodeArrayObj[0]?.json?.responseJson?.model?.brand;
     const description = agCodeArrayObj[0]?.json?.responseJson?.model?.description;
     // appending selected model detail in heading
     selectedModelHeading.textContent = `${placeholders?.techDataTechnicalDataFor} 
-     ${brand} ${description}`;
+    ${description}`;
 
     const data = { placeholders, technicalData };
     const replacedHtml = replacePlaceholders(techDataMarkUp, data);

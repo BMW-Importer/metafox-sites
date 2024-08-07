@@ -1,3 +1,1826 @@
-/* .all-models {
-    padding: 10px;
-} */
+/* stylelint-disable selector-class-pattern */
+
+main .section.allmodel-section {
+    padding: 0 8px;
+}
+
+.section.all-models-container {
+    margin-top: 1.5rem !important;
+}
+
+.filter-title {
+    font-size: 1.1875rem;
+    line-height: 1.75rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.filter-btn-row {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-left: -1.5rem;
+    margin-top: -.5rem;
+    overflow: auto hidden;
+    padding: .25rem 1.5rem;
+    width: 100%;
+}
+
+.filter-btn {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--light-bbb);
+    color: var(--light-border-color); 
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: .875rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.375rem;
+    margin-right: .5rem;
+    min-height: 2.25rem;
+    padding: 0 1rem;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    white-space: nowrap;
+    border-radius: 0;
+}
+
+.filter-btn:focus {
+    background: transparent;
+}
+
+.filter-btn:hover {
+    box-shadow: inset 0 0 0 1px var(--light-text-color);
+    color: var(--light-text-color);
+    background: transparent;
+}
+
+.filter-btn.active {
+    background: var(--medium-text-color);
+    color: var(--light-grey);
+    border: 0;
+    box-shadow: none;
+}
+
+.filter-btn.active:hover {
+    background-color: var(--light-text-color);
+}
+
+.filter-btn-icon {
+    margin-right: 0.5rem;
+    transition: transform .5s ease-in-out;
+    pointer-events: none;
+}
+
+.filter-btn.active .filter-btn-icon {
+    transform: rotate(45deg);
+}
+
+.toggle-icon {
+    transform: rotate(45deg);
+}
+
+.filter-btn-icon::before {
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;    
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "plus";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.overlay-wrap {
+    margin-bottom: 1.25rem;
+}
+
+.show-more-btn {
+    min-height: 2.25rem;
+    width: max-content;
+    background: transparent;
+    color: var(--light-text-color);
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    margin-top: -1.25rem;
+    font-size: .875rem;
+    top: -0.625rem;
+    position: relative;
+}
+
+.show-more-btn:focus {
+    background: transparent;
+}
+
+.number-wrap {
+    margin-bottom: 1rem;
+    font-size: .875rem;
+    line-height: 1.375rem;
+}
+
+.selected-filter-btn-row{
+    display: flex;
+}
+
+.show-more-btn:hover {
+    background: transparent;
+    color: var(--medium-text-color);
+}
+
+.show-more-icon::before {
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "arrow_chevron_right";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    margin-left: -.25rem;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.number-overlay {
+    color: var(--light-text-color);
+    display: inline-flex;
+    font-size: var(--body-2-font-size);
+    font-weight: var(--default-font-weight);
+    line-height: var(--body-2-line-height);
+    margin-bottom: 1rem;
+}
+
+.total-number {
+    text-decoration: underline;
+}
+
+.content-navigation-active .content-nav-selected-value::before {
+    left: 0;
+    z-index: 100;
+}
+
+.content-nav-selected-value {
+    background-color: var(--white-shade);
+    color: var(--light-text-color);
+    align-items: center;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: -1rem;
+    min-height: 3.25rem;
+    padding: .25rem 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: none;
+    width: calc(100% + 1rem);
+    z-index: 10;
+    font-size: 0.875rem;
+    line-height: 1.0063rem;
+    font-weight: 500;
+}
+
+
+.content-navigation .content-nav-selected-value:hover {
+    background-color: var(--white-shade);
+}
+
+.content-navigation.content-navigation-active .content-nav-selected-value {
+    background-color: var(--background-color);
+    color: var(--light-text-color);
+    border: 0;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
+    margin-left: 0;
+    padding: .25rem 1.5rem;
+    width: 100%;
+}
+
+.content-navigation .content-nav-selected-value::before {
+    background-color: var(--light-grey-1);
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: -1.5rem;
+    position: absolute;
+    width: calc(100% + 2rem);
+}
+
+.content-nav-selected-value::after {
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "arrow_chevron_down";
+    direction: ltr;
+    display: block;
+    display: inline-flex;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    margin-right: -1rem;
+    outline: 1px solid var(--black-shade-1);
+    position: relative;
+    text-align: left;
+    text-transform: none;
+    transition: transform .5s ease-in-out;
+    white-space: nowrap;
+    width: auto;
+}
+
+.content-navigation-active .content-nav-selected-value::after {
+    transform: rotate(-180deg);
+}
+
+.nav-background {
+    display: block;
+    height: calc(100% + 1px);
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: opacity .25s ease-in;
+    width: 100vw;
+    z-index: -10;
+}
+
+.content-navigation {
+    flex-direction: column;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 6020;
+    width: 100%
+}
+
+.content-navigation .nav-arrow-left {
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 10;
+    align-items: center;
+}
+
+.content-navigation .nav-arrow-right {
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 10;
+    align-items: center;
+}
+
+.content-navigation .nav-arrow-left::before {
+    font-size: 1.25rem;
+    font-weight: 400;
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "arrow_chevron_left";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid var(--text-color);
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.content-navigation .nav-arrow-right::before {
+    font-size: 1.25rem;
+    font-weight: 400;
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "arrow_chevron_right";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid var(--text-color);
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.content-navigation.content-navigation-active {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content-navigation-active .nav-background {
+    background-color: var(--ddl-selected-color);
+    opacity: 1;
+    position: fixed;
+}
+
+.navbar-wrap {
+    clip-path: inset(0 0 100% 0);
+    overflow: hidden;
+    position: absolute;
+    transition: clip-path ease-in;
+    transition-delay: .1s;
+    transition-duration: .4s;
+    visibility: hidden;
+    width: 100%;
+    will-change: clip-path;
+}
+
+.content-navigation-active .navbar-wrap {
+    clip-path: inset(0 0 0 0);
+    height: 100%;
+    visibility: visible;
+}
+
+.nav-list.mobile-only {
+    float: none;
+    overflow: scroll hidden;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.nav-list {
+    color: var(--light-border-color);
+    background-color: var(--background-color);
+    flex-flow: row nowrap;
+    float: left;
+    left: 0;
+    list-style: none;
+    overflow: hidden;
+    transition: padding .25s ease-in;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.content-navigation-active .nav-list {
+    background-color: var(--background-color);
+    max-height: calc(100% - 3rem);
+    overflow-y: auto;
+    padding: 1rem 0 1.25rem;
+    margin-top: 0;
+}
+
+.nav-list-item {
+    width: auto;
+}
+
+.content-navigation-active .nav-list-button-active {
+    border-left: .25rem solid var(--medium-text-color);
+    outline: none;
+    padding: .75rem 1.25rem !important;
+}
+
+.nav-list-button {
+    align-items: center;
+    border: 0;
+    border-color: var(--text-color);
+    border-radius: 3px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
+    cursor: pointer;
+    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    min-height: 3.25rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: transparent;
+    color: var(--light-border-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.0063rem;
+
+}
+
+.content-navigation-active .nav-list-button {
+    padding: .75rem 1.5rem;
+    pointer-events: all;
+}
+
+.content-navigation-active .nav-list-button:focus {
+    border-left: .25rem solid var(--medium-text-color);
+    outline: none;
+    padding: .75rem 1.25rem;
+}
+
+.content-navigation-active .nav-list-button:hover {
+    background-color: var(--text-color);
+    color: var(--light-border-color);
+}
+
+.filter-overlay-wrap {
+    display: none;
+}
+
+.filter-overlay-wrap.active .show-more-btn {
+    display: none;
+}
+
+.filter-overlay-wrap.active {
+    -webkit-overflow-scrolling: auto;
+    align-items: flex-start;
+    background: var(--ddl-selected-color);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    overflow: hidden auto;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 6050;
+}
+
+.filter-overlay-wrap .filter-content {
+    background: var(--background-color);
+    margin: auto;
+    min-height: 100vh;
+    padding: 1.5rem 0 0;
+    position: relative;
+    width: 100%
+}
+
+.filter-overlay-wrap .filter-heading,
+.filter-overlay-wrap .filter-body,
+.filter-overlay-wrap .filter-footer {
+    background: inherit;
+    padding: 0 1.5rem 1.5rem
+}
+
+.filter-overlay-wrap .filter-group {
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 0
+}
+
+.filter-overlay-wrap .filter-group-heading {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1rem
+}
+
+.filter-overlay-wrap .filter-checkbox {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: .6875rem;
+    padding-top: .3125rem
+}
+
+.filter-overlay-wrap .filter-checkbox label {
+    cursor: pointer;
+    display: flex;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+    padding-left: 2.5rem;
+    width: 100%;
+}
+
+.filter-overlay-wrap .filter-checkbox input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.filter-overlay-wrap .filter-checkbox-icon {
+    background-color: initial;
+    border: .125rem solid var(--light-bbb);
+    color: var(--background-color);
+    height: 1.25rem;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: background-color .25s ease-in-out, border .25s ease-in-out;
+    width: 1.25rem;
+    top: auto;
+}
+
+.filter-overlay-wrap .filter-checkbox input:checked+.filter-checkbox-icon {
+    background-color: var(--medium-text-color);
+    border-color: transparent
+}
+
+.filter-overlay-wrap .filter-checkbox input:checked+.filter-checkbox-icon::after {
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "checkmark";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.filter-overlay-wrap .filter-footer button {
+    background-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    min-height: 3.25rem;
+    min-width: 12rem;
+    padding: .25rem;
+    text-align: center;
+    color: var(--light-text-color);
+    border-radius: 0;
+}
+
+.filter-overlay-wrap .show-filter-btn {
+    box-shadow: inset 0 0 0 1px var(--light-text-color);
+    justify-content: center;
+}
+
+.filter-overlay-wrap .filter-trash-icon {
+    margin-right: .25rem;
+}
+
+.filter-overlay-wrap .filter-group-body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+}
+
+.filter-overlay-wrap .filter-footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    z-index: 30;
+    border-top: 1px solid var(--light-grey-1);
+    position: sticky;
+    padding: 1rem 1.5rem 0;
+    bottom: 0;
+}
+
+.filter-overlay-wrap .filter-close-button {
+    background-color: initial;
+    color: var(--light-text-color);
+    height: 3rem;
+    margin-top: 4.25rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+}
+
+.filter-overlay-wrap .filter-close-button::before {
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "close";
+    direction: ltr;
+    display: block;
+    display: inline-block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.filter-overlay-wrap .clear-filter-btn span::before {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.filter-overlay-wrap .clear-filter-btn {
+    justify-content: center;
+}
+
+.all-model-group-list {
+    display: grid;
+}
+
+.all-model-card-container {
+    cursor: pointer;
+    margin: 1rem 0 .5rem;
+    pointer-events: none;
+    position: relative;
+    display: block;    
+}
+
+.all-model-card-container.model-clicked {
+    opacity: .4;
+}
+
+.all-model-card-container:not(:first-child) {
+    grid-gap: 0 .5rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.all-model-group-title {
+    margin-top: -3.25rem;
+    padding: 4.75rem 0 .5rem;
+    font-family: var(--fixed-font-family);
+    font-size: 1.1875rem;
+    line-height: 1.75rem;
+    color: var(--light-text-color);
+    font-weight: 300;
+}
+
+.all-model-card-btn {
+    outline: none;
+    height: 100%;
+    pointer-events: all;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background: none !important;
+    padding: 0;
+    border: none;
+}
+
+.all-model-detail-model-name {
+    color: var(--light-text-color);
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    margin: 0;
+    padding: .75rem 0 .25rem;
+    font-family: var(--fixed-font-family);
+}
+
+.all-model-detail-model-fuel {
+    margin: 0;
+    color: var(--medium-text-color);
+    padding-bottom: .25rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    font-family: var(--fixed-font-family);
+}
+
+.all-model-card-container:not(:first-child) .all-model-detail-model-fuel {
+    display: none;
+}
+
+.all-model-detail-model-price {
+    color: var(--light-text-color);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    margin: 0;
+}
+
+.all-model-group-container {
+    border-top: 1px solid var(--light-grey-1);
+    padding-bottom: 2rem;
+}
+
+.all-model-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform .15s ease-in;
+}
+
+.all-model-card-container:hover .all-model-image {
+    transform: scale(1.1);
+}
+
+.all-model-card__fuel-type-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 5.8%;
+    opacity: 1;
+    padding: 8.8% 0;
+    position: absolute;
+    top: 6.2%;
+    transition: opacity .2s ease-in;
+    width: 17.6%;
+}
+
+.all-model-card__fuel-type-icon span {
+    font-size: calc(-0.6875rem + 23vw);
+    line-height: 1;
+    color: var(--fuel-icon-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.all-model-card__fuel-type-icon .electric-icon::before{
+    font-size: 4rem;
+    font-weight: 300;
+    word-wrap: normal;    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "fuel_type_bev";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.all-model-card__fuel-type-icon .hybrid-icon::before {
+    font-size: 4rem;
+    font-weight: 300;
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "fuel_type_phev";
+    direction: ltr;
+    display: block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;    
+}
+
+.all-model-card-img-container {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    padding: 23.5% 0;
+    position: relative;
+    transition: opacity .2s ease-in;
+    width: 100%;
+}
+
+.all-model-card-container:not(:first-child) .all-model-card-img-container {
+    padding: 33.3% 0;
+}
+
+.all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon{
+    left: 0.25rem;
+    padding: 12.5% 0;
+    top: 0.625rem;
+    width: 25%;
+}
+
+.all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon span {
+    font-size: calc(-0.4375rem + 12vw);
+}
+
+.all-model-card-img-container.first-model-child {
+    padding: 23.5% 0;
+}
+
+.all-model-card-container .all-model-card__subbrands {
+    bottom: 0;
+    display: flex;
+    height: 12.5%;
+    left: 0;
+    position: absolute;
+    z-index: 20;
+}
+
+.all-model-card-container .all-model-card__subbrands-wrap {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    margin-right: .5rem;
+}
+
+.all-model-detail-label .all-model-card__subbrands {
+    display: flex !important;
+    margin-top: 0;
+    position: static;
+    padding: 0;
+    width: auto;
+}
+
+.all-model-card-container.first-model-child .all-model-card__subbrands {
+    left: 0;
+    position: absolute;
+    z-index: 20;
+}
+
+.all-model-card-container:not(:first-child) .all-model-card__subbrands{
+    display: none;
+}
+
+.all-model-card__new-model-label {
+    background-color: var(--medium-text-color);
+    color: var(--background-color);
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    font-family: var(--fixed-font-family);
+    margin-right: 0;
+    padding: 0 .25rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.all-model-detail-label .all-model-card__new-model-label {
+    display: block !important;
+    margin-right: .5rem;
+    position: static;
+}
+
+.all-model-card-container:not(:first-child) .all-model-card__new-model-label {
+    display: none;
+}
+
+.all-model-detail-label {
+    display: flex;
+    opacity: 1;
+    position: relative;
+    transition: opacity .2s ease-in;
+}
+
+.all-model-detail-label.first-model-child {
+    display: none;
+}
+
+.all-model-picture-tag img {
+    margin-bottom: 0;
+    position: absolute;
+    top: -24.3%;
+    transition: transform .15s ease-in;
+    width: 100%;
+    will-change: transform;
+}
+
+.all-model-detail-label .all-model-card__subbrands-wrap {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    margin-right: .5rem;
+    padding: 0;
+}
+
+.all-model-detail-label .all-model-card__subbrands-wrap img {
+    height: 1rem;
+}
+
+.all-model-detail-container:not(.first-model-child) .all-model-detail-model-name {
+    padding: .5rem 0 .25rem;
+}
+
+.all-model-picture-tag {
+    width: 100%;
+    z-index: 20;
+}
+
+.all-model-card-img-container:not(.first-model-child) .all-model-picture-tag img {
+    top: 0;
+    transform: scale(1.4);
+}
+
+/* link list css */
+.section.all-models-container .link-list-wrapper .link-list-detail {
+    grid-gap: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+}
+ 
+.section.all-models-container .link-list-wrapper .link-list-title {
+    margin-bottom: .5rem;
+    font-size: 1.8125rem;
+    line-height: 2.625rem;
+}
+ 
+.section.all-models-container .link-list-wrapper .link-list-detail p{
+    align-items: center;
+    border-bottom: 1px solid var(--light-grey-1);
+    display: flex;
+    margin: 0;
+}
+ 
+.section.all-models-container .link-list-wrapper .link-list-detail a {
+    display: flex;
+    align-items: center;
+    border: 0;
+    box-shadow: none;
+    font-size: 1.0625rem;
+    font-weight: 300;
+    justify-content: space-between;
+    line-height: 1.75rem;
+    margin: 0;
+    text-align: start;
+    width: 100%;
+    color: var(--light-text-color);
+    min-height: 3.25rem;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ 
+.section.all-models-container .link-list-wrapper .link-list-detail a::after {
+    float: right;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--light-border-color);
+    content: "arrow_chevron_right";
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    margin-right: -.25rem;
+    outline: 1px solid transparent;
+}
+
+.all-model-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    background: var(--background-color);
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6050;
+}
+
+.all-model-detail__container-img-wrap {
+    display: block;
+    margin: 0 auto;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.all-model-detail-image {
+    display: block;
+    min-width: 1px;
+    margin: -0.8125rem auto 0;
+    transition: min-height .2s ease-in, opacity .2s ease-in;
+    max-width: 25pc;
+    width: 100%;
+    min-height: auto;
+}
+
+.all-model-detail__container-links {
+    grid-gap: 0.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -4.0625rem;
+    width: 100%;
+}
+
+.all-model-detail__container-details {
+    background-color: var(--bg-media-ghost-btn);
+    padding: 2.75rem 1.5rem 0;
+}
+
+.all-model-detail__container-subrand {
+    display: flex;
+}
+
+.all-model-detail__new-model-label {
+    background-color: var(--medium-text-color);
+    color: var(--background-color);
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    padding: 0 .25rem;
+    font-family: var(--fixed-font-family);
+}
+
+.all-model-card-container:not(:first-child) .all-model-detail__new-model-label {
+    margin: 0;
+}
+
+.all-model-detail__subbrands {
+    margin-bottom: .25rem;
+    margin-right: .25rem;
+}
+
+.all-model-detail__subbrands-wrap {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    margin-right: .5rem;
+}
+
+.all-model-detail__subbrand-img {
+    align-items: center;
+    display: flex;
+    margin-right: .25rem;
+    max-height: 1rem;
+}
+
+.all-model-detail__model-name {
+    font-size: 1.0625rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+    margin-bottom: .25rem;
+    color: var(--light-text-color);
+    font-family: var(--fixed-font-family);
+}
+
+.all-model-detail__fuel {
+    color: var(--medium-text-color);
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+    font-family: var(--fixed-font-family);
+}
+
+.all-model-detail__price {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    font-family: var(--fixed-font-family);
+}
+
+.all-model-detail__showmore-btn-container {
+    background-color: var(--bg-media-ghost-btn);
+    padding: 1.5rem;
+    margin-top: -.25rem;
+    box-sizing: border-box;
+}
+
+.all-model-detail__showmore-btn-container.mobile-hidden {
+    display: none;
+}
+
+.all-model-detail__showmore-btn {
+    box-shadow: inset 0 0 0 1px var(--light-text-color);
+    color: var(--light-text-color);
+    background: transparent;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.375rem;
+    margin: 0;
+    min-height: 3.25rem;
+    min-width: 12rem;
+    min-width: 100%;
+    padding: .25rem;
+    text-align: center;
+    font-family: var(--fixed-font-family);
+    box-sizing: border-box;
+}
+
+.all-model-detail__showmore-btn:hover {
+    box-shadow: inset 0 0 0 2px var(--light-text-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.all-model-detail__container-links-configure {
+    background-color: var(--bg-media-ghost-btn);
+    padding: 1.5rem;
+}
+
+.all-model-detail__detail-view--cta-icon {
+    display: none !important;
+}
+
+.all-model-detail__configure-btn {
+    background-color: var(--light-link-hover-color);
+    color: var(--light-grey) !important;
+    border: 0;
+    box-shadow: none;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.375rem;
+    font-family: var(--fixed-font-family);
+    margin: 0;
+    min-height: 3.25rem;
+    min-width: 12rem;
+    min-width: 100%;
+    padding: .25rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.all-model-detail__configure-btn:hover {
+    background-color: var(--bg-media-btn-hover);
+    box-shadow: none;
+    color: var(--light-grey);
+    text-decoration: none;
+}
+
+.all-model-detail__container-links-stock {
+    background-color: var(--bg-media-ghost-btn);
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.all-model-detail__instock-btn {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--light-text-color);
+    color: var(--light-text-color);
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.375rem;
+    margin: 0;
+    min-height: 3.25rem;
+    min-width: 12rem;
+    min-width: 100%;
+    padding: .25rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.all-model-detail__instock-btn:hover {
+    box-shadow: inset 0 0 0 2px var(--light-text-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.all-model-detail__close-btn {
+    background-color: initial !important;
+    color: var(--light-text-color) !important;
+    height: 3rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    z-index: 20;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color .3s ease-out;
+}
+
+.all-model-detail__close-btn::before {
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+    content: "close";
+    direction: ltr;
+    display: block;
+    display: inline-block;
+    font-family: "bmw_next_icons", arial, helvetica, roboto, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 1em;
+    line-height: 1;
+    outline: 1px solid transparent;
+    text-align: left;
+    text-transform: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+@media (width >= 768px) {
+    .section.all-models-container {
+        margin-top: 2rem !important;
+    }
+
+    .filter-title {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+    
+    .content-nav-selected-value {
+        display: none;
+    }
+
+    .nav-background {
+        background-color: var(--white-shade);
+        border-bottom: .0625rem solid var(--light-grey-1);
+        opacity: 1;
+        transition: none;
+    }
+
+    .content-navigation {
+        flex-direction: row;
+    }
+
+    .navbar-wrap {
+        clip-path: none;
+        height: 4rem;
+        position: relative;
+        visibility: visible;
+        width: auto;
+    }
+
+    .nav-list {
+        background-color: initial;
+        display: flex;
+        flex-direction: row;
+        height: inherit;
+        padding: 0;
+        position: relative;
+        transition: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .nav-list-item {
+        min-height: 100%;
+        width: auto;
+    }
+
+    .nav-list-button {
+        border-color: var(--black-shade-1);
+        border-style: solid;
+        border-width: .25rem 0;
+        font-size: 0.875rem;
+        font-weight: 500;
+        justify-content: center;
+        line-height: 1.375rem;
+        margin: 0;
+        min-width: 0;
+        min-height: inherit;
+        padding: 0 1rem;
+        pointer-events: all;
+        width: auto;
+    }
+
+    .nav-list-button:focus {
+        border-bottom-color: var(--medium-text-color);
+        background: var(--black-shade-1);
+    }
+
+    .nav-list-button:hover {
+        border-bottom-color: var(--medium-text-color);
+        background: var(--black-shade-1);
+    }
+
+    .content-navigation.arrow-left-active .navbar-wrap {
+        mask: linear-gradient(90deg, var(--black-shade) 0, var(--black-shade) 2.1875rem, var(--background-color) 6.6875rem);
+    }
+
+    .all-model-card-btn {
+        height: calc(100% - 4rem);
+        width: calc(100% + 1rem);        
+        inset: 4.5rem -.5rem -.5rem; 
+    }
+
+    .all-model-card-container {
+        margin: -4rem 0 .5rem;
+        padding-top: 5rem;
+    }
+
+    .content-navigation.arrow-right-active .navbar-wrap {
+        mask: linear-gradient(270deg, var(--black-shade) 0, var(--black-shade) 2.1875rem, var(--background-color) 6.6875rem);
+    }
+
+    .content-navigation .nav-arrow-left {
+        display: flex;
+    }
+
+    .content-navigation .nav-arrow-right {
+        display: flex;
+    }
+
+    .filter-overlay-wrap .filter-heading,
+    .filter-overlay-wrap .filter-body {
+        padding: 0 3rem 1.5rem
+    }
+
+    .filter-overlay-wrap .filter-footer {
+        column-gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 1.5rem 3rem;
+
+    }
+
+    .filter-overlay-wrap .filter-close-button {
+        margin: .5rem;
+    }
+
+    .filter-overlay-wrap .filter-checkbox {
+        flex: 1 1 45%;
+    }
+
+    .filter-overlay-wrap .filter-content {
+        min-height: 24rem;
+        padding: 3rem 0 0
+    }
+
+    .filter-overlay-wrap .clear-filter-btn {
+        justify-content: flex-start;
+        max-width: fit-content;
+        padding-left: .5rem;
+    }
+
+    .all-model-group-title {
+        margin-top: -4rem;
+        padding: 6rem 0 .5rem;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    .all-model-detail-model-name {        
+        padding: .25rem 0;
+    }
+
+    .all-model-group-list {
+        grid-gap: 0 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-model-card-container:not(:first-child) {
+        grid-gap: unset;
+        align-items: unset;
+        display: unset;
+        grid-template-columns: unset;
+    }
+
+    .all-model-card-img-container {
+        padding: 24.3% 0;
+    }
+
+    .all-model-card-img-container.first-model-child {
+        padding: 24.3% 0;
+    }
+
+    .all-model-card-container:not(:first-child) .all-model-card-img-container {
+        padding: 24.3% 0;
+    }
+
+    .all-model-card-container:not(:first-child) .all-model-detail-model-fuel {
+        display: block;
+    }
+
+    .all-model-card-container .all-model-card__subbrands {
+        height: 10.82%;
+        display: flex !important;
+    }
+
+    .all-model-card-container:not(:first-child) .all-model-card__new-model-label {
+        display: block;
+    }
+
+    .all-model-detail-label {
+        display: none;
+    }
+
+    .all-model-picture-tag img,
+    .all-model-card-img-container:not(.first-model-child) .all-model-picture-tag img {
+        top: -23.9%;
+        transform: none;
+    }
+
+    .all-model-card-img-container .all-model-card__fuel-type-icon,
+    .all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon {
+        left: 6.5%;
+        padding: 7.8% 0;
+        top: 10.8%;
+        width: 15.7%;
+    }
+    
+    .all-model-card-img-container .all-model-card__fuel-type-icon span,
+    .all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon span {
+        font-size: calc(-0.6875rem + 10vw);
+    }
+
+    .all-model-detail {
+        animation: slideToggle .5s cubic-bezier(0,.5,.5,1);     
+        grid-column: span 2;
+        padding: 0 0 3rem;
+        position: relative;
+        height: auto;
+        left: unset;
+        overflow: hidden;
+    }
+
+    .all-model-detail-image {
+        margin: -1.4375rem auto 0;
+        min-height: auto;
+        width: 92.3077%;
+        max-width: 100%;
+    }
+    
+    .all-model-detail__container-links {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -17%;
+    }
+
+    .section.all-models-container .link-list-wrapper .link-list-detail {
+        grid-gap: 0 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-model-detail__container-details {
+        grid-column: span 2;
+        padding: 4.25rem 1.5rem 1rem;
+    }
+
+    .all-model-detail__container-subrand {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .all-model-detail__model-name {
+        font-size: 1.125rem;        
+        line-height: 1.75rem;
+    }    
+
+    .all-model-detail__price-fuel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .all-model-detail__fuel {
+        margin-bottom: 0;
+    }
+
+    .all-model-detail__price {
+        margin-top: -.5rem;
+        font-size: 1.0625rem;
+        line-height: 1.75rem;
+    }
+
+    .all-model-detail__showmore-btn-container {
+        margin: 0;
+    }
+}
+
+@media (width >= 1024px) {
+    main .section.allmodel-section {
+        padding: 0 3rem;
+    }
+
+    .section.all-models-container {
+        margin-top: 4rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 75.5rem !important;
+        padding: 0 2.25rem;
+    }
+
+    .filter-overlay-wrap .filter-content {
+        max-width: 54rem;
+        min-width: 39.2727rem;
+        width: 50%
+    }
+
+    .filter-title {
+        margin: 1.5rem 0;
+    }
+
+    .all-model-group-title {
+        margin-top: -4rem;
+        padding: 6rem 0 1rem;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
+    .all-model-group-list {
+        grid-gap: 0 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .all-model-card-img-container {
+        padding: 23.9% 0 !important;
+    }
+
+    .all-model-card-btn {
+        height: calc(100% - 4.26rem);
+    }
+
+    .all-model-detail-model-name {
+        padding: .25rem 0 !important;
+    }
+
+    .all-model-card-container .all-model-card__subbrands {
+        height: 12.13%;
+    }
+
+    .all-model-picture-tag img,
+    .all-model-card-img-container:not(.first-model-child) .all-model-picture-tag img {
+        margin-right: -0.25rem;
+        top: 73%;
+        transform: translate3d(0, -73%, 0);
+    }
+
+    .all-model-card-img-container .all-model-card__fuel-type-icon,
+    .all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon {
+        left: 6.5%;
+        padding: 8.6% 0;
+        top: 10.6%;
+        width: 17.3%;
+    }
+    
+    .all-model-card-img-container .all-model-card__fuel-type-icon span,
+    .all-model-card-img-container:not(.first-model-child) .all-model-card__fuel-type-icon span {
+        font-size: 3.875rem;
+    }
+
+    .all-model-card-container:hover .all-model-image,
+    .all-model-card-container:hover .all-model-card-img-container:not(.first-model-child) .all-model-picture-tag img {
+        transform: translate3d(0, -73%, 0) scale(1.1);
+    }
+
+    .all-model-detail {
+        grid-column: span 4;
+        padding: 0 0 3rem;
+        width: 100vw;
+        margin-left: -3rem;
+    }
+
+    .all-model-detail__container-img-wrap {
+        height: 17.5rem;
+        margin: auto;
+    }
+
+    .all-model-detail-image {
+        margin-top: -1.9558%;
+        min-height: auto;
+        width: 54.4218%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .all-model-detail__container {
+        padding: 0 3rem;
+    }
+
+    .all-model-detail__container-links {
+        border-color: var(--bg-media-ghost-btn);
+        border-style: solid;
+        border-width: 0 1.5rem;
+        margin-left: -3rem;
+        width: calc(100% + 3rem);
+        margin-top: calc(-18.0645rem + 16.1290%);
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 14rem;
+        grid-column-gap: 4px;
+    }
+
+    .section.all-models-container .link-list-wrapper .link-list-detail {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .all-model-detail__container-details {
+        grid-column: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1.5rem;
+    }
+
+    .all-model-detail__container-subrand {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .all-model-detail__model-name {
+        font-size: 1.125rem;        
+        line-height: 1.75rem;
+    }
+
+    .all-model-detail__price-fuel {
+        display: block;
+    }
+
+    .all-model-detail__fuel {
+        margin-bottom: .5rem;
+    }
+
+    .all-model-detail__price {
+        margin: 0;
+    }
+
+    .all-model-detail__container-detail-wrap {
+        padding-bottom: 1rem;
+    }
+
+    .all-model-detail__showmore-btn-container {
+        padding: 0;
+    }
+
+    .all-model-detail__showmore-btn-container.mobile-hidden {
+        display: block;
+    }
+
+    .all-model-detail__showmore-btn-container.desktop-hidden {
+        display: none;
+    }
+
+    .all-model-detail__detail-view--cta-icon {
+        display: block !important;
+    }
+
+    .all-model-detail__detail-view--cta-icon::before {
+        font-size: 3rem !important;
+        height: 3rem !important;
+        width: 3rem !important;
+        font-weight: 300 !important;
+        padding-bottom: 1rem;
+    }
+
+    .all-model-detail__container-links-configure {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .all-model-detail__container-links-stock {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }    
+}
+
+@media (width >= 1280px) {
+    main .section.allmodel-section {
+        padding: 0 2.25rem;
+    }
+
+    main .section.allmodel-section > * {
+        padding: 0 0.75rem;
+    }
+
+    .all-model-group-title {
+        font-size: 1.4375rem;
+        line-height: 2.25rem;
+    }
+
+    .all-model-detail-model-name {        
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+    }
+
+    .all-model-detail-model-price {        
+        font-size: 0.9375rem;        
+        line-height: 1.5rem;
+    }
+
+    .all-model-detail__model-name {
+        font-size: 1.25rem;        
+        line-height: 1.875rem;
+    }
+
+    .all-model-detail__price {
+       font-size: 1.125rem;
+    }
+
+    .all-model-detail__showmore-btn {
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+    }
+
+    .all-model-detail {
+        width: auto;
+        margin-left: unset;
+    }
+
+    .all-model-detail__configure-btn {
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+    }
+
+    .all-model-detail__instock-btn {
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (width >= 1920px) {
+    .all-model-group-title {
+        font-size: 1.5625rem;
+        line-height: 2.375rem;
+    }
+
+    .all-model-detail-model-name {        
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .all-model-detail-model-price {        
+        font-size: 1rem;        
+        line-height: 1.625rem;
+    }
+
+    .all-model-detail__model-name {
+        font-size: 1.375rem;        
+        line-height: 2.125rem;
+    }
+
+    .all-model-detail__price {
+        font-size: 1.1875rem;
+        line-height: 1.875rem;
+     }
+
+     .all-model-detail__showmore-btn {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .all-model-detail__configure-btn {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .all-model-detail__instock-btn {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
