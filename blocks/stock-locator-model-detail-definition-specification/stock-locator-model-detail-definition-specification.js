@@ -9,7 +9,7 @@ import {
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
 const lang = document.querySelector('meta[name="language"]').content;
-const placeholders = await fetchPlaceholders('/sr');
+const placeholders = await fetchPlaceholders(`/${lang}`);
 console.log(placeholders);
 
 let currentlyOpenDropdown = null;
@@ -1238,7 +1238,7 @@ function buildOptionsDOM(optionsData) {
     div.innerHTML = `<strong>Key:</strong> ${key} <br> <strong>ShortText:</strong> ${value.shortText}`;
     createOptionDOM.appendChild(div);
   });
-  document.querySelector('.card-tile-wrapper')?.appendChild(createOptionDOM);
+  // document.querySelector('.card-tile-wrapper')?.appendChild(createOptionDOM);
 }
 function detailsPage() {
   const cardDetailsSelector = document.querySelectorAll('.stock-locator-details, .btn-stock-locator-details');
