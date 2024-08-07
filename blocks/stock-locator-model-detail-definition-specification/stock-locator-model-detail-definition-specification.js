@@ -509,6 +509,9 @@ function stockCar() {
   carSpecDetailsTitle.classList.add('car-spec-details-title');
   carSpecDetailsTitle.textContent = 'Options.';
 
+  const specDetailsContainer = document.createElement('div');
+  specDetailsContainer.classList.add('spec-details-container');
+
   const specDetailsContainerWrapper = document.createElement('div');
   specDetailsContainerWrapper.classList.add('spec-details-container-wrapper');
 
@@ -555,7 +558,6 @@ function stockCar() {
 
     const specPopoverCloseButton = document.createElement('div');
     specPopoverCloseButton.classList.add('spec-popover-close-button');
-    specPopoverCloseButton.textContent = 'X';
 
     specPopoverContainer.append(
       specPopoverTitle,
@@ -571,7 +573,20 @@ function stockCar() {
     carSpecDetailsContainer.append(specImg, specDetailsTextContainer);
     specDetailsContainerWrapper.append(carSpecDetailsContainer);
   }
-  carSpecDetailsWrapper.append(carSpecDetailsTitle, specDetailsContainerWrapper);
+  const specDetailsShowMoreContainer = document.createElement('div');
+  specDetailsShowMoreContainer.classList.add('spec-details-showMore-container');
+
+  const specDetailsShowMoreButton = document.createElement('i');
+  specDetailsShowMoreButton.classList.add('spec-details-showMore-button');
+
+  const specDetailsShowMoreText = document.createElement('span');
+  specDetailsShowMoreText.classList.add('spec-details-showMore-text');
+  specDetailsShowMoreText.textContent = 'Show more';
+
+  specDetailsShowMoreContainer.append(specDetailsShowMoreButton, specDetailsShowMoreText);
+
+  specDetailsContainer.append(specDetailsContainerWrapper, specDetailsShowMoreContainer);
+  carSpecDetailsWrapper.append(carSpecDetailsTitle, specDetailsContainer);
   stockDetailsWrapper.append(
     engineDetailsWrapper,
     ElementsDesignContainer,
@@ -580,6 +595,7 @@ function stockCar() {
   );
   // eslint-disable-next-line no-use-before-define
   createPopover();
+  toggleButtonFunction();
 }
 
 function pagination(meta, getStockLocatorVehicles) {
@@ -727,17 +743,35 @@ async function constructShowMoreUrl(
 }
 
 function toggleButtonFunction() {
-  const toggleButton = document.querySelectorAll('.accordion-toggle-icon');
-  const togglewindow = document.querySelectorAll('.packages-accordion-content-wrapper');
-  toggleButton.addEventListener('click', () => {
-    if (togglewindow.style.display === 'none') {
-      togglewindow.style.display = 'block';
-      toggleButton.classList.add('up-arrow');
-      toggleButton.classList.remove('down-arrow');
+  const toggleButtons = document.querySelector('.accordion-toggle-icon');
+  const toggleWindows = document.querySelector('.packages-accordion-content-wrapper');
+  // const showMoreToggleButton = document.querySelector('.spec-details-showMore-button');
+  // const specDetailsWindow = document.querySelector('spec-details-container-wrapper');
+
+  toggleButtons.addEventListener('click', () => {
+    if (toggleWindows.style.display === 'flex') {
+      toggleWindows.style.display = 'none';
+      toggleButtons.classList.add('down-arrow');
+      toggleButtons.classList.remove('up-arrow');
     } else {
-      togglewindow.style.height = 'none';
-      toggleButton.classList.add('down-arrow');
-      toggleButton.classList.remove('up-arrow');
+      toggleWindows.style.display = 'flex';
+      toggleButtons.classList.add('up-arrow');
+      toggleButtons.classList.remove('down-arrow');
+    }
+  });
+
+  const showMoreToggleButton = document.querySelector('.spec-details-showMore-button');
+  const specDetailsWindow = document.querySelector('.spec-details-container-wrapper');
+
+  showMoreToggleButton.addEventListener('click', () => {
+    if (specDetailsWindow.style.height === '600px' || specDetailsWindow.style.height === '') {
+      specDetailsWindow.style.height = 'max-content';
+      showMoreToggleButton.classList.add('up-arrow');
+      showMoreToggleButton.classList.remove('down-arrow');
+    } else {
+      specDetailsWindow.style.height = '600px';
+      showMoreToggleButton.classList.add('down-arrow');
+      showMoreToggleButton.classList.remove('up-arrow');
     }
   });
 }
@@ -745,7 +779,7 @@ function toggleButtonFunction() {
 function createPopover() {
   const infoButtons = document.querySelectorAll('.spec-details-Icon-Button');
   const popupTexts = document.querySelectorAll('.spec-popover-container');
-  const closeButtons = document.querySelectorAll('spec-popover-close-button');
+  const closeButtons = document.querySelectorAll('.spec-popover-close-button');
 
   infoButtons.forEach((infoButton, index) => {
     const popupText = popupTexts[index];

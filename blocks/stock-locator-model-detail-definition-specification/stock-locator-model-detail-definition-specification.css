@@ -1239,6 +1239,8 @@ li::marker {
     .spec-details-container-wrapper{
         display: flex;
         flex-wrap: wrap;
+        height: 600px;
+        overflow: hidden;
     }
     .car-spec-details-container{
         width: 24%;
@@ -1298,7 +1300,7 @@ li::marker {
         display: none;
     }
     .packages-accordion-content-wrapper{
-        display: flex;
+        display: none;
         flex-direction: row;
         width: 100%;
         padding-top: 10px;
@@ -1314,11 +1316,13 @@ li::marker {
         margin: 0;
         padding: 0;
     }
-    .accordion-toggle-icon {
+    .accordion-toggle-icon,
+    .spec-details-showMore-button {
         cursor: pointer;
     }
     
-    .accordion-toggle-icon::before {
+    .accordion-toggle-icon::before,
+    .spec-details-showMore-button::before {
         overflow-wrap: normal;
         font-size: 2rem;
         font-weight: 400;
@@ -1340,7 +1344,10 @@ li::marker {
         color: var(--light-text-color)
     }
     
-    .accordion-toggle-icon.up-arrow::before {
+    .accordion-toggle-icon.up-arrow::before{
+        content: "arrow_chevron_up";
+    }
+    .spec-details-showMore-button::before  {
         content: "arrow_chevron_up";
     }
     .packages-accordion-header {
@@ -1348,6 +1355,50 @@ li::marker {
         align-items: center;
         
     }
+    .car-spec-details-wrapper .spec-details-container .spec-details-showMore-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .spec-popover-wrapper .spec-popover-container {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        padding: 45px;
+        left: 5%;
+        z-index: 999;
+        background-color: #e6e6e6;
+    }
+    .spec-popover-close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .spec-popover-close-button::before {
+        overflow-wrap: normal;
+        font-size: 2rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "liga";
+        content: "close";
+        direction: ltr;
+        display: block;
+        font-family: var(--icon-font-family);
+        opacity: var(--iconfont400-opacity);
+        font-style: normal;
+        height: 1em;
+        line-height: 1;
+        text-rendering: optimizelegibility;
+        text-transform: none;
+        width: auto;
+        outline: transparent solid 0.0625rem;
+        white-space: nowrap;
+        color: var(--medium-text-color);
+
+    }
+    
 }
 
 /** ipad AIR **/
