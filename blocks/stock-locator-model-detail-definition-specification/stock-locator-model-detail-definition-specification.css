@@ -1211,6 +1211,7 @@ li::marker {
         margin-bottom: 1.5rem;
         text-align: center;
     }
+
     .engine-details-elements{
         display: flex;
         flex-wrap: wrap;
@@ -1221,21 +1222,42 @@ li::marker {
         width: 25%;
         max-width: 1200px;
     }
+
     .elements-design-container{
         display: flex;
+        margin-bottom: 4rem;
         
     }
+
+    .elements-design-container .elements-text-title{
+       font-size: 14px;
+       color: #8e8e8e;
+       line-height: 1.25rem;
+       margin: 10px 0;
+       text-transform: none;        
+    }
+
+    .elements-design-container .elements-text-dec{
+        font-size: 20px;
+        color: #000;
+        line-height: 1.75rem;      
+        text-transform: none; 
+     }
+
     .elements-design-container .design-elements{
         width: 50%;
     }
+
     .design-elements-wrapper{
         display: flex;
     }
+
     .elements-container{
         width: 50%;
         padding-right: 0.9375rem;
         margin-bottom: 1.875rem;
     }
+    
     .design-elements .design-elements-title{
         margin-bottom: 2.8125rem;
     }
