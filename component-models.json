@@ -165,7 +165,7 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "verticalAlignment",
         "description": "Defines the vertical alignment of the elements added to the Columns.",
         "value": "middle",
         "label": "Vertical Alignment",
