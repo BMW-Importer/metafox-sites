@@ -598,6 +598,11 @@ main .section.allmodel-section {
     justify-content: center;
 }
 
+.filter-overlay-wrap .filter-footer .show-filter-btn:hover {
+    box-shadow: inset 0 0 0 2px var(--light-text-color);
+    color: var(--light-text-color);
+}
+
 .filter-overlay-wrap .filter-trash-icon {
     margin-right: .25rem;
 }
@@ -661,6 +666,10 @@ main .section.allmodel-section {
 
 .filter-overlay-wrap .clear-filter-btn {
     justify-content: center;
+}
+
+.filter-overlay-wrap .clear-filter-btn:hover {
+    color: var(--medium-text-color);
 }
 
 .all-model-group-list {
@@ -1304,6 +1313,8 @@ main .section.allmodel-section {
     .all-models-wrapper .nav-list-button:hover {
         border-bottom-color: var(--medium-text-color);
         background: var(--black-shade-1);
+        box-shadow: none;
+        color: var(--light-text-color);
     }
 
     .all-models-wrapper .nav-list-button:focus-visible {
@@ -1311,7 +1322,7 @@ main .section.allmodel-section {
         outline: none;
         border: none;
     }
-    
+
     .all-models-wrapper .content-navigation.arrow-left-active .navbar-wrap {
         mask: linear-gradient(90deg, var(--black-shade) 0, var(--black-shade) 2.1875rem, var(--background-color) 6.6875rem);
     }
