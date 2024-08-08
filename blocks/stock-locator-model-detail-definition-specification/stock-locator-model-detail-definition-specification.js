@@ -10,10 +10,10 @@ import { fetchPlaceholders } from '../../scripts/aem.js';
 
 const lang = document.querySelector('meta[name="language"]').content;
 const placeholders = await fetchPlaceholders(`/${lang}`);
-console.log(placeholders);
 
 let currentlyOpenDropdown = null;
 const viewport = window.innerWidth;
+let getStockLocatorVehicles = {};
 function handleToggleFilterDropDown() {
   const filterSelectors = document.querySelectorAll('.filter-label-heading');
   filterSelectors.forEach((item) => {
@@ -146,12 +146,22 @@ function removeFallbackBannerDOM() {
 // eslint-disable-next-line import/no-mutable-exports
 export let vehicleURL;
 // eslint-disable-next-line no-unused-vars
-let detailBtn; let cfDetails; let fallbackBanner;
 
-export function propsData(modelButtonTxt, countText, cfData, bannerContent) {
-  detailBtn = modelButtonTxt;
-  cfDetails = cfData;
+let disclaimerContent;
+let seeDetailBtn, fallbackBanner, pageCountText;
+
+export async function propsData(modelButtonTxt, countText, cfData, bannerContent) {
+  const disclaimerHtml = cfData?.disclaimercfmodelByPath?.item?.disclaimer?.html;
+  disclaimerContent = document.createElement('div');
+  disclaimerContent.innerHTML = disclaimerHtml;
+  seeDetailBtn = modelButtonTxt.textContent;
   fallbackBanner = bannerContent.textContent;
+  pageCountText = countText.textContent;
+  if (!getStockLocatorVehicles) {
+    vehicleFiltersAPI();
+  } else { 
+    cardTiles(getStockLocatorVehicles);
+  }
 }
 
 function cardTiles(getStockLocatorVehicles) {
@@ -162,16 +172,7 @@ function cardTiles(getStockLocatorVehicles) {
   cardList.classList.add('card-tile-list');
   const cardContainer = document.createElement('div');
   cardContainer.classList.add('card-tile-container');
-  const seeDetailBtn = 'See details';
-  let disclaimerContent;
-  if (document.querySelector('.section.stock-locator-model-detail-definition-specification-container.stock-locator-model-overview-properties-container')) {
-    if (cfDetails) {
-      const disclaimerHtml = cfDetails?.disclaimercfmodelByPath?.item?.disclaimer?.html;
-      disclaimerContent = document.createElement('div');
-      disclaimerContent.innerHTML = disclaimerHtml;
-    }
-    // seeDetailBtn = detailBtn?.querySelector('p') || '';
-  }
+
   const vehicleData = getStockLocatorVehicles?.data;
   // eslint-disable-next-line array-callback-return
   vehicleData?.map((vehicle) => {
@@ -395,7 +396,9 @@ function pagination(meta, getStockLocatorVehicles) {
 function createVehicleCountWrapper(pageOffset, pageLimit, pageCount) {
   const vehicleCountWrapper = document.createElement('div');
   vehicleCountWrapper.classList.add('vehicle-count-wrapper');
-  vehicleCountWrapper.textContent = `${Math.min(pageOffset + pageLimit, pageCount)} out of ${pageCount} vehicles`;
+  let newStr = pageCountText?.replace(/{count}/, Math.min(pageOffset + pageLimit, pageCount));
+  newStr = newStr?.replace(/{count}/, pageCount);
+  vehicleCountWrapper.textContent = newStr;
   document.querySelector('.card-tile-wrapper').appendChild(vehicleCountWrapper);
 }
 
@@ -540,7 +543,7 @@ function popupButton() {
 /* on Page load call the Vehicle API */
 
 async function vehicleFiltersAPI() {
-  const getStockLocatorVehicles = await getStockLocatorVehiclesData();
+  getStockLocatorVehicles = await getStockLocatorVehiclesData();
   // sortVehiclesByPrice(getStockLocatorVehicles);
   cardTiles(getStockLocatorVehicles);
 }
@@ -1193,12 +1196,6 @@ async function stockLocatorFiltersAPI(dropDownContainer) {
   createStockLocatorFilter(stockLocatorFilterData, dropDownContainer);
 }
 
-async function getContentFragmentData(disclaimerCFPath, gqlOrigin) {
-  const endpointUrl = gqlOrigin + disclaimerGQlEndpoint + disclaimerCFPath.innerText;
-  const response = await fetch(endpointUrl);
-  return response.json();
-}
-
 export function createLoadingIconDom() {
   const loadingIcon = document.createElement('div');
   const loadSpinnerContainer = document.createElement('img');
@@ -1272,17 +1269,17 @@ export default async function decorate(block) {
     publishDomain = PROD.hostName;
   }
   block.textContent = '';
-  window.gqlOrigin = window.location.hostname.match('^(.*.hlx\\.(page|live))|localhost$') ? publishDomain : '';
-  getContentFragmentData(disclaimerCF, window.gqlOrigin).then((response) => {
-    const cfData = response?.data;
-    if (cfData) {
-      const disclaimerHtml = cfData?.disclaimercfmodelByPath?.item?.disclaimer?.html;
-      const disclaimerContent = document.createElement('div');
-      disclaimerContent.className = 'disclaimer-content';
-      disclaimerContent.innerHTML = disclaimerHtml;
-      block.appendChild(disclaimerContent);
-    }
-  });
+  // window.gqlOrigin = window.location.hostname.match('^(.*.hlx\\.(page|live))|localhost$') ? publishDomain : '';
+  // getContentFragmentData(disclaimerCF, window.gqlOrigin).then((response) => {
+  //   const cfData = response?.data;
+  //   if (cfData) {
+  //     const disclaimerHtml = cfData?.disclaimercfmodelByPath?.item?.disclaimer?.html;
+  //     const disclaimerContent = document.createElement('div');
+  //     disclaimerContent.className = 'disclaimer-content';
+  //     disclaimerContent.innerHTML = disclaimerHtml;
+  //     block.appendChild(disclaimerContent);
+  //   }
+  // });
 
   // Clear block content and set up loading icon
   // block.textContent = '';
