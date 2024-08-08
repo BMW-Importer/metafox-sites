@@ -656,7 +656,203 @@ li::marker {
 .filter-model-popup .filter-item:not(.selected-filter) .icon-checkmark::before {
     color:var(--background-color);
 }
+.stock-details-wrapper .engine-details-wrapper .engine-title-text{
+    margin: 0 0 2.8125rem;
+}
+.stock-details-wrapper .engine-details-wrapper .engine-elements-title{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 5px;
+    color: #8e8e8e;
+    font-weight: 700;
+}
+.stock-details-wrapper .engine-details-wrapper .engine-elements-text{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+.stock-details-wrapper .engine-details-wrapper .engine-elements-Container{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.elements-design-container .design-elements .design-elements-title{
+    margin: 0 0 2.8125rem;
+}
+.elements-design-container .elements-text-container .elements-text-title{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #8e8e8e;
+    font-weight: 300;
+}
+.elements-design-container .elements-text-container .elements-text-title-container{
+    margin: 10px 0;
+}
+.elements-design-container .elements-text-container .elements-text-dec{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+.elements-design-container .design-elements .elements-container{
+    margin-bottom: 1.875rem;
+}
+.car-spec-packages-wrapper .car-spec-packages-title{
+    margin: 0 0 2.8125rem;
+}
+.car-spec-packages-wrapper .packages-accordion-header .accordion-toggle-text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
 
+.car-spec-packages-wrapper .car-spec-packages-container{
+    border-bottom: 1px solid #e6e6e6; ;
+}
+
+.packages-accordion-content-wrapper {
+    display: none;
+
+}
+.packages-accordion-content-wrapper .packages-accordion-content-Container{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.packages-accordion-content-wrapper .packages-accordion-content-Container .packages-accordion-content-text ul{
+    margin: 0;
+    padding: 0;
+}
+.accordion-toggle-icon,
+.spec-details-showMore-button {
+    cursor: pointer;
+}
+
+.accordion-toggle-icon::before,
+.spec-details-showMore-button::before {
+    overflow-wrap: normal;
+    font-size: 2rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+    content: "arrow_chevron_down";
+    direction: ltr;
+    display: block;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    width: auto;
+    outline: transparent solid 0.0625rem;
+    white-space: nowrap;
+    color: var(--light-text-color)
+}
+
+.accordion-toggle-icon.up-arrow::before{
+    content: "arrow_chevron_up";
+}
+.spec-details-showMore-button::before  {
+    content: "arrow_chevron_up";
+}
+.car-spec-packages-wrapper .packages-accordion-header {
+    display: flex;
+    align-items: center;
+    height: 4.375rem;
+    
+}
+.packages-accordion-content-Container .packages-accordion-content-text .accordion-content-text-title{
+    margin: 0 0 1.875rem;
+}
+.packages-accordion-content-Container .packages-accordion-content-text .accordion-content-text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.9375rem;
+}
+.packages-accordion-content-text ul li{
+    padding: 0.3125rem 0;
+}
+.car-spec-details-wrapper .car-spec-details-title{
+    margin: 0 0 2.8125rem;
+}
+.spec-details-container-wrapper, .spec-details-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.spec-details-Icon{
+    cursor: pointer;
+    border-style: solid;
+    border-color: var(--light-grey-1);
+    width: 1.375rem;
+    border-width: 0.125rem;
+    margin: 0 0.625rem;
+    height: 1.375rem;
+    border-radius: 50%;
+}
+.spec-details-Icon-Button::before{
+    overflow-wrap: normal;
+    font-size: 2.5rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+    content: 'i';
+    color: var(--light-border-color);
+    direction: ltr;
+    display: block;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
+    font-style: normal;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    width: auto;
+    outline: transparent solid 0.0625rem;
+    white-space: nowrap;
+    line-height: 1.1875rem;
+    text-align: center;
+}
+
+.spec-popover-container{
+    display: none;
+}
+
+.spec-popover-container .spec-popover-title {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1.85rem;
+}
+
+.spec-popover-container .spec-popover-img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.car-spec-details-container{
+    padding-bottom: 60px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* .car-spec-details-container img{
+    width: 285px;
+    height: 160px;
+}  */
+
+.car-spec-details-container :hover {
+    box-shadow: rgba(0, 0, 0, 12%) 0 0.625rem 1.0625rem 0, rgba(0, 0, 0, 15%) 0 0.25rem 0.5rem 0;
+}
+
+.car-spec-details-container :hover >*{
+    box-shadow: none;
+}
+.car-spec-details-container .spec-details-text-container{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border:1px solid #e6e6e6;
+    font-size: 12px;
+}
 /*  mobile view */
 @media (width >=360px) and (width < 768px) {
     .stock-locator-container .series-label {
@@ -738,6 +934,16 @@ li::marker {
         margin-bottom: 1.5rem;
         text-align: center;
     }
+    .stock-details-wrapper .engine-details-wrapper .engine-elements-Container{
+        border-bottom: 1px solid #e6e6e6 ;
+    }
+    .stock-details-wrapper > * {
+        margin-bottom: 3.75rem;
+    }
+    .spec-details-container-wrapper, .spec-details-container{
+        display: block;
+    }
+    
 }
 
 /*  tablet view */
@@ -1261,145 +1467,30 @@ li::marker {
     .design-elements .design-elements-title{
         margin-bottom: 2.8125rem;
     }
-
-    .spec-details-container-wrapper, .spec-details-container{
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-
     .car-spec-details-container{
         width: 24%;
-        padding-bottom: 60px;
         padding-top: 15px;
         padding-right: 10px;
-        vertical-align: top;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .car-spec-details-container img{
-        width: 285px;
-        height: 160px;
-    } 
-
-    .car-spec-details-container :hover {
-        box-shadow: rgba(0, 0, 0, 12%) 0 0.625rem 1.0625rem 0, rgba(0, 0, 0, 15%) 0 0.25rem 0.5rem 0;
     }
 
-    .car-spec-details-container :hover >*{
-        box-shadow: none;
-    }
-    .car-spec-details-container .spec-details-text-container{
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        border:1px solid #e6e6e6;
-        font-size: 12px;
-    }
-    .spec-details-Icon{
-        cursor: pointer;
-        border-style: solid;
-        border-color: var(--light-grey-1);
-        width: 2.375rem;
-        border-width: 0.125rem;
-        margin: 0 0.625rem;
-        height: 1.375rem;
-        border-radius: 9999px;
-    }
-    .spec-details-Icon-Button::before{
-        overflow-wrap: normal;
-        font-size: 2.5rem;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        font-feature-settings: "liga";
-        content: 'i';
-        color: var(--light-border-color);
-        direction: ltr;
-        display: block;
-        font-family: var(--icon-font-family);
-        opacity: var(--iconfont400-opacity);
-        font-style: normal;
-        text-rendering: optimizelegibility;
-        text-transform: none;
-        width: auto;
-        outline: transparent solid 0.0625rem;
-        white-space: nowrap;
-        line-height: 1.1875rem;
-        text-align: center;
-    }
 
-    .spec-popover-container{
-        display: none;
-    }
 
-    .spec-popover-container .spec-popover-title {
-        font-size: 3rem;
-        line-height: 4rem;
-        margin-bottom: 1.85rem;
-    }
-
-    .spec-popover-container .spec-popover-img{
-        width: 100% !important;
-        height: 100% !important;
-    }
 
     .packages-accordion-content-wrapper{
         display: none;
-        flex-direction: row;
-        width: 100%;
-        padding-top: 10px;
     }
-    .packages-accordion-content-wrapper .packages-accordion-content-img{
+    .packages-accordion-content-wrapper .packages-accordion-content-Container{
+        display: flex;
+        flex-direction: row;
+    }
+    .packages-accordion-content-wrapper .packages-accordion-content-Container .packages-accordion-content-img{
         width: 33%;
     }
-    .packages-accordion-content-wrapper .packages-accordion-content-text{
+    .packages-accordion-content-wrapper .packages-accordion-content-Container .packages-accordion-content-text{
         width: 66.67%;
         padding: 0 20px;
     }
-    .packages-accordion-content-wrapper .packages-accordion-content-text ul{
-        margin: 0;
-        padding: 0;
-    }
-    .accordion-toggle-icon,
-    .spec-details-showMore-button {
-        cursor: pointer;
-    }
-    
-    .accordion-toggle-icon::before,
-    .spec-details-showMore-button::before {
-        overflow-wrap: normal;
-        font-size: 2rem;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        font-feature-settings: "liga";
-        content: "arrow_chevron_down";
-        direction: ltr;
-        display: block;
-        font-family: var(--icon-font-family);
-        opacity: var(--iconfont400-opacity);
-        font-style: normal;
-        height: 1em;
-        line-height: 1;
-        text-rendering: optimizelegibility;
-        text-transform: none;
-        width: auto;
-        outline: transparent solid 0.0625rem;
-        white-space: nowrap;
-        color: var(--light-text-color)
-    }
-    
-    .accordion-toggle-icon.up-arrow::before{
-        content: "arrow_chevron_up";
-    }
-    .spec-details-showMore-button::before  {
-        content: "arrow_chevron_up";
-    }
-    .packages-accordion-header {
-        display: flex;
-        align-items: center;
-        
-    }
+
     .car-spec-details-wrapper .spec-details-container .spec-details-showMore-container {
         display: flex;
         flex-wrap: wrap;
@@ -1443,8 +1534,12 @@ li::marker {
         color: var(--medium-text-color);
 
     }
-    
+    .stock-details-wrapper >* {
+        margin-bottom: 5.625rem;
+    }
 }
+
+
 
 /** ipad AIR **/
 @media (width >=1023px) and (width < 1279px) {
@@ -1777,5 +1872,14 @@ li::marker {
     .filter-item .icon-checkmark {
         display: none;
     }
+    .stock-details-wrapper >*{
+        margin-bottom: 3.75rem;
+    }
+    .packages-accordion-content-wrapper .packages-accordion-content-Container .packages-accordion-content-img{
+        width: 33%;
+    }
+    .packages-accordion-content-wrapper .packages-accordion-content-Container .packages-accordion-content-text{
+        width: 66.67%;
+        padding: 0 20px;
+    }
 }
-

@@ -382,14 +382,6 @@ function stockCar() {
     engineEleContainer.append(engineEleTitle, engineEleText);
     engineDetailsEle.append(engineEleContainer);
   }
-  // const speedUpContainer = document.createElement('div');
-  // speedUpContainer.classList.add('speedUp-container');
-  // const speedUpTitle = document.createElement('div');
-  // speedUpTitle.classList.add('speedUp-title');
-  // const speedUpText = document.createElement('div');
-  // speedUpText.classList.add('speedUp-text');
-
-  // speedUpContainer.append(speedUpTitle, speedUpText);
 
   const designDetailsWrapper = document.createElement('div');
   designDetailsWrapper.classList.add('design-details-wrapper');
@@ -422,14 +414,20 @@ function stockCar() {
 
       const elementsTextContainer = document.createElement('div');
       elementsTextContainer.classList.add('elements-text-container');
+
+      const elementsTextTitleContainer = document.createElement('div');
+      elementsTextTitleContainer.classList.add('elements-text-title-container');
+
       const elementsTextTitle = document.createElement('span');
       elementsTextTitle.classList.add('elements-text-title');
       elementsTextTitle.textContent = ' Felna ';
+      elementsTextTitleContainer.append(elementsTextTitle);
+
       const elementsTextDec = document.createElement('h4');
       elementsTextDec.classList.add('elements-text-dec');
       elementsTextDec.textContent = '  Alu. felne M V-Spoke style 18" 554 M  ';
 
-      elementsTextContainer.append(elementsTextTitle, elementsTextDec);
+      elementsTextContainer.append(elementsTextTitleContainer, elementsTextDec);
       elementsContainer.append(elementsImageContainer, elementsTextContainer);
 
       designEleWrapper.appendChild(elementsContainer);
@@ -464,6 +462,10 @@ function stockCar() {
   const packagesAccordionContentWrapper = document.createElement('div');
   packagesAccordionContentWrapper.classList.add('packages-accordion-content-wrapper');
 
+  const packagesAccordionContentContainer = document.createElement('div');
+  packagesAccordionContentContainer.classList.add('packages-accordion-content-Container');
+  packagesAccordionContentWrapper.append(packagesAccordionContentContainer);
+
   const packagesAccordionContentImg = document.createElement('div');
   packagesAccordionContentImg.classList.add('packages-accordion-content-img');
 
@@ -495,7 +497,10 @@ function stockCar() {
     accordionContentList,
   );
 
-  packagesAccordionContentWrapper.append(packagesAccordionContentImg, packagesAccordionContentText);
+  packagesAccordionContentContainer.append(
+    packagesAccordionContentImg,
+    packagesAccordionContentText,
+  );
   packagesAccordionContainer.append(packagesAccordionHeader, packagesAccordionContentWrapper);
   carSpecPackagesContainer.append(packagesAccordionContainer);
 
@@ -747,12 +752,12 @@ function toggleButtonFunction() {
   // const specDetailsWindow = document.querySelector('spec-details-container-wrapper');
 
   toggleButtons.addEventListener('click', () => {
-    if (toggleWindows.style.display === 'flex') {
+    if (toggleWindows.style.display === 'block') {
       toggleWindows.style.display = 'none';
       toggleButtons.classList.add('down-arrow');
       toggleButtons.classList.remove('up-arrow');
     } else {
-      toggleWindows.style.display = 'flex';
+      toggleWindows.style.display = 'block';
       toggleButtons.classList.add('up-arrow');
       toggleButtons.classList.remove('down-arrow');
     }
@@ -1623,7 +1628,19 @@ function buildOptionsDOM(optionsData) {
   Object.entries(optionsValue).forEach(([key, value], index) => {
     const container = document.createElement('div');
     container.classList.add('car-spec-details-container');
-    if (index >= 8) {
+
+    const screenWidth = window.innerWidth;
+    let limit;
+
+    if (screenWidth < 768) {
+      limit = 2;
+    } else if (screenWidth >= 768 && screenWidth < 1024) {
+      limit = 6;
+    } else {
+      limit = 8;
+    }
+
+    if (index >= limit) {
       container.style.display = 'none'; // Hide extra items by default
     }
     container.innerHTML = `
@@ -1651,18 +1668,26 @@ function buildOptionsDOM(optionsData) {
   createOptionDOM.append(specDetailsContainer);
   document.querySelector('.card-tile-wrapper')?.appendChild(createOptionDOM);
   if (Object.keys(optionsValue).length > 8) {
-    const buttonContainer = document.createElement('div');
-    buttonContainer.classList.add('button-container');
+    const specDetailsShowMoreContainer = document.createElement('div');
+    specDetailsShowMoreContainer.classList.add('spec-details-showMore-container');
 
-    const toggleButton = document.createElement('button');
-    toggleButton.innerText = 'Show More';
-    toggleButton.classList.add('toggle-button');
-    buttonContainer.append(toggleButton);
-    createOptionDOM.append(buttonContainer);
+    const specDetailsShowMoreButton = document.createElement('i');
+    specDetailsShowMoreButton.classList.add('spec-details-showMore-button', 'down-arrow');
+    const specDetailsShowMoreText = document.createElement('span');
+    specDetailsShowMoreText.classList.add('spec-details-showMore-text');
+    specDetailsShowMoreText.textContent = 'Show more';
+    specDetailsShowMoreContainer.append(specDetailsShowMoreButton, specDetailsShowMoreText);
+    createOptionDOM.append(specDetailsShowMoreContainer);
     let isExpanded = false;
-    toggleButton.addEventListener('click', () => {
+    specDetailsShowMoreButton.addEventListener('click', () => {
       isExpanded = !isExpanded;
-      toggleButton.innerText = isExpanded ? 'Show Less' : 'Show More';
+      if (isExpanded) {
+        specDetailsShowMoreButton.classList.add('down-arrow');
+        specDetailsShowMoreButton.classList.remove('up-arrow');
+      } else {
+        specDetailsShowMoreButton.classList.add('up-arrow');
+        specDetailsShowMoreButton.classList.remove('down-arrow');
+      }
       document.querySelectorAll('.car-spec-details-container').forEach((item, index) => {
         if (index >= 8) {
           item.style.display = isExpanded ? 'block' : 'none';
