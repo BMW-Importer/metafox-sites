@@ -268,24 +268,6 @@ button,input,optgroup,select,textarea{
   margin:0
 }
 
-a.button.hyperlink {
-  background: transparent;
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: rgb(38 38 38 / 100%);
-  font-weight: 700;
-  font-family: var(--fixed-font-family);
-  margin-bottom: 0;
-}
-
-a.button.hyperlink:hover,
-.align-icon:hover {
-  color: var(--link-hover-color);
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
   width: auto;
 }
@@ -342,8 +324,26 @@ a.button.ghost-dark-flex:hover {
   font-weight: bold;
 }
 
+a.button.hyperlink {
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: rgb(38 38 38 / 100%);
+  font-weight: 700;
+  font-family: var(--fixed-font-family);
+  margin-bottom: 0;
+}
+
 .align-icon {
   display: inline-flex;
+}
+
+a.button.hyperlink:hover,
+.align-icon:hover{
+  color: var(--link-hover-color);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .icon-gt::before {
