@@ -165,6 +165,28 @@
       },
       {
         "component": "select",
+        "name": "classes",
+        "description": "Defines the alignment of the elements added to the Columns.",
+        "value": "center",
+        "label": "Horizontal Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "select",
         "name": "verticalAlignment",
         "description": "Defines the vertical alignment of the elements added to the Columns.",
         "value": "middle",
