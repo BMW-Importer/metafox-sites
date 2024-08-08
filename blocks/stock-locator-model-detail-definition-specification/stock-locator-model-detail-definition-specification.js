@@ -593,9 +593,6 @@ function stockCar() {
     carSpecPackagesWrapper,
     carSpecDetailsWrapper,
   );
-  // eslint-disable-next-line no-use-before-define
-  createPopover();
-  toggleButtonFunction();
 }
 
 function pagination(meta, getStockLocatorVehicles) {
@@ -873,12 +870,12 @@ async function handleCheckBoxSelection() {
             selectedValues[headingText].push(checkbox.id);
           }
         } else {
-          const index = selectedValues[headingText].indexOf(checkbox.id);
+          const index = selectedValues[headingText]?.indexOf(checkbox.id);
           if (index !== -1) {
-            selectedValues[headingText].splice(index, 1);
+            selectedValues[headingText]?.splice(index, 1);
           }
           // Remove is-active class if no checkbox is selected for this heading
-          if (selectedValues[headingText].length === 0) {
+          if (selectedValues[headingText]?.length === 0) {
             filterLabelHeading.classList.remove('is-active');
           }
         }
@@ -1532,20 +1529,78 @@ const dropDownContainer = document.createElement('div');
 /** **** details page function ***** */
 
 function buildLabelDOM(labelResponse) {
-  console.log(labelResponse);
+  // console.log(labelResponse);
 }
 
 function buildOptionsDOM(optionsData) {
-  const createOptionDOM = document.createElement('div');
   const optionsValue = optionsData.data.attributes.options;
-  Object.entries(optionsValue).forEach(([key, value]) => {
-    const div = document.createElement('div');
-    div.textContent = '';
-    div.innerHTML = `<strong>Key:</strong> ${key} <br> <strong>ShortText:</strong> ${value.shortText}`;
-    createOptionDOM.appendChild(div);
+  const createOptionDOM = document.createElement('div');
+  createOptionDOM.classList.add('car-spec-details-wrapper', 'border-class');
+
+  const headingOptionLabelDom = document.createElement('h2');
+  createOptionDOM.append(headingOptionLabelDom);
+  headingOptionLabelDom.classList.add('car-spec-details-title');
+  headingOptionLabelDom.innerText = 'Options';
+
+  const specDetailsContainer = document.createElement('div');
+  specDetailsContainer.classList.add('spec-details-container');
+
+  Object.entries(optionsValue).forEach(([key, value], index) => {
+    const container = document.createElement('div');
+    container.classList.add('car-spec-details-container');
+
+    if (index >= 8) {
+      container.style.display = 'none'; // Hide extra items by default
+    }
+    container.innerHTML = `
+        <img class="spec-img" src='https://picsum.photos/200/100' alt="${value.shortText}">
+        <div class="spec-details-text-container">
+            <div class="spec-details-Icon">
+                <i class="spec-details-Icon-Button icon-info-i"></i>
+            </div>
+            <span class="spec-details-text">${value.shortText} (${key.toUpperCase()})</span>
+        </div>
+        <span class="spec-popover-wrapper">
+          <div class="spec-popover-container" style="display: none;">
+            <div class="spec-popover-title">
+                ${value.shortText} (${key.toUpperCase()})</div>
+            <img class="spec-popover-img" src='https://picsum.photos/200/100' alt="${value.longText}">
+            <div class="spec-popover-dec">
+              ${value.longText}</div>
+            <div class="spec-popover-close-button"></div>
+          </div>
+        </span>
+    `;
+    specDetailsContainer.append(container);
   });
-  // document.querySelector('.card-tile-wrapper')?.appendChild(createOptionDOM);
+
+  createOptionDOM.append(specDetailsContainer);
+  document.querySelector('.card-tile-wrapper')?.appendChild(createOptionDOM);
+  if (Object.keys(optionsValue).length > 8) {
+    const buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('button-container');
+
+    const toggleButton = document.createElement('button');
+    toggleButton.innerText = 'Show More';
+    toggleButton.classList.add('toggle-button');
+    buttonContainer.append(toggleButton);
+    createOptionDOM.append(buttonContainer);
+    let isExpanded = false;
+    toggleButton.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      toggleButton.innerText = isExpanded ? 'Show Less' : 'Show More';
+      document.querySelectorAll('.car-spec-details-container').forEach((item, index) => {
+        if (index >= 8) {
+          item.style.display = isExpanded ? 'block' : 'none';
+        }
+      });
+    });
+  }
+
+  // eslint-disable-next-line no-use-before-define
+  createPopover();
 }
+
 function detailsPage() {
   const cardDetailsSelector = document.querySelectorAll('.stock-locator-details, .btn-stock-locator-details');
   cardDetailsSelector.forEach((value) => {
@@ -1602,6 +1657,6 @@ export default async function decorate(block) {
   handleToggleFilterDropDown();
   handleMobileSeriesFilter();
   handleRelevanceSingleSelect();
-  stockCar();
   detailsPage();
+  // stockCar();
 }
