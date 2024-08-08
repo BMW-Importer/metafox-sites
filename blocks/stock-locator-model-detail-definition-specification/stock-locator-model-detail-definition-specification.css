@@ -1239,6 +1239,8 @@ li::marker {
     .spec-details-container-wrapper{
         display: flex;
         flex-wrap: wrap;
+        height: 600px;
+        overflow: hidden;
     }
     .car-spec-details-container{
         width: 24%;
@@ -1248,6 +1250,7 @@ li::marker {
         vertical-align: top;
         display: flex;
         flex-direction: column;
+        
     }
     .car-spec-details-container :hover {
         box-shadow: rgba(0, 0, 0, 12%) 0 0.625rem 1.0625rem 0, rgba(0, 0, 0, 15%) 0 0.25rem 0.5rem 0;
@@ -1260,12 +1263,13 @@ li::marker {
         padding: 15px;
         display: flex;
         align-items: center;
+        border:1px solid #e6e6e6;
     }
     .spec-details-Icon{
         cursor: pointer;
         border-style: solid;
         border-color: var(--light-grey-1);
-        width: 1.375rem;
+        width: 2.375rem;
         border-width: 0.125rem;
         margin: 0 0.625rem;
         height: 1.375rem;
@@ -1292,6 +1296,109 @@ li::marker {
         line-height: 1.1875rem;
         text-align: center;
     }
+    .spec-popover-container{
+        display: none;
+    }
+    .packages-accordion-content-wrapper{
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .packages-accordion-content-wrapper .packages-accordion-content-img{
+        width: 33%;
+    }
+    .packages-accordion-content-wrapper .packages-accordion-content-text{
+        width: 66.67%;
+        padding: 0 20px;
+    }
+    .packages-accordion-content-wrapper .packages-accordion-content-text ul{
+        margin: 0;
+        padding: 0;
+    }
+    .accordion-toggle-icon,
+    .spec-details-showMore-button {
+        cursor: pointer;
+    }
+    
+    .accordion-toggle-icon::before,
+    .spec-details-showMore-button::before {
+        overflow-wrap: normal;
+        font-size: 2rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "liga";
+        content: "arrow_chevron_down";
+        direction: ltr;
+        display: block;
+        font-family: var(--icon-font-family);
+        opacity: var(--iconfont400-opacity);
+        font-style: normal;
+        height: 1em;
+        line-height: 1;
+        text-rendering: optimizelegibility;
+        text-transform: none;
+        width: auto;
+        outline: transparent solid 0.0625rem;
+        white-space: nowrap;
+        color: var(--light-text-color)
+    }
+    
+    .accordion-toggle-icon.up-arrow::before{
+        content: "arrow_chevron_up";
+    }
+    .spec-details-showMore-button::before  {
+        content: "arrow_chevron_up";
+    }
+    .packages-accordion-header {
+        display: flex;
+        align-items: center;
+        
+    }
+    .car-spec-details-wrapper .spec-details-container .spec-details-showMore-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .spec-popover-wrapper .spec-popover-container {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        padding: 45px;
+        left: 5%;
+        z-index: 999;
+        background-color: #e6e6e6;
+    }
+    .spec-popover-close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .spec-popover-close-button::before {
+        overflow-wrap: normal;
+        font-size: 2rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "liga";
+        content: "close";
+        direction: ltr;
+        display: block;
+        font-family: var(--icon-font-family);
+        opacity: var(--iconfont400-opacity);
+        font-style: normal;
+        height: 1em;
+        line-height: 1;
+        text-rendering: optimizelegibility;
+        text-transform: none;
+        width: auto;
+        outline: transparent solid 0.0625rem;
+        white-space: nowrap;
+        color: var(--medium-text-color);
+
+    }
+    
 }
 
 /** ipad AIR **/
