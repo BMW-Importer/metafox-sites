@@ -83,10 +83,12 @@
 }
 
 .precon-wrapper .dot {
-    background: #8e8e8e;
+    background-color: rgb(38 38 38);
+    outline: none;
     cursor: pointer;
     border: 0;
     height: .5rem;
+    opacity: .2;
     display: inline-block;
     margin: 0 .125rem 1.25rem;
     padding: 0;
@@ -103,6 +105,41 @@
     height: .75rem;
     opacity: 1;
     width: .75rem;
+}
+
+
+.precon-wrapper .precon-content-data .precon-link a {
+    background-color: #262626;
+    color: #fff;
+    align-items: center;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: .25rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+.precon-wrapper .precon-content-data .precon-link a:hover {
+    background-color: #605f5f; 
+
+}
+ 
+.precon-wrapper .dot:focus-visible, .precon-wrapper .precon-content-data .precon-link a:focus-visible{
+    opacity: 1;
+    background: #262626;
+    box-shadow: 0 0 0 .0625rem #fff, 0 0 0 .3125rem #1c69d4;
+    outline: none;
+}
+ 
+.precon-wrapper .dot:focus-visible:hover, .precon-wrapper .precon-content-data .precon-link a:focus-visible:hover {
+    box-shadow: 0 0 0 .0625rem #fff, 0 0 0 .3125rem #1c69d4;
+    background: #262626;
 }
 
 .img-card-container.not-active {
@@ -160,28 +197,6 @@ img.card-animation-left {
     font-weight: 300;
     line-height: 1.625rem;
     text-align: center;
-}
-
-.precon-wrapper .precon-content-data .precon-link a {
-    background-color: #262626;
-    color: #fff;
-    align-items: center;
-    border: 0;
-    border-radius: 3px;
-    box-shadow: inset 0 0 0 var(--border-width, 0) var(--border-color, unset);
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    min-height: 2.75rem;
-    padding: .25rem;
-    text-align: center;
-    text-decoration: none;
-    margin: 0;
-    font-weight: 500;
-}
-
-.precon-wrapper .precon-content-data .precon-link a:hover {
-    background-color: #666;
 }
 
 .precon-wrapper-lft-area .carousel-btn-prev,
@@ -309,12 +324,10 @@ img.card-animation-left {
     width: 3.05rem;
 }
 
-
 .precon-wrapper .precon-content-data .pre-content-outer-wrapper {
     padding-bottom: 0;
     padding-top: 1.25rem;
 }
-
 
 @media (width >= 1280px) {
     .precon-wrapper .precon-content-data .pre-content-outer-wrapper {
