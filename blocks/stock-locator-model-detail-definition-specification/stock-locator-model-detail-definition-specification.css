@@ -852,6 +852,51 @@ li::marker {
     align-items: center;
     border:1px solid #e6e6e6;
     font-size: 12px;
+    height: auto;
+    min-height: 70px;
+}
+.car-spec-details-container .spec-details-text-container .spec-details-text{
+    height: auto;
+    max-height: fit-content;
+}
+.spec-popover-wrapper .spec-popover-container {
+    height: auto;
+    position: absolute;
+    z-index: 999;
+    background-color: var(--background-color);
+}
+.spec-popover-close-button {
+    position: absolute;
+    cursor: pointer;
+}
+.spec-popover-close-button::before {
+    overflow-wrap: normal;
+    font-size: 2rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+    content: "close";
+    direction: ltr;
+    display: block;
+    font-family: var(--icon-font-family);
+    opacity: var(--iconfont400-opacity);
+    font-style: normal;
+    height: 1em;
+    line-height: 1;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    width: auto;
+    outline: transparent solid 0.0625rem;
+    white-space: nowrap;
+    color: var(--medium-text-color);
+
+}
+.background-blur{
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+    width: 100%;
+    height: 100%
+    
 }
 /*  mobile view */
 @media (width >=360px) and (width < 768px) {
@@ -943,6 +988,30 @@ li::marker {
     .spec-details-container-wrapper, .spec-details-container{
         display: block;
     }
+    .spec-popover-wrapper .spec-popover-container .spec-popover-title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    .spec-popover-wrapper .spec-popover-container {
+        padding: 30px;
+        left: 0;
+    }
+    .spec-popover-wrapper .spec-popover-container .spec-popover-dec{
+        margin-top: 30px;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-weight: 300;
+    }
+    .spec-popover-close-button {
+        top: 5px;
+        right: 5px;
+    }
+    .spec-popover-container img{
+        width: 336px;
+        height: 190px;
+    } 
     
 }
 

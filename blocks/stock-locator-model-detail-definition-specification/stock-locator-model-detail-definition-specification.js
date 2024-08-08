@@ -783,16 +783,20 @@ function createPopover() {
   const infoButtons = document.querySelectorAll('.spec-details-Icon-Button');
   const popupTexts = document.querySelectorAll('.spec-popover-container');
   const closeButtons = document.querySelectorAll('.spec-popover-close-button');
+  const parentSelector = document.querySelector('.stock-locator-model-detail-definition-specification-wrapper');
 
   infoButtons.forEach((infoButton, index) => {
     const popupText = popupTexts[index];
     const closeButton = closeButtons[index];
     infoButton.addEventListener('click', () => {
+      parentSelector.classList.add('background-blur');
       popupText.style.display = 'block';
+      console.log(parentSelector);
     });
 
     closeButton.addEventListener('click', () => {
       popupText.style.display = 'none';
+      parentSelector.classList.remove('background-blur');
     });
 
     // Optional: Click outside to close the popup
