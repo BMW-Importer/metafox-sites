@@ -105,10 +105,12 @@ export default function decorate(block) {
     const mediaTitleWrapper = document.createElement('p');
     mediaTitleWrapper.classList.add('text-media-title');
     mediaTitleWrapper.textContent = content.querySelector('h2')?.textContent || '';
-    Array.from(headlineMedia?.attributes).forEach((attr) => {
-      mediaTitleWrapper.setAttribute(attr.name, attr.value);
-    });
-    content.replaceChild(mediaTitleWrapper, headlineMedia);
+    if (headlineMedia) {
+      Array.from(headlineMedia?.attributes).forEach((attr) => {
+        mediaTitleWrapper.setAttribute(attr.name, attr.value);
+      });
+      content.replaceChild(mediaTitleWrapper, headlineMedia);
+    }
 
     // add class to content div
     content.classList.add('media-detail-container');

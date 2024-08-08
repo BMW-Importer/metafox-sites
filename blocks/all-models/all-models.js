@@ -33,6 +33,7 @@ const placeholders2 = {
   allModelVehicleInStockText: 'Vehicles in stock',
   allModelFoundVehicle: 'found vehicles',
   allModelShowResults: 'Show results',
+  allMoreShowMoreFilters: 'Show more filters',
 };
 
 placeholders = { ...placeholders, ...placeholders2 };
@@ -584,12 +585,13 @@ function filterBtnRowClickEvent(event) {
 }
 
 function applyStickyNav() {
-  const nav = document.querySelector('.content-navigation');
-  const sticky = nav.offsetTop;
-  if (window.pageYOffset < sticky) {
-    nav.classList.add('sticky');
+  const nav = document.querySelector('.navbar-wrap');
+  const container = document.querySelector('.content-navigation');
+  const top = nav.offsetTop;
+  if (window.scrollY > top) {
+    container.classList.add('sticky');
   } else {
-    nav.classList.remove('sticky');
+    container.classList.remove('sticky');
   }
 }
 
@@ -698,9 +700,9 @@ async function generateDetailDiv(lastElemInRow, modelCode, block) {
                 <span class='all-model-detail__price'>${placeholders.allModelFromText} &nbsp; ${model.Price}</span>
               </div>
             </div>
-            <div class='all-model-detail__showmore-btn-container mobile-hidden'><a href='#' class='all-model-detail__showmore-btn'>${placeholders.allModelShowMoreText}</a></div>
+            <div class='all-model-detail__showmore-btn-container mobile-hidden'><a href='${model['Show More Button URL']}' class='all-model-detail__showmore-btn'>${placeholders.allModelShowMoreText}</a></div>
           </div>
-          <div class='all-model-detail__showmore-btn-container desktop-hidden'><a href='#' class='all-model-detail__showmore-btn'>${placeholders.allModelShowMoreText}</a></div>
+          <div class='all-model-detail__showmore-btn-container desktop-hidden'><a href='${model['Show More Button URL']}' class='all-model-detail__showmore-btn'>${placeholders.allModelShowMoreText}</a></div>
           <div class="all-model-detail__container-links-configure">
             <span class="all-model-detail__detail-view--cta-icon" data-icon="car_front"></span>
             <a href='#' class="all-model-detail__configure-btn">${placeholders.allModelConfigureText}</a>
@@ -786,7 +788,7 @@ export default async function decorate(block) {
 
   const showMoreButton = document.createElement('button');
   showMoreButton.classList.add('show-more-btn');
-  showMoreButton.innerHTML = '<span class="show-more-icon"></span><span class="show-more-text">Show more filters</span>';
+  showMoreButton.innerHTML = `<span class="show-more-icon"></span><span class="show-more-text">${placeholders.allMoreShowMoreFilters}</span>`;
   enableShowMoreBtnClickEvent(showMoreButton);
   allModelParentContainer.append(showMoreButton);
 

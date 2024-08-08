@@ -5,7 +5,7 @@ const axios = require('axios');
 const writeFileAsync = promisify(fs.writeFile);
 const appendFileAsync = promisify(fs.appendFile);
 
-const ERROR_LOG_FILE = 'wdh_error.txt';
+const ERROR_LOG_FILE = 'WDH_API/wdh_error.txt';
 
 const logError = async (message) => {
   const timestamp = new Date().toISOString();
