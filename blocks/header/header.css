@@ -237,6 +237,10 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     background-color: transparent;
   }
 
+  header.header-wrapper.transparent .nav-wrapper {
+    background-color: transparent;
+  }
+
   header.header-wrapper.white-background .nav-wrapper nav[aria-expanded="true"] {   
     scrollbar-width: none;
   }
@@ -674,6 +678,10 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     background-color: transparent;
   }
 
+  header.header-wrapper.transparent .nav-wrapper {
+    background-color: transparent;
+  }
+
 
   header.header-wrapper.white-background nav[aria-expanded="true"] .logo-wrapper .grey-image {
     display: block;
@@ -1070,6 +1078,10 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
 
   header.header-wrapper.white-background .nav-wrapper {
     background-color: transparent;
+  }
+
+  header.header-wrapper.transparent .nav-wrapper {
+    background-color: white;
   }
 
   header.white-background nav .section .menu-link-wrapper a,
