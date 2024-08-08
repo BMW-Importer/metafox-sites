@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-06",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -87,7 +87,7 @@
             "additionalRangeDC": "-",
             "chargeACDC": "7.4 (-) / -",
             "chargeAC": "7.4",
-            "charge_AC_0_100": "4.5",
+            "charge_AC_0_100": "4:30",
             "chargeDC": "-",
             "charge_DC_10_80": "-"
           },

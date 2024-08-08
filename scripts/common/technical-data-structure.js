@@ -337,22 +337,6 @@ export const techDataMarkUp = `
     <p class="techdata-table-td-text value weightMeasurements_trunkCapacity_value">{technicalData.weightMeasurements.trunkCapacity}</p>
     </td>
 </tr>
-<tr class="techdata-table-tr" role="row">
-    <td class="techdata-table-td label" role="rowheader">
-    <p class="techdata-table-td-text label">{placeholders.techDataTheVolumeOfTheReservoirUl}</p>
-    </td>
-    <td class="techdata-table-td value" role="rowheader">
-    <p class="techdata-table-td-text value"></p>
-    </td>
-</tr>
-<tr class="techdata-table-tr" role="row">
-    <td class="techdata-table-td label" role="rowheader">
-    <p class="techdata-table-td-text label">{placeholders.techDataBmwWheelsAndTires}</p>
-    </td>
-    <td class="techdata-table-td value" role="rowheader">
-    <p class="techdata-table-td-text value"></p>
-    </td>
-</tr>
 </table>
 `;
 

@@ -5,7 +5,12 @@ function getApiUrl(modelJson) {
   const { posiSpec } = modelJson.model;
   const cosyApiUrl = config.cosyApiBaseUrl;
   const cosyHub = config.cosyApiHub;
-  const apiUrl = `${cosyApiUrl}${posiSpec.agCode}?hub=${cosyHub}&imagetype=webp&background=transparent&lightson=true&options=${posiSpec.fabric},${posiSpec.paint},${posiSpec.options}`;
+  const { options } = posiSpec;
+  let sortedOptions;
+  if (posiSpec.options) {
+    sortedOptions = options.split(',').sort();
+  }
+  const apiUrl = `${cosyApiUrl}${posiSpec.agCode}?hub=${cosyHub}&imagetype=webp&background=transparent&lightson=true&options=${posiSpec.fabric},${posiSpec.paint},${sortedOptions}`;
   return apiUrl;
 }
 

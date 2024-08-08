@@ -3,11 +3,17 @@ import {
   fetchSetPlaceholderObject, fetchModelPlaceholderObject, fetchTechDataPlaceholderObject,
 } from './wdh-placeholders.js';
 
-import { stockLocatorOrigin, stockLocatorFilterEndPoint, stockLocatorVehiclesEndPoint } from './constants.js';
+import {
+  stockLocatorOrigin, stockLocatorFilterEndPoint, stockLocatorVehiclesEndPoint,
+  vehicleDetailsEndPoint, vehicleGroupReferenceEndPoint,
+} from './constants.js';
+
 // eslint-disable-next-line import/no-cycle
-// import { vehicleURL } from '../../blocks/precon/precon.js';
-// eslint-disable-next-line import/no-cycle
-import { vehicleURL, showLoadingIcon, hideLoadingIcon } from '../../blocks/stock-locator-model-detail-definition-specification/stock-locator-model-detail-definition-specification.js';
+import {
+  vehicleURL, showLoadingIcon, hideLoadingIcon, sortBySelctionData,
+} from '../../blocks/stock-locator-model-detail-definition-specification/stock-locator-model-detail-definition-specification.js';
+
+const localeLang = 'sr'; // document.querySelector('meta[name="language"]').content;
 
 export async function getApiResponse(modelCode) {
   try {
@@ -210,9 +216,10 @@ export async function getStockLocatorFiltersData() {
 }
 
 export async function getStockLocatorVehiclesData() {
+  const sortBy = sortBySelctionData || 'desc';
   showLoadingIcon();
   let url;
-  const filterData = 'limit=9&sortdirection=asc&offset=0&';
+  const filterData = `limit=9&sortby=price&sortdirection=${sortBy}&offset=0&`;
   if (vehicleURL) {
     url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}${dynamicURLData}&${vehicleURL}&${filterData}`;
   } else {
@@ -242,6 +249,38 @@ export async function getShowMoreCards(cardUrl) {
     }
     const responseJson = await response.json();
     hideLoadingIcon();
+    return responseJson;
+  } catch (error) {
+    console.log('Error fetching data for building get placeholder', error);
+    throw error;
+  }
+}
+
+/** Stock Locator Next Page or click of Tiles */
+
+export async function getVehicleDetails(vehicleNumber) {
+  const url = `${stockLocatorOrigin}${vehicleDetailsEndPoint}${vehicleNumber}?locale=${localeLang}_RS`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const responseJson = await response.json();
+    return responseJson;
+  } catch (error) {
+    console.log('Error fetching data for building get placeholder', error);
+    throw error;
+  }
+}
+
+export async function getVehicleGroupReference(vehicleNumber) {
+  const url = `${stockLocatorOrigin}${stockLocatorVehiclesEndPoint}bmw_rs/options?locale=${localeLang}_RS&${vehicleGroupReferenceEndPoint}${vehicleNumber}`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const responseJson = await response.json();
     return responseJson;
   } catch (error) {
     console.log('Error fetching data for building get placeholder', error);

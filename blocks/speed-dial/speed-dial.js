@@ -58,12 +58,14 @@ export default function decorate(block) {
     if (iconType) {
       anchorLink.classList.add(iconType.textContent);
     }
+    anchorLink.setAttribute('tabindex', '-1');
     const spanElem = document.createElement('span');
     spanElem.classList.add('cmp-speeddial-item-arrow');
     childrenBlockProps.classList.add('speed-dial-item');
     childrenBlockProps.addEventListener('click', () => {
       window.location = anchorLink.getAttribute('href');
     });
+    childrenBlockProps.setAttribute('tabindex', '0');
 
     if (anchorLink) {
       const { blockName } = block.dataset;

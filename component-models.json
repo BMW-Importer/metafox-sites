@@ -556,6 +556,12 @@
         "name": "analytics-label",
         "value": "",
         "label": "Section Label"
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "value": "allmodel-section",
+        "hidden":true
       }
     ]
   },
@@ -2448,7 +2454,7 @@
         "label": "Collapse Accordion Icon",
         "name": "accordionItemIcon",
         "valueType": "boolean",
-        "value": false,
+        "value": true,
         "description": "If enabled, the Accordion Item will be collapsed by default"
       }
     ]
@@ -4457,6 +4463,7 @@
         "component": "text",
         "label": "Link",
         "valueType": "string",
+        "hidden": true,
         "name": "contextualised_Link",
         "description": "Defines the link of the contextualised button."
       },
@@ -4517,13 +4524,15 @@
         "component": "text-input",
         "name": "analytics_label",
         "label": "Analytics Label",
-        "valueType": "string"
+        "valueType": "string",
+        "description": "Defines a brief description of the content within the Text with Image for analytics. Please fill out this field in English."
       },
       {
         "component": "select",
         "name": "analytics_button",
         "label": "Button/Link Type",
         "valueType": "string",
+        "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
         "options": [
           {
             "name": "Exit",
@@ -4541,9 +4550,10 @@
       },
       {
         "component": "select",
-        "label": "Button/Link Category",
+        "label": "Button Category",
         "name": "analytics_others",
         "valueType": "string",
+        "description": "Defines the category of the Button/Link authored if Other is selected as its Type.",
         "condition": {
           "===": [
             {
