@@ -593,6 +593,7 @@ function stockCar() {
     carSpecPackagesWrapper,
     carSpecDetailsWrapper,
   );
+  toggleButtonFunction();
 }
 
 function pagination(meta, getStockLocatorVehicles) {
