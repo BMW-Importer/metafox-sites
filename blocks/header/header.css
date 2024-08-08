@@ -224,7 +224,6 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header.header-wrapper.transparent {
-    position: absolute;
     background: white;
     width: 100%;
   }
@@ -666,7 +665,6 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header.header-wrapper.transparent {
-    position: absolute;
     background: white;
     width: 100%;
   }
@@ -1065,7 +1063,6 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
   }
 
   header.header-wrapper.transparent {
-    position: absolute;
     background: white;
     width: 100%;
     z-index: 999;
