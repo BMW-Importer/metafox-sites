@@ -274,7 +274,7 @@ main .section.allmodel-section {
     flex-direction: column;
 }
 
-.sticky {
+.all-models-wrapper .content-navigation.sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -1472,7 +1472,7 @@ main .section.allmodel-section {
         margin: 0;
     }
 
-    .sticky {
+    .all-models-wrapper .content-navigation.sticky {
         padding: 0 0.5rem;
     }
 }
@@ -1642,7 +1642,7 @@ main .section.allmodel-section {
         justify-content: flex-end;
     }    
 
-    .sticky {
+    .all-models-wrapper .content-navigation.sticky {
         padding: 0 3rem;
     }
 }
