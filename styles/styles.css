@@ -268,6 +268,10 @@ button,input,optgroup,select,textarea{
   margin:0
 }
 
+.section.alignment-center.columns-container .columns.left .button-container a.button.hyperlink {
+  width: auto;
+}
+
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
@@ -299,6 +303,7 @@ a.button.ghost-dark {
 .section.alignment-center.columns-container .columns.left .button-container a {
   width: 33%;
 }
+
 
 a.button.ghost-dark.button-fixed-width {
   width: auto;
@@ -517,6 +522,7 @@ main .section:first-child {
   .section.alignment-center.columns-container .columns.left .button-container a {
     width: 32%;
   }
+
 }
 
 /* large-desktop */
@@ -534,6 +540,7 @@ main .section:first-child {
   .section.alignment-center.columns-container .columns.left .button-container a {
     width: 32%;
   }
+
 }
 
 /* mobile */
