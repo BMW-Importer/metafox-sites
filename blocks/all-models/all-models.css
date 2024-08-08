@@ -281,7 +281,7 @@ main .section.allmodel-section {
     right: 0;
     overflow: hidden;
     z-index: 6020;
-    width: 100%
+    width: inherit;
 }
 
 .content-navigation .nav-arrow-left {
@@ -1471,6 +1471,10 @@ main .section.allmodel-section {
     .all-model-detail__showmore-btn-container {
         margin: 0;
     }
+
+    .sticky {
+        padding: 0 0.5rem;
+    }
 }
 
 @media (width >= 1024px) {
@@ -1637,6 +1641,10 @@ main .section.allmodel-section {
         flex-direction: column;
         justify-content: flex-end;
     }    
+
+    .sticky {
+        padding: 0 3rem;
+    }
 }
 
 @media (width >= 1280px) {
