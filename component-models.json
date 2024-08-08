@@ -184,6 +184,28 @@
             "value": "right"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "verticalAlignment",
+        "description": "Defines the vertical alignment of the elements added to the Columns.",
+        "value": "middle",
+        "label": "Vertical Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Middle",
+            "value": "middle"
+          },
+          {
+            "name": "Bottom",
+            "value": "bottom"
+          }
+        ]
       }
     ]
   },
