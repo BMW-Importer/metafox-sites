@@ -733,6 +733,7 @@ li::marker {
     cursor: pointer;
 }
 
+.car-spec-packages-container
 .accordion-toggle-icon::before,
 .spec-details-showmore-button::before {
     overflow-wrap: normal;
@@ -756,7 +757,7 @@ li::marker {
     color: var(--light-text-color)
 }
 
-.accordion-toggle-icon.up-arrow::before{
+.car-spec-packages-container .packages-accordion-container .packages-accordion-header.up-arrow .accordion-toggle-icon::before{
     content: "arrow_chevron_up";
 }
 
@@ -1625,6 +1626,7 @@ li::marker {
         left: 5%;
         z-index: 999;
         background-color: #e6e6e6;
+        top: 2720px;
     }
     .spec-popover-close-button {
         position: absolute;
