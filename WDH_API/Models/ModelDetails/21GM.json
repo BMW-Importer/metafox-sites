@@ -1,0 +1,136 @@
+{
+  "model": {
+    "modelCode": "21GM",
+    "brand": "BM",
+    "description": "BMW X2 sDrive20i",
+    "shortName": "X2 sDrive20i",
+    "shortRangeName": "X2",
+    "modelRangeCode": "U10",
+    "modelRanges": [
+      "U10"
+    ],
+    "seriesCode": "X",
+    "series": [
+      "X"
+    ],
+    "seriesDescription": "X",
+    "seriesDescriptions": [
+      "X"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "8.3",
+    "topSpeed": "213",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21GM",
+      "paint": "P0C5Y",
+      "fabric": "FKUMY",
+      "options": "S01EE,S04AT,S02TF,S0313,S0322,S03KA,S0430,S0431,S0478,S0481,S04V1,S0552,S05AC,S05DM,S06NX,S0760,S07EV,S02PA,S0654,S06AK,S06AE,S0548,S0851,S01DF",
+      "productionDate": "2023-12-01"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "125 (170)",
+      "systemMaxTorque": "280",
+      "gearBox": "7 - automatisch",
+      "driveType": "VR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "13",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "125 (170)",
+            "systemMaxTorque": "280",
+            "gearBox": "7 - automatisch",
+            "driveType": "VR"
+          },
+          "engine": {
+            "cylinders": "3",
+            "technicalCapacity": "1499",
+            "nominalPower": "125 (170)/4700–6500",
+            "nominalTorque": "280/1500–4400"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "55"
+          },
+          "performance": {
+            "acceleration": "8.3",
+            "topSpeed": "213",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6,5–6,0",
+            "emissionsWltpCombined": "148–136 ",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-"
+          },
+          "charging": {
+            "batteryCapacity": "0.9",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4554",
+            "width": "1845",
+            "height": "1590",
+            "widthMirrors": "-",
+            "wheelTurn": "2692",
+            "weightNotLoaded": "1645",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "1800/80",
+            "trunkCapacity": "515–1400",
+            "tankCapacity": "45"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f10"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f10"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

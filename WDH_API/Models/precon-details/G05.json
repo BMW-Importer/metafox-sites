@@ -90,7 +90,7 @@
     "agModelCode": "21EU",
     "vgModelCode": "21EU",
     "modelRangeCode": "G05",
-    "options": "S01CB,S01CE,S01DF,S01SA,S0230,S0255,S02TB,S02VB,S02VC,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S0925",
+    "options": "S01CB,S01CE,S01DF,S01SA,S0230,S0255,S02TB,S02VB,S02VC,S0322,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S0925",
     "paint": "P0C4W",
     "fabric": "FKPSW",
     "headline": "ESSENCE",
@@ -126,7 +126,7 @@
     },
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4eFETQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwRdrx6Kc%252gKd4WwBKupUmFFe%252B3ibvPIjup2XHhDMv63iprJqYrGwXHi4TnEZ9%25rJHFl5Wtou4TJIsDRXL3FlTv0YWUyXIslGAteECrv0s9OfmuE4GA0ogS9VNF9OALUdnnkIogOybQfanvLUgChOq85GybUEqgtE89ChbNmUfCPoEqhk7bSRMLNmqn1hvfDyk7m5VdHXYCn178zQZLtE5V1PaZ2sfN8zVMRVvjSkPazDxz9QdnMRaYWaDbQ5DxRteRhyZ8YWxfjxqMcPteWS6WPEKMfjedwe28BDS6jQ%25mZ22YInwlQaGcpRB%25H5F0KEcw2FD4fXujNRUQoFSr1Iki",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4eFETQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwRdrx6Kc%252gKd4WwBKupUmFFe%252B3ibvPIjup2XHhDMv63iprJqYrGwXHi4TnFt9%25rJHFl5Ncou4TJIs8efL3FlTv0YxryXIslGAtebCrv0s9OfjNE4GA0ogS73NF9OALUdozkIogOybQ55nvLUgChZSR5GybUEqgmP89ChbNmUfNPoEqhk7bSEMLNmqn1hdxDyk7m5VqGSYCn178zQJrtE5V1PaZcyfN8zVMRcp0SkPazDxzG6dnMRaYWaoZQ5DxRteRYhZ8YWxfjxqCcPteWS6WmDKMfjedweMNBDS6jQ%25jpP2Ydw6Zu7cpptv5%25sZR9Kix2uJ8IABNK%25pIYFSr36kxbZLId4VvnH",
     "technicalData": {}
   },
   "7220": {
@@ -138,7 +138,7 @@
     "agModelCode": "21EU",
     "vgModelCode": "21EU",
     "modelRangeCode": "G05",
-    "options": "S01CB,S01CE,S01DF,S01TC,S0230,S0258,S02TB,S02VB,S02VF,S0337,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0710,S0715,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S0925",
+    "options": "S01CB,S01CE,S01DF,S01TC,S0230,S0258,S02TB,S02VB,S02VF,S0322,S0337,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0710,S0715,S0775,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S0925",
     "paint": "P0475",
     "fabric": "FKPSW",
     "headline": "BALANCE",
@@ -158,7 +158,7 @@
       "co2ChargeSustaining": {
         "low": 255,
         "mid": 179,
-        "high": 175,
+        "high": 174,
         "exHigh": 211,
         "comb": 199
       },
@@ -167,7 +167,7 @@
         "low": 11.3,
         "mid": 7.9,
         "high": 7.7,
-        "exHigh": 9.4,
+        "exHigh": 9.3,
         "comb": 8.8
       },
       "fuelEfficiency": {},
@@ -178,7 +178,7 @@
     },
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4m1TTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBw4wrx6Kc%252gKd4WwBKupUmIFe%252B3ibvPIjup2XHhDMv63iprJqYeGwXHi4TnH09%25rJHFl5Ncou4TJIs8efL3FlTv0YxryXIslGAtebCrv0s9OfjNE4GA0ogS73NF9OALUdozkIogOybQ55nvLUgChZSR5GybUEqgmP89ChbNmUfNPoEqhk7bSEMLNmqn1hdxDyk7m5VqGSYCn178zQJrtE5V1PaZcyfN8zVMRcp0SkPazDxM07dnMRaYWDAQQ5DxRteYAZZ8YWxfjxLucPteWS6WCBKMfjedweS7BDS6jQ%25j1k2Ydw6Zu6VfptQ%25wc3wt5ifZu%25KX%25JYHSc3uBrz2JJdoMXOBeypTjHrsD9Ui5pXJ9SGZI4u8jmBE9cvRoPl",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4m1TTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBw4wrx6Kc%252gKd4WwBKupUmIFe%252B3ibvPIjup2XHhDMv63iprJqYeGwXHi4TnFt9%25rJHFl5JAou4TJIs8kKL3FlTv0PjSyXIslGAtW4Crv0s9OfjhE4GA0ogS6kNF9OALUd1XkIogOybQLanvLUgChZ885GybUEqcdx89ChbNmU7MPoEqhk7bSkMLNmqn1hdNDyk7m5VqQWYCn178zm9dtE5V1PaZT4fN8zVMRcKCSkPazDxKiAdnMRaYWDA1Q5DxRteYOZZ8YWxfjtOccPteWS6Wy3KMfjedweE2BDS6jQ%25jd12Ydw6Zu6VnptQ%25wc3wzSifZu%25KX%25f8HSc3uBruTtJdKX324apTTQLDrg2jCil6J40YobH8irTod9cvF3P672NoKGxLMs",
     "technicalData": {}
   },
   "7221": {
@@ -190,7 +190,7 @@
     "agModelCode": "41EU",
     "vgModelCode": "41EU",
     "modelRangeCode": "G05",
-    "options": "S01CB,S01DF,S01SA,S0230,S0255,S02TB,S02VB,S02VC,S02VR,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04U9,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WN,S0925",
+    "options": "S01CB,S01DF,S01SA,S0230,S0255,S02TB,S02VB,S02VC,S02VR,S0322,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04U9,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S08WN,S0925",
     "paint": "P0C35",
     "fabric": "FKPSW",
     "headline": "SIGNATURE",
@@ -201,7 +201,7 @@
     "hidePrice": true,
     "fuelType": "X",
     "productionDate": "",
-    "effectDate": "2024-07-16",
+    "effectDate": "2024-08-08",
     "imageTitle": "  ",
     "imageAltText": "  ",
     "backgroundImage": "/content/dam/bmw/common/preconfiguration/PreCon_Color_White.jpg",
@@ -211,8 +211,8 @@
         "low": 294,
         "mid": 186,
         "high": 177,
-        "exHigh": 208,
-        "comb": 205
+        "exHigh": 209,
+        "comb": 206
       },
       "co2ChargeDepletingCombined": 3,
       "co2Weighted": 19,
@@ -229,23 +229,23 @@
       "fuelEfficiency": {},
       "fuelEfficiencyChargeSustaining": {},
       "allElectricRangeCombined": 102,
-      "allElectricRangeCity": 117,
+      "allElectricRangeCity": 116,
       "equivalentAllElectricRange": {
         "city": 120,
         "comb": 102
       },
       "pureElectricRange": {},
       "electricConsumptionAcWeighted": 26.4,
-      "electricConsumptionAcChargeDepletingCombined": 28.6,
+      "electricConsumptionAcChargeDepletingCombined": 28.7,
       "electricConsumption": {
-        "comb": 27.9
+        "comb": 28
       }
     },
     "modelName": "BMW X5 xDrive50e",
     "hybridCode": "PHEV",
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4eXTTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6aSXRjcZwBOcSrx6Kc%252gq44WwBKupUI8Fe%252B3ibMPIjup2XHhDXv63iprJqYUGwXHi4TnEZ9%25rJHFl5Wtou4TJIsDRXL3FlTv0YWUyXIslGAteECrv0s9OfmuE4GA0ogS9VNF9OALUdnnkIogOybQfGnvLUgChZSR5GybUEqgmP89ChbNmUfNPoEqhk7bSEMLNmqn1hdxDyk7m5VqGSYCn178zQJrtE5V1PaZcyfN8zVMRcp0SkPazDxzG6dnMRaYWaoZQ5DxRteRYhZ8YWxfjxqCcPteWS6WmDKMfjedweMNBDS6jQ%25jpP2Ydw6Zu6aKptQ%25wc31KiifG8u0cxoBHWpiTPvO2kBuivtId4XwnWhcyvQFzG5J",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4eXTTQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjm13aeZQ6K6aSXRjcZwBOcSrx6Kc%252gq44WwBKupUI8Fe%252B3ibMPIjup2XHhDXv63iprJqYUGwXHi4TnFt9%25rJHFl5Ncou4TJIs8efL3FlTv0YxryXIslGAtebCrv0s9OfjNE4GA0ogS73NF9OALUdozkIogOybQ55nvLUgChZS95GybUEqcdx89ChbNmU7MPoEqhk7bSkMLNmqn1hdNDyk7m5VqQWYCn178zm9dtE5V1PaZT4fN8zVMRcKCSkPazDxKiAdnMRaYWa9wQ5DxRteRLcZ8YWxfjxtqcPteWS6WmEKMfjedwe7YBDS6jQ%25jDk2Ydw6Zu6iMptQ%25wc3wRBifZu%25KXVBHHS9P3AKWL2JeiHlMGgpn23HGfvQFr%255eqKCGZIa98T",
     "technicalData": {
       "enginePower": "360",
       "engineHorsePower": "489",
@@ -264,7 +264,7 @@
     "agModelCode": "21EU",
     "vgModelCode": "21EU",
     "modelRangeCode": "G05",
-    "options": "S01CB,S01CE,S01DF,S01SA,S0230,S0255,S02TB,S02VB,S02VC,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S0925",
+    "options": "S01CB,S01CE,S01DF,S01SA,S0230,S0255,S02TB,S02VB,S02VC,S0322,S03AT,S03MB,S0459,S0481,S0488,S0494,S04KR,S04T8,S04UR,S0548,S05AC,S05AL,S05AV,S05DM,S0676,S06AF,S06U2,S0851,S0888,S08KH,S08R3,S08R9,S08S3,S08TF,S0925",
     "paint": "P0C4W",
     "fabric": "FKPSW",
     "headline": "",
@@ -304,7 +304,7 @@
     },
     "brand": "BM",
     "cosyBrand": "WBBM",
-    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4eFETQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwRdrx6Kc%252gKd4WwBKupUmFFe%252B3ibvPIjup2XHhDMv63iprJqYrGwXHi4TnEZ9%25rJHFl5Wtou4TJIsDRXL3FlTv0YWUyXIslGAteECrv0s9OfmuE4GA0ogS9VNF9OALUdnnkIogOybQfanvLUgChOq85GybUEqgtE89ChbNmUfCPoEqhk7bSRMLNmqn1hvfDyk7m5VdHXYCn178zQZLtE5V1PaZ2sfN8zVMRVvjSkPazDxz9QdnMRaYWaDbQ5DxRteRhyZ8YWxfjxqMcPteWS6WPEKMfjedwe28BDS6jQ%25mZ22YInwlQaGcpRB%25H5F0KEcw2FD4fXujNRUQoFSr1Iki",
+    "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rqx5FZ8X6Ausxpz9mlD3AfzBy2od4eFETQLzB6ShtN8vbCUVo%25fMLWgn2MiYdDOPHIagd087uw8jcBUeFe0SwJeieZelEuzWQdjcjs63aeZQ6K67VXRjcZwBwRdrx6Kc%252gKd4WwBKupUmFFe%252B3ibvPIjup2XHhDMv63iprJqYrGwXHi4TnFt9%25rJHFl5Ncou4TJIs8efL3FlTv0YxryXIslGAtebCrv0s9OfjNE4GA0ogS73NF9OALUdozkIogOybQ55nvLUgChZSR5GybUEqgmP89ChbNmUfNPoEqhk7bSEMLNmqn1hdxDyk7m5VqGSYCn178zQJrtE5V1PaZcyfN8zVMRcp0SkPazDxzG6dnMRaYWaoZQ5DxRteRYhZ8YWxfjxqCcPteWS6WmDKMfjedweMNBDS6jQ%25jpP2Ydw6Zu7cpptv5%25sZR9Kix2uJ8IABNK%25pIYFSr36kxbZLId4VvnH",
     "technicalData": {}
   }
 }

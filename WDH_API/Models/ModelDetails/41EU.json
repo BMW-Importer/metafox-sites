@@ -2,7 +2,7 @@
   "model": {
     "modelCode": "41EU",
     "brand": "BM",
-    "description": "X5 xDrive50e",
+    "description": "BMW X5 xDrive50e",
     "shortName": "X5 xDrive50e",
     "shortRangeName": "G05",
     "modelRangeCode": "G05",
@@ -40,7 +40,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-08-06",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TB",

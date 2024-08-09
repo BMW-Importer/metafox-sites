@@ -1,0 +1,136 @@
+{
+  "model": {
+    "modelCode": "48GK",
+    "brand": "BM",
+    "description": "BMW 330e Limousine",
+    "shortName": "330e Limousine",
+    "shortRangeName": "G20",
+    "modelRangeCode": "G20",
+    "modelRanges": [
+      "G20"
+    ],
+    "seriesCode": "3",
+    "series": [
+      "3"
+    ],
+    "seriesDescription": "3",
+    "seriesDescriptions": [
+      "3"
+    ],
+    "hybridCode": "PHEV",
+    "acceleration": "5.8",
+    "seats": 5,
+    "topSpeed": "230",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "48GK",
+      "paint": "P0668",
+      "fabric": "FEHAT",
+      "options": "S04P6,S01S5,S02NH,S02PA,S02TB,S0302,S0316,S0322,S03KA,S03MB,S0403,S0430,S0459,S0465,S0481,S0488,S0491,S0494,S04A2,S04NW,S04U0,S04UR,S0552,S05AC,S05AL,S05DC,S05DF,S05DM,S0654,S0676,S06AE,S06AC,S06AK,S06C3,S06C4,S06C6,S06CP,S06NS,S06NX,S06U3,S0710,S0775,CTRLLIGHTSON",
+      "productionDate": "2024-09-03"
+    },
+    "powerTrain": {
+      "fuelType": "X",
+      "systemPower": "215 (292)",
+      "systemMaxTorque": "",
+      "gearBox": "",
+      "driveType": ""
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "PHEV",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "X",
+            "systemPower": "215 (292)",
+            "systemMaxTorque": "",
+            "gearBox": "",
+            "driveType": ""
+          },
+          "engine": {
+            "cylinders": "",
+            "technicalCapacity": "",
+            "nominalPower": "",
+            "nominalTorque": ""
+          },
+          "electric": {
+            "systemPower": "",
+            "systemMaxTorque": ""
+          },
+          "performance": {
+            "acceleration": "5.8",
+            "topSpeed": "230",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "",
+            "electricConsumption": "",
+            "electricRangeWltpCombined": "",
+            "efficiencyCategoryMinChargeSustaining": "",
+            "efficiencyCategoryMaxChargeSustaining": "",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "",
+            "additionalRangeDC": "",
+            "chargeACDC": "",
+            "chargeAC": "",
+            "charge_AC_0_100": "",
+            "chargeDC": "",
+            "charge_DC_10_80": ""
+          },
+          "weightMeasurements": {
+            "length": "",
+            "width": "",
+            "height": "",
+            "widthMirrors": "",
+            "wheelTurn": "",
+            "weightNotLoaded": "",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "",
+            "trunkCapacity": "",
+            "tankCapacity": ""
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1",
+            "f2"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "electric": [
+            "f2",
+            "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

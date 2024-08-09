@@ -1,0 +1,150 @@
+{
+  "model": {
+    "modelCode": "61HC",
+    "brand": "BM",
+    "description": "BMW M440i xDrive Gran Coupé ",
+    "shortName": "M440i xDrive Gran Coupé ",
+    "shortRangeName": "G26",
+    "modelRangeCode": "G26",
+    "modelRanges": [
+      "G26"
+    ],
+    "seriesCode": "4",
+    "series": [
+      "4"
+    ],
+    "seriesDescription": "4",
+    "seriesDescriptions": [
+      "4"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "4.7",
+    "seats": 5,
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "61HC",
+      "paint": "P0C3Z",
+      "fabric": "FMAOI",
+      "options": "S03FX,S04MC,S02PA,S02T4,S02TB,S02VB,S02VC,S02VF,S02VL,S0302,S0322,S033B,S033T,S03BE,S03M2,S03MF,S0428,S0430,S0459,S0488,S0491,S0493,S0494,S04A2,S04HA,S04U0,S04UR,S0534,S0552,S05AU,S05DA,S05DN,S0654,S0688,S06C3,S06NX,S06U3,S06WC,S0710,S0715,S0754,S0760,S07M9,S09QX,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "275 (374)",
+      "systemMaxTorque": "500",
+      "gearBox": "8 - automatisch",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "10",
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "275 (374)",
+            "systemMaxTorque": "500",
+            "gearBox": "8 - automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2998",
+            "nominalPower": "275 (374)/5500–6500",
+            "nominalTorque": "500/1900–5000"
+          },
+          "electric": {
+            "systemPower": "8 (11) / -",
+            "systemMaxTorque": "25"
+          },
+          "performance": {
+            "acceleration": "4.7",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "8,8–8,2",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "199–186",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "",
+            "efficiencyCategoryMaxChargeSustaining": "",
+            "noiseDriving": "71",
+            "noiseStationary": "86 / 3,750"
+          },
+          "charging": {
+            "batteryCapacity": "0.4",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "",
+            "charge_AC_0_100": "-",
+            "chargeDC": "",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4783",
+            "width": "1852",
+            "height": "1442",
+            "widthMirrors": "-",
+            "wheelTurn": "2856",
+            "weightNotLoaded": "1900",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "1800/75",
+            "trunkCapacity": "470–1290",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "emissionsConsumptionWltp_noiseStationary_value": [
+            "f14"
+          ],
+          "emissionsConsumptionWltp_noiseDriving_value": [
+            "f14"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

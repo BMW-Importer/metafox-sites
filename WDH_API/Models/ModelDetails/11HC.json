@@ -1,0 +1,136 @@
+{
+  "model": {
+    "modelCode": "11HC",
+    "brand": "BM",
+    "description": "BMW 420i Gran Coupé",
+    "shortName": "420i Gran Coupé",
+    "shortRangeName": "G26",
+    "modelRangeCode": "G26",
+    "modelRanges": [
+      "G26"
+    ],
+    "seriesCode": "4",
+    "series": [
+      "4"
+    ],
+    "seriesDescription": "4",
+    "seriesDescriptions": [
+      "4"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "7.9",
+    "seats": 5,
+    "topSpeed": "235",
+    "bodyTypeCode": "CP",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "11HC",
+      "paint": "P0C4W",
+      "fabric": "FKHSW",
+      "options": "S03F3,S04CG,S06C4,S06U3,S06AK,S0534,S0322,S0403,S0493,S04UR,S0654,S0676,S02PA,S02VB,S0428,S0760,S05DF,S0430,S06NX,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "135 (184)",
+      "systemMaxTorque": "300",
+      "gearBox": "8 - automatisch",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "00",
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "135 (184)",
+            "systemMaxTorque": "300",
+            "gearBox": "8 - automatisch",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "135 (184) / 5000 - 6500",
+            "nominalTorque": "300 / 1350 - 4000"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "7.9",
+            "topSpeed": "235",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "7.3 - 6.6",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "166 - 150",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4783",
+            "width": "1852",
+            "height": "1442",
+            "widthMirrors": "2073 (1042 / 1031)",
+            "wheelTurn": "2856",
+            "weightNotLoaded": "1695",
+            "weightMax": "2175",
+            "permittedLoad": "555",
+            "trailerLoad": "1600 / 75",
+            "trunkCapacity": "470 - 1290",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

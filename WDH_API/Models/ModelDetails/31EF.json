@@ -2,7 +2,7 @@
   "model": {
     "modelCode": "31EF",
     "brand": "BM",
-    "description": "X1 xDrive30e",
+    "description": "BMW X1 xDrive30e",
     "shortName": "X1 xDrive30e",
     "shortRangeName": "U11",
     "modelRangeCode": "U11",
@@ -40,7 +40,7 @@
       "gearBox": "7 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-08-06",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TF",

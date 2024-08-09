@@ -1,0 +1,139 @@
+{
+  "model": {
+    "modelCode": "81GE",
+    "brand": "BM",
+    "description": "BMW 120",
+    "shortName": "120",
+    "shortRangeName": "1er",
+    "modelRangeCode": "F70",
+    "modelRanges": [
+      "F70"
+    ],
+    "seriesCode": "1",
+    "series": [
+      "1"
+    ],
+    "seriesDescription": "BMW Serije 1",
+    "seriesDescriptions": [
+      "BMW Serije 1"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "7.8",
+    "topSpeed": "226",
+    "bodyTypeCode": "SH",
+    "marketingBodyTypeCode": "COMP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "81GE",
+      "paint": "P0C4W",
+      "fabric": "FKTNL",
+      "options": "S01H5 S043Z S07EW S01CB S0230 S0248 S02PA S02VB S0302 S0316 S03B5 S03M1 S0420 S0428 S0455 S0459 S0465 S0478 S0481 S0494 S04NR S0534 S05AC S05AU S05AV S05DA S0654 S0674 S06AE S06AF S06PA S0879 S08KA S08R9 S08TF S0925 S0548 S05DW S0851 S0801 S01DF S0337",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "125 (170)",
+      "systemMaxTorque": "280",
+      "gearBox": "7-brzinski, automatski",
+      "driveType": "VR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "125 (170)",
+            "systemMaxTorque": "280",
+            "gearBox": "7-brzinski, automatski",
+            "driveType": "VR"
+          },
+          "engine": {
+            "cylinders": "3",
+            "technicalCapacity": "1499",
+            "nominalPower": "115 (156)/4700–6500",
+            "nominalTorque": "240/1500–4400"
+          },
+          "electric": {
+            "systemPower": "15 (20)/9",
+            "systemMaxTorque": "55"
+          },
+          "performance": {
+            "acceleration": "7.8",
+            "topSpeed": "226",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "5.8–5.3",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "132–121",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "–",
+            "efficiencyCategoryMaxChargeSustaining": "–",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "0.9",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "–",
+            "charge_AC_0_100": "-",
+            "chargeDC": "–",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4361",
+            "width": "1800",
+            "height": "1459",
+            "widthMirrors": "-",
+            "wheelTurn": "2670",
+            "weightNotLoaded": "1500",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "1300/75",
+            "trunkCapacity": "300 – 1135",
+            "tankCapacity": "49"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

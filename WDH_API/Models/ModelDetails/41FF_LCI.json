@@ -1,0 +1,139 @@
+{
+  "model": {
+    "modelCode": "41FF_LCI",
+    "brand": "BM",
+    "description": "BMW M340i xDrive",
+    "shortName": "M340i xDrive",
+    "shortRangeName": "G80",
+    "modelRangeCode": "G80",
+    "modelRanges": [
+      "G80"
+    ],
+    "seriesCode": "3",
+    "series": [
+      "3"
+    ],
+    "seriesDescription": "3",
+    "seriesDescriptions": [
+      "3"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "4.4",
+    "seats": 5,
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "41FF",
+      "paint": "P0X1F",
+      "fabric": "FMANL",
+      "options": "S01G0,S04MC,S0248,S03M2,S02PA,S02T4,S02TB,S02VB,S02VF,S02VL,S0302,S0316,S0322,S0337,S033B,S033T,S03BE,S03KA,S03MF,S0428,S0430,S0431,S0459,S0465,S0481,S0488,S0493,S0494,S04A2,S04GQ,S04NW,S04U0,S04UR,S0534,S0548,S0552,S05AC,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AG,S06AK,S06C4,S06CP,S06DR,S06NX,S06PA,S06U3,S0710,S0715,S0754,S0760,S0775,S07EW,S07M9,S0801,S0851,S0879,S08R3,S08R9,S08S3,S08TF,CTRLLIGHTSON",
+      "productionDate": "2024-09-03"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "275 (374)",
+      "systemMaxTorque": "500",
+      "gearBox": "8 brzina, automatik",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "10",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "275 (374)",
+            "systemMaxTorque": "500",
+            "gearBox": "8 brzina, automatik",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2998",
+            "nominalPower": "275 (374) / 5500 - 6500",
+            "nominalTorque": "500 / 1900 - 5000"
+          },
+          "electric": {
+            "systemPower": "8 (11) / -",
+            "systemMaxTorque": "25"
+          },
+          "performance": {
+            "acceleration": "4.4",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "8.5 – 7.8",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "192 – 177",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "0.4",
+            "additionalRangeDC": "-",
+            "chargeACDC": "",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4714",
+            "width": "1827",
+            "height": "1440",
+            "widthMirrors": "-",
+            "wheelTurn": "2851",
+            "weightNotLoaded": "1800",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "-",
+            "trunkCapacity": "480",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

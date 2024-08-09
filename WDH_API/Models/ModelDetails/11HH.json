@@ -1,0 +1,136 @@
+{
+  "model": {
+    "modelCode": "11HH",
+    "brand": "BM",
+    "description": "BMW i5 eDrive40 Touring",
+    "shortName": "i5 eDrive40 Touring",
+    "shortRangeName": "i5 Touring",
+    "modelRangeCode": "G61E",
+    "modelRanges": [
+      "G61E"
+    ],
+    "seriesCode": "i",
+    "series": [
+      "i"
+    ],
+    "seriesDescription": "i",
+    "seriesDescriptions": [
+      "i"
+    ],
+    "hybridCode": "BEVE",
+    "acceleration": "6.1",
+    "topSpeed": "193",
+    "bodyTypeCode": "TO",
+    "marketingBodyTypeCode": "TO",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "11HH",
+      "paint": "P0C5Y",
+      "fabric": "FKTSW",
+      "options": "S03GQ,S043P,S0337,S033B,S07EW,S0248,S02PA,S02VB,S02VC,S02VV,S0302,S0316,S0322,S03AC,S03DP,S03M1,S03MF,S0402,S0420,S0428,S0453,S0459,S0465,S0481,S0488,S0494,S04A2,S04FL,S04HA,S04NB,S04NR,S04T8,S04U6,S04U9,S04UR,S04V1,S0552,S05AU,S05AY,S05DW,S0654,S06AE,S06AF,S06AK,S06C4,S06CP,S06F4,S06NX,S06PA,S06U3,S06U7,S0710,S0760,S0775,S07M9,S08TF,S08TG,S09T1,S09T2,S09TB,CTRLLIGHTSON",
+      "productionDate": "2024-05-07"
+    },
+    "powerTrain": {
+      "fuelType": "E",
+      "systemPower": "250 (340)",
+      "systemMaxTorque": "400",
+      "gearBox": "Automatski",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "A",
+        "hybridCode": "BEVE",
+        "iD_LEIST_KONST": "30",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "E",
+            "systemPower": "250 (340)",
+            "systemMaxTorque": "400",
+            "gearBox": "Automatski",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "–",
+            "technicalCapacity": "–",
+            "nominalPower": "–",
+            "nominalTorque": "–"
+          },
+          "electric": {
+            "systemPower": "250 (340) / 105 (143)",
+            "systemMaxTorque": "400"
+          },
+          "performance": {
+            "acceleration": "6.1",
+            "topSpeed": "193",
+            "electricTopSpeed": "193"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "–",
+            "emissionsWltpCombined": "0",
+            "electricConsumption": "19.3 - 16.5",
+            "electricRangeWltpCombined": "483 - 560",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "81.2",
+            "additionalRangeDC": "149–189",
+            "chargeACDC": "22 / 205",
+            "chargeAC": "",
+            "charge_AC_0_100": "4.2",
+            "chargeDC": "205",
+            "charge_DC_10_80": "30"
+          },
+          "weightMeasurements": {
+            "length": "5060",
+            "width": "1900",
+            "height": "1515",
+            "widthMirrors": "",
+            "wheelTurn": "2995",
+            "weightNotLoaded": "2255",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "1500/80",
+            "trunkCapacity": "570 - 1700",
+            "tankCapacity": ""
+          }
+        },
+        "footnotes": {
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f4"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "model": {
+    "modelCode": "11GR",
+    "brand": "BM",
+    "description": "BMW X3 20d xDrive",
+    "shortName": "X3 20d xDrive",
+    "shortRangeName": "X3",
+    "modelRangeCode": "G45",
+    "modelRanges": [
+      "G45"
+    ],
+    "seriesCode": "X3",
+    "series": [
+      "X3"
+    ],
+    "seriesDescription": "X3",
+    "seriesDescriptions": [
+      "X3"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "7.7",
+    "topSpeed": "215",
+    "bodyTypeCode": "X3",
+    "marketingBodyTypeCode": "SUV",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "11GR",
+      "paint": "P0C5A",
+      "fabric": "FKTSW",
+      "options": "SA7VB, S07EW, S0337, SA5CA, S03HR, S0320, S03DP, SATSW, S043X, S03M1, S0223, S05AT, S05DN, S0428, S02VB, S06PA, S0688, S0654, S0302, S0494, S04HA, S04FL, S0413, S0248, S0552, S04UR, S0417, S0534, S01CR, S0402, SA801, S01CB, S01CE, S01DF, S02TE, S02VL, S04NR, S0548, S05AW, S06AF, S06NX, S0760, S0775, S08EB, S08KA, S08R3, S08R9, S09AD, S09T1, S09T2, S09TA, S09TB, S0322, S08TF, S0481, S0879, S0901, S0991, S0230, S06AE, S06U3, S0851, S0925, S09AD, S0710, S043W, S04FL, S0488, S08WC, S0704",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "D",
+      "systemPower": "145 (197)",
+      "systemMaxTorque": "400",
+      "gearBox": "8-brzinski, automatski",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "D",
+            "systemPower": "145 (197)",
+            "systemMaxTorque": "400",
+            "gearBox": "8-brzinski, automatski",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1995",
+            "nominalPower": "145 (197)/4000",
+            "nominalTorque": "400/1500–2750"
+          },
+          "electric": {
+            "systemPower": "8 (11)",
+            "systemMaxTorque": "25"
+          },
+          "performance": {
+            "acceleration": "7.7",
+            "topSpeed": "215",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6.5–5.8",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "171–153",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "0.9",
+            "additionalRangeDC": "-",
+            "chargeACDC": "",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4755",
+            "width": "1920",
+            "height": "1660",
+            "widthMirrors": "",
+            "wheelTurn": "",
+            "weightNotLoaded": "1965",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "2500/100",
+            "trunkCapacity": "570–1700",
+            "tankCapacity": "60"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

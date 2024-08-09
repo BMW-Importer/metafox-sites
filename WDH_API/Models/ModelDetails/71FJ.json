@@ -1,0 +1,145 @@
+{
+  "model": {
+    "modelCode": "71FJ",
+    "brand": "BM",
+    "description": "BMW 530e Limousine",
+    "shortName": "530e Limousine",
+    "shortRangeName": "G60",
+    "modelRangeCode": "G60",
+    "modelRanges": [
+      "G60"
+    ],
+    "seriesCode": "5",
+    "series": [
+      "5"
+    ],
+    "seriesDescription": "BMW Serije 5",
+    "seriesDescriptions": [
+      "BMW Serije 5"
+    ],
+    "hybridCode": "PHEV",
+    "fromPrice": 72390,
+    "acceleration": "6.4",
+    "topSpeed": "230",
+    "bodyTypeCode": "RS",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "71FJ",
+      "paint": "P0A90",
+      "fabric": "FKSFU",
+      "options": "S03G3,S043H,S07EW,S03DP,S02TE,S04U9,S04V1,S0S2V,S0S5A,S0S5D,S0S2P,S0S2V,S0S2V,S0S42,S0S5A,S0S6A,S0S6A,S0S8T,S0S4N,S0S6N,S0S6P,S0S6U,S0S6A,S0S6C,S0S30,S0S32,S0S6A,S0S6C,S0S8T,S0S45,S0S45,S0S46,S0S48,S0S48,S0S49,S0S4F,S0S4T,S0S4U,S0S55,S0S40,S0S41,S0S42,S0L80,CTRLLIGHTSON"
+    },
+    "powerTrain": {
+      "fuelType": "X",
+      "systemPower": "220 (299)",
+      "systemMaxTorque": "450",
+      "gearBox": "8 - automatisch",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "PHEV",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "X",
+            "systemPower": "220 (299)",
+            "systemMaxTorque": "450",
+            "gearBox": "8 - automatisch",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "140 (190) / 4400 - 6500",
+            "nominalTorque": " 310 / 1500 - 4000"
+          },
+          "electric": {
+            "systemPower": "135 (184)",
+            "systemMaxTorque": "250"
+          },
+          "performance": {
+            "acceleration": "6.4",
+            "topSpeed": "230",
+            "electricTopSpeed": "140"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "0,8–0,6",
+            "emissionsWltpCombined": "19–14",
+            "electricConsumption": "21,4–18,9",
+            "electricRangeWltpCombined": "87–102"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "5060",
+            "width": "1900",
+            "height": "1515",
+            "widthMirrors": "2156 (1081 / 1075)",
+            "wheelTurn": "2995",
+            "weightNotLoaded": " 2080",
+            "weightMax": "2655",
+            "permittedLoad": "650",
+            "trailerLoad": "1800 / 100",
+            "trunkCapacity": "520",
+            "tankCapacity": "60"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1",
+            "f2"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "electric": [
+            "f2",
+            "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "emissionsConsumptionWltp_consumptionWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_emissionsWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricConsumption_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}
