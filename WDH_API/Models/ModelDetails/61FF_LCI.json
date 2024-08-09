@@ -1,0 +1,138 @@
+{
+  "model": {
+    "modelCode": "61FF_LCI",
+    "brand": "BM",
+    "description": "BMW 330i Sedan",
+    "shortName": "330i Sedan",
+    "shortRangeName": "G20",
+    "modelRangeCode": "G20",
+    "modelRanges": [
+      "G20"
+    ],
+    "seriesCode": "3",
+    "series": [
+      "3"
+    ],
+    "seriesDescription": "3",
+    "seriesDescriptions": [
+      "3"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "5.9",
+    "seats": 5,
+    "topSpeed": "250",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "61FF",
+      "paint": "P0C4P",
+      "fabric": "FKHG7",
+      "options": "S01HL,S04H1,S0760,S0320,S0775,S04A2,S04NW,S02TB,S02VL,S0715,S02PA,S0704,S0508,S05AU,S05DN,S02VB,S0428,S06NX,S06U3,S06WC,S0654,S06C3,S06CP,S0302,S0316,S0322,S0494,S0481,S0465,S0430,S04UR,S05AC,S0552,S0534,S0420,S07EW,S0337,S02NH,CTRLLIGHTSON",
+      "productionDate": "2024-09-03"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "180 (245)",
+      "systemMaxTorque": "400",
+      "gearBox": "8 - automatisch",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "00",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "180 (245)",
+            "systemMaxTorque": "400",
+            "gearBox": "8 - automatisch",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "180 (245) / 4500 - 6500",
+            "nominalTorque": "400 / 1600 - 4000"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "5.9",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "7.4 - 6.6",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "166 - 148",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4713",
+            "width": "1827",
+            "height": "1440",
+            "widthMirrors": "-",
+            "wheelTurn": "2851",
+            "weightNotLoaded": "1600",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "1600/75",
+            "trunkCapacity": "480",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

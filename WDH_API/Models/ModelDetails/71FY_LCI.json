@@ -1,0 +1,138 @@
+{
+  "model": {
+    "modelCode": "71FY_LCI",
+    "brand": "BM",
+    "description": "BMW 330i xDrive Touring  ",
+    "shortName": "330i xDrive Touring  ",
+    "shortRangeName": "G21",
+    "modelRangeCode": "G21",
+    "modelRanges": [
+      "G21"
+    ],
+    "seriesCode": "3",
+    "series": [
+      "3"
+    ],
+    "seriesDescription": "3",
+    "seriesDescriptions": [
+      "3"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "6",
+    "seats": 5,
+    "topSpeed": "250",
+    "bodyTypeCode": "TO",
+    "marketingBodyTypeCode": "TO",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "71FY",
+      "paint": "P0A96",
+      "fabric": "FKHSW",
+      "options": "S01S5,S04P6,S02TE,S02XH,S0423,S0431,S0493,S0508,S0534,S0544,S06U2,S06WC,S0760,S03MC,S05DC,S07EW,S0320,S02PA,S02VB,S0428,S06NX,S06U3,S0654,S06C3,S06CP,S0316,S0322,S0494,S0465,S0430,S05AC,S0552,S0403,S05DM,CTRLLIGHTSON",
+      "productionDate": "2024-09-03"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "180 (245)",
+      "systemMaxTorque": "400",
+      "gearBox": "8 - automatisch",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "00",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "180 (245)",
+            "systemMaxTorque": "400",
+            "gearBox": "8 - automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "180 (245) / 4500 - 6500",
+            "nominalTorque": "400 / 1600 - 4000"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "6",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "8,0–7,3",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "181–164",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4713",
+            "width": "1827",
+            "height": "1456",
+            "widthMirrors": "2068 (1040 / 1028)",
+            "wheelTurn": "2851",
+            "weightNotLoaded": "1735",
+            "weightMax": "2255",
+            "permittedLoad": "595",
+            "trailerLoad": "1800 / 75",
+            "trunkCapacity": "500 - 1510",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

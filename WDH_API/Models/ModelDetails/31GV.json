@@ -1,0 +1,154 @@
+{
+  "model": {
+    "modelCode": "31GV",
+    "brand": "BM",
+    "description": "BMW 530e xDrive Touring",
+    "shortName": "530e xDrive Touring",
+    "shortRangeName": "5 Serije Touring",
+    "modelRangeCode": "G61",
+    "modelRanges": [
+      "G61"
+    ],
+    "seriesCode": "5",
+    "series": [
+      "5"
+    ],
+    "seriesDescription": "BMW Serije 5",
+    "seriesDescriptions": [
+      "BMW Serije 5"
+    ],
+    "hybridCode": "PHEV",
+    "acceleration": "6.4",
+    "seats": 5,
+    "topSpeed": "218",
+    "bodyTypeCode": "TO",
+    "marketingBodyTypeCode": "TO",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "31GV",
+      "paint": "P0300",
+      "fabric": "FKSFU",
+      "options": "S03GH,S043K,S07EW,S02PA,S02TE,S02VB,S02VC,S0316,S0319,S03AC,S03DK,S03DP,S0402,S0420,S0428,S0459,S0465,S0481,S0488,S0494,S04A2,S04T8,S04U9,S04UR,S04V1,S0534,S0552,S05AT,S05AY,S05DN,S0654,S0674,S06AE,S06AF,S06AK,S06C4,S06CP,S06NX,S06U3,S06U7,S08TF ,CTRLLIGHTSON",
+      "productionDate": "2024-07-05"
+    },
+    "powerTrain": {
+      "fuelType": "X",
+      "systemPower": "220 (299)",
+      "systemMaxTorque": "450",
+      "gearBox": "8-brzinski, Automatski",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "PHEV",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "X",
+            "systemPower": "220 (299)",
+            "systemMaxTorque": "450",
+            "gearBox": "8-brzinski, Automatski",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "140 (190)/4400–6500",
+            "nominalTorque": "310/1500–4000"
+          },
+          "electric": {
+            "systemPower": "135 (184) / 57",
+            "systemMaxTorque": "250"
+          },
+          "performance": {
+            "acceleration": "6.4",
+            "topSpeed": "218",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "1.0–0.8",
+            "emissionsWltpCombined": "22–18",
+            "electricConsumption": "23.7–21.7",
+            "electricRangeWltpCombined": "89-82",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "19.4",
+            "additionalRangeDC": "–",
+            "chargeACDC": "7.4/–",
+            "chargeAC": "7.4",
+            "charge_AC_0_100": "3.25",
+            "chargeDC": "",
+            "charge_DC_10_80": "–"
+          },
+          "weightMeasurements": {
+            "length": "5060",
+            "width": "1900",
+            "height": "1515",
+            "widthMirrors": "",
+            "wheelTurn": "2995",
+            "weightNotLoaded": "2195",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "2000/100",
+            "trunkCapacity": "1700-570",
+            "tankCapacity": "60"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1",
+            "f2"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "electric": [
+            "f2",
+            "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "emissionsConsumptionWltp_consumptionWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_emissionsWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricConsumption_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

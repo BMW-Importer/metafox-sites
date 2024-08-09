@@ -13,9 +13,9 @@
     "series": [
       "3"
     ],
-    "seriesDescription": "BMW Serije 3 - M verzije",
+    "seriesDescription": "3",
     "seriesDescriptions": [
-      "BMW Serije 3 - M verzije"
+      "3"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 49999,
@@ -40,103 +40,6 @@
       "systemMaxTorque": "250",
       "gearBox": "8 - automatisch",
       "driveType": "HR"
-    },
-    "effectDate": "2024-07-30",
-    "vehicles": [
-      {
-        "transmissionCode": "S02TE",
-        "hybridCode": "NOHY",
-        "iD_LEIST_KONST": "00",
-        "volt48": false,
-        "technicalData": {
-          "powerTrain": {
-            "fuelType": "O",
-            "systemPower": "115 (156)",
-            "systemMaxTorque": "250",
-            "gearBox": "8 - automatisch",
-            "driveType": "HR"
-          },
-          "engine": {
-            "cylinders": "4",
-            "technicalCapacity": "1998",
-            "nominalPower": "115 (156) / 4500 - 6500",
-            "nominalTorque": "250 / 1300 - 4300"
-          },
-          "electric": {
-            "systemPower": "-",
-            "systemMaxTorque": "-"
-          },
-          "performance": {
-            "acceleration": "8.8",
-            "topSpeed": "218",
-            "electricTopSpeed": "-"
-          },
-          "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "7.5–6.7",
-            "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "168–151",
-            "electricConsumption": "-",
-            "electricRangeWltpCombined": "-",
-            "efficiencyCategoryMinChargeSustaining": "-",
-            "efficiencyCategoryMaxChargeSustaining": "-",
-            "noiseDriving": "-",
-            "noiseStationary": "-"
-          },
-          "charging": {
-            "batteryCapacity": "-",
-            "additionalRangeDC": "-",
-            "chargeACDC": "-",
-            "chargeAC": "-",
-            "charge_AC_0_100": "-",
-            "chargeDC": "-",
-            "charge_DC_10_80": "-"
-          },
-          "weightMeasurements": {
-            "length": "4713",
-            "width": "1827",
-            "height": "1440",
-            "widthMirrors": "2068 (1040 / 1028)",
-            "wheelTurn": "2851.0",
-            "weightNotLoaded": "1650",
-            "weightMax": "2170",
-            "permittedLoad": "595",
-            "trailerLoad": "1300 / 75",
-            "trunkCapacity": "500–1510",
-            "tankCapacity": "59.0"
-          }
-        },
-        "footnotes": {
-          "powerTrain": [
-            "f1"
-          ],
-          "engine": [
-            "f1"
-          ],
-          "performance_acceleration_value": [
-            "f16"
-          ],
-          "performance_topSpeed_value": [
-            "f17"
-          ],
-          "performance_electricTopSpeed_value": [
-            "f17"
-          ],
-          "emissionsConsumptionWltp": [
-            "f1",
-            "f4"
-          ],
-          "weightMeasurements_weightNotLoaded_label": [
-            "f8"
-          ],
-          "weightMeasurements_trailerLoad_label": [
-            "f13"
-          ]
-        },
-        "footnotesData": {
-          "overboostMax": "-",
-          "overboostKW": "-"
-        }
-      }
-    ]
+    }
   }
 }

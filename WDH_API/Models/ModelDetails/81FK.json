@@ -1,0 +1,165 @@
+{
+  "model": {
+    "modelCode": "81FK",
+    "brand": "BM",
+    "description": "BMW M5 Sedan",
+    "shortName": "M5 Sedan",
+    "shortRangeName": "5er Limousine M Automobile",
+    "marketingSeries": "5",
+    "modelRangeCode": "G90",
+    "modelRanges": [
+      "G90"
+    ],
+    "seriesCode": "M",
+    "series": [
+      "M"
+    ],
+    "seriesDescription": "M",
+    "seriesDescriptions": [
+      "M"
+    ],
+    "hybridCode": "PHEV",
+    "acceleration": "3.5",
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "CP",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "81FK",
+      "paint": "P0C64",
+      "fabric": "FLKKG",
+      "options": "S01DF,S01GC,S01MB,S0230,S0248,S02NK,S02PA,S02VB,S02VC,S0302,S0322,S03DP,S03MF,S0428,S043P,S0453,S0459,S04FL,S04GQ,S04HA,S04MA,S04NB,S04NR,S04T2,S04T3,S04U9,S04UR,S04V1,S0548,S0552,S05AU,S05AV,S05DW,S05YA,S0654,S06AE,S06AF,S06AK,S06C4,S06F4,S06NX,S06PA,S06U3,S071C,S0760,S0776,S07M9,S07ME,S07VB,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08WN,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "X",
+      "systemPower": "535 (727)",
+      "systemMaxTorque": "1000",
+      "gearBox": "8-brzinski, Automatski",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "PHEV",
+        "iD_LEIST_KONST": "",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "X",
+            "systemPower": "535 (727)",
+            "systemMaxTorque": "1000",
+            "gearBox": "8-brzinski, Automatski",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "8",
+            "technicalCapacity": "4395",
+            "nominalPower": "430 (585)/5600–6500",
+            "nominalTorque": "750/1800–5400"
+          },
+          "electric": {
+            "systemPower": "145 (197)",
+            "systemMaxTorque": "280"
+          },
+          "performance": {
+            "acceleration": "3.5",
+            "topSpeed": "250",
+            "electricTopSpeed": "140"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "1.7–1.6",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "39–37",
+            "electricConsumption": "25.5–25.0",
+            "electricRangeWltpCombined": "67–69",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "18.6",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "7.4/–",
+            "charge_AC_0_100": "3.25",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "5096",
+            "width": "1970",
+            "height": "1510",
+            "widthMirrors": "2081 (1046 / 1035)",
+            "wheelTurn": "2857",
+            "weightNotLoaded": "2510",
+            "weightMax": "2155",
+            "permittedLoad": "455",
+            "trailerLoad": "-",
+            "trunkCapacity": "466",
+            "tankCapacity": "60"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1",
+            "f2"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "electric": [
+            "f2",
+            "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "emissionsConsumptionWltp_consumptionWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_consumptionWltpCombinedBest_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_emissionsWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_emissionsWltpCombinedBest_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricConsumption_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "emissionsConsumptionWltp_efficiencyCategoryMin_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_efficiencyCategoryMax_label": [
+            "f5"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

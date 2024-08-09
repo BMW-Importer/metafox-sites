@@ -1,0 +1,141 @@
+{
+  "model": {
+    "modelCode": "21GE",
+    "brand": "BM",
+    "description": "BMW M135 xDrive",
+    "shortName": "M135 xDrive",
+    "shortRangeName": "1er",
+    "modelRangeCode": "F70",
+    "modelRanges": [
+      "F70"
+    ],
+    "seriesCode": "1",
+    "series": [
+      "1"
+    ],
+    "seriesDescription": "BMW Serije 1",
+    "seriesDescriptions": [
+      "BMW Serije 1"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "4.9",
+    "seats": 5,
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21GE",
+      "paint": "P0300",
+      "fabric": "FKTNL",
+      "options": "S01HA,S043U,S01CB,S01DF,S0230,S0248,S02PA,S02TE,S02VB,S02VF,S0302,S0316,S0322,S033B,S03B5,S03DN,S03M2,S03MF,S0420,S0428,S0430,S0431,S0459,S0481,S0494,S04GQ,S04NR,S0534,S0548,S0552,S05AC,S05AU,S05AY,S05DN,S05DW,S0610,S0654,S0674,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U2,S06U3,S0710,S0711,S0754,S0760,S0775,S07EW,S07M9,S0801,S0851,S0879,S08EB,S08KA,S08R9,S08TF,S09QR,S09QT,S09QV,S09T1,S09T2,S09TA,S09TB,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "221 (300)",
+      "systemMaxTorque": "400",
+      "gearBox": "7 - automatic",
+      "driveType": "VR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "221 (300)",
+            "systemMaxTorque": "400",
+            "gearBox": "7 - automatic",
+            "driveType": "VR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "221 (300)/5750–6500",
+            "nominalTorque": "400/2000–4500"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "4.9",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "8,2–7,6",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "185–173",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "",
+            "efficiencyCategoryMaxChargeSustaining": "",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "",
+            "charge_AC_0_100": "-",
+            "chargeDC": "",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4361",
+            "width": "1800",
+            "height": "1459",
+            "widthMirrors": "-",
+            "wheelTurn": "2670",
+            "weightNotLoaded": "1625",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "750/75",
+            "trunkCapacity": "380–1200",
+            "tankCapacity": "49"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}
