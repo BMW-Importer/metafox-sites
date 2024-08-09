@@ -2,7 +2,7 @@
   "model": {
     "modelCode": "51BX",
     "brand": "BM",
-    "description": "230e xDrive",
+    "description": "BMW 230e xDrive",
     "shortName": "230e xDrive",
     "shortRangeName": "U06",
     "modelRangeCode": "U06",
@@ -13,13 +13,14 @@
     "series": [
       "2"
     ],
-    "seriesDescription": "BMW Serije 2 Active Tourer",
+    "seriesDescription": "BMW Serije 2 Gran Coupe",
     "seriesDescriptions": [
-      "BMW Serije 2 Active Tourer"
+      "BMW Serije 2 Gran Coupe"
     ],
     "hybridCode": "PHEV",
     "fromPrice": 50304,
-    "acceleration": "-",
+    "acceleration": "",
+    "topSpeed": "",
     "bodyTypeCode": "ST",
     "marketingBodyTypeCode": "TO",
     "bodyTypeDescription": "SAT",
@@ -37,7 +38,7 @@
       "gearBox": "-",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TF",
@@ -61,12 +62,17 @@
             "systemPower": "-",
             "systemMaxTorque": "-"
           },
+          "performance": {
+            "acceleration": "",
+            "topSpeed": "",
+            "electricTopSpeed": ""
+          },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "0.9–0.8",
+            "consumptionWltpCombined": "0.9 - 0.8",
             "consumptionWltpCombinedChargeSustaining": "6.4–5.7",
-            "emissionsWltpCombined": "21–19",
-            "electricConsumption": "17.9–16.1",
-            "electricRangeWltpCombined": "78–89",
+            "emissionsWltpCombined": "21 - 19",
+            "electricConsumption": "17.9 - 16.1",
+            "electricRangeWltpCombined": "78 - 89",
             "efficiencyCategoryMinChargeSustaining": "-",
             "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
@@ -163,12 +169,17 @@
             "systemPower": "-",
             "systemMaxTorque": "-"
           },
+          "performance": {
+            "acceleration": "",
+            "topSpeed": "",
+            "electricTopSpeed": ""
+          },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "0.9–0.8",
+            "consumptionWltpCombined": "0.9 - 0.8",
             "consumptionWltpCombinedChargeSustaining": "6.4–5.7",
-            "emissionsWltpCombined": "21–19",
-            "electricConsumption": "17.9–16.1",
-            "electricRangeWltpCombined": "78–89",
+            "emissionsWltpCombined": "21 - 19",
+            "electricConsumption": "17.9 - 16.1",
+            "electricRangeWltpCombined": "78 - 89",
             "efficiencyCategoryMinChargeSustaining": "-",
             "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",

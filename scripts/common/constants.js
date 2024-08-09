@@ -20,4 +20,4 @@ export const stockLocatorVehiclesEndPoint = '/api/v1/vehicles/';
 export const disclaimerTechDataEndPoint = '/graphql/execute.json/metafox/getDisclaimerCFModelTag;tagValue=metafox:{fvalue};disclaimerCFPath={encryptedstring}';
 
 export const vehicleDetailsEndPoint = '/api/v1/vehicle/';
-export const vehicleGroupReferenceEndPoint = 'groupReference';
+export const vehicleGroupReferenceEndPoint = 'groupReference=';

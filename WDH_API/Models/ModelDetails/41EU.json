@@ -2,7 +2,7 @@
   "model": {
     "modelCode": "41EU",
     "brand": "BM",
-    "description": "X5 xDrive50e",
+    "description": "BMW X5 xDrive50e",
     "shortName": "X5 xDrive50e",
     "shortRangeName": "G05",
     "modelRangeCode": "G05",
@@ -13,12 +13,12 @@
     "series": [
       "X5"
     ],
-    "seriesDescription": "BMW X5",
+    "seriesDescription": "BMW X5 - M verzije",
     "seriesDescriptions": [
-      "BMW X5"
+      "BMW X5 - M verzije"
     ],
     "hybridCode": "PHEV",
-    "fromPrice": 102682,
+    "fromPrice": 104255,
     "acceleration": "4.8",
     "trunkCapacity": 500,
     "seats": 5,
@@ -40,7 +40,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -86,7 +86,7 @@
             "additionalRangeDC": "-",
             "chargeACDC": "7.4 (-) / -",
             "chargeAC": "7.4",
-            "charge_AC_0_100": "4.5",
+            "charge_AC_0_100": "4:30",
             "chargeDC": "-",
             "charge_DC_10_80": "-"
           },

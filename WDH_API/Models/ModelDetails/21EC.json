@@ -13,9 +13,9 @@
     "series": [
       "X4"
     ],
-    "seriesDescription": "BMW X4",
+    "seriesDescription": "BMW X4 - M verzije",
     "seriesDescriptions": [
-      "BMW X4"
+      "BMW X4 - M verzije"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 121965,
@@ -32,7 +32,7 @@
       "agCode": "21EC",
       "paint": "P0C4H",
       "fabric": "FLKSW",
-      "options": "S01DF,S01MA,S01MP,S01RQ,S0230,S02PA,S02VB,S0302,S0322,S03DS,S03M6,S03MF,S0402,S0420,S0423,S0428,S0488,S0493,S04GQ,S04HA,S04MC,S04NE,S04NM,S0548,S0552,S05AL,S05AU,S05AV,S05DA,S05DM,S0610,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06NW,S06U3,S06U8,S06WD,S0712,S07M9,S07MA,S07MN,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08TR,S08WL,S0925"
+      "options": "S01DF,S01MA,S01MP,S01RQ,S0230,S02PA,S02VB,S0302,S0322,S03M6,S03MF,S0402,S0420,S0423,S0428,S0488,S0493,S04GQ,S04HA,S04MC,S04NE,S04NM,S0548,S0552,S05AL,S05AU,S05AV,S05DA,S05DM,S0610,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06NW,S06U3,S06U8,S06WD,S0712,S07M9,S07MA,S07MN,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08TR,S08WL,S0925"
     },
     "powerTrain": {
       "fuelType": "O",
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "A",

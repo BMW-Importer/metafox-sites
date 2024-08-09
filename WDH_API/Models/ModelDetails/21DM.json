@@ -1,0 +1,132 @@
+{
+  "model": {
+    "modelCode": "21DM",
+    "brand": "BM",
+    "description": "BMW M2 Coupé",
+    "shortName": "M2 Coupé",
+    "shortRangeName": "G87",
+    "modelRangeCode": "G87",
+    "modelRanges": [
+      "G87"
+    ],
+    "seriesCode": "2",
+    "series": [
+      "2"
+    ],
+    "seriesDescription": "BMW Serije 2 Gran Coupe",
+    "seriesDescriptions": [
+      "BMW Serije 2 Gran Coupe"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "4.2",
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "SH",
+    "marketingBodyTypeCode": "COMP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21DM",
+      "paint": "P0P6M",
+      "fabric": "FMAL3",
+      "options": "S01YL,S04MC,S01DF,S01MB,S0230,S0248,S02MA,S02PA,S02T4,S02VB,S02VC,S02VF,S0302,S0322,S03M5,S03MF,S040C,S0428,S0430,S0431,S043A,S0459,S0488,S0493,S0494,S04GQ,S04NE,S04UR,S0534,S0544,S0548,S0552,S05AC,S05AS,S05AV,S05DA,S05DC,S05DM,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06CP,S06NX,S06PA,S06U3,S06VB,S070A,S0760,S0775,S07ME,S0801,S0851,S0879,S08EB,S08KA,S08R3,S08R9,S08TF,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "353 (480)",
+      "systemMaxTorque": "550",
+      "gearBox": "6-speed, manual",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "353 (480)",
+            "systemMaxTorque": "550",
+            "gearBox": "6-speed, manual",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2993",
+            "nominalPower": "353 (480)/6250",
+            "nominalTorque": "550/2650–6130"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "4.2",
+            "topSpeed": "250",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "10.2–10.0",
+            "emissionsWltpCombined": "231–226",
+            "electricConsumption": "",
+            "electricRangeWltpCombined": "",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4580",
+            "width": "1887",
+            "height": "1403",
+            "widthMirrors": "",
+            "wheelTurn": "2747",
+            "weightNotLoaded": "1780",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "",
+            "trunkCapacity": "390",
+            "tankCapacity": "52"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

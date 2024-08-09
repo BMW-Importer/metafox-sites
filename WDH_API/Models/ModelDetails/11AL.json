@@ -13,9 +13,9 @@
     "series": [
       "2"
     ],
-    "seriesDescription": "BMW Serije 2 Active Tourer",
+    "seriesDescription": "BMW Serije 2 Gran Coupe",
     "seriesDescriptions": [
-      "BMW Serije 2 Active Tourer"
+      "BMW Serije 2 Gran Coupe"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 63253,
@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TB",

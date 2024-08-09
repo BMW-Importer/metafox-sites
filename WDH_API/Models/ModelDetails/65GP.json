@@ -1,0 +1,156 @@
+{
+  "model": {
+    "modelCode": "65GP",
+    "brand": "BM",
+    "description": "BMW X3 30e xDrive",
+    "shortName": "X3 30e xDrive",
+    "shortRangeName": "X3",
+    "modelRangeCode": "G45",
+    "modelRanges": [
+      "G45"
+    ],
+    "seriesCode": "X3",
+    "series": [
+      "X3"
+    ],
+    "seriesDescription": "X3",
+    "seriesDescriptions": [
+      "X3"
+    ],
+    "hybridCode": "PHEV",
+    "acceleration": "6.2",
+    "topSpeed": "215",
+    "bodyTypeCode": "X3",
+    "marketingBodyTypeCode": "SUV",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "65GP",
+      "paint": "P0C4F",
+      "fabric": "FECJ7",
+      "options": "S043X,S0402,SA7VB,SA7EW,SA0C4,S03N4,S03MB,S03DP,SAECJ,S043X,S04T2,S04T3,S04U8,S04V1,S02VC,S0223,S05AU,S05DW,S0428,S02VB,S06PA,S0688,S0654,S0302,S0488,S0494,S04HA,S04FL,S0413,S0248,S0552,S04UR,S0417,S0534,S01CR,S0402,SA801,S01CB,S01DF,S02TE,S02VL,S0459,S04NR,S0548,S05AW,S06AF,S06NX,S0775,S08EB,S08KA,S08R3,S08R9,S09AD,S0322,S08TF,S0481,S04U9,S0879,S0901,S0991,S0230,S06AE,S06U3,S0851,S0925,S09AD,CTRLLIGHTSON",
+      "productionDate": "2024-10-01"
+    },
+    "powerTrain": {
+      "fuelType": "X",
+      "systemPower": "220 (299)",
+      "systemMaxTorque": "450",
+      "gearBox": "8-Gang, automatisch",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "PHEV",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "X",
+            "systemPower": "220 (299)",
+            "systemMaxTorque": "450",
+            "gearBox": "8-Gang, automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "140 (190)/4400–6500",
+            "nominalTorque": "310 / 1500–4000"
+          },
+          "electric": {
+            "systemPower": "135 (184) / 57",
+            "systemMaxTorque": "250"
+          },
+          "performance": {
+            "acceleration": "6.2",
+            "topSpeed": "215",
+            "electricTopSpeed": "140"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "1.1–0.9",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "26–21",
+            "electricConsumption": "24.0–22.3",
+            "electricRangeWltpCombined": "81–90",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "65",
+            "noiseStationary": "74 / 3750"
+          },
+          "charging": {
+            "batteryCapacity": "19.7",
+            "additionalRangeDC": "-",
+            "chargeACDC": "7.4/–",
+            "chargeAC": "11 (-)",
+            "charge_AC_0_100": "3.5",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4755",
+            "width": "1920",
+            "height": "1660",
+            "widthMirrors": "2132 (1069 / 1063)",
+            "wheelTurn": "2865",
+            "weightNotLoaded": "2140",
+            "weightMax": "2710",
+            "permittedLoad": "",
+            "trailerLoad": "",
+            "trunkCapacity": "460–1600",
+            "tankCapacity": "50"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1",
+            "f2"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "electric": [
+            "f2",
+            "f3"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "emissionsConsumptionWltp_consumptionWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_emissionsWltpCombined_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricConsumption_label": [
+            "f5"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "emissionsConsumptionWltp_noiseStationary_value": [
+            "f14"
+          ],
+          "emissionsConsumptionWltp_noiseDriving_value": [
+            "f14"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

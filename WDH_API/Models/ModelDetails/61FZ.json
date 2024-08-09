@@ -13,9 +13,9 @@
     "series": [
       "3"
     ],
-    "seriesDescription": "BMW Serije 3 - M verzije",
+    "seriesDescription": "3",
     "seriesDescriptions": [
-      "BMW Serije 3 - M verzije"
+      "3"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 76823,
@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TB",

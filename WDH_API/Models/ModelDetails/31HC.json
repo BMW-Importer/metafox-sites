@@ -1,0 +1,133 @@
+{
+  "model": {
+    "modelCode": "31HC",
+    "brand": "BM",
+    "description": "BMW 430i Gran Coupé",
+    "shortName": "430i Gran Coupé",
+    "shortRangeName": "G26",
+    "modelRangeCode": "G26",
+    "modelRanges": [
+      "G26"
+    ],
+    "seriesCode": "4",
+    "series": [
+      "4"
+    ],
+    "seriesDescription": "4",
+    "seriesDescriptions": [
+      "4"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "6.2",
+    "seats": 5,
+    "topSpeed": "250",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "31HC",
+      "paint": "P0C4W",
+      "fabric": "FKHSW",
+      "options": "S03F3, S04CG,S06C4,506U3,506AK,S0534,S0322,5040 3,50493,504UR,50654,50676,S02PA,S02VB, S0428,50760,505DF,S0430,506NX,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "180 (245)",
+      "systemMaxTorque": "400",
+      "gearBox": "8 - automatisch",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "00",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "180 (245)",
+            "systemMaxTorque": "400",
+            "gearBox": "8 - automatisch",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "180 (245) / 4500 - 6500",
+            "nominalTorque": "400 / 1600 - 4000"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "6.2",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "7.6 - 6.8",
+            "emissionsWltpCombined": "173–156",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4783",
+            "width": "1852",
+            "height": "1442",
+            "widthMirrors": "2073 (1042 / 1031)",
+            "wheelTurn": "2856",
+            "weightNotLoaded": "1720",
+            "weightMax": "2200",
+            "permittedLoad": "555",
+            "trailerLoad": "750 / 75",
+            "trunkCapacity": "470 - 1290",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

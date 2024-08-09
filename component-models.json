@@ -167,8 +167,8 @@
         "component": "select",
         "name": "classes",
         "description": "Defines the alignment of the elements added to the Columns.",
-        "value": "centre",
-        "label": "Alignment",
+        "value": "center",
+        "label": "Horizontal Alignment",
         "valueType": "string",
         "options": [
           {
@@ -182,6 +182,28 @@
           {
             "name": "Right",
             "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "verticalAlign",
+        "description": "Defines the vertical alignment of the elements added to the Columns.",
+        "value": "middle",
+        "label": "Vertical Alignment",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Middle",
+            "value": "middle"
+          },
+          {
+            "name": "Bottom",
+            "value": "bottom"
           }
         ]
       }
@@ -2454,7 +2476,7 @@
         "label": "Collapse Accordion Icon",
         "name": "accordionItemIcon",
         "valueType": "boolean",
-        "value": false,
+        "value": true,
         "description": "If enabled, the Accordion Item will be collapsed by default"
       }
     ]

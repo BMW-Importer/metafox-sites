@@ -18,7 +18,7 @@
       "BMW X6"
     ],
     "hybridCode": "NOHY",
-    "fromPrice": 103720,
+    "fromPrice": 104991,
     "acceleration": "5.4",
     "trunkCapacity": 580,
     "seats": 5,
@@ -42,7 +42,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "A",

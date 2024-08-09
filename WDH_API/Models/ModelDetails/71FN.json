@@ -1,0 +1,145 @@
+{
+  "model": {
+    "modelCode": "71FN",
+    "brand": "BM",
+    "description": "BMW M440d xDrive Coupé",
+    "shortName": "M440d xDrive Coupé",
+    "shortRangeName": "G22",
+    "modelRangeCode": "G22",
+    "modelRanges": [
+      "G22"
+    ],
+    "seriesCode": "4",
+    "series": [
+      "4"
+    ],
+    "seriesDescription": "4",
+    "seriesDescriptions": [
+      "4"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "4.6",
+    "seats": 4,
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "71FN",
+      "paint": "P0A96",
+      "fabric": "FMAL3",
+      "options": "S01HM,S04MC,S03BE,S0760,S07M9,S04U0,S0775,S02TB,S033T,S02VF,S03M2,S02PA,S02VC,S02VL,S0754,S0715,S02T4,S05AU,S05DN,S02VB,S0428,S05DA,S06NX,S06PA,S06U3,S06WC,S0688,S0654,S06C3,S0490,S0459,S0488,S0494,S04GQ,S0711,S0493,S0248,S0710,S0430,S04UR,S05AC,S0552,S03MF,S0534,S033B,CTRLLIGHTSON",
+      "productionDate": "2024-02-02"
+    },
+    "powerTrain": {
+      "fuelType": "D",
+      "systemPower": "250 (340) ",
+      "systemMaxTorque": "700",
+      "gearBox": "8-brzinski, Automatski",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "D",
+            "systemPower": "250 (340) ",
+            "systemMaxTorque": "700",
+            "gearBox": "8-brzinski, Automatski",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2993",
+            "nominalPower": "250 (340)/4400",
+            "nominalTorque": "700/1750–2250"
+          },
+          "electric": {
+            "systemPower": "8 (11)/–",
+            "systemMaxTorque": "25"
+          },
+          "performance": {
+            "acceleration": "4.6",
+            "topSpeed": "250",
+            "electricTopSpeed": "–"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6.7–6.1",
+            "emissionsWltpCombined": "175–160",
+            "electricConsumption": "–",
+            "electricRangeWltpCombined": "–",
+            "noiseDriving": "–",
+            "noiseStationary": "–"
+          },
+          "charging": {
+            "batteryCapacity": "0.4",
+            "additionalRangeDC": "–",
+            "chargeACDC": "–",
+            "charge_AC_0_100": "–",
+            "charge_DC_10_80": "–"
+          },
+          "weightMeasurements": {
+            "length": "4770",
+            "width": "1852",
+            "height": "1393",
+            "widthMirrors": "",
+            "wheelTurn": "2851",
+            "weightNotLoaded": "1895",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "1800/75",
+            "trunkCapacity": "440",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "emissionsConsumptionWltp_noiseStationary_value": [
+            "f14"
+          ],
+          "emissionsConsumptionWltp_noiseDriving_value": [
+            "f14"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

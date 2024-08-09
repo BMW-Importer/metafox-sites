@@ -13,9 +13,9 @@
     "series": [
       "X4"
     ],
-    "seriesDescription": "BMW X4",
+    "seriesDescription": "BMW X4 - M verzije",
     "seriesDescriptions": [
-      "BMW X4"
+      "BMW X4 - M verzije"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 72446,
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TB",
@@ -74,7 +74,7 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "8.5–7.5",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "193–171",
+            "emissionsWltpCombined": "192–171",
             "electricConsumption": "-",
             "electricRangeWltpCombined": "-",
             "efficiencyCategoryMinChargeSustaining": "-",

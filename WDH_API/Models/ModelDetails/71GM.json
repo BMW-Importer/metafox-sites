@@ -1,0 +1,132 @@
+{
+  "model": {
+    "modelCode": "71GM",
+    "brand": "BM",
+    "description": "BMW iX2 xDrive30",
+    "shortName": "iX2 xDrive30",
+    "shortRangeName": "X2",
+    "modelRangeCode": "U10E",
+    "modelRanges": [
+      "U10"
+    ],
+    "seriesCode": "i",
+    "series": [
+      "X"
+    ],
+    "seriesDescription": "i",
+    "seriesDescriptions": [
+      "X"
+    ],
+    "hybridCode": "BEVE",
+    "acceleration": "5.6",
+    "seats": 4,
+    "topSpeed": "180",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "71GM",
+      "paint": "P0C68",
+      "fabric": "FKUKF",
+      "options": "S01GL,S043F,S0248,S02VF,S0302,S0313,S0322,S03DN,S03KA,S03M1,S0402,S0420,S0430,S0431,S0455,S0459,S0478,S0481,S0494,S04NW,S04T2,S04U6,S04U9,S04V1,S0552,S05AC,S05AU,S0610,S0674,S06NX,S06PA,S06U3,S0710,S0760,S0775,S09T1,S09T2,S0337,S07EW,S0548,S02PA,S0851,S06AK,S05DN,S06AE",
+      "productionDate": "2023-12-01"
+    },
+    "powerTrain": {
+      "fuelType": "E",
+      "systemPower": "230 (313)",
+      "systemMaxTorque": "494",
+      "gearBox": "1 - automatisch",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "A",
+        "hybridCode": "BEVE",
+        "iD_LEIST_KONST": "31",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "E",
+            "systemPower": "230 (313)",
+            "systemMaxTorque": "494",
+            "gearBox": "1 - automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "230 (313) / 94 (128)",
+            "systemMaxTorque": "494"
+          },
+          "performance": {
+            "acceleration": "5.6",
+            "topSpeed": "180",
+            "electricTopSpeed": "180"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "-",
+            "emissionsWltpCombined": "0",
+            "electricConsumption": "17.7–16.3",
+            "electricRangeWltpCombined": "417–449 "
+          },
+          "charging": {
+            "batteryCapacity": "64.8",
+            "additionalRangeDC": "-",
+            "chargeACDC": "22/130",
+            "chargeAC": "22",
+            "charge_AC_0_100": "3.75",
+            "chargeDC": "30",
+            "charge_DC_10_80": "29"
+          },
+          "weightMeasurements": {
+            "length": "4554",
+            "width": "1845",
+            "height": "1560",
+            "widthMirrors": "-",
+            "wheelTurn": "2692",
+            "weightNotLoaded": "2095",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "1200/80",
+            "trunkCapacity": "525–1400",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "powerTrain_systemPower_value": [
+            "f12"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f4"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

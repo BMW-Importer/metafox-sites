@@ -13,9 +13,9 @@
     "series": [
       "2"
     ],
-    "seriesDescription": "BMW Serije 2 Active Tourer",
+    "seriesDescription": "BMW Serije 2 Gran Coupe",
     "seriesDescriptions": [
-      "BMW Serije 2 Active Tourer"
+      "BMW Serije 2 Gran Coupe"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 42164,
@@ -36,6 +36,153 @@
       "systemMaxTorque": "-",
       "gearBox": "-",
       "driveType": "VR"
-    }
+    },
+    "effectDate": "2024-08-08",
+    "vehicles": [
+      {
+        "transmissionCode": "S02TF",
+        "hybridCode": "NOHY",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "-",
+            "systemMaxTorque": "-",
+            "gearBox": "-",
+            "driveType": "VR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6.2–5.6",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "140–128",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "trunkCapacity": "-",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      },
+      {
+        "transmissionCode": "S02TE",
+        "hybridCode": "NOHY",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "-",
+            "systemMaxTorque": "-",
+            "gearBox": "-",
+            "driveType": "VR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6.2–5.6",
+            "consumptionWltpCombinedChargeSustaining": "-",
+            "emissionsWltpCombined": "140–128",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "efficiencyCategoryMinChargeSustaining": "-",
+            "efficiencyCategoryMaxChargeSustaining": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "chargeAC": "-",
+            "charge_AC_0_100": "-",
+            "chargeDC": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "trunkCapacity": "-",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
   }
 }

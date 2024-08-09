@@ -1,0 +1,137 @@
+{
+  "model": {
+    "modelCode": "11HD",
+    "brand": "BM",
+    "description": "BMW i4 eDrive35",
+    "shortName": "i4 eDrive35",
+    "shortRangeName": "i4",
+    "modelRangeCode": "G26E",
+    "modelRanges": [
+      "G26E"
+    ],
+    "seriesCode": "i",
+    "series": [
+      "i"
+    ],
+    "seriesDescription": "i",
+    "seriesDescriptions": [
+      "i"
+    ],
+    "hybridCode": "BEVE",
+    "acceleration": "6",
+    "seats": 5,
+    "topSpeed": "190",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "11HD",
+      "paint": "P0C5Y",
+      "fabric": "FKHSW",
+      "options": "S03FG,S04H1,S06C4,S06U3,S06AK,S0534,S0322,S0403,S0493,S04UR,S0654,S0676,S02PA,S02VB,S0428,S0760,S05DF,S0430,S06NX,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "E",
+      "systemPower": "210 (286)",
+      "systemMaxTorque": "400",
+      "gearBox": "Automatski",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "A",
+        "hybridCode": "BEVE",
+        "iD_LEIST_KONST": "30",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "E",
+            "systemPower": "210 (286)",
+            "systemMaxTorque": "400",
+            "gearBox": "Automatski",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "210 (286) / 80 (109)",
+            "systemMaxTorque": "400"
+          },
+          "performance": {
+            "acceleration": "6",
+            "topSpeed": "-",
+            "electricTopSpeed": "190"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "-",
+            "emissionsWltpCombined": "0",
+            "electricConsumption": "18.7 - 15.8",
+            "electricRangeWltpCombined": "406 - 483",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "67.1",
+            "additionalRangeDC": "144 - 182",
+            "chargeACDC": "11 (-) / 180",
+            "chargeAC": "11 (-) ",
+            "charge_AC_0_100": "7 (-)",
+            "chargeDC": "180",
+            "charge_DC_10_80": "32"
+          },
+          "weightMeasurements": {
+            "length": "4783",
+            "width": "1852",
+            "height": "1448",
+            "widthMirrors": "2073 (1042 / 1031)",
+            "wheelTurn": "2856",
+            "weightNotLoaded": "2065",
+            "weightMax": "2545",
+            "permittedLoad": "555",
+            "trailerLoad": "1600 / 75",
+            "trunkCapacity": "470 - 1290",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f4"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

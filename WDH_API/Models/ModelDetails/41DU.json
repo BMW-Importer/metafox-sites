@@ -13,9 +13,9 @@
     "series": [
       "X3"
     ],
-    "seriesDescription": "BMW iX3",
+    "seriesDescription": "X3",
     "seriesDescriptions": [
-      "BMW iX3"
+      "X3"
     ],
     "hybridCode": "BEVE",
     "fromPrice": 82246,
@@ -41,7 +41,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "A",

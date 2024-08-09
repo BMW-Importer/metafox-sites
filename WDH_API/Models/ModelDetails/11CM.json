@@ -13,9 +13,9 @@
     "series": [
       "2"
     ],
-    "seriesDescription": "BMW Serije 2 Active Tourer",
+    "seriesDescription": "BMW Serije 2 Gran Coupe",
     "seriesDescriptions": [
-      "BMW Serije 2 Active Tourer"
+      "BMW Serije 2 Gran Coupe"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 50702,
@@ -32,7 +32,7 @@
       "agCode": "51CM",
       "paint": "P0475",
       "fabric": "FMANL",
-      "options": "S01CB,S01DF,S01VZ,S0230,S0248,S02PA,S02T4,S02TB,S02VB,S02VF,S02VL,S0302,S0322,S033B,S03M2,S03MF,S0428,S0430,S0431,S0459,S0488,S0491,S0493,S0494,S04AT,S04GQ,S04NE,S04UR,S0534,S0548,S0552,S05AC,S05AQ,S05AS,S05DA,S05DC,S05DF,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06DR,S06U3,S06VB,S0710,S0715,S0754,S0760,S0775,S07M9,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08WM,S08WQ,S0925"
+      "options": "S01CB,S01DF,S01HZ,S0230,S0248,S02PA,S02T4,S02TB,S02VB,S02VF,S02VL,S0302,S0322,S033B,S03M2,S03MF,S0420,S0428,S0430,S0431,S043W,S0459,S0488,S0491,S0493,S0494,S04GQ,S04NE,S04UR,S0534,S0548,S0552,S05AC,S05AQ,S05AS,S05DA,S05DC,S05DF,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06VB,S0715,S0754,S0760,S0775,S07A2,S07M9,S07VK,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08WM,S0925"
     },
     "powerTrain": {
       "fuelType": "O",
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "HR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TE",
@@ -72,7 +72,7 @@
             "electricTopSpeed": "-"
           },
           "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "6.9–6.3",
+            "consumptionWltpCombined": "6.9–6.4",
             "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "157–144",
             "electricConsumption": "-",

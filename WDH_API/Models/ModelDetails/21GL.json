@@ -1,0 +1,131 @@
+{
+  "model": {
+    "modelCode": "21GL",
+    "brand": "BM",
+    "description": "BMW M340i xDrive Touring",
+    "shortName": "M340i xDrive Touring",
+    "shortRangeName": "G21",
+    "modelRangeCode": "G21",
+    "modelRanges": [
+      "G21"
+    ],
+    "seriesCode": "3",
+    "series": [
+      "3"
+    ],
+    "seriesDescription": "3",
+    "seriesDescriptions": [
+      "3"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "5.8",
+    "topSpeed": "219",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21GL",
+      "paint": "P0X1G",
+      "fabric": "FMAOI",
+      "options": "S01HZ,S04MC,S03BE,S0760,S07M9,S0775,S04U0,S02TB,S03M2,S02VL,S0715,S0754,S02PA,S02T4,S02VF,S05AU,S05DN,S02VB,S0428,S06NX,S06U3,S0688,S0654,S06C4,S06CP,S0302,S0316,S0322,S0459,S0488,S0494,S0481,S04GQ,S0465,S0710,S024,S0430,S04UR,S05AC,S0552,S03MF,S0534,S0420,S07EW,S033B,S0337,S03MC,CTRLLIGHTSON",
+      "productionDate": "2024-09-03"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "180 (245)",
+      "systemMaxTorque": "",
+      "gearBox": "",
+      "driveType": ""
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "180 (245)",
+            "systemMaxTorque": "",
+            "gearBox": "",
+            "driveType": ""
+          },
+          "engine": {
+            "cylinders": "",
+            "technicalCapacity": "",
+            "nominalPower": "",
+            "nominalTorque": ""
+          },
+          "electric": {
+            "systemPower": "",
+            "systemMaxTorque": ""
+          },
+          "performance": {
+            "acceleration": "5.8",
+            "topSpeed": "219",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "",
+            "electricConsumption": "",
+            "electricRangeWltpCombined": "",
+            "efficiencyCategoryMinChargeSustaining": "",
+            "efficiencyCategoryMaxChargeSustaining": "",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "",
+            "additionalRangeDC": "",
+            "chargeACDC": "",
+            "chargeAC": "",
+            "charge_AC_0_100": "",
+            "chargeDC": "",
+            "charge_DC_10_80": ""
+          },
+          "weightMeasurements": {
+            "length": "",
+            "width": "",
+            "height": "",
+            "widthMirrors": "",
+            "wheelTurn": "",
+            "weightNotLoaded": "",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "",
+            "trunkCapacity": "",
+            "tankCapacity": ""
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}
