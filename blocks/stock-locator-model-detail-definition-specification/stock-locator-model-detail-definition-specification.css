@@ -135,6 +135,8 @@ li::marker {
     margin: 0 0.625rem;
     height: 1.375rem;
     border-radius: 9999px;
+    display: flex;
+    justify-content : center;
 }
 
 .description-icon-div:hover{
@@ -144,9 +146,14 @@ li::marker {
     box-shadow: 0.625rem 0.625rem 1.25rem rgba(96, 96, 96, 50%);
 }
 
+.description-popup-button.icon-info-i{
+   display: flex;
+   align-items: center;
+}
+
 .description-popup-button::before {
     overflow-wrap: normal;
-    font-size: 2.5rem;
+    font-size: 0.8rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     font-feature-settings: "liga";
@@ -154,7 +161,7 @@ li::marker {
     color: var(--light-border-color);
     direction: ltr;
     display: block;
-    font-family: var(--icon-font-family);
+    font-family: var(--icon-i-font-family);
     opacity: var(--iconfont400-opacity);
     font-style: normal;
     text-rendering: optimizelegibility;
@@ -527,6 +534,16 @@ li::marker {
     margin-bottom: 0.9375rem;
 }
 
+.stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-item {
+    padding: 0;
+}
+
+.filter-model-popup .stock-locator-container .filter-item label{
+    display: flex;
+    justify-content: center;
+    padding: 0.625rem 0;
+}
+
 .stock-locator-model-detail-definition-specification-container.stock-locator-model-overview-properties-container .default-content-wrapper p {
     margin-bottom: 2.8125rem;
 }
@@ -537,6 +554,7 @@ li::marker {
     bottom: 0;
     left: 0;
     display: none;
+    z-index: 1;
 }
 
 .show-result-container .show-result {
@@ -570,12 +588,6 @@ li::marker {
     margin-bottom: 1.875rem;
 }
 
-.filter-model-popup .filter-item {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-}
-
 .filter-model-popup  .filter-label {
     font-size: .75rem;
     line-height: 1rem;
@@ -591,6 +603,11 @@ li::marker {
 
 .filter-model-popup .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-item {
     margin: 0.625rem;
+    padding: 0;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
 }
 
 .filter-model-popup .filter-item.all-disabled {
@@ -623,8 +640,33 @@ li::marker {
     text-align: center;
 }
 
-/*  mobile view */
+.filter-model-popup .stock-locator-container .filter-checkbox:disabled+label {
+    color: var(--dark-color);
+}
 
+.filter-model-popup .stock-locator-container .filter-item .icon-checkmark {
+    position: absolute;
+    left: 9px;
+    top: 4px;
+}
+
+.filter-model-popup .stock-locator-container .filter-item .icon-checkmark::before {
+    content:"checkmark";
+    font-family: var(--icon-font-family);
+    font-size: 30px;
+}
+
+.filter-model-popup .filter-item:not(.selected-filter) .icon-checkmark::before {
+    color:var(--background-color);
+}
+
+.stocklocator-card-img {
+    width: 21.875rem;
+    height: 9.375rem;
+    object-fit: contain;
+}
+
+/*  mobile view */
 @media (width >=360px) and (width < 768px) {
     .stock-locator-container .series-label {
         display: none;
@@ -700,6 +742,11 @@ li::marker {
         margin-bottom: 1.25rem;
         width: 100%;
     }
+
+    .vehicle-count-wrapper{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
 }
 
 /*  tablet view */
@@ -762,7 +809,7 @@ li::marker {
         color: var(--light-grey-1);
         direction: ltr;
         display: block;
-        font-family: var(--icon-font-family);
+        font-family: var(--icon-i-font-family);
         opacity: var(--iconfont400-opacity);
         font-style: normal;
         text-rendering: optimizelegibility;
@@ -847,6 +894,11 @@ li::marker {
     .mobile-filter-wrapper.driveType-wrapper,
     .mobile-filter-wrapper.fuel-wrapper {
         display: none;
+    }
+
+    .vehicle-count-wrapper{
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -1154,6 +1206,10 @@ li::marker {
         padding: 1.25rem 3.75rem;
         margin-bottom: 1.5rem;        
         width: 33%;
+    }
+
+    .stock-locator-model-detail-definition-specification .show-more-container .show-more-button:hover{
+        border: 2px solid var(--text-color);       
     }
 
     .filter-item.not-desktop {
@@ -1491,6 +1547,10 @@ li::marker {
     }
 
     .filter-item.not-desktop {
+        display: none;
+    }
+
+    .filter-item .icon-checkmark {
         display: none;
     }
 }

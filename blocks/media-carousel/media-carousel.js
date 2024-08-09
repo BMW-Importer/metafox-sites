@@ -407,10 +407,9 @@ function genearteImageDom(content, media, cta, mediaType) {
 
   const vidImgAnchorElm = cta?.querySelector('a') || '';
 
-  const contentElem = content?.children;
   let videoImgCarouselHeadline = content.querySelector('h2') || '';
   videoImgCarouselHeadline = (videoImgCarouselHeadline !== null && videoImgCarouselHeadline !== undefined && videoImgCarouselHeadline) ? videoImgCarouselHeadline : '';
-  let videoImgCarouselCopyText = contentElem[1] || '';
+  let videoImgCarouselCopyText = content.querySelector('p') || '';
   videoImgCarouselCopyText = (videoImgCarouselCopyText !== null && videoImgCarouselCopyText !== undefined && videoImgCarouselCopyText) ? videoImgCarouselCopyText : '';
 
   vidImgCtaWrap.append(vidImgAnchorElm);
