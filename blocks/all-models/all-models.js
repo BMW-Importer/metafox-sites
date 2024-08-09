@@ -252,7 +252,7 @@ function generateGroupMarkUp(groupName, allModelfilteredArray) {
         </div>
         <h5 class='all-model-detail-model-name'>${model['Model Name']}</h5>
         <p class='all-model-detail-model-fuel'>${fuelTypeMarkUp}</p>
-        <p class='all-model-detail-model-price'>${placeholders.allModelFromText} &nbsp; ${model.Price}</p>
+        <p class='all-model-detail-model-price'>${model.Price}</p>
       </div>
     </div>
     `);
@@ -697,7 +697,7 @@ async function generateDetailDiv(lastElemInRow, modelCode, block) {
                 <div class="all-model-detail__fuel">
                   ${fuelTypeMarkUp}
                 </div>
-                <span class='all-model-detail__price'>${placeholders.allModelFromText} &nbsp; ${model.Price}</span>
+                <span class='all-model-detail__price'>${model.Price}</span>
               </div>
             </div>
             <div class='all-model-detail__showmore-btn-container mobile-hidden'><a href='${model['Show More Button URL']}' class='all-model-detail__showmore-btn'>${placeholders.allModelShowMoreText}</a></div>
