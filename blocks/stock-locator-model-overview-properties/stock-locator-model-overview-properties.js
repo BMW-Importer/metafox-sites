@@ -9,60 +9,37 @@ async function getContentFragmentData(disclaimerCFPath, gqlOrigin) {
   return response.json();
 }
 
-// const mockData = [{
-//   name: 'BMW ix xDrive40',
-//   refereceNum: 'Reference number 653985',
-//   price: '105,000 EUR',
-//   Auto-Garant doo: 'Auto-Garant doo'
-// }
-// ]
 
-
-function dotClickHandler() {
-  const index = Number(this.classList[1].split('-')[1]);
-}
-
-function updateCarousel(currentIndex) {
+function updateCarousel(currentIndex,) {
   const content = document.querySelector('.card-container-slide');
   if (!content) return;
-  const imageContainer = content.querySelector('.locator-image-container');
-  const itemWidth = imageContainer.children[currentIndex]?.offsetWidth;
 
-  const viewport = window.innerWidth;
-  let multiplier = 0.60;
-  if (viewport < 768) {
-    multiplier = 0.3;
-  } else if (viewport >= 768 && viewport < 1024) {
-    multiplier = 0.2;
-  } else if (viewport >= 1024 && viewport < 1280) {
-    multiplier = 0.5;
-  }
+  const itemWidth = content.children[currentIndex]?.offsetWidth;
+  const offset = -(currentIndex * (itemWidth));
 
-  const defaultOffset = itemWidth * multiplier;
-  const offset = defaultOffset - (currentIndex * itemWidth);
-  imageContainer.style.transform = `translate3d(${offset}px, 0px, 0px)`;
-  imageContainer.style.transitionDuration = '750ms';
-  imageContainer.style.transitionDelay = '100ms';
+  const totalItems = content.children.length;
 
-  const cards = imageContainer.children;
-  // const preconWrapper = document.querySelectorAll('.precon-content-data .pre-content-outer-wrapper');
-  // const dots = content.querySelectorAll('.dot');
+  content.style.transition = "transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)";
+  content.style.transform = `translate3d(${offset}px, 0px, 0px)`;
+  content.style.transitionDuration = '750ms';
+  content.style.transitionDelay = '100ms';
+
+  const cards = content.children;
   const itemsToShow = 1;
 
-  // eslint-disable-next-line no-plusplus
-  // for (let i = 0; i < cards.length; i++) {
-  //   if (i === currentIndex) {
-  //     cards[i].classList.remove('not-active', 'blur-inactive');
-  //     cards[i].classList.add('active');
-  //     preconWrapper[i].classList.remove('in-active');
-  //     dots[i].classList.add('active');
-  //   } else {
-  //     cards[i].classList.add('not-active');
-  //     cards[i].classList.remove('active');
-  //     preconWrapper[i].classList.add('in-active');
-  //     dots[i].classList.remove('active');
-  //   }
-  // }
+  const dots = document.querySelectorAll('.dot');
+   // eslint-disable-next-line no-plusplus
+   for (let i = 0; i < cards.length; i++) {
+    if (i === currentIndex) {
+      cards[i].classList.remove('not-active');
+      cards[i].classList.add('active');
+      dots[i].classList.add('active');
+    } else {
+      cards[i].classList.add('not-active');
+      cards[i].classList.remove('active');
+      dots[i].classList.remove('active');
+    }
+  }
 
   const prevButton = document.querySelector('.slide-wrapper-lft-area');
   const nextButton = document.querySelector('.slide-wrapper-rth-area');
@@ -74,20 +51,27 @@ function updateCarousel(currentIndex) {
   } else {
     prevButton.classList.remove('hide-area');
   }
-  if (currentIndex >= cards.length - itemsToShow) {
+
+  if (currentIndex >= totalItems - itemsToShow) {
     nextButton.classList.add('hide-area');
   } else {
     nextButton.classList.remove('hide-area');
   }
 }
 
+function dotClickHandler() {
+  const index = Number(this.classList[1].split('-')[1]);
+  updateCarousel(index);
+}
+
 function buttonClick(direction) {
   const mainContent = document.querySelector('.card-container-slide');
-  const content = mainContent.querySelector('.locator-image-container');
-  const index = Array.from(content.querySelectorAll('.locator-img-content')).findIndex((each) => each.classList.contains('active'));
-  if (direction === 'left') updateCarousel(index - 1);
-  else updateCarousel(index + 1);
+  const index = Array.from(mainContent.querySelectorAll('.locator-img-content')).findIndex((each) => each.classList.contains('active'));
+
+  let newIndex = direction === 'left' ? index - 1 : index + 1;
+  updateCarousel(newIndex);
 }
+
 
 function addButtons(slideLeftWrapper, slideRightWrapper) {
   // create buttons
@@ -101,6 +85,65 @@ function addButtons(slideLeftWrapper, slideRightWrapper) {
   // add buttons to wrappers
   slideLeftWrapper.append(prevButton);
   slideRightWrapper.append(nextButton);
+}
+
+function addTouchSlideFunctionality() {
+  const mainContent = document.querySelector('.carousels-container');
+  if (!mainContent) return;
+  const content = mainContent.querySelector('.card-container-slide');
+  const totalItems = content.children.length;
+  const itemsToShow = 1;
+  let index = Array.from(content.querySelectorAll('.locator-img-content')).findIndex((each) => each.classList.contains('active'));
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+  let startTime = 0;
+  const gap = 0; // gap between images1
+  let endTime = 0;
+  let moved = false;
+  const maxClickDuration = 200;
+  const minSlideDistance = 100;
+
+  content.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].pageX;
+    startTime = new Date().getTime();
+    isDragging = true;
+    moved = false;
+  });
+  content.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].pageX;
+    const dx = currentX - startX;
+
+    if (Math.abs(dx) >= minSlideDistance) {
+      moved = true;
+      const itemWidth = content.children[index].offsetWidth;
+      const offset = -(index * (itemWidth + gap)) + dx;
+      content.style.transform = `translate3d(${offset}px, 0px, 0px)`;
+    }
+  });
+
+  content.addEventListener('touchend', () => {
+    if (!isDragging) return;
+    isDragging = false;
+    endTime = new Date().getTime();
+    const dx = currentX - startX;
+    const duration = endTime - startTime;
+    if (!moved || (Math.abs(dx) < minSlideDistance && duration < maxClickDuration)) {
+      return; // avoide small movements and quick touches (clicks)
+    }
+    const itemWidth = content.children[index].offsetWidth;
+    const threshold = itemWidth * 0.6; // threshold to move to next/previous item
+
+    if (Math.abs(dx) > threshold) {
+      if (dx > 0 && index > 0) {
+        index -= 1;
+      } else if (dx < 0 && index < totalItems - itemsToShow) {
+        index += 1;
+      }
+    }
+    updateCarousel(index);
+  });
 }
 
 function generateLocatorDetails(stockLocatorDeatilsContainer) {
@@ -214,19 +257,61 @@ function generateLocatorDetails(stockLocatorDeatilsContainer) {
 
 }
 
+function popupButton() {
+  console.log('called');
+  const infoButtons = document.querySelectorAll('.description-popup-button');
+  const popupTexts = document.querySelectorAll('.description-popup-container');
+  const closeButtons = document.querySelectorAll('.description-popup-close-button');
+  const toggleButtons = document.querySelectorAll('.popup-toggle-button');
+  const descriptionPopupDisclaimers = document.querySelectorAll('.description-popup-disclaimer');
+
+  infoButtons.forEach((infoButton, index) => {
+    const popupText = popupTexts[index];
+    const closeButton = closeButtons[index];
+    const toggleButton = toggleButtons[index];
+    const descriptionPopupDisclaimer = descriptionPopupDisclaimers[index];
+
+    infoButton.addEventListener('click', () => {
+      popupText.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+      popupText.style.display = 'none';
+    });
+
+    toggleButton.addEventListener('click', () => {
+      if (descriptionPopupDisclaimer.style.height === '100px' || descriptionPopupDisclaimer.style.height === '') {
+        descriptionPopupDisclaimer.style.height = 'max-content';
+        toggleButton.classList.add('up-arrow');
+        toggleButton.classList.remove('down-arrow');
+      } else {
+        descriptionPopupDisclaimer.style.height = '100px';
+        toggleButton.classList.add('down-arrow');
+        toggleButton.classList.remove('up-arrow');
+      }
+    });
+
+    // Optional: Click outside to close the popup
+    document.addEventListener('click', (event) => {
+      if (!popupText.contains(event.target) && !infoButton.contains(event.target)) {
+        popupText.style.display = 'none';
+      }
+    });
+  });
+}
+
 function generateCosyImage(cardContainerSlide) {
 
   const imageUrls = [
-    'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73318jQYfFqIbPXnvzqUxEw8%25P6wBKM4adOKU2JBzcbt3aJqZvjDlwXYuw4sD9%25UHNMClix2t5JUABN745UXgtUDUCH1T3IjAeSw27BzcKX3aJQbAFKdqfkEramzOSs5m%2565ezICP4Ws86OG7c1QUDCJnxbZsCsluMw8m9hvU1AIs75Z',
-    'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73318jQYfFqIbPXnvzqUxEw8%25P6wBKM4adOKU2JBzcbt3aJqZvjDlwXYuw4sD9%25UHNMClix2t5JUABN745UXgtUDUCH1T3IjAeSw27BzcKX3aJQbAFKdqfkEramzOSs5m%2565ezICP4Ws86OG7c1QUDCJnxbZsCsluMw8m9hvU1AIs75Z',
-    'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73318jQYfFqIbPXnvzqUxEw8%25P6wBKM4adOKU2JBzcbt3aJqZvjDlwXYuw4sD9%25UHNMClix2t5JUABN745UXgtUDUCH1T3IjAeSw27BzcKX3aJQbAFKdqfkEramzOSs5m%2565ezICP4Ws86OG7c1QUDCJnxbZsCsluMw8m9hvU1AIs75Z',
-    'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73318jQYfFqIbPXnvzqUxEw8%25P6wBKM4adOKU2JBzcbt3aJqZvjDlwXYuw4sD9%25UHNMClix2t5JUABN745UXgtUDUCH1T3IjAeSw27BzcKX3aJQbAFKdqfkEramzOSs5m%2565ezICP4Ws86OG7c1QUDCJnxbZsCsluMw8m9hvU1AIs75Z',
-    'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73318jQYfFqIbPXnvzqUxEw8%25P6wBKM4adOKU2JBzcbt3aJqZvjDlwXYuw4sD9%25UHNMClix2t5JUABN745UXgtUDUCH1T3IjAeSw27BzcKX3aJQbAFKdqfkEramzOSs5m%2565ezICP4Ws86OG7c1QUDCJnxbZsCsluMw8m9hvU1AIs75Z',
+    'https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
+    'https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
+    'https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
+    'https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
+    'https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
+    'https://imgd.aeplcdn.com/664x374/n/cw/ec/136217/x7-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
   ];
 
   imageUrls.forEach(url => {
-    const imageDomContainer = document.createElement('div');
-    imageDomContainer.classList.add('locator-image-container');
 
     const imgContent = document.createElement('div');
     imgContent.classList.add('locator-img-content');
@@ -237,13 +322,119 @@ function generateCosyImage(cardContainerSlide) {
     img.alt = 'img';
     
     imgContent.append(img)
-    imageDomContainer.append(imgContent);
-    cardContainerSlide.append(imageDomContainer);
+    cardContainerSlide.append(imgContent);
   });
- 
+}
+
+function calculateImageWidth(viewportWidth) {
+  if (viewportWidth <= 1199 && viewportWidth >= 1025) {
+      return 683;
+  } else if (viewportWidth <= 1024 && viewportWidth >= 992) {
+      return 655 - (1024 - viewportWidth);
+  } else if (viewportWidth <= 991 && viewportWidth >= 808) {
+      return 768;
+  } else if (viewportWidth <= 807 && viewportWidth >= 768) {
+      return 767 - (807 - viewportWidth);
+  } else if (viewportWidth <= 767 && viewportWidth >= 600) {
+      return 600;
+  } else if (viewportWidth <= 599 && viewportWidth >= 576) {
+      return 576;
+  } else if (viewportWidth <= 575) {
+      return 555 - (575 - viewportWidth);
+  } else {
+      return 800; // Default width if none of the conditions are met
+  }
+}
+
+function generateMapContent(mapContainer) {
+  const mapHeadline = document.createElement('h2');
+  mapHeadline.classList.add('locator-map-headline');
+  mapHeadline.textContent = 'Diler.';
+
+  const mapInnerContent = document.createElement('div');
+  mapInnerContent.classList.add('locator-inner-content');
+
+  const innerHeadline = document.createElement('h3');
+  innerHeadline.classList.add('locator-inner-headline');
+  innerHeadline.textContent = 'Delta Motors d.o.o.';
+
+  const stockLocatorDealerSection = document.createElement('div');
+  stockLocatorDealerSection.classList.add('stockcar-dealer-section');
+
+  const details = [{
+    address: '123 Main St, Springfield',
+    Telefone: '12345678',
+    email: 'example@example.com',
+  }];
+  
+  details.forEach((item) => {
+
+    // Create labels and values
+    const createLabelValuePair = (label, value) => {
+      const container = document.createElement('div');
+      container.classList.add('dealer-info-container');
+
+      const labelElement = document.createElement('div');
+      labelElement.classList.add('dealer-info-label');
+      labelElement.textContent = label;
+
+      const valueElement = document.createElement('div');
+      valueElement.classList.add('dealer-info-value');
+      valueElement.textContent = value;
+
+      container.append(labelElement, valueElement);
+      return container;
+    };
+    stockLocatorDealerSection.append(
+      createLabelValuePair('Address', item.address),
+      createLabelValuePair('Telefone', item.Telefone),
+      createLabelValuePair('Email', item.email),
+    );
+  });
+
+  mapInnerContent.append(innerHeadline, stockLocatorDealerSection);
+  mapContainer.append(mapHeadline, mapInnerContent);
+}
+
+function addDots(cardContainerSlide, dotsWrapper) {
+  const numberOfImages = cardContainerSlide.querySelectorAll('.locator-img-content').length;
+  for (let i = 0; i < numberOfImages; i++) {
+    const dotButton = document.createElement('button');
+    dotButton.classList.add('dot', `dot-${i}`);
+    dotButton.addEventListener('click', dotClickHandler);
+    dotsWrapper.appendChild(dotButton);
+  }
+}
+
+export function resizeStockLocatorBlock() {
+  const viewportWidth = window.innerWidth;
+  const carousels = document.querySelectorAll('.card-container-slide');
+  carousels.forEach((carouselContent) => {
+    const cards = carouselContent.querySelectorAll('.locator-img-content');
+
+    cards.forEach((card) => {
+        const imageWidth = calculateImageWidth(viewportWidth);
+        card.style.width = `${imageWidth}px`;
+    });
+  });
+  updateCarousel(0);
+  addTouchSlideFunctionality();
+}
+
+export function stockLocatorResizer() {
+  resizeStockLocatorBlock();
+
+  // windo resize event
+  window.addEventListener('resize', () => {
+    resizeStockLocatorBlock();
+  });
 }
 
 export default function decorate(block) {
+
+  const parentBlockLocator = document.createElement('div');
+  parentBlockLocator.classList.add('stock-locator-parent-container');
+
   const cardContainerSlide = document.createElement('div');
   cardContainerSlide.classList.add('card-container-slide');
 
@@ -257,7 +448,7 @@ export default function decorate(block) {
   slideRightWrapper.classList.add('slide-wrapper-rth-area');
 
   const dotsWrapper = document.createElement('div');
-  dotsWrapper.classList.add('dots-navigation');
+  dotsWrapper.classList.add('dots-navigation-locator');
 
   const stockLocatorDeatilsContainer = document.createElement('div');
   stockLocatorDeatilsContainer.classList.add('stock-locator-details-container');
@@ -286,16 +477,20 @@ export default function decorate(block) {
     propsData(modelButtonTxt, countText, cfData, bannerContent);
   });
 
+  const mapContainer = document.createElement('div');
+  mapContainer.classList.add('map-container');
+
   generateLocatorDetails(stockLocatorDeatilsContainer);
   generateCosyImage(cardContainerSlide);
-  const dotButton = document.createElement('button');
-  dotButton.classList.add('dot', `dot-${0}`);
-  dotButton.addEventListener('click', dotClickHandler);
-  dotsWrapper.append(dotButton);
+  generateMapContent(mapContainer);
 
-  cardContainerSlide.append(slideLeftWrapper, slideRightWrapper, dotsWrapper);
-  carouselsContainer.append(cardContainerSlide);
+  addDots(cardContainerSlide, dotsWrapper);
+  
+  carouselsContainer.append(cardContainerSlide, slideLeftWrapper, slideRightWrapper, dotsWrapper);
+  parentBlockLocator.append(stockLocatorDeatilsContainer, carouselsContainer)
   block.textContent = '';
-  block.append(stockLocatorDeatilsContainer, carouselsContainer);
-  // resizeVideoBlock();
+  block.append(parentBlockLocator, mapContainer);
+  popupButton();
+  resizeStockLocatorBlock();
+
 }
