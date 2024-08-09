@@ -752,35 +752,43 @@ li::marker {
 .accordion-toggle-icon.up-arrow::before{
     content: "arrow_chevron_up";
 }
+
 .spec-details-showMore-button::before  {
     content: "arrow_chevron_up";
 }
+
 .car-spec-packages-wrapper .packages-accordion-header {
     display: flex;
     align-items: center;
     height: 4.375rem;
-    
+    cursor: pointer;    
 }
+
 .packages-accordion-content-Container .packages-accordion-content-text .accordion-content-text-title{
     margin: 0 0 1.875rem;
 }
+
 .packages-accordion-content-Container .packages-accordion-content-text .accordion-content-text{
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 700;
     margin: 0 0 0.9375rem;
 }
+
 .packages-accordion-content-text ul li{
     padding: 0.3125rem 0;
 }
+
 .car-spec-details-wrapper .car-spec-details-title{
     margin: 0 0 2.8125rem;
 }
+
 .spec-details-container-wrapper, .spec-details-container{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
 }
+
 .spec-details-Icon{
     cursor: pointer;
     border-style: solid;
@@ -790,7 +798,9 @@ li::marker {
     margin: 0 0.625rem;
     height: 1.375rem;
     border-radius: 50%;
+    display: none;
 }
+
 .spec-details-Icon-Button::before{
     overflow-wrap: normal;
     font-size: 2.5rem;
@@ -846,6 +856,7 @@ li::marker {
 .car-spec-details-container :hover >*{
     box-shadow: none;
 }
+
 .car-spec-details-container .spec-details-text-container{
     padding: 15px;
     display: flex;
@@ -854,11 +865,15 @@ li::marker {
     font-size: 12px;
     height: auto;
     min-height: 70px;
+    cursor: pointer;
 }
+
 .car-spec-details-container .spec-details-text-container .spec-details-text{
     height: auto;
     max-height: fit-content;
+    padding: 0 30px;
 }
+
 .spec-popover-wrapper .spec-popover-container {
     height: auto;
     position: absolute;
