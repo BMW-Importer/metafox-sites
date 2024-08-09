@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { handleFallbackPage } from '../../scripts/ePassFallBack.js';
 
 function loadScript(url, callback) {
