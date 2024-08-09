@@ -1190,7 +1190,7 @@ li::marker {
 
 @media (width >=1280px) {
     .stock-locator-model-detail-definition-specification-container.stock-locator-model-overview-properties-container .default-content-wrapper,
-    .stock-locator-model-detail-definition-specification-wrapper {
+    .stock-locator-model-detail-definition-specification-wrapper, .stock-locator-model-overview-properties-wrapper{
         max-width: 75rem;
         margin: 0 auto;
     }
@@ -1631,7 +1631,7 @@ li::marker {
 /** ipad AIR **/
 @media (width >=1023px) and (width < 1279px) {
     .stock-locator-model-detail-definition-specification-container.stock-locator-model-overview-properties-container .default-content-wrapper,
-    .stock-locator-model-detail-definition-specification-wrapper {
+    .stock-locator-model-detail-definition-specification-wrapper, .stock-locator-model-overview-properties-wrapper {
         max-width: 75rem;
         margin: 0 auto;
     }
