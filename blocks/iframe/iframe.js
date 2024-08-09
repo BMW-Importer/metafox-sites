@@ -1,4 +1,4 @@
-import { handleFallbackPage, fallbackPageOptions } from '../../scripts/ePassFallBack.js';
+import { handleFallbackPage } from '../../scripts/ePassFallBack.js';
 
 function loadScript(url, callback) {
   const script = document.createElement('script');

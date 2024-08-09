@@ -30,6 +30,7 @@ export function handleFallbackPage() {
   fallbackPageContainer.setAttribute('style', `height: 
         ${iframeElement.style.height}; width: ${iframeElement.style.width}`);
 
+  // eslint-disable-next-line max-len, no-undef, no-use-before-define
   epaas.api.fallbackpage.then((bundle) => bundle.handleFallbackPage(fallbackPageContainer, iframeUrl, fallbackPageOptions))
     .then(() => {
       // the fallback was resolved, this means we can show the iframe.
