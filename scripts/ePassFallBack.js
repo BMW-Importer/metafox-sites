@@ -1,11 +1,3 @@
-const iframeElement = document.querySelector('#bmwIframe');
-
-const iframeUrl = iframeElement.getAttribute('src');
-const iframeWrapper = iframeElement.parentElement;
-
-// first hide the iframe
-iframeElement.style.display = 'none';
-
 // create a callback function that is called if the user rejects the cookies
 // at a later point when the content is already displayed.
 // the callback is unloading the iframe and hiding it,
@@ -17,6 +9,15 @@ iframeElement.style.display = 'none';
 // for demonstration purposes. It can be omitted, if there is no need for it.
 
 export function handleFallbackPage() {
+  const iframeElement = document.querySelector('#bmwIframe');
+  const iframeUrl = iframeElement.getAttribute('src');
+  const iframeWrapper = iframeElement.parentElement;
+  const iframeLoader = document.querySelector('.iframe-container .loader');
+
+  // first hide the iframe
+  // iframeLoader.style.display = 'none';
+  iframeLoader.style.display = 'none';
+  iframeElement.style.display = 'none';
   // We create a container for the fallback page, in case it needs to be displayed.
   // The container usually should take the same size as the iframe,
   // so that there won't be any jumping of the page when
@@ -32,7 +33,9 @@ export function handleFallbackPage() {
   epaas.api.fallbackpage.then((bundle) => bundle.handleFallbackPage(fallbackPageContainer, iframeUrl, fallbackPageOptions))
     .then(() => {
       // the fallback was resolved, this means we can show the iframe.
+      iframeLoader.style.display = 'block';
       iframeElement.style.display = 'block';
+
       // remove the fallback page component, as it's no longer needed.
       iframeWrapper.removeChild(fallbackPageContainer);
       // load the iframe
@@ -45,8 +48,11 @@ export function handleFallbackPage() {
 }
 
 function consentRejectedCallback() {
+  const iframeElement = document.querySelector('#bmwIframe');
+  const iframeLoader = document.querySelector('.iframe-container .loader');
   iframeElement.setAttribute('src', undefined);
   iframeElement.style.display = 'none';
+  iframeLoader.style.display = 'none';
   console.log('consentRejectedCallback called');
 
   handleFallbackPage();
@@ -57,4 +63,4 @@ export const fallbackPageOptions = {
 };
 
 // show the fallback page
-handleFallbackPage();
+// handleFallbackPage();

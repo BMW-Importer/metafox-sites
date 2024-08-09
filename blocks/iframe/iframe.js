@@ -1,4 +1,4 @@
-// import { handleFallbackPage, fallbackPageOptions } from '../../scripts/ePassFallBack.js';
+import { handleFallbackPage, fallbackPageOptions } from '../../scripts/ePassFallBack.js';
 
 function loadScript(url, callback) {
   const script = document.createElement('script');
@@ -62,10 +62,9 @@ export default async function decorate(block) {
       block.append(iFrameDOM);
       iframeLoader();
       loadScriptFunction();
-      // if (epaas && epaas.api) {
-      //   fallbackPageOptions();
-      //   handleFallbackPage();
-      // }
+      if (epaas && epaas.api) {
+        handleFallbackPage();
+      }
     }, 3000);
   } else {
     const iFrameDOM = await generateIFrameDOM(props);
@@ -73,9 +72,8 @@ export default async function decorate(block) {
     block.append(iFrameDOM);
     iframeLoader();
     loadScriptFunction();
-    // if (epaas && epaas.api) {
-    //   fallbackPageOptions();
-    //   handleFallbackPage();
-    // }
+    if (epaas && epaas.api) {
+      handleFallbackPage();
+    }
   }
 }
