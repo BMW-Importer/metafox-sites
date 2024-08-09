@@ -1,0 +1,140 @@
+{
+  "model": {
+    "modelCode": "31HD",
+    "brand": "BM",
+    "description": "BMW i4 M50 xDrive",
+    "shortName": "i4 M50 xDrive",
+    "shortRangeName": "i4",
+    "modelRangeCode": "G26E",
+    "modelRanges": [
+      "G26E"
+    ],
+    "seriesCode": "i",
+    "series": [
+      "i"
+    ],
+    "seriesDescription": "i",
+    "seriesDescriptions": [
+      "i"
+    ],
+    "hybridCode": "BEVE",
+    "acceleration": "3.9",
+    "seats": 5,
+    "topSpeed": "225",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "31HD",
+      "paint": "P0X1F",
+      "fabric": "FMAH7",
+      "options": "S03FW,S04MC,S01CX,S02PA,S02T4,S02VB,S02VF,S02VL,S0302,S0322,S033B,S03M2,S0428,S0430,S0459,S0488,S0490,S0493,S0494,S04A2,S04M5,S04T3,S04U9,S04UR,S04V1,S0534,S0552,S05AU,S05DA,S05DN,S0654,S0688,S06C3,S06NX,S06U3,S06WC,S0710,S0754,S0760,S0775,S07M9,S09QY,CTRLLIGHTSON",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "E",
+      "systemPower": "400 (544)",
+      "systemMaxTorque": "795",
+      "gearBox": "Automatski",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "A",
+        "hybridCode": "BEVE",
+        "iD_LEIST_KONST": "30",
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "E",
+            "systemPower": "400 (544)",
+            "systemMaxTorque": "795",
+            "gearBox": "Automatski",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "-",
+            "technicalCapacity": "-",
+            "nominalPower": "-",
+            "nominalTorque": "-"
+          },
+          "electric": {
+            "systemPower": "400 (544) / 125 (170)",
+            "systemMaxTorque": "795"
+          },
+          "performance": {
+            "acceleration": "3.9",
+            "topSpeed": "-",
+            "electricTopSpeed": "225"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "-",
+            "consumptionWltpCombinedChargeSustaining": "",
+            "emissionsWltpCombined": "0",
+            "electricConsumption": "22.5–18.0",
+            "electricRangeWltpCombined": "415–520",
+            "efficiencyCategoryMinChargeSustaining": "",
+            "efficiencyCategoryMaxChargeSustaining": "",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "81.1",
+            "additionalRangeDC": "132 - 171",
+            "chargeACDC": "11 / 205",
+            "chargeAC": "",
+            "charge_AC_0_100": "8.5",
+            "chargeDC": "",
+            "charge_DC_10_80": "30"
+          },
+          "weightMeasurements": {
+            "length": "4783",
+            "width": "1852",
+            "height": "1448",
+            "widthMirrors": "2073 (1042 / 1031)",
+            "wheelTurn": "2856",
+            "weightNotLoaded": "2290",
+            "weightMax": "2735",
+            "permittedLoad": "520",
+            "trailerLoad": "1600 / 75",
+            "trunkCapacity": "470 - 1290",
+            "tankCapacity": "-"
+          }
+        },
+        "footnotes": {
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f4"
+          ],
+          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
+            "f6"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}

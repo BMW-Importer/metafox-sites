@@ -18,7 +18,7 @@
       "BMW Serije 7"
     ],
     "hybridCode": "BEVE",
-    "fromPrice": 159368,
+    "fromPrice": 128.24,
     "acceleration": "4.7",
     "trunkCapacity": 500,
     "seats": 5,
@@ -32,7 +32,7 @@
       "agCode": "51EJ",
       "paint": "P0C4A",
       "fabric": "FKVRI",
-      "options": "S0230,S02PA,S02VB,S02VH,S0302,S03DN,S0416,S0428,S0465,S04D7,S04FL,S04FM,S04HA,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S05AS,S05AW,S05DN,S05YA,S0654,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0801,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S0931,S09QV"
+      "options": "S01F2,S0230,S02PA,S02VB,S02VH,S0302,S03DN,S0416,S0428,S0465,S04D7,S04FL,S04FM,S04HA,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S05AS,S05AW,S05DN,S0654,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06U7,S0801,S0851,S0879,S08R9,S08TF,S08WN,S09QV"
     },
     "powerTrain": {
       "fuelType": "E",
@@ -40,114 +40,6 @@
       "systemMaxTorque": "745",
       "gearBox": "1 - automatisch",
       "driveType": "AR"
-    },
-    "effectDate": "2024-07-16",
-    "vehicles": [
-      {
-        "transmissionCode": "A",
-        "hybridCode": "BEVE",
-        "iD_LEIST_KONST": "30",
-        "volt48": false,
-        "technicalData": {
-          "powerTrain": {
-            "fuelType": "E",
-            "systemPower": "400 (544)",
-            "systemMaxTorque": "745",
-            "gearBox": "1 - automatisch",
-            "driveType": "AR"
-          },
-          "engine": {
-            "cylinders": "-",
-            "technicalCapacity": "-",
-            "nominalPower": "-",
-            "nominalTorque": "-"
-          },
-          "electric": {
-            "systemPower": "400 (544) / 135 (184)",
-            "systemMaxTorque": "745"
-          },
-          "performance": {
-            "acceleration": "4.7",
-            "topSpeed": "-",
-            "electricTopSpeed": "240"
-          },
-          "emissionsConsumptionWltp": {
-            "consumptionWltpCombined": "-",
-            "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "-",
-            "electricConsumption": "22.3–18.4",
-            "electricRangeWltpCombined": "516–625",
-            "efficiencyCategoryMinChargeSustaining": "-",
-            "efficiencyCategoryMaxChargeSustaining": "-",
-            "noiseDriving": "-",
-            "noiseStationary": "-"
-          },
-          "charging": {
-            "batteryCapacity": "101.7",
-            "additionalRangeDC": "151 - 186",
-            "chargeACDC": "11 (22) / 195",
-            "chargeAC": "11 / 22",
-            "charge_AC_0_100": "10:45 / 5:30",
-            "chargeDC": "195",
-            "charge_DC_10_80": "0:34"
-          },
-          "weightMeasurements": {
-            "length": "5391",
-            "width": "1950",
-            "height": "1544",
-            "widthMirrors": "2192 (1099 / 1093)",
-            "wheelTurn": "3215.0",
-            "weightNotLoaded": "2715",
-            "weightMax": "3250",
-            "permittedLoad": "610",
-            "trailerLoad": "2000 / 80",
-            "trunkCapacity": "500",
-            "tankCapacity": "-"
-          }
-        },
-        "footnotes": {
-          "performance_acceleration_value": [
-            "f16"
-          ],
-          "performance_topSpeed_value": [
-            "f17"
-          ],
-          "performance_electricTopSpeed_value": [
-            "f17"
-          ],
-          "emissionsConsumptionWltp": [
-            "f4"
-          ],
-          "emissionsConsumptionWltp_electricRangeWltpCombined_label": [
-            "f6"
-          ],
-          "emissionsConsumptionWltp_electricRangeWltpCombinedBest_label": [
-            "f6"
-          ],
-          "charging": [
-            "f7"
-          ],
-          "charging_chargeAC_value": [
-            "f15"
-          ],
-          "charging_charge_AC_0_100_value": [
-            "f15"
-          ],
-          "weightMeasurements_weightNotLoaded_label": [
-            "f8"
-          ],
-          "weightMeasurements_trailerLoad_label": [
-            "f13"
-          ],
-          "charging_additionalRangeDC_label": [
-            "f7"
-          ]
-        },
-        "footnotesData": {
-          "overboostMax": "-",
-          "overboostKW": "-"
-        }
-      }
-    ]
+    }
   }
 }

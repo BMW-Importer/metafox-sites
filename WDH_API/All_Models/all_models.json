@@ -92,7 +92,7 @@
     },
     {
       "modelCode": "51BX",
-      "description": "230e xDrive",
+      "description": "BMW 230e xDrive",
       "modelRangeCode": "U06",
       "shortName": "230e xDrive",
       "shortRangeName": "U06",
@@ -159,6 +159,33 @@
       "modelRangeCode": "F44",
       "shortName": "220i xDrive",
       "shortRangeName": "F44",
+      "marketingSeries": "2",
+      "seriesCode": "2"
+    },
+    {
+      "modelCode": "21DM",
+      "description": "BMW M2 Coupé",
+      "modelRangeCode": "G87",
+      "shortName": "M2 Coupé",
+      "shortRangeName": "G87",
+      "marketingSeries": "2",
+      "seriesCode": "2"
+    },
+    {
+      "modelCode": "51CM",
+      "description": "M240i xDrive",
+      "modelRangeCode": "G87",
+      "shortName": "M240i xDrive",
+      "shortRangeName": "G87",
+      "marketingSeries": "2",
+      "seriesCode": "2"
+    },
+    {
+      "modelCode": "51CM_LCI",
+      "description": "BMW M240i xDrive",
+      "modelRangeCode": "G87",
+      "shortName": "M240i xDrive",
+      "shortRangeName": "G87",
       "marketingSeries": "2",
       "seriesCode": "2"
     },
@@ -271,6 +298,123 @@
       "seriesCode": "3"
     },
     {
+      "modelCode": "28FF",
+      "description": "BMW 318i Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "318i Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "28FU",
+      "description": "BMW 318d Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "318d Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "38FU",
+      "description": "BMW 320d Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "320d Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "41GK",
+      "description": "BMW 330e Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "330e Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "48FU",
+      "description": "BMW 320d xDrive Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "320d xDrive Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "48GK",
+      "description": "BMW 330e Limousine",
+      "modelRangeCode": "G20",
+      "shortName": "330e Limousine",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "48GK_",
+      "description": "BMW 330e Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "330e Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "58CD",
+      "description": "BMW 330d Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "330d Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "58FF",
+      "description": "BMW 320i Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "320i Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "58FU_LCI",
+      "description": "BMW 330d xDrive Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "330d xDrive Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "61FF_LCI",
+      "description": "BMW 330i Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "330i Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "61FU_LCI",
+      "description": "BMW M340d xDrive Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "M340d xDrive Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "78FF",
+      "description": "BMW 320i xDrive Sedan",
+      "modelRangeCode": "G20",
+      "shortName": "320i xDrive Sedan",
+      "shortRangeName": "G20",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
       "modelCode": "11FZ",
       "description": "318d",
       "modelRangeCode": "G21",
@@ -370,22 +514,103 @@
       "seriesCode": "3"
     },
     {
-      "modelCode": "11FL",
-      "description": "520d",
-      "modelRangeCode": "G60",
-      "shortName": "520d",
-      "shortRangeName": "G60",
-      "marketingSeries": "5",
-      "seriesCode": "5"
+      "modelCode": "21GL",
+      "description": "BMW M340i xDrive Touring",
+      "modelRangeCode": "G21",
+      "shortName": "M340i xDrive Touring",
+      "shortRangeName": "G21",
+      "marketingSeries": "3",
+      "seriesCode": "3"
     },
     {
-      "modelCode": "21FL",
-      "description": "520d xDrive",
-      "modelRangeCode": "G60",
-      "shortName": "520d xDrive",
-      "shortRangeName": "G60",
-      "marketingSeries": "5",
-      "seriesCode": "5"
+      "modelCode": "41GL",
+      "description": "BMW 330e Touring",
+      "modelRangeCode": "G21",
+      "shortName": "330e Touring",
+      "shortRangeName": "G21",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "51GL",
+      "description": "BMW 330e xDrive Touring",
+      "modelRangeCode": "G21",
+      "shortName": "330e xDrive Touring",
+      "shortRangeName": "G21",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "61FZ_LCI",
+      "description": "BMW M340d xDrive Touring",
+      "modelRangeCode": "G21",
+      "shortName": "M340d xDrive Touring",
+      "shortRangeName": "G21",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "71FY_LCI",
+      "description": "BMW 330i xDrive Touring  ",
+      "modelRangeCode": "G21",
+      "shortName": "330i xDrive Touring  ",
+      "shortRangeName": "G21",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "81FY_LCI",
+      "description": "BMW M340i xDrive Touring",
+      "modelRangeCode": "G21",
+      "shortName": "M340i xDrive Touring",
+      "shortRangeName": "G21",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "11HJ",
+      "description": "BMW M3 Sedan",
+      "modelRangeCode": "G80",
+      "shortName": "M3 Sedan",
+      "shortRangeName": "G80",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "21HJ",
+      "description": "BMW M3 Competition Sedan",
+      "modelRangeCode": "G80",
+      "shortName": "M3 Competition Sedan",
+      "shortRangeName": "G80",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "31HJ",
+      "description": "BMW M3 Competition Sedan with M xDrive",
+      "modelRangeCode": "G80",
+      "shortName": "M3 Competition Sedan with M xDrive",
+      "shortRangeName": "G80",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "41FF_LCI",
+      "description": "BMW M340i xDrive",
+      "modelRangeCode": "G80",
+      "shortName": "M340i xDrive",
+      "shortRangeName": "G80",
+      "marketingSeries": "3",
+      "seriesCode": "3"
+    },
+    {
+      "modelCode": "21GB",
+      "description": "BMW M3 Competition Touring mit M xDrive",
+      "modelRangeCode": "G81",
+      "shortName": "M3 Competition Touring mit M xDrive",
+      "shortRangeName": "G81",
+      "marketingSeries": "3",
+      "seriesCode": "3"
     },
     {
       "modelCode": "11FJ",
@@ -398,7 +623,7 @@
     },
     {
       "modelCode": "31FK",
-      "description": "i5 eDrive40",
+      "description": "BMW i5 eDrive40",
       "modelRangeCode": "G60",
       "shortName": "i5 eDrive40",
       "shortRangeName": "G60",
@@ -406,13 +631,58 @@
       "seriesCode": "5"
     },
     {
-      "modelCode": "21EJ",
-      "description": "740d xDrive",
-      "modelRangeCode": "G70",
-      "shortName": "740d xDrive",
-      "shortRangeName": "G70",
-      "marketingSeries": "7",
-      "seriesCode": "7"
+      "modelCode": "71FJ",
+      "description": "BMW 530e Limousine",
+      "modelRangeCode": "G60",
+      "shortName": "530e Limousine",
+      "shortRangeName": "G60",
+      "marketingSeries": "5",
+      "seriesCode": "5"
+    },
+    {
+      "modelCode": "11GW",
+      "description": "BMW 520d Touring",
+      "modelRangeCode": "G61",
+      "shortName": "520d Touring",
+      "shortRangeName": "5 Serije Touring",
+      "marketingSeries": "5",
+      "seriesCode": "5"
+    },
+    {
+      "modelCode": "21GV",
+      "description": "BMW 530e Touring",
+      "modelRangeCode": "G61",
+      "shortName": "530e Touring",
+      "shortRangeName": "5 Serije Touring",
+      "marketingSeries": "5",
+      "seriesCode": "5"
+    },
+    {
+      "modelCode": "21GW",
+      "description": "BMW 520d xDrive Touring",
+      "modelRangeCode": "G61",
+      "shortName": "520d xDrive Touring",
+      "shortRangeName": "5 Serije Touring",
+      "marketingSeries": "5",
+      "seriesCode": "5"
+    },
+    {
+      "modelCode": "31GV",
+      "description": "BMW 530e xDrive Touring",
+      "modelRangeCode": "G61",
+      "shortName": "530e xDrive Touring",
+      "shortRangeName": "5 Serije Touring",
+      "marketingSeries": "5",
+      "seriesCode": "5"
+    },
+    {
+      "modelCode": "31GW",
+      "description": "BMW 540d xDrive Touring",
+      "modelRangeCode": "G61",
+      "shortName": "540d xDrive Touring",
+      "shortRangeName": "5 Serije Touring",
+      "marketingSeries": "5",
+      "seriesCode": "5"
     },
     {
       "modelCode": "51EJ",
@@ -425,9 +695,9 @@
     },
     {
       "modelCode": "81EH",
-      "description": "i7 M70 xDrive",
+      "description": "BMW i7 M70 Limousine",
       "modelRangeCode": "G70",
-      "shortName": "i7 M70 xDrive",
+      "shortName": "i7 M70 Limousine",
       "shortRangeName": "G70",
       "marketingSeries": "7",
       "seriesCode": "7"
@@ -604,15 +874,6 @@
       "seriesCode": "XM"
     },
     {
-      "modelCode": "21CS",
-      "description": "XM",
-      "modelRangeCode": "G09",
-      "shortName": "XM",
-      "shortRangeName": "G09",
-      "marketingSeries": "XM",
-      "seriesCode": "XM"
-    },
-    {
       "modelCode": "31CS",
       "description": "XM Label",
       "modelRangeCode": "G09",
@@ -686,7 +947,7 @@
     },
     {
       "modelCode": "31EF",
-      "description": "X1 xDrive30e",
+      "description": "BMW X1 xDrive30e",
       "modelRangeCode": "U11",
       "shortName": "X1 xDrive30e",
       "shortRangeName": "U11",
@@ -735,6 +996,42 @@
       "modelRangeCode": "G08",
       "shortName": "iX3 M Sport",
       "shortRangeName": "G08",
+      "marketingSeries": "X3",
+      "seriesCode": "X3"
+    },
+    {
+      "modelCode": "11GR",
+      "description": "BMW X3 20d xDrive",
+      "modelRangeCode": "G45",
+      "shortName": "X3 20d xDrive",
+      "shortRangeName": "X3",
+      "marketingSeries": "X3",
+      "seriesCode": "X3"
+    },
+    {
+      "modelCode": "31GP",
+      "description": "BMW X3 20 xDrive",
+      "modelRangeCode": "G45",
+      "shortName": "X3 20 xDrive",
+      "shortRangeName": "X3",
+      "marketingSeries": "X3",
+      "seriesCode": "X3"
+    },
+    {
+      "modelCode": "65GP",
+      "description": "BMW X3 30e xDrive",
+      "modelRangeCode": "G45",
+      "shortName": "X3 30e xDrive",
+      "shortRangeName": "X3",
+      "marketingSeries": "X3",
+      "seriesCode": "X3"
+    },
+    {
+      "modelCode": "71GP",
+      "description": "BMW X3 M50 xDrive",
+      "modelRangeCode": "G45",
+      "shortName": "X3 M50 xDrive",
+      "shortRangeName": "X3",
       "marketingSeries": "X3",
       "seriesCode": "X3"
     },
@@ -802,17 +1099,8 @@
       "seriesCode": "X4"
     },
     {
-      "modelCode": "11ET",
-      "description": "X5 M Competition",
-      "modelRangeCode": "F95",
-      "shortName": "X5 M Competition",
-      "shortRangeName": "F95",
-      "marketingSeries": "X5",
-      "seriesCode": "X5"
-    },
-    {
       "modelCode": "41EU",
-      "description": "X5 xDrive50e",
+      "description": "BMW X5 xDrive50e",
       "modelRangeCode": "G05",
       "shortName": "X5 xDrive50e",
       "shortRangeName": "G05",
@@ -827,33 +1115,6 @@
       "shortRangeName": "G05",
       "marketingSeries": "X5",
       "seriesCode": "X5"
-    },
-    {
-      "modelCode": "21EU",
-      "description": "X5 xDrive40i",
-      "modelRangeCode": "G05",
-      "shortName": "X5 xDrive40i",
-      "shortRangeName": "G05",
-      "marketingSeries": "X5",
-      "seriesCode": "X5"
-    },
-    {
-      "modelCode": "31EU",
-      "description": "X5 M60i xDrive",
-      "modelRangeCode": "G05",
-      "shortName": "X5 M60i xDrive",
-      "shortRangeName": "G05",
-      "marketingSeries": "X5",
-      "seriesCode": "X5"
-    },
-    {
-      "modelCode": "21ET",
-      "description": "X6 M Competition",
-      "modelRangeCode": "F96",
-      "shortName": "X6 M Competition",
-      "shortRangeName": "F96",
-      "marketingSeries": "X6",
-      "seriesCode": "X6"
     },
     {
       "modelCode": "11EY",
@@ -883,35 +1144,8 @@
       "seriesCode": "X6"
     },
     {
-      "modelCode": "31EM",
-      "description": "X7 M60i xDrive",
-      "modelRangeCode": "G07",
-      "shortName": "X7 M60i xDrive",
-      "shortRangeName": "G07",
-      "marketingSeries": "X7",
-      "seriesCode": "X7"
-    },
-    {
-      "modelCode": "21EM",
-      "description": "X7 xDrive40i",
-      "modelRangeCode": "G07",
-      "shortName": "X7 xDrive40i",
-      "shortRangeName": "G07",
-      "marketingSeries": "X7",
-      "seriesCode": "X7"
-    },
-    {
-      "modelCode": "21EN",
-      "description": "X7 xDrive40d",
-      "modelRangeCode": "G07",
-      "shortName": "X7 xDrive40d",
-      "shortRangeName": "G07",
-      "marketingSeries": "X7",
-      "seriesCode": "X7"
-    },
-    {
       "modelCode": "11CF",
-      "description": "iX xDrive40",
+      "description": "BMW iX xDrive40",
       "modelRangeCode": "I20",
       "shortName": "iX xDrive40",
       "shortRangeName": "I20",
@@ -935,6 +1169,365 @@
       "shortRangeName": "I20",
       "marketingSeries": "IX",
       "seriesCode": "IX"
+    },
+    {
+      "modelCode": "71FN",
+      "description": "BMW M440d xDrive Coupé",
+      "modelRangeCode": "G22",
+      "shortName": "M440d xDrive Coupé",
+      "shortRangeName": "G22",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "71HB",
+      "description": "BMW M440i xDrive Coupé",
+      "modelRangeCode": "G22",
+      "shortName": "M440i xDrive Coupé",
+      "shortRangeName": "G22",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "11HC",
+      "description": "BMW 420i Gran Coupé",
+      "modelRangeCode": "G26",
+      "shortName": "420i Gran Coupé",
+      "shortRangeName": "G26",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "31HC",
+      "description": "BMW 430i Gran Coupé",
+      "modelRangeCode": "G26",
+      "shortName": "430i Gran Coupé",
+      "shortRangeName": "G26",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "41HC",
+      "description": "BMW 430i xDrive Gran Coupé",
+      "modelRangeCode": "G26",
+      "shortName": "430i xDrive Gran Coupé",
+      "shortRangeName": "G26",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "61HC",
+      "description": "BMW M440i xDrive Gran Coupé ",
+      "modelRangeCode": "G26",
+      "shortName": "M440i xDrive Gran Coupé ",
+      "shortRangeName": "G26",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "41BA",
+      "description": "BMW M4 Competition Cabrio mit M xDrive",
+      "modelRangeCode": "G83",
+      "shortName": "M4 Competition Cabrio mit M xDrive",
+      "shortRangeName": "G83",
+      "marketingSeries": "4",
+      "seriesCode": "4"
+    },
+    {
+      "modelCode": "41EH",
+      "description": "750e xDrive",
+      "modelRangeCode": "G70",
+      "shortName": "750e xDrive",
+      "shortRangeName": "G70",
+      "marketingSeries": "M",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "51EH",
+      "description": "M760e xDrive",
+      "modelRangeCode": "G70",
+      "shortName": "M760e xDrive",
+      "shortRangeName": "G70",
+      "marketingSeries": "7",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "51EJ",
+      "modelRangeCode": "G70",
+      "shortName": "",
+      "shortRangeName": "G70",
+      "marketingSeries": "M",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "81EH",
+      "description": "BMW i7 M70 Limousine",
+      "modelRangeCode": "G70",
+      "shortName": "i7 M70 Limousine",
+      "shortRangeName": "G70",
+      "marketingSeries": "7",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "11HK",
+      "description": "BMW M4 Coupé (manuell)",
+      "modelRangeCode": "G82",
+      "shortName": "M4 Coupé (manuell)",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "21HK",
+      "description": "BMW M4 Competition Coupé",
+      "modelRangeCode": "G82",
+      "shortName": "M4 Competition Coupé",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "31HK",
+      "description": "BMW M4 Competition M xDrive Coupé",
+      "modelRangeCode": "G82",
+      "shortName": "M4 Competition M xDrive Coupé",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "41HK",
+      "description": "BMW M4 CS",
+      "modelRangeCode": "G82",
+      "shortName": "M4 CS",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "71FN",
+      "description": "BMW M440d xDrive Coupé",
+      "modelRangeCode": "G82",
+      "shortName": "M440d xDrive Coupé",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "71HB",
+      "description": "BMW M440i xDrive Coupé",
+      "modelRangeCode": "G82",
+      "shortName": "M440i xDrive Coupé",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "73DA",
+      "description": "BMW M440i Coupé",
+      "modelRangeCode": "G82",
+      "shortName": "M440i Coupé",
+      "shortRangeName": "G82",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "41BA",
+      "description": "BMW M4 Competition Cabrio mit M xDrive",
+      "modelRangeCode": "G83",
+      "shortName": "M4 Competition Cabrio mit M xDrive",
+      "shortRangeName": "G83",
+      "marketingSeries": "4",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "81FK",
+      "description": "BMW M5 Sedan",
+      "modelRangeCode": "G90",
+      "shortName": "M5 Sedan",
+      "shortRangeName": "5er Limousine M Automobile",
+      "marketingSeries": "5",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "81GV",
+      "description": "BMW M5 Touring with M xDrive",
+      "modelRangeCode": "G99",
+      "shortName": "M5 Touring with M xDrive",
+      "shortRangeName": "5er Touring M Automobile",
+      "marketingSeries": "5",
+      "seriesCode": "M"
+    },
+    {
+      "modelCode": "11GF",
+      "description": "BMW 118d",
+      "modelRangeCode": "F70",
+      "shortName": "118d",
+      "shortRangeName": "1er",
+      "marketingSeries": "1",
+      "seriesCode": "1"
+    },
+    {
+      "modelCode": "21GE",
+      "description": "BMW M135 xDrive",
+      "modelRangeCode": "F70",
+      "shortName": "M135 xDrive",
+      "shortRangeName": "1er",
+      "marketingSeries": "1",
+      "seriesCode": "1"
+    },
+    {
+      "modelCode": "21GF",
+      "description": "BMW 120d",
+      "modelRangeCode": "F70",
+      "shortName": "120d",
+      "shortRangeName": "1er",
+      "marketingSeries": "1",
+      "seriesCode": "1"
+    },
+    {
+      "modelCode": "81GE",
+      "description": "BMW 120",
+      "modelRangeCode": "F70",
+      "shortName": "120",
+      "shortRangeName": "1er",
+      "marketingSeries": "1",
+      "seriesCode": "1"
+    },
+    {
+      "modelCode": "41EU",
+      "description": "BMW X5 xDrive50e",
+      "modelRangeCode": "G05",
+      "shortName": "X5 xDrive50e",
+      "shortRangeName": "G05",
+      "marketingSeries": "X",
+      "seriesCode": "X"
+    },
+    {
+      "modelCode": "21GM",
+      "description": "BMW X2 sDrive20i",
+      "modelRangeCode": "U10",
+      "shortName": "X2 sDrive20i",
+      "shortRangeName": "X2",
+      "marketingSeries": "2",
+      "seriesCode": "X"
+    },
+    {
+      "modelCode": "71GM",
+      "description": "BMW iX2 xDrive30",
+      "modelRangeCode": "U10",
+      "shortName": "iX2 xDrive30",
+      "shortRangeName": "X2",
+      "marketingSeries": "2",
+      "seriesCode": "X"
+    },
+    {
+      "modelCode": "81GM",
+      "description": "BMW X2 M35i xDrive",
+      "modelRangeCode": "U10",
+      "shortName": "X2 M35i xDrive",
+      "shortRangeName": "X2",
+      "marketingSeries": "2",
+      "seriesCode": "X"
+    },
+    {
+      "modelCode": "31EF",
+      "description": "BMW X1 xDrive30e",
+      "modelRangeCode": "U11",
+      "shortName": "X1 xDrive30e",
+      "shortRangeName": "U11",
+      "marketingSeries": "X",
+      "seriesCode": "X"
+    },
+    {
+      "modelCode": "61EF",
+      "description": "iX1 xDrive30",
+      "modelRangeCode": "U11",
+      "shortName": "iX1 xDrive30",
+      "shortRangeName": "U11",
+      "marketingSeries": "X",
+      "seriesCode": "X"
+    },
+    {
+      "modelCode": "11HD",
+      "description": "BMW i4 eDrive35",
+      "modelRangeCode": "G26E",
+      "shortName": "i4 eDrive35",
+      "shortRangeName": "i4",
+      "marketingSeries": "4",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "21HD",
+      "description": "BMW i4 eDrive40 Gran Coupé",
+      "modelRangeCode": "G26E",
+      "shortName": "i4 eDrive40 Gran Coupé",
+      "shortRangeName": "i4",
+      "marketingSeries": "4",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "31HD",
+      "description": "BMW i4 M50 xDrive",
+      "modelRangeCode": "G26E",
+      "shortName": "i4 M50 xDrive",
+      "shortRangeName": "i4",
+      "marketingSeries": "4",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "41HD",
+      "description": "BMW i4 xDrive 40",
+      "modelRangeCode": "G26E",
+      "shortName": "i4 xDrive 40",
+      "shortRangeName": "i4",
+      "marketingSeries": "4",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "31FK",
+      "description": "BMW i5 eDrive40",
+      "modelRangeCode": "G60E",
+      "shortName": "i5 eDrive40",
+      "shortRangeName": "i5",
+      "marketingSeries": "5",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "11HH",
+      "description": "BMW i5 eDrive40 Touring",
+      "modelRangeCode": "G61E",
+      "shortName": "i5 eDrive40 Touring",
+      "shortRangeName": "i5 Touring",
+      "marketingSeries": "5",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "31HH",
+      "description": "BMW i5 M60 xDrive Touring",
+      "modelRangeCode": "G61E",
+      "shortName": "i5 M60 xDrive Touring",
+      "shortRangeName": "i5 Touring",
+      "marketingSeries": "5",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "81EH",
+      "description": "BMW i7 M70 Limousine",
+      "modelRangeCode": "G70E",
+      "shortName": "i7 M70 Limousine",
+      "shortRangeName": "i7",
+      "marketingSeries": "7",
+      "seriesCode": "i"
+    },
+    {
+      "modelCode": "71GM",
+      "description": "BMW iX2 xDrive30",
+      "modelRangeCode": "U10E",
+      "shortName": "iX2 xDrive30",
+      "shortRangeName": "iX2",
+      "marketingSeries": "i",
+      "seriesCode": "i"
     }
   ]
 }

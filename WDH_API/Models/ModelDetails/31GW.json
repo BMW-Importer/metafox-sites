@@ -1,0 +1,129 @@
+{
+  "model": {
+    "modelCode": "31GW",
+    "brand": "BM",
+    "description": "BMW 540d xDrive Touring",
+    "shortName": "540d xDrive Touring",
+    "shortRangeName": "5 Serije Touring",
+    "modelRangeCode": "G61",
+    "modelRanges": [
+      "G61"
+    ],
+    "seriesCode": "5",
+    "series": [
+      "5"
+    ],
+    "seriesDescription": "BMW Serije 5",
+    "seriesDescriptions": [
+      "BMW Serije 5"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "5.4",
+    "topSpeed": "250",
+    "bodyTypeCode": "TO",
+    "marketingBodyTypeCode": "TO",
+    "posiSpec": {
+      "cosyBrand": "WBBM"
+    },
+    "powerTrain": {
+      "fuelType": "D",
+      "systemPower": "232 (316)",
+      "systemMaxTorque": "650",
+      "gearBox": "8 - automatisch",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": true,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "D",
+            "systemPower": "232 (316)",
+            "systemMaxTorque": "650",
+            "gearBox": "8 - automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2993",
+            "nominalPower": "210 (286) / 4000",
+            "nominalTorque": "650 / 1500–2500"
+          },
+          "electric": {
+            "systemPower": "13 (17) / –",
+            "systemMaxTorque": "20"
+          },
+          "performance": {
+            "acceleration": "5.4",
+            "topSpeed": "250",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "6.6 – 5.8",
+            "emissionsWltpCombined": "174 – 154",
+            "electricConsumption": "",
+            "electricRangeWltpCombined": "",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "",
+            "additionalRangeDC": "",
+            "chargeACDC": "",
+            "charge_AC_0_100": "",
+            "charge_DC_10_80": ""
+          },
+          "weightMeasurements": {
+            "length": "5060",
+            "width": "1900",
+            "height": "1515",
+            "widthMirrors": "",
+            "wheelTurn": "2995",
+            "weightNotLoaded": "2050",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "",
+            "trunkCapacity": "570 – 1700",
+            "tankCapacity": ""
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f10"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f10"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "charging": [
+            "f7"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

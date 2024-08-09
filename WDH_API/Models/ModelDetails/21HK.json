@@ -1,0 +1,146 @@
+{
+  "model": {
+    "modelCode": "21HK",
+    "brand": "BM",
+    "description": "BMW M4 Competition Coupé",
+    "shortName": "M4 Competition Coupé",
+    "shortRangeName": "G82",
+    "marketingSeries": "4",
+    "modelRangeCode": "G82",
+    "modelRanges": [
+      "G82"
+    ],
+    "seriesCode": "M",
+    "series": [
+      "M"
+    ],
+    "seriesDescription": "M",
+    "seriesDescriptions": [
+      "M"
+    ],
+    "hybridCode": "NOHY",
+    "fromPrice": 103260,
+    "acceleration": "3.9",
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "CO",
+    "marketingBodyTypeCode": "CP",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21HK",
+      "paint": "P0C4H",
+      "fabric": "FX3KX",
+      "options": "S04MC,S01T6,S0801,S01CB,S01DF,S01MB,S0230,S0248,S02PA,S02T4,S02VB,S02VF,S0302,S0316,S0322,S03M5,S03MF,S0428,S0430,S0431,S0459,S048C,S0493,S0494,S04GQ,S04NE,S04U0,S0534,S0544,S0548,S0552,S05AC,S05AL,S05AS,S05AV,S05DA,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06CP,S06NX,S06PA,S06U3,S06VB,S071C,S0760,S0775,S07M9,S0851,S0879,S08EK,S08KA,S08R3,S08R9,S08TF,CTRLLIGHTSON",
+      "productionDate": "2024-02-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "375 (510)",
+      "systemMaxTorque": "650",
+      "gearBox": "8-brzinski, Automatski",
+      "driveType": "HR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "375 (510)",
+            "systemMaxTorque": "650",
+            "gearBox": "8-brzinski, Automatski",
+            "driveType": "HR"
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2993",
+            "nominalPower": "375 (510)/6250",
+            "nominalTorque": "650/2750–5500"
+          },
+          "electric": {
+            "systemPower": "–",
+            "systemMaxTorque": "–"
+          },
+          "performance": {
+            "acceleration": "3.9",
+            "topSpeed": "250",
+            "electricTopSpeed": "–"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "9.9–9.7",
+            "emissionsWltpCombined": "223–219",
+            "electricConsumption": "–",
+            "electricRangeWltpCombined": "–",
+            "noiseDriving": "–",
+            "noiseStationary": "–"
+          },
+          "charging": {
+            "batteryCapacity": "–",
+            "additionalRangeDC": "–",
+            "chargeACDC": "–",
+            "charge_AC_0_100": "–",
+            "charge_DC_10_80": "–"
+          },
+          "weightMeasurements": {
+            "length": "4801",
+            "width": "1887",
+            "height": "1397",
+            "widthMirrors": "",
+            "wheelTurn": "2857",
+            "weightNotLoaded": "1800",
+            "weightMax": "",
+            "permittedLoad": "",
+            "trailerLoad": "–",
+            "trunkCapacity": "440",
+            "tankCapacity": "59"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ],
+          "emissionsConsumptionWltp_noiseStationary_value": [
+            "f14"
+          ],
+          "emissionsConsumptionWltp_noiseDriving_value": [
+            "f14"
+          ],
+          "charging_additionalRangeDC_label": [
+            "f7"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

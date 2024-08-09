@@ -224,7 +224,6 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header.header-wrapper.transparent {
-    position: absolute;
     background: white;
     width: 100%;
   }
@@ -666,7 +665,6 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   }
 
   header.header-wrapper.transparent {
-    position: absolute;
     background: white;
     width: 100%;
   }
@@ -683,6 +681,7 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
   header.header-wrapper.transparent .nav-wrapper {
     background-color: transparent;
   }
+
 
   header.header-wrapper.white-background nav[aria-expanded="true"] .logo-wrapper .grey-image {
     display: block;
@@ -1065,7 +1064,6 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
   }
 
   header.header-wrapper.transparent {
-    position: absolute;
     background: white;
     width: 100%;
     z-index: 999;
@@ -1074,13 +1072,6 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
   .white-background header.header-wrapper.transparent {
     position: absolute;
     background: transparent;
-    width: 100%;
-    z-index: 999;
-  } 
-
-  .transparent header.header-wrapper.transparent {
-    position: absolute;
-    background: white;
     width: 100%;
     z-index: 999;
   } 

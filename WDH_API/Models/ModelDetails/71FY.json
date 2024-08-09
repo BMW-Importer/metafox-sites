@@ -13,9 +13,9 @@
     "series": [
       "3"
     ],
-    "seriesDescription": "BMW Serije 3 - M verzije",
+    "seriesDescription": "3",
     "seriesDescriptions": [
-      "BMW Serije 3 - M verzije"
+      "3"
     ],
     "hybridCode": "NOHY",
     "fromPrice": 62319,
@@ -29,10 +29,10 @@
     "bodyTypeDescription": "TOU",
     "posiSpec": {
       "cosyBrand": "WBBM",
-      "agCode": "11FY",
-      "paint": "P0C3Z",
-      "fabric": "FMAOI",
-      "options": "S01CB,S01DF,S01HX,S0230,S0248,S02NH,S02PA,S02TE,S02VB,S02VC,S02VL,S0302,S0322,S0337,S03KA,S03MC,S0420,S0428,S0430,S0431,S0459,S0481,S0488,S0491,S0493,S0494,S04LN,S04NE,S04UR,S0534,S0548,S0552,S05AC,S05AQ,S05AU,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06NX,S06PA,S06U3,S06VB,S0704,S0710,S0715,S0760,S0775,S07A2,S07LG,S0801,S0851,S0879,S08KA,S08R3,S08R9,S08TF,S08TR,S08WM,S0925,S0991"
+      "agCode": "71FY",
+      "paint": "P0A96",
+      "fabric": "FKHSW",
+      "options": "S01S5,S04P6,S02TE,S02XH,S0423,S0431,S0493,S0508,S0534,S0544,S06U2,S06WC,S0760,S03MC,S05DC,S07EW,S0320,S02PA,S02VB,S0428,S06NX,S06U3,S0654,S06C3,S06CP,S0316,S0322,S0494,S0465,S0430,S05AC,S0552,S0403,S05DM,CTRLLIGHTSON"
     },
     "powerTrain": {
       "fuelType": "O",
@@ -41,7 +41,7 @@
       "gearBox": "8 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-08-06",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "S02TE",

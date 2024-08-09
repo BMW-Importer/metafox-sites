@@ -18,7 +18,7 @@
       "BMW iX"
     ],
     "hybridCode": "BEVE",
-    "fromPrice": 148370,
+    "fromPrice": 146.85,
     "acceleration": "3.8",
     "trunkCapacity": 500,
     "seats": 5,
@@ -32,7 +32,7 @@
       "agCode": "31CF",
       "paint": "P0C3N",
       "fabric": "FSCHA",
-      "options": "S01EV, S042A, S0248, S02VH, S02VR, S0319, S0322, S0323, S0330, S03L7, S0407, S0453, S0494, S04AA, S04FM, S04HC, S04NB, S04NR, S04V1, S05AU, S05AZ, S05DW, S0654, S06C4, S06F1, S06NX, S06U3, S06U7"
+      "options": "S01EV,S042A,S0248,S02VH,S02VR,S0319,S0322,S0323,S0330,S03L7,S0407,S0453,S0494,S04AA,S04FM,S04HC,S04NB,S04NR,S04V1,S05AU,S05AZ,S05DW,S0654,S06C4,S06F1,S06NX,S06U3,S06U7"
     },
     "powerTrain": {
       "fuelType": "E",
@@ -41,7 +41,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-30",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -75,8 +75,8 @@
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
             "emissionsWltpCombined": "-",
-            "electricConsumption": "24.7–21.8",
-            "electricRangeWltpCombined": "500–567",
+            "electricConsumption": "24.7",
+            "electricRangeWltpCombined": "500 - 563",
             "efficiencyCategoryMinChargeSustaining": "-",
             "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
@@ -84,24 +84,24 @@
           },
           "charging": {
             "batteryCapacity": "108.6",
-            "additionalRangeDC": "145 - 175",
-            "chargeACDC": "11 (22) / 195",
+            "additionalRangeDC": " 145 - 175",
+            "chargeACDC": "11 (22)",
             "chargeAC": "11 / 22",
-            "charge_AC_0_100": "11:00 / 6:15",
+            "charge_AC_0_100": "11 (6.25)",
             "chargeDC": "195",
-            "charge_DC_10_80": "0:35"
+            "charge_DC_10_80": "195"
           },
           "weightMeasurements": {
             "length": "4953",
             "width": "1967",
             "height": "1696",
             "widthMirrors": "2230 (1118 / 1112)",
-            "wheelTurn": "3000.0",
+            "wheelTurn": "3000",
             "weightNotLoaded": "2670",
             "weightMax": "3160",
             "permittedLoad": "565",
             "trailerLoad": "2500 / 100",
-            "trunkCapacity": "500–1750",
+            "trunkCapacity": "500 - 1750",
             "tankCapacity": "-"
           }
         },

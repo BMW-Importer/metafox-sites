@@ -2,23 +2,23 @@
   "model": {
     "modelCode": "81EH",
     "brand": "BM",
-    "description": "i7 M70 xDrive",
-    "shortName": "i7 M70 xDrive",
+    "description": "BMW i7 M70 Limousine",
+    "shortName": "i7 M70 Limousine",
     "shortRangeName": "G70",
-    "modelRangeCode": "G70",
+    "modelRangeCode": "G70E",
     "modelRanges": [
       "G70"
     ],
-    "seriesCode": "7",
+    "seriesCode": "i",
     "series": [
       "7"
     ],
-    "seriesDescription": "BMW Serije 7",
+    "seriesDescription": "i",
     "seriesDescriptions": [
       "BMW Serije 7"
     ],
     "hybridCode": "BEVE",
-    "fromPrice": 176928,
+    "fromPrice": 176.6,
     "acceleration": "3.7",
     "trunkCapacity": 500,
     "seats": 5,
@@ -33,7 +33,7 @@
       "agCode": "81EH",
       "paint": "P0C57",
       "fabric": "FZETM",
-      "options": "S01FE,S0230,S02PA,S02VB,S02VC,S02VH,S02VS,S0302,S0319,S0356,S03CD,S03DM,S03DN,S03M3,S03MY,S0407,S0416,S0420,S0428,S043B,S0453,S0454,S0465,S046A,S04A2,S04F4,S04F5,S04FL,S04FM,S04HC,S04T2,S04T3,S04T6,S04T7,S04U6,S04U9,S04V1,S0548,S05AU,S05AW,S05DW,S05YA,S0654,S06AE,S06AF,S06AK,S06C4,S06F1,S06FR,S06NX,S06PA,S06U3,S06U7,S0710,S0754,S0760,S07M8,S07M9,S07ML,S07R7,S0801,S0851,S0879,S08R3,S08R9,S08TF,S08WN,S09DA,S09DB,S09DC,S09DD,S09T1,S09T2,S09TB,S0XD5",
+      "options": "S01FE,S0230,S02PA,S02VB,S02VC,S02VH,S02VR,S02VS,S0302,S0316,S0319,S0322,S0323,S0356,S03CD,S03DM,S03DN,S03M3,S03MY,S0407,S0416,S0420,S0423,S0428,S043B,S0453,S0454,S0459,S0465,S046A,S0494,S04A2,S04F4,S04F5,S04FL,S04FM,S04HC,S04NB,S04T3,S04T6,S04T7,S04T8,S04U6,S04U9,S04UR,S04V1,S0548,S0552,S05AC,S05AL,S05AU,S05AW,S05DW,S06AE,S06AF,S06AK,S06C4,S06F1,S06NX,S06PA,S06U3,S06U7,S0710,S0754,S0760,S07M8,S07M9,S07ML,S07R7,S0851,S0888,S08R9,S08TF,S08WN,S09T1,S09T2,S09TB,S0XD5",
       "productionDate": "2023-09-05"
     },
     "powerTrain": {
@@ -43,7 +43,7 @@
       "gearBox": "1 - automatisch",
       "driveType": "AR"
     },
-    "effectDate": "2024-07-16",
+    "effectDate": "2024-08-08",
     "vehicles": [
       {
         "transmissionCode": "A",
@@ -76,9 +76,9 @@
           "emissionsConsumptionWltp": {
             "consumptionWltpCombined": "-",
             "consumptionWltpCombinedChargeSustaining": "-",
-            "emissionsWltpCombined": "-",
-            "electricConsumption": "23.8–20.8",
-            "electricRangeWltpCombined": "488–560",
+            "emissionsWltpCombined": "0",
+            "electricConsumption": "23.7 - 20.8",
+            "electricRangeWltpCombined": "490 - 559",
             "efficiencyCategoryMinChargeSustaining": "-",
             "efficiencyCategoryMaxChargeSustaining": "-",
             "noiseDriving": "-",
@@ -86,19 +86,19 @@
           },
           "charging": {
             "batteryCapacity": "101.7",
-            "additionalRangeDC": "144 - 170",
+            "additionalRangeDC": "-",
             "chargeACDC": "11 (22) / 195",
-            "chargeAC": "11 / 22",
-            "charge_AC_0_100": "10:45 / 5:30",
+            "chargeAC": "11 (22) ",
+            "charge_AC_0_100": "10.75 (5.5)",
             "chargeDC": "195",
-            "charge_DC_10_80": "0:34"
+            "charge_DC_10_80": "34"
           },
           "weightMeasurements": {
             "length": "5391",
             "width": "1950",
             "height": "1544",
             "widthMirrors": "2192 (1099 / 1093)",
-            "wheelTurn": "3215.0",
+            "wheelTurn": "3215",
             "weightNotLoaded": "2770",
             "weightMax": "3250",
             "permittedLoad": "555",
@@ -131,9 +131,6 @@
           ],
           "weightMeasurements_weightNotLoaded_label": [
             "f8"
-          ],
-          "charging_additionalRangeDC_label": [
-            "f7"
           ]
         },
         "footnotesData": {
