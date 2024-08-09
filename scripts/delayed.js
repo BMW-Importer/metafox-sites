@@ -9,6 +9,8 @@ import { drivetrainResize } from '../blocks/drivetrain-switch/drivetrain-switch.
 import { timeStamp, marketingValue } from './bmw-util.js';
 import { onLoadCalculateTechDataTableHeight, technicalDataResize, onLoadTechDataAttachAnchorClick } from '../blocks/technical-data/technical-data.js';
 import { preconResizer } from '../blocks/precon/precon.js';
+import { stockLocatorResizer } from '../blocks/stock-locator-model-overview-properties/stock-locator-model-overview-properties.js';
+
 
 
 // Core Web Vitals RUM collection
@@ -24,6 +26,7 @@ onLoadCalculateTechDataTableHeight();
 technicalDataResize();
 onLoadTechDataAttachAnchorClick();
 preconResizer();
+stockLocatorResizer();
 
 const page_tracking = {"page": {
   "pageInfo": {
