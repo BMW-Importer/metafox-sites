@@ -729,12 +729,12 @@ li::marker {
     padding: 0;
 }
 .accordion-toggle-icon,
-.spec-details-showMore-button {
+.spec-details-showmore-button {
     cursor: pointer;
 }
 
 .accordion-toggle-icon::before,
-.spec-details-showMore-button::before {
+.spec-details-showmore-button::before {
     overflow-wrap: normal;
     font-size: 2rem;
     font-weight: 400;
@@ -760,7 +760,7 @@ li::marker {
     content: "arrow_chevron_up";
 }
 
-.spec-details-showMore-button::before  {
+.spec-details-showmore-button::before  {
     content: "arrow_chevron_up";
 }
 
@@ -1039,6 +1039,15 @@ li::marker {
         height: 190px;
     } 
     
+    .engine-details-elements{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .engine-details-elements .engine-elements-Container{
+        width: 50%;
+    }
 }
 
 /*  tablet view */
@@ -1195,6 +1204,16 @@ li::marker {
     .vehicle-count-wrapper{
         margin-bottom: 1.5rem;
         text-align: center;
+    }
+
+    .engine-details-elements{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .engine-details-elements .engine-elements-Container{
+        width: 50%;
     }
 }
 
@@ -1590,12 +1609,14 @@ li::marker {
         padding: 0 20px;
     }
 
-    .car-spec-details-wrapper .spec-details-container .spec-details-showMore-container {
+    .spec-details-showmore-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        font-weight: bold;
     }
+    
     .spec-popover-wrapper .spec-popover-container {
         width: 80%;
         height: auto;
