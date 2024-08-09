@@ -135,6 +135,8 @@ li::marker {
     margin: 0 0.625rem;
     height: 1.375rem;
     border-radius: 9999px;
+    display: flex;
+    justify-content : center;
 }
 
 .description-icon-div:hover{
@@ -144,9 +146,14 @@ li::marker {
     box-shadow: 0.625rem 0.625rem 1.25rem rgba(96, 96, 96, 50%);
 }
 
+.description-popup-button.icon-info-i{
+   display: flex;
+   align-items: center;
+}
+
 .description-popup-button::before {
     overflow-wrap: normal;
-    font-size: 2.5rem;
+    font-size: 0.8rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     font-feature-settings: "liga";
@@ -154,7 +161,7 @@ li::marker {
     color: var(--light-border-color);
     direction: ltr;
     display: block;
-    font-family: var(--icon-font-family);
+    font-family: var(--icon-i-font-family);
     opacity: var(--iconfont400-opacity);
     font-style: normal;
     text-rendering: optimizelegibility;
@@ -653,6 +660,12 @@ li::marker {
     color:var(--background-color);
 }
 
+.stocklocator-card-img {
+    width: 21.875rem;
+    height: 9.375rem;
+    object-fit: contain;
+}
+
 /*  mobile view */
 @media (width >=360px) and (width < 768px) {
     .stock-locator-container .series-label {
@@ -733,6 +746,11 @@ li::marker {
         margin-bottom: 1.25rem;
         width: 100%;
     }
+
+    .vehicle-count-wrapper{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
 }
 
 /*  tablet view */
@@ -795,7 +813,7 @@ li::marker {
         color: var(--light-grey-1);
         direction: ltr;
         display: block;
-        font-family: var(--icon-font-family);
+        font-family: var(--icon-i-font-family);
         opacity: var(--iconfont400-opacity);
         font-style: normal;
         text-rendering: optimizelegibility;
@@ -884,6 +902,11 @@ li::marker {
     .mobile-filter-wrapper.driveType-wrapper,
     .mobile-filter-wrapper.fuel-wrapper {
         display: none;
+    }
+
+    .vehicle-count-wrapper{
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -1191,6 +1214,10 @@ li::marker {
         padding: 1.25rem 3.75rem;
         margin-bottom: 1.5rem;        
         width: 33%;
+    }
+
+    .stock-locator-model-detail-definition-specification .show-more-container .show-more-button:hover{
+        border: 2px solid var(--text-color);       
     }
 
     .filter-item.not-desktop {

@@ -223,12 +223,21 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     width: 100%;
   }
 
+  header.header-wrapper.transparent {
+    background: white;
+    width: 100%;
+  }
+
   header.header-wrapper.white-background  nav[aria-expanded="false"] .nav-hamburger button {
     background-color: transparent;
     color : var(--background-color);
   }
 
   header.header-wrapper.white-background .nav-wrapper {
+    background-color: transparent;
+  }
+
+  header.header-wrapper.transparent .nav-wrapper {
     background-color: transparent;
   }
 
@@ -655,12 +664,21 @@ header.white-background .nav-wrapper .logo-wrapper .grey-image {
     width: 100%;
   }
 
+  header.header-wrapper.transparent {
+    background: white;
+    width: 100%;
+  }
+
   header.header-wrapper.white-background  nav[aria-expanded="false"] .nav-hamburger button {
     background-color: transparent;
     color : var(--background-color);
   }
 
   header.header-wrapper.white-background .nav-wrapper {
+    background-color: transparent;
+  }
+
+  header.header-wrapper.transparent .nav-wrapper {
     background-color: transparent;
   }
 
@@ -1045,6 +1063,12 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
     z-index: 999;
   }
 
+  header.header-wrapper.transparent {
+    background: white;
+    width: 100%;
+    z-index: 999;
+  }
+
   .white-background header.header-wrapper.transparent {
     position: absolute;
     background: transparent;
@@ -1054,6 +1078,10 @@ header nav[aria-expanded="true"] .nav-brand.mobile-flyout .menu-flyout-wrapper .
 
   header.header-wrapper.white-background .nav-wrapper {
     background-color: transparent;
+  }
+
+  header.header-wrapper.transparent .nav-wrapper {
+    background-color: white;
   }
 
   header.white-background nav .section .menu-link-wrapper a,
