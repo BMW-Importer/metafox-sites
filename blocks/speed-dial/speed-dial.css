@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     bottom: 12.5rem;
+    pointer-events: none;
  }
 
  .speeddial-backtotop {
@@ -47,6 +48,7 @@
     display: flex;
     margin-bottom: 0;
     opacity: 1;
+    pointer-events: auto;
  }
 
  .speeddial-backtotop-hidden {
@@ -148,6 +150,7 @@
     transform: translateY(-45%) scale(1);
     transform-origin: bottom right;
     transition: all 0.15s ease-out 0s;
+    pointer-events: none;
 }
 
 .item-reversed {
@@ -159,6 +162,7 @@
 .list-of-containers.btn-opened {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 div:has(> .faq)::before, div:has(> .contact)::before, div:has(> .chat)::before {
