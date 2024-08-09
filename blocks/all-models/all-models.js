@@ -13,6 +13,8 @@ const allModelOverviewJson = {};
 const lang = document.querySelector('meta[name="language"]').content;
 const authorPageRegex = /author-(.*?)\.adobeaemcloud\.com(.*?)/;
 let placeholders = await fetchPlaceholders(`/${lang}`);
+const conceptCarsOrigin = `/${lang}/concept-cars-details.json`;
+const conceptCarsRelativePath = `/content/metafox/masters/${lang}/concept-cars-details.json`;
 
 const placeholders2 = {
   allModelCategoryi: 'BMW i',
@@ -26,7 +28,7 @@ const placeholders2 = {
   allModelCategory2: '2',
   allModelCategory1: '1',
   allModelCategoryZ4: 'Z4',
-  allModelFromText: 'From',
+  allModelCategoryConceptCars: 'Concept Cars',
   allModelNewLabel: 'New',
   allModelShowMoreText: 'Show More',
   allModelConfigureText: 'Configure',
@@ -168,8 +170,10 @@ function lazyLoadCozyImages(block) {
   const lazyLoad = async (imageParentContainer) => {
     const modelCode = imageParentContainer.getAttribute('data-model-code');
     const isFirstChild = imageParentContainer.classList.contains('first-model-child');
-    const pictureTag = await fetchCozyImageUrl(modelCode, isFirstChild);
-    imageParentContainer.append(pictureTag);
+    if (modelCode) {
+      const pictureTag = await fetchCozyImageUrl(modelCode, isFirstChild);
+      imageParentContainer.append(pictureTag);
+    }    
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -196,6 +200,7 @@ function generateGroupMarkUp(groupName, allModelfilteredArray) {
   if (filterArrayBasedOnCategory.length) {
     const bmwiGroupHeading = document.createElement('h2');
     bmwiGroupHeading.classList.add('all-model-group-title');
+    groupName = groupName.replace(/\s+/g, '');
     bmwiGroupHeading.textContent = placeholders[`allModelCategory${groupName}`];
     bmwiGroupHeading.setAttribute('data-model-group-name', placeholders[`allModelCategory${groupName}`]);
     bmwiGroup.append(bmwiGroupHeading);
@@ -210,7 +215,13 @@ function generateGroupMarkUp(groupName, allModelfilteredArray) {
       const isFirstChild = index === 0 ? 'first-model-child' : '';
       const newLabel = model['New Label']?.toLowerCase() === 'true' ? placeholders.allModelNewLabel : '';
       const newLableMarkUp = newLabel ? `<span class="all-model-detail__new-model-label" aria-label="${newLabel}">${newLabel}</span>` : '';
-      const fuelDetails = model['Fuel Type'].split(',');
+      const fuelDetails = model['Fuel Type']?.split(',') || [];
+
+      let conceptCarImg = '';
+
+      if(model['Image Path']) {
+        conceptCarImg = `<picture class="all-model-picture-tag"><img src="${model['Image Path']}" alt="${model['Model Name']}" class="all-model-image"></picture>`;
+      }
 
       let subBrandIcon = '';
       if (model['Sub brand Icon']?.toLowerCase() === 'i') {
@@ -219,7 +230,7 @@ function generateGroupMarkUp(groupName, allModelfilteredArray) {
         subBrandIcon = `<img src="../../icons/BMW_subrand_m.png" alt="${model['Model Name']}" title="${model['Model Name']}" class="all-model-card____subbrand-img">`;
       }
 
-      fuelDetails.forEach((fuelType, fuelIndex) => {
+      fuelDetails?.forEach((fuelType, fuelIndex) => {
         if (fuelIndex > 0) {
           fuelTypeMarkUp += '<span class=\'all-model-fuel-type\'> • </span>';
         }
@@ -238,11 +249,12 @@ function generateGroupMarkUp(groupName, allModelfilteredArray) {
       }
 
       listOfModelsContainer.insertAdjacentHTML('beforeend', `
-    <div class='all-model-card-container' data-row-index=${cardIndexInOneRow} data-model-code='${model['Model Code']}'>
+    <div class='all-model-card-container' data-row-index=${cardIndexInOneRow} data-model-code='${model['Model Code']}' data-model-name='${model['Model Name']}'>
       <div class='all-model-card-img-container ${isFirstChild}' data-model-code='${model['Model Code']}'>
       <div class="all-model-card__subbrands"><div class="all-model-card__subbrands-wrap">${subBrandIcon}</div></div>
       <span class="all-model-card__new-model-label" aria-label="${newLabel}">${newLabel}</span>
       <div class="all-model-card__fuel-type-icon"><span class="${electricOrHybridClass}"></span></div>
+      ${conceptCarImg}
       </div>
       <button class='all-model-card-btn'></button>
       <div class='all-model-detail-container ${isFirstChild}'>
@@ -252,7 +264,7 @@ function generateGroupMarkUp(groupName, allModelfilteredArray) {
         </div>
         <h5 class='all-model-detail-model-name'>${model['Model Name']}</h5>
         <p class='all-model-detail-model-fuel'>${fuelTypeMarkUp}</p>
-        <p class='all-model-detail-model-price'>${placeholders.allModelFromText} &nbsp; ${model.Price}</p>
+        <p class='all-model-detail-model-price'>${model?.Price || ''}</p>
       </div>
     </div>
     `);
@@ -301,6 +313,9 @@ function generateAllModelMarkUp(allModelfilteredArray, block) {
 
   const z4GroupMarkUp = generateGroupMarkUp('Z4', allModelfilteredArray);
   if (z4GroupMarkUp.children.length > 0) allModelContainer.append(z4GroupMarkUp);
+
+  const conceptCarsGroupMarkUp = generateGroupMarkUp('Concept Cars', allModelfilteredArray);
+  if (conceptCarsGroupMarkUp.children.length > 0) allModelContainer.append(conceptCarsGroupMarkUp);
 
   // update number of results
   const totalNumberText = block.querySelector('.total-number');
@@ -515,6 +530,16 @@ function cleanJsonValues(obj) {
   return obj;
 }
 
+async function getConceptCarsData() {
+  const isMatch = authorPageRegex.exec(window.location.host);
+  const origin = isMatch ? conceptCarsRelativePath : conceptCarsOrigin;
+  const spreadSheetResponse = cleanJsonValues(await getTechnicalSpreadsheetData(origin));
+  if (spreadSheetResponse?.responseJson?.data) {
+    const conceptCars = spreadSheetResponse.responseJson.data.filter((model) => model['Category/Group'].toLowerCase() === 'concept cars');
+    allModelOverviewJson.data = [...allModelOverviewJson.data,...conceptCars];
+  }  
+}
+
 /* eslint-disable no-console */
 async function getSpreadSheetData(type, prop) {
   try {
@@ -652,13 +677,26 @@ function findNextElement(currentElement) {
   return null;
 }
 
-async function generateDetailDiv(lastElemInRow, modelCode, block) {
-  const model = allModelOverviewJson.data.find((modelDetail) => modelDetail['Model Code'] === modelCode);
+async function generateDetailDiv(lastElemInRow, modelCode, block, modelName) {
+  let model = {};
+  if (modelCode) {
+    model = allModelOverviewJson.data.find((modelDetail) => modelDetail['Model Code'] === modelCode);
+  } else {
+    model = allModelOverviewJson.data.find((modelDetail) => modelDetail['Model Name'] === modelName);
+  }
+  
   const detailContainer = block.querySelector('.all-model-detail');
   if (detailContainer) detailContainer.remove();
 
   if (model) {
-    const pictureTag = await fetchCozyImageUrl(modelCode, false, true, 270);
+    let pictureTag;
+
+    if(modelCode) {
+      pictureTag = await fetchCozyImageUrl(modelCode, false, true, 270);
+    } else if(model['Image Path']) {
+      pictureTag = `<picture class="all-model-detail-picture-tag"><img src="${model['Image Path']}" alt="${model['Model Name']}" class="all-model-detail-image"></picture>`;
+    }
+
     let fuelTypeMarkUp = '';
 
     const newLabel = model['New Label']?.toLowerCase() === 'true' ? placeholders.allModelNewLabel : '';
@@ -671,7 +709,7 @@ async function generateDetailDiv(lastElemInRow, modelCode, block) {
       subBrandIcon = `<img src="../../icons/BMW_subrand_m.png" alt="${model['Model Name']}" title="${model['Model Name']}" class="all-model-detail__subbrand-img">`;
     }
 
-    const fuelDetails = model['Fuel Type'].split(',');
+    const fuelDetails = model['Fuel Type']?.split(',') || [];
 
     fuelDetails.forEach((fuelType, index) => {
       if (index > 0) {
@@ -683,7 +721,7 @@ async function generateDetailDiv(lastElemInRow, modelCode, block) {
     const detailDivMarkUp = `    
       <div class="all-model-detail__container">
         <div class="all-model-detail__container-img-wrap">
-            ${pictureTag.outerHTML}
+            ${pictureTag?.outerHTML || pictureTag}
         </div>
         <div class="all-model-detail__container-links">
           <div class="all-model-detail__container-details">
@@ -697,7 +735,7 @@ async function generateDetailDiv(lastElemInRow, modelCode, block) {
                 <div class="all-model-detail__fuel">
                   ${fuelTypeMarkUp}
                 </div>
-                <span class='all-model-detail__price'>${placeholders.allModelFromText} &nbsp; ${model.Price}</span>
+                <span class='all-model-detail__price'>${model?.Price || ''}</span>
               </div>
             </div>
             <div class='all-model-detail__showmore-btn-container mobile-hidden'><a href='${model['Show More Button URL']}' class='all-model-detail__showmore-btn'>${placeholders.allModelShowMoreText}</a></div>
@@ -748,11 +786,12 @@ function enableModelCardClickEvent(block) {
       parentContainer.classList.add('model-clicked');
 
       const modelCode = parentContainer.getAttribute('data-model-code');
+      const modelName = parentContainer.getAttribute('data-model-name');
       const lastElemInRow = findNextElement(parentContainer);
       if (lastElemInRow) {
-        generateDetailDiv(lastElemInRow, modelCode, block);
+        generateDetailDiv(lastElemInRow, modelCode, block, modelName);
       } else {
-        generateDetailDiv(parentContainer, modelCode, block);
+        generateDetailDiv(parentContainer, modelCode, block, modelName);
       }
     } else if (event.target?.classList.contains('all-model-detail__close-btn')) {
       document.querySelector('.all-model-detail')?.remove();
@@ -771,6 +810,8 @@ export default async function decorate(block) {
   await getSpreadSheetData('filter', description);
 
   await getSpreadSheetData('all-model', modelSpreadSheet);
+
+  await getConceptCarsData();
 
   block.textContent = '';
 
