@@ -699,6 +699,10 @@ li::marker {
         border: 0.125rem solid var(--light-link-hover-color);
     }
 
+    .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-item.selected-filter.disabled {
+        border-color: var(--dark-color);
+    }
+
     .filter-popup-container,
     .reset-filter-not-desktop {
         display: none;
@@ -878,6 +882,10 @@ li::marker {
 
     .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-item.selected-filter {
         border: 0.125rem solid var(--light-link-hover-color);
+    }
+
+    .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-item.selected-filter.disabled {
+        border-color: var(--dark-color);
     }
 
     .stock-locator-container .filter-wrapper .filter-list.dropdown-list-wrapper .filter-item {

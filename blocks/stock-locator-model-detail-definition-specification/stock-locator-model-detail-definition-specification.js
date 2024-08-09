@@ -30,8 +30,20 @@ function handleToggleFilterDropDown() {
       }
     });
   });
+
+  // Add event listener to document to handle clicks outside the dropdown
+  document.addEventListener('click', (e) => {
+    const dropdowns = document.querySelectorAll('.dropdown-list-wrapper');
+    if (![...filterSelectors, ...dropdowns].some((el) => el.contains(e.target))) {
+      if (currentlyOpenDropdown) {
+        currentlyOpenDropdown.style.display = 'none';
+        currentlyOpenDropdown.previousElementSibling.classList.remove('show-dropdown');
+        currentlyOpenDropdown = null;
+      }
+    }
+  });
   // eslint-disable-next-line no-use-before-define, no-unused-expressions
-  viewport >= 1024 && handleCheckBoxSelection();
+  viewport >= 1024 ? handleCheckBoxSelection() : handleMobileSeriesFilter();
 }
 
 function handleCancelSelectedValue(values) {
@@ -45,6 +57,7 @@ function handleCancelSelectedValue(values) {
       removeLastSelectedValue(values, fromRemove, encodeURI(valueElement.textContent));
       // eslint-disable-next-line max-len, no-use-before-define
       removeValueFromCommaSeparatedQueryString(fromRemove, encodeURI(valueElement.textContent));
+      document.querySelector('body').setAttribute('data-selected-values', JSON.stringify(values));
     });
   });
 }
@@ -325,7 +338,7 @@ function cardTiles(getStockLocatorVehicles) {
 
     const price = document.createElement('span');
     price.classList.add('car-price');
-    price.textContent = `${finalPriceWithTax.min} ${baseCurrencyCodeA}`;
+    price.textContent = `${finalPriceWithTax.min.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} ${baseCurrencyCodeA}`;
 
     priceContainer.append(price, iconDiv, descriptionPopupContainer);
     cardLayerInfoItem.append(infoSpan);
@@ -397,6 +410,10 @@ function createVehicleCountWrapper(pageOffset, pageLimit, pageCount) {
   vehicleCountWrapper.classList.add('vehicle-count-wrapper');
   vehicleCountWrapper.textContent = `${Math.min(pageOffset + pageLimit, pageCount)} out of ${pageCount} vehicles`;
   document.querySelector('.card-tile-wrapper').appendChild(vehicleCountWrapper);
+  const showResultsBtn = document.querySelector('.show-result-container .show-result');
+  if (showResultsBtn) {
+    showResultsBtn.textContent = `Show Results ( ${pageCount} )`;
+  }
 }
 
 function loadMorePage(
@@ -546,10 +563,10 @@ async function vehicleFiltersAPI() {
 }
 
 let debounceTimer;
+let selectedValues = {};
 
 async function handleCheckBoxSelection() {
   const filterLists = document.querySelectorAll('.filter-list');
-  const selectedValues = {};
   filterLists.forEach((filterList) => {
     const filterLabelHeading = filterList.previousElementSibling;
     const checkboxes = filterList.querySelectorAll('.filter-checkbox');
@@ -566,13 +583,16 @@ async function handleCheckBoxSelection() {
           if (!selectedValues[headingText].includes(checkbox.id)) {
             selectedValues[headingText].push(checkbox.id);
           }
+          if (checkbox.id === 'All') {
+            selectedValues[headingText] = [];
+          }
         } else {
-          const index = selectedValues[headingText].indexOf(checkbox.id);
+          const index = selectedValues[headingText]?.indexOf(checkbox.id);
           if (index !== -1) {
-            selectedValues[headingText].splice(index, 1);
+            selectedValues[headingText]?.splice(index, 1);
           }
           // Remove is-active class if no checkbox is selected for this heading
-          if (selectedValues[headingText].length === 0) {
+          if (selectedValues[headingText]?.length === 0) {
             filterLabelHeading.classList.remove('is-active');
           }
         }
@@ -589,6 +609,7 @@ async function handleCheckBoxSelection() {
           const getStockLocatorSelectedFilter = await getStockLocatorFiltersData(vehicleURL);
           // eslint-disable-next-line no-use-before-define
           updateFilterDropDownValuePostSelection(getStockLocatorSelectedFilter?.data?.attributes);
+
           const getStockLocatorVehicles = await getStockLocatorVehiclesData(vehicleURL);
           cardTiles(getStockLocatorVehicles);
         }, 300); // 300ms delay
@@ -599,20 +620,22 @@ async function handleCheckBoxSelection() {
 
 async function updateSelectedValues(newValues) {
   const viewportwidth = window.innerWidth;
-  const mergedValues = { ...newValues };
   const existingSelectedValues = JSON.parse(document.querySelector('body').getAttribute('data-selected-values')) || {};
-  // Merge existing values with new values
-  // eslint-disable-next-line no-restricted-syntax
-  for (const [heading, valuesArray] of Object.entries(existingSelectedValues)) {
-    if (valuesArray.length > 0) {
-      if (!mergedValues[heading]) {
-        mergedValues[heading] = [];
-      }
-      mergedValues[heading] = Array.from(new Set([...mergedValues[heading], ...valuesArray]));
+  const mergedValues = {};
+  const newValueKeys = Object.keys(newValues);
+  newValueKeys.forEach((key) => {
+    mergedValues[key] = [];
+    if (Object.prototype.hasOwnProperty.call(existingSelectedValues, key)) {
+      mergedValues[key] = [
+        ...existingSelectedValues[key].filter((value) => newValues[key].includes(value)),
+        ...newValues[key].filter((value) => !existingSelectedValues[key].includes(value)),
+      ];
+    } else {
+      mergedValues[key] = newValues[key];
     }
-  }
-  const selectedList = document.querySelector('.series-selected-list');
+  });
 
+  const selectedList = document.querySelector('.series-selected-list');
   if (viewportwidth > 1024) {
     selectedList.innerHTML = '';
   }
@@ -637,7 +660,7 @@ async function updateSelectedValues(newValues) {
 
   // Store the merged selected values back to data-attribute or other storage
   document.querySelector('body').setAttribute('data-selected-values', JSON.stringify(mergedValues));
-
+  selectedValues = mergedValues;
   // Reset button management
   const existingResetButton = document.querySelector('.reset-filter-not-desktop');
   // eslint-disable-next-line no-shadow
@@ -665,7 +688,6 @@ async function updateSelectedValues(newValues) {
 
 async function handleMobileSeriesFilter() {
   const dropdowns = document.querySelectorAll('.filter-list');
-  const selectedValue = {};
   dropdowns.forEach((dropdown) => {
     const filterLabelHeading = dropdown.previousElementSibling;
     const headingText = filterLabelHeading.textContent;
@@ -682,24 +704,26 @@ async function handleMobileSeriesFilter() {
           if (event.target === label || event.target === checkbox) {
             checkbox.checked = !checkbox.checked;
           }
-          item.classList.toggle('selected-filter', checkbox.checked);
           if (checkbox.checked) {
             if (!filterLabelHeading.classList.contains('is-active')) {
               filterLabelHeading.classList.add('is-active');
             }
-            if (!selectedValue[headingText]) {
-              selectedValue[headingText] = [];
+            if (!selectedValues[headingText]) {
+              selectedValues[headingText] = [];
             }
-            if (!selectedValue[headingText].includes(checkbox.id)) {
-              selectedValue[headingText].push(checkbox.id);
+            if (!selectedValues[headingText].includes(checkbox.id)) {
+              selectedValues[headingText].push(checkbox.id);
+            }
+            if (checkbox.id === 'All') {
+              selectedValues[headingText] = [];
             }
           } else {
-            const index = selectedValue[headingText]?.indexOf(checkbox.id);
+            const index = selectedValues[headingText]?.indexOf(checkbox.id);
             if (index !== -1) {
-              selectedValue[headingText]?.splice(index, 1);
+              selectedValues[headingText]?.splice(index, 1);
             }
             // Remove is-active class if no checkbox is selected for this heading
-            if (selectedValue[headingText]?.length === 0) {
+            if (selectedValues[headingText]?.length === 0) {
               filterLabelHeading.classList.remove('is-active');
             }
           }
@@ -709,15 +733,15 @@ async function handleMobileSeriesFilter() {
             // update the filter DOM value after selection
             // update the Vehicle DOM after selection
             // eslint-disable-next-line no-use-before-define
-            updateSelectedValues(selectedValue);
+            updateSelectedValues(selectedValues);
             // eslint-disable-next-line no-use-before-define
-            vehicleURL = constructVehicleUrl(selectedValue);
+            vehicleURL = constructVehicleUrl(selectedValues);
             const getStockLocatorSelectedFilter = await getStockLocatorFiltersData(vehicleURL);
             // eslint-disable-next-line no-use-before-define
             updateFilterDropDownValuePostSelection(getStockLocatorSelectedFilter?.data?.attributes);
             const getStockLocatorVehicles = await getStockLocatorVehiclesData(vehicleURL);
             cardTiles(getStockLocatorVehicles);
-            showResulsHandler(vehicleURL);
+          //  showResulsHandler(vehicleURL);
           }, 300); // 300ms delay
         });
       });
@@ -733,9 +757,12 @@ function updateFilterDropDownValuePostSelection(newFilterData) {
   newProcessFilterData(newFilterData?.fuel, 'fuel');
   // eslint-disable-next-line no-use-before-define
   newProcessFilterData(newFilterData?.driveType, 'driveType');
+
+  // eslint-disable-next-line no-unused-expressions
+  viewport >= 1024 ? handleCheckBoxSelection() : handleMobileSeriesFilter();
 }
 
-function constructVehicleUrl(selectedValues) {
+function constructVehicleUrl(selectedParamValues) {
   // Define a mapping for filter keys to their corresponding query parameter names
   const keyMapping = {
     Drivetrain: 'driveType',
@@ -759,7 +786,7 @@ function constructVehicleUrl(selectedValues) {
 
   // Iterate over selectedValues and update searchParams for each key
   // eslint-disable-next-line no-restricted-syntax
-  for (const [key, values] of Object.entries(selectedValues)) {
+  for (const [key, values] of Object.entries(selectedParamValues)) {
     if (values && values.length > 0) {
       const queryKey = keyMapping[key] || key;
       mergeValues(queryKey, values);
@@ -787,11 +814,11 @@ function resetAllFilters(values) {
     label.classList.remove('is-active');
   });
 
-  values.DriveTrain = '';
-  values.FuelType = '';
-  values.Series = '';
-  values.Drivetrain = '';
-  values['Fuel Type'] = '';
+  values.DriveTrain = [];
+  values.FuelType = [];
+  values.Series = [];
+  values.Drivetrain = [];
+  values['Fuel Type'] = [];
 
   document.querySelector('body').removeAttribute('data-selected-values');
   // eslint-disable-next-line no-use-before-define
@@ -972,22 +999,29 @@ function updateStockLocatorFilterDom(filterResponseData, typeKey) {
   }
 
   // Store previously selected checkbox ids
-  const previouslySelected = new Set(
-    Array.from(filterList.querySelectorAll('input[type="checkbox"]:checked')).map(
-      (checkbox) => checkbox.id,
-    ),
-  );
-
+  let previouslySelected = Array.from(filterList.querySelectorAll('input[type="checkbox"]:checked'))
+    .filter((checkbox) => checkbox.id !== 'All')
+    .map((checkbox) => checkbox.id);
+  const allSelected = filterList.querySelector('input#All[type="checkbox"]:checked');
   // Clear the existing list items
   filterList.innerHTML = '';
   // Add "All" option
   const allListItem = document.createElement('li');
-  allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop', 'all-disabled');
+  allListItem.classList.add('filter-item', `${typeKey}-item`, 'not-desktop');
   const allCheckbox = document.createElement('input');
   allCheckbox.classList.add(`${typeKey}-checkbox`, 'filter-checkbox');
   allCheckbox.type = 'checkbox';
   allCheckbox.id = 'All';
-  allCheckbox.checked = true;
+
+  if (previouslySelected.length === 0) {
+    allListItem.classList.add('selected-filter');
+    allCheckbox.checked = true;
+  }
+  if (allSelected && !allSelected.parentElement.classList.contains('selected-filter')) {
+    allListItem.classList.add('selected-filter');
+    previouslySelected = [];
+  }
+
   const allLabel = document.createElement('label');
   allLabel.htmlFor = 'All';
   allLabel.textContent = 'All';
@@ -1001,29 +1035,30 @@ function updateStockLocatorFilterDom(filterResponseData, typeKey) {
   filterResponseData.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.classList.add('filter-item', `${typeKey}-item`);
-
+    if (item.count === 0) {
+      listItem.classList.add('disabled');
+    }
     const checkbox = document.createElement('input');
     checkbox.classList.add(`${typeKey}-checkbox`, 'filter-checkbox');
     checkbox.type = 'checkbox';
     checkbox.id = item.id;
     checkbox.disabled = item.count === 0;
     // Restore the checked state if previously selected
-    checkbox.checked = previouslySelected.has(item.id);
-    if (previouslySelected.has(item.id)) {
+    checkbox.checked = previouslySelected.includes(item.id);
+    if (previouslySelected.includes(item.id)) {
       listItem.classList.add('selected-filter');
     }
 
     const label = document.createElement('label');
     label.htmlFor = item.id;
     label.textContent = `${item.label} (${item.count})`;
-    label.prepend(tickIcon);
+    const tickmarkIcon = document.createElement('i');
+    tickmarkIcon.classList.add('icon-checkmark');
+    label.prepend(tickmarkIcon);
     listItem.appendChild(checkbox);
     listItem.appendChild(label);
     filterList.appendChild(listItem);
   });
-
-  // eslint-disable-next-line no-unused-expressions
-  viewport >= 1024 ? handleCheckBoxSelection() : handleMobileSeriesFilter();
 }
 
 async function newProcessFilterData(filterData, typeKey) {
@@ -1294,7 +1329,6 @@ export default async function decorate(block) {
   // Hide loading icon after all tasks are complete
   hideLoadingIcon();
   handleToggleFilterDropDown();
-  handleMobileSeriesFilter();
   handleRelevanceSingleSelect();
   detailsPage();
 }
