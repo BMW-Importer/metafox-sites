@@ -1,0 +1,135 @@
+{
+  "model": {
+    "modelCode": "21GF",
+    "brand": "BM",
+    "description": "BMW 120d",
+    "shortName": "120d",
+    "shortRangeName": "1er",
+    "modelRangeCode": "F70",
+    "modelRanges": [
+      "F70"
+    ],
+    "seriesCode": "1",
+    "series": [
+      "1"
+    ],
+    "seriesDescription": "BMW Serije 1",
+    "seriesDescriptions": [
+      "BMW Serije 1"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "7.9",
+    "seats": 5,
+    "topSpeed": "222",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21GF",
+      "paint": "P0C5Y",
+      "fabric": "FBLAT",
+      "options": "S01H0,S043U,S01CB,S0230,S0428,S0478,S05AC,S05AV,S05DA,S0654,S06AE,S06AF,S06PA,S0760,S0879,S08KA,S08R9,S08TF,S0925,S0548,S0851,S0801,S01DF",
+      "productionDate": "2024-09-02"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "120 (163)",
+      "systemMaxTorque": "400",
+      "gearBox": "7 - automatic",
+      "driveType": "VR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "120 (163)",
+            "systemMaxTorque": "400",
+            "gearBox": "7 - automatic",
+            "driveType": "VR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1995",
+            "nominalPower": "110 (150)/3750–4000",
+            "nominalTorque": "360/1500–2500"
+          },
+          "electric": {
+            "systemPower": "15 (20)/9",
+            "systemMaxTorque": "55"
+          },
+          "performance": {
+            "acceleration": "7.9",
+            "topSpeed": "222",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "4.7–4.3",
+            "emissionsWltpCombined": "122–112",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-",
+            "noiseDriving": "-",
+            "noiseStationary": "-"
+          },
+          "charging": {
+            "batteryCapacity": "0.9",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4361",
+            "width": "1800",
+            "height": "1459",
+            "widthMirrors": "-",
+            "wheelTurn": "2670",
+            "weightNotLoaded": "1570",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "1300/75",
+            "trunkCapacity": "300–1135",
+            "tankCapacity": "49"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ],
+          "weightMeasurements_trailerLoad_label": [
+            "f13"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "model": {
+    "modelCode": "21GB",
+    "brand": "BM",
+    "description": "BMW M3 Competition Touring mit M xDrive",
+    "shortName": "M3 Competition Touring mit M xDrive",
+    "shortRangeName": "G81",
+    "modelRangeCode": "G81",
+    "modelRanges": [
+      "G81"
+    ],
+    "seriesCode": "3",
+    "series": [
+      "3"
+    ],
+    "seriesDescription": "3",
+    "seriesDescriptions": [
+      "3"
+    ],
+    "hybridCode": "NOHY",
+    "fromPrice": 108.25,
+    "acceleration": "3.6",
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "M3",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "21GB",
+      "paint": "P0P7L",
+      "fabric": "FX3IA",
+      "options": "S01U0,S04MC,S01CB,S01DF,S01MB,S0230,S0248,S02NK,S02T4,S02VB,S02VF,S0302,S0322,S0383,S03KA,S03MC,S03MF,S0420,S0428,S0430,S0431,S0459,S048C,S0493,S0494,S04GQ,S04NE,S04U0,S0534,S0544,S0548,S0552,S05AC,S05AL,S05AS,S05AV,S05DA,S05DC,S05DN,S0654,S0688,S06AE,S06AF,S06AK,S06C4,S06CP,S06NX,S06PA,S06U3,S06VB,S070A,S071C,S0760,S0775,S07M9,S07ME,S0801,S0851,S0879,S08KA,S08R9,S08TF,CTRLLIGHTSON",
+      "productionDate": "2024-09-03"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "390 (530)",
+      "systemMaxTorque": "650",
+      "gearBox": "",
+      "driveType": ""
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "390 (530)",
+            "systemMaxTorque": "650",
+            "gearBox": "",
+            "driveType": ""
+          },
+          "engine": {
+            "cylinders": "6",
+            "technicalCapacity": "2993",
+            "nominalPower": "390 (530) / 6250",
+            "nominalTorque": "650 / 2750 - 5730"
+          },
+          "electric": {
+            "systemPower": "",
+            "systemMaxTorque": ""
+          },
+          "performance": {
+            "acceleration": "3.6",
+            "topSpeed": "250",
+            "electricTopSpeed": ""
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "10.4 - 10.3",
+            "emissionsWltpCombined": "235 - 233",
+            "electricConsumption": "",
+            "electricRangeWltpCombined": "",
+            "noiseDriving": "",
+            "noiseStationary": ""
+          },
+          "charging": {
+            "batteryCapacity": "",
+            "additionalRangeDC": "",
+            "chargeACDC": "",
+            "charge_AC_0_100": "",
+            "charge_DC_10_80": ""
+          },
+          "weightMeasurements": {
+            "length": "4801.0",
+            "width": "1903.0",
+            "height": "1446.0",
+            "widthMirrors": "2068 (1040 / 1028)",
+            "wheelTurn": "2857.0",
+            "weightNotLoaded": "1940",
+            "weightMax": "2370",
+            "permittedLoad": "505",
+            "trailerLoad": "",
+            "trunkCapacity": "500 - 1510",
+            "tankCapacity": "59.0"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "powerTrain_systemPower_value": [
+            "f9"
+          ],
+          "powerTrain_systemMaxTorque_value": [
+            "f9"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ]
+        },
+        "footnotesData": {}
+      }
+    ]
+  }
+}

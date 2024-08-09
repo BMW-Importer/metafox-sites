@@ -16,20 +16,12 @@
     "highlight3": "",
     "badge": "",
     "hidePrice": true,
-    "fuelType": "O",
     "productionDate": "2022-12-15",
-    "effectDate": "2024-07-16",
+    "effectDate": "2024-08-09",
     "backgroundImage": "",
     "modelName": "M2 Coupé",
-    "hybridCode": "NOHY",
-    "brand": "BM",
-    "cosyBrand": "WBBM",
+    "cosyBrand": "WBnull",
     "cosyUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331sBgrfZ7dQMw1pf4oXQtUDCvSpKM4lxvpa2CpLYkjUPoxQkQGZIaMLWMEYXiwrt3rTNCBZ8X6Ausxpz9mlD3AfzBy2od4ewpTQLzB6ShtN8vbCUVo%25fMLWHdpB1dAJ0%25lI2guJTyww1pMWowyu4%25P6CbKM45jdsTjHv9DiUi5rTEiyiIin8scpF4HvVfH0KiIFJGJSxABHvIT9PogO2JGvloMQFgpT9GsLDQIUilo90yYhBbHsLoACt%25whJ0yLOEfuOqTACygNS3HmlOECUkeaX7sgNEbnjhr10UkNh56HVVAbnkq8wJszOh5nmPXemagq857Mr1TRUmP81D4VWxb7MPVYFMnWh1DMztID8eqVYDafvs7jmztYRSGP667aftxd9O%25w1RSfWQogW%25VxdSeZLibuzWQdjcyH73aeZQ6KCHyXRjcZwBELsrx6Kc%252ZGF4WwBKupcBaFe%252B3iKHRIjup2XHBJGv63iprJ2VYGwXHi4TpE49%25rJHFliN5ou4TJIsHkUL3FlTv0J6HyXIslGATwGCrv0s9Ol%25nE4GA0og8j3NF9OALUPwnkIogOybMDCnvLUgChDYF5GybUEqYtB89ChbNmtjDPoEqhk7f%256MLNmqn1ScFDyk7m5VdOdYCn178z5ThtE5V1Pa8qqfN8zVMRPlSSkPazDxML5dnMRaYWDytQ53yxpYmrfZ7dyKMlHS9fxQun%25P6eao7sYFuMwb3Lc",
-    "technicalData": {
-      "enginePower": "338",
-      "engineHorsePower": "460",
-      "technicalCapacity": "2993",
-      "volt48": false
-    }
+    "technicalData": {}
   }
 }

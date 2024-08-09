@@ -1,0 +1,679 @@
+{
+  "walkaround": {
+    "res_2560x1440": {
+      "metaData": {
+        "width": 2560,
+        "height": 1440
+      },
+      "images": [
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZ4",
+          "displayOrder": 1,
+          "angle": 0,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfu"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEY",
+          "displayOrder": 2,
+          "angle": 10,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjY",
+          "displayOrder": 3,
+          "angle": 20,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZdY",
+          "displayOrder": 4,
+          "angle": 30,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfY8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZcY",
+          "displayOrder": 5,
+          "angle": 40,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfS8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZgY",
+          "displayOrder": 6,
+          "angle": 50,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfs8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZYY",
+          "displayOrder": 7,
+          "angle": 60,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf88"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZCY",
+          "displayOrder": 8,
+          "angle": 70,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf98"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZUY",
+          "displayOrder": 9,
+          "angle": 80,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf08"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZiY",
+          "displayOrder": 10,
+          "angle": 90,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfK8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEYA",
+          "displayOrder": 11,
+          "angle": 100,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZE2A",
+          "displayOrder": 12,
+          "angle": 110,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZENA",
+          "displayOrder": 13,
+          "angle": 120,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEbA",
+          "displayOrder": 14,
+          "angle": 130,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEmA",
+          "displayOrder": 15,
+          "angle": 140,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEuA",
+          "displayOrder": 16,
+          "angle": 150,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfojT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEAA",
+          "displayOrder": 17,
+          "angle": 160,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoTT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEBA",
+          "displayOrder": 18,
+          "angle": 170,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoQT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZE3A",
+          "displayOrder": 19,
+          "angle": 180,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo6T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZEaA",
+          "displayOrder": 20,
+          "angle": 190,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo7T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjYA",
+          "displayOrder": 21,
+          "angle": 200,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZj2A",
+          "displayOrder": 22,
+          "angle": 210,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjNA",
+          "displayOrder": 23,
+          "angle": 220,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjbA",
+          "displayOrder": 24,
+          "angle": 230,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjmA",
+          "displayOrder": 25,
+          "angle": 240,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjuA",
+          "displayOrder": 26,
+          "angle": 250,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRjT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjAA",
+          "displayOrder": 27,
+          "angle": 260,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRTT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjBA",
+          "displayOrder": 28,
+          "angle": 270,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRQT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZj3A",
+          "displayOrder": 29,
+          "angle": 280,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR6T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZjaA",
+          "displayOrder": 30,
+          "angle": 290,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR7T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZdYA",
+          "displayOrder": 31,
+          "angle": 300,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfY8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZd2A",
+          "displayOrder": 32,
+          "angle": 310,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZdNA",
+          "displayOrder": 33,
+          "angle": 320,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZdbA",
+          "displayOrder": 34,
+          "angle": 330,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZdmA",
+          "displayOrder": 35,
+          "angle": 340,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLjK7OPoxiCjtrb4gwTZHI9%25UtrK65emz0nhkYg2jRUQN14RIWwxEavsfNwyzMpBzcM6p0lZy6BGZIXRaoadXMixswF0BiftxdxTBw178z3aftECUkdXF7slGAzQ7CrXpFhzclZQ6KownXRaYWHtLQ5nmP%255EagOybfamnvIT9ahyO2B3inXcIjedwOCNBDMztIcgeqhk7BSUMLoACeN7hJHFlM9Fou%25KXhE7HSfWQosH%25V1PaHsefNEbnCxN10s9Ol8fE4riIXfkscZwBvhVrxRte2FNZ857MjYfRUgChDjX5GvloqVdgp2XHLNlv6OaiCXQU4GZI4oaXNF14ivAj0%25lIoGGqTMrw8jg%259QFe0ApbFdKVZduA",
+          "displayOrder": 36,
+          "angle": 350,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYjT"
+        }
+      ],
+      "backgroundImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlpkJEcGdbYCja1%25P4fFSr1YAiyXqdIpuMwVxgP78ShH%25eqK5ave963jnWoOQ53NxtJix2tuJgABNuiLB9FeWCWcFtTjO3GgiTQLDrg2jCil6Ji0D2bH8irTod9cvJ0llkIVpZ7dycsj"
+    },
+    "res_1280x720": {
+      "metaData": {
+        "width": 1280,
+        "height": 720
+      },
+      "images": [
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oq",
+          "displayOrder": 1,
+          "angle": 0,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfu"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oe4",
+          "displayOrder": 2,
+          "angle": 10,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2os4",
+          "displayOrder": 3,
+          "angle": 20,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oG4",
+          "displayOrder": 4,
+          "angle": 30,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfY8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oL4",
+          "displayOrder": 5,
+          "angle": 40,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfS8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2of4",
+          "displayOrder": 6,
+          "angle": 50,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfs8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2o44",
+          "displayOrder": 7,
+          "angle": 60,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf88"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oW4",
+          "displayOrder": 8,
+          "angle": 70,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf98"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oS4",
+          "displayOrder": 9,
+          "angle": 80,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf08"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2ok4",
+          "displayOrder": 10,
+          "angle": 90,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfK8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oe4Y",
+          "displayOrder": 11,
+          "angle": 100,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oeEY",
+          "displayOrder": 12,
+          "angle": 110,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oejY",
+          "displayOrder": 13,
+          "angle": 120,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oedY",
+          "displayOrder": 14,
+          "angle": 130,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oecY",
+          "displayOrder": 15,
+          "angle": 140,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oegY",
+          "displayOrder": 16,
+          "angle": 150,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfojT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oeYY",
+          "displayOrder": 17,
+          "angle": 160,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoTT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oeCY",
+          "displayOrder": 18,
+          "angle": 170,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoQT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oeUY",
+          "displayOrder": 19,
+          "angle": 180,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo6T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oeiY",
+          "displayOrder": 20,
+          "angle": 190,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo7T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2os4Y",
+          "displayOrder": 21,
+          "angle": 200,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osEY",
+          "displayOrder": 22,
+          "angle": 210,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osjY",
+          "displayOrder": 23,
+          "angle": 220,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osdY",
+          "displayOrder": 24,
+          "angle": 230,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oscY",
+          "displayOrder": 25,
+          "angle": 240,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osgY",
+          "displayOrder": 26,
+          "angle": 250,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRjT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osYY",
+          "displayOrder": 27,
+          "angle": 260,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRTT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osCY",
+          "displayOrder": 28,
+          "angle": 270,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRQT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osUY",
+          "displayOrder": 29,
+          "angle": 280,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR6T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2osiY",
+          "displayOrder": 30,
+          "angle": 290,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR7T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oG4Y",
+          "displayOrder": 31,
+          "angle": 300,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfY8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oGEY",
+          "displayOrder": 32,
+          "angle": 310,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oGjY",
+          "displayOrder": 33,
+          "angle": 320,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oGdY",
+          "displayOrder": 34,
+          "angle": 330,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oGcY",
+          "displayOrder": 35,
+          "angle": 340,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpLe6t3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPFILVZ8XhAusfOz9mlDYNdmGy2oGgY",
+          "displayOrder": 36,
+          "angle": 350,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYjT"
+        }
+      ],
+      "backgroundImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlpkJEcGdbYCja1%25P4fFSr7VkxbZG7NgXA2Jf3KuvQnOlZy%25i1lz0UswTat9%25UjJF5kJEFg5fYCjgkRCzmlTWTLmF8stUVfk89RrhfEsWkP05kDrEdnukh8aGzL1HJAP672NoKGxLMs"
+    },
+    "res_640x360": {
+      "metaData": {
+        "width": 640,
+        "height": 360
+      },
+      "images": [
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaZ",
+          "displayOrder": 1,
+          "angle": 0,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfu"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalq",
+          "displayOrder": 2,
+          "angle": 10,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMq",
+          "displayOrder": 3,
+          "angle": 20,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVq",
+          "displayOrder": 4,
+          "angle": 30,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfY8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaRq",
+          "displayOrder": 5,
+          "angle": 40,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfS8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaIq",
+          "displayOrder": 6,
+          "angle": 50,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfs8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaqq",
+          "displayOrder": 7,
+          "angle": 60,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf88"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaTq",
+          "displayOrder": 8,
+          "angle": 70,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf98"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEavq",
+          "displayOrder": 9,
+          "angle": 80,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqf08"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEa6q",
+          "displayOrder": 10,
+          "angle": 90,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfK8"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalq4",
+          "displayOrder": 11,
+          "angle": 100,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEale4",
+          "displayOrder": 12,
+          "angle": 110,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEals4",
+          "displayOrder": 13,
+          "angle": 120,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalG4",
+          "displayOrder": 14,
+          "angle": 130,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalL4",
+          "displayOrder": 15,
+          "angle": 140,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalf4",
+          "displayOrder": 16,
+          "angle": 150,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfojT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEal44",
+          "displayOrder": 17,
+          "angle": 160,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoTT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalW4",
+          "displayOrder": 18,
+          "angle": 170,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfoQT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalS4",
+          "displayOrder": 19,
+          "angle": 180,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo6T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEalk4",
+          "displayOrder": 20,
+          "angle": 190,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3Ydqfo7T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMq4",
+          "displayOrder": 21,
+          "angle": 200,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMe4",
+          "displayOrder": 22,
+          "angle": 210,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMs4",
+          "displayOrder": 23,
+          "angle": 220,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMG4",
+          "displayOrder": 24,
+          "angle": 230,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaML4",
+          "displayOrder": 25,
+          "angle": 240,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMf4",
+          "displayOrder": 26,
+          "angle": 250,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRjT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaM44",
+          "displayOrder": 27,
+          "angle": 260,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRTT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMW4",
+          "displayOrder": 28,
+          "angle": 270,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfRQT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMS4",
+          "displayOrder": 29,
+          "angle": 280,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR6T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaMk4",
+          "displayOrder": 30,
+          "angle": 290,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfR7T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVq4",
+          "displayOrder": 31,
+          "angle": 300,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfY8T"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVe4",
+          "displayOrder": 32,
+          "angle": 310,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYZT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVs4",
+          "displayOrder": 33,
+          "angle": 320,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYLT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVG4",
+          "displayOrder": 34,
+          "angle": 330,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYAT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVL4",
+          "displayOrder": 35,
+          "angle": 340,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYUT"
+        },
+        {
+          "viewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDTkiaKM4%25jvQy2CpL9tt3aJkWsFhdqfA8on7zOSFhy0%25lcpDwQ64fEsHS9jBqH7TAJei1MIjAxpXNCpLX0NDPox0CVo7bHiaiGbXkJMAmDCkIFJGJ8CABKupUiIFeWS6GbmKMPVYp9KWhbNmQpLPo90yaAwbHi4TnFR9%25wc3O%25eiftxdIicw178ziQxtECUkwbL7slGAtWjCrXpF7LflZQ6KCvSXRaYWljKQ5nmPXzmagOybQeKnvIT9aMnO2B3inMlIjedwWJjBDMztPuIeqhk7bI6MLoAC1Q2hJHFlEmjou%25KXs4IHSfWQrsb%25V1PaZ2GfNEbnRjP10tikWb9SqVo7qaibjmBqk1YsDOPEs2oubQYgMItpzcPr4jGcVxEaVf4",
+          "displayOrder": 36,
+          "angle": 350,
+          "previewImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlrjFhnOqIbqfKoiL3hAtUDQkiaKM4%25jvQy2CpLyQUi56TMmQGZIYuawKptvmQxDOPLNrA90qIeMnvzsCZnK8Y5lkEo7sYJNbjWNRbDjr3aJDW2aKdnkikVdb65XYcrW672gfrR5iWw8jWugRFe0Wf6BmKVZCBuzH5CpLdFt3aJTcA3YdqfYjT"
+        }
+      ],
+      "backgroundImage": "https://int.cosy.bmw.cloud/metafox/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kvmRhoId4eVGkCrmMTVkHNekxFw0dXRTowozL1mrxlpkJEcGdbYCja1%25P4fFSr3kkxbZG7NgXA2Jf3KuvQnOlZy%25i1lz0UswTat9%25UjJF5kJEFg5fYCjgkRCzmlTWTLmF8stUVfk89RrhfEsWkP05kDrEdnukh8aGzL1UG30KEjayVJRXM"
+    }
+  }
+}

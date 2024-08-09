@@ -1,0 +1,128 @@
+{
+  "model": {
+    "modelCode": "81GM",
+    "brand": "BM",
+    "description": "BMW X2 M35i xDrive",
+    "shortName": "X2 M35i xDrive",
+    "shortRangeName": "X2",
+    "modelRangeCode": "U10",
+    "modelRanges": [
+      "U10"
+    ],
+    "seriesCode": "X",
+    "series": [
+      "X"
+    ],
+    "seriesDescription": "X",
+    "seriesDescriptions": [
+      "X"
+    ],
+    "hybridCode": "NOHY",
+    "acceleration": "5.4",
+    "topSpeed": "250",
+    "marketingVehicleType": "M",
+    "bodyTypeCode": "LI",
+    "marketingBodyTypeCode": "LI",
+    "posiSpec": {
+      "cosyBrand": "WBBM",
+      "agCode": "81GM",
+      "paint": "P0C6R",
+      "fabric": "FKTNL",
+      "options": "S01GN,S01AG,S01CB,S01DF,S0230,S0248,S02PA,S02TE,S02VB,S02VF,S0302,S0313,S0322,S03DN,S03KA,S03M8,S03MF,S0402,S0420,S0430,S0431,S0459,S0494,S04GQ,S04NW,S0552,S05AC,S05AU,S05AV,S05DA,S05DN,S0610,S0654,S0674,S06AE,S06AF,S06AK,S06C4,S06NX,S06U3,S0711,S0754,S0760,S0775,S07M9,S08R3,S08TF,S09T1,S09T2,S09TA,S09TB,S033B,S07EW",
+      "productionDate": "2023-12-01"
+    },
+    "powerTrain": {
+      "fuelType": "O",
+      "systemPower": "221 (300)",
+      "systemMaxTorque": "400",
+      "gearBox": "7 - automatisch",
+      "driveType": "AR"
+    },
+    "vehicles": [
+      {
+        "transmissionCode": "Default",
+        "hybridCode": "NOHY",
+        "iD_LEIST_KONST": "00",
+        "volt48": false,
+        "technicalData": {
+          "powerTrain": {
+            "fuelType": "O",
+            "systemPower": "221 (300)",
+            "systemMaxTorque": "400",
+            "gearBox": "7 - automatisch",
+            "driveType": "AR"
+          },
+          "engine": {
+            "cylinders": "4",
+            "technicalCapacity": "1998",
+            "nominalPower": "221 (300) / 5750-6500",
+            "nominalTorque": "400 / 2000–4500"
+          },
+          "electric": {
+            "systemPower": "-",
+            "systemMaxTorque": "-"
+          },
+          "performance": {
+            "acceleration": "5.4",
+            "topSpeed": "250",
+            "electricTopSpeed": "-"
+          },
+          "emissionsConsumptionWltp": {
+            "consumptionWltpCombined": "8.0–7.7",
+            "emissionsWltpCombined": "181–174 ",
+            "electricConsumption": "-",
+            "electricRangeWltpCombined": "-"
+          },
+          "charging": {
+            "batteryCapacity": "-",
+            "additionalRangeDC": "-",
+            "chargeACDC": "-",
+            "charge_AC_0_100": "-",
+            "charge_DC_10_80": "-"
+          },
+          "weightMeasurements": {
+            "length": "4567",
+            "width": "1845",
+            "height": "1575",
+            "widthMirrors": "-",
+            "wheelTurn": "2692",
+            "weightNotLoaded": "1770",
+            "weightMax": "-",
+            "permittedLoad": "-",
+            "trailerLoad": "-",
+            "trunkCapacity": "560–1470",
+            "tankCapacity": "54"
+          }
+        },
+        "footnotes": {
+          "powerTrain": [
+            "f1"
+          ],
+          "engine": [
+            "f1"
+          ],
+          "performance_acceleration_value": [
+            "f16"
+          ],
+          "performance_topSpeed_value": [
+            "f17"
+          ],
+          "performance_electricTopSpeed_value": [
+            "f17"
+          ],
+          "emissionsConsumptionWltp": [
+            "f1",
+            "f4"
+          ],
+          "weightMeasurements_weightNotLoaded_label": [
+            "f8"
+          ]
+        },
+        "footnotesData": {
+          "overboostMax": "-",
+          "overboostKW": "-"
+        }
+      }
+    ]
+  }
+}
